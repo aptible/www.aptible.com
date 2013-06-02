@@ -1,0 +1,211 @@
+---
+section: Home
+title: The High-Assurance PaaS for Healthcare
+sub_title: "100% HIPAA compliance, as a service."
+about:
+  h1: Our goal is to make it easy for great developers to work in healthcare.
+  h2: Aptible is the world’s first application deployment platform built specifically for HIPAA compliance.
+  p1: "Healthcare can be a frustrating industry to work in Murky regulations cause confusio  Heavy-hitting penalties sow fear and hesitation. Sales cycles can be agonizingly slow. \n\n****Aptible changes all of that.****"
+  p2: "You write code, we make it run in your own private, secure stack. \n\nWe handle web servers, app servers, databases, load balancers, network security -- everything. And on top of it, we stand up and manage your entire HIPAA compliance program."
+
+how:
+  h1: How Aptible Works
+  p1: "By running your applications, we can manage 100% of your HIPAA compliance issues. We help with every component of the Privacy and Security Rules, including all of the Administrative, Physical, and Technical safeguards.\n\nWe provide risk analysis, policies and procedures, training, and incident response. And we always show our work: All of your documentation is available, in real time, for any audit, enforcement action, or customer security assessment."
+  ctas:
+    1:
+      title: How does Aptible's technolgy work?
+      href: /technology
+    2:
+      title: How does Aptible manage your entire compliance program?
+      href: /compliance
+  tools:
+    title: The right tool for the right job
+    description: "We support every major language, framework, and open source database.  Never be forced to choose between good engineering and compliance"
+    logos:
+      redis: /pages/assets/redis.png
+      mongo: /pages/assets/mongodb.png
+      pg: /pages/assets/postgres.png
+      mysql: /pages/assets/mysql.png
+      go: /pages/assets/gophercolor.png
+      node: /pages/assets/nodejs.png
+      ruby: /pages/assets/ruby.png
+why:
+  lockin:
+    title: No lock-in
+    description: "Integration is as simple as adding a single file to your codebase.  No proprietary APIs, no migration fees. No Dev/Prod disparity."
+    logo: /pages/assets/docker.png
+  compliance:
+    title: One-stop HIPAA compliance
+    description: "100% managed compliance.  We help with every aspect of HIPAA compliance"
+    logo: /pages/assets/compliant-code.svg
+  workflow:
+    title: We’re built for your workflow
+    description: "Like Heroku? You’ll love Aptible.  Manage apps not infrastructure. Integrates seamlessly with CI and CD tools."
+    logo: /pages/assets/travis.png
+customers:
+  pager:
+    customer_name: Pager
+    name: Oscar Salazar
+    title: Founder
+    photo: /pages/assets/customers/osalazar.jpg
+    logo: /pages/assets/customers/pager.png
+    testimonial: 'Vestibulum pretium placerat mollis. Donec ultricies odio enim, et vehicula purus blandit vitae. Proin eleifend blandit cursus. Cum sociis natoque penatibus et magnis dis parturient montes.'
+    url: http://getpager.com
+  nightingale:
+    customer_name: Nightingale
+    name: Eric Bakan
+    title: Founder
+    photo: /pages/assets/customers/eric.png
+    logo: /pages/assets/customers/nightingaleapp.jpg
+    testimonial: '22Vestibulum pretium placerat mollis. Donec ultricies odio enim, et vehicula purus blandit vitae. Proin eleifend blandit cursus. Cum sociis natoque penatibus et magnis dis parturient montes.'
+    url: http://nightingaleapp.com
+
+
+
+---
+
+<div class="container">
+  <div class="row section about-billboard">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-12">
+            <h1>{{about.h1}}</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>{{about.h2}}</h2>
+          <div class="row">
+            <div class="col-sm-6">{{#markdown}}{{about.p1}}{{/markdown}}</div>
+            <div class="col-sm-6">{{#markdown}}{{about.p2}}{{/markdown}}</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default cta-sidebar">
+            <div class="home-cta-body">
+              <h6>Like Heroku?</h6>
+              <h3>You'll Love Aptible</h3>
+              <a class="btn btn-primary btn-lg" href="/pricing.html">Start your Development Account</a>
+              <div class="development-plan-info">
+                No minimum fees, no commitment
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row section">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-6 aptible-tools">
+              <div class="tools-carousel">
+                {{#each how.tools.logos}}
+                  <div class="tool logo">
+                    <img src="{{.}}" />
+                  </div>
+                {{/each}}
+              </div>
+              <div class="tools-description row">
+                <div class="col-sm-6 col-sm-offset-3">
+                  <div class="fact-item">
+                    <h4>{{how.tools.title}}</h4>
+                    <div class="description">{{how.tools.description}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="how-aptible-works">
+                <h1>{{how.h1}}</h1>
+                <div class="how-description">{{#markdown}}{{how.p1}}{{/markdown}}</div>
+                <ul class="how-ctas">
+                  {{#each how.ctas}}
+                    <li><a href="{{href}}">{{title}}</a></li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-footer why-aptible">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="why-item">
+                <div class="why-icon">
+                  <img src="{{why.lockin.logo}}" />
+                </div>
+                <div class="why-description fact-item">
+                  <h4>{{why.lockin.title}}</h4>
+                  <div class="description">{{#markdown}}{{why.lockin.description}}{{/markdown}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="why-item">
+                <div class="why-icon">
+                  <img src="{{why.workflow.logo}}" />
+                </div>
+                <div class="why-description fact-item">
+                  <h4>{{why.workflow.title}}</h4>
+                  <div class="description">{{#markdown}}{{why.workflow.description}}{{/markdown}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="why-item">
+                <div class="why-icon">
+                  <img src="{{why.compliance.logo}}" />
+                </div>
+                <div class="why-description fact-item">
+                  <h4>{{why.compliance.title}}</h4>
+                  <div class="description">{{#markdown}}{{why.compliance.description}}{{/markdown}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="customers">
+        <h1>Our Customers</h1>
+        <div class="testimonials">
+          {{#each customers}}
+            <div class="testimonial">
+              <div class="testimonial-body">&ldquo;{{testimonial}}&rdquo;</div>
+              <div class="spacer"></div>
+              <ul class="post-meta">
+                <li><div class="gravatar sm"><img src="{{photo}}" /></div></li>
+                <li class="author">{{name}}</li>
+                <li class="date">{{title}} - {{customer_name}}</li>
+              </ul>
+            </div>
+          {{/each}}
+        </div>
+        <div class="logos">
+          <div class="row">
+            {{#each customers}}
+              <div class="col-sm-3">
+                <div class="logo {{slugify customer_name}}">
+                  <a href="{{url}}">
+                    <img src="{{logo}}" />
+                  </a>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

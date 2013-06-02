@@ -1,0 +1,57 @@
+---
+title: Contact Aptible Support
+description: "Aptible's support contact page"
+posted: 2014-06-30
+section: Support
+---
+
+<div class="container">
+  <div class="row section">
+    <div class="col-sm-8 col-sm-offset-2">
+
+      <div class="panel panel-default">
+
+        <div class="panel-body-subdued">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">{{fa 'search'}}</span>
+              <form method="get" action="{{config.knowledgebase_search_url}}">
+                <input type="hidden" name="utf8" value="✓" />
+                <input type="hidden" nname="commit" value="search" />
+                <input type="text" name="query" class="form-control" placeholder="Search Our Knowledgebase">
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-body">
+          <h1 class="panel-title">How Can We Help?</h1>
+          <h5 class="panel-sub">Integer sodales pretium erat, quis faucibus tellus. Pellentesque convallis vitae urna nec sollicitudin.</h5>
+
+          <div class="contact-form">
+            <form>
+              <input type="hidden" name="action" value="submitted_support_form" />
+             {{> contact_form}}
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3 fact-item col-sm-offset-3">
+          <h4>Support By Phone</h4>
+          <div class="description">
+            {{config.support_phone}}
+          </div>
+        </div>
+        <div class="col-sm-3 fact-item">
+          <h4>Support By Email</h4>
+          <div class="description">
+            {{mailto config.support_email}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

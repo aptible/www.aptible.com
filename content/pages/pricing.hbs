@@ -1,0 +1,135 @@
+---
+title: Plans and Pricing
+description: "Aptible's pricing page"
+posted: 2014-06-30
+production_title: Aptible Production Plan
+production_subtitle: Be ready for live patient data with both our ****High-Assurance Ops Platform**** and our industry-leading ****HIPAA Compliance Tools**** from just $4199/month.
+development_plan_cost: $0.06/hr
+
+additional_costs:
+  containers:
+    price: $0.10/hr
+    name: Additional Containers
+  storage:
+    price: $0.40/GB/Month
+    name: Additional Storage
+
+benefits:
+  ops:
+    title: "Aptible’s High-Assurance Ops Platform"
+    svg: /pages/assets/ops.svg
+    features:
+      security: Powerful Security Controls
+      deploys: One-Click Deploys, Scaling, Backups, Failovers, and CI Integration
+      support: 24/7 Support
+      included: 10 Containers + 1TB Storage Included
+
+  compliance:
+    title: "Aptible’s HIPAA Compliance Tools"
+    svg: /pages/assets/compliance.svg
+    features:
+      risk: Security Rule Risk Analysis
+      privacy: Security + Privacy Policies and Procedures
+      documentation: Real-Time Updates and Auto-Documentation
+      baa: Signed Business Associate Agreement
+      audit: 100% Stress-Free HHS Audit Support
+
+features_title: Features standard in all Aptible plans
+features:
+  security:
+    name: Powerful Security Controls
+    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+  deploys:
+    name: One-Click Deploys
+    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+  scaling:
+    name: Scaling
+    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+  backups:
+    name: Automatic Backups
+    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+  ci:
+    name: CI Integration
+    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+  failovers:
+    name: Failovers
+    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+  support:
+    name: 24/7 Support
+    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+  users:
+    name: Unlimited Users
+    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+
+---
+
+<div class="fancy-cover">
+  <div class="container">
+
+    <div class="row">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+          <div class="panel panel-default">
+            <div class="panel-body panel-body-slim">
+              <h1 class="panel-title">{{production_title}}</h1>
+              <h5 class="panel-sub">{{#markdown}}{{production_subtitle}}{{/markdown}}</h2>
+              <div class="plan-benefits">
+
+                <div class="row">
+                  {{#each benefits}}
+                    <div class="col-sm-6">
+                      <div class="plan-benefit">
+                        <div class="benefit-icon">
+                          <img src="{{svg}}" alt="{{title}}" />
+                        </div>
+
+                        <h3 class="benefit-title">{{title}}</h3>
+                        <ul class="features-list">
+                          {{#each features}}
+                            <li>{{fa 'check'}}<div class="feature-body">{{.}}</div></li>
+                          {{/each}}
+                        </ul>
+                      </div>
+                    </div>
+                  {{/each}}
+                </div>
+
+              </div>
+              <div class="plan-footer">
+                <a class="btn btn-lg btn-primary" href="{{config.production_signup_url}}">Get Started With Aptible Production</a>
+                <ul class="additional-costs">
+                  {{#each additional_costs}}
+                    <li class="additional_cost">{{price}} {{name}}</li>
+                  {{/each }}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="development-plan-callout">
+            <strong>Not Ready for an Aptible Production Plan?</strong>  <a href="{{config.development_signup_url}}">Start with</a> an Aptible Development Plan from $0.06/hr
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row section">
+    <div class="col-sm-12">
+      <div class="row">
+        <h2 class="section-title">{{features_title}}</h2>
+        {{#each features}}
+          <div class="col-sm-3">
+            <div class="fact-item">
+              <h4>{{name}}</h4>
+              <div class="description">{{#markdown}}{{description}}{{/markdown}}</div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
