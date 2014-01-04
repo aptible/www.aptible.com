@@ -2,7 +2,7 @@
 
 # Aptible::Tumblr
 
-A blog theme for Tumblr.
+A blog theme for Tumblr. See it in action at http://blog.aptible.com.
 
 ## Installation
 1. Log into Tumblr
