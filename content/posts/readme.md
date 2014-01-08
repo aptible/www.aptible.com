@@ -1,6 +1,4 @@
-![Aptible, Inc.](https://s3.amazonaws.com/aptible-media-assets-manual/web-horizontal-350.png)
-
-# Aptible::Tumblr
+# ![](https://raw.github.com/aptible/straptible/master/lib/straptible/rails/templates/public.api/icon-60px.png) Aptible::Tumblr
 
 A blog theme for Tumblr. See it in action at http://blog.aptible.com.
 
