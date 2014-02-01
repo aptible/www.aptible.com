@@ -11,3 +11,69 @@
             padding-left: 0;
         }
 }
+
+.author-portrait {
+    border-radius: 5px;
+}
+
+.post .post-title {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.byline {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.prettyprint {
+    border-radius: 5px;
+}
+
+.prettyprint code {
+    font-size: .8em;
+}
+
+.twitter-share-button {
+    margin-bottom: 20px;
+}
+
+/* Pretty printing styles. Used with prettify.js.
+   Aptible::Blog theme, based on the prettify default.css theme */
+
+pre.prettyprint.prettyprinted {
+  background: #f7fafc;
+  color: #00193A;
+  padding: 1em;
+}
+
+/* SPAN elements with the classes below are added by prettyprint. */
+pre.prettyprint.prettyprinted .pln { color: #000 }  /* plain text */
+
+@media screen {
+  pre.prettyprint.prettyprinted .str { color: #006db0 }  /* string content */
+  pre.prettyprint.prettyprinted .kwd { color: #880B08 }  /* a keyword */
+  pre.prettyprint.prettyprinted .com { color: #999 }  /* a comment */
+  pre.prettyprint.prettyprinted .typ { color: #036 }  /* a type name */
+  pre.prettyprint.prettyprinted .lit { color: #066 }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  pre.prettyprint.prettyprinted .pun, pre.prettyprint.prettyprinted .opn, pre.prettyprint.prettyprinted .clo { color: #003 }
+  pre.prettyprint.prettyprinted .tag { color: #008 }  /* a markup tag name */
+  pre.prettyprint.prettyprinted .atn { color: #036 }  /* a markup attribute name */
+  pre.prettyprint.prettyprinted .atv { color: #080 }  /* a markup attribute value */
+  pre.prettyprint.prettyprinted .dec, pre.prettyprint.prettyprinted .var { color: #036 }  /* a declaration; a variable name */
+  pre.prettyprint.prettyprinted .fun { color: #ff9933 }  /* a function name */
+}
+
+/* Use higher contrast and text-weight for printable form.
+@media print, projection {
+  .str { color: #060 }
+  .kwd { color: #006; font-weight: bold }
+  .com { color: #600; font-style: italic }
+  .typ { color: #404; font-weight: bold }
+  .lit { color: #044 }
+  .pun, .opn, .clo { color: #440 }
+  .tag { color: #006; font-weight: bold }
+  .atn { color: #404 }
+  .atv { color: #060 }
+} */
