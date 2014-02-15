@@ -1,4 +1,2 @@
-/drafts/acquisitions.md
-/drafts/continuous_compliance.md
-/drafts/the_application_layer.md
-
+/drafts/*
+!/drafts/continuous_compliance.md

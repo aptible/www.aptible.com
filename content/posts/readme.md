@@ -1,4 +1,4 @@
-# ![](https://raw.github.com/aptible/straptible/master/lib/straptible/rails/templates/public.api/icon-60px.png) Aptible::Tumblr
+# ![](https://raw.github.com/aptible/straptible/master/lib/straptible/rails/templates/public.api/icon-60px.png) Aptible::Blog
 
 Our Tumblr theme and posts. See it in action at http://blog.aptible.com.
 
@@ -10,6 +10,11 @@ Our Tumblr theme and posts. See it in action at http://blog.aptible.com.
 5. Paste the contents of `index.html` into the field and save.
 6. Back at the "Customize" page, at the bottom, click "Advanced options."
 7. Add the contents of the `custom.css` file.
+
+## Writings and Drafts
+1. Put works in progress into the drafts folder. To share them, add path to `.gitignore` prefixed with `!`, e.g. `!/drafts/some_post.md`. This negates the glob matching pattern.
+2. Commit w/ the draft, revise, publish to Tubmlr.
+3. Move the published draft to the `/posts` folder, prefixed with an 8-digit date stamp.
 
 ## Code Blocks and Syntax Highlighting
 In a post, to include a code block, turn on HTML editing and use:  
