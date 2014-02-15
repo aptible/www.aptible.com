@@ -1,6 +1,6 @@
 # ![](https://raw.github.com/aptible/straptible/master/lib/straptible/rails/templates/public.api/icon-60px.png) Aptible::Tumblr
 
-A blog theme for Tumblr. See it in action at http://blog.aptible.com.
+Our Tumblr theme and posts. See it in action at http://blog.aptible.com.
 
 ## Installation
 1. Log into Tumblr
