@@ -44,3 +44,7 @@ See the [Prettify readme](http://google-code-prettify.googlecode.com/svn/trunk/R
 <pre class="prettyprint"><code class="language-java">...</code></pre>
 ```
 
+## Copyright
+
+Copyright (c) 2014 [Aptible](https://www.aptible.com). All rights reserved.
+
