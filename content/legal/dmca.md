@@ -1,5 +1,10 @@
-<% provide(:title, 'DMCA') %>
-<% provide(:meta_desc_content, "Aptible's DMCA policy.") %>
+---
+title: DMCA
+description: "Aptible's DMCA policy."
+posted: 2014-06-30
+section: Legal
+sub_section: Policies
+---
 
 Aptible, Inc.
 =============
