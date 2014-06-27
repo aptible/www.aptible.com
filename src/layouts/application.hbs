@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body
+    class="aptible-com {{slugify title}} {{slugify page.section}} {{slugify basename}}">
+
+    {{> header}}
+
+    <div class="main" role="main">
+      {{#is page.section 'Company'}}
+        {{> company_nav}}
+      {{/is}}
+
+      {{#is page.section 'Support'}}
+        {{> support_nav}}
+      {{/is}}
+
+      {{#is page.section 'Legal'}}
+        {{> support_nav}}
+      {{/is}}
+
+      {{> body}}
+    </div>
+
+    {{> footer}}
+    {{> javascripts}}
+  </body>
+</html>

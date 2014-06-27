@@ -1,0 +1,269 @@
+body {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+header.primary-header {
+  height: 200px;
+  background:
+    linear-gradient(
+      rgba(11, 96, 151, .9),
+      shade(rgba(11, 96, 151, .95), 12)
+    ),
+    url(/assets/images/aptible-blueprint-bg.jpg) no-repeat center center;
+  @include background-size(cover);
+
+  .navbar-brand {
+    img {
+      width: 170px;
+    }
+  }
+
+  .nav-primary {
+    margin-top: 13px;
+
+    > li {
+      > a {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: .8px;
+        text-shadow: 1px 1px rgba(black, 0.05);
+
+        &:hover {
+          background: none;
+          color: $color-bright-blue-subdued;
+        }
+
+        &.btn-primary {
+          margin-left: 15px;
+        }
+      }
+
+      &.active {
+        a {
+          color: $color-bright-blue-subdued;
+          @include text-shadow(1px 1px 0 rgba(black, 0.5));
+        }
+      }
+    }
+
+    li:last-child {
+      a {
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .header-title-container {
+    text-align:center;
+    @extend %smooth;
+
+    h1.primary-title {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: $weight-lighter;
+      color: #fff;
+    }
+
+    h2.primary-sub-title {
+      font-size: 18px;
+      font-weight: $weight-normal;
+      color: $color-bright-blue-subdued;
+    }
+  }
+}
+
+.navbar-sub {
+  background: $color-bg-gray;
+  border-bottom: 1px solid $color-border-gray;
+  border-top: 1px solid #fff;
+  text-align:center;
+  margin: 0;
+
+  .nav.navbar-nav {
+    float: none;
+    text-align: center;
+    margin-left: 3px;
+
+    > li {
+      display: inline-block;
+      float: none;
+      margin: 0;
+
+      > a {
+        margin: 0 0 0 -4px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: $weight-semibold;
+        color: $color-bright-blue;
+        padding: 21px 40px 20px;
+        border-right: 1px solid $color-border-gray;
+      }
+
+      &.active {
+        > a {
+          color: $color-primary;
+        }
+      }
+
+      &:first-child {
+        > a {
+          border-left: 1px solid $color-border-gray;
+        }
+      }
+    }
+  }
+}
+
+footer.aptible-footer {
+  margin-top: 0;
+
+  ul.nav {
+    > li {
+      > a, > a:visited {
+        font-size: 13px;
+        color: $color-light;
+      }
+
+      &.title {
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .sub-footer {
+    margin: 50px 0 0 0;
+    text-align: center;
+    border-top: 1px solid $color-border-gray;
+  }
+
+  .nav.navbar-nav {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+
+    > li {
+      float: none;
+      font-size: 13px;
+      margin: 50px 20px 0;
+      display: inline-block;
+      color: $color-light;
+    }
+  }
+}
+
+.intro-block {
+  text-align: center;
+
+  .intro-title {
+    font-size: 14px;
+    font-weight: $weight-semibold;
+    text-transform: uppercase;
+    color: $color-light;
+  }
+
+  .intro-heading {
+    color: $color-dark-blue;
+    font-size: 24px;
+    font-weight: $weight-normal;
+    margin: 30px 0;
+  }
+
+  .intro-body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.panel-default {
+  .panel-body {
+    padding: 50px;
+  }
+
+  .panel-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+
+  .panel-sub {
+    text-align: center;
+    color: $color-light;
+    font-size: 16px;
+    line-height: 1.5;
+
+    strong {
+      color: $color-primary;
+    }
+  }
+
+  .panel-cta {
+    margin: 35px 0 0 0;
+    text-align: center;
+  }
+}
+
+.carousel {
+  .item-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    background: linear-gradient(rgba(#000, 0), rgba(#000, 0.15));
+    transition: 1s ease;
+  }
+
+  &:hover .item-shade{
+      background: linear-gradient(rgba(#000, 0), rgba(#000, 0.5));
+  }
+}
+
+.fact-item {
+  h4 {
+    font-size: 16px;
+    font-weight: $weight-semibold;
+  }
+
+  .description {
+    color: $color-light;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 30px;
+  }
+}
+
+.row.section {
+  margin: 80px 0 100px;
+}
+
+ul.social-icons {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+
+    .fa {
+      font-size: 18px;
+    }
+
+    a {
+      color: #aaa;
+
+      &:hover {
+        color: $color-bright-blue;
+      }
+    }
+  }
+}
+
+.pricing .fancy-cover {
+  background: linear-gradient(#fff, $color-bg-gray);
+  border-bottom: 1px solid $color-border-gray;
+}

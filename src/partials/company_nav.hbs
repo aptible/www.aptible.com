@@ -1,0 +1,25 @@
+<nav class="navbar navbar-sub" role="navigation">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="company-nav">
+      <ul class="nav navbar-nav">
+        <li {{#is basename 'about_us'}} class="active"{{/is}}>
+          <a href="/company/about_us.html">About Us</a>
+        </li>
+        <li
+          {{#is dirname 'dist/blog'}} class="active"{{/is}}
+          {{#is dirname 'dist/blog/authors'}} class="active"{{/is}}>
+          <a href="/blog">Blog</a>
+        </li>
+        <li {{#is basename 'careers'}} class="active"{{/is}}>
+          <a href="/company/careers.html">Careers</a>
+        </li>
+        <li {{#is basename 'contact'}} class="active"{{/is}}>
+          <a href="/company/contact.html">Contact</a>
+        </li>
+        <li {{#is basename 'press'}} class="active"{{/is}}>
+          <a href="/company/press.html">Press</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

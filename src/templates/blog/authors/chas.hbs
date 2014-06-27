@@ -1,0 +1,27 @@
+---
+title: Aptible Blog
+layout: application.hbs
+section: Company
+author_name: Chas Ballew
+author_email: 'chas@aptible.com'
+author_id: chas
+---
+
+<div class="container main-content">
+
+  {{> author_intro }}
+
+  <div class="post-index author-archive">
+    <div class="row section">
+      <div class="col-sm-12">
+        {{#withSort pages 'data.posted' }}
+          {{#is data.section "Blog"}}
+            {{#is data.author_id 'chas' }}
+              {{> post_excerpt}}
+            {{/is}}
+          {{/is}}
+        {{/withSort}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+---
+layout: application.hbs
+---
+
+{{> company_nav}}
+
+<div class="container main-content">
+  <div class="post-single">
+    <div class="row section">
+      <div class="col-sm-12">
+
+        <article class="post">
+          <div class="row">
+            <div class="col-sm-12">
+              <header>
+                <h1 class="title"><a href="{{ post_path page }}">{{title}}</a></h1>
+              </header>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-2 post-sidebar">
+              <ul class="post-meta">
+                <li>{{ gravatar page.author_email 'lg' }}</li>
+                <li class="author"><a href="{{ author_path page}}">{{ page.author_name }}</a></li>
+                <li class="date">{{ moment page.posted format="DD MMMM YYYY" }}</li>
+              </ul>
+            </div>
+            <div class="col-sm-8">
+              <div class="post-body">
+                {{#markdown}}
+                  {{body}}
+                {{/markdown}}
+              </div>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+    </div>
+  </div>
+</div>

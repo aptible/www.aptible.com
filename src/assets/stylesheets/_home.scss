@@ -1,0 +1,189 @@
+.home.index {
+  header.primary-header {
+    height: 450px;
+
+    .header-title-container {
+      margin-top: 100px;
+    }
+
+    h1.primary-title {
+      font-size: 45px;
+      text-transform: none;
+      @extend %smooth;
+      text-shadow: 1px 1px 2px rgba(black, 0.25);
+    }
+
+    h2.primary-sub-title {
+      font-size: 25px;
+      @extend %smooth;
+      text-shadow: 1px 1px 2px rgba(black, 0.25);
+    }
+
+  }
+}
+
+.about-billboard {
+  font-size: 18px;
+  line-height: 25px;
+
+  h1 {
+    font-size: 34px;
+    margin: 0 0 50px;
+    font-weight: $weight-bold;
+  }
+
+  h2 {
+    font-weight: $weight-normal;
+    font-size: 24px;
+    color: $color-light;
+    margin: 0 0 50px;
+  }
+
+  .cta-sidebar {
+    margin: 50px 0 0 0;
+  }
+
+  .home-cta-body {
+    padding: 40px;
+
+    h6 {
+      font-size: 16px;
+      color: $color-light;
+      font-weight: $weight-lighter;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: $weight-semibold;
+      margin-bottom: 20px;
+    }
+
+    .development-plan-info {
+      font-size: 12px;
+      color: $color-light;
+      margin: 20px 0 0;
+    }
+  }
+}
+
+.how-aptible-works {
+  margin: 50px 0;
+
+  h1 {
+    font-size: 30px;
+    font-weight: $weight-bold;
+    margin: 0 0 30px;
+  }
+
+  .how-description {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .how-ctas {
+    margin: 30px 0 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: $weight-semibold;
+  }
+}
+
+.aptible-tools {
+  .tools-carousel {
+    margin: 70px auto 0;
+    width: 330px;
+  }
+
+  .slick-slide {
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .tools-description {
+    text-align: center;
+    margin: 40px 0 0;
+  }
+}
+
+.why-aptible {
+  .why-item {
+    padding: 0 20px;
+
+    .why-icon {
+      margin: 40px 0;
+      text-align: center;
+    }
+  }
+  .fact-item {
+    text-align: center;
+
+    h4, .description {
+      font-size: 18px;
+    }
+  }
+}
+
+.customers {
+  margin: -30px 0 100px;
+
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: $weight-bold;
+    margin: 0;
+  }
+
+  .testimonial {
+    .testimonial-body {
+      font-size: 24px;
+      color: $color-light;
+      margin: 50px;
+      text-align: center;
+    }
+
+    .spacer {
+      height: 1px;
+      width: 40px;
+      margin: 30px auto;
+      background: $color-border-gray;
+    }
+
+    .post-meta {
+      .author {
+        color: $color-primary;
+      }
+      .date {
+        text-transform: none;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.logos {
+  .logo {
+    a {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    &.pager {
+      img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    &.nightingale {
+      img {
+        margin: 43px 0 0 0;
+      }
+    }
+  }
+}

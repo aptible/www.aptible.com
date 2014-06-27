@@ -1,0 +1,33 @@
+.btn-round {
+
+  &.btn-sm {
+    padding: 6px 16px 5px;
+    @include border-radius(15px);
+  }
+
+  .navbar-primary & {
+    margin-top: 9px;
+    letter-spacing: 0;
+
+    &.btn-primary {
+      background: #fff;
+      color: $color-dark-blue;
+
+      &:hover {
+        color: $color-dark-blue;
+        background: $color-bright-blue-subdued;
+      }
+    }
+
+    &.btn-default {
+      padding: 5px 16px 5px;
+      border: 1px solid #fff;
+      background: none;
+
+      &:hover {
+        background: #fff;
+        color: $color-dark-blue;
+      }
+    }
+  }
+}

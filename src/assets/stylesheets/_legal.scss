@@ -1,0 +1,22 @@
+.legal {
+  .list-group {
+    margin: 0 0 30px;
+
+    .list-group-item {
+      border: 0;
+
+      a {
+        color: $color-light;
+      }
+
+      &.list-group-title {
+        font-weight: $weight-semibold;
+      }
+
+      &:active {
+        background: $color-bg-gray;
+        @include border-radius(3px);
+      }
+    }
+  }
+}

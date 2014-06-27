@@ -1,0 +1,29 @@
+<div class="list-group">
+  <li class="list-group-item list-group-title">Agreements</li>
+  {{#withSort pages 'data.posted' }}
+    {{#is data.section 'Legal'}}
+      {{#is data.sub_section 'Agreements' }}
+        <li class="list-group-item">
+          <a href="{{legal_path this}}">
+            {{this.data.title}}
+          </a>
+        </li>
+      {{/is}}
+    {{/is}}
+  {{/withSort}}
+</div>
+
+<div class="list-group">
+  <li class="list-group-item list-group-title">Policies</li>
+  {{#withSort pages 'data.posted'}}
+    {{#is data.section 'Legal'}}
+      {{#is data.sub_section 'Policies'}}
+        <li class="list-group-item">
+          <a href="{{ legal_path this}}">
+            {{this.data.title}}
+          </a>
+        </li>
+      {{/is}}
+    {{/is}}
+  {{/withSort}}
+</div>
