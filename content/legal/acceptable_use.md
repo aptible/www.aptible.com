@@ -1,5 +1,10 @@
-<% provide(:title, 'Acceptable Use') %>
-<% provide(:meta_desc_content, "Aptible's acceptable use policy.") %>
+---
+title: Acceptable Use
+description: "Aptible's acceptable use policy."
+posted: 2014-06-30
+section: Legal
+sub_section: Policies
+---
 
 Aptible, Inc.
 =============
@@ -16,7 +21,7 @@ The examples described in this policy are not exhaustive. We may modify this pol
 
 
 ###No Illegal, Harmful, or Offensive Use or Content
-You may not use, or encourage, promote, facilitate or instruct others to use, the Services or Aptible Site for any illegal, harmful or offensive use, or to transmit, store, display, distribute or otherwise make available content that is illegal, harmful, or offensive. 
+You may not use, or encourage, promote, facilitate or instruct others to use, the Services or Aptible Site for any illegal, harmful or offensive use, or to transmit, store, display, distribute or otherwise make available content that is illegal, harmful, or offensive.
 
 Prohibited activities or content include:
 
@@ -26,8 +31,8 @@ Prohibited activities or content include:
 4. Offensive Content: Content that is defamatory, obscene, abusive, invasive of privacy, or otherwise objectionable, including content that constitutes child pornography, relates to bestiality, or depicts non-consensual sex acts.
 5. Harmful Content: Content or other computer technology that may damage, interfere with, surreptitiously intercept, or expropriate any system, program, or data, including viruses, Trojan horses, worms, time bombs, or cancelbots.
 
-###No Security Violations  
-You may not use the Services to violate the security or integrity of any network, computer or communications system, software application, or network or computing device (each, a “System”). 
+###No Security Violations
+You may not use the Services to violate the security or integrity of any network, computer or communications system, software application, or network or computing device (each, a “System”).
 
 Prohibited activities include:
 
@@ -35,8 +40,8 @@ Prohibited activities include:
 2. Interception: Monitoring of data or traffic on a System without permission.
 3. Falsification of Origin: Forging TCP/IP packet headers, e-mail headers, or any part of a message describing its origin or route. This prohibition does not include the use of aliases or anonymous remailers.
 
-### No Network Abuse  
-You may not make network connections to any users, hosts, or networks unless you have permission to communicate with them. 
+### No Network Abuse
+You may not make network connections to any users, hosts, or networks unless you have permission to communicate with them.
 
 Prohibited activities include:
 
@@ -50,14 +55,14 @@ Prohibited activities include:
 ###No E-Mail or Other Message Abuse
 You will not distribute, publish, send, or facilitate the sending of unsolicited mass e-mail or other messages, promotions, advertising, or solicitations (like “spam”), including commercial advertising and informational announcements. You will not alter or obscure mail headers or assume a sender’s identity without the sender’s explicit permission. You will not collect replies to messages sent from another Internet service provider if those messages violate this policy or the acceptable use policy of that provider.
 
-###Our Monitoring and Enforcement  
+###Our Monitoring and Enforcement
 We reserve the right, but do not assume the obligation, to investigate any violation of this policy or misuse of the Services or Aptible Site. We may:
 
 1. Investigate violations of this policy or misuse of the Services or Aptible Site;
 2. Remove, disable access to, or modify any content or resource that violates this Policy or any other agreement we have with you for use of the Services or the Aptible Site; and
 3. Report any activity that we suspect violates any law or regulation to appropriate law enforcement officials, regulators, or other appropriate third parties. Our reporting may include disclosing appropriate customer information. We also may cooperate with appropriate law enforcement agencies, regulators, or other appropriate third parties to help with the investigation and prosecution of illegal conduct by providing network and systems information related to alleged violations of this policy.
 
-###Reporting of Violations of this Policy  
-If you become aware of any violation of this policy, you will immediately notify us and provide us with assistance, as requested, to stop or remedy the violation. 
+###Reporting of Violations of this Policy
+If you become aware of any violation of this policy, you will immediately notify us and provide us with assistance, as requested, to stop or remedy the violation.
 
 To report any violation of this policy, please email <legal@aptible.com>.

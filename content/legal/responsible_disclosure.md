@@ -1,5 +1,10 @@
-<% provide(:title, 'Responsible Disclosure') %>
-<% provide(:meta_desc_content, "Aptible's policy on responsible disclosure of security vulnerabilities.") %>
+---
+title: Responsible Disclosure
+description: "Aptible's policy on responsible disclosure of security vulnerabilities."
+posted: 2014-06-30
+section: Legal
+sub_section: Policies
+---
 
 Aptible, Inc.
 =============

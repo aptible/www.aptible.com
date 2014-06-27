@@ -1,5 +1,10 @@
-<% provide(:title, 'Support') %>
-<% provide(:meta_desc_content, "Aptible's support policy.") %>
+---
+title: Support
+description: "Aptible's support policy"
+posted: 2014-06-30
+section: Legal
+sub_section: Policies
+---
 
 Aptible, Inc.
 =============

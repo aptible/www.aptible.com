@@ -1,5 +1,10 @@
-<% provide(:title, 'Fees and Pricing') %>
-<% provide(:meta_desc_content, "Aptible's fees and pricing policy.") %>
+---
+title: Fees and Pricing
+description: "Aptible's fees and pricing policy."
+posted: 2014-06-30
+section: Legal
+sub_section: Policies
+---
 
 Aptible, Inc.
 =============
