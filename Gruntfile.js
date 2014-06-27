@@ -103,30 +103,29 @@ module.exports = function (grunt) {
     gitclone: {
       legal: {
         options: {
-          branch: 'www',
-          repository: 'git@github.com:sandersonet/legal.git',
+          branch: 'master',
+          repository: 'git@github.com:aptible/legal.git',
           directory: 'content/legal'
         }
       },
       pages: {
         options: {
-          branch: 'master',
-          repository: 'git@github.com:sandersonet/www-content.git',
+          branch: 'rehaul',
+          repository: 'git@github.com:aptible/www.aptible.com.git',
           directory: 'content/pages'
         }
       },
       blog: {
         options: {
-          branch: 'www',
-          repository: 'git@github.com:sandersonet/blog.aptible.com.git',
+          branch: 'master',
+          repository: 'git@github.com:aptible/blog.aptible.com.git',
           directory: 'content/posts'
         }
       }
     },
 
-
     clean: {
-      src: ['dist']
+      src: ['dist', 'content']
     },
 
     coffee: {
@@ -226,11 +225,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sync-pkg');
   grunt.loadNpmTasks('assemble');
 
-  grunt.registerTask('gitclone:all', []);
-  //grunt.registerTask('gitclone:all', ['gitclone:legal', 'gitclone:blog', 'gitclone:pages']);
-  grunt.registerTask('release', [ 'gitclone:all', 'assemble', 'compass:site']);
-  grunt.registerTask('design', ['clean', 'gitclone:all', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile', 'connect', 'watch']);
-  grunt.registerTask('docs', ['readme', 'sync']);
-  grunt.registerTask('default', ['jshint', 'gitclone:all', 'copy:assets', 'assemble', 'compass:site', 'sync']);
-
+  grunt.registerTask('gitclone:all', ['gitclone:legal', 'gitclone:blog', 'gitclone:pages']);
+  grunt.registerTask('dist',['clean', 'gitclone:all', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile', 'connect'])
+  grunt.registerTask('release', ['dist']);
+  grunt.registerTask('server', ['dist', 'watch']);
 };
