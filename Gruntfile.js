@@ -2,7 +2,7 @@ module.exports = function (grunt) {
   'use strict';
 
   if(!grunt.file.exists('vendor/aptible-sass')) {
-    grunt.fail.fatal('>> Please run "bower install" before continuing.');
+    grunt.fail.fatal('>> You must run grunt setup!');
   }
 
   grunt.initConfig({
@@ -11,8 +11,7 @@ module.exports = function (grunt) {
       dev: {
         options: {
           port: 8000,
-          base: 'dist/',
-          keepalive: true
+          base: 'dist/'
         }
       }
     },
@@ -125,7 +124,7 @@ module.exports = function (grunt) {
     },
 
     clean: {
-      src: ['dist', 'content']
+      src: ['dist']
     },
 
     coffee: {
@@ -206,9 +205,20 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      site: {
-        files: ['src/**/*.*', 'content/**/*.*'],
-        tasks: ['assemble', 'compass:site', 'coffee:compile']
+      options: {
+        interrupt: true
+      },
+      assemble: {
+        files: ['content/**/*.hbs', 'content/**/*.md'],
+        tasks: 'assemble'
+      },
+      css: {
+        files: 'src/assets/stylesheets/**/*.*',
+        tasks: 'compass:site'
+      },
+      coffee: {
+        files: 'src/assets/javascript/**/*.*',
+        tasks: 'coffee:compile'
       }
     }
   });
@@ -225,8 +235,29 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sync-pkg');
   grunt.loadNpmTasks('assemble');
 
+  grunt.registerTask('setup', 'Installs bower, npm, and content dependencies', function() {
+
+    var exec = require('child_process').exec,
+      cb = this.async(),
+      underline = ['\x1B[4m', '\x1B[24m'],
+      onComplete = function(e, stdout, stderr) {
+        if(stdout) { console.log(stdout); }
+        if(stderr) { console.log(stderr); }
+        cb();
+      };
+
+      console.log(underline[0] + 'Running "npm install" task' + underline[1]);
+      exec('npm install', {}, onComplete);
+
+      console.log(underline[0] + 'Running "bower install" task' + underline[1]);
+      exec('bower install', {}, onComplete);
+
+      exec('grunt gitclone:all', {}, onComplete);
+    });
+
+  grunt.registerTask('watch:all', ['watch:assemble', 'watch:css', 'watch:coffee']);
   grunt.registerTask('gitclone:all', ['gitclone:legal', 'gitclone:blog', 'gitclone:pages']);
-  grunt.registerTask('dist',['clean', 'gitclone:all', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile', 'connect'])
+  grunt.registerTask('dist',['clean', 'gitclone:all', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
   grunt.registerTask('release', ['dist']);
-  grunt.registerTask('server', ['dist', 'watch']);
+  grunt.registerTask('server', ['dist', 'connect', 'watch']);
 };
