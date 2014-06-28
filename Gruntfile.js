@@ -103,14 +103,14 @@ module.exports = function (grunt) {
       legal: {
         options: {
           branch: 'master',
-          repository: 'git@github.com:aptible/legal.git',
+          repository: 'git@github.com:aptible/aptible-legal.git',
           directory: 'content/legal'
         }
       },
       pages: {
         options: {
           branch: 'rehaul',
-          repository: 'git@github.com:aptible/www.aptible.com.git',
+          repository: 'git@github.com:aptible/aptible-pages.git',
           directory: 'content/pages'
         }
       },

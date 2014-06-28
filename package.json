@@ -5,14 +5,14 @@
   "author": {
     "name": "Skylar Anderson",
     "email": "skylar@aptible.com",
-    "url": "http://www.aptible.co"
+    "url": "http://www.aptible.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/skylaranderson/www.aptible.com.git"
+    "url": "https://github.com/aptible/www.aptible.com.git"
   },
   "bugs": {
-    "url": "https://github.com/skylaranderson/www.aptible.com/issues"
+    "url": "https://github.com/aptible/www.aptible.com/issues"
   },
   "main": "Gruntfile.js",
   "dependencies": {
