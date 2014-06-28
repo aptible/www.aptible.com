@@ -1,20 +1,19 @@
 module.exports = function (grunt) {
   'use strict';
 
-  if(!grunt.file.exists('vendor/aptible-sass')) {
-    grunt.fail.fatal('>> Please run "bower install" before continuing.');
-  }
-
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     connect: {
       dev: {
         options: {
           port: 8000,
-          base: 'dist/',
-          keepalive: true
+          base: 'dist/'
         }
       }
+    },
+
+    auto_install: {
+      local: {}
     },
 
     jshint: {
@@ -104,28 +103,28 @@ module.exports = function (grunt) {
       legal: {
         options: {
           branch: 'master',
-          repository: 'git@github.com:aptible/legal.git',
+          repository: 'git@github.com:aptible/aptible-legal.git',
           directory: 'content/legal'
         }
       },
       pages: {
         options: {
           branch: 'rehaul',
-          repository: 'git@github.com:aptible/www.aptible.com.git',
+          repository: 'git@github.com:aptible/aptible-pages.git',
           directory: 'content/pages'
         }
       },
       blog: {
         options: {
           branch: 'master',
-          repository: 'git@github.com:aptible/blog.aptible.com.git',
+          repository: 'git@github.com:aptible/aptible-blog.git',
           directory: 'content/posts'
         }
       }
     },
 
     clean: {
-      src: ['dist', 'content']
+      src: ['dist']
     },
 
     coffee: {
@@ -206,13 +205,25 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      site: {
-        files: ['src/**/*.*', 'content/**/*.*'],
-        tasks: ['assemble', 'compass:site', 'coffee:compile']
+      options: {
+        interrupt: true
+      },
+      assemble: {
+        files: ['content/**/*.hbs', 'content/**/*.md'],
+        tasks: 'assemble'
+      },
+      css: {
+        files: 'src/assets/stylesheets/**/*.*',
+        tasks: 'compass:site'
+      },
+      coffee: {
+        files: 'src/assets/javascript/**/*.*',
+        tasks: 'coffee:compile'
       }
     }
   });
 
+  grunt.loadNpmTasks('grunt-auto-install');
   grunt.loadNpmTasks('grunt-git');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-coffee');
@@ -225,8 +236,20 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sync-pkg');
   grunt.loadNpmTasks('assemble');
 
-  grunt.registerTask('gitclone:all', ['gitclone:legal', 'gitclone:blog', 'gitclone:pages']);
-  grunt.registerTask('dist',['clean', 'gitclone:all', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile', 'connect'])
+  grunt.registerTask('require_setup', 'Ensures repo is setup', function() {
+    var dependencies = ['vendor/aptible-sass', 'content/legal', 'content/pages', 'content/posts', 'node_modules'],
+      i = 0;
+
+    for(i = 0; i < dependencies.length;i++) {
+      if(!grunt.file.exists(dependencies[i])) {
+        console.log(dependencies[i] + ' missing!');
+        grunt.fail.fatal('>> You must run grunt setup!');
+      }
+    }
+  });
+
+  grunt.registerTask('setup', ['auto_install', 'gitclone']);
+  grunt.registerTask('dist',[ 'require_setup', 'clean', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
   grunt.registerTask('release', ['dist']);
-  grunt.registerTask('server', ['dist', 'watch']);
+  grunt.registerTask('server', ['dist', 'connect', 'watch']);
 };
