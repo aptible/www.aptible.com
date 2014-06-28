@@ -1,7 +1,7 @@
-![Aptible](app/assets/images/aptible_logo.png)
+# ![](http://aptible-media-assets-manual.s3.amazonaws.com/web-horizontal-350.png)  
+## aptible-pages   
+A collection .md and .hbs pages used to drive www.aptible.com.
 
-# ![](https://raw.github.com/aptible/straptible/master/lib/straptible/rails/templates/public.api/icon-60px.png) www.aptible.com
+See [aptible/www.aptible.com](https://github.com/aptible/www.aptible.com) for instructions on how to assemble these pages into a static site.
 
-## A collection .md and .hbs pages used to drive www.aptible.com
-
-See [aptible/assemble-www](https://github.com/aptible/assemble-www) for instructions on how to assemble these pages into a static site.
+Copyright &copy; 2014 Aptible
