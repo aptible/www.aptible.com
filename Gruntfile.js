@@ -1,10 +1,6 @@
 module.exports = function (grunt) {
   'use strict';
 
-  if(!grunt.file.exists('vendor/aptible-sass')) {
-    grunt.fail.fatal('>> You must run grunt setup!');
-  }
-
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     connect: {
@@ -14,6 +10,10 @@ module.exports = function (grunt) {
           base: 'dist/'
         }
       }
+    },
+
+    auto_install: {
+      local: {}
     },
 
     jshint: {
@@ -223,6 +223,7 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-auto-install');
   grunt.loadNpmTasks('grunt-git');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-coffee');
@@ -235,29 +236,34 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sync-pkg');
   grunt.loadNpmTasks('assemble');
 
-  grunt.registerTask('setup', 'Installs bower, npm, and content dependencies', function() {
+  grunt.registerTask('require_setup', 'Ensures repo is setup', function() {
+    var dependencies = ['vendor/aptible-sass', 'content/legal', 'content/pages', 'content/posts', 'node_modules'],
+      i = 0;
 
+    for(i = 0; i < dependencies.length;i++) {
+      if(!grunt.file.exists(dependencies[i])) {
+        console.log(dependencies[i] + ' missing!');
+        grunt.fail.fatal('>> You must run grunt setup!');
+      }
+    }
+  });
+
+  grunt.registerTask('setup', 'Installs bower, npm, and content dependencies', function() {
     var exec = require('child_process').exec,
       cb = this.async(),
       underline = ['\x1B[4m', '\x1B[24m'],
       onComplete = function(e, stdout, stderr) {
+        console.log(e);
         if(stdout) { console.log(stdout); }
         if(stderr) { console.log(stderr); }
         cb();
       };
 
-      console.log(underline[0] + 'Running "npm install" task' + underline[1]);
-      exec('npm install', {}, onComplete);
-
-      console.log(underline[0] + 'Running "bower install" task' + underline[1]);
-      exec('bower install', {}, onComplete);
-
-      exec('grunt gitclone:all', {}, onComplete);
+      exec('grunt auto_install', {}, onComplete);
+      exec('grunt gitclone', {}, onComplete);
     });
 
-  grunt.registerTask('watch:all', ['watch:assemble', 'watch:css', 'watch:coffee']);
-  grunt.registerTask('gitclone:all', ['gitclone:legal', 'gitclone:blog', 'gitclone:pages']);
-  grunt.registerTask('dist',['clean', 'gitclone:all', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
+  grunt.registerTask('dist',[ 'require_setup', 'clean', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
   grunt.registerTask('release', ['dist']);
   grunt.registerTask('server', ['dist', 'connect', 'watch']);
 };
