@@ -109,7 +109,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          branch: 'rehaul',
+          branch: 'master',
           repository: 'git@github.com:aptible/aptible-pages.git',
           directory: 'content/pages'
         }
