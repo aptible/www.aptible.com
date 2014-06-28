@@ -117,7 +117,7 @@ module.exports = function (grunt) {
       blog: {
         options: {
           branch: 'master',
-          repository: 'git@github.com:aptible/blog.aptible.com.git',
+          repository: 'git@github.com:aptible/aptible-blog.git',
           directory: 'content/posts'
         }
       }
