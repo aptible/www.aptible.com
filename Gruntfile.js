@@ -248,21 +248,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('setup', 'Installs bower, npm, and content dependencies', function() {
-    var exec = require('child_process').exec,
-      cb = this.async(),
-      underline = ['\x1B[4m', '\x1B[24m'],
-      onComplete = function(e, stdout, stderr) {
-        console.log(e);
-        if(stdout) { console.log(stdout); }
-        if(stderr) { console.log(stderr); }
-        cb();
-      };
-
-      exec('grunt auto_install', {}, onComplete);
-      exec('grunt gitclone', {}, onComplete);
-    });
-
+  grunt.registerTask('setup', ['auto_install', 'gitclone']);
   grunt.registerTask('dist',[ 'require_setup', 'clean', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
   grunt.registerTask('release', ['dist']);
   grunt.registerTask('server', ['dist', 'connect', 'watch']);

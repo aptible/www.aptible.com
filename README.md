@@ -7,6 +7,7 @@ Assemble-www is a static site generator that pulls in content pages from [aptibl
 This will install bower, npm, and content dependencies.
 
 ````
+npm install
 grunt setup
 ````
 
@@ -15,5 +16,6 @@ grunt setup
 This will create a production release of www.aptible.com in the `dist` folder. 
 
 ````
+npm install
 grunt release
 ````
