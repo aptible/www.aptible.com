@@ -21,15 +21,14 @@ production_signup_url: http://dashboard.aptible.com/signup?plan=production
 development_signup_url: http://dashboard.aptible.com/signup?plan=development
 status_url: http://status.aptible.com/
 
-support_phone: (866) 296 5003
+support_phone: (866) 296-5003
 support_email: support@aptible.com
-sales_phone: (866) 296 5003
+sales_phone: (866) 296-5003
 sales_email: sales@aptible.com
 hello_email: hello@aptible.com
 github: aptible
 twitter: aptible
 address_1: 455 Mission Bay Blvd South
-address_2: '#124'
 city: San Francisco
 state: CA
 zip: 94158
