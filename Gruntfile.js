@@ -199,6 +199,12 @@ module.exports = function (grunt) {
             cwd: 'src/assets/images',
             src: ['**/*.*'],
             dest: 'dist/assets/images/'
+          },
+          {
+            expand: true,
+            cwd: 'src/assets/',
+            src: ['favicon.ico'],
+            dest: 'dist/assets/'
           }
         ]
       }
@@ -209,7 +215,14 @@ module.exports = function (grunt) {
         interrupt: true
       },
       assemble: {
-        files: ['content/**/*.hbs', 'content/**/*.md'],
+        files: [
+          'content/**/*.hbs',
+          'content/**/*.md',
+          'src/templates/**/*.*',
+          'src/layouts/**/*.*',
+          'src/helpers/**/*.*',
+          'src/partials/**/*.*',
+          'src/assets/images/**/*.*'],
         tasks: 'assemble'
       },
       css: {

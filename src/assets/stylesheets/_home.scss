@@ -44,24 +44,18 @@
   }
 
   .home-cta-body {
-    padding: 40px;
-
-    h6 {
-      font-size: 16px;
-      color: $color-light;
-      font-weight: $weight-lighter;
-    }
+    padding: 25px;
 
     h3 {
-      font-size: 24px;
+      margin: 20px 0;
+      font-size: 20px;
       font-weight: $weight-semibold;
-      margin-bottom: 20px;
     }
 
     .development-plan-info {
       font-size: 12px;
       color: $color-light;
-      margin: 20px 0 0;
+      margin: 14px 0 0;
     }
   }
 }

@@ -3,8 +3,71 @@
 }
 
 .employee {
+  position: relative;
+
   .panel-body {
     padding: 40px;
+  }
+
+  .bio {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 14px;
+    z-index: -1;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(black, 0.8);
+    transition: opacity .5s;
+
+    a, a:hover {
+      color: $color-bright-blue-subdued;
+      text-decoration: underline;
+    }
+  }
+
+
+  .blanket {
+    content: '.';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    opacity: .5;
+    z-index: -1;
+    border: 1px solid $color-dark-blue;
+    background: $color-dark-blue;
+    transition: opacity .5s;
+    @include border-radius(3px);
+  }
+
+  &:hover {
+    .bio, .blanket {
+      display: block;
+    }
+
+    .bio {
+      z-index: 9;
+      opacity: 1;
+    }
+
+    .blanket {
+      opacity: .9;
+      z-index: 8;
+    }
+  }
+
+  &.chas-ballew, &.frank-macreery {
+    .bio {
+      top: 20px;
+    }
+  }
+
+  &.skylar-anderson, &.drake-ballew {
+    .bio {
+      top: 90px;
+    }
   }
 
   .image {
@@ -43,12 +106,7 @@
     height: 396px;
     background: $color-bg-gray;
 
-    .carousel-control {
-      background: none;
-      color: #fff;
-    }
-
-    .item {
+    .carousel-item {
       height: 396px;
       overflow: hidden;
     }
@@ -128,4 +186,35 @@
     background: linear-gradient(#fff, $color-bg-gray);
     border-bottom: 1px solid $color-border-gray;
   }
+}
+
+.contact-support-email {
+  margin: 30px 0;
+
+  h4 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: $weight-semibold;
+  }
+}
+
+.media-item {
+    .panel-body-subdued.media-photo {
+      padding: 40px 25px;
+      text-align: center;
+
+      img {
+        max-width: 80%;
+      }
+    }
+
+    .panel-body {
+      padding: 25px;
+    }
+
+    .media-links {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
 }

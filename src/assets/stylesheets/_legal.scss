@@ -19,4 +19,31 @@
       }
     }
   }
+
+  .main-content {
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 22px;
+
+    h1 {
+      font-size: 36px;
+      border-bottom: 4px solid $color-bg-gray;
+      padding: 0 0 30px;
+      margin: 40px 0;
+    }
+
+    h2 {
+      color: $color-subdued;
+      font-size: 30px;
+      margin: 30px 0;
+    }
+
+    h3 {
+      margin: 30px 0 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
 }
