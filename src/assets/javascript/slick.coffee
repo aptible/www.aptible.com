@@ -1,8 +1,10 @@
 $(document).ready ->
-  $('.tools-carousel').slick
+  $('.tools-carousel, .carousel').slick
     autoplay: true
-    autoplaySpeed: 2000
+    autoplaySpeed: 4000
+    arrows: false
 
   $('.testimonials').slick
     autoplay: true
     autoplaySpeed: 5000
+    arrows: true
