@@ -20,8 +20,8 @@ If you discover a security vulnerability, please notify us in private and give u
 
 ###PGP
 Encrypting your email is not required, but should you deem it necessary, our public key for security@aptible.com is below:
-<%= link_to "Aptible PGP Key", "/D0511CDE.asc", id: "pgp-key-link" %>
-<code id="pgp-key-block">
+
+````
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG/MacGPG2 v2.0.20 (Darwin)
 Comment: GPGTools - https://gpgtools.org
@@ -59,4 +59,4 @@ C4j2QRAQAa31UUTUPVgwm+JNsttbD4wWZqLgnLmmucgn9derdVcdmLtjKgfT4z+N
 QDyUZbm5kWSTPXDObrmaJ5lqg2bPcioHkzHx9ONWaQF7RGN5qCpX8nPOG8/EAsKC
 =7jB2
 -----END PGP PUBLIC KEY BLOCK-----
-</code>
+````
