@@ -18,7 +18,7 @@ section: Support
               <form method="get" action="{{config.knowledgebase_search_url}}">
                 <input type="hidden" name="utf8" value="✓" />
                 <input type="hidden" nname="commit" value="search" />
-                <input type="text" name="query" class="form-control" placeholder="Search our Knowledge Base">
+                <input type="text" name="query" class="form-control" placeholder="Search Our Knowledge Base">
               </form>
             </div>
           </div>
@@ -37,19 +37,8 @@ section: Support
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-3 fact-item col-sm-offset-3">
-          <h4>Support By Phone</h4>
-          <div class="description">
-            {{config.support_phone}}
-          </div>
-        </div>
-        <div class="col-sm-3 fact-item">
-          <h4>Support By Email</h4>
-          <div class="description">
-            {{mailto config.support_email}}
-          </div>
-        </div>
+      <div class="contact-support-email">
+        <h4>Email Support {{mailto config.support_email}}</h4>
       </div>
 
     </div>

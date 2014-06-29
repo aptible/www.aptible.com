@@ -49,20 +49,19 @@ perks:
       <div class="col-sm-8 col-sm-offset-2">
 
         <div class="carousel">
-          <div id="aptible-careers-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              {{#each slides}}
-                <div class="item">
-                  <div class="item-shade"></div>
-                  <img src="{{url}}" alt="{{name}}">
-                  <div class="carousel-caption">
-                    <h3>{{title}}</h3>
-                    <p>{{caption}}</p>
-                  </div>
-                </div>
-              {{/each}}
+
+          {{#each slides}}
+            <div class="carousel-item">
+              <div class="item-shade"></div>
+              <img src="{{url}}" alt="{{name}}">
+              <div class="carousel-caption">
+                <h3>{{title}}</h3>
+                <p>{{caption}}</p>
+              </div>
             </div>
-          </div>
+          {{/each}}
+
+
         </div>
       </div>
     </div>
