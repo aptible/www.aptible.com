@@ -1,0 +1,27 @@
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+.navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+/* xs devices (tablets, 768px and down) */
+@media (max-width: $screen-sm-min) {
+  @import 'mobile_xs';
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  @import 'mobile_sm';
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  @import 'mobile_md'
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

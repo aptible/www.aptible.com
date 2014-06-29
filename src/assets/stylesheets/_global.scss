@@ -1,4 +1,5 @@
 body {
+  background: #fcfcfc;
   font-size: 16px;
   line-height: 1.3;
 }
@@ -117,7 +118,7 @@ header.primary-header {
   }
 }
 
-footer.aptible-footer {
+.aptible-footer {
   margin-top: 0;
 
   ul.nav {
@@ -135,7 +136,7 @@ footer.aptible-footer {
   }
 
   .sub-footer {
-    margin: 50px 0 0 0;
+    margin-top: 50px;
     text-align: center;
     border-top: 1px solid $color-border-gray;
   }
@@ -238,7 +239,8 @@ footer.aptible-footer {
 }
 
 .row.section {
-  margin: 80px 0 100px;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 
 ul.social-icons {

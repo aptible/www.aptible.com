@@ -1,0 +1,141 @@
+header.primary-header {
+  height: 125px;
+
+  .navbar-brand {
+    padding: 8px 15px;
+
+    img {
+      width: 125px;
+    }
+  }
+
+  .navbar-collapse {
+    border: 1px solid rgba(black, 0.25);
+    border-width: 1px 0;
+    background: rgba(black, 0.45);
+    padding: 0 15px 15px;
+    @include box-shadow(rgba(black, 0.15) 0 1px 3px inset, rgba(black, 0.15) 0 -1px 3px inset);
+  }
+
+  .nav-primary {
+    li {
+      text-align: center;
+    }
+  }
+
+  .header-title-container h1.primary-title {
+    margin-top: 0;
+  }
+
+}
+
+.home.index header.primary-header {
+  height: 100%;
+
+  .header-title-container {
+    margin-top: 60px;
+  }
+}
+
+.row.section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-billboard {
+  font-size: 16px;
+
+  h1 {
+    font-size: 26px;
+    margin: 0 0 25px;
+  }
+
+  h2 {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .cta-sidebar {
+    margin: 15px 0 0 0;
+    text-align: center;
+
+    .home-cta-body {
+      padding: 10px;
+    }
+  }
+}
+
+.panel.panel-default.why-aptible-panel {
+  .panel-body {
+    padding: 15px;
+  }
+
+  .aptible-tools {
+    border-bottom: 1px solid $color-border-gray;
+  }
+
+  .tools-carousel {
+    width: auto;
+    margin: 20px auto 0;
+  }
+
+  .tools-description {
+    margin-top: 10px;
+    .fact-item .description {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.how-aptible-works {
+  margin: 25px 0;
+
+  h1 {
+    font-size: 26px;
+    margin: 0 0 25px;
+  }
+
+  .how-description {
+    font-size: 16px;
+  }
+
+  .how-ctas {
+    li {
+      padding: 10px 0;
+    }
+  }
+}
+
+.slick-track {
+  width: 100%;
+
+  .slick-slide img {
+    max-width: 80%;
+  }
+}
+
+footer.aptible-footer {
+  padding: 25px 0;
+  margin-top: 0;
+
+  .nav {
+    margin: 0 0 25px;
+  }
+
+  .sub-footer {
+    margin-top: 0;
+    padding-top: 15px;
+
+    .nav {
+      li {
+        margin: 8px 0;
+        display: block;
+      }
+    }
+  }
+}
+
+.fancy-cover:after {
+  display: none !important;
+}
