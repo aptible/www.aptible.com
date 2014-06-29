@@ -1,6 +1,8 @@
-# ![](https://raw.github.com/aptible/straptible/master/lib/straptible/rails/templates/public.api/icon-60px.png) Aptible::Blog
+# ![](http://aptible-media-assets-manual.s3.amazonaws.com/web-horizontal-350.png)  
+## aptible-blog   
+A collection .md and .hbs pages used to drive www.aptible.com.
 
-## A collection blog posts used to drive aptible.com/bog
+See [aptible/www.aptible.com](https://github.com/aptible/www.aptible.com) for instructions on how to assemble these pages into a static site.
 
 #### Creating a Blog Post
 
@@ -18,7 +20,6 @@ section: Blog
 ---
 ````
 
-
 #### Using media in your posts
 
 Use the `{{blog_asset_path}}` helper to build a relative URL to the media in the assets folder. The following will generate a path to `assets/aptible.png`.
@@ -32,3 +33,5 @@ You may also store assets in sub folders
 ````
 {{ blog_asset_path 'logos/aptible.png' }}
 ````
+
+Copyright &copy; 2014 Aptible
