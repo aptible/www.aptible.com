@@ -4,6 +4,16 @@
       padding: 0 65px;
     }
   }
+
+}
+
+.pricing .fancy-cover {
+  background: linear-gradient($background, $color-bg-gray);
+  border-bottom: 1px solid $color-border-gray;
+
+  &:after {
+    display: none;
+  }
 }
 
 .plan-benefit {

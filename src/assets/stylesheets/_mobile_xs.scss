@@ -1,6 +1,6 @@
 header.primary-header {
   height: 125px;
-
+  background-position: center center;
   .navbar-brand {
     padding: 8px 15px;
 
@@ -9,17 +9,31 @@ header.primary-header {
     }
   }
 
+  .navbar-toggle:not(.collapsed) {
+    background: rgba(black, 0.5);
+  }
+
   .navbar-collapse {
-    border: 1px solid rgba(black, 0.25);
-    border-width: 1px 0;
-    background: rgba(black, 0.45);
+    border: 1px solid shade($color-dark-blue, 30);
+    border-width: 1px 0 0;
+    background: $color-dark-blue;
     padding: 0 15px 15px;
-    @include box-shadow(rgba(black, 0.15) 0 1px 3px inset, rgba(black, 0.15) 0 -1px 3px inset);
+    position:relative;
+    z-index: 9;
+    @include box-shadow( 0 2px 4px rgba(black, 0.22));
   }
 
   .nav-primary {
     li {
       text-align: center;
+
+      &:last-child a {
+        margin: 0 25px;
+      }
+
+      > a.btn-primary{
+        margin: 5px 25px 20px;
+      }
     }
   }
 
@@ -136,6 +150,109 @@ footer.aptible-footer {
   }
 }
 
+.navbar-sub {
+  min-height: 0;
+
+  .menu-label {
+    float: left;
+    padding: 6px 0 0 0;
+    margin-left: 0;
+  }
+
+  .menu-icon {
+    float: right;
+    margin-right: 0;
+
+    .icon-bar {
+      background: $color-light;
+    }
+  }
+
+  .navbar-toggle.menu-icon:not(.collapsed) {
+    background: $color-border-gray;
+  }
+
+  .navbar-collapse.in {
+    @include box-shadow(0 3px 4px rgba(0, 0, 0, 0.22));
+  }
+
+  .nav.navbar-nav {
+    margin: 0;
+
+
+    > li {
+      display: block;
+
+      > a {
+        padding: 10px;
+        border: 0;
+      }
+
+      &:first-child a {
+        border: 0;
+      }
+    }
+  }
+}
+
+
 .fancy-cover:after {
   display: none !important;
+}
+
+
+.post {
+  padding: 0 15px 15px;
+
+  .title {
+    margin: 15px 0;
+    font-size: 28px;
+  }
+
+  .excerpt {
+    font-size: 18px;
+  }
+}
+
+.post-meta .gravatar {
+  vertical-align: 0;
+}
+
+.aptible-careers .carousel{
+  height: auto;
+
+  .slick-track .slick-slide img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel-item {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.contact-support-panel {
+  &.panel.panel-default {
+    .panel-body-subdued {
+      padding: 10px;
+    }
+  }
+
+  .panel-body {
+    padding: 25px;
+  }
+
+  .contact-form {
+    margin-top: 25px;
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.panel.employee {
+  margin-bottom: 20px;
 }

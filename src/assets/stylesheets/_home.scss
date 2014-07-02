@@ -92,6 +92,13 @@
   .slick-slide {
     img {
       margin: 0 auto;
+      max-width: 100%;
+
+      &.django {
+        width: 180px;
+        margin-top: 25px;
+      }
+
     }
   }
 
