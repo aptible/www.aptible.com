@@ -19,14 +19,14 @@ layout: application.hbs
           </div>
 
           <div class="row">
-            <div class="col-sm-2 post-sidebar">
+            <div class="col-md-2 col-sm-3 post-sidebar">
               <ul class="post-meta">
                 <li>{{ gravatar page.author_email 'lg' }}</li>
                 <li class="author"><a href="{{ author_path page}}">{{ page.author_name }}</a></li>
                 <li class="date">{{ moment page.posted format="DD MMMM YYYY" }}</li>
               </ul>
             </div>
-            <div class="col-sm-8">
+            <div class="col-md-8 col-sm-9">
               <div class="post-body">
                 {{#markdown}}
                   {{body}}
