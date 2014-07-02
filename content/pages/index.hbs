@@ -23,13 +23,27 @@ how:
     title: The right tool for the right job.
     description: "Never be forced to choose between good engineering and compliance. \n\nAptible supports every major language and framework, and most open source databases."
     logos:
-      redis: /pages/assets/redis.png
-      mongo: /pages/assets/mongodb.png
-      pg: /pages/assets/postgres.png
-      mysql: /pages/assets/mysql.png
-      go: /pages/assets/gophercolor.png
-      node: /pages/assets/nodejs.png
-      ruby: /pages/assets/ruby.png
+      redis:
+        url: /pages/assets/redis.png
+        className: redis
+      mongo:
+        url: /pages/assets/mongodb.png
+        className: mongo
+      pg:
+        url: /pages/assets/postgres.png
+        className: pg
+      mysql:
+        url: /pages/assets/mysql.png
+        className: mysql
+      django:
+        url: /pages/assets/django.png
+        className: django
+      node:
+        url: /pages/assets/nodejs.png
+        className: node
+      ruby:
+        url: /pages/assets/ruby.png
+        className: ruby
 why:
   lockin:
     title: No lock-in
@@ -38,12 +52,14 @@ why:
   compliance:
     title: One-stop HIPAA compliance
     description: "Running your back end means our compliance tools have deep hooks into your ops, letting us help with every aspect of HIPAA compliance."
-    logo: /pages/assets/compliant-code.svg
+    logo: /pages/assets/hipaa-compliance.svg
   workflow:
     title: We’re built for your workflow
     description: "Like Heroku? You’ll love Aptible.  Manage apps, not infrastructure. Integrates seamlessly with Travis, Circle, and other CI tools."
     logo: /pages/assets/travis.png
+
 customers:
+  enabled: false
   pager:
     customer_name: Pager
     name: Oscar Salazar
@@ -74,14 +90,16 @@ customers:
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-7">
           <h2>{{about.h2}}</h2>
           <div class="row">
-            <div class="col-sm-6">{{#markdown}}{{about.p1}}{{/markdown}}</div>
-            <div class="col-sm-6">{{#markdown}}{{about.p2}}{{/markdown}}</div>
+            <div class="col-sm-12">
+              {{#markdown}}{{about.p1}}{{/markdown}}
+              {{#markdown}}{{about.p2}}{{/markdown}}
+            </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-sm-offset-1">
           <div class="panel panel-default cta-sidebar">
             <div class="home-cta-body">
               <h3>Like Heroku? You'll Love Aptible</h3>
@@ -98,19 +116,19 @@ customers:
 
   <div class="row section">
     <div class="col-sm-12">
-      <div class="panel panel-default">
+      <div class="panel panel-default why-aptible-panel">
         <div class="panel-body">
           <div class="row">
             <div class="col-sm-6 aptible-tools">
               <div class="tools-carousel">
                 {{#each how.tools.logos}}
                   <div class="tool logo">
-                    <img src="{{.}}" />
+                    <img src="{{url}}" class="{{className}}" />
                   </div>
                 {{/each}}
               </div>
               <div class="tools-description row">
-                <div class="col-sm-6 col-sm-offset-3">
+                <div class="col-sm-8 col-sm-offset-2">
                   <div class="fact-item">
                     <h4>{{how.tools.title}}</h4>
                     <div class="description">{{how.tools.description}}</div>
@@ -174,6 +192,7 @@ customers:
   </div>
 </div>
 
+{{#if customers.enabled}}
 <div class="container">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
@@ -209,3 +228,4 @@ customers:
     </div>
   </div>
 </div>
+{{/if}}
