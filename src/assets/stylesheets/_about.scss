@@ -80,14 +80,14 @@
     background: $color-bg-gray;
     padding: 8px;
     margin: 0 auto 30px;
-    height: 156px;
-    width: 156px;
+    width: 100%;
+    max-width: 156px;
     @include border-radius(78px);
     overflow: hidden;
 
     .gravatar {
-      height: 140px;
-      width: 140px;
+      width: 100%;
+      max-width: 140px;
       display:block;
       @include border-radius(70px)
     }
