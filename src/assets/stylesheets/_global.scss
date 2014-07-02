@@ -1,4 +1,7 @@
+$background: #fcfcfc;
+
 body {
+  background: $background;
   font-size: 16px;
   line-height: 1.3;
 }
@@ -10,7 +13,7 @@ header.primary-header {
       rgba(11, 96, 151, .9),
       shade(rgba(11, 96, 151, .95), 12)
     ),
-    url(/assets/images/aptible-blueprint-bg.jpg) no-repeat center center;
+    url(/assets/images/aptible-rockhealth-bg.jpg) no-repeat center -200px;
   @include background-size(cover);
 
   .navbar-brand {
@@ -61,6 +64,7 @@ header.primary-header {
     @extend %smooth;
 
     h1.primary-title {
+      margin-top: -1px;
       text-transform: uppercase;
       font-size: 30px;
       font-weight: $weight-lighter;
@@ -117,7 +121,7 @@ header.primary-header {
   }
 }
 
-footer.aptible-footer {
+.aptible-footer {
   margin-top: 0;
 
   ul.nav {
@@ -135,7 +139,7 @@ footer.aptible-footer {
   }
 
   .sub-footer {
-    margin: 50px 0 0 0;
+    margin-top: 50px;
     text-align: center;
     border-top: 1px solid $color-border-gray;
   }
@@ -238,7 +242,8 @@ footer.aptible-footer {
 }
 
 .row.section {
-  margin: 80px 0 100px;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 
 ul.social-icons {
@@ -263,7 +268,12 @@ ul.social-icons {
   }
 }
 
-.pricing .fancy-cover {
-  background: linear-gradient(#fff, $color-bg-gray);
+.fancy-cover:after {
+  content: '.';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient($background, $color-bg-gray);
   border-bottom: 1px solid $color-border-gray;
+  width: 100%;
 }

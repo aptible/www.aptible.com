@@ -1,0 +1,258 @@
+header.primary-header {
+  height: 125px;
+  background-position: center center;
+  .navbar-brand {
+    padding: 8px 15px;
+
+    img {
+      width: 125px;
+    }
+  }
+
+  .navbar-toggle:not(.collapsed) {
+    background: rgba(black, 0.5);
+  }
+
+  .navbar-collapse {
+    border: 1px solid shade($color-dark-blue, 30);
+    border-width: 1px 0 0;
+    background: $color-dark-blue;
+    padding: 0 15px 15px;
+    position:relative;
+    z-index: 9;
+    @include box-shadow( 0 2px 4px rgba(black, 0.22));
+  }
+
+  .nav-primary {
+    li {
+      text-align: center;
+
+      &:last-child a {
+        margin: 0 25px;
+      }
+
+      > a.btn-primary{
+        margin: 5px 25px 20px;
+      }
+    }
+  }
+
+  .header-title-container h1.primary-title {
+    margin-top: 0;
+  }
+
+}
+
+.home.index header.primary-header {
+  height: 100%;
+
+  .header-title-container {
+    margin-top: 60px;
+  }
+}
+
+.row.section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-billboard {
+  font-size: 16px;
+
+  h1 {
+    font-size: 26px;
+    margin: 0 0 25px;
+  }
+
+  h2 {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .cta-sidebar {
+    margin: 15px 0 0 0;
+    text-align: center;
+
+    .home-cta-body {
+      padding: 10px;
+    }
+  }
+}
+
+.panel.panel-default.why-aptible-panel {
+  .panel-body {
+    padding: 15px;
+  }
+
+  .aptible-tools {
+    border-bottom: 1px solid $color-border-gray;
+  }
+
+  .tools-carousel {
+    width: auto;
+    margin: 20px auto 0;
+  }
+
+  .tools-description {
+    margin-top: 10px;
+    .fact-item .description {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.how-aptible-works {
+  margin: 25px 0;
+
+  h1 {
+    font-size: 26px;
+    margin: 0 0 25px;
+  }
+
+  .how-description {
+    font-size: 16px;
+  }
+
+  .how-ctas {
+    li {
+      padding: 10px 0;
+    }
+  }
+}
+
+.slick-track {
+  width: 100%;
+
+  .slick-slide img {
+    max-width: 80%;
+  }
+}
+
+footer.aptible-footer {
+  padding: 25px 0;
+  margin-top: 0;
+
+  .nav {
+    margin: 0 0 25px;
+  }
+
+  .sub-footer {
+    margin-top: 0;
+    padding-top: 15px;
+
+    .nav {
+      li {
+        margin: 8px 0;
+        display: block;
+      }
+    }
+  }
+}
+
+.navbar-sub {
+  min-height: 0;
+
+  .menu-label {
+    float: left;
+    padding: 6px 0 0 0;
+    margin-left: 0;
+  }
+
+  .menu-icon {
+    float: right;
+    margin-right: 0;
+
+    .icon-bar {
+      background: $color-light;
+    }
+  }
+
+  .navbar-toggle.menu-icon:not(.collapsed) {
+    background: $color-border-gray;
+  }
+
+  .navbar-collapse.in {
+    @include box-shadow(0 3px 4px rgba(0, 0, 0, 0.22));
+  }
+
+  .nav.navbar-nav {
+    margin: 0;
+
+
+    > li {
+      display: block;
+
+      > a {
+        padding: 10px;
+        border: 0;
+      }
+
+      &:first-child a {
+        border: 0;
+      }
+    }
+  }
+}
+
+
+.fancy-cover:after {
+  display: none !important;
+}
+
+
+.post {
+  padding: 0 15px 15px;
+
+  .title {
+    margin: 15px 0;
+    font-size: 28px;
+  }
+
+  .excerpt {
+    font-size: 18px;
+  }
+}
+
+.post-meta .gravatar {
+  vertical-align: 0;
+}
+
+.aptible-careers .carousel{
+  height: auto;
+
+  .slick-track .slick-slide img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel-item {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.contact-support-panel {
+  &.panel.panel-default {
+    .panel-body-subdued {
+      padding: 10px;
+    }
+  }
+
+  .panel-body {
+    padding: 25px;
+  }
+
+  .contact-form {
+    margin-top: 25px;
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.panel.employee {
+  margin-bottom: 20px;
+}

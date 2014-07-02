@@ -4,16 +4,15 @@
 
     .list-group-item {
       border: 0;
-
-      a {
-        color: $color-light;
-      }
+      background: $background;
+      color: $color-light;
 
       &.list-group-title {
         font-weight: $weight-semibold;
+        color: $color-primary;
       }
 
-      &:active {
+      &:active, &:hover {
         background: $color-bg-gray;
         @include border-radius(3px);
       }

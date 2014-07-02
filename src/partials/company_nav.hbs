@@ -1,5 +1,19 @@
 <nav class="navbar navbar-sub" role="navigation">
   <div class="container">
+
+    <div class="clearfix visible-xs-block">
+      <button type="button" class="navbar-toggle menu-label collapsed" data-toggle="collapse" data-target="#company-nav">
+        Company Navigation
+      </button>
+
+      <button type="button" class="navbar-toggle menu-icon collapsed" data-toggle="collapse" data-target="#company-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
     <div class="collapse navbar-collapse" id="company-nav">
       <ul class="nav navbar-nav">
         <li {{#is basename 'about_us'}} class="active"{{/is}}>
