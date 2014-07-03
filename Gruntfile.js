@@ -243,28 +243,11 @@ module.exports = function(grunt) {
                 files: 'src/assets/javascript/**/*.*',
                 tasks: 'coffee:compile'
             }
-        },
-
-        useminPrepare: {
-            options: {
-                dest: 'dist'
-            },
-            dist: {
-                src: 'dist/**/*.*'
-            }
-        },
-
-        usemin: {
-            options: {},
-            dist: {
-
-            }
         }
     });
 
     grunt.loadNpmTasks('grunt-auto-install');
     grunt.loadNpmTasks('grunt-git');
-    grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-compass');
