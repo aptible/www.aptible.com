@@ -14,6 +14,7 @@ body {
       rgba(0, 0, 0, 0.3)
     ),
     url(/assets/images/abstract-header.svg) no-repeat center center;
+    @include background-size(cover);
   }
 }
 
@@ -25,12 +26,12 @@ body {
       rgba(0, 0, 0, 0.3)
     ),
     url(/assets/images/abstract-header.svg) no-repeat center center;
+    @include background-size(cover);
   }
 }
 
 header.primary-header {
   height: 200px;
-  @include background-size(cover);
 
   .navbar-brand {
     img {
