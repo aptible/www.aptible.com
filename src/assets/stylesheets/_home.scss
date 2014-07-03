@@ -114,7 +114,22 @@
 
     .why-icon {
       margin: 40px 0;
+      height: 98px;
       text-align: center;
+
+      &.containers {}
+
+      &.compliance {
+        img {
+          margin-top: 20px;
+        }
+      }
+
+      &.workflow {
+        img {
+          margin-top: 10px;
+        }
+      }
     }
   }
   .fact-item {
