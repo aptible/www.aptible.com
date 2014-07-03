@@ -77,7 +77,9 @@ module.exports = function(grunt) {
         },
 
         compass: {
-            options: {},
+            options: {
+                config: 'compass.rb'
+            },
             site: {
                 options: {
                     sassDir: 'src/assets/stylesheets',
@@ -131,62 +133,79 @@ module.exports = function(grunt) {
 
         copy: {
             assets: {
-                files: [{
+                files: [
+                {
                     expand: true,
                     cwd: 'vendor/font-awesome/fonts',
                     src: ['*.*'],
                     dest: 'dist/assets/fonts/'
-                }, {
+                },
+                {
                     expand: true,
                     cwd: 'vendor/bootstrap-sass-official/vendor/assets/fonts/bootstrap',
-                    src: ['*.*'],
-                    dest: 'dist/assets/css/bootstrap/'
-                }, {
+                    src: ['*.*'], dest: 'dist/assets/css/bootstrap/'
+                },
+                {
                     expand: true,
                     cwd: 'vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap',
                     src: ['*.*'],
                     dest: 'dist/assets/js/'
-                }, {
+                },
+                {
+                    expand: true,
+                    cwd: 'vendor/modernizr',
+                    src: ['**/*.*'],
+                    dest: 'dist/assets/modernizr'
+                },
+                {
                     expand: true,
                     cwd: 'vendor/slick-carousel/slick',
                     src: ['**/*.*'],
                     dest: 'dist/assets/slick'
-                }, {
+                },
+                {
                     expand: true,
                     cwd: 'vendor/aptible-sass/dist/images',
                     src: ['*.*'],
                     dest: 'dist/assets/images/'
-                }, {
+                },
+                {
                     expand: true,
                     cwd: 'vendor/jquery/dist',
                     src: ['*.js'],
                     dest: 'dist/assets/js/'
-                }, {
+                },
+                {
                     expand: true,
                     cwd: 'content/posts/assets',
                     src: ['**/*.*'],
                     dest: 'dist/blog/assets/'
-                }, {
+                },
+                {
                     expand: true,
                     cwd: 'content/legal/assets',
                     src: ['**/*.*'],
                     dest: 'dist/legal/assets/'
-                }, {
+                },
+                {
                     expand: true,
                     cwd: 'content/pages/assets',
                     src: ['**/*.*'],
                     dest: 'dist/pages/assets/'
-                }, {
+                },
+                {
                     expand: true,
                     cwd: 'src/assets/images',
                     src: ['**/*.*'],
                     dest: 'dist/assets/images/'
-                }, {
+                },
+                {
                     expand: true,
                     cwd: 'src/assets/',
                     src: ['favicon.ico'],
                     dest: 'dist/assets/'
-                }]
+                }
+                ]
             }
         },
 
@@ -194,16 +213,21 @@ module.exports = function(grunt) {
             options: {
                 interrupt: true
             },
+            vendor: {
+                files: [
+                'vendor/**/*.*'
+                ],
+                tasks: ['assemble', 'compass:site', 'coffee:compile']
+            },
             assemble: {
                 files: [
-                    'content/**/*.hbs',
-                    'content/**/*.md',
-                    'src/templates/**/*.*',
-                    'src/layouts/**/*.*',
-                    'src/helpers/**/*.*',
-                    'src/partials/**/*.*',
-                    'src/assets/images/**/*.*'
-                ],
+                'content/**/*.hbs',
+                'content/**/*.md',
+                'src/templates/**/*.*',
+                'src/layouts/**/*.*',
+                'src/helpers/**/*.*',
+                'src/partials/**/*.*',
+                'src/assets/images/**/*.*'],
                 tasks: 'assemble'
             },
             css: {
@@ -232,7 +256,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('require_setup', 'Ensures repo is setup', function() {
         var dependencies = ['vendor/aptible-sass', 'content/legal', 'content/pages', 'content/posts', 'node_modules'],
-            i = 0;
+        i = 0;
 
         for (i = 0; i < dependencies.length; i++) {
             if (!grunt.file.exists(dependencies[i])) {
