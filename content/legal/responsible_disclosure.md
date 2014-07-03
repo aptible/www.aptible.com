@@ -1,25 +1,35 @@
 ---
-title: Responsible Disclosure
+title: Responsible Disclosure Policy
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2014-06-30
+posted: 2014-07-02
 section: Legal
 sub_section: Policies
 ---
 
 Aptible, Inc.
 =============
-Responsible Disclosure of Security Vulnerabilities
+Responsible Disclosure Policy
 --------------
 
-Version 1.0 - January 2014
+Version 2.0 - July 2014
 
-###Please email us! security@aptible.com
+### Responsible Disclosure
+We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
 
-###Thank you!
-If you discover a security vulnerability, please notify us in private and give us the chance to fix it. Publicly disclosing a security vulnerability without informing us first puts the community at risk. When you notify us of a potential problem, we will work with you to make sure we understand the scope and cause of the issue. Thank you for your work and interest in making the healthcare community safer and more secure!
+If you discover a security vulnerability, please give us the chance to fix it, either by participating in our bounty program or emailing us at [security@aptible.com](mailto:security@aptible.com). Publicly disclosing a security vulnerability without informing us first puts the rest of the community at risk. When you notify us of a potential problem, we will work with you to make sure we understand the scope and cause of the issue.
 
-###PGP
-Encrypting your email is not required, but should you deem it necessary, our public key for security@aptible.com is below:
+Thank you for your work and interest in making the healthcare community safer and more secure!
+
+### Bug Bounty Program
+Aptible maintains a vulnerability reporting program with rewards for security researchers. Bugcrowd helps us manage the bounty program. Please report potential vulnerabilities through our program page at: https://bugcrowd.com/aptible
+
+Please read the rules carefully!
+
+### Email
+You can always email us at [security@aptible.com](mailto:security@aptible.com) with general questions or vulnerabilities you do not want to report through Bugcrowd.  
+
+### PGP
+If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for security@aptible.com is below:
 
 ````
 -----BEGIN PGP PUBLIC KEY BLOCK-----
