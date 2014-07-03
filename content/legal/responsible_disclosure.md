@@ -14,25 +14,24 @@ Responsible Disclosure Policy
 Version 2.0 - July 2014
 
 ### Responsible Disclosure
-We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services. 
+We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
 
-If you discover a security vulnerability, please give us the chance to fix it, either by participating in our bounty program or emailing us at [security@aptible.com](mailto:security@aptible.com). Publicly disclosing a security vulnerability without informing us first puts the rest of the community at risk. When you notify us of a potential problem, we will work with you to make sure we understand the scope and cause of the issue. 
+If you discover a security vulnerability, please give us the chance to fix it, either by participating in our bounty program or emailing us at [security@aptible.com](mailto:security@aptible.com). Publicly disclosing a security vulnerability without informing us first puts the rest of the community at risk. When you notify us of a potential problem, we will work with you to make sure we understand the scope and cause of the issue.
 
 Thank you for your work and interest in making the healthcare community safer and more secure!
 
 ### Bug Bounty Program
 Aptible maintains a vulnerability reporting program with rewards for security researchers. Bugcrowd helps us manage the bounty program. Please report potential vulnerabilities through our program page at: https://bugcrowd.com/aptible
 
-Please read the rules carefully! 
+Please read the rules carefully!
 
 ### Email
 You can always email us at [security@aptible.com](mailto:security@aptible.com) with general questions or vulnerabilities you do not want to report through Bugcrowd.  
 
 ### PGP
 If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for security@aptible.com is below:
-<br>
-<pre>
-<code>
+
+````
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG/MacGPG2 v2.0.20 (Darwin)
 Comment: GPGTools - https://gpgtools.org
@@ -70,5 +69,4 @@ C4j2QRAQAa31UUTUPVgwm+JNsttbD4wWZqLgnLmmucgn9derdVcdmLtjKgfT4z+N
 QDyUZbm5kWSTPXDObrmaJ5lqg2bPcioHkzHx9ONWaQF7RGN5qCpX8nPOG8/EAsKC
 =7jB2
 -----END PGP PUBLIC KEY BLOCK-----
-</code>
-</pre>
+````
