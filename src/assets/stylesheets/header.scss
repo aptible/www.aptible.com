@@ -1,0 +1,14 @@
+// #Dots path {
+//   -webkit-animation: kaboom 5s ease alternate infinite;
+//   -webkit-animation-delay: 0.1s;
+// }
+
+// @for $i from 1 through 600 {
+//     #Dots #Fill-#{$i} {
+//       $a: random(3) + s;
+//       $delay: random(15) + s;
+//       -webkit-animation: pulsate $a ease-out;
+//       -webkit-animation-iteration-count: infinite;
+//       -webkit-animation-delay: $delay;
+//     }
+// }
