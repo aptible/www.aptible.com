@@ -48,15 +48,18 @@ why:
   lockin:
     title: No lock-in
     description: "Integration is as simple as adding a single file to your codebase.  No proprietary APIs, no migration fees, and no dev/prod disparity."
-    logo: /pages/assets/docker.png
+    logo: /pages/assets/containers.svg
+    classNamr: containers
   compliance:
     title: One-stop HIPAA compliance
     description: "Running your back end means our compliance tools have deep hooks into your ops, letting us help with every aspect of HIPAA compliance."
-    logo: /pages/assets/hipaa-compliance.svg
+    logo: /pages/assets/HIPAA-compliance.svg
+    className: compliance
   workflow:
     title: We’re built for your workflow
     description: "Like Heroku? You’ll love Aptible.  Manage apps, not infrastructure. Integrates seamlessly with Travis, Circle, and other CI tools."
-    logo: /pages/assets/travis.png
+    logo: /pages/assets/workflow.svg
+    className: workflow
 
 customers:
   enabled: false
@@ -154,7 +157,7 @@ customers:
           <div class="row">
             <div class="col-sm-4">
               <div class="why-item">
-                <div class="why-icon">
+                <div class="why-icon {{why.lockin.className}}">
                   <img src="{{why.lockin.logo}}" />
                 </div>
                 <div class="why-description fact-item">
@@ -165,7 +168,7 @@ customers:
             </div>
             <div class="col-sm-4">
               <div class="why-item">
-                <div class="why-icon">
+                <div class="why-icon {{why.workflow.className}}">
                   <img src="{{why.workflow.logo}}" />
                 </div>
                 <div class="why-description fact-item">
@@ -176,7 +179,7 @@ customers:
             </div>
             <div class="col-sm-4">
               <div class="why-item">
-                <div class="why-icon">
+                <div class="why-icon {{why.compliance.className}}">
                   <img src="{{why.compliance.logo}}" />
                 </div>
                 <div class="why-description fact-item">
