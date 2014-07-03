@@ -29,7 +29,12 @@ module.exports = function(grunt) {
                 layout: 'application.hbs',
                 layoutdir: 'src/layouts/',
                 partials: 'src/partials/**/*',
-                data: 'config.yml'
+                data: 'config.yml',
+                collections: [{
+                    name: 'pages',
+                    sortby: 'posted',
+                    sortorder: 'descending'
+                }]
             },
             legal: {
                 options: {
@@ -238,11 +243,28 @@ module.exports = function(grunt) {
                 files: 'src/assets/javascript/**/*.*',
                 tasks: 'coffee:compile'
             }
+        },
+
+        useminPrepare: {
+            options: {
+                dest: 'dist'
+            },
+            dist: {
+                src: 'dist/**/*.*'
+            }
+        },
+
+        usemin: {
+            options: {},
+            dist: {
+
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-auto-install');
     grunt.loadNpmTasks('grunt-git');
+    grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-compass');
