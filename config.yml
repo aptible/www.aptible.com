@@ -13,7 +13,7 @@ production:
     write_key: rkt88i7k3w
     read_key: va76eltdon
 
-knowledge_base_url: http://aptible.zendesk.com
+knowledge_base_url: http://support.aptible.com
 knowledge_base_search_url: http://aptible.zendesk.com/hc/en-us/search
 dashboard_login_url: http://dashboard.aptible.com/login
 dashboard_signup_url: http://dashboard.aptible.com/signup

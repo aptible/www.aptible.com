@@ -29,7 +29,12 @@ module.exports = function(grunt) {
                 layout: 'application.hbs',
                 layoutdir: 'src/layouts/',
                 partials: 'src/partials/**/*',
-                data: 'config.yml'
+                data: 'config.yml',
+                collections: [{
+                    name: 'pages',
+                    sortby: 'posted',
+                    sortorder: 'descending'
+                }]
             },
             legal: {
                 options: {
