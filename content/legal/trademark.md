@@ -14,7 +14,7 @@ Version 2.0 - July 2014
 
 This policy grants you limited permission to use the Aptible Marks in connection with your use of the Services. It is incorporated by reference into the Aptible Terms of Service.
 
-These Aptible Trademark Guidelines (the "**Trademark Guidelines**") form an integral part of the Aptible Terms of Service (the "**Terms of Service**") between Aptible, Inc. ("**Aptible,**" "**we,**"" "**us,**" or "**our**") and you or the entity you represent ("**you**"). 
+These Aptible Trademark Guidelines (the "**Trademark Guidelines**") form an integral part of the Aptible Terms of Service (the "**Terms of Service**") between Aptible, Inc. ("**Aptible,**" "**we,**"" "**us,**" or "**our**") and you or the entity you represent ("**you**").
 
 The Aptible Marks are assets of significant value to us and these Trademark Guidelines are intended to preserve that value. These Trademark Guidelines provide you a limited permission to use the Aptible Marks (as defined below), in connection with your use of the Services (as defined in the Terms of Service), or in connection with software products designed to be used with the Services, on the terms set forth herein and in the Terms of Service, until such time as we may terminate such permission, which we may do at any time, in our sole discretion.
 
@@ -24,7 +24,9 @@ For the purposes of these Trademark Guidelines, "**Aptible Marks**" means the fo
 - The logo in the form shown below (the "**Logo**"); and
 - "Aptible," Aptible, Inc.," and any other Aptible Marks and Services made available from time to time.
 
-Logo:
+Logo:  
+
+![Aptible Logo](/assets/images/aptible-dark-logo-350.png)
 
 ### Limited Permission
 Provided that you are in good standing with a current and valid account for use of the Services and provided, further, that you comply at all times with the terms of both the Terms of Service and these Trademark Guidelines, we grant you a limited, non-exclusive, non-transferable permission, under our intellectual property rights in and to the Aptible Marks, and only to the limited extent of our intellectual property rights in and to the Aptible Marks, to use the Aptible Marks for the following limited purpose, and only for such limited purpose:
@@ -32,7 +34,7 @@ Provided that you are in good standing with a current and valid account for use 
 *You may utilize the Logo or the appropriate form(s) of the "for" or equivalent naming convention or URL naming convention, as set forth below, to:*
 
 - Identify your content and applications (as defined in the Terms of Service) as using the Services; or
-- To identify software tools or applications that you create and distribute that are intended for use in connection with the Services. 
+- To identify software tools or applications that you create and distribute that are intended for use in connection with the Services.
 
 Without limitation of any provision in the Terms of Service, you acknowledge that any use that you elect to make of the Aptible Marks, even if permitted hereunder, is at your sole risk and that we shall have no liability or responsibility in connection therewith.
 
