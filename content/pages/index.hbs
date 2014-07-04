@@ -122,6 +122,17 @@ customers:
       <div class="panel panel-default why-aptible-panel">
         <div class="panel-body">
           <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="how-aptible-works">
+                <h1>{{how.h1}}</h1>
+                <div class="how-description">{{#markdown}}{{how.p1}}{{/markdown}}</div>
+                <ul class="how-ctas">
+                  {{#each how.ctas}}
+                    <li><a href="{{href}}">{{title}}</a></li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
             <div class="col-md-6 col-sm-12 aptible-tools">
               <div class="tools-carousel">
                 {{#each how.tools.logos}}
@@ -137,17 +148,6 @@ customers:
                     <div class="description">{{how.tools.description}}</div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="how-aptible-works">
-                <h1>{{how.h1}}</h1>
-                <div class="how-description">{{#markdown}}{{how.p1}}{{/markdown}}</div>
-                <ul class="how-ctas">
-                  {{#each how.ctas}}
-                    <li><a href="{{href}}">{{title}}</a></li>
-                  {{/each}}
-                </ul>
               </div>
             </div>
           </div>
