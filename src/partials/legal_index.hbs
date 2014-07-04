@@ -1,6 +1,6 @@
 <div class="list-group">
   <li class="list-group-item list-group-title">Agreements</li>
-  {{#withSort pages 'data.posted' }}
+  {{#withSort pages 'data.title' }}
     {{#is data.section 'Legal'}}
       {{#is data.sub_section 'Agreements' }}
 
@@ -15,7 +15,7 @@
 
 <div class="list-group">
   <li class="list-group-item list-group-title">Policies</li>
-  {{#withSort pages 'data.posted'}}
+  {{#withSort pages 'data.title'}}
     {{#is data.section 'Legal'}}
       {{#is data.sub_section 'Policies'}}
 
