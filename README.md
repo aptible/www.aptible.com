@@ -17,8 +17,11 @@ grunt setup
 
 Run `grunt server` to see your changes on localhost.
 
+The site is built with [Assemble](http://assemble.io/). Many of the files make use of Assemble's [handlebars-helpers](http://assemble.io/helpers/) library.
+
+
 #### Creating a release
-This will create a production release of www.aptible.com in the `dist` folder. 
+This will create a production release of www.aptible.com in the `dist` folder.
 
 ````
 npm install
