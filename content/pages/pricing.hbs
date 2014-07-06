@@ -37,32 +37,32 @@ benefits:
       audits: Real-Time Auditing and Documentation
       baa: Signed Business Associate Agreement
 
-features_title: Features standard in all Aptible plans
-features:
+questions_title: Questions? We have answers.
+questions:
   security:
-    name: Powerful Security Controls
-    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+    inquiry: What is a container?
+    response: A container is like a lightweight virtual machine that can be used to run an instance of an application or a database.
   deploys:
-    name: One-Click Deploys
-    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+    inquiry: What is the difference between account types?
+    response: Only Production Accounts have the security and legal features required to support HIPAA compliance.
   scaling:
-    name: Scaling
-    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+    inquiry: Can we have both a Production and Development Account?
+    response: Yes, most organizations have both.
   backups:
-    name: Automatic Backups
-    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+    inquiry: Automatic Backups
+    response: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
   ci:
-    name: CI Integration
-    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+    inquiry: CI Integration
+    response: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
   failovers:
-    name: Failovers
-    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+    inquiry: Failovers
+    response: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
   support:
-    name: 24/7 Support
-    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+    inquiry: 24/7 Support
+    response: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
   users:
-    name: Unlimited Users
-    description: Nunc vitae dui diam. Duis id ipsum non nunc fermentum sagittis. Curabitur fringilla ultrices massa.
+    inquiry: Where can I find more answers?
+    response: Support, or contact us.
 
 ---
 
@@ -114,11 +114,6 @@ features:
             <strong>Don't need a Production Account yet?</strong>  <a href="{{config.development_signup_url}}">
             <br>Start with</a> an Aptible Development Account from $0.06/hr.
             <br>No minimums, credit card required.
-            <br><br><strong>What's the difference?</strong>
-            <br>Only Production Accounts have the security and legal features required to support HIPAA compliance.
-            <br>Development Accounts are perfect for non-regulated apps and migration preparation.
-            <br><br><strong>What is a container?</strong>
-            <br>A container is like a lightweight virtual machine that can be used to run an instance of an application or a database.
           </div>
         </div>
       </div>
@@ -130,12 +125,12 @@ features:
   <div class="row section">
     <div class="col-sm-12">
       <div class="row">
-        <h2 class="section-title">{{features_title}}</h2>
-        {{#each features}}
+        <h2 class="section-title">{{questions_title}}</h2>
+        {{#each questions}}
           <div class="col-md-3 col-sm-4">
             <div class="fact-item">
-              <h4>{{name}}</h4>
-              <div class="description">{{#markdown}}{{description}}{{/markdown}}</div>
+              <h4>{{inquiry}}</h4>
+              <div class="description">{{#markdown}}{{response}}{{/markdown}}</div>
             </div>
           </div>
         {{/each}}
