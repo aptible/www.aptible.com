@@ -52,10 +52,11 @@
       font-weight: $weight-semibold;
     }
 
-    .development-plan-info {
+    .plan-info {
       font-size: 12px;
       color: $color-light;
       margin: 14px 0 0;
+      line-height: 14px;
     }
   }
 }
