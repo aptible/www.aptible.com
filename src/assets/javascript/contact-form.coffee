@@ -13,17 +13,22 @@ $(document).ready ->
         form.on 'submit', (e) ->
           e.preventDefault()
 
-          if name.val() && email.val() && message.val()
+          nameVal = name.val()
+          emailVal = email.val()
+          messageVal = message.val()
+
+          if nameVal && emailVal && messageVal
             messageContainer.attr('class', 'alert').hide()
 
-            analytics.track(action, {
-              name: name.val(),
-              email: email.val()
-              message: message.val()
-            })
+            track_params = { name: nameVal, email: emailVal, message: messageVal }
+            analytics.identify name: nameVal, email: emailVal
+            analytics.track action, track_params
 
             messageContainer.addClass('alert-success').show()
             alertText.text('Thanks for your message!')
+            name.val ''
+            email.val ''
+            message.val ''
 
           else
             messageContainer.addClass('alert-danger').show()
