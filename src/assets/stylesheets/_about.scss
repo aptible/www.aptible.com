@@ -34,10 +34,11 @@
     content: '.';
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    opacity: .5;
+    opacity: .8;
     z-index: -1;
     border: 1px solid $color-dark-blue;
     background: $color-dark-blue;
+    background: #004275;
     transition: opacity .5s;
     @include border-radius(3px);
   }
@@ -117,6 +118,13 @@
       overflow: hidden;
     }
 
+    .carousel-caption {
+      padding-bottom: 0;
+
+      h3, p {
+        @include text-shadow(2px 2px 4px rgba(#000, 0.45));
+      }
+    }
   }
 }
 
@@ -206,6 +214,18 @@
     img {
       max-width: 80%;
     }
+
+    h4 {
+      color: $color-light;
+      font-size: 14px;
+      font-weight: $weight-semibold;
+      text-align: center;
+      text-transform: uppercase;
+      height: 51px;
+      line-height: 51px;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .panel-body {
@@ -217,5 +237,12 @@
     padding: 0;
     list-style-type: none;
   }
+}
+
+.section.careers-carousel-section {
+  margin-bottom: 50px;
+}
+
+.section.working-at-aptible-section {
 }
 
