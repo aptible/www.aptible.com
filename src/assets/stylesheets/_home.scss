@@ -203,3 +203,28 @@
     }
   }
 }
+
+.newsletter-signup {
+  height: 40px;
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .message {
+    display: none;
+  }
+
+  .alert {
+    background: none;
+    padding: 0;
+    border-width: 2px;
+    line-height: 36px;
+    height: 40px;
+    font-weight: $weight-semibold;
+  }
+
+  .alert-success {
+    margin-bottom: 0;
+  }
+}
