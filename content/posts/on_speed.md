@@ -4,8 +4,9 @@ excerpt: "When I say the terms \"IT Operations\" and \"Software Development\" to
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
-posted: 2014-06-01
+posted: 06-01-2014
 section: Blog
+posts: true
 ---
 
 When I say the terms "IT Operations" and "Software Development" together, what decade do you think of?

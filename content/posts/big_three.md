@@ -4,8 +4,9 @@ excerpt: "Last week we laid out a basic sketch of the HIPAA regulatory landscape
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
-posted: 2014-06-03
+posted: 06-03-2014
 section: Blog
+posts: true
 ---
 
 The Big Three

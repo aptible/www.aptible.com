@@ -4,8 +4,9 @@ excerpt: "We've seen a lot of chatter lately about Apple and its impending move 
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
-posted: 2014-06-04
+posted: 06-04-2014
 section: Blog
+posts: true
 ---
 
 We've seen a lot of chatter lately about Apple and its impending move into personal health and fitness. Everyone seems to be talking about it, but no one has really explained why it's so radically significant. How valuable could it be, for Apple?

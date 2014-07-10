@@ -4,8 +4,9 @@ excerpt: "On the road leading up to our public launch, we've talked to a lot of 
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
-posted: 2014-06-02
+posted: 06-02-2014
 section: Blog
+posts: true
 ---
 
 On the road leading up to our public launch, we've talked to a lot of healthcare startups. Almost everyone says, "HIPAA is so complicated. What do I really need to know?"
