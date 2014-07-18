@@ -3,33 +3,23 @@ title: Aptible Careers
 description: Aptible careers page
 posted: 2014-06-30
 section: Company
-mission: We are transforming the experience of building private, secure software systems in regulated industries. We are starting with healthcare because the American healthcare system is broken and we want to empower those who can fix it. If you want to make a meaningful difference, join our team.
+mission: We are transforming the experience of building private, secure software systems in regulated industries. We are starting in digital health because the American healthcare system is broken and we want to empower those who can fix it. If you want to make a meaningful difference, join our team.
 slides:
   rock:
-    title: Aptible's San Francisco Office
+    title: Aptible @ Rock Health
     caption: Aptible's San Francisco office inside Rock Health
     url: /pages/assets/rockhealth.jpg
 
-perks:
-  pto:
-    name: Paid Time Off
-    description: You get 21 vacation days, 11 company holidays and sick days when you need them.
-  health:
-    name: Health
-    description: We pay 100% of your medical, dental and vision insurance premiums, and around 80% if you have dependents.
-  parenting:
-    name: Family & Parenting
-    description: We offer paid parental leave, help with daycare and adoption fees and $4,000 “baby cash” for your new arrival.
-  food:
-    name: Food
-    description: We keep you full with free meals, plus kitchens stocked with unlimited snacks.
-  fitness:
-    name: Fitness
-    description: We help pay for your monthly gym membership.
-  laundry:
-    name: Laundry
-    description: We reimburse up to $80 a month for laundry and dry cleaning bills.
-
+roles:
+  backend:
+    title: Systems Engineer
+    description: Build elegant, robust systems to help our customers deploy sophisticated architecture at the click of a button.
+  frontend:
+    title: Front End Engineer
+    description: Build beautiful, usable tools to help our customers understand complex systems.
+  compliance:
+    title: Security & Compliance Architect
+    description: Design tools and systems to help our customers build secure, private, compliant applications. 
 ---
 
 <div class="fancy-cover">
@@ -43,7 +33,7 @@ perks:
         </div>
       </div>
     </div>
-    
+
     <div class="row section careers-carousel-section">
       <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 
@@ -68,11 +58,11 @@ perks:
 <div class="container">
   <div class="row aptible-perks">
     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-      <h2 class="section-title">Aptible Perks</h2>
+      <h2 class="section-title">Aptible Roles</h2>
       <div class="row aptible-perks">
-        {{#each perks}}
+        {{#each roles}}
           <div class="col-sm-4 fact-item">
-            <h4>{{name}}</h5>
+            <h4>{{title}}</h5>
             <div class="description">
               {{#markdown}}{{description}}{{/markdown}}
             </div>
