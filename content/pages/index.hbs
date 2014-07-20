@@ -1,26 +1,26 @@
 ---
 section: Home
-title: The PaaS for Healthcare
-sub_title: One stop for HIPAA compliance, as a service.
+title: HIPAA Compliance for Healthcare Innovators
+sub_title: Secure, private cloud deployment for digital health.
 about:
-  h1: Aptible makes it easy for great developers to work in healthcare.
-  h2: Aptible is the world’s first application deployment platform built specifically to help automate the entire HIPAA compliance process for developers.
-  p1: "Healthcare can be a frustrating industry to work in. Murky regulations cause confusion.  Heavy-hitting penalties sow fear and hesitation. Sales cycles can be agonizingly slow. \n\n****Aptible changes all of that.****"
-  p2: "You write code, we make it run in your own private, secure stack. \n\nWe handle the entire back end: Web servers, app servers, databases, load balancers, network security -- everything. And by running your ops, we help automate and manage your entire HIPAA compliance program at a fraction of the traditional cost."
+  h1: One stop for HIPAA compliance, as a service.
+  h2: Aptible is the world’s first application deployment platform built to automate HIPAA compliance for web and mobile technology.
+  p1: "{icon} Deployment Platform: Runs applications and databases. Manages servers, network topology, security, backups, enryption, and orgazational permissions so your engineers can focus on building great products."
+  p2: "{icon} Compliance Engines: Integrate with the platform to generate all of the documentation, audit logs, and explanatory materials you need to demonstrate compliance with every aspect of HIPAA."
 
 how:
   h1: How Aptible Works
-  p1: "By running your applications, Aptible helps stand up and manage your entire HIPAA compliance program. Our compliance validation engines help with every component of the Privacy and Security Rules, including all of the Administrative, Physical, and Technical safeguards.\n\nAptible's technology helps with risk analysis, policies and procedures, training, and incident response. And we always show our work: All of your documentation is available in real time for any audit, enforcement action, or customer security assessment."
+  p1: "- Push code to a Git remote \n\n- Run the languages, frameworks, and databases you choose\n\n- Manage compliance with an intuitive web dashboard \n\n- View status and generate audit reports in real time"
   ctas:
     1:
-      title: How does Aptible's technolgy work?
+      title: How does Aptible's technology work?
       href: /technology
     2:
-      title: How does Aptible manage your entire HIPAA compliance program?
+      title: How does Aptible help with every component of HIPAA compliance?
       href: /compliance
   tools:
-    title: The right tool for the right job.
-    description: "Never be forced to choose between good engineering and compliance. \n\nAptible supports every major language and framework, and most open source databases."
+    title: Use the right tool for the right job.
+    description: "Never be forced to choose between good engineering and compliance: Aptible supports every major language and framework, and all of the most popular open source databases."
     logos:
       redis:
         url: /pages/assets/redis.png
@@ -55,7 +55,7 @@ why:
     logo: /pages/assets/HIPAA-compliance.svg
     className: compliance
   workflow:
-    title: We’re built for your workflow
+    title: Built for your workflow
     description: "Like Heroku? You’ll love Aptible.  Manage apps, not infrastructure. Integrates seamlessly with Travis, Circle, and other CI tools."
     logo: /pages/assets/workflow.svg
     className: workflow
@@ -79,12 +79,11 @@ customers:
     testimonial: '22Vestibulum pretium placerat mollis. Donec ultricies odio enim, et vehicula purus blandit vitae. Proin eleifend blandit cursus. Cum sociis natoque penatibus et magnis dis parturient montes.'
     url: http://nightingaleapp.com
 
-
 newsletter:
-  title: "Get devops and security news in your inbox!"
-  subtitle: Only great stuff, we promise. No more than twice a month.
+  title: "Get the Latest Devops and Security News"
+  subtitle: Straight to your inbox, no more than twice a month.
   placeholder: Enter your email address
-  submit: "Yes, send me a copy!"
+  submit: "Sign me up!"
   success: Thanks for signing up!
   error: Please use a valid email
 
@@ -99,24 +98,26 @@ newsletter:
         </div>
       </div>
       <div class="row">
-        <div class="col-md-7 col-sm-6">
+        <div class="col-sm-12">
           <h2>{{about.h2}}</h2>
           <div class="row">
-            <div class="col-md-12 ">
+            <div class="col-md-6 col-sm-12">
               {{#markdown}}{{about.p1}}{{/markdown}}
+            </div>
+            <div class="col-md-6 col-sm-12">
               {{#markdown}}{{about.p2}}{{/markdown}}
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-md-offset-1 col-sm-6">
-          <div class="panel panel-default cta-sidebar">
-            <div class="home-cta-body">
-              <h3>Like Heroku? You'll Love Aptible</h3>
-              <a class="btn btn-primary btn-lg" href="/pricing.html">Choose Your Account Type</a>
-              <div class="plan-info">
-                Development Accounts have no minimum fees and no commitment. Production Accounts support HIPAA compliance.
-              </div>
-            </div>
+      </div>
+    </div>
+
+    <div class="col-md-8 col-md-offset-2 col-sm-12">
+      <div class="panel panel-default cta-sidebar">
+        <div class="home-cta-body">
+          <h3>Like Heroku? You'll Love Aptible</h3>
+          <a class="btn btn-primary btn-lg" href="/pricing.html">Choose Your Account Type</a>
+          <div class="plan-info">Heroku is a trademark of Heroku, Inc. Aptible is not affiliated with Heroku in any way.
           </div>
         </div>
       </div>
@@ -200,19 +201,6 @@ newsletter:
     </div>
   </div>
 
-  <div class="row section">
-    <div class="col-sm-8 col-sm-offset-2">
-      <div class="panel panel-default newsletter-signup-panel">
-        <div class="panel-body">
-          <h1 class="panel-title">{{newsletter.title}}</h1>
-          <h5 class="panel-sub">{{newsletter.subtitle}}</h5>
-          <div class="panel-cta">
-           {{> newsletter_signup}}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </div>
 
@@ -253,3 +241,19 @@ newsletter:
   </div>
 </div>
 {{/if}}
+
+<div class="container">
+  <div class="row section">
+    <div class="col-md-8 col-md-offset-2 col-sm-12">
+      <div class="panel panel-default newsletter-signup-panel">
+        <div class="panel-body">
+          <h1 class="panel-title">{{newsletter.title}}</h1>
+          <h5 class="panel-sub">{{newsletter.subtitle}}</h5>
+          <div class="panel-cta">
+           {{> newsletter_signup}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
