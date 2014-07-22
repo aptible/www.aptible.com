@@ -243,6 +243,14 @@ module.exports = function(grunt) {
                 files: 'src/assets/javascript/**/*.*',
                 tasks: 'coffee:compile'
             }
+        },
+
+        exec: {
+            s3_sync: {
+                cmd: function(bucket) {
+                    return 'aws s3 sync --acl public-read dist/ s3://' + bucket;
+                }
+            }
         }
     });
 
@@ -257,6 +265,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-sync-pkg');
+    grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('assemble');
 
     grunt.registerTask('require_setup', 'Ensures repo is setup', function() {
@@ -273,7 +282,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask('setup', ['auto_install', 'gitclone']);
     grunt.registerTask('dist', ['require_setup', 'clean', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
-    grunt.registerTask('release', ['dist']);
+    grunt.registerTask('release:production', ['dist', 'exec:s3_sync:www.aptible.com']);
+    grunt.registerTask('release:staging', ['dist', 'exec:s3_sync:www.aptible-staging.com']);
     grunt.registerTask('server', ['dist', 'connect', 'watch']);
     grunt.registerTask('default', ['server']);
 };

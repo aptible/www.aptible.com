@@ -21,12 +21,19 @@ Run `grunt server` to see your changes on localhost.
 The site is built with [Assemble](http://assemble.io/). Many of the files make use of Assemble's [handlebars-helpers](http://assemble.io/helpers/) library.
 
 
-#### Creating a release
-This will create a production release of www.aptible.com in the `dist` folder.
+#### Deploying
+This will release the site to an S3 bucket where it will be immediately accessible at [www.aptible.com](https://www.aptible.com). The `release` commands depend on the [AWS command line tool](http://aws.amazon.com/cli/), which should be set up according to [Aptible's best practices](https://github.com/aptible/aptible-tech-guide/blob/master/doc/SystemsAdministration.md#command-line-access).
 
 ````
 npm install
-grunt release
+grunt release:production
+````
+
+To release to our staging site ([www.aptible-staging.com](https://www.aptible-staging.com)):
+
+````
+npm install
+grunt release:staging
 ````
 
 Copyright &copy; 2014 Aptible
