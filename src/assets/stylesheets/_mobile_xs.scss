@@ -54,6 +54,10 @@ header.primary-header {
 .row.section {
   margin-top: 20px;
   margin-bottom: 20px;
+
+  &.bordered {
+    padding-bottom: 20px;
+  }
 }
 
 .panel {
@@ -269,3 +273,35 @@ footer.aptible-footer {
     margin-top: 15px;
   }
 }
+
+.technology {
+  .technology .fancy-cover {
+    padding: 20px 0;
+  }
+
+  .how-aptible-technology-works {
+    margin: 20px 0 40px;
+  }
+
+  .workflow-title,
+  .how-it-works-section.networking,
+  .fact-section.container-section {
+    margin-top: 20px
+  }
+}
+
+.facts-page {
+  .facts-page-introduction h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 15px;
+  }
+
+  .introduction-body {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+
+

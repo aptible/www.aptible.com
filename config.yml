@@ -1,17 +1,6 @@
-development:
-  segmentio:
-    write_key: jbdukhri13
-    read_key: pj65hq5cnb
-
-staging:
-  segmentio:
-    write_key: 830gbp5ux9
-    read_key: t36trychr4
-
-production:
-  segmentio:
-    write_key: rkt88i7k3w
-    read_key: va76eltdon
+segmentio:
+  write_key: rkt88i7k3w
+  read_key: va76eltdon
 
 knowledge_base_url: http://support.aptible.com
 knowledge_base_search_url: http://aptible.zendesk.com/hc/en-us/search

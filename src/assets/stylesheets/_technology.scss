@@ -1,0 +1,190 @@
+.technology {
+  .fancy-cover {
+    padding: 100px 0;
+  }
+
+  .our-philosophy {
+    margin-top: 20px;
+  }
+
+  .workflow-title {
+    margin-top: 115px;
+  }
+
+  .how-aptible-technology-works {
+    color: $color-dark-blue;
+    font-size: 36px;
+    margin: 0 0 100px;
+    text-align: center;
+  }
+
+  .how-it-works-section {
+    margin: 0 0 30px;
+
+    &.networking {
+      margin-top: 150px;
+    }
+  }
+
+  .containers h3 {
+    font-size: 18px;
+    margin: 30px 0 0;
+  }
+
+  .apps-list {
+    margin-top: 50px;
+  }
+
+  .app-icon-container {
+    border: 1px solid $color-border-gray;
+    height: 112px;
+    text-align: center;
+    margin-bottom: 20px;
+    @include border-radius(3px);
+
+    img {
+      margin-top: 30px;
+      max-height: 50%;
+      max-width: 60%;
+    }
+
+    &.pg img {
+      margin-top: 33px;
+    }
+
+    &.ruby img {
+      margin-top: 31px;
+      max-height: 35%;
+    }
+
+    &.mongo img {
+      margin-top: 33px;
+    }
+
+    &.php img {
+      margin-top: 33px;
+      max-height: 35%;
+    }
+
+    &.redis img {
+      margin-top: 35px;
+    }
+
+    &.mysql img {
+      margin-top: 16px;
+    }
+  }
+
+}
+
+.fact-section-image {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.facts-page {
+  h2 {
+    margin: 0 0 26px;
+  }
+
+  .facts-page-cta {
+    text-align: center;
+
+    .cta-title {
+      font-size: 24px;
+      line-height: 36px;
+      margin: 0 0 50px;
+    }
+  }
+
+  .callout-section {
+    text-align: center;
+
+    .callout-title {
+
+    }
+
+    .callout-body {
+      font-size: 20px;
+      line-height: 26px;
+      color: $color-subdued;
+    }
+  }
+
+  .facts-page-introduction  {
+    h2 {
+      font-size: 28px;
+      line-height: 36px;
+      margin: 30px 0 26px;
+    }
+  }
+
+  .introduction-body {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.facts-page {
+  .highlight-panel {
+    background: #fff;
+    border-bottom: 1px solid $color-border-gray;
+  }
+}
+
+
+.console {
+  @include border-radius(5px);
+  @include box-shadow(0 0 12px rgba(#000, .12));
+
+  .console-title-bar {
+    height: 37px;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    border-width: 1px 1px 0;
+    border-radius: 5px;
+    background-image: -o-linear-gradient(-89deg, #f6f6f6 0%, #f0f0f0 100%);
+    background-image: -moz-linear-gradient(-89deg, #f6f6f6 0%, #f0f0f0 100%);
+    background-image: -ms-linear-gradient(-89deg, #f6f6f6 0%, #f0f0f0 100%);
+    background-image: linear-gradient(-179deg, #f6f6f6 0%, #f0f0f0 100%);
+    @include box-shadow(inset 0 1px 0 0 #fff);
+    @include border-radius(5px 5px 0 0);
+  }
+
+  .osx-button {
+    height: 12px;
+    width: 12px;
+    background: #d8d8d8;
+    display: inline-block;
+    margin-right: 5px;
+    @include box-shadow(0 1px 0 0 #fff, inset 0 1px 3px 0 rgba(#000, .13));
+    @include border-radius(6px);
+  }
+
+  code.console-body {
+    display: block;
+    background: #223e4e;
+    padding: 10px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 17px;
+    height: 336px;
+    font-family: "Inconsolata", Menlo, Monaco, monospace;
+    @include border-radius(0 0 5px 5px);
+
+    .console-group {
+      margin-bottom: 20px;
+    }
+
+    .subdued-color {
+      color: #aadeed
+    }
+
+    .success-color {
+      color: #87ce1b;
+    }
+  }
+}
