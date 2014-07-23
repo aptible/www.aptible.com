@@ -301,7 +301,8 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('setup', ['auto_install', 'gitclone', 'gitpull']);
+    grunt.registerTask('setup', ['auto_install', 'gitclone']);
+    grunt.registerTask('update', ['require_setup', 'gitpull']);
     grunt.registerTask('dist', ['require_setup', 'clean', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
     grunt.registerTask('release:production', ['dist', 'exec:s3_sync:www.aptible.com']);
     grunt.registerTask('release:staging', ['dist', 'exec:s3_sync:www.aptible-staging.com']);
