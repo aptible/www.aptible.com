@@ -7,9 +7,10 @@
 
 }
 
-.pricing .fancy-cover {
+.pricing .fancy-cover, .technology .fancy-cover{
   background: linear-gradient($background, $color-bg-gray);
   border-bottom: 1px solid $color-border-gray;
+  padding-top: 100px;
 
   &:after {
     display: none;
@@ -105,8 +106,4 @@
 
 .pricing .panel-default {
   margin-bottom: 0;
-}
-
-.pricing .fancy-cover {
-  padding-top: 100px;
 }

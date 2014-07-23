@@ -261,6 +261,15 @@ header.primary-header {
 .row.section {
   margin-top: 80px;
   margin-bottom: 100px;
+
+  &.bordered {
+    border-bottom: 1px solid $color-border-gray;
+    padding: 0 0 99px;
+  }
+}
+
+.newsletter-section {
+  margin: 100px 0 55px
 }
 
 ul.social-icons {
