@@ -269,7 +269,9 @@ module.exports = function(grunt) {
         exec: {
             s3_sync: {
                 cmd: function(bucket) {
-                    return 'aws s3 sync --acl public-read dist/ s3://' + bucket;
+                    var acl = ' --acl public-read';
+                    var cc = ' --cache-control max-age=300,s-maxage=300';
+                    return 'aws s3 sync' + acl + cc + ' dist/ s3://' + bucket;
                 }
             }
         }
