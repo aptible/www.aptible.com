@@ -14,7 +14,7 @@ grunt setup
 
 #### Local Development
 
-`grunt setup` clones the aptible-pages, aptible-legal, and aptible-blog repos into the `content` folder. You can add your own fork as a remote and submit PRs for those repos directly. Run `grunt setup` again to overwrite `content`.
+`grunt setup` clones the aptible-pages, aptible-legal, and aptible-blog repos into the `content` folder. You can add your own fork as a remote and submit PRs for those repos directly. Run `grunt update` to pull the latest revisions of all dependent content repos.
 
 Run `grunt server` to see your changes on localhost.
 
