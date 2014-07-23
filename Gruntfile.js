@@ -78,6 +78,15 @@ module.exports = function(grunt) {
                     expand: true,
                     src: ['**/*.hbs']
                 }]
+            },
+            errors: {
+                layout: 'error.hbs',
+                files: [{
+                    cwd: 'src/templates/errors',
+                    dest: 'dist/errors',
+                    expand: true,
+                    src: ['**/*.hbs']
+                }]
             }
         },
 
