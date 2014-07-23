@@ -69,6 +69,10 @@ apps:
         url: /pages/assets/php-logo.svg
         className: php
 
+cta:
+  title: |-
+    Ready to start deploying HIPAA-compliant apps with our high-assurance deployment platform and integrated compliance tools?
+  button: Open Your Production Account
 newsletter:
   title: "Get the Latest Devops and Security News"
   subtitle: Straight to your inbox, no more than twice a month.
@@ -174,7 +178,7 @@ newsletter:
         </div>
       </div>
 
-      <div class="row section callout-section">
+      <div class="row section bordered callout-section">
         <div class="col-md-10 col-md-offset-1 col-sm-12 apps-and-databases">
           <h2 class="callout-title">{{apps.title}}</h2>
           <div class="apps-body callout-body">{{#markdown}}{{apps.body}}{{/markdown}}</div>
@@ -187,6 +191,13 @@ newsletter:
               </div>
             {{/each}}
           </div>
+        </div>
+      </div>
+
+      <div class="row section">
+        <div class="facts-page-cta col-md-8 col-md-offset-2 col-sm-12">
+          <h2 class="cta-title">{{cta.title}}</h2>
+          <a class="btn btn-primary btn-lg" href="{{config.dashboard_signup_url}}">{{cta.button}}</a>
         </div>
       </div>
 
