@@ -166,7 +166,7 @@
   }
 }
 
-.about_us {
+.company.index {
   .fancy-cover {
     position: relative;
   }
@@ -187,6 +187,16 @@
     height: 600px;
     margin-top: -900px;
   }
+}
+
+.contact-support-panel {
+  .search-knowledgebase.form-group {
+    margin-bottom: 0;
+  }
+}
+
+.contact-support-section.row.section {
+  margin-bottom: 0;
 }
 
 .contact-support-email {
@@ -240,9 +250,11 @@
 }
 
 .section.careers-carousel-section {
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
-.section.working-at-aptible-section {
+.section.working-at-aptible-intro {
+  margin: 80px 0 0;
 }
 

@@ -7,7 +7,8 @@
 
 }
 
-.pricing .fancy-cover, .technology .fancy-cover{
+.pricing .fancy-cover,
+.technology .fancy-cover{
   background: linear-gradient($background, $color-bg-gray);
   border-bottom: 1px solid $color-border-gray;
   padding-top: 100px;
@@ -23,6 +24,10 @@
   .benefit-icon {
     text-align: center;
     margin: 0 0 30px;
+
+    img {
+      max-height: 200px;
+    }
   }
 
   .benefit-title {
@@ -98,9 +103,10 @@
   text-align: center;
   color: $color-light;
 
-  strong {
+  h4 {
     font-weight: $weight-bold;
     color: $color-primary;
+    margin: 0 0 8px;
   }
 }
 

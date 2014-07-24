@@ -6,7 +6,7 @@
           <a href="{{ post_path this }}">{{ this.data.title }}</a>
         </h2>
       </header>
-      <p class="excerpt">{{ this.data.excerpt }} (<a href="{{ post_path this }}">...more</a>)</p>
+      <p class="excerpt">{{ this.data.excerpt }} <a class="keep-reading" href="{{ post_path this }}">more</a></p>
       <footer>
         <ul class="post-meta">
           <li>{{ gravatar this.data.author_email 'sm' }}</li>

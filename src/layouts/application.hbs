@@ -5,7 +5,7 @@
   </head>
   <!-- Intentionally slugify the page title into the body classes -->
   <body
-    class="aptible-com {{slugify title}} {{slugify page.section}} {{slugify basename}}">
+    class="aptible-com {{#if id}}{{slugify id}}{{/if}} {{slugify title}} {{slugify page.section}} {{slugify basename}}">
 
     {{> header}}
 
