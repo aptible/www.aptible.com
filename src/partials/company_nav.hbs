@@ -16,7 +16,8 @@
 
     <div class="collapse navbar-collapse" id="company-nav">
       <ul class="nav navbar-nav">
-        <li {{#is basename 'index'}} class="active"{{/is}}>
+
+        <li {{#is dirname 'dist/company'}} class="active"{{/is}}>
           <a href="/company">About Us</a>
         </li>
         <li
@@ -24,14 +25,14 @@
           {{#is dirname 'dist/blog/authors'}} class="active"{{/is}}>
           <a href="/blog">Blog</a>
         </li>
-        <li {{#is basename 'careers'}} class="active"{{/is}}>
-          <a href="/company/careers.html">Careers</a>
+        <li {{#is dirname 'dist/company/careers'}} class="active"{{/is}}>
+          <a href="/company/careers">Careers</a>
         </li>
-        <li {{#is basename 'contact'}} class="active"{{/is}}>
-          <a href="/company/contact.html">Contact</a>
+        <li {{#is dirname 'dist/company/contact'}} class="active"{{/is}}>
+          <a href="/company/contact">Contact</a>
         </li>
-        <li {{#is basename 'press'}} class="active"{{/is}}>
-          <a href="/company/press.html">Press</a>
+        <li {{#is dirname 'dist/company/press'}} class="active"{{/is}}>
+          <a href="/company/press">Press</a>
         </li>
       </ul>
     </div>

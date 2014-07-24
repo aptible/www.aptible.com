@@ -5,8 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="description" content="The PaaS for Healthcare">
 
+<title>
+  {{#if title}}
+    {{title}}
+  {{else}}
+    HIPAA Compliance for Healthcare Innovators
+  {{/if}}
+  | Aptible
+</title>
 
-<title>Aptible | HIPAA-Compliant Deployment Platform</title>
+<meta property="og:title" content="{{#if title}}{{title}}{{else}}HIPAA Compliance for Healthcare Innovators{{/if}}">
+<meta property="og:site_name" content="Aptible">
+<meta property="og:image" content="https://www.aptible.com/assets/images/aptible-og.png">
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/slick/slick.css">

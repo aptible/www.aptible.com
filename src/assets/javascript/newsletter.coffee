@@ -1,3 +1,7 @@
+validateEmail = (email) ->
+  re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  re.test(email)
+
 $(document).ready ->
   $.fn.extend
     newsletterForm: () ->
@@ -16,7 +20,7 @@ $(document).ready ->
           error.hide()
           success.hide()
 
-          if emailVal
+          if emailVal && validateEmail(emailVal)
             analytics.identify email: emailVal, newsletter_subscribed: true
             analytics.track 'subscribed_to_newsletter', { email: emailVal }
             success.show()
