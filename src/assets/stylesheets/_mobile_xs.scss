@@ -66,6 +66,7 @@ header.primary-header {
 
 .about-billboard {
   font-size: 16px;
+  margin: 40px 0 10px;
 
   h1 {
     font-size: 26px;
@@ -76,15 +77,6 @@ header.primary-header {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 27px;
-  }
-
-  .cta-sidebar {
-    margin: 15px 0 0 0;
-    text-align: center;
-
-    .home-cta-body {
-      padding: 10px;
-    }
   }
 }
 
@@ -303,5 +295,76 @@ footer.aptible-footer {
   }
 }
 
+.feature-split {
+  .feature-split-col {
+    padding: 20px;
+  }
 
+  .divider {
+    position: static;
+    height: 4px;
+    width: auto;
+    margin: 0 15px;
+  }
 
+  .plus {
+    display:none;
+  }
+
+  .feature-title {
+    font-size: 24px;
+  }
+
+  .feature-body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .feature-image {
+    margin-bottom: 10px;
+  }
+
+  .feature-cta {
+    margin-top: 10px;
+  }
+
+}
+
+.aptible-benefits {
+  h1 {
+    font-size: 24px;
+  }
+
+  &.row.section {
+    margin-top: 30px;
+  }
+
+  .fact-item {
+    .description {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .why-item {
+    .why-icon {
+      margin: 10px 0;
+    }
+  }
+}
+
+.workflow-cta {
+  &.row.section {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .home-cta-body {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+.row.home-newsletter-section {
+  margin-top: -25px;
+}

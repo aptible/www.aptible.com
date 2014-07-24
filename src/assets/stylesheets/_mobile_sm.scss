@@ -83,3 +83,39 @@ footer.aptible-footer {
 .row.section.bordered {
   padding-bottom: 49px;
 }
+
+.feature-split {
+  .feature-split-col {
+    padding: 30px 50px;
+  }
+
+  .divider {
+    position: static;
+    height: 4px;
+    width: auto;
+    margin: 0 15px;
+    clear: both;
+  }
+
+  .plus {
+    display:none;
+  }
+
+  .feature-title {
+    font-size: 24px;
+  }
+
+  .feature-body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .feature-image {
+    margin-bottom: 10px;
+  }
+
+  .feature-cta {
+    margin-top: 10px;
+  }
+
+}
