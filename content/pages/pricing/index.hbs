@@ -1,5 +1,6 @@
 ---
 title: Plans and Pricing
+id: pricing
 description: "Aptible's pricing page"
 posted: 2014-06-30
 production_title: Aptible Production Account
@@ -17,7 +18,7 @@ additional_costs:
 benefits:
   ops:
     title: "High-Assurance Deployment Platform"
-    svg: /pages/assets/ops.svg
+    image: /pages/assets/technology/aptible-technology-introduction.png
     features:
       included: 10 App/Database Containers Included
       alsoincluded: 1TB Storage, with Free Encrypted Backups
@@ -28,7 +29,7 @@ benefits:
 
   compliance:
     title: "Integrated HIPAA Compliance Tools"
-    svg: /pages/assets/compliance.svg
+    image: /pages/assets/compliance/aptible-compliance-introduction.png
     features:
       risk: HIPAA Risk Analysis Engine
       policy: HIPAA Security + Privacy Policy Engine
@@ -59,10 +60,10 @@ questions:
     response: Aptible is the fastest, most cost-effective way for a SaaS company to stand up and maintain an entire HIPAA compliance program. Experiment with [our TCO calculator](/tco_calculator) to see why.
   just_platform:
     inquiry: Can I just use the platform? Can I use Aptible for non-healthcare apps?
-    response: Our platform can support a variety of high-assurance, high-security projects across industries. [Contact us](/company/contact.html) to discuss your needs.
+    response: Our platform can support a variety of high-assurance, high-security projects across industries. [Contact us](/company/contact) to discuss your needs.
   more_support:
     inquiry: Where can I find more answers?
-    response: We'd love to talk to you! Feel free to [contact us](/support/contact_support.html) any time, or visit our [knowlege base](http://support.aptible.com).
+    response: We'd love to talk to you! Feel free to [contact us](/support) any time, or visit our [knowlege base](http://support.aptible.com).
 ---
 
 <div class="fancy-cover">
@@ -83,7 +84,7 @@ questions:
                     <div class="col-sm-6">
                       <div class="plan-benefit">
                         <div class="benefit-icon">
-                          <img src="{{svg}}" alt="{{title}}" />
+                          <img src="{{image}}" alt="{{title}}" />
                         </div>
 
                         <h3 class="benefit-title">{{title}}</h3>
@@ -110,9 +111,11 @@ questions:
           </div>
 
           <div class="development-plan-callout">
-            <strong>Don't need a Production Account yet?</strong>  <a href="{{config.development_signup_url}}">
-            <br>Start with</a> an Aptible Development Account from $0.06/hr.
-            <br>No minimums, credit card required.
+            <h4>Don't need a Production Account yet?</h4>
+            <div class="callout-body">
+              <a href="{{config.development_signup_url}}"> Start with</a> an Aptible Development Account from $0.06/hr.
+              <br />No minimums, credit card required.
+            </div>
           </div>
         </div>
       </div>
@@ -134,7 +137,7 @@ questions:
           </div>
         {{/each}}
       </div>
-      <h2 class="section-title">More questions? <a href="/company/contact.html">Contact us</a> or email <a href="mailto:{{config.sales_email}}">{{config.sales_email}}</a></h2>
+      <h2 class="section-title">More questions? <a href="/company/contact">Contact us</a> or email <a href="mailto:{{config.sales_email}}">{{config.sales_email}}</a></h2>
     </div>
   </div>
 </div>
