@@ -9,7 +9,7 @@ introduction:
 
     And because we run your ops, our compliance engines can help you implement an entire HIPAA compliance program at a fraction of the traditional cost.
 
-    The result is that your engineers and developers can focus on writing code, not managing and documenting secure infrastructure.
+    The result is that your engineers can focus on writing code, not managing and documenting infrastructure.
 philosophy:
   title: Our Philosophy
   body: |-
@@ -18,6 +18,8 @@ workflow:
   title: Workflow
   body: |-
     If you're familiar with Heroku, you already know how to use Aptible: Push code to a Git remote, then configure and manage resources from the command line or through our web dashboard.
+
+    This Git-based workflow makes Aptible easy to integrate with Travis CI, CircleCI, or any other continuous integration/continuous development tool of your choice.
 how_it_works:
   img: /pages/assets/technology/how-aptible-works.png
   title: How Aptible Works
@@ -39,11 +41,11 @@ containers:
 
     If you are coming from Heroku, you can estimate the number of containers you will need by adding the number of Heroku dynos and databases. For example, if you use 2 web processes, 2 worker processes, and 1 PostgreSQL database, you will need 5 containers.
 
-    ### [Lean more about Docker.](https://docs.docker.com/introduction/understanding-docker) ###
+    ### [Learn more about Docker](https://docs.docker.com/introduction/understanding-docker) ###
 apps:
   title: Applications & Databases
   body: |-
-    Aptible is language- and framework-agnostic. If it runs on Linux, it will run on Aptible. Our compliance experts will work with your engineers to help you implement best practices for any application-specific technical safeguards required by HIPAA or your specific risk assessment.
+    Aptible is language- and framework-agnostic. If it runs on Linux, it runs on Aptible. Our compliance experts will work with your engineers to help you implement best practices for any application-specific steps required by HIPAA or your risk assessment.
   logos:
       redis:
         url: /pages/assets/redis.png
@@ -72,7 +74,7 @@ apps:
 
 cta:
   title: |-
-    Ready to start deploying HIPAA-compliant apps with our high-assurance deployment platform and integrated compliance tools?
+    Ready to start deploying HIPAA-compliant apps with our high-assurance deployment platform and  compliance engines?
   button: Open Your Production Account
 newsletter:
   title: "Get the Latest Devops and Security News"
@@ -126,11 +128,6 @@ newsletter:
       </div>
 
       <div class="row section bordered">
-        <div class="col-md-6 col-sm-12">
-          <div class="fact-section-image">
-            <img src="{{how_it_works.img}}" alt="How Aptible Works" />
-          </div>
-        </div>
         <div class="col-md-5 col-md-offset-1 col-sm-12">
           <div class="fact-section how-it-works-section networking">
             <h2>{{networking.title}}</h2>
@@ -139,6 +136,11 @@ newsletter:
           <div class="fact-section how-it-works-section routing">
             <h2>{{routing.title}}</h2>
             <div class="fact-section-body how-it-works-body">{{#markdown}}{{routing.body}}{{/markdown}}</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="fact-section-image">
+            <img src="{{how_it_works.img}}" alt="How Aptible Works" />
           </div>
         </div>
       </div>
