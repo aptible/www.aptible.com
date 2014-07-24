@@ -149,6 +149,10 @@
   margin-bottom: 50px;
 }
 
+.aptible-careers-contact {
+  text-align: center;
+}
+
 .contact_support {
   .panel-body-subdued .form-group {
     margin: 0;
@@ -178,14 +182,9 @@
   }
 }
 
-.careers {
-  .fancy-cover {
-    position: relative;
-  }
-
+.careers.company {
   .fancy-cover:after {
-    height: 600px;
-    margin-top: -900px;
+    height: 325px;
   }
 }
 
@@ -251,10 +250,14 @@
 
 .section.careers-carousel-section {
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .section.working-at-aptible-intro {
   margin: 80px 0 0;
+}
+
+.section.working-at-aptible-description {
+  margin: 0 0 100px;
 }
 
