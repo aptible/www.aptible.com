@@ -1,5 +1,6 @@
 ---
 title: Aptible Careers
+id: careers
 description: Aptible careers page
 posted: 2014-06-30
 section: Company
@@ -20,6 +21,11 @@ roles:
   compliance:
     title: Security & Compliance Architect
     description: Design tools and systems to help our customers build secure, private, compliant applications. 
+
+contact:
+  title: Ready to make a difference in digital healthcare?
+  sub_title: We'd love to hear from you
+  body: Send your cover letter and resume to [careers@aptible.com](mailto:careers@aptible.com)
 ---
 
 <div class="fancy-cover">
@@ -50,8 +56,8 @@ roles:
       </div>
     </div>
 
-    <div class="row section working-at-aptible-section">
-      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="row section working-at-aptible-description">
+      <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
         <div class="intro-block">
           <h2 class="intro-heading">Help build the future of privacy and security on the web.</h2>
           <div class="intro-body">{{mission}}</div>
@@ -75,6 +81,19 @@ roles:
             </div>
           </div>
         {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class="row aptible-careers-contact">
+    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+      <h2 class="section-title">{{contact.title}}</h2>
+      <div class="row aptible-perks">
+
+          <div class="col-md-6 col-md-offset-3 col-sm-12  fact-item">
+            <h4>{{contact.sub_title}}</h5>
+            <div class="description">{{#markdown}}{{contact.body}}{{/markdown}}</div>
+          </div>
+
       </div>
     </div>
   </div>
