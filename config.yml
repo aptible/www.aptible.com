@@ -5,7 +5,7 @@ segmentio:
 knowledge_base_url: http://support.aptible.com
 knowledge_base_search_url: http://aptible.zendesk.com/hc/en-us/search
 dashboard_login_url: http://dashboard.aptible.com/login
-dashboard_signup_url: '/pricing.html'
+dashboard_signup_url: '/pricing/'
 # dashboard_signup_url: http://dashboard.aptible.com/signup
 production_signup_url: http://dashboard.aptible.com/signup?plan=production
 development_signup_url: http://dashboard.aptible.com/signup?plan=development
