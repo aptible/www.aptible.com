@@ -7,7 +7,7 @@ body {
 }
 
 .svg {
-  header.primary-header {
+  .primary-header-bg {
     background:
     linear-gradient(
       rgba(0, 0, 0, 0),
@@ -19,7 +19,7 @@ body {
 }
 
 .no-svg {
-  header.primary-header {
+  .primary-header-bg {
     background:
     linear-gradient(
       rgba(0, 0, 0, 0),
@@ -32,6 +32,12 @@ body {
 
 header.primary-header {
   height: 200px;
+  background: #0069af;
+
+  .primary-header-bg {
+    height: 100%;
+    width: 100%;
+  }
 
   .navbar-brand {
     img {
