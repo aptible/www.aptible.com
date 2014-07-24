@@ -5,8 +5,24 @@ sub_title: Secure, private cloud deployment for digital health.
 about:
   h1: One stop for HIPAA compliance, as a service.
   h2: Aptible is the world’s first application deployment platform built to automate HIPAA compliance for web and mobile technology.
-  p1: "{icon} Deployment Platform: Runs applications and databases. Manages servers, network topology, security, backups, enryption, and orgazational permissions so your engineers can focus on building great products."
-  p2: "{icon} Compliance Engines: Integrate with the platform to generate all of the documentation, audit logs, and explanatory materials you need to demonstrate compliance with every aspect of HIPAA."
+
+feature_split:
+  deployment:
+    image: /pages/assets/technology/aptible-technology-introduction.png
+    title: Deployment Platform
+    body: |-
+      Runs applications and databases. Manages servers, network topology, security, backups, enryption, and orgazational permissions so your engineers can focus on building great products.
+    cta:
+      text: Learn more about how Aptible's technology works
+      href: /technology.html
+  compliance:
+    image: /pages/assets/compliance/aptible-compliance-introduction.png
+    title: Compliance Engines
+    body: |-
+      Integrate with the platform to generate all of the documentation, audit logs, and explanatory materials you need to demonstrate compliance with every aspect of HIPAA.
+    cta:
+      text: Learn more about how Aptible can manage your entire compliance program.
+      href: /technology.html
 
 how:
   h1: How Aptible Works
@@ -47,12 +63,12 @@ why:
   lockin:
     title: No lock-in
     description: "Integration is as simple as adding a single file to your codebase.  No proprietary APIs, no migration fees, and no dev/prod disparity."
-    logo: /pages/assets/containers.svg
+    logo: /pages/assets/containers-small.png
     classNamr: containers
   compliance:
     title: One-stop HIPAA compliance
     description: "Running your apps and databases gives our compliance tools deep hooks into your ops, saving you time and money on every aspect of HIPAA."
-    logo: /pages/assets/HIPAA-compliance.svg
+    logo: /pages/assets/compliance/hipaa-compliance.png
     className: compliance
   workflow:
     title: Built for your workflow
@@ -90,35 +106,105 @@ newsletter:
 ---
 
 <div class="container">
-  <div class="row section about-billboard">
-    <div class="col-sm-12">
+  <div class="row about-billboard">
+    <div class="col-md-10 col-md-offset-1 col-sm-12">
+      <h1>{{about.h1}}</h1>
+      <h2>{{about.h2}}</h2>
+    </div>
+  </div>
+
+  <div class="feature-split">
+    <div class="panel panel-default">
       <div class="row">
-        <div class="col-sm-12">
-            <h1>{{about.h1}}</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <h2>{{about.h2}}</h2>
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              {{#markdown}}{{about.p1}}{{/markdown}}
+        <div class="col-md-6 col-sm-12">
+          <div class="feature-split-col deployment">
+            <div class="feature-image">
+              <img src="{{feature_split.deployment.image}}" alt="{{feature_split.deployment.title}}" />
             </div>
-            <div class="col-md-6 col-sm-12">
-              {{#markdown}}{{about.p2}}{{/markdown}}
+            <div class="feature-info">
+              <h2 class="feature-title">{{feature_split.deployment.title}}</h2>
+              <div class="feature-body">{{feature_split.deployment.body }}</div>
+              {{#if feature_split.deployment.cta}}
+              <div class="feature-cta">
+                <a href="{{feature_split.deployment.cta.href}}">{{feature_split.deployment.cta.text}}</a>
+              </div>
+              {{/if}}
             </div>
           </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="feature-split-col compliance">
+            <div class="feature-image">
+              <img src="{{feature_split.compliance.image}}" alt="{{feature_split.compliance.title}}" />
+            </div>
+            <div class="feature-info">
+              <h2 class="feature-title">{{feature_split.compliance.title}}</h2>
+              <div class="feature-body">{{feature_split.compliance.body }}</div>
+              {{#if feature_split.compliance.cta}}
+              <div class="feature-cta">
+                <a href="{{feature_split.compliance.cta.href}}">{{feature_split.compliance.cta.text}}</a>
+              </div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <div class="plus">
+        <span class="glyphicon glyphicon-plus"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row section bordered aptible-benefits">
+    <h1>Benefits of Aptible</h1>
+    <div class="col-sm-4">
+      <div class="why-item">
+        <div class="why-icon {{why.lockin.className}}">
+          <img src="{{why.lockin.logo}}" />
+        </div>
+        <div class="why-description fact-item">
+          <h4>{{why.lockin.title}}</h4>
+          <div class="description">{{#markdown}}{{why.lockin.description}}{{/markdown}}</div>
         </div>
       </div>
     </div>
+    <div class="col-sm-4">
+      <div class="why-item">
+        <div class="why-icon {{why.workflow.className}}">
+          <img src="{{why.workflow.logo}}" />
+        </div>
+        <div class="why-description fact-item">
+          <h4>{{why.workflow.title}}</h4>
+          <div class="description">{{#markdown}}{{why.workflow.description}}{{/markdown}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="why-item">
+        <div class="why-icon {{why.compliance.className}}">
+          <img src="{{why.compliance.logo}}" />
+        </div>
+        <div class="why-description fact-item">
+          <h4>{{why.compliance.title}}</h4>
+          <div class="description">{{#markdown}}{{why.compliance.description}}{{/markdown}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <div class="col-md-8 col-md-offset-2 col-sm-12">
-      <div class="panel panel-default cta-sidebar">
-        <div class="home-cta-body">
-          <h3>Like Heroku? You'll Love Aptible</h3>
-          <a class="btn btn-primary btn-lg" href="/pricing.html">Choose Your Account Type</a>
-          <div class="plan-info">Heroku is a trademark of Heroku, Inc. Aptible is not affiliated with Heroku in any way.
-          </div>
+  <div class="row section workflow-cta">
+    <div class="col-md-6 col-md-offset-1 col-sm-12">
+      {{> ci_console}}
+    </div>
+    <div class="col-md-3 col-md-offset-1 col-sm-12">
+      <div class="home-cta-body">
+        <h3>Like Heroku?</h3>
+        <h2>You'll Love Aptible</h2>
+        <a class="btn btn-primary btn-lg" href="/pricing.html">Choose Your Account Type</a>
+        <div class="plan-info">Heroku is a trademark of Heroku, Inc. Aptible is not affiliated with Heroku in any way.
         </div>
       </div>
     </div>
@@ -159,48 +245,23 @@ newsletter:
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="panel-footer why-aptible">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="why-item">
-                <div class="why-icon {{why.lockin.className}}">
-                  <img src="{{why.lockin.logo}}" />
-                </div>
-                <div class="why-description fact-item">
-                  <h4>{{why.lockin.title}}</h4>
-                  <div class="description">{{#markdown}}{{why.lockin.description}}{{/markdown}}</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="why-item">
-                <div class="why-icon {{why.workflow.className}}">
-                  <img src="{{why.workflow.logo}}" />
-                </div>
-                <div class="why-description fact-item">
-                  <h4>{{why.workflow.title}}</h4>
-                  <div class="description">{{#markdown}}{{why.workflow.description}}{{/markdown}}</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="why-item">
-                <div class="why-icon {{why.compliance.className}}">
-                  <img src="{{why.compliance.logo}}" />
-                </div>
-                <div class="why-description fact-item">
-                  <h4>{{why.compliance.title}}</h4>
-                  <div class="description">{{#markdown}}{{why.compliance.description}}{{/markdown}}</div>
-                </div>
-              </div>
-            </div>
+  <div class="row home-newsletter-section">
+    <div class="col-md-8 col-md-offset-2 col-sm-12">
+      <div class="panel panel-default newsletter-signup-panel">
+        <div class="panel-body">
+          <h1 class="panel-title">{{newsletter.title}}</h1>
+          <h5 class="panel-sub">{{newsletter.subtitle}}</h5>
+          <div class="panel-cta">
+           {{> newsletter_signup}}
           </div>
         </div>
       </div>
     </div>
   </div>
-
 
 </div>
 
@@ -241,19 +302,3 @@ newsletter:
   </div>
 </div>
 {{/if}}
-
-<div class="container">
-  <div class="row section">
-    <div class="col-md-8 col-md-offset-2 col-sm-12">
-      <div class="panel panel-default newsletter-signup-panel">
-        <div class="panel-body">
-          <h1 class="panel-title">{{newsletter.title}}</h1>
-          <h5 class="panel-sub">{{newsletter.subtitle}}</h5>
-          <div class="panel-cta">
-           {{> newsletter_signup}}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
