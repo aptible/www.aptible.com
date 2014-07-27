@@ -10,7 +10,7 @@ sub_section: Agreements
 [Fees and Pricing Policy]:https://www.aptible.com/legal/fees_and_pricing.html
 [Security Policy]:https://www.aptible.com/legal/security.html
 [Support Policy]:https://www.aptible.com/legal/support.html
-[Trademark Policy]:https://www.aptible.com/legal/trademarks.html
+[Trademark Policy]:https://www.aptible.com/legal/trademark.html
 [Privacy Policy]:https://www.aptible.com/legal/privacy.html
 [Responsible Disclosure]:https://www.aptible.com/legal/responsible_disclosure.html
 
@@ -319,6 +319,6 @@ The term "**End User**" does not include individuals or entities when they are a
 
 "**Support Policy**" means the policy currently available at https://www.aptible.com/legal/support.html, as it may be updated by us from time to time.
 
-"**Trademark Policy**" means the policy currently available at https://www.aptible.com/legal/trademarks.html, as it may be updated by us from time to time.
+"**Trademark Policy**" means the policy currently available at https://www.aptible.com/legal/trademark.html, as it may be updated by us from time to time.
 
 "**Your Content**" means Content you or any End User (a) runs on the Services, (b) causes to interface with the Services, or (c) uploads to the Services under your account or otherwise transfers, processes, uses, or stores in connection with your account.
