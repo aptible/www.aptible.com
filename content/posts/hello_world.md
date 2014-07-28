@@ -21,4 +21,6 @@ All of our beta customers are incredibly happy:
 - Ops teams love how quickly and cheaply they've been able to implement an entire HIPAA compliance program
 - CEOs love being able to partner with large customers quickly and easily
 
-Partner logos: [Y Combinator](http://www.ycombinator.com/), [Rock Health](http://rockhealth.com/), [Cooper Design](http://www.cooper.com/)
+[<img src="{{ blog_asset_path 'logos/ycombinator.png' }}" height="150px" />](http://www.ycombinator.com)
+[<img src="{{ blog_asset_path 'logos/rock_health.svg' }}" height="150px" />](http://rockhealth.com/)
+[<img src="{{ blog_asset_path 'logos/cooper.svg' }}" height="150px" />](http://www.cooper.com/)
