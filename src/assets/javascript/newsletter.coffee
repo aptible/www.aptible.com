@@ -21,7 +21,7 @@ $(document).ready ->
           success.hide()
 
           if emailVal && validateEmail(emailVal)
-            analytics.identify email: emailVal, newsletter_subscribed: true
+            analytics.identify emailVal, email: emailVal, newsletter_subscribed: true
             analytics.track 'subscribed_to_newsletter', { email: emailVal }
             success.show()
             fields.hide()
