@@ -21,7 +21,7 @@ $(document).ready ->
             messageContainer.attr('class', 'alert').hide()
 
             track_params = { name: nameVal, email: emailVal, message: messageVal }
-            analytics.identify name: nameVal, email: emailVal
+            analytics.identify emailVal, name: nameVal, email: emailVal
             analytics.track action, track_params
 
             messageContainer.addClass('alert-success').show()
