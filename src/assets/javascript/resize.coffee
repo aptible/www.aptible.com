@@ -11,4 +11,4 @@ $(document).ready ->
   adjustContentHeight()
 
 $(window).resize ->
-  AptibleSassScripts.adjustContentHeight()
+  adjustContentHeight()
