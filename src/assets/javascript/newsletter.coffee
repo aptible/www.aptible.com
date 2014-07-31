@@ -22,7 +22,7 @@ $(document).ready ->
 
           if emailVal && validateEmail(emailVal)
             analytics.identify emailVal, email: emailVal, newsletter_subscribed: true
-            analytics.track 'subscribed_to_newsletter', { email: emailVal }
+            analytics.track 'Subscribed To Newsletter', { email: emailVal }
             success.show()
             fields.hide()
 
