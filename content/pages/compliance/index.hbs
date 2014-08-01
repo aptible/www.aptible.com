@@ -1,0 +1,156 @@
+---
+title: HIPAA Compliance
+id: compliance content-page
+introduction:
+  image: /pages/assets/compliance/aptible-compliance-introduction.png
+  title: Aptible enables your digital health organization to implement an entire HIPAA business associate compliance program for a fraction of the cost of traditional methods.
+  body: |-
+    By running your applications and databases, Aptible isolates and reduces your security risks. Because we run your deployment workflow, our compliance validation engines can help with every component of the HIPAA Privacy, Security, and Breach Notification Rules.
+approach:
+  title: Our Approach
+  approaches:
+    ca:
+      image: /pages/assets/compliance/continuous-auditing.png
+      title: Continuous auditing
+      body: |-
+        We start with government audit protocols and tailor them for digital health companies. Our compliance API assesses your status continuously, so your proof of compliance is never outdated.
+    tools:
+      image: /pages/assets/compliance/compliance-tools.png
+      title: Beautiful tools
+      body: |-
+        Our compliance engines are easy and intuitive to use, so you can understand HIPAA without needing a PhD.
+    documentation:
+      image: /pages/assets/compliance/automatic-documentation.png
+      title: Automatic documentation
+      body: |-
+        Built-in auditing and logging tools reduce manual work at every step. Spend time on real work, not paperwork.
+compliance_benefits:
+  1:
+    title: Sell Faster
+    body: |-
+      Clear security reviews with large customers in days, not months.
+  2:
+    title: Automate proof of compliance
+    body: |-
+      Our customers estimate Aptible reduces their manual compliance burden by up to 90%.
+  3:
+    title: Reduce and isolate security vulnerabilities
+    body: |-
+      Running your infrastructure means your team can focus their security efforts on application-level issues.
+  4:
+    title: Capture Risk
+    body: |-
+      Efficiently report risk back to your supervisors, board, and business partners.
+  5:
+    title: Consolidate your security program
+    body: |-
+      Easily integrate third-party security solutions into your ops and documentation.
+  6:
+    title: Curious how Aptible’s technology works?
+    body: |-
+      [/technology](Learn more about our technology)
+
+becoming_compliant:
+  title: Becoming HIPAA-compliant with Aptible
+  sub_title: The Aptible HIPAA Compliance Model
+  description_title: Aptible approaches compliance as a continuous cycle.
+  body: |-
+    We break the regulatory requirements down into five key areas and provide tools and hands-on support to help you succeed in each area:
+  steps:
+    1:
+      title: Begin with risk analysis
+      body: |-
+        Our HIPAA Risk Assessment Engine guides you through an industry-standard methodology and documents risks for key decision makers.
+    2:
+      title: "Choose policies and procedures for your organization, based on your risk assessment"
+      body: |-
+        Our HIPAA Security + Privacy Policy Engine supplies best practices, tailors them to your organization, and creates all the necessary audit trails.
+    3:
+      title: "Choose policies and procedures for your organization, based on your risk assessment"
+      body: |-
+        Our HIPAA Security + Privacy Policy Engine supplies best practices, tailors them to your organization, and creates all the necessary audit trails.
+    4:
+      title: Secure ops
+      body: |-
+        The world's first deployment platform built to support HIPAA compliance. [Read more about our technology](/technology)
+    5:
+      title: Incident response
+      body: |-
+        Be prepared to manage privacy and security incidents, contingency planning, and disaster recovery with our HIPAA Incident Response Engine.
+
+cta:
+  title: |-
+    Ready to start deploying HIPAA-compliant apps with our high-assurance deployment platform and  compliance engines?
+  button: Open Your Production Account
+
+newsletter:
+  title: Get the latest news on HIPAA
+  subtitle: "Straight to your inbox, no more than twice a month."
+  placeholder: Enter your email address
+  submit: Sign me up!
+  success: Thanks for signing up!
+  error: Please use a valid email
+---
+
+<div class="facts-page">
+
+  <div class="fancy-cover section">
+    <div class="container">
+      <div class="row facts-page-introduction">
+        <div class="col-md-6 col-sm-12">
+          <div class="fact-section-image">
+            <img src="{{introduction.image}}" alt="Aptible's Technology" class="technology-introduction-image" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>{{introduction.title}}</h2>
+          <div class='introduction-body'>{{#markdown}}{{introduction.body}}{{/markdown}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-panel">
+    <div class="container">
+
+      <div class="row section bordered">
+        <h1 class="section-header">{{approach.title}}</h1>
+        {{#each approach.approaches}}
+          <div class="col-sm-4">
+            <div class="fact-section centered">
+              <div class="fact-section-image"><img src="{{image}}" /></div>
+              <h3>{{title}}</h3>
+              <div class="fact-section-body">
+                {{#markdown}}{{body}}{{/markdown}}
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+
+
+      <div class="row section">
+        <div class="facts-page-cta col-md-8 col-md-offset-2 col-sm-12">
+          <h2 class="cta-title">{{cta.title}}</h2>
+          <a class="btn btn-primary btn-lg" href="{{config.dashboard_signup_url}}">{{cta.button}}</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row newsletter-section">
+    <div class="col-md-6 col-md-offset-3 col-sm-12">
+      <div class="panel panel-default newsletter-signup-panel">
+        <div class="panel-body">
+          <h1 class="panel-title">{{newsletter.title}}</h1>
+          <h5 class="panel-sub">{{newsletter.subtitle}}</h5>
+          <div class="panel-cta">
+           {{> newsletter_signup}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
