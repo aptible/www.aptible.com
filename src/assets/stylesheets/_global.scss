@@ -309,3 +309,30 @@ ul.social-icons {
   border-bottom: 1px solid $color-border-gray;
   width: 100%;
 }
+
+.fancy-cover.section {
+  padding: 100px;
+  background: linear-gradient($background, $color-bg-gray);
+  border-bottom: 1px solid $color-border-gray;
+  padding-top: 100px;
+
+  &:after {
+    display: none;
+  }
+}
+
+h1.section-header {
+  color: $color-dark-blue;
+  font-size: 36px;
+  margin: 20px 0 50px;
+  text-align: center;
+}
+
+
+.fact-section.centered {
+  text-align: center;
+
+  .fact-section-image {
+    margin-bottom: 30px;
+  }
+}
