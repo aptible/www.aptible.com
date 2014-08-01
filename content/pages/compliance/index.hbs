@@ -48,7 +48,7 @@ compliance_benefits:
   6:
     title: Curious how Aptible’s technology works?
     body: |-
-      [/technology](Learn more about our technology)
+      [Learn more about our technology](/technology)
 
 becoming_compliant:
   title: Becoming HIPAA-compliant with Aptible
@@ -128,6 +128,18 @@ newsletter:
         {{/each}}
       </div>
 
+
+      <div class="row section bordered">
+        <h1 class="section-header">Aptible's Compliance Benefits</h1>
+        {{#each compliance_benefits}}
+          <div class="col-sm-4 fact-item">
+            <h4>{{title}}</h4>
+            <div class="description">
+              {{#markdown}}{{body}}{{/markdown}}
+            </div>
+          </div>
+        {{/each}}
+      </div>
 
       <div class="row section">
         <div class="facts-page-cta col-md-8 col-md-offset-2 col-sm-12">
