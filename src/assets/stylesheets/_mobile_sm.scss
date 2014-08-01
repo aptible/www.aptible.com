@@ -1,9 +1,13 @@
+.container {
+  width: 100% !important;
+}
+
 header.primary-header {
   background-position: center center;
 }
 
 header.primary-header .header-title-container h1.primary-title {
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .why-aptible .fact-item .description {
@@ -63,7 +67,7 @@ footer.aptible-footer {
   }
 }
 
-.technology {
+.technology, .compliance {
   .fancy-cover {
     padding:  50px 0
   }

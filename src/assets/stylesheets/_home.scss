@@ -61,20 +61,20 @@
   .plus {
     text-align: center;
     position: absolute;
-    height: 59px;
-    width: 59px;
+    height: 80px;
+    width: 80px;
     left: 50%;
     top: 169px;
-    margin-left: -30px;
+    margin-left: -40px;
     background: #f6f6f6;
-    @include border-radius(30px);
+    @include border-radius(40px);
     @include box-shadow(inset 0 1px 4px 0 rgba(#000, .09));
 
     .glyphicon {
       color: $color-bright-blue;
-      font-size: 30px;
-      vertical-align: -28px;
-      left: 1px;
+      font-size: 40px;
+      vertical-align: -43px;
+      left: 2px;
     }
   }
 
