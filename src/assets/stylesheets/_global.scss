@@ -311,10 +311,9 @@ ul.social-icons {
 }
 
 .fancy-cover.section {
-  padding: 100px;
+  padding: 100px 0;
   background: linear-gradient($background, $color-bg-gray);
   border-bottom: 1px solid $color-border-gray;
-  padding-top: 100px;
 
   &:after {
     display: none;
