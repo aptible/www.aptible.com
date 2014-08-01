@@ -1,7 +1,7 @@
 ---
 title: Responsible Disclosure Policy
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2014-07-02
+posted: 2014-08-01
 section: Legal
 sub_section: Policies
 ---
@@ -11,7 +11,7 @@ Aptible, Inc.
 Responsible Disclosure Policy
 --------------
 
-Version 2.0 - July 2014
+Version 2.1 - August 2014
 
 ### Responsible Disclosure
 We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
@@ -26,7 +26,7 @@ Aptible maintains a vulnerability reporting program with rewards for security re
 Please read the rules carefully!
 
 ### Email
-You can always email us at [security@aptible.com](mailto:security@aptible.com) with general questions or vulnerabilities you do not want to report through Bugcrowd.  
+You can always email us at [security@aptible.com](mailto:security@aptible.com). Please be aware that we can only pay bounties for vulnerabilities reported through Bugcrowd.  
 
 ### PGP
 If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for security@aptible.com is below:
