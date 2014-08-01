@@ -3,19 +3,17 @@
     padding: 100px 0;
   }
 
+  h1.section-header {
+    margin-bottom: 100px;
+    margin-top: 0;
+  }
+
   .our-philosophy {
     margin-top: 20px;
   }
 
   .workflow-title {
     margin-top: 80px;
-  }
-
-  .how-aptible-technology-works {
-    color: $color-dark-blue;
-    font-size: 36px;
-    margin: 0 0 100px;
-    text-align: center;
   }
 
   .how-it-works-section {
@@ -88,6 +86,10 @@
 .facts-page {
   h2 {
     margin: 0 0 26px;
+  }
+
+  h3 {
+    color: $color-dark-blue;
   }
 
   .facts-page-cta {
