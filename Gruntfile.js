@@ -3,6 +3,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+
         connect: {
             dev: {
                 options: {
@@ -22,6 +23,7 @@ module.exports = function(grunt) {
                 jshintrc: '.jshintrc'
             }
         },
+
         assemble: {
             options: {
                 assets: 'dist/assets',
@@ -312,11 +314,16 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.registerTask('env', 'Set environment variable', function(env) {
+        console.log(grunt.config.get('assemble.options.data'));
+        grunt.config.set('assemble.options.env', env);
+    });
+
     grunt.registerTask('setup', ['auto_install', 'gitclone']);
     grunt.registerTask('update', ['require_setup', 'gitpull']);
     grunt.registerTask('dist', ['require_setup', 'clean', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
-    grunt.registerTask('release:production', ['dist', 'exec:s3_sync:www.aptible.com']);
-    grunt.registerTask('release:staging', ['dist', 'exec:s3_sync:www.aptible-staging.com']);
+    grunt.registerTask('release:production', ['env:production', 'dist', 'exec:s3_sync:www.aptible.com']);
+    grunt.registerTask('release:staging', ['env:staging', 'dist', 'exec:s3_sync:www.aptible-staging.com']);
     grunt.registerTask('server', ['dist', 'connect', 'watch']);
     grunt.registerTask('default', ['server']);
 };
