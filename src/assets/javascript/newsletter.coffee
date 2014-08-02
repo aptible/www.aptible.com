@@ -21,8 +21,12 @@ $(document).ready ->
           success.hide()
 
           if emailVal && validateEmail(emailVal)
+            # Trigger Customer.io tracking...
+            analytics.page()
+
+            analytics.alias emailVal
             analytics.identify emailVal, email: emailVal, newsletter_subscribed: true
-            analytics.track 'subscribed_to_newsletter', { email: emailVal }
+            analytics.track 'Subscribed To Newsletter', { email: emailVal }
             success.show()
             fields.hide()
 
