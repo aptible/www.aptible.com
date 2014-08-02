@@ -20,7 +20,11 @@ $(document).ready ->
           if nameVal && emailVal && messageVal
             messageContainer.attr('class', 'alert').hide()
 
+            # Trigger Customer.io tracking...
+            analytics.page()
+
             track_params = { name: nameVal, email: emailVal, message: messageVal }
+            analytics.alias emailVal
             analytics.identify emailVal, name: nameVal, email: emailVal
             analytics.track action, track_params
 
