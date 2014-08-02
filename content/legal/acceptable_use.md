@@ -1,5 +1,6 @@
 ---
 title: Acceptable Use Policy
+tracked_title: Acceptable Use Policy
 description: "Aptible's acceptable use policy."
 posted: 2014-07-02
 section: Legal
