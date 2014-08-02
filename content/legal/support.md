@@ -1,5 +1,6 @@
 ---
 title: Support Policy
+tracked_title: Support Policy
 description: "Aptible's support policy"
 posted: 2014-07-02
 section: Legal

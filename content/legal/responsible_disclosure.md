@@ -1,5 +1,6 @@
 ---
 title: Responsible Disclosure Policy
+tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
 posted: 2014-08-01
 section: Legal

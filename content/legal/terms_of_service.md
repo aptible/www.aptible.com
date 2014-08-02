@@ -1,5 +1,6 @@
 ---
 title: Terms of Service
+tracked_title: Terms of Service
 description: "Aptible's legal terms of service"
 posted: 2014-07-02
 section: Legal

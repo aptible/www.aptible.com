@@ -1,5 +1,6 @@
 ---
 title: Security Policy
+tracked_title: Security Policy
 description: "Aptible's security policy"
 posted: 2014-07-02
 section: Legal

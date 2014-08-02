@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+tracked_title: Privacy Policy
 description: "Aptible's privacy policy."
 posted: 2014-07-01
 section: Legal
