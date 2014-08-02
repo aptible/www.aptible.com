@@ -108,5 +108,14 @@
 }
 
 .q-a .fact-item {
-  min-height: 200px;
+  min-height: 170px;
+  text-align: left;
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
 }
