@@ -10,6 +10,38 @@ header.primary-header .header-title-container h1.primary-title {
   margin-top: 0;
 }
 
+
+.navbar-nav.navbar-right {
+  width: 100%;
+  text-align: center;
+
+  > li {
+    display: inline-block;
+    float: none;
+
+    > a {
+      font-size: 11px;
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+  }
+}
+
+.navbar > .container .navbar-brand {
+  width: 125px;
+  display: block;
+  float: none;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.container > .navbar-header {
+  width: 100%;
+}
+
 .why-aptible .fact-item .description {
   font-size: 14px;
 }
