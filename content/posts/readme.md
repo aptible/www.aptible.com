@@ -1,5 +1,5 @@
 # ![](http://aptible-media-assets-manual.s3.amazonaws.com/web-horizontal-350.png)  
-## aptible-blog   
+## aptible-blog
 A collection .md and .hbs pages used to drive www.aptible.com.
 
 See [aptible/www.aptible.com](https://github.com/aptible/www.aptible.com) for instructions on how to assemble these pages into a static site.
@@ -22,16 +22,21 @@ section: Blog
 
 #### Using media in your posts
 
-Use the `{{blog_asset_path}}` helper to build a relative URL to the media in the assets folder. The following will generate a path to `assets/aptible.png`.
+Use the `{{blog_asset_path}}` helper to build a relative URL to the media in the assets folder. The following will generate a path to `assets/aptible.png`. Note that you will still have to use Markdown or HTML syntax to generate the element.
 
-````
-{{ blog_asset_path 'aptible.png' }}
-````
+For example:
+```
+![]( {{ blog_asset_path 'aptible.png' }} )
+```
+or
+```
+<img src="{{ blog_asset_path 'aptible.png' }}" />
+```
 
 You may also store assets in sub folders
 
 ````
-{{ blog_asset_path 'logos/aptible.png' }}
+![]( {{ blog_asset_path 'logos/aptible.png' }} )
 ````
 
 Copyright &copy; 2014 Aptible
