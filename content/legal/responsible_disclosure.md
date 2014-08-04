@@ -2,7 +2,7 @@
 title: Responsible Disclosure Policy
 tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2014-08-01
+posted: 2014-08-03
 section: Legal
 sub_section: Policies
 ---
@@ -12,7 +12,7 @@ Aptible, Inc.
 Responsible Disclosure Policy
 --------------
 
-Version 2.1 - August 2014
+Version 2.2 - August 2014
 
 ### Responsible Disclosure
 We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
@@ -21,13 +21,44 @@ If you discover a security vulnerability, please give us the chance to fix it, e
 
 Thank you for your work and interest in making the healthcare community safer and more secure!
 
-### Bug Bounty Program
-Aptible maintains a vulnerability reporting program with rewards for security researchers. Bugcrowd helps us manage the bounty program. Please report potential vulnerabilities through our program page at: https://bugcrowd.com/aptible
+### Bounty Program
+**Please read the following rules carefully!**
 
-Please read the rules carefully!
+Aptible rewards security researchers for reporting vulnerabilities. To report a vulnerability, email us at [security@aptible.com](mailto:security@aptible.com).
 
-### Email
-You can always email us at [security@aptible.com](mailto:security@aptible.com). Please be aware that we can only pay bounties for vulnerabilities reported through Bugcrowd.  
+#### Rules  
+1. Never attempt to gain access to another user's account or data.  
+2. Never attempt to degrade the services.  
+3. Never impact other users with your testing.
+4. Test only on in-scope domains, listed below.
+5. Do not use scanners or automated tools to find vulnerabilities.  
+
+#### Scope
+The following properties are in scope:
+- api.aptible.com
+- auth.aptible.com
+- dashboard.aptible.com
+- gridiron.aptible.com
+- risk.aptible.com
+- policy.aptible.com
+- security.aptible.com
+
+**The following types of reports/attacks are out of scope. Do not attempt them:**  
+- DOS attacks
+- Brute forcing login/account management pages
+- Physical vulnerabilities
+- Social engineering attacks (e.g. phishing)
+
+The following types of bugs do not qualify for bounties:
+- CSRF on forms that are available to anonymous users (e.g., signup, login, contact, Olark)  
+- Self-XSS and issues exploitable only through Self-XSS
+- Clickjacking and issues only exploitable through clickjacking
+- Functional, UI and UX bugs and spelling mistakes
+- Descriptive error messages (e.g. stack traces, application or server errors)  
+- HTTP 404 codes/pages or other HTTP error codes/pages
+- Banner disclosure on common/public services
+- Disclosure of known public files or directories, (e.g. robots.txt)
+- Presence of application or web browser "autocomplete" or "save password" permission
 
 ### PGP
 If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for security@aptible.com is below:
