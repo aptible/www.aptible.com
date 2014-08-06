@@ -23,7 +23,7 @@ Version 2.0 - July 2014
 
 Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**), the Aptible web services, including any related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and on which a link to these Terms of Service is displayed (the **"Services"**). These Terms of Service are a legally binding contract between you and Aptible regarding your use of the Services.
 
-PLEASE READ THE FOLLOWING TERMS OF SERVICE CAREFULLY. BY ACCESSING, DOWNLOADING, USING, PURCHASING, OR SUBSCRIBING TO THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THE FOLLOWING TERMS OF SERVICE (THESE "TERMS"), INCLUDING THE APTIBLE ACCEPTIBLE USE POLICY, PRIVACY POLICY, TRADEMARK POLICY, SUPPORT POLICY, FEES AND PRICING POLICY, AND SECURITY POLICY (TOGETHER, THIS **"AGREEMENT"**). If you are not eligible, or do not agree to this Agreement, then you do not have our permission to use the Services.
+PLEASE READ THE FOLLOWING TERMS OF SERVICE CAREFULLY. BY ACCESSING, DOWNLOADING, USING, PURCHASING, OR SUBSCRIBING TO THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THE FOLLOWING TERMS OF SERVICE (THESE "TERMS"), INCLUDING THE APTIBLE ACCEPTABLE USE POLICY, PRIVACY POLICY, TRADEMARK POLICY, SUPPORT POLICY, FEES AND PRICING POLICY, AND SECURITY POLICY (TOGETHER, THIS **"AGREEMENT"**). If you are not eligible, or do not agree to this Agreement, then you do not have our permission to use the Services.
 
 See Section 22 for defined terms.
 
