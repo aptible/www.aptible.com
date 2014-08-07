@@ -24,8 +24,7 @@ $(document).ready ->
             # Trigger Customer.io tracking...
             analytics.page()
 
-            analytics.alias emailVal
-            analytics.identify emailVal, email: emailVal, newsletter_subscribed: true
+            analytics.identify email: emailVal, newsletter_subscribed: true
             analytics.track 'Subscribed To Newsletter', { email: emailVal }
             success.show()
             fields.hide()

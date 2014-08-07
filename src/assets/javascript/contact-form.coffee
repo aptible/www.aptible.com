@@ -23,10 +23,8 @@ $(document).ready ->
             # Trigger Customer.io tracking...
             analytics.page()
 
-            track_params = { name: nameVal, email: emailVal, message: messageVal }
-            analytics.alias emailVal
-            analytics.identify emailVal, name: nameVal, email: emailVal
-            analytics.track action, track_params
+            analytics.identify name: nameVal, email: emailVal
+            analytics.track action, { name: nameVal, email: emailVal, message: messageVal }
 
             messageContainer.addClass('alert-success').show()
             alertText.text('Thanks for your message!')
