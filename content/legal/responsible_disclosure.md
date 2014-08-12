@@ -2,7 +2,7 @@
 title: Responsible Disclosure Policy
 tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2014-08-03
+posted: 2014-08-12
 section: Legal
 sub_section: Policies
 ---
@@ -12,7 +12,7 @@ Aptible, Inc.
 Responsible Disclosure Policy
 --------------
 
-Version 2.2 - August 2014
+Version 2.3 - August 2014
 
 ### Responsible Disclosure
 We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
