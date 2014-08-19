@@ -53,8 +53,8 @@ header.primary-header {
   height: auto;
 
   .primary-header-bg {
-    height: 100%;
-    position: relative;
+    min-height: 100%;
+    position: absolute;
   }
 
   .header-title-container {
