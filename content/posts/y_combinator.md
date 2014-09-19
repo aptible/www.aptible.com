@@ -135,7 +135,6 @@ These questions concern narrative, team, and tactics. They are important, but on
 1. Who are your competitors?
 1. Who might become competitors?
 1. What competition do you fear most?
-1. Someone just showed us an idea like this right before you guys. I don't like it. What else do you have?
 1. What is your burn rate?
 1. How long can you go before funding?
 1. Have you raised funding?
@@ -155,6 +154,7 @@ If you get asked these in an interview, either you're not doing well or you're b
 1. How do we know your team will stick together? Will your team stick at this?
 1. What else have you created together? 
 1. Are you open to changing your idea?
+1. Someone just showed us an idea like this right before you guys. I don't like it. What else do you have?
 
 ### **Softballs**
 
@@ -176,3 +176,7 @@ You will only have about 100 days between getting accepted and Demo Day to make 
 ## p.s. 
 
 Good job on making it to the end! Feel free to ping me on [Twitter](https://twitter.com/chasballew) or with the contact link above if you have questions. After interview invitations go out, I'll volunteer a limited number of mock interview spots on Twitter.
+
+*Updates:*  
+- Moved "What else do you have?" to the trouble section. 
+- You can find the Hacker News discussion for this post [here](https://news.ycombinator.com/item?id=8334957).
