@@ -23,7 +23,10 @@ $(document).ready ->
             # Trigger Customer.io tracking...
             analytics.page()
 
-            analytics.identify emailVal, name: nameVal, email: emailVal
+            identified = typeof analytics.user().id == 'function' && analytics.user().id()
+
+            unless identified
+              analytics.identify emailVal, name: nameVal, email: emailVal
             analytics.track action, { name: nameVal, email: emailVal, message: messageVal }
 
             messageContainer.addClass('alert-success').show()
