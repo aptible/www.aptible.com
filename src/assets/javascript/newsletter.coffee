@@ -24,7 +24,13 @@ $(document).ready ->
             # Trigger Customer.io tracking...
             analytics.page()
 
-            analytics.identify emailVal, email: emailVal, newsletter_subscribed: true
+            identified = typeof analytics.user().id == 'function' && analytics.user().id()
+
+            if identified
+              analytics.identify analytics.user().id(), newsletter_subscribed: true
+            else
+              analytics.identify emailVal, email: emailVal, newsletter_subscribed: true
+
             analytics.track 'Subscribed To Newsletter', { email: emailVal }
             success.show()
             fields.hide()
