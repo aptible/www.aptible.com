@@ -95,10 +95,19 @@
 
   .post {
     padding: 0;
-    text-align: left;
+    background: none;
     border: 0;
-    font-size: 20px;
-    line-height: 28px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.45em;
+
+    h1 {
+      margin: 80px 0 40px;
+    }
+
+    h2 {
+      margin: 50px 0 25px;
+    }
 
     p {
       margin: 14px 0;
@@ -111,6 +120,7 @@
 
 
     .title {
+      margin: 30px 0;
       text-align: center;
       color: $color-bright-blue;
     }

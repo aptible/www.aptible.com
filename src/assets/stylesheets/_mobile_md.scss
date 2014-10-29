@@ -2,3 +2,34 @@ header.primary-header .header-title-container h1.primary-title {
   margin-top: 20px;
 }
 
+.employee.panel {
+  .panel-body {
+    padding: 20px;
+  }
+
+  .bio {
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .image-wrapper {
+    padding: 0 20px;
+  }
+}
+
+.post-single {
+  .post {
+    @extend %aptible-panel;
+    padding: 50px 50px 100px;
+    background: #fff;
+    border: 1px solid $color-border-gray;
+    border-radius: 3px;
+  }
+}

@@ -7,11 +7,11 @@ $screen-lg-min: 1200px;
 }
 
 /* xs devices (tablets, 768px and down) */
-@media (max-width: $screen-sm-min) {
+@media (max-width: $screen-sm-min - 1) {
   @import 'mobile_xs';
 }
 
-/* Small devices (tablets, 768px and up) */
+/* Small devices (tablets, 768px to 992px) */
 @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
   @import 'mobile_sm';
 }

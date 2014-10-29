@@ -11,16 +11,16 @@
 
   .bio {
     position: absolute;
-    opacity: 0;
-    top: 0;
-    right: 0;
+    top: 50%;
     left: 0;
-    padding: 20px;
-    font-size: 14px;
+    padding: 0 30px;
+    transform: translateY(-50%);
+    opacity: 0;
     z-index: -1;
-    text-align: center;
     color: #fff;
+    text-align: center;
     text-shadow: 1px 1px 0 rgba(black, 0.8);
+    font-size: 14px;
     transition: opacity .5s;
 
     a, a:hover {
@@ -56,24 +56,6 @@
     .blanket {
       opacity: .9;
       z-index: 8;
-    }
-  }
-
-  &.chas-ballew {
-    .bio {
-      top: 60px;
-    }
-  }
-
-  &.frank-macreery {
-    .bio {
-      top: 67px;
-    }
-  }
-
-  &.skylar-anderson, &.drake-ballew {
-    .bio {
-      top: 84px;
     }
   }
 
