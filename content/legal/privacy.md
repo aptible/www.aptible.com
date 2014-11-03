@@ -2,7 +2,7 @@
 title: Privacy Policy
 tracked_title: Privacy Policy
 description: "Aptible's privacy policy."
-posted: 2014-07-01
+posted: 2014-11-03
 section: Legal
 sub_section: Policies
 ---
@@ -11,7 +11,7 @@ Aptible, Inc.
 =============
 Privacy Policy
 --------------
-Version 2.0 - July 2014
+Version 2.1 - November 2014
 
 Your privacy is important to us at Aptible. We want to be clear how we use your information, and the ways in which you can protect your privacy.
 
@@ -91,6 +91,13 @@ Our Services are not directed to individuals under 13. We do not knowingly colle
 
 ### International Users
 Our Services are hosted in the United States and intended for users located within the United States. If you choose to use the Services from the European Union or other regions of the world with laws governing data collection and use that may differ from U.S. law, then please note that you are transferring your information outside of those regions to the United States for storage and processing. By providing your information, you consent to any transfer and processing in accordance with this Policy.
+
+### U.S.-E.U./U.S.-Swiss Safe Harbor Compliance   
+Aptible, Inc. is a participant in the U.S. Department of Commerce's European Union and Swiss Safe Harbor programs. Aptible has certified that we adhere to the U.S.-E.U. and U.S.-Swiss Safe Harbor Privacy Principles. For more information about the Safe Harbor and to view our certification, visit the [U.S. Department of Commerce's Safe Harbor Web site](http://export.gov/safeharbor/).
+
+In compliance with the U.S.-E.U. and U.S.-Swiss Safe Harbor Principles, we strive to resolve all complaints about privacy and the collection or use of customer information. If you have questions about our participation in the Safe Harbor program or have a complaint, please send an e-mail to [safeharbor@aptible.com](mailto:safeharbor@aptible.com).
+
+Under the Safe Harbor program, any unresolved privacy complaints can be referred to an independent dispute resolution mechanism. We use the International Centre for Dispute Resolution®/American Arbitration Association® Safe Harbor Program. If you feel that we have not satisfactorily addressed your complaint, you can visit the ICRD/AAA Safe Harbor Program web site at https://apps.adr.org/webfile/ for more information on how to file a complaint.
 
 ### California Privacy Rights
 California Civil Code Section 1798.83 permits Aptible customers who are California residents to request certain information regarding our disclosure of personal information to third parties for their direct marketing purposes.  To make such a request, please contact us at [legal@aptible.com](mailto:legal@aptible.com). 
