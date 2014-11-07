@@ -18,10 +18,10 @@ sales_email: sales@aptible.com
 hello_email: hello@aptible.com
 github: aptible
 twitter: aptible
-address_1: 455 Mission Bay Blvd South
-city: San Francisco
-state: CA
-zip: 94158
+address_1: 155 Water St
+city: Brooklyn
+state: NY
+zip: 11201
 
 blog_assets: '/blog/assets/'
 page_assets: '/pages/assets/'
