@@ -1,31 +1,42 @@
-<div class="alert">
-  <div class="text"></div>
-</div>
+<div class="contact-form">
+  <form method="post" action="https://aptible.zendesk.com/requests/embedded/create" target="zd-form-transport">
+    <input type="hidden" name="locale_id" value="1" />
+    <input type="hidden" name="set_tags" value="web_widget" />
+    <input type="hidden" name="via_id" value="48" />
+    <input type="hidden" name="submitted_from" value="http://www.aptible.com/support/" />
 
-<div class="form-group">
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" name="name" class="form-control" />
+    <div class="alert">
+      <div class="text"></div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" class="form-control" />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="name">Email:</label>
+            <input type="text" name="email" class="form-control" />
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label for="name">Email:</label>
-        <input type="text" name="email" class="form-control" />
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="body">Message:</label>
+          <textarea class="form-control" name="description"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-12">
-    <div class="form-group">
-      <label for="body">Message:</label>
-      <textarea class="form-control" name="message"></textarea>
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
-    </div>
-  </div>
+  </form>
+
+  <iframe id="zd-form-transport" name="zd-form-transport"></iframe>
 </div>
