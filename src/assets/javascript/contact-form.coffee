@@ -6,10 +6,12 @@ $(document).ready ->
         name = form.find('input[name="name"]')
         email = form.find('input[name="email"]')
         message = form.find('textarea[name="description"]')
+        from = form.find('input[name="submitted_from"]')
         messageContainer = form.find('.alert').hide()
         alertText = messageContainer.find('.text')
 
         form.on 'submit', (e) ->
+          from.val(document.location.href)
           nameVal = name.val()
           emailVal = email.val()
           messageVal = message.val()
