@@ -170,8 +170,8 @@ If you believe that your copyrighted work has been copied in a way that constitu
 Submit the above information to:<br/>
 Aptible, Inc.<br/>
 Attn: DMCA Notices<br/>
-455 Mission Bay Blvd S<br/>
-San Francisco, CA 94158<br/>
+155 Water St<br/>
+Brooklyn, NY 11201<br/>
 [legal@aptible.com](mailto:legal@aptible.com)<br/>
 
 Aptible will promptly terminate without notice the accounts of users that are determined by Aptible to be “repeat infringers." A repeat infringer is a user who has been notified of infringing activity or has had Content removed from the Service at least twice.
@@ -250,8 +250,8 @@ This Agreement is governed by the laws of the State of New York without regard t
 **D.  Notice; Process.** A party who intends to seek arbitration must first send a written notice of the dispute to the other, by certified mail or Federal Express (signature required), or if we do not have a physical address on file for you, by electronic mail ("**Notice**"). Aptible’s address for Notice is:  
 
 Aptible, Inc.<br/>
-455 Mission Bay Blvd S<br/>
-San Francisco, CA 94158<br/>
+155 Water St<br/>
+Brooklyn, NY 11201<br/>
 
 The Notice must: (a) describe the nature and basis of the claim or dispute; and (b) set forth the specific relief sought ("**Demand**"). We agree to use good faith efforts to resolve the claim directly, but if we do not reach an agreement to do so within 30 days after the Notice is received, you or Aptible may commence an arbitration proceeding. During the arbitration, the amount of any settlement offer made by you or Aptible must not be disclosed to the arbitrator until after the arbitrator makes a final decision and award, if any.  If our dispute is finally resolved through arbitration in your favor, Aptible will pay you the highest of the following: (i) the amount awarded by the arbitrator, if any; (ii) the last written settlement amount offered by Aptible in settlement of the dispute prior to the arbitrator’s award; or (iii) $1,000.
 
