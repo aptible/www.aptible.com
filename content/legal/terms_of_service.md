@@ -2,7 +2,7 @@
 title: Terms of Service
 tracked_title: Terms of Service
 description: "Aptible's legal terms of service"
-posted: 2014-07-02
+posted: 2014-12-09
 section: Legal
 sub_section: Agreements
 ---
@@ -19,7 +19,7 @@ Aptible, Inc.
 =============
 Terms of Service  
 ----------------
-Version 2.0 - July 2014
+Version 2.1 - December 2014
 
 Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**), the Aptible web services, including any related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and on which a link to these Terms of Service is displayed (the **"Services"**). These Terms of Service are a legally binding contract between you and Aptible regarding your use of the Services.
 
@@ -65,6 +65,7 @@ To access the Services, you must create an Aptible account. When you register fo
 5. You will not attempt to disrupt the Services.  
 6. You will abide by the [Acceptable Use Policy].  
 7. You will abide by the restrictions in our [Support Policy] and [Security Policy] on how the Services may be implemented.  
+8. You will remit payment timely for the services, as specified in the [Fees and Pricing Policy] and any Billing Agreement you may execute.
 
 **B. Unauthorized uses.** You are authorized access to the Services only to the extent necessary to develop and run Applications. You will not, and will not allow third parties under your control to:
 
@@ -83,6 +84,8 @@ To access the Services, you must create an Aptible account. When you register fo
 13. Perform any fraudulent activity, including impersonating any person or entity or claiming a false affiliation; misrepresenting the source, identity or content of information transmitted via the Services; accessing any other Service account without permission, or falsifying your age or date of birth;  
 14. Sell or otherwise transfer the access granted under this Agreement, or any right or ability to view, access, or use any Content; or  
 15. Attempt to do any of the acts described in this Section 2(B), or assist or permit any person in engaging in any of the acts described in this Section 2(B).
+
+If you do not abide by your obligations, or if you engage in unauthorized activity, we may determine your account not to be in good standing. Good standing is determined at Aptible's sole discretion.
 
 APTIBLE RESERVES THE RIGHT TO DISABLE ANY USER'S ACCESS TO ANY PART OF THE SERVICE, AND TO TERMINATE ANY USER'S ACCOUNT, FOR ANY REASON AND WITHOUT ANY NOTICE.
 
