@@ -2,7 +2,7 @@
 title: Support Policy
 tracked_title: Support Policy
 description: "Aptible's support policy"
-posted: 2014-07-02
+posted: 2014-12-29
 section: Legal
 sub_section: Policies
 ---
@@ -11,7 +11,7 @@ Aptible, Inc.
 =============
 Support Policy
 --------------
-Version 2.0 - July 2014
+Version 2.1 - December 2014
 
 This policy outlines Aptible's support practices and resources. It also identifies your support obligations to your customers. It is incorporated by reference into the Aptible Terms of Service.
 
@@ -27,5 +27,5 @@ You are responsible for providing customer service (if any) to End Users. We do 
 ### Monitoring
 Aptible's systems are continuously monitored by automated systems and health checks. In the event of any issue that adversely affects the performance, security, reliability, or integrity of the Services, we will receive notification and respond immediately. Check http://status.aptible.com for the current status of our services.
 
-### Technical support
+### Technical Support
 We offer limited free technical support. Visit https://support.aptible.com or email us at support@aptible.com. This free support does not include debugging of user applications or rewriting your code to be compatible with the Services.
