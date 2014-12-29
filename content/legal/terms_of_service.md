@@ -2,7 +2,7 @@
 title: Terms of Service
 tracked_title: Terms of Service
 description: "Aptible's legal terms of service"
-posted: 2014-12-09
+posted: 2014-12-29
 section: Legal
 sub_section: Agreements
 ---
@@ -10,6 +10,7 @@ sub_section: Agreements
 [Acceptable Use Policy]:https://www.aptible.com/legal/acceptable_use.html
 [Fees and Pricing Policy]:https://www.aptible.com/legal/fees_and_pricing.html
 [Security Policy]:https://www.aptible.com/legal/security.html
+[Service Level Agreement]:https://www.aptible.com/legal/service_level_agreement.html
 [Support Policy]:https://www.aptible.com/legal/support.html
 [Trademark Policy]:https://www.aptible.com/legal/trademark.html
 [Privacy Policy]:https://www.aptible.com/legal/privacy.html
@@ -19,7 +20,7 @@ Aptible, Inc.
 =============
 Terms of Service  
 ----------------
-Version 2.1 - December 2014
+Version 2.2 - December 2014
 
 Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**), the Aptible web services, including any related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and on which a link to these Terms of Service is displayed (the **"Services"**). These Terms of Service are a legally binding contract between you and Aptible regarding your use of the Services.
 
@@ -49,6 +50,8 @@ This Agreement incorporates several policies. Failure to abide by your obligatio
 1. [Privacy Policy]
 
 In addition, please see our policy on [Responsible Disclosure] of security vulnerabilities.
+
+We provide certain Aptible Services for pursuant to a [Service Level Agreement].
 
 ### 1. Eligibility  
 You must be at least eighteen (18) years of age to use the Services. By agreeing to this Agreement, you represent and warrant to us that: (a) you are at least eighteen (18) years of age; (b) you have not previously been suspended or removed from the Services; and (c) your registration and your use of the Services is in compliance with all applicable laws and regulations. If you are using the Services on behalf of an entity, organization, or company, you represent and warrant that you have the authority to bind that organization to this Agreement and you agree to be bound by this Agreement on behalf of that organization.  Aptible may, in its sole discretion, refuse to offer the Services to any person or entity, and may change its eligibility criteria at any time.
@@ -232,7 +235,7 @@ EACH PROVISION OF THIS AGREEMENT THAT PROVIDES FOR A LIMITATION OF LIABILITY, DI
 The foregoing limitations of liability do not apply to breaches of confidentiality obligations, violations of a party's intellectual property rights by the other party, or indemnification obligations.
 
 ### 16. Support
-We will provide technical support to you pursuant to our [Support Policy]. We reserve the right to revise this policy without notice at any time. The specific terms of a Service Level Agreement or enterprise support agreement will supersede the Support Policy, should you enter into such an agreement with us.
+We will provide technical support to you pursuant to our [Support Policy]. We reserve the right to revise this policy without notice at any time. The specific terms of a custom Service Level Agreement or enterprise support agreement will supersede the Support Policy, should you enter into such an agreement with us.
 
 ### 17. Security
 You hereby agree to the terms of our [Security Policy].
