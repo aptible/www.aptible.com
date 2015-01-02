@@ -36,6 +36,6 @@ npm install
 grunt release:staging
 ````
 
-Copyright &copy; 2014 Aptible
+Copyright &copy; 2015 Aptible
 
 [<img src="https://s.gravatar.com/avatar/9b58236204e844e3181e43e05ddb0809?s=60" style="border-radius: 50%;" alt="@sandersonet" />](https://github.com/sandersonet)
