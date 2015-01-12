@@ -94,6 +94,7 @@ module.exports = function(grunt) {
 
         compass: {
             options: {
+                bundleExec: true,
                 config: 'compass.rb'
             },
             site: {
