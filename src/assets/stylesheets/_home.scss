@@ -21,6 +21,18 @@
   }
 }
 
+header.primary-header {
+  .nav-primary > li > a {
+    &:active, &:hover, &:link, &:visited {
+      background: none;
+
+      &.btn-round.btn-primary {
+        background: #fff;
+      }
+    }
+  }
+}
+
 .about-billboard {
   font-size: 18px;
   line-height: 25px;

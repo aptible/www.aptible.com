@@ -12,6 +12,7 @@
     &.btn-primary {
       background: #fff;
       color: $color-dark-blue;
+      padding: 6px 16px;
 
       &:hover {
         color: $color-dark-blue;
@@ -20,7 +21,7 @@
     }
 
     &.btn-default {
-      padding: 5px 16px 5px;
+      padding: 5px 16px;
       border: 1px solid #fff;
       background: none;
 

@@ -1,0 +1,56 @@
+.openings {
+  i.fa {
+    font-size: 19px;
+    margin: 0 auto;
+    width: 25px;
+    display: block;
+    color: $color-light;
+  }
+
+  p {
+    margin: 0 0 1em 0;
+    line-height: 1.4em;
+  }
+
+  section {
+    position: relative;
+    padding: 30px;
+  }
+
+  .job {
+    padding: 40px;
+  }
+
+  .job-title {
+    font-size: 24px;
+    text-deocration: none;
+    color: $color-primary;
+  }
+
+  .tags {
+    span {
+      color: #999;
+      font-size: 12px;
+
+      &:after {
+        content: ', '
+      }
+
+      &:last-of-type:after {
+        content: ''
+      }
+    }
+  }
+
+  .description {
+    color: $color-subdued;
+    font-size: 15px;
+  }
+
+}
+
+* {
+  -webkit-box-sizing: border-box;  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
