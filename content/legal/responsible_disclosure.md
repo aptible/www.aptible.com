@@ -12,19 +12,17 @@ Aptible, Inc.
 Responsible Disclosure Policy
 --------------
 
-Version 2.3 - August 2014
+Version 2.4 - February 2015
 
 ### Responsible Disclosure
 We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
 
-If you discover a security vulnerability, please give us the chance to fix it, either by participating in our bounty program or emailing us at [security@aptible.com](mailto:security@aptible.com). Publicly disclosing a security vulnerability without informing us first puts the rest of the community at risk. When you notify us of a potential problem, we will work with you to make sure we understand the scope and cause of the issue.
+If you discover a security vulnerability, please give us the chance to fix it by emailing us at [security@aptible.com](mailto:security@aptible.com). Publicly disclosing a security vulnerability without informing us first puts the rest of the community at risk. When you notify us of a potential problem, we will work with you to make sure we understand the scope and cause of the issue.
 
-Thank you for your work and interest in making the healthcare community safer and more secure!
+Thank you for your work and interest in making the community safer and more secure!
 
 ### Bounty Program
-Aptible rewards security researchers for reporting vulnerabilities. Please report potential issues through our Bugcrowd program page at: https://bugcrowd.com/aptible
-
-Please be aware that we can only pay bounties for vulnerabilities submitted through Bugcrowd.
+Aptible rewards security researchers for reporting vulnerabilities. Please email [security@aptible.com](mailto:security@aptible.com) to report an issue.
 
 ### PGP
 If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for security@aptible.com is below:
