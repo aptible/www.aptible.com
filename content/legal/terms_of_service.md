@@ -103,7 +103,7 @@ You may terminate your account and this Agreement at any time in accordance with
 2. Configuring and enforcing user access policies and permissions across your Applications; and
 3. Providing legally adequate privacy notices for your users, and informing them that their information may be available to Aptible and/or our affiliates.
 
-We provide support and training to help you with these responsibilities. Please see our [support resources](/support), our [Support Policy], and our [training offerings](/training).
+We provide support and training to help you with these responsibilities. Please see our [support resources](https://support.aptible.com), our [Support Policy], and our [training offerings](/training).
 
 ### 4. Fees and Charges
 **A. Payments and pricing.** You incur fees and charges based on your use of the Services. We calculate and bill fees and charges monthly or at the interval indicated in the Aptible [Fees and Pricing Policy], or your billing agreement, as appropriate. We may bill you more frequently if we determine that your account is at risk of non-payment. Any outstanding balance becomes immediately due and payable upon termination of this Agreement for any reason.
