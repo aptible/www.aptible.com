@@ -20,7 +20,7 @@
             <li {{#is dirname 'dist/technology'}} class="active"{{/is}}><a href="/technology">Technology</a></li>
             <li {{#is dirname 'dist/compliance'}} class="active"{{/is}}><a href="/compliance">Compliance</a></li>
             <li {{#is page.section 'Company'}} class="active"{{/is}}><a href="/company">Company</a></li>
-            <li {{#is page.section 'Support'}} class="active"{{/is}} {{#is page.section 'Legal'}} class="active"{{/is}}><a href="/support">Support</a></li>
+            <li><a href="{{config.support_url}}">Support</a></li>
             <li><a href="{{config.dashboard_signup_url}}" class="btn btn-sm btn-round btn-primary">Sign Up</a></li>
             <li><a href="{{config.dashboard_login_url}}" class="btn btn-sm btn-round btn-default">Log In</a></li>
           </ul>

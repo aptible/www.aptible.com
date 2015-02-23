@@ -3,8 +3,6 @@ segmentio_write_key:
   staging: 830gbp5ux9
   production: rkt88i7k3w
 
-knowledge_base_url: https://support.aptible.com
-knowledge_base_search_url: https://aptible.zendesk.com/hc/en-us/search
 dashboard_login_url: https://dashboard.aptible.com/login
 dashboard_signup_url: /pricing/
 production_signup_url: https://dashboard.aptible.com/signup?plan=production
@@ -13,6 +11,7 @@ status_url: http://status.aptible.com/
 
 support_phone: (866) 296-5003
 support_email: support@aptible.com
+support_url: https://support.aptible.com
 sales_phone: (866) 296-5003
 sales_email: sales@aptible.com
 hello_email: hello@aptible.com
