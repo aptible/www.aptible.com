@@ -8,3 +8,156 @@
     line-height: 23px;
   }
 }
+
+
+.technolocy, .hipaa-compliance {
+  h1.section-header {
+    margin-bottom: 100px;
+    margin-top: 0;
+
+    &.with-sub-header {
+      margin-bottom: 30px;
+    }
+  }
+
+  h2.section-sub-header {
+    font-size: 20px;
+    color: $color-light;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+
+.compliance-model-steps {
+  h2.fact-section-title {
+    font-size: 24px;
+  }
+
+  .compliance-cycle-info {
+    padding-top: 0;
+    text-align: center;
+  }
+}
+
+.compliance-cycle-steps {
+  .compliance-cycle-step {
+    margin: 0 0 30px;
+    opacity: .25;
+    transition: opacity .4s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .compliance-cycle-step-title {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+
+  .compliance-cycle-step-body {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+}
+
+.compliance-cycle-container {
+  &.risk {
+    svg #risk {
+      transition: fill .4s ease;
+      fill: url(#current-step);
+    }
+  }
+
+  &.policies {
+    svg #policies {
+      transition: fill .4s ease;
+      fill: url(#current-step);
+    }
+  }
+
+  &.training {
+    svg #training {
+      transition: fill .4s ease;
+      fill: url(#current-step);
+    }
+  }
+
+  &.security {
+    svg #security {
+      transition: fill .4s ease;
+      fill: url(#current-step);
+    }
+  }
+
+  &.incidents {
+    svg #incidents {
+      transition: fill .4s ease;
+      fill: url(#current-step);
+    }
+  }
+}
+
+.compliance-cycle-steps {
+  &.risk {
+    .compliance-cycle-step.risk {
+      opacity: 1;
+
+      .compliance-cycle-step-title {
+        color: #09CB00;
+      }
+    }
+  }
+
+  &.policies {
+    .compliance-cycle-step.policies {
+      opacity: 1;
+
+      .compliance-cycle-step-title {
+        color: #09CB00;
+      }
+    }
+  }
+
+  &.training {
+    .compliance-cycle-step.training {
+      opacity: 1;
+
+      .compliance-cycle-step-title {
+        color: #09CB00;
+      }
+    }
+  }
+
+  &.security {
+    .compliance-cycle-step.security {
+      opacity: 1;
+
+      .compliance-cycle-step-title {
+        color: #09CB00;
+      }
+    }
+  }
+
+  &.incidents {
+    .compliance-cycle-step.incidents {
+      opacity: 1;
+    }
+
+    .compliance-cycle-step-title {
+      color: #09CB00;
+    }
+  }
+}
+
+.compliance-carousel.slick-slider {
+  button.slick-prev, button.slick-next {
+    display: none !important;
+  }
+}
+
+.section.bordered.compliance-cycle-section {
+  padding-bottom: 60px;
+  margin-top: 60px;
+}
