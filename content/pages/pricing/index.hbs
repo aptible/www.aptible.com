@@ -10,21 +10,24 @@ development_plan_cost: $0.08/Hour
 
 additional_costs:
   containers:
-    price: $0.10/Hour
-    name: Additional App/Database Containers
+    name: Additional containers
+    price: $0.08/hour
   storage:
-    price: $0.40/GB/Month
-    name: Additional Storage, Encrypted Backups Included
+    name: Additional disk
+    price: $0.37/GB/month
+  domains:
+    name: Additional domains
+    price: $0.05/hour
 
 benefits:
   ops:
     title: "High-Assurance Deployment Platform"
     image: /pages/assets/technology/aptible-technology-introduction.png
     features:
-      included: 10 App/Database Containers Included
-      alsoincluded: 1TB Storage, with Free Encrypted Backups
+      containers: 6 App or Database Containers, 1GB RAM each
+      disk: 1TB SSD Storage, Free Encrypted Backups
+      domains: 4 Custom Domains
       security: Powerful Security and Audit Controls
-      deploys: One-Click Deploys and Scaling
       ci: Easy CI Integration
       support: 24/7 Technical and Compliance Support
 
@@ -49,7 +52,7 @@ questions:
     response: One for each instance of an application or database you want to run. Most customers begin with 2 or 3 and add more as they scale.
   accounts:
     inquiry: What is the difference between account types?
-    response: Only Production Accounts have the security and legal features required to support HIPAA compliance.
+    response: Production Accounts have the security and legal features required to support HIPAA compliance.
   account_count:
     inquiry: Can we have both a Production and Development Account?
     response: Yes, most organizations have both. Development Accounts are great for staging environments and non-regulated applications.
@@ -104,7 +107,7 @@ questions:
                 <a class="btn btn-lg btn-primary" href="{{config.production_signup_url}}">Open a Production Account</a>
                 <ul class="additional-costs">
                   {{#each additional_costs}}
-                    <li class="additional_cost">{{price}} {{name}}</li>
+                    <li class="additional_cost">{{name}}: {{price}}</li>
                   {{/each }}
                 </ul>
               </div>
@@ -114,8 +117,8 @@ questions:
           <div class="development-plan-callout">
             <h4>Don't need a Production Account yet?</h4>
             <div class="callout-body">
-              <a href="{{config.development_signup_url}}"> Start with</a> an Aptible Development Account from $0.08/hour.
-              <br />No minimums, credit card required.
+              <a href="{{config.development_signup_url}}">Open a Development Account</a>
+              <br />No minimums, no commitment. Credit card required.
             </div>
           </div>
         </div>
