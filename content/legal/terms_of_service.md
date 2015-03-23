@@ -2,19 +2,21 @@
 title: Terms of Service
 tracked_title: Terms of Service
 description: "Aptible's terms of service"
-posted: 2015-03-19
+posted: 2015-03-23
 section: Legal
 sub_section: Agreements
+order: 0
 ---
 <!-- Reference Links -->
+[Service Level Agreement]:/legal/service_level_agreement.html
+[Breach Indemnification Agreement]:/legal/breach_indemnification_agreement.html
 [Acceptable Use Policy]:/legal/acceptable_use.html
 [Fees and Pricing Policy]:/legal/fees_and_pricing.html
-[Security Policy]:/legal/security.html
-[Service Level Agreement]:/legal/service_level_agreement.html
-[Support Policy]:/legal/support.html
-[Trademark Policy]:/legal/trademark.html
 [Privacy Policy]:/legal/privacy.html
 [Responsible Disclosure]:/legal/responsible_disclosure.html
+[Security Policy]:/legal/security.html
+[Support Policy]:/legal/support.html
+[Trademark Policy]:/legal/trademark.html
 
 Aptible, Inc.
 =============
@@ -22,13 +24,13 @@ Terms of Service
 ----------------
 Version 2.3 - March 2015
 
-Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**). These Terms of Service are a legally binding contract between you and Aptible regarding your use of the Services.
+Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**). 
 
-PLEASE READ THE FOLLOWING TERMS OF SERVICE CAREFULLY. BY ACCESSING, DOWNLOADING, USING, PURCHASING, OR SUBSCRIBING TO THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THE FOLLOWING TERMS OF SERVICE (THESE "TERMS"), INCLUDING THE APTIBLE ACCEPTABLE USE POLICY, PRIVACY POLICY, TRADEMARK POLICY, SUPPORT POLICY, FEES AND PRICING POLICY, AND SECURITY POLICY (TOGETHER, THIS **"AGREEMENT"**). If you are not eligible, or do not agree to this Agreement, then you do not have our permission to use the Services.
+These Terms of Service are a legally binding contract between you and Aptible regarding your use of the Services. The general form of this Agreement is that we grant you a license to use the Services, and in return you pay us and agree to abide by our terms and policies.
+
+PLEASE READ THE FOLLOWING TERMS OF SERVICE CAREFULLY. BY ACCESSING, DOWNLOADING, USING, PURCHASING, OR SUBSCRIBING TO THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THE FOLLOWING TERMS OF SERVICE (THESE **"TERMS"**), INCLUDING THE APTIBLE ACCEPTABLE USE POLICY, FEES AND PRICING POLICY, PRIVACY POLICY, SECURITY POLICY, SUPPORT POLICY, AND TRADEMARK POLICY (TOGETHER, THIS **"AGREEMENT"**). If you are not eligible, or do not agree to this Agreement, then you do not have our permission to use the Services.
 
 See Section 22 for defined terms.
-
-The general form of this Agreement is as follows: We grant you a license to use the Services, and in return you pay us and agree to abide by our terms and policies.
 
 You acknowledge and agree that, as provided in greater detail in this Agreement:  
 
@@ -49,9 +51,9 @@ This Agreement incorporates several policies. Failure to abide by your obligatio
 1. [Trademark Policy]
 1. [Privacy Policy]
 
-In addition, please see our policy on [Responsible Disclosure] of security vulnerabilities.
+We provide certain Aptible Services pursuant to a [Service Level Agreement] and a [Breach Indemnification Agreement].
 
-We provide certain Aptible Services pursuant to a [Service Level Agreement].
+In addition, please see our policy on [Responsible Disclosure] of security vulnerabilities.
 
 ### 1. Eligibility  
 You must be at least eighteen (18) years of age to use the Services. By agreeing to this Agreement, you represent and warrant to us that: (a) you are at least eighteen (18) years of age; (b) you have not previously been suspended or removed from the Services; and (c) your registration and your use of the Services is in compliance with all applicable laws and regulations. If you are using the Services on behalf of an entity, organization, or company, you represent and warrant that you have the authority to bind that organization to this Agreement and you agree to be bound by this Agreement on behalf of that organization.  Aptible may, in its sole discretion, refuse to offer the Services to any person or entity, and may change its eligibility criteria at any time.
@@ -103,7 +105,7 @@ You may terminate your account and this Agreement at any time in accordance with
 2. Configuring and enforcing user access policies and permissions across your Applications; and
 3. Providing legally adequate privacy notices for your users, and informing them that their information may be available to Aptible and/or our affiliates.
 
-We provide support and training to help you with these responsibilities. Please see our [support resources](/support), our [Support Policy], and our [training offerings](/training).
+We provide support and training to help you with these responsibilities. Please see our [support resources](https://support.aptible.com), our [Support Policy], and our [training offerings](/training).
 
 ### 4. Fees and Charges
 **A. Payments and pricing.** You incur fees and charges based on your use of the Services. We calculate and bill fees and charges monthly or at the interval indicated in the Aptible [Fees and Pricing Policy], or your billing agreement, as appropriate. We may bill you more frequently if we determine that your account is at risk of non-payment. Any outstanding balance becomes immediately due and payable upon termination of this Agreement for any reason.
@@ -119,7 +121,7 @@ Fees are based on our measurements of your use of the Services. Our determinatio
 If any deduction or withholding is required by law, you will notify us and will pay us any additional amounts necessary to ensure that the net amount that we receive, after any deduction and withholding, equals the amount we would have received if no deduction or withholding had been required. Additionally, you will provide us with documentation showing that the withheld and deducted amounts have been paid to the relevant taxing authority.
 
 ###5. Suspension, Removal, and Remedial Action
-Under some circumstances, you are obligated to suspend or remove an Application from the Services and take remedial measures. In addition, we reserve the right to suspend your account, suspend your access or your End Users' access to the Services, and/or suspend or remove an Application (take "Remedial Action"). Our right to take Remedial Action is in addition to our right to terminate this Agreement pursuant to Section 11.
+Under some circumstances, you are obligated to suspend or remove an Application from the Services and take remedial measures. In addition, we reserve the right to suspend your account, suspend your access or your End Users' access to the Services, and/or suspend or remove an Application (take **"Remedial Action"**). Our right to take Remedial Action is in addition to our right to terminate this Agreement pursuant to Section 11.
 
 **A. Your obligations.** If you become aware that any Application or End User's use of an Application or data violates the [Acceptable Use Policy], you will immediately suspend that Application, remove the applicable data, or suspend access to that End User, whichever may be applicable to remedy the violation. If you fail to remedy the violation on your own, we will make a specific request that you do so. If you do not remedy the violation within the time period specified in our request (in no case later than 24 hours), we may take Remedial Action.
 
@@ -161,7 +163,7 @@ Notwithstanding that general principle:
 4. If you provide any suggestions to us, we will own all right, title, and interest in and to your suggestions, even if you have designated the suggestions as confidential. We and our affiliates will be entitled to use your suggestions without restriction. You hereby irrevocably assign us all right, title, and interest in and to your suggestions.
 
 ### 7.  Digital Millennium Copyright Act
-If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible via the Aptible Services, please notify our copyright agent, as set forth in the Digital Millennium Copyright Act of 1998 ("**DMCA**"). For your complaint to be valid under the DMCA, you must provide the following information in writing:  
+If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible via the Aptible Services, please notify our copyright agent, as set forth in the Digital Millennium Copyright Act of 1998 (**"DMCA"**). For your complaint to be valid under the DMCA, you must provide the following information in writing:  
 
 1.  An electronic or physical signature of a person authorized to act on behalf of the copyright owner;  
 2. Identification of the copyrighted work that you claim has been infringed;  
@@ -213,7 +215,9 @@ If the Agreement is terminated, all of your rights under this Agreement immediat
 We reserve the right, at our discretion, to change these Terms, as well as the Policies, on a going-forward basis at any time. Please check these Terms and the Policies periodically for changes. In the event that a change to these Terms or Policies materially modifies your rights or obligations, we will make reasonable efforts to notify you of such change. We may provide notice through a pop-up or banner within the Services, by sending an email to any address you may have used to register for an account, or through other similar mechanisms. Additionally, if the changed Terms or Policies materially modify your rights or obligations, we may require you to provide consent by accepting the changed Terms or Policies, as applicable. If we require your acceptance of the changed Terms or Policies, changes are effective only after your acceptance. If you do not accept the changed Terms or Policies, we may terminate your access to and use of the Services. All other changes are effective upon publication of the changed Terms or Policies. Disputes arising under this Agreement will be resolved in accordance with the version of this Agreement that was in effect at the time the dispute arose.
 
 ### 13. Indemnification
-You agree that you will be responsible for your use of the Services, and you agree to defend and indemnify Aptible and its officers, directors, employees, consultants, affiliates, subsidiaries and agents (together, the "**Aptible Entities**") from and against every claim, liability, damage, loss, and expense, including reasonable attorneys' fees and costs, arising out of or in any way connected with: (a) your access to, use of, or alleged use of, the Services; (b) your violation of any portion of this Agreement, any representation, warranty, or agreement referenced in this Agreement, or any applicable law or regulation; (c) your violation of any third-party right, including any intellectual property right or publicity, confidentiality, other property, or privacy right; or (d) any dispute or issue between you and any third party. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you (without limiting your indemnification obligations with respect to that matter), and in that case, you agree to cooperate with our defense of that claim. The assumption of such defense or control by us, however, shall not excuse any of your indemnity obligations.
+**A. Our Obligations to You. ** Please see the [Breach Indemnification Agreement].
+
+**B. Your Obligations to Us.** You agree that you will be responsible for your use of the Services, and you agree to defend and indemnify Aptible and its officers, directors, employees, consultants, affiliates, subsidiaries and agents (together, the "**Aptible Entities**") from and against every claim, liability, damage, loss, and expense, including reasonable attorneys' fees and costs, arising out of or in any way connected with: (a) your access to, use of, or alleged use of, the Services; (b) your violation of any portion of this Agreement, any representation, warranty, or agreement referenced in this Agreement, or any applicable law or regulation; (c) your violation of any third-party right, including any intellectual property right or publicity, confidentiality, other property, or privacy right; or (d) any dispute or issue between you and any third party. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you (without limiting your indemnification obligations with respect to that matter), and in that case, you agree to cooperate with our defense of that claim. The assumption of such defense or control by us, however, shall not excuse any of your indemnity obligations.
 
 ### 14. EXCLUSION OF WARRANTIES
 EXCEPT AS EXPRESSLY PROVIDED FOR HEREIN, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APTIBLE DOES NOT MAKE ANY OTHER WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR USE AND NONINFRINGEMENT. APTIBLE IS NOT RESPONSIBLE OR LIABLE FOR THE DELETION OF OR FAILURE TO STORE ANY CONTENT AND OTHER COMMUNICATIONS MAINTAINED OR TRANSMITTED THROUGH USE OF THE SERVICE. YOU ARE SOLELY RESPONSIBLE FOR SECURING AND BACKING UP YOUR APPLICATION AND CUSTOMER DATA. APTIBLE DOES NOT WARRANT THAT THE OPERATION OF THE SERVICES WILL BE ERROR-FREE, TIMELY, SECURE, OR UNINTERRUPTED. THE SERVICES ARE NOT DESIGNED, MANUFACTURED, OR INTENDED FOR HIGH RISK ACTIVITIES. YOU UNDERSTAND THAT YOU USE THE SERVICES AT YOUR OWN DISCRETION AND RISK.  
@@ -296,35 +300,35 @@ This Agreement supersedes all other agreements between the parties relating to i
 
 ### 22. Definitions
 
-"**Acceptable Use Policy**" means the policy currently available at https://www.aptible.com/legal/acceptable_use.html, as it may be updated by us from time to time.
+**"Acceptable Use Policy"** means the policy currently available at https://www.aptible.com/legal/acceptable_use.html, as it may be updated by us from time to time.
 
-"**Application**" means software you run using the Services.
+**"Application"** means software you run using the Services.
 
-"**Aptible Marks**" or "**Marks**" mean any trademarks, service marks, service or trade names, logos, and other designations of Aptible and its affiliates that we may make available to you in connection with this Agreement.
+**"Aptible Marks"** or **"Marks"** mean any trademarks, service marks, service or trade names, logos, and other designations of Aptible and its affiliates that we may make available to you in connection with this Agreement.
 
-"**Aptible Site**" means https://www.aptible.com, http://www.aptible.com, any subdomain owned or operated by Aptible, and any successor or related site designated by us.
+**"Aptible Site"** means https://www.aptible.com, http://www.aptible.com, any subdomain owned or operated by Aptible, and any successor or related site designated by us.
 
-"**Content**" means software, data, text, audio, video, images or other content.
+**"Content"** means software, data, text, audio, video, images or other content.
 
-"**End User**" means any individual or entity that directly or indirectly through another user:
+**"End User"** means any individual or entity that directly or indirectly through another user:
 
 1. Accesses or uses Your Content; or
 2. Otherwise accesses or uses the Services under your account.
 
-The term "**End User**" does not include individuals or entities when they are accessing or using the Services or any Content under their own Aptible account, rather than your account.
+The term **"End User"** does not include individuals or entities when they are accessing or using the Services or any Content under their own Aptible account, rather than your account.
 
-"**Fees and Pricing Policy**" means the policy currently available at https://www.aptible.com/legal/fees_and_pricing.html, as it may be updated by us from time to time.
+**"Fees and Pricing Policy"** means the policy currently available at https://www.aptible.com/legal/fees_and_pricing.html, as it may be updated by us from time to time.
 
-"**High Risk Activity**” means any activity where the failure of a supporting computer system could lead to death, personal injury, or severe physical or environmental damage, such as the operation of nuclear facilities, aircraft navigation, or direct life support systems.
+**"High Risk Activity"** means any activity where the failure of a supporting computer system could lead to death, personal injury, or severe physical or environmental damage, such as the operation of nuclear facilities, aircraft navigation, or direct life support systems.
 
-"**Privacy Policy**" means the policy currently available at https://www.aptible.com/legal/privacy.html, as it may be updated by us from time to time.
+**"Privacy Policy"** means the policy currently available at https://www.aptible.com/legal/privacy.html, as it may be updated by us from time to time.
 
-"**Remedial Action**" means our right under this Agreement to suspend your access or your End Users' access to the Services, and to suspend or remove an Application, in the event that this Agreement is breached.
+**"Remedial Action"** means our right under this Agreement to suspend your access or your End Users' access to the Services, and to suspend or remove an Application, in the event that this Agreement is breached.
 
-"**Security Policy**" means the policy currently available at https://www.aptible.com/legal/security.html, as it may be updated by us from time to time.
+**"Security Policy"** means the policy currently available at https://www.aptible.com/legal/security.html, as it may be updated by us from time to time.
 
-"**Support Policy**" means the policy currently available at https://www.aptible.com/legal/support.html, as it may be updated by us from time to time.
+**"Support Policy"** means the policy currently available at https://www.aptible.com/legal/support.html, as it may be updated by us from time to time.
 
-"**Trademark Policy**" means the policy currently available at https://www.aptible.com/legal/trademark.html, as it may be updated by us from time to time.
+**"Trademark Policy"** means the policy currently available at https://www.aptible.com/legal/trademark.html, as it may be updated by us from time to time.
 
-"**Your Content**" means Content you or any End User (a) runs on the Services, (b) causes to interface with the Services, or (c) uploads to the Services under your account or otherwise transfers, processes, uses, or stores in connection with your account.
+**"Your Content"** means Content you or any End User (a) runs on the Services, (b) causes to interface with the Services, or (c) uploads to the Services under your account or otherwise transfers, processes, uses, or stores in connection with your account.
