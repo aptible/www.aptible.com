@@ -22,7 +22,7 @@ Aptible, Inc.
 =============
 Terms of Service  
 ----------------
-Version 2.3 - March 2015
+Version 2.4 - March 2015
 
 Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**). 
 
