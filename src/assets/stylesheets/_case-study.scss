@@ -1,0 +1,155 @@
+.case-study {
+  .case-study-logos {
+    height: 170px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+
+    img {
+      margin-top: 47px;
+      width: 599px;
+      max-width: 100%;
+    }
+  }
+
+  .case-study-logo {
+    text-align: center;
+    margin: 50px 0;
+
+    img {
+      height: 50px;
+    }
+  }
+
+  .aptible-footer {
+    margin:0;
+
+    h3 {
+      color: $color-primary;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: $weight-semibold;
+      margin: 0 0 15px;
+    }
+
+    p {
+      margin: 15px 0 30px;
+      font-size: 16px;
+      line-height: 1.6em;
+      color: $color-light;
+    }
+  }
+
+  .case-study-quote {
+    background: #0066b0;
+    color: #fff;
+    padding: 50px 0;
+    margin:60px 0 30px 0;
+
+    img.quote-hex {
+      height: 89px;
+      display: block;
+      margin: -92px auto 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 100;
+      line-height: 42px;
+      color: #fff;
+      margin: 30px 0 0 0;
+    }
+
+    .quote-source {
+      margin: 40px 0 0 0;
+      @extend %clearfix;
+    }
+
+    .quote-image {
+      text-align: center;
+
+      img {
+        width: 49px;
+      }
+    }
+
+    .quote-author {
+      margin-left: 10px;
+      line-height: 17px;
+    }
+
+    .quote-name {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 3px;
+      line-height: 25px;
+      text-transform: uppercase;
+    }
+
+    .quote-title {
+      text-align: center;
+      font-size: 14px;
+      color: #e0e0e0;
+    }
+  }
+
+  .case-study-body {
+    background: #fafafa;
+    color: #777;
+    font-size: 18px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 30px 0 50px;
+
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      margin: 40px 0;
+      color: $color-primary;
+    }
+
+    .screenshot {
+      margin: 30px 0;
+    }
+  }
+
+  nav.navbar {
+    text-align: center;
+    margin: 0;
+
+    .navbar-brand {
+      float: none;
+      padding: 0;
+
+      img {
+        width: 170px;
+      }
+    }
+  }
+
+  .jumbotron {
+    padding: 25px;
+    background-image: linear-gradient(-180deg, #0065AF 0%, #004F88 100%);
+    margin: 0;
+
+    h1 {
+      margin: 40px 0;
+      font-weight: 100;
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .case-study .jumbotron {
+    h1 {
+      margin: 100px 100px 90px;
+      font-size: 50px;
+    }
+  }
+}
