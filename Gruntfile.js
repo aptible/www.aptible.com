@@ -65,6 +65,17 @@ module.exports = function(grunt) {
                     src: ['**/*.md', '**/*.hbs']
                 }]
             },
+            caseStudies: {
+                options: {
+                    layout: 'case-study.hbs'
+                },
+                files: [{
+                    cwd: 'content/pages/case-studies',
+                    dest: 'dist/case-studies',
+                    expand: true,
+                    src: ['**/*.md', '**/*.hbs']
+                }]
+            },
             posts: {
                 options: {
                     layout: 'post.hbs',
