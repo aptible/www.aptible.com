@@ -2,7 +2,7 @@
 title: Acceptable Use Policy
 tracked_title: Acceptable Use Policy
 description: "Aptible's acceptable use policy."
-posted: 2014-07-02
+posted: 2015-04-02
 section: Legal
 sub_section: Policies
 ---
@@ -11,7 +11,7 @@ Aptible, Inc.
 =============
 Acceptable Use Policy
 ---------------------
-Version 2.0 - July 2014
+Version 2.1 - April 2015
 
 This policy describes prohibited uses of the Aptible Services and the website located at https://www.aptible.com and any subdomains (the "**Aptible Site**"). It is incorporated by reference into the Aptible Terms of Service. Capitalized terms used but not otherwise defined herein have the meaning ascribed to such terms in the Aptible Terms of Service.
 
@@ -39,6 +39,9 @@ Prohibited activities include:
 2. Interception: Monitoring of data or traffic on a System without permission.
 3. Falsification of Origin: Forging TCP/IP packet headers, e-mail headers, or any part of a message describing its origin or route. This prohibition does not include the use of aliases or anonymous remailers.
 
+### No E-Mail or Other Message Abuse
+You will not distribute, publish, send, or facilitate the sending of unsolicited mass e-mail or other messages, promotions, advertising, or solicitations (like “spam”), including commercial advertising and informational announcements. You will not alter or obscure mail headers or assume a sender’s identity without the sender’s explicit permission. You will not collect replies to messages sent from another Internet service provider if those messages violate this policy or the acceptable use policy of that provider.
+
 ### No Network Abuse
 You may not make network connections to any users, hosts, or networks unless you have permission to communicate with them.
 
@@ -51,8 +54,13 @@ Prohibited activities include:
 5. Avoiding System Restrictions: Using manual or electronic means to avoid any use limitations placed on a System, such as access and storage restrictions.
 6. Domain Impersonation: Creating applications pointing at domains you do not own or lawfully control.
 
-### No E-Mail or Other Message Abuse
-You will not distribute, publish, send, or facilitate the sending of unsolicited mass e-mail or other messages, promotions, advertising, or solicitations (like “spam”), including commercial advertising and informational announcements. You will not alter or obscure mail headers or assume a sender’s identity without the sender’s explicit permission. You will not collect replies to messages sent from another Internet service provider if those messages violate this policy or the acceptable use policy of that provider.
+### Usage and Quotas
+You agree not to exceed the following limits:
+
+- 1 TB bandwidth/month for Development Accounts
+- 3 TB bandwidth/month for all other accounts
+
+These are soft limits: If you inadvertently exceed these limits, we will attempt to contact you. If you exceed these limits willfully, repeatedly, or by significant amounts, we may terminate your account. 
 
 ### Our Monitoring and Enforcement
 We reserve the right, but do not assume the obligation, to investigate any violation of this policy or misuse of the Services or Aptible Site. We may:

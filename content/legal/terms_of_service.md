@@ -2,7 +2,7 @@
 title: Terms of Service
 tracked_title: Terms of Service
 description: "Aptible's terms of service"
-posted: 2015-03-23
+posted: 2015-04-02
 section: Legal
 sub_section: Agreements
 order: 0
@@ -22,7 +22,7 @@ Aptible, Inc.
 =============
 Terms of Service  
 ----------------
-Version 2.4 - March 2015
+Version 2.5 - April 2015
 
 Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**). 
 
@@ -320,6 +320,8 @@ The term **"End User"** does not include individuals or entities when they are a
 **"Fees and Pricing Policy"** means the policy currently available at https://www.aptible.com/legal/fees_and_pricing.html, as it may be updated by us from time to time.
 
 **"High Risk Activity"** means any activity where the failure of a supporting computer system could lead to death, personal injury, or severe physical or environmental damage, such as the operation of nuclear facilities, aircraft navigation, or direct life support systems.
+
+**"PHI-Ready Account"** means a non-Development Aptible account for which you have a valid, signed Business Associate Agreement with Aptible and have applied the required security configurations and controls as specified in that agreement.
 
 **"Privacy Policy"** means the policy currently available at https://www.aptible.com/legal/privacy.html, as it may be updated by us from time to time.
 
