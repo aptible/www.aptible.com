@@ -2,7 +2,7 @@
 title: Service Level Agreement
 tracked_title: Service Level Agreement
 description: "Aptible's default SLA."
-posted: 2015-03-23
+posted: 2015-04-02
 section: Legal
 sub_section: Agreements
 order: 1
@@ -12,7 +12,7 @@ Aptible, Inc.
 =============
 Service Level Agreement
 --------------
-Version 1.1 - March 2015
+Version 1.2 - April 2015
 
 This Aptible Service Level Agreement (**"SLA"**) between Aptible, Inc. (**"Aptible"**, **"us"** or **"we"**) and users of the Aptible Services (**"you"**) governs the use of the Aptible Containerized Services under the provisions of the [Aptible Terms of Service](/legal/terms_of_service.html) (the **"Terms"**).
 
@@ -31,8 +31,6 @@ A Monthly Uptime Percentage of 99.95% means that we guarantee you will experienc
 **"Maintenance"** means scheduled Unavailability of the Containerized Services, as announced by us prior to the Containerized Services becoming Unavailable.
 
 **"Monthly Uptime Percentage"** is calculated by subtracting from 100% the percentage of minutes during the month in which the Aptible Containerized Services were Unavailable. Monthly Uptime Percentage measurements exclude downtime resulting directly or indirectly from any Aptible SLA Exclusion.
-
-**"PHI-Ready Account"** means an Aptible account for which you have a valid, signed business associate agreement with Aptible and have applied the required security configurations and controls as specified in that agreement.
 
 **"Service Credit"** means a credit denominated in US dollars, calculated as set forth below, that we may credit back to an eligible account.
 
