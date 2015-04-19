@@ -2,7 +2,7 @@
 title: Responsible Disclosure Policy
 tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2014-08-12
+posted: 2015-04-18
 section: Legal
 sub_section: Policies
 ---
@@ -12,7 +12,7 @@ Aptible, Inc.
 Responsible Disclosure Policy
 --------------
 
-Version 2.4 - February 2015
+Version 2.5 - April 2015
 
 ### Responsible Disclosure
 We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
@@ -23,6 +23,42 @@ Thank you for your work and interest in making the community safer and more secu
 
 ### Bounty Program
 Aptible rewards security researchers for reporting vulnerabilities. Please email [security@aptible.com](mailto:security@aptible.com) to report an issue.
+
+If you would like to be eligible for a bounty, please read this carefully.
+
+#### Rules
+1. **NEVER** attempt to gain access to another user's account or data.  
+2. **NEVER** attempt to degrade the services.  
+3. **NEVER** impact other users with your testing.  
+4. Test only on in-scope domains, listed below.  
+5. Do not use fuzzers, scanners, or other automated tools to find vulnerabilities.  
+
+Doing any of the above will render you ineligible for cash bounties.
+
+#### Scope
+Only the following services are in-scope:  
+- api.aptible.com
+- auth.aptible.com
+- dashboard.aptible.com
+- gridiron.aptible.com
+- compliance.aptible.com
+
+**The following types of reports/attacks are out of scope. Do not attempt them:**
+- DOS attacks
+- Brute forcing login/account management pages
+- Physical vulnerabilities
+- Social engineering attacks (e.g. phishing)
+
+**The following types of bugs do not qualify for bounties:**
+- CSRF on forms that are available to anonymous users (e.g., signup, login, contact, Intercom)
+- Self-XSS and issues exploitable only through Self-XSS
+- Clickjacking and issues only exploitable through clickjacking
+- Functional, UI and UX bugs and spelling mistakes
+- Descriptive error messages (e.g. stack traces, application or server errors)
+- HTTP 404 codes/pages or other HTTP error codes/pages
+- Banner disclosure on common/public services
+- Disclosure of known public files or directories, (e.g. robots.txt)
+- Presence of application or web browser "autocomplete" or "save password" permission
 
 ### PGP
 If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for security@aptible.com is below:
