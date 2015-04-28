@@ -4,59 +4,15 @@
 
 .employee {
   position: relative;
+  min-height: 410px;
 
   .panel-body {
-    padding: 40px;
+    padding: 40px 40px 0;
   }
 
   .bio {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    padding: 0 30px;
-    transform: translateY(-50%);
-    opacity: 0;
-    z-index: -1;
-    color: #fff;
-    text-align: center;
-    text-shadow: 1px 1px 0 rgba(black, 0.8);
     font-size: 14px;
-    transition: opacity .5s;
-
-    a, a:hover {
-      color: $color-bright-blue-subdued;
-      text-decoration: underline;
-    }
-  }
-
-
-  .blanket {
-    content: '.';
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    opacity: .8;
-    z-index: -1;
-    border: 1px solid $color-dark-blue;
-    background: $color-dark-blue;
-    background: #004275;
-    transition: opacity .5s;
-    @include border-radius(3px);
-  }
-
-  &:hover, &:active {
-    .bio, .blanket {
-      display: block;
-    }
-
-    .bio {
-      z-index: 9;
-      opacity: 1;
-    }
-
-    .blanket {
-      opacity: .9;
-      z-index: 8;
-    }
+    margin: 20px 0 0;
   }
 
   .image {
@@ -64,15 +20,15 @@
     padding: 8px;
     margin: 0 auto 30px;
     width: 100%;
-    max-width: 156px;
-    @include border-radius(78px);
+    max-width: 116px;
+    @include border-radius(58px);
     overflow: hidden;
 
     .gravatar {
       width: 100%;
-      max-width: 140px;
+      max-width: 100px;
       display:block;
-      @include border-radius(70px)
+      @include border-radius(50px)
     }
   }
 
@@ -161,18 +117,6 @@
 
   textarea {
     height: 120px;
-  }
-}
-
-.company.index {
-  .fancy-cover {
-    position: relative;
-  }
-
-  .fancy-cover:after {
-    width: 100%;
-    height: 600px;
-    margin-top: -812px;
   }
 }
 

@@ -266,7 +266,11 @@ footer.aptible-footer {
 }
 
 .panel.employee {
-  margin-bottom: 20px;
+  min-height: 0;
+
+  .panel-body {
+    padding: 20px;
+  }
 }
 
 .newsletter-signup {
