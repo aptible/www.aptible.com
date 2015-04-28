@@ -14,39 +14,35 @@ slides:
     url: /pages/assets/155_water.jpg
 ---
 
-<div class="fancy-cover">
-  <div class="container">
-    <div class="row section careers-carousel-section">
-      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-
-        <div class="carousel">
-          {{#each slides}}
-            <div class="carousel-item">
-              <div class="item-shade"></div>
-              <img src="{{url}}" alt="{{name}}">
-              <div class="carousel-caption">
-                <h3>{{title}}</h3>
-                <p>{{caption}}</p>
-              </div>
-            </div>
-          {{/each}}
-        </div>
-      </div>
-    </div>
-
-    <div class="row section working-at-aptible-description">
-      <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-        <div class="intro-block">
-          <h2 class="intro-heading">{{mission_title}}</h2>
-          <div class="intro-body">{{mission}}</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 <div class="container">
+  <div class="row section careers-carousel-section">
+    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+
+      <div class="carousel">
+        {{#each slides}}
+          <div class="carousel-item">
+            <div class="item-shade"></div>
+            <img src="{{url}}" alt="{{name}}">
+            <div class="carousel-caption">
+              <h3>{{title}}</h3>
+              <p>{{caption}}</p>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row section working-at-aptible-description">
+    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+      <div class="intro-block">
+        <h2 class="intro-heading">{{mission_title}}</h2>
+        <div class="intro-body">{{mission}}</div>
+      </div>
+    </div>
+  </div>
+
   <div class="row section open-positions-at-aptible">
     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
       <h2 class="section-title">Open Positions</h2>
@@ -56,3 +52,8 @@ slides:
     </div>
   </div>
 </div>
+
+
+
+
+

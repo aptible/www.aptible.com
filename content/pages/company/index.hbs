@@ -21,6 +21,11 @@ employees:
     title: Lead Backend Engineer
     email: aaron@aptible.com
     bio: "Aaron leads backend development at Aptible. Prior to Aptible, he worked as an engineer at Application Security, Artsy, and Google."
+  sam:
+    name: Sam Yount
+    title: VP Marketing
+    email: sam@aptible.com
+    bio: "Sam leads Marketing at Aptible. He spent much of his career in financial services, leading marketing teams at FutureAdvisor, Personal Capital and Scottrade. He is excited to move from working with the SEC regulators to the HHS regulators. Sam is especially glad you found this site."
   skylar:
     name: Skylar Anderson
     title: Lead Frontend Engineer
@@ -28,49 +33,47 @@ employees:
     bio: "Skylar leads UI/UX at Aptible. Prior to Aptible, he worked as a freelance consultant, designing and building software for companies like Eli Lilly, Facebook, and ExactTarget."
 
 ---
-
-<div class="fancy-cover">
-  <div class="container">
-    <div class="row section">
-      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-        <div class="intro-block">
-          <h1 class="intro-title">Our Mission</h1>
-          <h2 class="intro-heading">Help our customers work safely with the most meaningful, sensitive data in highly regulated industries. </h2>
-          <div class="intro-body">{{mission}}</div>
-        </div>
+<div class="container">
+  <div class="row section">
+    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+      <div class="intro-block">
+        <h1 class="intro-title">Our Mission</h1>
+        <h2 class="intro-heading">Help our customers work safely with the most meaningful, sensitive data in highly regulated industries. </h2>
+        <div class="intro-body">{{mission}}</div>
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="intro-block">
-          <h1 class="intro-title">The Aptible Team</h1>
-        </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="intro-block">
+        <h1 class="intro-title">The Aptible Team</h1>
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="employees">
-        {{#each employees}}
-          <div class="col-md-3 col-sm-6">
-            <div class="employee panel panel-default {{slugify name}}">
-              <div class="panel-body">
-                <div class="image-wrapper">
-                  <div class="image">
-                    {{ gravatar email 'xxl' }}
-                  </div>
+  <div class="row">
+    <div class="employees">
+      {{#each employees}}
+        <div class="col-md-6 col-sm-6 col-lg-4">
+          <div class="employee panel panel-default {{slugify name}}">
+            <div class="panel-body">
+              <div class="image-wrapper">
+                <div class="image">
+                  {{ gravatar email 'xxl' }}
                 </div>
-                <div class="title-wrapper">
-                  <h5 class="name">{{name}}</h5>
-                  <h6 class="title">{{title}}</h6>
-                </div>
-                <div class="bio">{{#markdown}}{{bio}}{{/markdown}}</div>
-                <div class="blanket"></div>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="name">{{name}}</h5>
+                <h6 class="title">{{title}}</h6>
+              </div>
+              <div class="bio">
+                {{#markdown}}{{bio}}{{/markdown}}
               </div>
             </div>
           </div>
-        {{/each}}
-      </div>
+        </div>
+      {{/each}}
     </div>
   </div>
 </div>
@@ -95,4 +98,3 @@ employees:
       </div>
     </div>
   </div>
-</div>
