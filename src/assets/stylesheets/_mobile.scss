@@ -23,6 +23,8 @@ $screen-lg-min: 1200px;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
-
+  .panel.plan-panel {
+    height: 661px;
+  }
 }
 

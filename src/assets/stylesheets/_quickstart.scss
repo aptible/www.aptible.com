@@ -1,0 +1,184 @@
+$ruby: #D34444;
+$php: #6082bb;
+$node: #80BD01;
+$scala: #DC0101;
+$go: #6AD7E5;
+
+.categories {
+  @extend %clearfix;
+  margin: 50px 0;
+
+  .category-box {
+    @extend %aptible-panel;
+    width: 100%;
+    height: 185px;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.category-box {
+  position: relative;
+  background: #fff;
+
+  .category-icon {
+    text-align: center;
+    height: 60px;
+    width: 80px;
+    margin: 50px auto 0;
+  }
+
+  .category-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #fafafa;
+    @include box-shadow(inset 0 2px 5px 0 rgba(black, .05));
+    border-top: 1px solid #dfdfdf;
+    text-align: center;
+    padding: 10px;
+
+    .category-title {
+      color: $color-subdued;
+      font-size: 16px;
+      font-weight: $weight-semibold;
+    }
+  }
+
+  &:hover {
+    border-color: $color-bright-blue;
+    @include box-shadow(0 0 6px 0 $color-bright-blue);
+    text-decoration: none;
+
+    .category-title {
+      color: $color-primary;
+    }
+  }
+}
+
+.category-box:hover {
+  svg.support {
+    .path-2 {
+      fill: $color-bright-blue;
+    }
+  }
+
+  svg.getting-started {
+    .check-path {
+      fill: $color-bright-blue;
+    }
+  }
+
+  svg.documentation {
+    .code-path {
+      fill: $color-bright-blue;
+    }
+  }
+
+  svg.php {
+    path {
+      fill: $php;
+    }
+  }
+
+  svg.ruby {
+    path {
+      fill: $ruby;
+    }
+  }
+
+  svg.node {
+    path {
+      fill: $node;
+    }
+  }
+
+  svg.scala {
+    path {
+      fill: $scala
+    }
+  }
+
+  svg.java {
+    .path-2 {
+      fill: #EB2D2F;
+    }
+
+    .path-1 {
+      fill: #0073BD;
+    }
+  }
+
+  svg.python {
+    .path-1 {
+      fill: #FFCF3E;
+    }
+    .path-2 {
+      fill: #3777AC;
+    }
+  }
+
+  svg.go {
+    #right-ear,
+    #left-ear,
+    #torso {
+      fill: $go;
+    }
+
+    #nose {
+      fill: #f6d2a2;
+    }
+  }
+}
+
+.category-box.django {
+  .category-icon {
+    width: 118px;
+  }
+}
+
+.category-box.java {
+  .category-icon {
+    margin-top: 29px;
+  }
+}
+
+.category-box.hipaa,
+.category-box.ruby,
+.category-box.python,
+.category-box.node {
+  .category-icon {
+    margin-top: 41px;
+  }
+}
+
+.category-article-list {
+  border-top: 4px solid #f6f6f6;
+
+  .category-article {
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 30px 20px;
+
+    &:nth-child(even) {
+      background-color: #fcfcfc;
+    }
+  }
+}
+
+.back {
+  margin: 50px 0;
+}
+
+.category-wrapper {
+  &.category-1,
+  &.category-2,
+  &.category-3 {
+    text-align: center;
+
+    .col-md-3 {
+      display: inline-block;
+      float: none;
+    }
+  }
+}

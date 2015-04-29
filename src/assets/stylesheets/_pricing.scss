@@ -1,121 +1,119 @@
-.pricing {
-  .panel-default {
-    .panel-sub {
-      padding: 0 65px;
-    }
-  }
-
-}
-
-.plan-benefit {
-  margin: 30px 0 0 0;
-
-  .benefit-icon {
-    text-align: center;
-    margin: 0 0 30px;
-
-    img {
-      max-height: 200px;
-    }
-  }
-
-  .benefit-title {
-    font-weight: $weight-semibold;
-    font-size: 16px;
-  }
-
-  .features-list {
-    font-size: 14px;
-    color: $color-light;
-    padding: 0;
-    margin: 20px 0;
-    list-style-type: none;
-
-    li {
-      padding: 8px 0;
-      margin: 0
-    }
-
-    .feature-body {
-      margin-left: 20px;
-    }
-
-    i.fa {
-      color: $color-bright-blue;
-      float: left;
-    }
-  }
-
-  &:last-child {
-    .benefit-icon {
-      img {
-        margin-left: -15px;
-      }
-    }
-    .benefit-title {
-      margin-left: 15px;
-    }
-    .features-list {
-      margin-left: 15px;
-    }
+.plans-and-pricing {
+  .row.section {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 }
 
-.plan-footer {
-  margin: 10px 0 0 0;
-  text-align: center;
+.plans {
+  margin-top: 50px;
 
-  .additional-costs {
+  .pricing {
     font-size: 13px;
     color: $color-light;
-    margin: 35px 0 0;
+    text-align: center;
+    clear: both;
+    padding: 30px 0 0;
+  }
+}
+
+.panel.plan-panel {
+  &.Platform {
+    border: 1px solid $color-bright-blue;
+    box-shadow: 0 0 8px rgba($color-bright-blue, 0.4);
+  }
+
+  .plan-title {
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 12px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: $weight-semibold;
+    border-radius: 3px 3px 0 0;
+  }
+
+  .plan-header {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .plan-plan {
+    color: $color-bright-blue;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .plan-price {
+    font-size: 48px;
+    font-weight: 200;
+    color: $color-primary;
+    margin: 10px 0 0;
+
+    .sub {
+      color: $color-light;
+      font-size: 16px;
+    }
+  }
+
+  .plan-attributes {
+    margin: 0 0 30px;
     padding: 0;
     list-style-type: none;
 
-    li {
-      display:inline-block;
-      margin: 0 10px 0 0;
+    > li {
+      font-size: 18px;
+      margin: 0 0 15px;
+      text-align: center;
 
-      &:last-child {
-        margin-right: 0;
+      > ul {
+        list-style-type: none;
+        margin: 15px 0;
+        padding: 0;
+
+        li {
+          text-align: left;
+          color: $color-light;
+          font-size: 14px;
+          margin: 0 0 7px;
+
+          .fa {
+            color: $color-bright-blue;
+            font-size: 12px;
+            margin: 0 6px 0 0;
+          }
+        }
       }
     }
   }
-}
 
-.panel-body.panel-body-slim {
-  padding: 35px;
-}
-
-.development-plan-callout {
-  margin: 30px 0;
-  text-align: center;
-  color: $color-light;
-
-  h4 {
-    font-weight: $weight-bold;
-    color: $color-primary;
-    margin: 0 0 8px;
+  .panel-body {
+    padding: 30px;
   }
 }
 
-.pricing .panel-default {
-  margin-bottom: 0;
-}
+.pricing-faq {
+  .fact-item {
+    h4 {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: $weight-normal;
+      margin: 0 0 30px;
+    }
 
-.pricing .fancy-cover.section {
-  padding: 50px 0;
-}
-
-.q-a .fact-item {
-  min-height: 170px;
-  text-align: left;
-
-  h4 {
-    font-size: 16px;
+    .description {
+      font-size: 15px;
+    }
   }
 
-  .description {
-    font-size: 14px;
+  .conditional-clear:nth-child(3n + 1) {
+    content: '.';
+    height: 30px;
+    clear: both;
+    display: block;
+    visibility: hidden;
   }
 }
