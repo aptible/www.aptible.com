@@ -8,137 +8,241 @@ production_title: Aptible Production Account
 production_subtitle: "Start deploying HIPAA-compliant apps in minutes with our ****high-assurance deployment platform**** and integrated ****HIPAA compliance tools**** \n\nStarting at $3499/month with an annual contract"
 development_plan_cost: $0.08/Hour
 
-additional_costs:
-  containers:
-    name: Additional containers
-    price: $0.08/hour
-  storage:
-    name: Additional disk
-    price: $0.37/GB/month
-  domains:
-    name: Additional domains
-    price: $0.05/hour
+hero_title: Get a free developer account to see how easy using Aptible is
+hero_sub_title: If you already use Heroku (or would like to)and use one of our supported languages or frameworks, you can be up and running in less than a day.
+hero_cta: Open your free Development account
+hero_url: https://dashboard.aptible.com/signup?plan=development
 
-benefits:
-  ops:
-    title: "High-Assurance Deployment Platform"
-    image: /pages/assets/technology/aptible-technology-introduction.png
-    features:
-      containers: 6 App or Database Containers, 1GB RAM each
-      disk: 1TB SSD Storage, Free Encrypted Backups
-      domains: 4 Custom Domains
-      security: Powerful Security and Audit Controls
-      ci: Easy CI Integration
-      support: 24/7 Technical and Compliance Support
+plans_title: A plan that's right for your needs
+plans:
+  - name: Build and Test
+    plan: Development
+    price: '$0'
+    items:
+      - No Comittment
+      - Not HIPAA-Compliant - no PHI
+      - Ideal for staging, QA, or sandboxes
+      - Email support
+      - Unlimited users
+    cta: Sign up for Development
+    cta_url: https://dashboard.aptible.com/signup?plan=development
+  - name: PHI-Ready
+    plan: Platform
+    price: '$499'
+    items:
+      - 3-month risk free trial
+      - HIPAA-compliant - PHI-ready
+      - Signed BAA
+      - 6 containers, 1 TB Disk, 4 Domains
+      - Email support
+      - 99.95% uptime SLA
+      - Ideal for companies with own compliance program
+    cta: Sign up for Platform
+    cta_url: https://dashboard.aptible.com/signup?plan=platform
+  - name: Complete HIPAA compliance solution
+    plan: Production
+    items:
+      - item: A Platform Account + a complete compliance program
+        subs:
+          - Risk, policy, security, and training engines
+          - Incident response and contract management
+          - Training for entire workforce
+          - App + architecture design advising
+          - Incident response assistance
+          - Custom BAA - tailored to your needs
+      - Phone support
+      - Dedicated point of contact
+      - Custom SLA - guaranteed response times
+    cta: Contact us
+    cta_url: https://www.aptible.com/company/contact
 
-  compliance:
-    title: "Integrated HIPAA Compliance Tools"
-    image: /pages/assets/compliance/aptible-compliance-introduction.png
-    features:
-      risk: HIPAA Risk Analysis Engine
-      policy: HIPAA Security + Privacy Policy Engine
-      training: HIPAA Workforce Training
-      incident: Incident Response Management Engine
-      audits: Real-Time Auditing and Documentation
-      baa: Signed Business Associate Agreement
+pricing:
+  container: $0.08/hour
+  disk: $0.37/GB/month
+  domain: $0.05/hour
+
+unique_situation:
+  title: Do you have a unique situation? Need something special?
+  sub_title: Our team of engineers can help you build a HIPAA complaint solution that meets your needs.
+  cta: Get in touch
+  cta_url: /company/contact
+
+quick_start:
+  - name: Ruby
+    url: https://support.aptible.com/quickstart/ruby/rails/
+    icon: /pages/assets/icons/ruby.svg
+    slug: ruby
+  - name: Go
+    url: https://support.aptible.com/quickstart/go/gorilla/
+    icon: /pages/assets/icons/go.svg
+    slug: go
+  - name: Node
+    url: https://support.aptible.com/quickstart/node/express/
+    icon: /pages/assets/icons/node.svg
+    slug: node
+  - name: Java
+    url: https://support.aptible.com/quickstart/java/jersey/
+    icon: /pages/assets/icons/java.svg
+    slug: java
+  - name: Scala
+    url: https://support.aptible.com/quickstart/scala/play/
+    icon: /pages/assets/icons/scala.svg
+    slug: scala
+  - name: PHP
+    url: https://support.aptible.com/quickstart/php/laravel/
+    icon: /pages/assets/icons/php.svg
+    slug: php
+  - name: Python
+    url: https://support.aptible.com/quickstart/python/django/
+    icon: /pages/assets/icons/python.svg
+    slug: python
 
 questions_title: Questions? We have answers.
 questions:
-  containers:
-    inquiry: What is a container?
-    response: A container is like a lightweight virtual machine that can be used to run an instance of an application or a database. Read more about [our technology](/technology).
-  container_count:
-    inquiry: How many containers will I need?
-    response: One for each instance of an application or database you want to run. Most customers begin with 2 or 3 and add more as they scale.
-  accounts:
-    inquiry: What is the difference between account types?
-    response: Production Accounts have the security and legal features required to support HIPAA compliance.
-  account_count:
-    inquiry: Can we have both a Production and Development Account?
-    response: Yes, most organizations have both. Development Accounts are great for staging environments and non-regulated applications.
-  compliance:
-    inquiry: How many of the HIPAA requirements does Aptible help with?
-    response: Most of our customers use Aptible to manage their entire HIPAA compliance process at a fraction of the time and cost of traditional methods.
-  costs:
-    inquiry: Is Aptible expensive?
-    response: Aptible is the fastest, most cost-effective way for a SaaS company to stand up and maintain an entire HIPAA compliance program.
-  just_platform:
-    inquiry: Can I just use the platform? Can I use Aptible for non-healthcare apps?
-    response: Our platform can support a variety of high-assurance, high-security projects across industries. [Contact us](/company/contact) to discuss your needs.
-  more_support:
-    inquiry: Where can I find more answers?
-    response: We'd love to talk to you! Feel free to [contact us](https://support.aptible.com/contact) any time, or visit our [support site](https://support.aptible.com).
+    - inquiry: What does Aptible do?
+      response: |
+        We help our customers with everything they need to build a modern HIPAA compliant web application. We not only handle the application core but also the compliance and administration. Additionally, we help our customers integrate with a wide variety of technical partners in HIPAA compliant ways.  
+    - inquiry: Does my company need to be HIPAA compliant?
+      response: |
+        It’s possible! It’s not always easy to know whether or not you need to be HIPAA compliant, but if you answer “yes” to any of the below questions, then we should definitely talk:
+
+        * Do you handle personally identifiable health information?
+        * Do you need BAAs?  
+        * Do you partner with or sell to hospitals or insurance companies?   
+
+        Did you answer yes to any of these?  [Get in touch](/company/contact).
+    - inquiry: How does Aptible’s technology work? What’s a container?
+      response: >
+        Aptible runs on AWS. We use Docker to build and run our customers’ applications and manage all DevOps while our customers have the power to manage their own code. These containers act as a lightweight virtual machine that can be used to run an instance of an application or a database. Our PHI-ready accounts each receive a virtual private cloud with secure software and servers that manage compliance. You can check out our [technology architecture here](/pages/assets/aptible-reference-architecture.pdf) and read more about [our technology here](/technology).
+    - inquiry: What do I need to move from a Dev Account to a Platform or Production Account?
+      response: |
+        Easy!  You’ll need to sign 3 documents: Business Associate Agreement (BAA), mNDA, and Billing agreement.  It takes 15 seconds to execute these agreements, and we can have you back up and running in a few hours.  When you are ready to make the transition, [let us know](/company/contact).
+    - inquiry: What else might I need to become HIPAA Compliant?
+      response: |
+        Depending on your specific business, you may need:
+
+        * Independent 3rd party for Security Assessment
+        * Logging and Analytics Providers who handle PHI 
+        * Telephony, Email, Object storage 
+
+
+        We can help with all of these!
 ---
 
-<div class="fancy-cover section">
-  <div class="container">
+<div class="container">
+  <div class="row section bordered callout-section">
+    <div class="col-md-10 col-md-offset-1 col-sm-12 our-philosophy">
+      <h2 class="callout-title">{{hero_title}}</h2>
+      <div class="callout-body">{{hero_sub_title}}</div>
+      <div class="callout-cta">
+        <a href="{{hero_url}}" class="btn btn-lg btn-primary">{{hero_cta}}</a>
+      </div>
+    </div>
+  </div>
 
-    <div class="row">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-12">
-
-          <div class="panel panel-default">
-            <div class="panel-body panel-body-slim">
-              <h1 class="panel-title">{{production_title}}</h1>
-              <h5 class="panel-sub">{{#markdown}}{{production_subtitle}}{{/markdown}}</h2>
-              <div class="plan-benefits">
-
-                <div class="row">
-                  {{#each benefits}}
-                    <div class="col-sm-6">
-                      <div class="plan-benefit">
-                        <div class="benefit-icon">
-                          <img src="{{image}}" alt="{{title}}" />
-                        </div>
-
-                        <h3 class="benefit-title">{{title}}</h3>
-                        <ul class="features-list">
-                          {{#each features}}
-                            <li>{{fa 'check'}}<div class="feature-body">{{.}}</div></li>
-                          {{/each}}
-                        </ul>
-                      </div>
-                    </div>
-                  {{/each}}
+  <div class="row section">
+    <div class="col-xs-12">
+      <h2 class="section-title">{{plans_title}}</h2>
+      <div class="plans">
+        <div class="row">
+          {{#each plans}}
+            <div class="col-md-4 col-xs-12 col-sm-6">
+              <div class="panel panel-default plan-panel {{plan}}">
+                <div class="plan-title">{{name}}</div>
+                <div class="plan-header">
+                  <h3 class="plan-plan">{{plan}}</h3>
+                  {{#if price}}
+                    <h2 class="plan-price">{{price}}<span class="sub">/month</span></h2>
+                  {{else}}
+                    <h2 class="plan-price">Custom</h2>
+                  {{/if}}
                 </div>
+                <div class="panel-body">
+                  <ul class="plan-attributes">
+                    {{#each items}}
+                      {{#if subs}}
+                        <li>
+                          {{item}}
+                          <ul class="plan-sub-attributes">
+                            {{#each subs}}
+                              <li><i class="fa fa-check"></i>{{.}}</li>
+                            {{/each}}
+                          </ul>
+                        </li>
+                      {{else}}
+                        <li>{{.}}</li>
+                      {{/if}}
 
-              </div>
-              <div class="plan-footer">
-                <a class="btn btn-lg btn-primary" href="{{config.production_signup_url}}">Open a Production Account</a>
-                <ul class="additional-costs">
-                  {{#each additional_costs}}
-                    <li class="additional_cost">{{name}}: {{price}}</li>
-                  {{/each }}
-                </ul>
+                    {{/each}}
+                  </ul>
+                  <div class="plan-cta">
+                    <a href="{{cta_url}}" class="btn btn-lg btn-primary btn-block">
+                    {{cta}}
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          {{/each}}
 
-          <div class="development-plan-callout">
-            <h4>Don't need a Production Account yet?</h4>
-            <div class="callout-body">
-              <a href="{{config.development_signup_url}}">Open a Development Account</a>
-              <br />No minimums, no commitment. Credit card required.
-            </div>
+          <div class="pricing">
+            Additional containers: {{pricing.container}}
+            Additional disk: {{pricing.disk}}
+            Additional Domains: {{pricing.domain}}
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="row section">
+  <div class="panel panel-default were-hiring-panel">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <h1 class="panel-title">{{unique_situation.title}}</h1>
+          <h5 class="panel-sub">{{unique_situation.sub_title}}</h5>
+          <div class="panel-cta">
+            <a href="{{unique_situation.cta_url}}" class="btn btn-primary btn-lg">
+              {{unique_situation.cta}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row section bordered">
+    <div class="col-xs-12">
+      <div class="quick-starts categories">
+      <h2 class="section-title">See our Quick Start guides for your favorite framework:</h2>
+        {{#each quick_start}}
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="category-box {{slug}}" href="{{url}}">
+              <div class="category-icon">
+                <img src="{{icon}}" alt="{{name}}" />
+              </div>
+              <div class="category-footer">
+                <div class="category-title">{{name}}</div>
+              </div>
+            </a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row section pricing-faq">
     <div class="col-sm-12">
       <div class="row q-a">
         <h2 class="section-title">{{questions_title}}</h2>
         {{#each questions}}
-          <div class="col-md-3 col-sm-4">
+          <div class="col-md-4 col-sm-2">
             <div class="fact-item">
               <h4>{{inquiry}}</h4>
               <div class="description">{{#markdown}}{{response}}{{/markdown}}</div>
             </div>
           </div>
+          <div class="conditional-clear"></div>
         {{/each}}
       </div>
       <h2 class="section-title">More questions? <a href="/company/contact">Contact us</a></h2>
