@@ -110,20 +110,6 @@
     }
   }
 
-  .callout-section {
-    text-align: center;
-
-    .callout-title {
-
-    }
-
-    .callout-body {
-      font-size: 20px;
-      line-height: 26px;
-      color: $color-subdued;
-    }
-  }
-
   .facts-page-introduction  {
     h2 {
       font-size: 28px;
@@ -145,6 +131,25 @@
   }
 }
 
+
+.callout-section {
+  text-align: center;
+
+  .callout-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .callout-body {
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-subdued;
+  }
+
+  .callout-cta {
+    margin: 50px 0 0;
+  }
+}
 
 .console {
   @include border-radius(5px);
