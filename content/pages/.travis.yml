@@ -1,0 +1,9 @@
+sudo: false
+cache:
+  directories:
+  - tmp/www.aptible.com/vendor
+  - tmp/www.aptible.com/node_modules
+script:
+- PATH=$HOME/.local/bin:$PATH script/travis-deploy.sh
+env:
+  secure: CuMuo6zb2sslOyEVqNQjB+GWdxqJ9JGQTwU+pDSPufakzqLm4Zolx0JvA9f8PO1g3UM9u3Va2dKX+8KPJ2sqjwdadt9MvrC1dzO5x066E8Tj0wswsVyJXxxK8pWKVMTO26y24tU1z0Nkp+CFlRPYYRkgdGFo2EbDQLSj8feWDX8=
