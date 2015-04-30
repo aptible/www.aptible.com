@@ -4,8 +4,7 @@
 set -e
 
 # TODO: Only build after merge to master, not on PRs
-# if [ "$TRAVIS_BRANCH" == "master" ] &&
-#    [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
-if [ "$TRAVIS_BRANCH" == "master" ] ; then
+if [ "$TRAVIS_BRANCH" == "master" ] &&
+   [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
   grunt release:staging
 fi

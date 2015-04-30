@@ -1,4 +1,7 @@
 # ![](http://aptible-media-assets-manual.s3.amazonaws.com/web-horizontal-350.png)
+
+[![Build Status](https://travis-ci.org/aptible/www.aptible.com.png?branch=master)](https://travis-ci.org/aptible/www.aptible.com)
+
 ## www.aptible.com
 This is a static site generator that pulls in content pages from the [aptible-pages](https://github.com/aptible/aptible-pages), [aptible-blog](https://github.com/aptible/aptible-blog) and [aptible-legal](https://github.com/aptible/aptible-legal) repos.
 
