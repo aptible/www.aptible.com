@@ -2,4 +2,4 @@ sudo: false
 script:
 - PATH=$HOME/.local/bin:$PATH script/travis-deploy.sh
 env:
-  secure: hbLsDhre/oK5ctNpnPQAOGFmmcXywjGsDqErHIF9MMSyGdEgYCsaGk26wlmosH3bHUlnSbcy+rJLToz/fVBZC4whm2oDT6NLOYl9uk2iQTZPB3ygZJP9KhJst2uyityvwAo5s5Trst0kh0qDV8rCvlqaVZytt/V3iikqoiSXYRE=
+  secure: VErsItjsYsZXz4FaCY6yGJKNIEKb/I0SE/mlCW56syCUXq7RPjZiiczP6cQZ51H+C9dpI/pT+wJHdGHJc7K9Ve0kApbnmvvQrAlBFHnqxZyi1TjHmefw1JFynm63BojMrUYFM1tkwjr1/zhD7HyH5owkCWL18MJNGKEUpe79esg=
