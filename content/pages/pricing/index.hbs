@@ -170,7 +170,7 @@ questions:
                           {{item}}
                           <ul class="plan-sub-attributes">
                             {{#each subs}}
-                              <li><i class="fa fa-check"></i>{{.}}</li>
+                              <li>{{.}}</li>
                             {{/each}}
                           </ul>
                         </li>
@@ -181,7 +181,7 @@ questions:
                     {{/each}}
                   </ul>
                   <div class="plan-cta">
-                    <a href="{{cta_url}}" class="btn btn-lg btn-primary btn-block">
+                    <a href="{{cta_url}}" class="btn btn-lg btn-default btn-block">
                     {{cta}}
                     </a>
                   </div>
@@ -190,14 +190,18 @@ questions:
             </div>
           {{/each}}
         </div>
-        <h2 id="unit-pricing" class="section-title">Unit Pricing</h2>
-        <div class="panel-body">
-          <ul class="plan-attributes">
-            <li><span>1 GB App/Database Containers:</span> {{pricing.container}}</li>
-            <li><span>Encrypted Disk:</span> {{pricing.disk}}</li>
-            <li><span>Domains:</span> {{pricing.domain}}</li>
-          </ul>
+
+        <div class="row">
+          <div class="col-xs-12 unit-pricing">
+            <h2 class="section-title">Unit Pricing</h2>
+            <ul class="plan-attributes">
+              <li><strong>1 GB App/Database Containers:</strong> {{pricing.container}}</li>
+              <li><strong>Encrypted Disk:</strong> {{pricing.disk}}</li>
+              <li><strong>Domains:</strong> {{pricing.domain}}</li>
+            </ul>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
