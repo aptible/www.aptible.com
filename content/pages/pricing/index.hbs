@@ -18,6 +18,7 @@ plans:
   - name: Build and Test
     plan: Development
     price: '$0'
+    price_sub: '/month to open'
     items:
       - No Comittment
       - Not HIPAA-Compliant - no PHI
@@ -29,6 +30,7 @@ plans:
   - name: PHI-Ready
     plan: Platform
     price: '$499'
+    price_sub: '/month'
     items:
       - 3-month risk free trial
       - HIPAA-compliant - PHI-ready
@@ -41,6 +43,7 @@ plans:
     cta_url: https://dashboard.aptible.com/signup?plan=platform
   - name: Complete HIPAA compliance solution
     plan: Production
+    price: 'Custom'
     items:
       - item: A Platform Account + a complete compliance program
         subs:
@@ -151,11 +154,7 @@ questions:
                 <div class="plan-title">{{name}}</div>
                 <div class="plan-header">
                   <h3 class="plan-plan">{{plan}}</h3>
-                  {{#if price}}
-                    <h2 class="plan-price">{{price}}<span class="sub">/month</span></h2>
-                  {{else}}
-                    <h2 class="plan-price">Custom</h2>
-                  {{/if}}
+                    <h2 class="plan-price">{{price}}<span class="sub">{{price_sub}}</span></h2>
                 </div>
                 <div class="panel-body">
                   <ul class="plan-attributes">
