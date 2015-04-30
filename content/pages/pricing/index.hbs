@@ -8,55 +8,60 @@ production_title: Aptible Production Account
 production_subtitle: "Start deploying HIPAA-compliant apps in minutes with our ****high-assurance deployment platform**** and integrated ****HIPAA compliance tools**** \n\nStarting at $3499/month with an annual contract"
 development_plan_cost: $0.08/Hour
 
-hero_title: Get a free developer account to see how easy using Aptible is
-hero_sub_title: If you already use Heroku (or would like to)and use one of our supported languages or frameworks, you can be up and running in less than a day.
-hero_cta: Open your free Development account
+hero_title: Try Aptible now with a free Development Account
+hero_sub_title: Building modern web architecture? Familiar with the PaaS model or Heroku? Excited to use containers?
+hero_cta: Open a free Development Account
 hero_url: https://dashboard.aptible.com/signup?plan=development
 
-plans_title: A plan that's right for your needs
+plans_title: Choose a Plan
 plans:
-  - name: Build and Test
-    plan: Development
+  - plan: Development
+    tag: Build and Test
     price: '$0'
     price_sub: '/month to open'
     items:
-      - No Comittment
-      - Not HIPAA-Compliant - no PHI
-      - Ideal for staging, QA, or sandboxes
+      - No PHI allowed
+      - Ideal for staging/QA/sandboxes
+      - "No commitment: Pay as you go"
       - Email support
-      - Unlimited users
-    cta: Sign up for Development
+      - "Slack #public channel access"
+    cta: $ aptible signup --plan development
     cta_url: https://dashboard.aptible.com/signup?plan=development
-  - name: PHI-Ready
-    plan: Platform
+  - plan: Platform
+    tag: PHI-Ready
     price: '$499'
     price_sub: '/month'
     items:
-      - 3-month risk free trial
-      - HIPAA-compliant - PHI-ready
-      - Signed BAA
-      - 6 containers, 1 TB Disk, 4 Domains
-      - Email support
-      - 99.95% uptime SLA
-      - Ideal for companies with own compliance program
-    cta: Sign up for Platform
-    cta_url: https://dashboard.aptible.com/signup?plan=platform
-  - name: Complete HIPAA compliance solution
-    plan: Production
-    price: 'Custom'
-    items:
-      - item: A Platform Account + a complete compliance program
+      - "HIPAA-compliant: PHI-ready"
+      - item: 'Includes:'
         subs:
-          - Risk, policy, security, and training engines
-          - Incident response and contract management
-          - Training for entire workforce
-          - App + architecture design advising
-          - Incident response assistance
-          - Custom BAA - tailored to your needs
-      - Phone support
-      - Dedicated point of contact
-      - Custom SLA - guaranteed response times
-    cta: Contact us
+          - Dev Account
+          - 6 x 1GB Containers
+          - "1TB Disk, Encryption & Backups Included"
+          - 4 Domains
+      - 3-month no-risk trial
+      - Month-to-month available
+      - 99.95% SLA
+      - Signed BAA
+      - Priority support
+    cta: $ aptible signup --plan platform
+    cta_url: https://dashboard.aptible.com/signup?plan=platform
+  - plan: Production
+    tag: Premium Services
+    price: '$ Custom'
+    items:
+      - Full-service compliance
+      - item: 'Includes:'
+        subs:
+          - Platform Account
+          - Compliance Platform access
+          - Comprehensive risk & security management
+          - Industy-leading developer privacy & security compliance training
+      - Custom BAA, SLA available
+      - Premium support
+      - Security review support
+      - Dedicated POC in your Slack channel
+    cta: Have us call you
     cta_url: https://www.aptible.com/company/contact
 
 pricing:
@@ -65,9 +70,9 @@ pricing:
   domain: $0.05/hour
 
 unique_situation:
-  title: Do you have a unique situation? Need something special?
-  sub_title: Our team of engineers can help you build a HIPAA complaint solution that meets your needs.
-  cta: Get in touch
+  title: Need something special?
+  sub_title: Our experts can help you architect and operate a HIPAA-complaint solution.
+  cta: Get a Free HIPAA Architecture Constultation
   cta_url: /company/contact
 
 quick_start:
@@ -151,9 +156,9 @@ questions:
           {{#each plans}}
             <div class="col-md-4 col-xs-12 col-sm-6">
               <div class="panel panel-default plan-panel {{plan}}">
-                <div class="plan-title">{{name}}</div>
+                <div class="plan-title">{{plan}}</div>
                 <div class="plan-header">
-                  <h3 class="plan-plan">{{plan}}</h3>
+                  <h3 class="plan-plan">{{tag}}</h3>
                     <h2 class="plan-price">{{price}}<span class="sub">{{price_sub}}</span></h2>
                 </div>
                 <div class="panel-body">
@@ -183,12 +188,14 @@ questions:
               </div>
             </div>
           {{/each}}
-
-          <div class="pricing">
-            Additional containers: {{pricing.container}}
-            Additional disk: {{pricing.disk}}
-            Additional Domains: {{pricing.domain}}
-          </div>
+        </div>
+        <h2 id="unit-pricing" class="section-title">Unit Pricing</h2>
+        <div class="panel-body">
+          <ul class="plan-attributes">
+            <li><span>Containers:</span> {{pricing.container}}</li>
+            <li><span>Disk:</span> {{pricing.disk}}</li>
+            <li><span>Domains:</span> {{pricing.domain}}</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -213,7 +220,7 @@ questions:
   <div class="row section bordered">
     <div class="col-xs-12">
       <div class="quick-starts categories">
-      <h2 class="section-title">See our Quick Start guides for your favorite framework:</h2>
+      <h2 class="section-title">Quickstart Guides:</h2>
         {{#each quick_start}}
           <div class="col-xs-12 col-sm-4 col-md-3">
             <a class="category-box {{slug}}" href="{{url}}">
