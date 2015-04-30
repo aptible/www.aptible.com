@@ -18,14 +18,14 @@ plans:
   - plan: Development
     tag: Build and Test
     price: '$0'
-    price_sub: '/month to open'
+    price_sub: '/month (Pay only for usage)'
     items:
       - No PHI allowed
       - Ideal for staging/QA/sandboxes
       - "No commitment: Pay as you go"
       - Email support
       - "Slack #public channel access"
-    cta: $ aptible signup --plan development
+    cta: $ aptible account:create --plan development
     cta_url: https://dashboard.aptible.com/signup?plan=development
   - plan: Platform
     tag: PHI-Ready
@@ -44,7 +44,7 @@ plans:
       - 99.95% SLA
       - Signed BAA
       - Priority support
-    cta: $ aptible signup --plan platform
+    cta: $ aptible account:create --plan platform
     cta_url: https://dashboard.aptible.com/signup?plan=platform
   - plan: Production
     tag: Premium Services
@@ -125,14 +125,14 @@ questions:
         Download our [Reference Architecture](/pages/assets/aptible-reference-architecture.pdf) or [read more about our technology](/technology).
     - inquiry: What about lock-in?
       response: |
-        Aptible is designed around open source and engineering best practices. Configuring your app to deploy can be as easy as adding a sinlge, one-line file to your repo. We never require you to build to a proprietary API that may disappear overnight.
+        Aptible is designed around open source and engineering best practices. Configuring your app to deploy can be as easy as adding a sinlge, one-line file to your repo. We never require you to build to a proprietary API that may disappear overnight.  It's as easy to move your code elsewhere as it is to on-board. 
     - inquiry: What else might I need to comply with HIPAA?
       response: |
         In addition to a Production Account, you may want:
 
         * App services and APIs that handle PHI, such as analytics, object storage, and messaging
         * Productivity services that handle PHI, such as Google Apps for Business or Salesforce
-        * Worforce security services, such as password and mobile device management
+        * Workforce security services, such as password and mobile device management
         * Security assessments performed by an independent third party
 
         Our compliance management platform will help you choose and integrate these services into your compliance program.
