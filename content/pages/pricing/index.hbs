@@ -109,32 +109,33 @@ questions_title: Questions? We have answers.
 questions:
     - inquiry: What does Aptible do?
       response: |
-        We help our customers with everything they need to build a modern HIPAA compliant web application. We not only handle the application core but also the compliance and administration. Additionally, we help our customers integrate with a wide variety of technical partners in HIPAA compliant ways.  
-    - inquiry: Does my company need to be HIPAA compliant?
+        Aptible is a Platform-as-a-Service built on Amazon Web Services. We have two core products: Our deployment platform helps your operations engineers scale modern web architecture in secure, private, PHI-ready cloud environments. Our compliance platform provides comprehensive risk, security, and HIPAA compliance management. 
+    - inquiry: Does my company need to be HIPAA-compliant?
       response: |
-        It’s possible! It’s not always easy to know whether or not you need to be HIPAA compliant, but if you answer “yes” to any of the below questions, then we should definitely talk:
+        Not always, although most digital health companies include it in their go-to-market plan.
+        * Do you handle personally identifiable information and health information?
+        * Are you being asked to sign a Business Associate Agreement?  
+        * Are your customers hospitals, insurers, or large corporations?
 
-        * Do you handle personally identifiable health information?
-        * Do you need BAAs?  
-        * Do you partner with or sell to hospitals or insurance companies?   
-
-        Did you answer yes to any of these?  [Get in touch](/company/contact).
-    - inquiry: How does Aptible’s technology work? What’s a container?
-      response: >
-        Aptible runs on AWS. We use Docker to build and run our customers’ applications and manage all DevOps while our customers have the power to manage their own code. These containers act as a lightweight virtual machine that can be used to run an instance of an application or a database. Our PHI-ready accounts each receive a virtual private cloud with secure software and servers that manage compliance. You can check out our [technology architecture here](/pages/assets/aptible-reference-architecture.pdf) and read more about [our technology here](/technology).
-    - inquiry: What do I need to move from a Dev Account to a Platform or Production Account?
+        If you answered yes to any of these, [contact us for a consultation](/company/contact).
+    - inquiry: How does the Aptible deployment platform work?
       response: |
-        Easy!  You’ll need to sign 3 documents: Business Associate Agreement (BAA), mNDA, and Billing agreement.  It takes 15 seconds to execute these agreements, and we can have you back up and running in a few hours.  When you are ready to make the transition, [let us know](/company/contact).
-    - inquiry: What else might I need to become HIPAA Compliant?
+        Aptible lets you build scalable, compliance-ready Virtual Private Clouds on Amazon Web Services. We use Docker containers to build, run, and manage your apps. Databases run in private subnets, on encrypted data storage volumes. We make nightly backups to encrypted long-term storage. Role-based access controls and auditing help you demonstrate compliance.
+
+        Download our [Reference Architecture](/pages/assets/aptible-reference-architecture.pdf) or [read more about our technology](/technology).
+    - inquiry: What about lock-in?
       response: |
-        Depending on your specific business, you may need:
+        Aptible is designed around open source and engineering best practices. Configuring your app to deploy can be as easy as adding a sinlge, one-line file to your repo. We never require you to build to a proprietary API that may disappear overnight.
+    - inquiry: What else might I need to comply with HIPAA?
+      response: |
+        In addition to a Production Account, you may want:
 
-        * Independent 3rd party for Security Assessment
-        * Logging and Analytics Providers who handle PHI 
-        * Telephony, Email, Object storage 
+        * App services and APIs that handle PHI, such as analytics, object storage, and messaging
+        * Productivity services that handle PHI, such as Google Apps for Business or Salesforce
+        * Worforce security services, such as password and mobile device management
+        * Security assessments performed by an independent third party
 
-
-        We can help with all of these!
+        Our compliance management platform will help you choose and integrate these services into your compliance program.
 ---
 
 <div class="container">
@@ -192,8 +193,8 @@ questions:
         <h2 id="unit-pricing" class="section-title">Unit Pricing</h2>
         <div class="panel-body">
           <ul class="plan-attributes">
-            <li><span>Containers:</span> {{pricing.container}}</li>
-            <li><span>Disk:</span> {{pricing.disk}}</li>
+            <li><span>1 GB App/Database Containers:</span> {{pricing.container}}</li>
+            <li><span>Encrypted Disk:</span> {{pricing.disk}}</li>
             <li><span>Domains:</span> {{pricing.domain}}</li>
           </ul>
         </div>
