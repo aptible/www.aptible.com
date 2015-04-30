@@ -1,5 +1,9 @@
-language: node_js
-node_js:
-  - "0.10"
-before_script:
-  - npm install -g grunt-cli
+sudo: false
+cache:
+  directories:
+  - vendor
+  - node_modules
+script:
+- PATH=$HOME/.local/bin:$PATH script/travis-deploy.sh
+env:
+  secure: tswdehR8ZUZZjLraFeD32gSj0X6kZQriEAW+el+wJz8nfyvbhFtW11KXfY3hQI939Up0fgKd5MtXFgEnEFXtqS/QgF7Sm7uwcr7lASRIYn2VvFLqgALCWx336dDWhH1pYCoOhH7j0a4Dv7EMXCcr/Ne0ymZbY2wVts/gK+Gnrzc=

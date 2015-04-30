@@ -124,21 +124,21 @@ module.exports = function(grunt) {
             legal: {
                 options: {
                     branch: 'master',
-                    repository: 'git@github.com:aptible/aptible-legal.git',
+                    repository: 'https://github.com/aptible/aptible-legal.git',
                     directory: 'content/legal'
                 }
             },
             pages: {
                 options: {
                     branch: 'master',
-                    repository: 'git@github.com:aptible/aptible-pages.git',
+                    repository: 'https://github.com/aptible/aptible-pages.git',
                     directory: 'content/pages'
                 }
             },
             blog: {
                 options: {
                     branch: 'master',
-                    repository: 'git@github.com:aptible/aptible-blog.git',
+                    repository: 'https://github.com/aptible/aptible-blog.git',
                     directory: 'content/posts'
                 }
             }
