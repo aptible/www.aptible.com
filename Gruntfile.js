@@ -46,7 +46,7 @@ module.exports = function(grunt) {
                     cwd: 'content/legal',
                     dest: 'dist/legal',
                     expand: true,
-                    src: ['**/*.md', '**/*.hbs']
+                    src: ['**/*.md', '**/*.hbs', '!**/readme.md']
                 }, {
                     cwd: 'src/templates/legal',
                     dest: 'dist/legal',
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
                     cwd: 'content/pages',
                     dest: 'dist/',
                     expand: true,
-                    src: ['**/*.md', '**/*.hbs']
+                    src: ['**/*.md', '**/*.hbs', '!**/readme.md']
                 }]
             },
             caseStudies: {
