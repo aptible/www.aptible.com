@@ -4,7 +4,7 @@ excerpt: "YES! Finally! The Aptible team and I are very happy to announce our pu
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
-posted: 08-04-2014
+posted: 2014-08-04
 section: Blog
 posts: true
 ---
