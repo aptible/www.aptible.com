@@ -4,7 +4,7 @@ excerpt: "Our CTO, Frank, spoke at AWS re:Invent about architecting for HIPAA co
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
-posted: 11-21-2014
+posted: 2014-11-21
 section: Blog
 posts: true
 ---

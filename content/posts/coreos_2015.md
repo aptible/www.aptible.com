@@ -4,7 +4,7 @@ excerpt: "Our CTO, Frank, spoke today at the inaugural CoreOS Fest."
 author_name: Sam Yount
 author_email: sam@aptible.com
 author_id: sam
-posted: 05-05-2015
+posted: 2015-05-06
 section: Blog
 posts: true
 ---
