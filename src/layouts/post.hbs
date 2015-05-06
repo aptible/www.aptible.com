@@ -23,7 +23,7 @@ layout: application.hbs
               <ul class="post-meta">
                 <li>{{ gravatar page.author_email 'lg' }}</li>
                 <li class="author"><a href="{{ author_path page}}">{{ page.author_name }}</a></li>
-                <li class="date">{{ moment page.posted format="DD MMMM YYYY" }}</li>
+                <li class="date">{{ moment page.posted format="D MMMM YYYY" }}</li>
               </ul>
             </div>
             <div class="col-md-8 col-sm-9">
