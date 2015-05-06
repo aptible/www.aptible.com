@@ -46,7 +46,7 @@ module.exports = function(grunt) {
                     cwd: 'content/legal',
                     dest: 'dist/legal',
                     expand: true,
-                    src: ['**/*.md', '**/*.hbs', '!**/readme.md']
+                    src: ['**/*.md', '**/*.hbs', '!**/readme.md', '!**/README.md']
                 }, {
                     cwd: 'src/templates/legal',
                     dest: 'dist/legal',
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
                     cwd: 'content/pages',
                     dest: 'dist/',
                     expand: true,
-                    src: ['**/*.md', '**/*.hbs', '!**/readme.md']
+                    src: ['**/*.md', '**/*.hbs', '!**/readme.md', '!**/README.md']
                 }]
             },
             caseStudies: {
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
                     cwd: 'content/posts',
                     dest: 'dist/blog',
                     expand: true,
-                    src: ['**/*.md', '**/*.hbs', '!**/readme.md']
+                    src: ['**/*.md', '**/*.hbs', '!**/readme.md', '!**/README.md']
                 }, {
                     cwd: 'src/templates/blog',
                     dest: 'dist/blog',
