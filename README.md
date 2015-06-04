@@ -7,11 +7,10 @@ This is a static site generator that pulls in content pages from the [aptible-pa
 
 #### Setting up
 
-This will install bower, npm, gem dependencies and content dependencies.
-
 ````
-npm install
 bundle install
+npm install
+bower install
 grunt setup
 ````
 
@@ -28,14 +27,18 @@ The site is built with [Assemble](http://assemble.io/). Many of the files make u
 This will release the site to an S3 bucket where it will be immediately accessible at [www.aptible.com](https://www.aptible.com). The `release` commands depend on the [AWS command line tool](http://aws.amazon.com/cli/), which should be set up according to [Aptible's best practices](https://github.com/aptible/aptible-tech-guide/blob/master/doc/SystemsAdministration.md#command-line-access).
 
 ````
+bundle install
 npm install
+bower install
 grunt release:production
 ````
 
 To release to our staging site ([www.aptible-staging.com](https://www.aptible-staging.com)):
 
 ````
+bundle install
 npm install
+bower install
 grunt release:staging
 ````
 
