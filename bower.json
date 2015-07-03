@@ -12,5 +12,8 @@
     "slick-carousel": "https://github.com/kenwheeler/slick.git#~1.3.6",
     "modernizr": "~2.8.3"
   },
-  "version": "0.0.2"
+  "version": "0.0.2",
+  "resolutions": {
+    "slick-carousel": "~1.4.1"
+  }
 }
