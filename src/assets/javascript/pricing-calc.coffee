@@ -1,106 +1,156 @@
-# An object to define utility functions and global variables on:
 
-blueBar = (con, dis, dom) ->
-  contBlueWid = (con - 1) * 10 + '%'
-  disBlueWid = (dis - 1) * 10 + '%'
-  domBlueWid = (dom - 1) * 10 + '%'
+containerSlider = $('#container-slider')
+diskSlider = $('#disk-slider')
+domainSlider = $('#domain-slider')
+
+colSettings = $('.col-settings')
+panelPHI = $('.panel-phi')
+panelFSC = $('.panel-compliance')
+
+includedScale = $('.included')
+
+changeAttr = (attribute, value) ->
+  $(id).attr attribute, vakue
+  return
+
+
+# Scale the blue bars in the jQuery UI sliders
+blueBar = (containers, disk, domains) ->
+
+
+  containersBlueBarWidth = (containers - 1) * 10 + '%'
+  diskBlueBarWidth = (disk - 1) * 10 + '%'
+  domainsBlueBarWidth = (domains - 1) * 10 + '%'
+
   if !$('.bluebar').length
-    $('.container-slider').prepend '<div class="bluebar" style="width:' + contBlueWid + '"></div>'
-    $('.disk-slider').prepend '<div class="bluebar" style="width:' + disBlueWid + '"></div>'
-    $('.domain-slider').prepend '<div class="bluebar" style="width:' + domBlueWid + '"></div>'
+    # Create the bars if they don't already exist
+    containerSlider.prepend '<div class="bluebar" style="width:' + containersBlueBarWidth + '"></div>'
+    diskSlider.prepend '<div class="bluebar" style="width:' + diskBlueBarWidth + '"></div>'
+    domainSlider.prepend '<div class="bluebar" style="width:' + domainsBlueBarWidth + '"></div>'
   else
-    $('.container-slider .bluebar').width contBlueWid
-    $('.disk-slider .bluebar').width disBlueWid
-    $('.domain-slider .bluebar').width domBlueWid
+    # Scale the sliders if they already exist
+    containerSlider.find('.bluebar').width containersBlueBarWidth
+    diskSlider.find('.bluebar').width diskBlueBarWidth
+    domainSlider.find('.bluebar').width domainsBlueBarWidth
+
   return
 
-# Write the value of the slider as an attribute, only on
-# USER change. This means we can revert in certain
-# situations.
 
-writeValAttr = (id, val) ->
-  $(id).attr 'userval', val
+# Only use this when the User is changing the slider manually, and on load
+writeValAttr = (id, value) ->
+  id.attr 'userval', value
   return
 
-# Trigger things when
-# PHI is changed
+# Do this when the slider is being changed via other methods. Updates the key
+moveSlider = (id, value) ->
+  id.slider 'value', value
+  updateKey id, value
+  return
 
+# This updates the key, triggered when changed manually and with moveSlider
+updateKey = (id, value) ->
+  key = id.prev('.key')
+  key.find('li').removeClass 'selected-key'
+  key.find('.key-' + value).addClass 'selected-key'
+  return
+
+# This is triggered when the PHI toggle changes
 PHIchange = ->
-  `var ctaurl`
+
+  # Get values that have been set by the user
+  containerSliderUserValue = containerSlider.attr('userval')
+  diskSliderUserValue = diskSlider.attr('userval')
+  domainSliderUserValue = domainSlider.attr('userval')
+
+
   if $('.phi-checkbox').is(':checked')
+
+    ###
+    AT LEAST A PLATFORM PLAN
+    ###
 
     $.glob.plan = 'platform'
     $.glob.phi = true
-    $('.included').removeClass 'hidden-alt'
-    # Move the container slider
-    if $('#container-slider').slider('option', 'value') < $.glob.inc.con
-      $('#container-slider').slider 'value', $.glob.inc.con
-      updateKey '.containers-keys', $.glob.inc.con
-      $.glob.slide.con = $.glob.inc.con
-    # Move the disk slider
-    if $('#disk-slider').slider('option', 'value') < $.glob.inc.dis
-      $('#disk-slider').slider 'value', $.glob.inc.dis
-      updateKey '.disk-key', $.glob.inc.dis
-      $.glob.slide.dis = $.glob.inc.dis
-    # Move the domains slider
-    if $('#domain-slider').slider('option', 'value') < $.glob.inc.dom
-      $('#domain-slider').slider 'value', $.glob.inc.dom
-      updateKey '.domains-key', $.glob.inc.dom
-      $.glob.slide.dom = $.glob.inc.dom
-    updatePrice $.glob.slide.con, $.glob.slide.dis, $.glob.slide.dom
-    blueBar $.glob.slide.con, $.glob.slide.dis, $.glob.slide.dom
+    includedScale.removeClass 'hidden-alt'
 
+    # Move the container slider
+    if containerSlider.slider('option', 'value') < $.included.containers
+      moveSlider containerSlider, $.included.containers
+      $.sliderValue.containers = $.included.containers
+    # Move the disk slider
+    if diskSlider.slider('option', 'value') < $.included.disk
+      moveSlider diskSlider, $.included.disk
+      $.sliderValue.disk = $.included.disk
+    # Move the domains slider
+    if domainSlider.slider('option', 'value') < $.included.domains
+      moveSlider domainSlider, $.included.domains
+      $.sliderValue.domains = $.included.domains
+
+    # Show FSC toggle
     showFSC()
 
   else
-    # Reverting back to non-PHI, undoing any changes made
-    # hide full-service compliance option WITH animation
+
+    ###
+    DEVELOPMENT PLAN
+    ---
+    Everything is reverted to non phi, and the full service compliance
+    panel is hidden. If the plan was a production one, then that is also
+    reverted
+    ###
+
     $.glob.phi = false
 
-    $('.included').addClass 'hidden-alt'
-    if $('#container-slider').attr('userval') < $('#container-slider').slider('option', 'value')
-      $('#container-slider').slider 'value', $('#container-slider').attr('userval')
-      updateKey '.containers-keys', $('#container-slider').attr('userval')
-      $.glob.slide.con = $('#container-slider').attr('userval')
-    if $('#disk-slider').attr('userval') < $('#disk-slider').slider('option', 'value')
-      $('#disk-slider').slider 'value', $('#disk-slider').attr('userval')
-      updateKey '.disk-key', $('#disk-slider').attr('userval')
-      $.glob.slide.dis = $('#disk-slider').attr('userval')
-    if $('#domain-slider').attr('userval') < $('#domain-slider').slider('option', 'value')
-      $('#domain-slider').slider 'value', $('#domain-slider').attr('userval')
-      updateKey '.domains-key', $('#domain-slider').attr('userval')
-      $.glob.slide.dom = $('#domain-slider').attr('userval')
+    includedScale.addClass 'hidden-alt'
+
+    containerSliderCurrentValue = containerSlider.slider('option', 'value')
+    diskSliderCurrentValue = diskSlider.slider('option', 'value')
+    domainSliderCurrentValue = diskSlider.slider('option', 'value')
+
+    if containerSliderUserValue < containerSliderCurrentValue
+      moveSlider containerSlider, containerSliderUserValue
+      $.sliderValue.containers = containerSliderUserValue
+
+    if diskSliderUserValue < diskSliderCurrentValue
+      moveSlider diskSlider, diskSliderUserValue
+      $.sliderValue.disk = diskSliderUserValue
+
+    if domainSliderUserValue < domainSliderCurrentValue
+      moveSlider domainSlider, domainSliderUserValue
+      $.sliderValue.domains = domainSliderUserValue
 
     if $('.compliance-checkbox').is(':checked')
       $('.compliance-checkbox').prop('checked', false)
       FSCchange()
 
+    # set the plan name
     $.glob.plan = 'development'
 
-    updatePrice $.glob.slide.con, $.glob.slide.dis, $.glob.slide.dom
-    blueBar $('#container-slider').slider('option', 'value'), $('#disk-slider').slider('option', 'value'), $('#domain-slider').slider('option', 'value')
+  # Update Price
+  updatePrice $.sliderValue.containers, $.sliderValue.disk, $.sliderValue.domains
+  
+  # Update Blue Bars
+  blueBar $.sliderValue.containers, $.sliderValue.disk, $.sliderValue.domains
 
   return
 
-# Trigger things when full service
-# compliance is changed
-
+# this is triggered when the Full Service Compliance toggle changes
 hideFSC = ->
-  ttH = $('.col-settings').find('.pricing-title').outerHeight()
-  ppH = $('.panel-phi').outerHeight()
-  pcH = $('.panel-compliance').outerHeight()
-  prCH = ppH + ttH + 2;
+  totalHeight = colSettings.find('.pricing-title').outerHeight()
+  panelPHIHeight = panelPHI.outerHeight()
+  panelFSCHeight = panelFSC.outerHeight()
+  newTotalHeight = panelPHIHeight + totalHeight + 2;
     
-  $('.panel-compliance').animate {
+  panelFSC.animate {
     'opacity': 0
   }, 500
   window.setTimeout (->
-      $('.col-settings > .panel').animate {
-        'height': prCH
+      colSettings.first('.panel').animate {
+        'height': newTotalHeight
       }, 500
-      $('.panel-compliance').addClass 'hidden-alt'
+      panelFSC.addClass 'hidden-alt'
       window.setTimeout (->
-          $('.col-settings > .panel').css {
+          colSettings.first('.panel').css {
             'height': ''
           }, 500
           return
@@ -110,75 +160,78 @@ hideFSC = ->
 
   return
 
+
 showFSC = ->
-  ttH = $('.col-settings').find('.pricing-title').outerHeight()
-  ppH = $('.panel-phi').outerHeight()
-  initprCH = $('.col-settings > .panel').outerHeight()
+  totalHeight = colSettings.find('.pricing-title').outerHeight()
+  panelPHIHeight = panelPHI.outerHeight()
+  initialPanelHeight = $('.col-settings > .panel').outerHeight()
 
-  $('.col-settings > .panel').height(initprCH)
+  colSettings.first('panel').height initialPanelHeight
 
-  $('.panel-compliance').css {
+  panelFSC.css {
     'opacity': 0
   }
-  $('.panel-compliance').removeClass 'hidden-alt'
+  panelFSC.removeClass 'hidden-alt'
 
-  pcH = $('.panel-compliance').outerHeight()
-  prCH = ppH + pcH + ttH;
-  $('.col-settings > .panel').animate {
-    'height': prCH
+  panelFSCHeight = panelFSC.outerHeight()
+  newTotalHeight = panelPHIHeight + panelFSCHeight + totalHeight;
+  colSettings.first('.panel').animate {
+    'height': newTotalHeight
   }, 500
   
   window.setTimeout (->
-      $('.panel-compliance').animate {
+      panelFSC.animate {
         'opacity' : 1
       }, 500
-      $('.col-settings > .panel').css {
+      colSettings.first('.panel').css {
         'height': ''
       }, 500
       return
     ), 500
   return
 
-updateKey = (id, val) ->
-  $(id + ' li').removeClass 'selected-key'
-  $(id + ' .key-' + val).addClass 'selected-key'
-  return
-
-scaleInc = ->
-  $('#container-inc-scale').width ($.glob.inc.con - 1.2) * 10 + '%'
-  $('#disk-inc-scale').width ($.glob.inc.dis - 1.2) * 10 + '%'
-  $('#domain-inc-scale').width ($.glob.inc.dom - 1.2) * 10 + '%'
+scaleIncluded = ->
+  $('#container-inc-scale').width ($.included.containers - 1.2) * 10 + '%'
+  $('#disk-inc-scale').width ($.included.disk - 1.2) * 10 + '%'
+  $('#domain-inc-scale').width ($.included.domains - 1.2) * 10 + '%'
   return
 
 needmore = (type) ->
-  if !type and !$('.total-wrap').hasClass('hidden-alt-total-wrap')
+  totalWrap = $('.total-wrap')
+  if !type and !totalWrap.hasClass('hidden-alt-total-wrap')
     # do nothing
+
   else if !type and $('.total-wrap').hasClass('hidden-alt-total-wrap')
+
     # NEED MORE to NORMAL
     needmoreslidersshow false
+
     origH = $('.total-wrap').outerHeight()
-    $('.total-wrap').height('').css 'position': 'absolute'
-    newH = $('.total-wrap').outerHeight()
-    $('.total-wrap').height(origH).css 'position': ''
-    $('.total-wrap').animate { 'height': newH }, 500
+    totalWrap.height('').css 'position': 'absolute'
+    newH = totalWrap.outerHeight()
+    totalWrap.height(origH).css 'position': ''
+    totalWrap.animate { 'height': newH }, 500
     window.setTimeout (->
       $('.total-wrap').animate { 'opacity': 1 }, 500
       return
     ), 500
     $('.total-wrap').removeClass 'hidden-alt-total-wrap'
+
   else if !$('.total-wrap').hasClass('hidden-alt-total-wrap')
+
     # NORMAL TO NEED MORE
     needmoreslidersshow true
-    origH = $('.total-wrap').outerHeight()
-    $('.total-wrap').height('').css 'position': 'absolute'
-    newH = $('.total-wrap').outerHeight()
-    $('.total-wrap').height(origH).css 'position': ''
-    $('.total-wrap').animate { 'opacity': 0 }, 500
+    origH = totalWrap.outerHeight()
+    totalWrap.height('').css 'position': 'absolute'
+    newH = totalWrap.outerHeight()
+    totalWrap.height(origH).css 'position': ''
+    totalWrap.animate { 'opacity': 0 }, 500
     window.setTimeout (->
-      $('.total-wrap').animate { 'height': '1px' }, 500
+      totalWrap.animate { 'height': '1px' }, 500
       return
     ), 500
-    $('.total-wrap').addClass 'hidden-alt-total-wrap'
+    totalWrap.addClass 'hidden-alt-total-wrap'
+
   return
 
 needmoreslidersshow = (show) ->
@@ -200,7 +253,7 @@ needmoreslidersshow = (show) ->
       'opacity': ''
       'position': ''
       'width': ''
-    if `$.glob.slide.con === 11`
+    if `$.sliderValue.containers === 11`
       newPanH = neeH + conH
       # SET CURRENT PANEL HEIGHT
       $('.col-config').find('.panel-cont').css 'height': panH
@@ -219,7 +272,7 @@ needmoreslidersshow = (show) ->
         ), 500
         return
       ), 500
-    else if `$.glob.slide.dis === 11`
+    else if `$.sliderValue.disk === 11`
       newPanH = conH + disH + neeH
       # DISABLE PREVIOUS SLIDERS
       $('#container-slider').slider 'option', 'disabled', true
@@ -240,7 +293,7 @@ needmoreslidersshow = (show) ->
         ), 500
         return
       ), 500
-    else if `$.glob.slide.dom === 11`
+    else if `$.sliderValue.domains === 11`
       newPanH = conH + disH + domH + neeH
       # DISABLE PREVIOUS SLIDERS
       $('#container-slider, #disk-slider').slider 'option', 'disabled', true
@@ -304,161 +357,146 @@ needmoreslidersshow = (show) ->
   ), 1010
   return
 
-updatePrice = (con, dis, dom) ->
-  `var domcurr`
-  `var discurr`
-  `var concurr`
-  `var price`
-  `var dom`
-  `var domval`
-  `var domval`
-  `var disval`
-  `var dis`
-  `var dis`
-  `var disval`
-  `var conval`
-  `var con`
-  `var conval`
-  `var urlprice`
-  `var conurl`
-  `var disur`
-  `var domurl`
 
-  # CONTAINERS
-  if con < 11
-    if $.glob.phi
-      conval = parseFloat($.glob.price.con * (con - ($.glob.inc.con))).toFixed(2)
-    else
-      conval = parseFloat($.glob.price.con * con).toFixed(2)
-    conval = Math.max(conval, 0).toFixed(2)
-    conurl = con
-  else
-    conurl = 'more'
-    con = 'I need more'
-    conval = 'Contact us'
-  # DISK SPACE
-  if dis < 11
-    if $.glob.phi
-      disval = $.glob.price.dis * (dis - ($.glob.inc.dis))
-    else
-      disval = $.glob.price.dis * dis
-    disval = Math.max(disval, 0).toFixed(2)
-    dis = dis / 5 + 'TB'
-    disurl = dis
-  else
-    disurl = 'more'
-    dis = 'I need more'
-    disval = 'Contact us'
-  # DOMAINS
-  if dom < 11
-    if $.glob.phi
-      domval = $.glob.price.dom * (dom - ($.glob.inc.dom))
-    else
-      domval = $.glob.price.dom * dom
-    domval = Math.max(domval, 0).toFixed(2)
-    domurl = dom
-  else
-    domurl = 'more'
-    domval = 'Contact us'
-    dom = 'I need more'
-  # WORK OUT THE TOTAL PRICE
+
+
+
+
+updatePrice = (containers, disk, domains) ->
+
+  doesPriceExist = true
+
+  # SET UPDATED AMOUNTS
+  $('.containers-val').text(containers)
+  $('.disk-val').text(disk / 5 + 'TB')
+  $('.domain-val').text(domains)
+
+  baseCost = 0
+
+  # IF PHI ON, SUBTRACT INCLUDED FROM VALUE. MINIMUM VAL ZERO
   if $.glob.phi
-    price = parseFloat($.glob.price.base) + parseFloat(domval) + parseFloat(disval) + parseFloat(conval)
-  else
-    price = parseFloat(domval) + parseFloat(disval) + parseFloat(conval)
-  curr = '$'
-  concurr = ''
-  discurr = ''
-  domcurr = ''
-  if $.isNumeric(conval)
-    concurr = curr
-    if conval > 0
-      $('.cont-extra').text ' @ $' + parseFloat(conval).toFixed(2)
-    else
-      $('.cont-extra').text ''
-  else
-    needmore con
+    baseCost = 499
+    containers = Math.max(containers - $.included.containers, 0)
+    disk = Math.max(disk - $.included.disk, 0)
+    domains = Math.max(domains - $.included.domains, 0)
+
+  # SET CONTAINER COST
+  if (containers < 11) and (containers > 0)
+    containersCost = parseFloat(containers * $.price.container).toFixed(2)
+    $('.cont-extra').text ' @ $' + containersCost
+    $('.cont-price').text '$' + containersCost
+  else if containers == 0
+    containersCost = 0
     $('.cont-extra').text ''
-  if $.isNumeric(disval)
-    discurr = curr
-    if disval > 0
-      $('.dis-extra').text ' @ $' + parseFloat(disval).toFixed(2)
-    else
-      $('.dis-extra').text ''
+    $('.cont-price').text '$0.00'
   else
-    needmore dis
+    containersCost = null
+    needmore containers
+    $('.cont-extra').text ''
+    $('.cont-price').text 'Contact us'
+    $('.containers-val').text 'I need more'
+    containers = 'more'
+    doesPriceExist = false
+
+
+  # SET DISK COST
+  if (disk < 11) and (disk > 0)
+    diskCost = parseFloat(disk * $.price.disk).toFixed(2)
+    $('.dis-extra').text ' @ $' + diskCost
+    $('.dis-price').text '$' + diskCost
+  else if disk == 0
+    diskCost = 0
     $('.dis-extra').text ''
-  if $.isNumeric(domval)
-    domcurr = curr
-    if domval > 0
-      $('.dom-extra').text ' @ $' + parseFloat(domval).toFixed(2)
-    else
-      $('.dom-extra').text ''
+    $('.dis-price').text '$0.00'
   else
-    needmore dom
-    $('.dom-extra').text ''
-  if $.isNumeric(conval) and $.isNumeric(disval) and $.isNumeric(domval)
-    $('.tot-price-number').text curr + price.toFixed(2)
-    urlprice = price
+    diskCost = null
+    needmore disk
+    $('.dis-extra').text ''
+    $('.dis-price').text 'Contact us'
+    $('.disk-val').text 'I need more'
+    disk = 'more'
+    doesPriceExist = false
+
+  # SET DOMAIN COST
+  if (domains < 11) and (domains > 0)
+    domainsCost = parseFloat(domains * $.price.domain).toFixed(2)
+    $('.dom-extra').text ' @ $' + domainsCost
+    $('.dom-price').text '$' + domainsCost
+  else if disk == 0
+    domainsCost = 0
+    $('.dis-extra').text ''
+    $('.dom-price').text '$0.00'
+  else
+    domiansCost = null
+    needmore domains
+    $('.dom-extra, .dom-price').text ''
+    $('.dom-price').text 'Contact us'
+    $('.domains-val').text 'I need more'
+    domains = 'more'
+    doesPriceExist = false
+
+  #SET TOTAL PRICE
+  if doesPriceExist
     needmore()
-  $('.cont-price').text concurr + conval
-  $('.containers-val').text con
-  $('.dis-price').text discurr + disval
-  $('.disk-val').text dis
-  $('.dom-price').text domcurr + domval
-  $('.domain-val').text dom
+    totPrice = (parseFloat(baseCost) + parseFloat(domainsCost) + parseFloat(diskCost) + parseFloat(containersCost)).toFixed(2)
+    $('.tot-price-number').text '$' + totPrice
+  else
+    totPrice = 'Unknown'
 
-  con = con + ''.split(' ').join('_')
-  dom = dom + ''.split(' ').join('_')
-  dis = dis + ''.split(' ').join('_')
-
-  if urlprice is undefined
-    urlprice = 'enquire'
-
+  #SET URL TO PASS DETAILS TO SIGN UP PAGE
   ctaurl = $('.dev-plat-but').attr('href')
   ctaurl = ctaurl.split('?')[0]
-  ctaurl = ctaurl + '?plan=' + $.glob.plan + '&containers=' + conurl + '&disk=' + disurl  + '&domains=' + domurl + '&val=' + urlprice
+  ctaurl = ctaurl + '?plan=' + $.glob.plan + '&containers=' + containers + '&disk=' + disk  + '&domains=' + domains + '&val=' + totPrice
   $('.dev-plat-but').attr('href', ctaurl)
   return
 
 updatePlan = ->
   `var prS`
   `var deS`
+
+  developmentSummary = $('Development-summary')
+  platformSummary = $('.Platform-summary')
+  productionSummary = $('.Production-summary')
+  keyOverview = $('.key-overview')
   # Unhide hidden-alt summaries to get heights
-  deS = $('.Development-summary').outerHeight()
-  prS = $('.Platform-summary').outerHeight()
-  if $('.Development-summary').hasClass('hidden-alt')
-    $('.Development-summary').css
+  deS = developmentSummary.outerHeight()
+  prS = platformSummary.outerHeight()
+
+  if developmentSummary.hasClass('hidden-alt')
+    developmentSummary.css
       'opacity': 0
       'position': 'absolute'
       'display': 'inline-block'
-    deS = $('.Development-summary').outerHeight()
-    $('.Development-summary').css
+    deS = developmentSummary.outerHeight()
+    developmentSummary.css
       'opacity': 1
       'position': ''
       'display': ''
-  if $('.Platform-summary').hasClass('hidden-alt')
-    $('.Platform-summary').css
+
+  if platformSummary.hasClass('hidden-alt')
+    platformSummary.css
       'opacity': 0
       'position': 'absolute'
       'display': 'inline-block'
-    prS = $('.Platform-summary').outerHeight()
-    $('.Platform-summary').css
+    prS = platformSummary.outerHeight()
+    platformSummary.css
       'opacity': 1
       'position': ''
       'display': ''
+
+  # IF ONLY PHI IS CHECKED
   if $.glob.phi and !$.glob.fsc
-    $('.key-overview').animate { 'opacity': 0 },
+    keyOverview.animate { 'opacity': 0 },
       duration: 300
       easing: 'swing'
-    $('.Platform-summary').css 'height': deS
+    platformSummary.css 'height': deS
     window.setTimeout (->
       $('.key-overview h3').text 'Platform Account'
-      $('.Development-summary').addClass 'hidden-alt'
-      $('.Platform-summary').removeClass('hidden-alt').animate { 'height': prS }, 500
-      $('.Production-summary').addClass 'hidden-alt'
+      developmentSummary.addClass 'hidden-alt'
+      platformSummary.removeClass('hidden-alt').animate { 'height': prS }, 500
+      productionSummary.addClass 'hidden-alt'
       $('.pricing-calc').removeClass 'production-account'
-      $('.key-overview').animate { 'opacity': 1 }, 500
+      keyOverview.animate { 'opacity': 1 }, 500
       return
     ), 500
     $('.plan-price-tot').text '$499'
@@ -469,29 +507,29 @@ updatePlan = ->
       duration: 300
       easing: 'swing'
     window.setTimeout (->
-      $('.key-overview h3').text 'Production Account'
-      $('.Development-summary').addClass 'hidden-alt'
-      $('.Platform-summary').addClass 'hidden-alt'
-      $('.Production-summary').removeClass 'hidden-alt'
+      keyOverview.find('h3').text 'Production Account'
+      developmentSummary.addClass 'hidden-alt'
+      platformSummary.addClass 'hidden-alt'
+      productionSummary.removeClass 'hidden-alt'
       $('.pricing-calc').addClass 'production-account'
-      $('.key-overview').animate { 'opacity': 1 },
+      keyOverview.animate { 'opacity': 1 },
         duration: 500
         easing: 'swing'
       return
     ), 500
     $('.plan-price-tot').text '$499'
   else
-    $('.key-overview').animate { 'opacity': 0 },
+    keyOverview.animate { 'opacity': 0 },
       duration: 300
       easing: 'swing'
     window.setTimeout (->
       $('.plan-price-tot').text '$0'
-      $('.key-overview h3').text 'Development Account'
-      $('.Development-summary').removeClass 'hidden-alt'
-      $('.Platform-summary').addClass 'hidden-alt'
-      $('.Production-summary').addClass 'hidden-alt'
+      keyOverview.find('h3').text 'Development Account'
+      developmentSummary.removeClass 'hidden-alt'
+      platformSummary.addClass 'hidden-alt'
+      productionSummary.addClass 'hidden-alt'
       $('.pricing-calc').removeClass 'production-account'
-      $('.key-overview').animate { 'opacity': 1 },
+      keyOverview.animate { 'opacity': 1 },
         duration: 500
         easing: 'swing'
       return
@@ -527,79 +565,100 @@ FSCchange = ->
       ), 500
       return
     ), 500
-    updatePrice $.glob.slide.con, $.glob.slide.dis, $.glob.slide.dom
+    updatePrice $.sliderValue.containers, $.sliderValue.disk, $.sliderValue.domains
 
   return
 
 $.glob = new Object
 # An object to define internal stuff for the plugin:
-$.glob.price = new Object
-$.glob.price.con = 58.40
-$.glob.price.dis = 37
-$.glob.price.dom = 18.25
-$.glob.price.base = 499
+$.price = new Object
+$.price.container = parseFloat 58.40
+$.price.disk = parseFloat 37
+$.price.domain = parseFloat 18.25
+$.price.base = parseFloat 499
 # Platform account included
-$.glob.inc = new Object
-$.glob.inc.con = 4
-$.glob.inc.dis = 6
-$.glob.inc.dom = 4
+$.included = new Object
+$.included.containers = 4
+$.included.disk = 6
+$.included.domains = 4
 # defaults
-$.glob.slide = new Object
-$.glob.slide.con = 2
-$.glob.slide.dis = 2
-$.glob.slide.dom = 2
+$.sliderValue = new Object
+$.sliderValue.containers = 2
+$.sliderValue.disk = 2
+$.sliderValue.domains = 2
 $.glob.phi = false
 $.glob.plan = 'development'
 # First of all, lets generate the sliders
 
 $(document).ready ->
+
+  ###
+  INITIALIZE SLIDERS
+  ###
   $('#container-slider').slider
     min: 1
     max: 11
-    value: $.glob.slide.con
+    value: $.sliderValue.containers
     step: 1
     animate: 'slow'
     slide: (event, ui) ->
-      $.glob.slide.con = ui.value
-      updateKey '.containers-keys', ui.value
-      writeValAttr '#container-slider', ui.value
-      updatePrice ui.value, $.glob.slide.dis, $.glob.slide.dom
-      blueBar ui.value, $.glob.slide.dis, $.glob.slide.dom
+      $.sliderValue.containers = ui.value
+      updateKey containerSlider, ui.value
+      writeValAttr containerSlider, ui.value
+      updatePrice ui.value, $.sliderValue.disk, $.sliderValue.domains
+      blueBar ui.value, $.sliderValue.disk, $.sliderValue.domains
       return
   $('#disk-slider').slider
     min: 1
     max: 11
-    value: $.glob.slide.dis
+    value: $.sliderValue.disk
     step: 1
     animate: 'slow'
     slide: (event, ui) ->
-      $.glob.slide.dis = ui.value
-      updateKey '.disk-key', ui.value
-      writeValAttr '#disk-slider', ui.value
-      updatePrice $.glob.slide.con, ui.value, $.glob.slide.dom
-      blueBar $.glob.slide.con, ui.value, $.glob.slide.dom
+      $.sliderValue.disk = ui.value
+      updateKey diskSlider, ui.value
+      writeValAttr diskSlider, ui.value
+      updatePrice $.sliderValue.containers, ui.value, $.sliderValue.domains
+      blueBar $.sliderValue.containers, ui.value, $.sliderValue.domains
       return
   $('#domain-slider').slider
     min: 1
     max: 11
-    value: $.glob.slide.dom
+    value: $.sliderValue.domains
     step: 1
     animate: 'slow'
     slide: (event, ui) ->
-      $.glob.slide.dom = ui.value
-      updateKey '.domains-key', ui.value
-      writeValAttr '#domain-slider', ui.value
-      updatePrice $.glob.slide.con, $.glob.slide.dis, ui.value
-      blueBar $.glob.slide.con, $.glob.slide.dis, ui.value
+      $.sliderValue.domains = ui.value
+      updateKey domainSlider, ui.value
+      writeValAttr domainSlider, ui.value
+      updatePrice $.sliderValue.containers, $.sliderValue.disk, ui.value
+      blueBar $.sliderValue.containers, $.sliderValue.disk, ui.value
       return
 
-  scaleInc()
-  writeValAttr '#container-slider', $.glob.slide.con
-  writeValAttr '#domain-slider', $.glob.slide.dom
-  writeValAttr '#disk-slider', $.glob.slide.dis
-  updatePrice $.glob.slide.con, $.glob.slide.dis, $.glob.slide.dom
+
+  scaleIncluded()
+
+  ###
+  SET INITIAL VALUES
+  ###
+
+  # initial user values
+  writeValAttr containerSlider, $.sliderValue.containers
+  writeValAttr domainSlider, $.sliderValue.domains
+  writeValAttr diskSlider, $.sliderValue.disk
+
+  # keys
+  updateKey containerSlider, $.sliderValue.containers
+  updateKey domainSlider, $.sliderValue.domains
+  updateKey diskSlider, $.sliderValue.disk
+
+  # price
+  updatePrice $.sliderValue.containers, $.sliderValue.disk, $.sliderValue.domains
+
+  # hide full service compliance
   hideFSC
 
+  # Start listening for toggle changes
   $('#PHIcheck input').change ->
     PHIchange()
     updatePlan()
@@ -608,12 +667,7 @@ $(document).ready ->
     FSCchange()
     updatePlan()
     return
-  blueBar $.glob.slide.con, $.glob.slide.dis, $.glob.slide.dom
-  return
 
-# $(window).resize ->
-#   if $(window).width < '1170'
-#     $('.main-content').css 'max-width': $(window).width()
-#   else
-#     $('.main-content').css 'max-width': '1170px'
-#   return
+  # update the blue bar
+  blueBar $.sliderValue.containers, $.sliderValue.disk, $.sliderValue.domains
+  return
