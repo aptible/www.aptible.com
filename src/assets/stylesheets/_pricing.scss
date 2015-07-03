@@ -52,8 +52,9 @@
     }
   }
 
-.panel.plan-panel {
-  &.Platform {
+.panel {
+  &.Platform,
+  &.focus-panel {
     border: 1px solid $color-bright-blue;
     box-shadow: 0 0 8px rgba($color-bright-blue, 0.4);
   }
