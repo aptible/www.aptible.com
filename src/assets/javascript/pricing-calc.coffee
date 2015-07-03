@@ -412,7 +412,6 @@ updatePrice = (containers, disk, domains) ->
     $('.cont-extra').text ''
     $('.cont-price').text '$0.00'
   else
-    console.log 'needmore'
     containersCost = null
     needmore containers
     $('.cont-extra').text ''
