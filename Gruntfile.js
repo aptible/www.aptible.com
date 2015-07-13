@@ -226,6 +226,12 @@ module.exports = function(grunt) {
                 },
                 {
                     expand: true,
+                    cwd: 'vendor/jquery-ui/ui/minified',
+                    src: ['*.js'],
+                    dest: 'dist/assets/js/jqueryui/'
+                },
+                {
+                    expand: true,
                     cwd: 'content/posts/assets',
                     src: ['**/*.*'],
                     dest: 'dist/blog/assets/'

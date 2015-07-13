@@ -1,0 +1,142 @@
+<div class="row section bordered pricing-calc">
+<div class="container main-content">
+	<h2 class="section-title">Calculate your price:</h2>
+	<div class="pricing-col col-settings">
+		<div class="panel">
+			<div class="pricing-title"><span>1</span>Base settings</div>
+			<div class="panel-cont">
+				<div class="panel-section panel-phi">
+					<h3>Does your company handle PHI?</h3>
+					<label class="unselectable" id="PHIcheck"><input type="checkbox" name="phi" value="phi" class="phi-checkbox"><div class="fake-check"><div class="fake-check-circ"></div></div><span>NO</span><span>YES</span></label>
+				</div>
+				<div class="panel-section panel-compliance hidden-alt">
+					<h3>Would you like Aptible to provide full-service compliance?</h3>
+					<label class="unselectable" id="FSCcheck"><input type="checkbox" name="compliance" value="compliance" class="compliance-checkbox"><div class="fake-check"><div class="fake-check-circ"></div></div><span>NO</span><span>YES</span></label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pricing-col col-config">
+		<div class="panel plan-calc-panel animate-5">
+			<div class="pricing-title"><span>2</span>Configuration</div>
+			<div class="panel-cont">
+				<div class="panel-section slider-section containers-panel">
+					<h3><span class="calc-tooltip containers-calc-tooltip">Containers:<soan class="calc-tooltip-content">Uses general purpose instance class at AWS.  Can be customized where needed.</span></span> <span class="containers-val">1</span><span class="cont-extra"></span></h3>
+					<div class="key containers-key">
+						<ul class="keys containers-keys">
+							<li class="key-1 selected-key">1</li>
+							<li class="key-2">2<span>.</span></li>
+							<li class="key-3">3<span>.</span></li>
+							<li class="key-4">4<span>.</span></li>
+							<li class="key-5">5<span>.</span></li>
+							<li class="key-6">6</li>
+							<li class="key-7">7<span>.</span></li>
+							<li class="key-8">8<span>.</span></li>
+							<li class="key-9">9<span>.</span></li>
+							<li class="key-10">10</li>
+							<li class="key-11">+</li>
+						</ul>
+					</div>
+					<div class="slider container-slider" id="container-slider"></div>
+					<div class="included hidden-alt" id="container-inc-scale"><span>Included</span></div>
+				</div>
+				<div class="panel-section slider-section disk-panel">
+					<h3><span class="calc-tooltip containers-calc-tooltip">Disk:<div class="calc-tooltip-content"> Database storage</div></span> <span class="disk-val">200GB</span><span class="dis-extra"></span></h3>
+					<div class="key disk-key">
+						<ul class="keys disk-keys">
+							<li class="key-1 big-key selected-key">0.2TB<span>.</span></li>
+							<li class="key-2 big-key">400GB<span>.</span></li>
+							<li class="key-3 big-key">600GB<span>.</span></li>
+							<li class="key-4 big-key">800GB<span>.</span></li>
+							<li class="key-5">1TB</li>
+							<li class="key-6 big-key">1.2TB<span>.</span></li>
+							<li class="key-7 big-key">1.4TB<span>.</span></li>
+							<li class="key-8 big-key">1.6TB<span>.</span></li>
+							<li class="key-9 big-key">1.8TB<span>.</span></li>
+							<li class="key-10">2TB<span>.</span></li>
+							<li class="key-11">+</li>
+						</ul>
+					</div>
+					<div class="slider disk-slider" id="disk-slider"></div>
+					<div class="included hidden-alt" id="disk-inc-scale"><span>Included</span></div>
+				</div>
+				<div class="panel-section slider-section domains-panel">
+					<h3><span class="calc-tooltip containers-calc-tooltip">Domains:<div class="calc-tooltip-content">Any subdomains or VHosts.</div></span> <span class="domain-val">1</span><span class="dom-extra"></span></h3>
+					<div class="key domains-key">
+						<ul class="keys domains-keys">
+							<li class="key-1 selected-key">1</li>
+							<li class="key-2">2<span>.</span></li>
+							<li class="key-3">3<span>.</span></li>
+							<li class="key-4">4<span>.</span></li>
+							<li class="key-5">5<span>.</span></li>
+							<li class="key-6">6</li>
+							<li class="key-7">7<span>.</span></li>
+							<li class="key-8">8<span>.</span></li>
+							<li class="key-9">9<span>.</span></li>
+							<li class="key-10">10</li>
+							<li class="key-11">+</li>
+						</ul>
+					</div>
+					<div class="slider domain-slider" id="domain-slider"></div>
+					<div class="included hidden-alt" id="domain-inc-scale"><span>Included</span></div>
+				</div>
+				<div class="panel-section need-more hidden-alt">
+					<h3 class="swap-text">Need more?</h3>
+					<p>Get in touch with the team and we’ll discuss your requirements and set up a bespoke plan. <div class="button" href="https://www.aptible.com/company/contact">Contact us</div></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pricing-col col-summary animate-5">
+		<div class="panel focus-panel">
+			<div class="pricing-title"><span>3</span>Summary</div>
+			<div class="panel-cont">
+				<div class="panel-section">
+					<div class="key-overview">
+						<h3>Development Account</h3>
+						<ul class="plan-summary-list Platform-summary hidden-alt">
+							<li>Dedicated Stack: PHI-Ready</li>
+							<li><b><u>Includes :</u></b><br> BAA</li>
+							<li>Up to 6 containers</li>
+							<li>Up to 1TB of disk space</li>
+							<li>Up to 4 domains</li>
+						</ul>
+						<ul class="plan-summary-list Development-summary">
+							<li>Shared Stack: No PHI</li>
+							<li>No base fee: pay only for usage</li>
+						</ul>
+						<ul class="plan-summary-list Production-summary hidden-alt">
+							<li>Full-service compliance and documentation</li>
+							<li>Industry leading Workforce HIPAA training</li>
+							<li>Custom BAA, SLA</li>
+							<li>Audit support</li>
+						</ul>
+					</div>
+					<div class="non-production">
+						<h4><span class="span8">Price Breakdown</span><span class="span4">Montly cost</span></h4>
+						<div>
+							<ul class="monthly-breakdown">
+								<li><span class="span4">Base plan: </span><span class="span4 plan-val">Development </span><span class="span4 plan-price-tot">$0</span></li>
+								<li><span class="span4">Containers: </span><span class="span4 containers-val">1 </span><span class="span4 cont-price">$0</span></li>
+								<li><span class="span4">Disk size: </span><span class="span4 disk-val">200GB </span><span class="span4 dis-price">$74</span></li>
+								<li><span class="span4">Domains </span><span class="span4 summary-domain domain-val">1 </span><span class="span4 summary-domain-value dom-price">0</span></li>
+							</ul>
+						</div>
+						<div class="total-wrap">
+							<h4>Total</h4>
+							<div class="tot-price"><span class="tot-price-number">$573</span><span>/month</span></div>
+						
+						<a class="button dev-plat-but" href="https://dashboard.aptible.com/signup?plan=development">Get Started Now</a>
+						</div>
+					</div>
+					<div class="production-btn hidden-alt">
+						<a class="button" href="https://www.aptible.com/company/contact">Get Started Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
