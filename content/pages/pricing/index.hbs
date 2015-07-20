@@ -107,35 +107,25 @@ quick_start:
 
 questions_title: Questions? We have answers.
 questions:
-    - inquiry: What does Aptible do?
+    - inquiry: What’s the difference between Platform and Managed accounts?
       response: |
-        Aptible is a Platform-as-a-Service built on Amazon Web Services. We have two core products: Our deployment platform helps your operations engineers scale modern web architecture in secure, private, PHI-ready cloud environments. Our compliance platform provides comprehensive risk, security, and HIPAA compliance management.
-    - inquiry: Does my company need to be HIPAA-compliant?
+        A Platform account is designed for companies who have HIPAA compliance in-house or are handling PHI only for testing and development. The entire technology infrastructure needed to handle PHI is encompassed in a Platform account. A Managed account, on the other hand, includes a platform account plus full-service compliance. The workforce training, documentation, reporting, and audit support for HIPAA compliance--pricing is variable based on the unique needs of your app and team. 
+    - inquiry: What is the 1 TB Disk space used for? 
       response: |
-        Not always, although most digital health companies include it in their go-to-market plan.
-        * Do you handle personally identifiable information and health information?
-        * Are you being asked to sign a Business Associate Agreement?
-        * Are your customers hospitals, insurers, or large corporations?
+        The 1 TB of disk is shared across all of the containers and is used by both databases and file storage. 
+    - inquiry: What’s a 1 GB container?  Can I get more?
+      response: |
+        The 1GB refers to the RAM per container.  Both the platform and managed accounts include six containers.  Typically customers use different containers for applications, databases, etc.  With the Docker deployment model, you can scale any application across multiple containers very easily.  At the Managed tier, we customize the specifications of your containers but most customers don’t need this.
+    - inquiry: How much load can I handle per container?
+      response: |
+        This depends on the language and web framework of your specific application. Typically, there is a direct correlation between RAM and concurrency. Having more RAM means that you can have more workers running concurrently. For instance, one container holds 1 GB RAM and a share of an AWS m3.medium (Intel Xeon E5-2670 v2).
 
-        If you answered yes to any of these, [contact us for a consultation](/company/contact).
-    - inquiry: How does the Aptible deployment platform work?
-      response: |
-        Aptible lets you build scalable, compliance-ready Virtual Private Clouds on Amazon Web Services. We use Docker containers to build, run, and manage your apps. Databases run in private subnets, on encrypted data storage volumes. We make nightly backups to encrypted long-term storage. Role-based access controls and auditing help you demonstrate compliance.
+        We are happy to work with you to customize your container. Platform and Managed stacks are isolated per-customer, so you enjoy full resources of the instance dedicated to your apps. 
 
-        Download our [Reference Architecture](/pages/assets/aptible-reference-architecture.pdf) or [read more about our technology](/technology).
-    - inquiry: What about lock-in?
-      response: |
-        Aptible is designed around open source and engineering best practices. Configuring your app to deploy can be as easy as adding a single, one-line file to your repo. We never require you to build to a proprietary API that may disappear overnight.  It's as easy to move your code elsewhere as it is to on-board.
-    - inquiry: What else might I need to comply with HIPAA?
-      response: |
-        In addition to a Managed Account, you may want:
 
-        * App services and APIs that handle PHI, such as analytics, object storage, and messaging
-        * Productivity services that handle PHI, such as Google Apps for Business or Salesforce
-        * Workforce security services, such as password and mobile device management
-        * Security assessments performed by an independent third party
-
-        Our compliance management platform will help you choose and integrate these services into your compliance program.
+    - inquiry: When using one of the PHI-ready environments, should I have my Dev, Staging and Pro tiers all hosted in a PHI-ready environment or in a Dev environment?
+      response: |
+        Using a Dev environment has the benefit of server isolation between staging and production. So if an instance crashes, your other environments are unaffected. If that's not an issue, the PHI-ready environments are dedicated to just you, so performance can be better - especially during long builds. We have customers doing both, so it's really your preference.
 ---
 
 <div class="container">
