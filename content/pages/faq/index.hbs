@@ -1,0 +1,62 @@
+---
+title: "FAQ"
+tracked_title: FAQ
+description: "Aptible's frequently asked questions"
+posted: 2015-07-21
+section: FAQ
+
+faq:
+  - section: Company
+    section_slug: company
+    questions:
+      - question: What does Aptible do?
+        answer: >
+          Aptible is a Platform-as-a-Service built on Amazon Web Services.
+          We have two core products: Our deployment platform helps your operations
+          engineers scale modern web architecture in secure, private, PHI-ready
+          cloud environments. Our compliance platform provides comprehensive risk,
+          security, and HIPAA compliance management.
+
+  - section: Pricing
+    section_slug: pricing
+    questions:
+      - question: What's a container?
+        answer: >
+          The 1GB refers to the RAM per container. Both the platform and managed
+          accounts include six containers. Typically customers use different
+          containers for applications, databases, etc. With the Docker deployment
+          model, you can scale any application across multiple containers very
+          easily. At the Managed tier, we customize the specifications of your
+          containers but most customers don't need this.
+
+      - question: What about lock-in?
+        answer: >
+          Aptible is designed around open source and engineering best practices.
+          Configuring your app to deploy can be as easy as adding a single, one-line
+          file to your repo. We never require you to build to a proprietary API
+          that may disappear overnight. It's as easy to move your code elsewhere
+          as it is to [on-board]('#hello').
+---
+
+<div class="faq">
+  <div class="container main-content">
+    <div class="row section">
+      <div class="col-md-3 col-sm-3">
+        <div class="list-group">
+        {{#withSort faq "section" }}
+          <a href="#{{section_slug}}" class="list-group-item">{{section}}</a>
+        {{/withSort}}
+        </div>
+      </div>
+      <div class="col-md-7 col-md-offset-1 col-sm-9">
+        {{#withSort faq "section" }}
+          <h1 id="{{section_slug}}">{{section}}</h1>
+          {{#each questions}}
+            <h3>{{question}}</h3>
+            {{#markdown}}{{answer}}{{/markdown}}
+          {{/each}}
+        {{/withSort}}
+      </div>
+    </div>
+  </div>
+</div>
