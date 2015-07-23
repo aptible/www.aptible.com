@@ -124,6 +124,14 @@
               {{#each plans.dev.descriptors}}
 					      <li>{{.}}</li>
               {{/each}}
+              <li>
+                <span class="price-calc__summary-list__title">Includes</span>
+      					<ul class="price-calc__summary-list">
+                  {{#each plans.dev.included}}
+      				      <li>{{.}}</li>
+                  {{/each}}
+                </ul>
+              </li>
   					</ul>
           </div>
           <div class="price-calc__summary price-calc__summary--platform">
