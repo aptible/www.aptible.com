@@ -1,0 +1,408 @@
+// Price calculator component
+// Also employs and specializes some bootstrap elements (grid and panels)
+$color-dark-gray-bg: #b0b0b0;
+$color-lighter-gray: #d8d6d6;
+.price-calc {
+  counter-reset: pricing-steps;
+  // Bootstrap elements
+  .panel-title {
+    font-size: 15px;
+    font-weight: $weight-semibold;
+    text-transform: uppercase;
+    &:before {
+      background-color: $color-dark-gray-bg;
+      border-radius: 50%;
+      color: white;
+      content: counter(pricing-steps);
+      display: inline-block;
+      line-height: 22px;
+      height: 22px;
+      margin-right: 10px;
+      text-align: center;
+      width: 22px;
+    }
+  }
+}
+.price-calc__step {
+  counter-increment: pricing-steps;
+  padding: 0 10px;
+  .panel-body {
+    padding: 30px;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+}
+.price-calc__question {
+  h3 {
+    color: $color-bright-blue;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
+.price-calc__question--full-service {
+  box-sizing: content-box;
+  border-top: 1px solid $color-border-light-gray;
+  height: auto;
+  max-height: 0;
+  padding: 0 0 10px 0;
+  opacity: 0;
+  overflow: hidden;
+  @include transition(max-height 0.2s ease-in-out, opacity 0.2s ease-in-out);
+  .price-calc[data-phi='on'] & {
+    max-height: 200px;
+    margin-top: 20px;
+    padding-top: 20px;
+    opacity: 1;
+  }
+}
+
+.price-calc[data-needs-more='on'] {
+  .price-calc__step--config {
+    // Blue highlight
+    .panel {
+      border: 1px solid $color-bright-blue;
+      box-shadow: 0 0 8px rgba($color-bright-blue, 0.4);
+    }
+  }
+  .price-calc__step--summary {
+    opacity: 0.5;
+  }
+}
+
+.price-calc[data-needs-more='off'] {
+  .price-calc__step--summary {
+    .panel {
+      border: 1px solid $color-bright-blue;
+      box-shadow: 0 0 8px rgba($color-bright-blue, 0.4);
+    }
+  }
+}
+
+//
+// Full service media queries (eliminates a column)
+//
+.price-calc[data-full-service='on'] {
+  .price-calc__step--config {
+      display: none;
+  }
+  .price-calc__step--summary {
+    width: 100%;
+    .panel {
+      min-height: 319px;
+    }
+  }
+  .price-calc__summaries {
+    float: left;
+    width: 49%;
+  }
+  .price-calc__submit {
+    float: right;
+    margin-top: 35px;
+    width: 49%;
+  }
+  .price-calc__monthly-breakdown {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .price-calc[data-full-service='on'] .price-calc__step--summary {
+    width: 66.66%;
+  }
+}
+
+@media (max-width: $screen-xs-min) {
+  .price-calc__step--summary {
+    .panel {
+      height: auto;
+    }
+  }
+  .price-calc[data-full-service='on'] {
+    .price-calc__summaries {
+      float: none;
+      width: 100%;
+    }
+    .price-calc__submit {
+      float: none;
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+}
+
+//
+// Needs More (maxed out slider)
+//
+.price-calc__more {
+  max-height: 0;
+  overflow: hidden;
+  @include transition(max-height 0.2s ease-in-out);
+  .price-calc[data-needs-more='on'] & {
+    height: auto;
+    max-height: 200px;
+  }
+  p {
+    color: $color-light;
+    margin-bottom: 20px;
+  }
+}
+
+//
+// Range Keys (slider values)
+//
+.price-calc__range-keys {
+  color: #999;
+  counter-reset: range-keys -1;
+  display: block;
+  font-size: 11px;
+  height: 25px;
+  left: -2%;
+  list-style: none;
+  line-height: 15px;
+  margin-bottom: 5px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 108%;
+}
+.price-calc__range-key {
+  counter-increment: range-keys;
+  display: inline-block;
+  font-size: 11px;
+  color: $color-lighter-gray;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: calc(100% / 13.75);
+  top: 0;
+  text-align: center;
+  &:before {
+    color: black;
+    content: counter(range-keys);
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+  }
+  // Use a value if available
+  &[data-value]:before {
+    content: attr(data-value);
+  }
+  &[data-state='selected'] {
+    overflow: visible;
+    top: -4px;
+    visibility: hidden;
+    &:before {
+      display: block;
+      visibility: visible;
+    }
+  }
+}
+
+.price-calc__included {
+  border: 1px solid $color-lighter-gray;
+  border-top-width: 0;
+  display: inline-block;
+  font-family: 'Inconsolata', 'Consolas', 'Courier New', Courier, monospace;
+  font-size: 11px;
+  line-height: 7px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  position: relative;
+  top: -10px;
+  left: 7px;
+  @include transition(top 0.2s ease-in-out, opacity 0.2s ease-in-out);
+  &:after {
+    background-color: white;
+    color: $color-lighter-gray;
+    content: 'Included';
+    position: relative;
+    top: 5px;
+  }
+  .price-calc[data-phi='on'] & {
+    opacity: 1;
+    top: 0;
+  }
+}
+.price-calc__containers {
+  .price-calc__included {
+    width: calc(54.5% - 6px);
+  }
+}
+.price-calc__disk {
+  .price-calc__included {
+    width: calc(45.5% - 6px);
+  }
+}
+.price-calc__domains {
+  .price-calc__included {
+    width: calc(37% - 6px);
+  }
+}
+
+.price-calc__config-item {
+  color: $color-light;
+  font-size: 16px;
+  font-weight: $weight-lighter;
+}
+
+.price-calc__config-value:after {
+  content: ' @';
+}
+.price-calc__item-price, .price-calc__config-price {
+  &:before {
+    content: '$';
+  }
+}
+
+//
+// Price selection summaries
+//
+.price-calc__summaries {
+  margin-bottom: 20px;
+}
+.price-calc__summary__heading {
+  color: #4A4A4A;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 27px;
+  margin-top: 0;
+}
+.price-calc__summary {
+  height: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  @include transition(opacity 0.2s ease-in-out, max-height 0.2s ease-in-out);
+}
+.price-calc__summary--dev {
+  .price-calc[data-phi='off'][data-full-service='off'] & {
+    height: auto;
+    opacity: 1;
+    position: static;
+    max-height: 150px;
+  }
+}
+.price-calc__summary--platform {
+  .price-calc[data-phi='on'][data-full-service='off'] & {
+    height: auto;
+    opacity: 1;
+    position: static;
+    max-height: 225px;
+  }
+}
+.price-calc__summary--managed {
+  .price-calc[data-phi='on'][data-full-service='on'] & {
+    height: auto;
+    opacity: 1;
+    position: static;
+    max-height: 175px;
+  }
+}
+.price-calc__summary-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  li {
+    font-size: 14px;
+    color: #848484;
+    line-height: 19px;
+  }
+}
+.price-calc__summary-list__title {
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.price-calc__dev-account {
+  display: none;
+  .price-calc[data-phi='off'][data-full-service='off'] & {
+    display: inline;
+  }
+}
+.price-calc__platform-account {
+  display: none;
+  .price-calc[data-phi='on'][data-full-service='off'] & {
+    display: inline;
+  }
+}
+.price-calc__managed-account {
+  display: none;
+  .price-calc[data-phi='on'][data-full-service='on'] & {
+    display: inline;
+  }
+}
+
+.price-calc__monthly-breakdown-items {
+  width: 100%;
+  th, td {
+    &:last-of-type {
+      text-align: right;
+    }
+  }
+}
+.price-calc__monthly-summary {
+  margin-bottom: 15px;
+  tr:first-of-type {
+    td {
+      color: #4A4A4A;
+      font-size: 48px;
+      font-weight: 200;
+      line-height: 48px;
+      &:before {
+        content: '$';
+      }
+      &:after {
+        color: #9c9c9c;
+        content: ' / month';
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+//
+// Tablular data (breaking BEM here)
+//
+.price-calc__data-summary {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 30px;
+  width: 100%;
+  thead {
+    border-bottom: 1px solid $color-border-light-gray;
+  }
+  th {
+    color: #333;
+    // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  tr:first-of-type td {
+    padding-top: 15px;
+  }
+  td {
+    font-size: 14px;
+    color: #848484;
+    line-height: 19px;
+  }
+  .price-calc__monthly-total {
+    color: #4A4A4A;
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 48px;
+  }
+}
