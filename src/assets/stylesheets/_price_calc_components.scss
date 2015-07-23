@@ -92,6 +92,10 @@
 //    <div class="rangeslider__handle" style="left: *px;"></div>
 // </div>
 //
+.rangeslider {
+  position: relative;
+  z-index: 2;
+}
 .rangeslider,
 .rangeslider__fill {
   background: $color-lighter-gray;
@@ -171,7 +175,7 @@ dfn[data-toggle="tooltip"] {
     &:after, &:before {
       opacity: 1;
       top: calc(100% + 5px);
-      z-index: 2;
+      z-index: 3;
     }
     &:after {
       height: auto;

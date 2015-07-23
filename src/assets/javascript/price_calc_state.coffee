@@ -12,6 +12,9 @@ class PriceCalculator
   containers    : 0
   disks         : 0
   domains       : 0
+  prevContainers: 0
+  prevDisks     : 0
+  prevDomains   : 0
 
   # Fixed
   # Disks are 200 GB each
@@ -28,9 +31,25 @@ class PriceCalculator
 
   # Retain higher values if set, only up to what's included
   setDevBaseValues: ->
-    @containers = Math.max(@containers, @devContainers)
-    @disks = Math.max(@disks, @devDisks)
-    @domains = Math.max(@domains, @devDomains)
+    if @handlesPHI
+      @prevContainers = @containers
+      @prevDisks = @disks
+      @prevDomains = @domains
+      @containers = Math.max(@containers, @devContainers)
+      @disks = Math.max(@disks, @devDisks)
+      @domains = Math.max(@domains, @devDomains)
+    else # restore
+      @containers = @prevContainers
+      @disks = @prevDisks
+      @domains = @prevDomains
+
+  # Aids restoring values on a PHI toggle.
+  # This ensures that the restore values are updated correctly if the selection
+  # is above or at the included dev values
+  setValue: (attr, value) ->
+    attrCap = attr[0].toUpperCase() + attr[1..]
+    @["prev#{attrCap}"] = value if @handlesPHI and value >= @["dev#{attrCap}"]
+    @[attr] = value
 
   diskSize: ->
     switch @disks
@@ -79,7 +98,7 @@ class PriceCalculator
     @containers > 10 || @disks > 10 || @domains > 10
 
   needsMoreOnOff: ->
-    if @needsMore() then 'on' else 'off'
+    if @needsMore() and not @fullService then 'on' else 'off'
 
   # Formats with commas and fixed cents
   toCurrency: (num) ->

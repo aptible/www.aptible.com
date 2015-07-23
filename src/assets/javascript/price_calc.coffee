@@ -3,7 +3,7 @@ $ ->
 
   # Only run on the pricing page...
   if $priceCalc.length > 0
-    
+
     $doc = $ document
     # Model / State
     window.priceCalc = new PriceCalculator()
@@ -62,7 +62,7 @@ $ ->
         # Focus the handle
         @$element.focus() unless @$element.is(':focus')
         # Update the model
-        priceCalc[item] = value
+        priceCalc.setValue(item, value)
         # Trigger updates
         $doc.trigger 'updateViews', [priceCalc]
 
@@ -71,7 +71,7 @@ $ ->
     # Update model / state and trigger global event for views
     $phiToggle.on 'click', ->
       priceCalc.handlesPHI = $priceCalc.attr('data-phi') isnt 'on'
-      priceCalc.setDevBaseValues() if priceCalc.handlesPHI
+      priceCalc.setDevBaseValues()
       priceCalc.fullService = false unless priceCalc.handlesPHI
       $doc.trigger 'updateViews', [priceCalc]
       false
@@ -130,7 +130,7 @@ $ ->
       # Button
       baseUrl = $priceCalcButton.attr('href').split('?')[0]
       $priceCalcButton.attr 'href', "#{baseUrl}?#{$.param(priceCalc.toParams())}"
-      if priceCalc.needsMore()
+      if priceCalc.needsMore() and not priceCalc.fullService
         $priceCalcButton.attr 'disabled', 'disabled'
       else
         $priceCalcButton.removeAttr 'disabled'

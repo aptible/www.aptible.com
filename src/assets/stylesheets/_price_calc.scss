@@ -2,6 +2,7 @@
 // Also employs and specializes some bootstrap elements (grid and panels)
 $color-dark-gray-bg: #b0b0b0;
 $color-lighter-gray: #d8d6d6;
+
 .price-calc {
   counter-reset: pricing-steps;
   // Bootstrap elements
@@ -53,12 +54,13 @@ $color-lighter-gray: #d8d6d6;
   padding: 0 0 10px 0;
   opacity: 0;
   overflow: hidden;
-  @include transition(max-height 0.2s ease-in-out, opacity 0.2s ease-in-out);
+  @include transition(max-height 0.5s ease-in-out);
   .price-calc[data-phi='on'] & {
     max-height: 200px;
     margin-top: 20px;
     padding-top: 20px;
     opacity: 1;
+    @include animation(fade-in 0.5s ease-in);
   }
 }
 
@@ -83,7 +85,6 @@ $color-lighter-gray: #d8d6d6;
     }
   }
 }
-
 //
 // Full service media queries (eliminates a column)
 //
@@ -102,6 +103,7 @@ $color-lighter-gray: #d8d6d6;
     width: 49%;
   }
   .price-calc__submit {
+    @include animation(fade-in 0.5s ease-in);
     float: right;
     margin-top: 35px;
     width: 49%;
@@ -144,6 +146,7 @@ $color-lighter-gray: #d8d6d6;
   overflow: hidden;
   @include transition(max-height 0.2s ease-in-out);
   .price-calc[data-needs-more='on'] & {
+    @include animation(fade-in 0.5s ease-in);
     height: auto;
     max-height: 200px;
   }
@@ -212,14 +215,15 @@ $color-lighter-gray: #d8d6d6;
   display: inline-block;
   font-family: 'Inconsolata', 'Consolas', 'Courier New', Courier, monospace;
   font-size: 11px;
+  left: 7px;
   line-height: 7px;
   margin-bottom: 20px;
-  text-align: center;
-  text-transform: uppercase;
   opacity: 0;
   position: relative;
+  text-align: center;
+  text-transform: uppercase;
   top: -10px;
-  left: 7px;
+  z-index: 0;
   @include transition(top 0.2s ease-in-out, opacity 0.2s ease-in-out);
   &:after {
     background-color: white;
@@ -277,36 +281,45 @@ $color-lighter-gray: #d8d6d6;
   line-height: 27px;
   margin-top: 0;
 }
+.price-calc__summaries {
+  height: 115px;
+  @include transition(height 0.3s ease-in-out);
+  .price-calc[data-phi='off'][data-full-service='off'] & {
+    height: 125px;
+  }
+  .price-calc[data-phi='on'][data-full-service='off'] & {
+    height: 180px;
+  }
+  .price-calc[data-phi='on'][data-full-service='on'] & {
+    @include transition-duration(0s);
+  }
+}
 .price-calc__summary {
-  height: 0;
-  max-height: 0;
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  @include transition(opacity 0.2s ease-in-out, max-height 0.2s ease-in-out);
 }
 .price-calc__summary--dev {
   .price-calc[data-phi='off'][data-full-service='off'] & {
-    height: auto;
     opacity: 1;
     position: static;
-    max-height: 150px;
+    @include animation(fade-in 0.5s ease-in);
   }
 }
 .price-calc__summary--platform {
   .price-calc[data-phi='on'][data-full-service='off'] & {
-    height: auto;
     opacity: 1;
     position: static;
     max-height: 225px;
+    @include animation(fade-in 0.5s ease-in);
   }
 }
 .price-calc__summary--managed {
   .price-calc[data-phi='on'][data-full-service='on'] & {
-    height: auto;
     opacity: 1;
     position: static;
     max-height: 175px;
+    @include animation(fade-in 0.5s ease-in);
   }
 }
 .price-calc__summary-list {
