@@ -13,56 +13,48 @@ hero_sub_title: Building modern web architecture? Familiar with the PaaS model o
 hero_cta: Open a free Development Account
 hero_url: https://dashboard.aptible.com/signup?plan=development
 
-plans_title: Choose a Plan
+plans_title: Find the Right Tier and Estimate Your Bill
+
+step1_title: Base Settings
+step2_title: Configuration
+step3_title: Summary
+
 plans:
-  - plan: Development
-    tag: Build and Test
-    price: '$0'
-    price_sub: ' to open'
-    items:
-      - No PHI allowed
-      - "No commitment: Pay as you go"
-      - Ideal for staging/QA/sandboxes
-      - Email support
-      - "Slack #public channel access"
-    cta: $ aptible acct:create dev
-    cta_url: https://dashboard.aptible.com/signup?plan=development
-  - plan: Platform
-    tag: PHI-Ready
-    price: '$499'
-    price_sub: '/month'
-    items:
-      - "HIPAA-compliant: PHI-ready"
-      - item: 'Includes:'
-        subs:
-          - Dev Account
-          - 6 x 1GB Containers
-          - "1TB Disk, Encryption & Backups Included"
-          - 4 Domains
-      - 3-month no-risk trial
-      - Month-to-month available
-      - 99.95% SLA
-      - Signed BAA
-      - Priority support
-    cta: $ aptible acct:create platform
-    cta_url: https://dashboard.aptible.com/signup?plan=platform
-  - plan: Managed
-    tag: Managed Compliance
-    price: '$ Custom'
-    items:
-      - Full-service compliance
-      - item: 'Includes:'
-        subs:
-          - Platform Account
-          - Compliance Platform access
-          - Comprehensive risk & security management
-          - Industry-leading developer privacy & security compliance training
-      - Custom BAA, SLA available
-      - Premium support
-      - Security review support
-      - Dedicated POC in your Slack channel
-    cta: Have us call you
-    cta_url: https://www.aptible.com/company/contact
+  dev:
+    name: Development
+    descriptors:
+    - Shared Stack, No PHI allowed
+    - No base fee, pay only for usage
+    included:
+    - $500 Credit
+  platform:
+    name: Platform
+    descriptors:
+    - Custom pricing
+    - Dedicated Stack, PHI-Ready
+    - BAA
+    included:
+    - Up to 6 containers
+    - Up to 1TB of disk space
+    - Up to 4 domains
+  managed:
+    name: Managed
+    descriptors:
+    - Full-service compliance and documentation
+    - Industry leading Workforce HIPAA training
+    - Custom BAA, SLA
+    - Audit support
+
+tooltip:
+  containers: Uses general purpose instance class at AWS. Can be customized where needed.
+  disk: Database storage.
+  domains: Any subdomains or VHosts.
+
+needs_more:
+  title: Need more?
+  body: Get in touch with the team and we'll discuss your requirements and set up a bespoke plan.
+  cta: Contact Us
+  cta_url: /company/contact
 
 pricing:
   container: $0.08/hour
@@ -109,10 +101,10 @@ questions_title: Questions? We have answers.
 questions:
     - inquiry: What’s the difference between Platform and Managed accounts?
       response: |
-        A Platform account is designed for companies who have HIPAA compliance in-house or are handling PHI only for testing and development. The entire technology infrastructure needed to handle PHI is encompassed in a Platform account. A Managed account, on the other hand, includes a platform account plus full-service compliance. The workforce training, documentation, reporting, and audit support for HIPAA compliance--pricing is variable based on the unique needs of your app and team. 
-    - inquiry: What is the 1 TB Disk space used for? 
+        A Platform account is designed for companies who have HIPAA compliance in-house or are handling PHI only for testing and development. The entire technology infrastructure needed to handle PHI is encompassed in a Platform account. A Managed account, on the other hand, includes a platform account plus full-service compliance. The workforce training, documentation, reporting, and audit support for HIPAA compliance--pricing is variable based on the unique needs of your app and team.
+    - inquiry: What is the 1 TB Disk space used for?
       response: |
-        The 1 TB of disk is shared across all of the containers and is used by both databases and file storage. 
+        The 1 TB of disk is shared across all of the containers and is used by both databases and file storage.
     - inquiry: What’s a 1 GB container?  Can I get more?
       response: |
         The 1GB refers to the RAM per container.  Both the platform and managed accounts include six containers.  Typically customers use different containers for applications, databases, etc.  With the Docker deployment model, you can scale any application across multiple containers very easily.  At the Managed tier, we customize the specifications of your containers but most customers don’t need this.
@@ -120,7 +112,7 @@ questions:
       response: |
         This depends on the language and web framework of your specific application. Typically, there is a direct correlation between RAM and concurrency. Having more RAM means that you can have more workers running concurrently. For instance, one container holds 1 GB RAM and a share of an AWS m3.medium (Intel Xeon E5-2670 v2).
 
-        We are happy to work with you to customize your container. Platform and Managed stacks are isolated per-customer, so you enjoy full resources of the instance dedicated to your apps. 
+        We are happy to work with you to customize your container. Platform and Managed stacks are isolated per-customer, so you enjoy full resources of the instance dedicated to your apps.
 
 
     - inquiry: When using one of the PHI-ready environments, should I have my Dev, Staging and Pro tiers all hosted in a PHI-ready environment or in a Dev environment?
@@ -140,58 +132,16 @@ questions:
   </div>
 
   <div class="row section">
-    <div class="col-xs-12">
-      <h2 class="section-title">{{plans_title}}</h2>
-      <div class="plans">
-        <div class="row">
-          {{#each plans}}
-            <div class="col-md-4 col-xs-12 col-sm-6">
-              <div class="panel panel-default plan-panel {{plan}}">
-                <div class="plan-title">{{plan}}</div>
-                <div class="plan-header">
-                  <h3 class="plan-plan">{{tag}}</h3>
-                    <h2 class="plan-price">{{price}}<span class="sub">{{price_sub}}</span></h2>
-                </div>
-                <div class="panel-body">
-                  <ul class="plan-attributes">
-                    {{#each items}}
-                      {{#if subs}}
-                        <li>
-                          {{item}}
-                          <ul class="plan-sub-attributes">
-                            {{#each subs}}
-                              <li>{{.}}</li>
-                            {{/each}}
-                          </ul>
-                        </li>
-                      {{else}}
-                        <li>{{.}}</li>
-                      {{/if}}
-
-                    {{/each}}
-                  </ul>
-                  <div class="plan-cta">
-                    <a href="{{cta_url}}" class="btn btn-lg btn-default btn-block">
-                    {{cta}}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          {{/each}}
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12 unit-pricing">
-            <h2 class="section-title">Unit Pricing</h2>
-            <ul class="plan-attributes">
-              <li><strong>1 GB App/Database Containers:</strong> {{pricing.container}}</li>
-              <li><strong>Encrypted Disk:</strong> {{pricing.disk}}</li>
-              <li><strong>Domains:</strong> {{pricing.domain}}</li>
-            </ul>
-          </div>
-        </div>
-
+    <h2 class="section-title">{{plans_title}}</h2>
+    {{> pricing_calculator}}
+    <div class="row">
+      <div class="col-xs-12 unit-pricing">
+        <h2 class="section-title">Unit Pricing</h2>
+        <ul class="plan-attributes">
+          <li><strong>1 GB App/Database Containers:</strong> {{pricing.container}}</li>
+          <li><strong>Encrypted Disk:</strong> {{pricing.disk}}</li>
+          <li><strong>Domains:</strong> {{pricing.domain}}</li>
+        </ul>
       </div>
     </div>
   </div>
