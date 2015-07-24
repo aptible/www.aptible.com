@@ -11,90 +11,23 @@
 
   .unit-pricing {
     font-size: 16px;
-
-    .plan-attributes {
-
-    }
   }
 
-
   .pricing {
-    // font-size: 13px;
-    // color: $color-light;
     text-align: center;
     clear: both;
-    // padding: 30px 0 0;
   }
 }
 
 .plan-attributes {
-    margin: 0 0 30px;
-    padding: 0;
-    list-style-type: none;
+  margin: 0 0 30px;
+  padding: 0;
+  list-style-type: none;
 
-    > li {
-      font-size: 18px;
-      margin: 0 0 15px;
-      text-align: center;
-
-      > ul {
-        list-style-type: none;
-        margin: 30px 0;
-        padding: 0;
-
-        li {
-          text-align: center;
-          color: $color-light;
-          font-size: 16px;
-          margin: 10px 0;
-        }
-      }
-    }
-  }
-
-.panel.plan-panel {
-  &.Platform {
-    border: 1px solid $color-bright-blue;
-    box-shadow: 0 0 8px rgba($color-bright-blue, 0.4);
-  }
-
-  .plan-title {
-    background: #fafafa;
-    border-bottom: 1px solid #f0f0f0;
-    padding: 14px 0 12px;
+  > li {
+    font-size: 18px;
+    margin: 0 0 15px;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: $weight-semibold;
-    border-radius: 3px 3px 0 0;
-  }
-
-  .plan-header {
-    border-bottom: 1px solid #f0f0f0;
-    padding: 30px;
-    text-align: center;
-  }
-
-  .plan-plan {
-    color: $color-bright-blue;
-    font-size: 16px;
-    margin: 0;
-  }
-
-  .plan-price {
-    font-size: 48px;
-    font-weight: 200;
-    color: $color-primary;
-    margin: 10px 0 0;
-
-    .sub {
-      color: $color-light;
-      font-size: 16px;
-    }
-  }
-
-  .panel-body {
-    padding: 30px;
   }
 }
 

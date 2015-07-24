@@ -226,6 +226,12 @@ module.exports = function(grunt) {
                 },
                 {
                     expand: true,
+                    cwd: 'vendor/rangeslider.js/dist',
+                    src: ['*.js'],
+                    dest: 'dist/assets/js/'
+                },
+                {
+                    expand: true,
                     cwd: 'content/posts/assets',
                     src: ['**/*.*'],
                     dest: 'dist/blog/assets/'
