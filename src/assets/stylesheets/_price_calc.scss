@@ -3,6 +3,18 @@
 $color-dark-gray-bg: #b0b0b0;
 $color-lighter-gray: #d8d6d6;
 
+// Fade in animation for grouping with other transitions
+@-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-moz-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-o-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+// Fade in animation for grouping with other transitions
+@-webkit-keyframes long-fade-in { 0% { opacity: 0; } 50% { opacity: 0; } 100% { opacity: 1; } }
+@-moz-keyframes long-fade-in { 0% { opacity: 0; } 50% { opacity: 0; } 100% { opacity: 1; } }
+@-o-keyframes long-fade-in { 0% { opacity: 0; } 50% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes long-fade-in { 0% { opacity: 0; } 50% { opacity: 0; } 100% { opacity: 1; } }
+
 .price-calc {
   counter-reset: pricing-steps;
   // Bootstrap elements
@@ -95,7 +107,7 @@ $color-lighter-gray: #d8d6d6;
   .price-calc__step--summary {
     width: 100%;
     .panel {
-      min-height: 319px;
+      min-height: 375px;
     }
   }
   .price-calc__summaries {
@@ -103,9 +115,10 @@ $color-lighter-gray: #d8d6d6;
     width: 49%;
   }
   .price-calc__submit {
-    @include animation(fade-in 0.5s ease-in);
+    @include animation(long-fade-in 0.75s ease-in);
     float: right;
     margin-top: 35px;
+    opacity: 1;
     width: 49%;
   }
   .price-calc__monthly-breakdown {
@@ -148,7 +161,7 @@ $color-lighter-gray: #d8d6d6;
   .price-calc[data-needs-more='on'] & {
     @include animation(fade-in 0.5s ease-in);
     height: auto;
-    max-height: 200px;
+    max-height: 275px;
   }
   p {
     color: $color-light;
@@ -283,15 +296,17 @@ $color-lighter-gray: #d8d6d6;
 }
 .price-calc__summaries {
   height: 115px;
+  overflow: hidden;
   @include transition(height 0.3s ease-in-out);
   .price-calc[data-phi='off'][data-full-service='off'] & {
-    height: 125px;
+    height: 140px;
   }
   .price-calc[data-phi='on'][data-full-service='off'] & {
-    height: 180px;
+    height: 210px;
   }
   .price-calc[data-phi='on'][data-full-service='on'] & {
     @include transition-duration(0s);
+    overflow: visible;
   }
 }
 .price-calc__summary {
@@ -303,31 +318,31 @@ $color-lighter-gray: #d8d6d6;
   .price-calc[data-phi='off'][data-full-service='off'] & {
     opacity: 1;
     position: static;
-    @include animation(fade-in 0.5s ease-in);
+    @include transition(opacity 0.5s ease-in);
   }
 }
 .price-calc__summary--platform {
   .price-calc[data-phi='on'][data-full-service='off'] & {
     opacity: 1;
     position: static;
-    max-height: 225px;
-    @include animation(fade-in 0.5s ease-in);
+    @include transition(opacity 0.5s ease-in);
   }
 }
 .price-calc__summary--managed {
   .price-calc[data-phi='on'][data-full-service='on'] & {
     opacity: 1;
     position: static;
-    max-height: 175px;
-    @include animation(fade-in 0.5s ease-in);
+    @include transition(opacity 0.5s ease-in);
   }
 }
 .price-calc__summary-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 25px;
   display: block;
-  li {
+}
+.price-calc__summary {
+  li, p {
     font-size: 14px;
     color: #848484;
     line-height: 19px;
@@ -335,6 +350,7 @@ $color-lighter-gray: #d8d6d6;
 }
 .price-calc__summary-list__title {
   display: inline-block;
+  font-size: 14px;
   font-weight: 600;
   margin-top: 10px;
   text-decoration: underline;
@@ -411,6 +427,9 @@ $color-lighter-gray: #d8d6d6;
     font-size: 14px;
     color: #848484;
     line-height: 19px;
+  }
+  .price-calc__item-value {
+    padding: 0 10px;
   }
   .price-calc__monthly-total {
     color: #4A4A4A;
