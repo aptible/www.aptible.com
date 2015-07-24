@@ -2,20 +2,18 @@
 title: Plans and Pricing
 tracked_title: Pricing
 id: pricing
-description: "Aptible's pricing page"
+description: "Aptible plans and pricing"
 posted: 2015-03-19
 production_title: Aptible Production Account
-production_subtitle: "Start deploying HIPAA-compliant apps in minutes with our ****high-assurance deployment platform**** and integrated ****HIPAA compliance tools**** \n\nStarting at $3499/month with an annual contract"
-development_plan_cost: $0.08/Hour
 
-hero_title: Try Aptible now with a free Development Account
-hero_sub_title: Building modern web architecture? Familiar with the PaaS model or Heroku? Excited to use containers?
-hero_cta: Open a free Development Account
+hero_title: Try Aptible now with a Development Account
+hero_sub_title: No contracts, no risk.
+hero_cta: Open a Development Account
 hero_url: https://dashboard.aptible.com/signup?plan=development
 
-plans_title: Find the Right Tier and Estimate Your Bill
+plans_title: Explore Plans and Pricing
 
-step1_title: Base Settings
+step1_title: About You
 step2_title: Configuration
 step3_title: Summary
 
@@ -23,36 +21,33 @@ plans:
   dev:
     name: Development
     descriptors:
-    - Shared Stack, No PHI allowed
-    - No base fee, pay only for usage
+    - No PHI allowed
+    - "No base fee: Pay only for usage"
     included:
-    - $500 Credit
+    - $500 trial credit
   platform:
     name: Platform
     descriptors:
-    - Custom pricing
-    - Dedicated Stack, PHI-Ready
-    - BAA
+    - Dedicated, PHI-ready stack
+    - Comes with Business Associate Agreement, Breach Indemnification, and SLA
     included:
-    - Up to 6 containers
-    - Up to 1TB of disk space
-    - Up to 4 domains
+    - 6 containers
+    - 1TB disk
+    - 4 domains
   managed:
     name: Managed
     descriptors:
-    - Full-service compliance and documentation
-    - Industry leading Workforce HIPAA training
-    - Custom BAA, SLA
-    - Audit support
+    - "With a Managed Account, Aptible helps you set up and run a comprehensive HIPAA Business Associate compliance program, including risk assessments, policies and procedures, workforce training, incident response, BAA management, and application security management."
+    - "As a Managed Account partner, our engineering and compliance teams will work with you directly to help you quickly pass security reviews and audits at the largest healthcare institutions in the country."
 
 tooltip:
-  containers: Uses general purpose instance class at AWS. Can be customized where needed.
-  disk: Database storage.
-  domains: Any subdomains or VHosts.
+  containers: 1 GB RAM Docker containers. Instantly scalable. Estimate 1 container per Linux process. Custom container sizes available.
+  disk: "Encrypted database storage. Includes backups: daily for 90 days, monthly for 6 years."
+  domains: SSL endpoint. Attaches to your container service. May be used for internal services.
 
 needs_more:
-  title: Need more?
-  body: Get in touch with the team and we'll discuss your requirements and set up a bespoke plan.
+  title: Scale much?
+  body: All Aptible services scale on demand at the unit price rates below. High volume plans and custom container RAM sizes are available. 
   cta: Contact Us
   cta_url: /company/contact
 
@@ -63,8 +58,8 @@ pricing:
 
 unique_situation:
   title: Need something special?
-  sub_title: Our experts can help you architect and operate a HIPAA-compliant solution.
-  cta: Get a Free HIPAA Architecture Consultation
+  sub_title: Custom container RAM sizes, optimized EC2 instance types, and high volume plans are available.
+  cta: Contact an Aptible Expert
   cta_url: /company/contact
 
 quick_start:
@@ -165,7 +160,7 @@ questions:
   <div class="row section bordered">
     <div class="col-xs-12">
       <div class="quick-starts categories">
-      <h2 class="section-title">Quickstart Guides:</h2>
+      <h2 class="section-title">Quickstart Guides</h2>
         {{#each quick_start}}
           <div class="col-xs-12 col-sm-4 col-md-3">
             <a class="category-box {{slug}}" href="{{url}}">
