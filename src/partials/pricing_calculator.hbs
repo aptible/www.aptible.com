@@ -124,15 +124,13 @@
               {{#each plans.dev.descriptors}}
 					      <li>{{.}}</li>
               {{/each}}
-              <li>
-                <span class="price-calc__summary-list__title">Includes</span>
-      					<ul class="price-calc__summary-list">
-                  {{#each plans.dev.included}}
-      				      <li>{{.}}</li>
-                  {{/each}}
-                </ul>
-              </li>
-  					</ul>
+            </ul>
+            <h4 class="price-calc__summary-list__title">Includes</h4>
+  					<ul class="price-calc__summary-list">
+              {{#each plans.dev.included}}
+  				      <li>{{.}}</li>
+              {{/each}}
+            </ul>
           </div>
           <div class="price-calc__summary price-calc__summary--platform">
   					<h3 class="price-calc__summary__heading">{{plans.platform.name}} Account</h3>
@@ -140,23 +138,19 @@
               {{#each plans.platform.descriptors}}
   				      <li>{{.}}</li>
               {{/each}}
-              <li>
-                <span class="price-calc__summary-list__title">Includes</span>
-      					<ul class="price-calc__summary-list">
-                  {{#each plans.platform.included}}
-      				      <li>{{.}}</li>
-                  {{/each}}
-                </ul>
-              </li>
+            </ul>
+            <h4 class="price-calc__summary-list__title">Includes</h4>
+  					<ul class="price-calc__summary-list">
+              {{#each plans.platform.included}}
+  				      <li>{{.}}</li>
+              {{/each}}
             </ul>
           </div>
           <div class="price-calc__summary price-calc__summary--managed">
   					<h3 class="price-calc__summary__heading">{{plans.managed.name}} Account</h3>
-  					<ul class="price-calc__summary-list">
-              {{#each plans.managed.descriptors}}
-  				      <li>{{.}}</li>
-              {{/each}}
-  					</ul>
+            {{#each plans.managed.descriptors}}
+              <p>{{.}}</p>
+            {{/each}}
   				</div>
         </div>
 				<div class="price-calc__monthly-breakdown">
