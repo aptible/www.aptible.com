@@ -47,9 +47,19 @@ tooltip:
 
 needs_more:
   title: Scale much?
-  body: All Aptible services scale on demand at the unit price rates below. High volume plans and custom container RAM sizes are available. 
+  body: All Aptible services scale on demand at the unit price rates below. High volume plans and custom container RAM sizes are available.
   cta: Contact Us
   cta_url: /company/contact
+
+discount:
+  title: Advertise your HIPAA compliance.
+  body: |
+    Add a [Powered by Aptible Badge](/company/resources/#hipaa-badges-section)
+    on your site footer and get a __$100/month discount__.
+
+    Open a
+    [support ticket](https://support.aptible.com/contact) to let us know you
+    are participating.
 
 pricing:
   container: $0.08/hour
@@ -129,15 +139,25 @@ questions:
   <div class="row section">
     <h2 class="section-title">{{plans_title}}</h2>
     {{> pricing_calculator}}
-    <div class="row">
-      <div class="col-xs-12 unit-pricing">
-        <h2 class="section-title">Unit Pricing</h2>
-        <ul class="plan-attributes">
-          <li><strong>1 GB App/Database Containers:</strong> {{pricing.container}}</li>
-          <li><strong>Encrypted Disk:</strong> {{pricing.disk}}</li>
-          <li><strong>Domains:</strong> {{pricing.domain}}</li>
-        </ul>
+  </div>
+
+  <div class="row section">
+    <div class="col-xs-12 unit-pricing">
+      <h2 class="section-title">{{discount.title}}</h2>
+      <div class="intro-body text-center">
+        {{#markdown}}{{discount.body}}{{/markdown}}
       </div>
+    </div>
+  </div>
+
+  <div class="row section">
+    <div class="col-xs-12 unit-pricing">
+      <h2 class="section-title">Unit Pricing</h2>
+      <ul class="plan-attributes">
+        <li><strong>1 GB App/Database Containers:</strong> {{pricing.container}}</li>
+        <li><strong>Encrypted Disk:</strong> {{pricing.disk}}</li>
+        <li><strong>Domains:</strong> {{pricing.domain}}</li>
+      </ul>
     </div>
   </div>
 
