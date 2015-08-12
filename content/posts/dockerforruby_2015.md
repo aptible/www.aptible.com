@@ -4,7 +4,7 @@ excerpt: "Our CTO, Frank, gave a talk at NYC.rb."
 author_name: Sam Yount
 author_email: sam@aptible.com
 author_id: sam
-posted: 2015-05-06
+posted: 2015-08-13
 section: Blog
 posts: true
 ---
