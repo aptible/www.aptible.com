@@ -302,7 +302,7 @@ $color-lighter-gray: #d8d6d6;
     height: 140px;
   }
   .price-calc[data-phi='on'][data-full-service='off'] & {
-    height: 210px;
+    height: 270px;
   }
   .price-calc[data-phi='on'][data-full-service='on'] & {
     @include transition-duration(0s);
