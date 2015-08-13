@@ -8,9 +8,7 @@ posted: 2015-08-13
 section: Blog
 posts: true
 ---
-
-
-Frank gave a talk to [NYC.rb](http://www.meetup.com/NYC-rb/), the New York City Ruby on Rails group, about about how to use Docker with Ruby on Rails.  
+Our CTO Frank recently spoke at [NYC.rb](http://www.meetup.com/NYC-rb/), to give Ruby devs an introduction to Docker, simplifying service-oriented architecture, wrapping databases in a uniform API, and achieving the Holy Grail of dev/prod parity.  
 
 ## Slides:
 
