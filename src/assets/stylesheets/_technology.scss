@@ -1,4 +1,19 @@
+body.technology {
+  height: 100%;
+  width: 100%;
+  background-color: #034dcc;
+}
+
 .technology {
+  .primary-header {
+    position: fixed;
+    background-color: transparent;
+  }
+  .header-title-container {
+    display: none;
+  }
+  
+
   .fancy-cover {
     padding: 100px 0;
   }

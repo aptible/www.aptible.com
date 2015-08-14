@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <!-- Intentionally slugify the page title into the body classes -->
+  <body
+    class="aptible-com {{#if id}}{{slugify id}}{{/if}} {{slugify title}} {{slugify page.section}} {{slugify basename}}">
+
+    {{> header}}
+
+    <div class="main" role="main">
+      <h1>Hi I'm tech template</h1>
+      {{> body}}
+    </div>
+  </body>
+</html>

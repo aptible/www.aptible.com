@@ -76,6 +76,17 @@ module.exports = function(grunt) {
                     src: ['**/*.md', '**/*.hbs']
                 }]
             },
+            technology: {
+                options: {
+                    layout: 'technology.hbs'
+                },
+                files: [{
+                    cwd: 'content/pages/technology',
+                    dest: 'dist/technology',
+                    expand: true,
+                    src: ['*.md', '*.hbs']
+                }]
+            },
             posts: {
                 options: {
                     layout: 'post.hbs',
@@ -130,8 +141,8 @@ module.exports = function(grunt) {
             },
             pages: {
                 options: {
-                    branch: 'master',
-                    repository: 'https://github.com/aptible/aptible-pages.git',
+                    branch: 'tech',
+                    repository: 'git@github.com:moeamaya/aptible-pages.git',
                     directory: 'content/pages'
                 }
             },

@@ -28,6 +28,7 @@
       </div>
     </nav>
 
+    {{#is dirname 'dist/technology'}}
     <div class="container header-title-container">
       {{#if title}}
         <h1 class="primary-title">{{title}}</h1>
@@ -36,5 +37,6 @@
         <h2 class="primary-sub-title">{{sub_title}}</h2>
       {{/if}}
     </div>
+    {{/is}}
   </div>
 </header>
