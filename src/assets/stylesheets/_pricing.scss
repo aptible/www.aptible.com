@@ -53,3 +53,24 @@
     visibility: hidden;
   }
 }
+
+// This was originally on the technology
+// page scss but no longer there
+.callout-section {
+  text-align: center;
+
+  .callout-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .callout-body {
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-subdued;
+  }
+
+  .callout-cta {
+    margin: 50px 0 0;
+  }
+}
