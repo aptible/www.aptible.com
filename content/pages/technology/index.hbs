@@ -1,204 +1,194 @@
 ---
-title: Our Technology
+title: Technology
 tracked_title: Technology
 id: technology
 introduction:
-  image: /pages/assets/technology/aptible-technology-introduction.png
-  title: Aptible is a web and mobile application deployment platform built for privacy and security.
+  title: Aptible Container Platform
   body: |-
-    We run the entire backend you need to securely host and deliver your apps: web servers, app servers, databases, load balancers, network security, backups, encryption, permissions - everything.
-
-    And because we run your ops, our compliance engines can help you implement an entire HIPAA compliance program at a fraction of the traditional cost.
-
-    The result is that your engineers can focus on writing code, not managing and documenting infrastructure.
-philosophy:
-  title: Our Philosophy
+    Deploy Docker containers into secure, isolated, HIPAA-ready environments.
+stack:
+  title: Aptible Container Platform
   body: |-
-    We believe you should never have to compromise good engineering practices for the sake of compliance. Our approach is to build private, secure environments for your code and let you run the languages, frameworks, and databases of your choice inside them.
-workflow:
-  title: Workflow
+    The Aptible Container Platform is a deployment platform designed to securely deploy Docker containers into HIPAA-ready environments. We manage zero-downtime deployments, scale your clusters, encrypt and back up your data, and run your ops, allowing you to focus on development.
+network:
+  title: Secure Networks
   body: |-
-    If you're familiar with Heroku, you already know how to use Aptible: Push code to a Git remote, then configure and manage resources from the command line or through our web dashboard.
-
-    This Git-based workflow makes Aptible easy to integrate with Travis CI, CircleCI, or any other continuous integration/continuous development tool of your choice.
-how_it_works:
-  img: /pages/assets/technology/how-aptible-works.png
-  title: How Aptible Works
-networking:
-  title: Networking
+    Each PHI-ready stack runs in its own AWS Virtual Private Cloud. Databases and internal services run in a private subnet, inaccessible from the Internet. All stack instances are configured with deny-by-default firewalls.
+load_balancing:
+  title: Easy, Secure Load Balancing
   body: |-
-    Each Aptible Production Account's resources are deployed into an isolated network of dedicated instances. Access to and from applications is strictly controlled and logged for auditing.
-
-    Databases are further isolated in a private subnet, addressable only from within the network, and accessible only to the account's own apps, or via authenticated tunnel.
-routing:
-  title: Routing
-  body: |-
-    Every Aptible Account (Production and Development) receives its own set of load balancers, meaning your traffic is never enqueued behind another customer's traffic.
-containers:
-  img: /pages/assets/technology/aptible-containers.png
-  title: Containers
-  body: |-
-    Within each customer's stack, Aptible uses Docker containers to move and run services. A container is like a lightweight virtual machine that can be used to run an instance of an application or a database.
-
-    If you are coming from Heroku, you can estimate the number of containers you will need by adding the number of Heroku dynos and databases. For example, if you use 2 web processes, 2 worker processes, and 1 PostgreSQL database, you will need 5 containers.
-
-    ### [Learn more about Docker](https://docs.docker.com/introduction/understanding-docker) ###
+    Each SSL/TLS endpoint receives a dedicated load balancer, scaling traffic across your app containers. SSL/TLS endpoints make it easy to manage x509 SSL/TLS certificates, force SSL/TLS connections, and create private services. Each endpoint receives automatic security updates on a regular basis.
 apps:
-  title: Applications & Databases
+  title: Designed for Portability
   body: |-
-    Aptible is language- and framework-agnostic. If it runs on Linux, it runs on Aptible. Our compliance experts will work with your engineers to help you implement best practices for any application-specific steps required by HIPAA or your risk assessment.
-  logos:
-      redis:
-        url: /pages/assets/redis.png
-        className: redis
-      mongo:
-        url: /pages/assets/mongodb.png
-        className: mongo
-      pg:
-        url: /pages/assets/postgres.png
-        className: pg
-      mysql:
-        url: /pages/assets/mysql.png
-        className: mysql
-      python:
-        url: /pages/assets/python-logo.png
-        className: python
-      node:
-        url: /pages/assets/nodejs.png
-        className: node
-      ruby:
-        url: /pages/assets/ruby.png
-        className: ruby
-      php:
-        url: /pages/assets/php-logo.svg
-        className: php
+    Achieve dev/prod parity by standardizing your apps across environments. Support for Docker and the most popular open source languages, frameworks, and databases means you never have to worry about lock-in.
+team_access:
+  title: Easy Developer Access
+  body: |-
+    Robust role-based access controls make it easy to authorize and audit your team's activity. Use the CLI tool or web dashboard to manage your stack, including SSH and tunnel access. Script and automate common actions with our ops API.
+databases:
+  title: Secure Databases
+  body: |-
+    Databases run in a private subnet, hidden from the outside Internet. Access is restriced to your apps and team members. Database traffic is encrypted in transit, and data is encrypted at rest, using FIPS 140-2 approved modules and Aptible-managed keys. Nightly backups are automatically taken and stored in a separate geographic region.
+scale:
+  title: Perform at Scale
+  body: |-
+    Easily scale apps, domains, and databases with the security and reliability of the AWS cloud. Because your PHI-ready stacks are dedicated to you, the Aptible Container Platform has no performance tradeoff. Zero-downtime deploys make scaling seamless.
+sign_up:
+  title: Try Aptible Now with a Development Account
 
-cta:
-  title: |-
-    Ready to start deploying HIPAA-compliant apps with our high-assurance deployment platform and  compliance engines?
-  button: Try Aptible with a Free Dev Account
-newsletter:
-  title: "Get the Latest Devops and Security News"
-  subtitle: Straight to your inbox, no more than twice a month.
-  placeholder: Enter your email address
-  submit: "Sign me up!"
-  success: Thanks for signing up!
-  error: Please use a valid email
+
 
 ---
+{{> technology_animation}}
 
-<div class="facts-page">
+<!-- Static Slides -->
+<div class="slides" role="main">
 
-  <div class="fancy-cover section">
-    <div class="container">
-      <div class="row facts-page-introduction">
-        <div class="col-md-6 col-sm-12">
-          <div class="fact-section-image">
-            <img src="{{introduction.image}}" alt="Aptible's Technology" class="technology-introduction-image" />
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <h2>{{introduction.title}}</h2>
-          <div class='introduction-body'>{{#markdown}}{{introduction.body}}{{/markdown}}</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="highlight-panel">
-    <div class="container">
-
-      <div class="row section bordered callout-section">
-        <div class="col-md-10 col-md-offset-1 col-sm-12 our-philosophy">
-          <h2 class="callout-title">{{philosophy.title}}</h2>
-          <div class="philosophy-body callout-body">{{#markdown}}{{philosophy.body}}{{/markdown}}</div>
-        </div>
-      </div>
-
-      <div class="row section bordered">
-        <h1 class="section-header">{{how_it_works.title}}</h1>
-
-        <div class="col-md-6 col-sm-12">
-          {{> ci_console}}
-
-        </div>
-        <div class="col-md-4 col-md-offset-1 col-sm-12">
-          <h2 class="fact-section-title workflow-title">{{workflow.title}}</h2>
-          <div class="fact-section-body workflow-body">{{#markdown}}{{workflow.body}}{{/markdown}}</div>
-        </div>
-      </div>
-
-      <div class="row section bordered">
-        <div class="col-md-5 col-sm-12">
-          <div class="fact-section how-it-works-section networking">
-            <h2>{{networking.title}}</h2>
-            <div class="fact-section-body how-it-works-body ">{{#markdown}}{{networking.body}}{{/markdown}}</div>
-          </div>
-          <div class="fact-section how-it-works-section routing">
-            <h2>{{routing.title}}</h2>
-            <div class="fact-section-body how-it-works-body">{{#markdown}}{{routing.body}}{{/markdown}}</div>
-          </div>
-        </div>
-        <div class="col-md-6 col-md-offset-1 col-sm-12">
-          <div class="fact-section-image">
-            <img src="{{how_it_works.img}}" alt="How Aptible Works" />
-          </div>
-        </div>
-      </div>
-
-      <div class="row section bordered">
-        <div class="col-md-6 col-sm-12">
-          <div class="fact-section-image">
-            <img src="{{containers.img}}" alt="Aptible Containers" class="containers-image" />
-          </div>
-        </div>
-
-        <div class="col-md-5 col-md-offset-1 col-sm-12">
-          <div class="fact-section container-section">
-            <h2>{{containers.title}}</h2>
-            <div class="fact-section-body containers">{{#markdown}}{{containers.body}}{{/markdown}}</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row section bordered callout-section">
-        <div class="col-md-10 col-md-offset-1 col-sm-12 apps-and-databases">
-          <h2 class="callout-title">{{apps.title}}</h2>
-          <div class="apps-body callout-body">{{#markdown}}{{apps.body}}{{/markdown}}</div>
-          <div class="row apps-list">
-            {{#each apps.logos}}
-              <div class="col-md-3 col-sm-12">
-                <div class="app-icon-container {{className}}">
-                  <img src="{{url}}" alt="{{className}}" />
-                </div>
-              </div>
-            {{/each}}
-          </div>
-        </div>
-      </div>
-
-      <div class="row section">
-        <div class="facts-page-cta col-md-8 col-md-offset-2 col-sm-12">
-          <h2 class="cta-title">{{cta.title}}</h2>
-          <a class="btn btn-primary btn-lg" href="{{config.dashboard_signup_url}}">{{cta.button}}</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="row newsletter-section">
-    <div class="col-md-6 col-md-offset-3 col-sm-12">
-      <div class="panel panel-default newsletter-signup-panel">
-        <div class="panel-body">
-          <h1 class="panel-title">{{newsletter.title}}</h1>
-          <h5 class="panel-sub">{{newsletter.subtitle}}</h5>
-          <div class="panel-cta">
-           {{> newsletter_signup}}
+  <!-- Intro -->
+  <section class="section" id="intro">
+    <div class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 text-center">
+            <h1 class="intro-header">{{introduction.title}}</h1>
+            <h3 class="intro-text">{{introduction.body}}</h3>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Stack -->
+  <section class="section" id="infrastructure">
+    <section class="copy disappear">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>{{stack.title}}</h2>
+          </div>
+          <div class="col-sm-12 col-md-8 col-md-offset-2">
+            <p>{{stack.body}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Network -->
+  <section class="section" id="network">
+    <section class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Secure Networks</h2>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <p>Each PHI-ready stack runs in its own AWS Virtual Private Cloud. Databases and internal services run in a private subnet, inaccessible from the Internet. All stack instances are configured with deny-by-default firewalls.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Load Balancing -->
+  <section class="section" id="load-balancing">
+    <section class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Easy, Secure Load Balancing</h2>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <p>Each SSL/TLS endpoint receives a dedicated load balancer, scaling traffic across your app containers. SSL/TLS endpoints make it easy to manage x509 SSL/TLS certificates, force SSL/TLS connections, and create private services. Each endpoint receives automatic security updates on a regular basis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Apps -->
+  <section class="section" id="apps">
+    <section class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Designed for Portability</h2>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <p>Achieve dev/prod parity by standardizing your apps across environments. Support for Docker and the most popular open source languages, frameworks, and databases means you never have to worry about lock-in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Team Access -->
+  <section class="section" id="bastion">
+    <section class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Easy Developer Access</h2>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <p>Robust role-based access controls make it easy to authorize and audit your team's activity. Use the CLI tool or web dashboard to manage your stack, including SSH and tunnel access. Script and automate common actions with our ops API.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Databases -->
+  <section class="section" id="database">
+    <section class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Secure Databases</h2>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <p>Databases run in a private subnet, hidden from the outside Internet. Access is restriced to your apps and team members. Database traffic is encrypted in transit, and data is encrypted at rest, using FIPS 140-2 approved modules and Aptible-managed keys. Nightly backups are automatically taken and stored in a separate geographic region.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Scaling -->
+  <section class="section" id="scale">
+    <section class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Perform at Scale</h2>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <p>Easily scale apps, domains, and databases with the security and reliability of the AWS cloud. Because your PHI-ready stacks are dedicated to you, the Aptible Container Platform has no performance tradeoff. Zero-downtime deploys make scaling seamless.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Sign Up -->
+  <section class="section" id="signup">
+    <section class="copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Try Aptible Now with a Development Account</h2>
+          </div>
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <a class="btn btn-default btn-lg" href="#">Open a Development Account</a>
+            <a class="btn btn-primary btn-lg" href="#">See Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+</div>
+
 
 </div>
