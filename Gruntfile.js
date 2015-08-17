@@ -141,8 +141,8 @@ module.exports = function(grunt) {
             },
             pages: {
                 options: {
-                    branch: 'tech',
-                    repository: 'git@github.com:moeamaya/aptible-pages.git',
+                    branch: 'master',
+                    repository: 'https://github.com/aptible/aptible-pages.git',
                     directory: 'content/pages'
                 }
             },
