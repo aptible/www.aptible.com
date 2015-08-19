@@ -249,12 +249,6 @@ module.exports = function(grunt) {
                 },
                 {
                     expand: true,
-                    cwd: 'vendor/network',
-                    src: ['*.js'],
-                    dest: 'dist/assets/js/'
-                },
-                {
-                    expand: true,
                     cwd: 'node_modules/animateplus',
                     src: ['*.min.js'],
                     dest: 'dist/assets/js/'
