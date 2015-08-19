@@ -36,6 +36,8 @@ scale:
     Easily scale apps, domains, and databases with the security and reliability of the AWS cloud. Because your PHI-ready stacks are dedicated to you, the Aptible Container Platform has no performance tradeoff. Zero-downtime deploys make scaling seamless.
 sign_up:
   title: Try Aptible Now with a Development Account
+  cta1: Open a Development Account
+  cta2: See Pricing
 
 
 
@@ -81,10 +83,10 @@ sign_up:
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Secure Networks</h2>
+            <h2>{{network.title}}</h2>
           </div>
           <div class="col-md-8 col-md-offset-2">
-            <p>Each PHI-ready stack runs in its own AWS Virtual Private Cloud. Databases and internal services run in a private subnet, inaccessible from the Internet. All stack instances are configured with deny-by-default firewalls.</p>
+            <p>{{network.body}}</p>
           </div>
         </div>
       </div>
@@ -97,10 +99,10 @@ sign_up:
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Easy, Secure Load Balancing</h2>
+            <h2>{{load_balancing.title}}</h2>
           </div>
           <div class="col-md-8 col-md-offset-2">
-            <p>Each SSL/TLS endpoint receives a dedicated load balancer, scaling traffic across your app containers. SSL/TLS endpoints make it easy to manage x509 SSL/TLS certificates, force SSL/TLS connections, and create private services. Each endpoint receives automatic security updates on a regular basis.</p>
+            <p>{{load_balancing.body}}</p>
           </div>
         </div>
       </div>
@@ -113,10 +115,10 @@ sign_up:
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Designed for Portability</h2>
+            <h2>{{apps.title}}</h2>
           </div>
           <div class="col-md-8 col-md-offset-2">
-            <p>Achieve dev/prod parity by standardizing your apps across environments. Support for Docker and the most popular open source languages, frameworks, and databases means you never have to worry about lock-in.</p>
+            <p>{{apps.body}}</p>
           </div>
         </div>
       </div>
@@ -129,10 +131,10 @@ sign_up:
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Easy Developer Access</h2>
+            <h2>{{team_access.title}}</h2>
           </div>
           <div class="col-md-8 col-md-offset-2">
-            <p>Robust role-based access controls make it easy to authorize and audit your team's activity. Use the CLI tool or web dashboard to manage your stack, including SSH and tunnel access. Script and automate common actions with our ops API.</p>
+            <p>{{team_access.body}}</p>
           </div>
         </div>
       </div>
@@ -145,10 +147,10 @@ sign_up:
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Secure Databases</h2>
+            <h2>{{databases.title}}</h2>
           </div>
           <div class="col-md-8 col-md-offset-2">
-            <p>Databases run in a private subnet, hidden from the outside Internet. Access is restriced to your apps and team members. Database traffic is encrypted in transit, and data is encrypted at rest, using FIPS 140-2 approved modules and Aptible-managed keys. Nightly backups are automatically taken and stored in a separate geographic region.</p>
+            <p>{{databases.body}}</p>
           </div>
         </div>
       </div>
@@ -161,10 +163,10 @@ sign_up:
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Perform at Scale</h2>
+            <h2>{{scale.title}}</h2>
           </div>
           <div class="col-md-8 col-md-offset-2">
-            <p>Easily scale apps, domains, and databases with the security and reliability of the AWS cloud. Because your PHI-ready stacks are dedicated to you, the Aptible Container Platform has no performance tradeoff. Zero-downtime deploys make scaling seamless.</p>
+            <p>{{scale.body}}</p>
           </div>
         </div>
       </div>
@@ -177,11 +179,11 @@ sign_up:
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Try Aptible Now with a Development Account</h2>
+            <h2>{{sign_up.title}}</h2>
           </div>
           <div class="col-md-8 col-md-offset-2 text-center">
-            <a class="btn btn-default btn-lg" href="#">Open a Development Account</a>
-            <a class="btn btn-primary btn-lg" href="#">See Pricing</a>
+            <a class="btn btn-default btn-lg" href="#">{{sign_up.cta1}}</a>
+            <a class="btn btn-primary btn-lg" href="#">{{sign_up.cta2}}</a>
           </div>
         </div>
       </div>
