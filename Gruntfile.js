@@ -76,6 +76,17 @@ module.exports = function(grunt) {
                     src: ['**/*.md', '**/*.hbs']
                 }]
             },
+            technology: {
+                options: {
+                    layout: 'technology.hbs'
+                },
+                files: [{
+                    cwd: 'content/pages/technology',
+                    dest: 'dist/technology',
+                    expand: true,
+                    src: ['*.md', '*.hbs']
+                }]
+            },
             posts: {
                 options: {
                     layout: 'post.hbs',
@@ -228,6 +239,18 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'vendor/rangeslider.js/dist',
                     src: ['*.js'],
+                    dest: 'dist/assets/js/'
+                },
+                {
+                    expand: true,
+                    cwd: 'vendor/fullpage.js',
+                    src: ['*.js'],
+                    dest: 'dist/assets/js/'
+                },
+                {
+                    expand: true,
+                    cwd: 'node_modules/animateplus',
+                    src: ['*.min.js'],
                     dest: 'dist/assets/js/'
                 },
                 {

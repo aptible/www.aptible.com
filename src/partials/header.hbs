@@ -1,4 +1,4 @@
-<header class="primary-header">
+<header class="primary-header" {{#is dirname 'dist/technology'}}style="opacity:0"{{/is}}>
   <div class="primary-header-bg">
     <nav class="navbar navbar-primary" role="navigation">
       <div class="container">
@@ -36,5 +36,6 @@
         <h2 class="primary-sub-title">{{sub_title}}</h2>
       {{/if}}
     </div>
+    
   </div>
 </header>
