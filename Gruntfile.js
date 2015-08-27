@@ -355,14 +355,23 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.registerTask('install', 'install dependencies', function() {
+        var exec = require('child_process').exec;
+        var cb = this.async();
+        exec('bundle install; npm install; bower install', {}, function(err, stdout, stderr) {
+            console.log(stdout);
+            cb();
+        });
+    });
+
     grunt.registerTask('env', 'Set environment variable', function(env) {
         console.log(grunt.config.get('assemble.options.data'));
         grunt.config.set('assemble.options.env', env);
     });
 
-    grunt.registerTask('setup', ['auto_install', 'gitclone']);
+    grunt.registerTask('setup', ['install', 'auto_install', 'gitclone']);
     grunt.registerTask('update', ['require_setup', 'gitpull']);
-    grunt.registerTask('dist', ['require_setup', 'clean', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
+    grunt.registerTask('dist', ['require_setup', 'install', 'clean', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
     grunt.registerTask('release:production', ['env:production', 'dist', 'exec:s3_sync:www.aptible.com']);
     grunt.registerTask('release:staging', ['env:staging', 'dist', 'exec:s3_sync:www.aptible-staging.com']);
     grunt.registerTask('server', ['dist', 'connect', 'watch']);
