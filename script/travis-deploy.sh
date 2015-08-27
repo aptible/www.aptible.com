@@ -8,8 +8,7 @@ if [ "$TRAVIS_BRANCH" == "master" ] &&
 
   # Setup/install
   bundle install --deployment --retry 3
-  npm install
-  bower install
+  # Setup runs npm and bower installs
   grunt setup
   pip install --user awscli
 
