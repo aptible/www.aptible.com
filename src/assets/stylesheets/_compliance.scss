@@ -1,10 +1,285 @@
-.hipaa-compliance {
-  .fact-item {
-    text-align: center;
+.full-service-hipaa-compliance {
+  h2 {
+    font-size: 3em;
+    letter-spacing: -0.03em;
+    margin: 0.1em 0 0.5em;
+    @extend %smooth;
   }
 
-  h4, .description {
-    font-size: 18px;
-    line-height: 23px;
+  h3 {
+    color: $color-light;
+    line-height: 1.3;
+  }
+
+  h4 {
+    color: #bbb;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+    @extend %smooth;
+  }
+
+  p {
+    color: $color-light;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0.5em 0 0;
+  }
+
+  .long-dash {
+    width: 50px;
+    height: 2px;
+    background: #bbb;
+    margin-bottom: 2em;
+  }
+
+  header.primary-header {
+    min-height: 600px;
+    height: 100vh;
+
+    .primary-header-bg {
+      background: url('/assets/images/abstract-header-blur.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header-title-container {
+      margin-top: 70px;
+    }
+
+    h1.primary-title {
+      font-size: 45px;
+      text-transform: none;
+      @extend %smooth;
+      text-shadow: 2px 2px 4px rgba(black, 0.45);
+    }
+
+    h2.primary-sub-title {
+      font-size: 21px;
+      @extend %smooth;
+      text-shadow: 2px 2px 4px rgba(black, 0.45);
+      width: 50%;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+  }
+
+
+  .section.gray.bordered {
+    background: $color-bg-light-gray;
+    border-top: 1px solid $color-border-gray;
+    border-bottom: 1px solid $color-border-gray;
+  }
+
+}
+
+.compliance-header {
+  margin-top: 3em;
+  img {
+    max-width: 80%;
+  }
+  h4 {
+    color: #A2C5EC;
+    margin-top: 2em;
   }
 }
+
+.compliance-find-out {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+  text-align: center;
+  a {
+    display: inline-block;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+  h4 {
+    color: #fff;
+    margin-bottom: 1em;
+  }
+}
+
+
+.compliance-social {
+  padding: 5em 0 6em;
+  text-align: center;
+  h3 {
+    color: #A1B0B8;
+    font-size: 1.4em;
+    font-weight: $weight-normal;
+    margin-bottom: 1.8em;
+  }
+  img {
+    margin-top: 2em;
+    max-width: 75%;
+  }
+}
+
+
+.compliance-benefit {
+  padding: 8em 0;
+  border-bottom: 1px solid $color-border-gray;
+}
+.compliance-benefit:last-child {
+  border: none;
+}
+.compliance-benefit-copy {
+  margin-top: 2em;
+}
+.compliance-benefit-testimonial .compliance-benefit-copy {
+  margin-top: 0;
+}
+.compliance-benefit-image {
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+}
+.compliance-benefit-testimonial .compliance-benefit-image {
+  margin-top: 5em;
+}
+
+
+.compliance-testimonial {
+  display: table;
+  width: 80%;
+  background: #fff;
+  border: 1px solid #B2CEED;
+  box-shadow: 0 0 4px #C9D5E1;
+  padding: 1em 0;
+  margin-top: 2em;
+  p {
+    font-size: 0.85em;
+  }
+  h5 {
+    font-size: 0.85em;
+  }
+}
+.compliance-testimonial-image,
+.compliance-testimonial-copy {
+  display: table-cell;
+  vertical-align: middle;
+}
+.compliance-testimonial-image {
+  padding: 0 1.7em;
+  img {
+    width: 80px;
+  }
+}
+
+
+.compliance-model {
+  .row {
+    border-bottom: 1px solid $color-border-gray;
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+  .long-dash {
+    margin: 0 auto 2em;
+  }
+  img {
+    max-width: 100%;
+    margin-top: 3em;
+  }
+}
+
+.compliance-cta .btn {
+  margin-top: 2em;
+}
+
+
+//--------------------------------
+// Responsive tweaks
+//--------------------------------
+
+
+/* Small devices (tablets, 768px to 992px) */
+@media (max-width: $screen-md-min) {
+
+  // Page level changes
+  .full-service-hipaa-compliance {
+    header.primary-header h2.primary-sub-title {
+      width: 80%;
+    }
+  }
+
+  // Icon header
+  .compliance-header {
+    margin-top: 5em;
+  }
+
+  // Social images
+  .compliance-social {
+    img {
+      margin-top: 1em;
+      max-width: 65%;
+    }
+  }
+
+  // Benefit padding
+  .compliance-benefit {
+    padding: 6em 0;
+  }
+}
+
+
+
+/* xs devices (tablets, 768px and down) */
+@media (max-width: $screen-sm-min - 1) {
+
+  // Page level changes
+  .full-service-hipaa-compliance {
+
+    header.primary-header {
+      min-height: 400px;
+      height: 100vh;
+
+      .header-title-container {
+        margin-top: 40px;
+      }
+
+      h2.primary-sub-title {
+        font-size: 1em;
+        width: 100%;
+      }
+    }
+  }
+
+
+  .compliance-find-out {
+    bottom: 4px;
+  }
+
+  .compliance-social {
+    padding: 3em 0;
+    img {
+      margin-top: 2em;
+      max-width: 100%;
+    }
+  }
+
+  // White testimonial boxes
+  .compliance-testimonial {
+    width: 100%;
+    padding: 0.5em 1em;
+  }
+  .compliance-testimonial-image {
+    display: none;
+  }
+
+  .compliance-model img {
+    display: none;
+  }
+
+  .compliance-cta {
+    margin: 3em 0 4em;
+  }
+
+}
+
