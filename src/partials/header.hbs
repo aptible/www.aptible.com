@@ -36,6 +36,9 @@
         <h2 class="primary-sub-title">{{sub_title}}</h2>
       {{/if}}
     </div>
-    
+
+    {{#is dirname 'dist/compliance'}}
+      {{> compliance_header }}
+    {{/is}}
   </div>
 </header>
