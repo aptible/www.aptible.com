@@ -31,7 +31,7 @@ class TechNetwork
     unless $networkContainer
       $networkContainer = $ '<div class="network-container">'
 
-    $networkContainer.css   
+    $networkContainer.css
       height: vpcTop + 'px'
       width: vpcWidth
       left: vpcLeft + 'px'
@@ -76,7 +76,11 @@ class TechNetwork
 
 
   $(window).resize ->
-    regenerateNetwork()
+    $techAnim = $ '.technology'
+
+    # Only runs on the technology page...
+    if $techAnim.length > 0
+      regenerateNetwork()
 
 
 
@@ -116,7 +120,7 @@ class TechNetwork
 
 
   stop: ->
-    for i in [0...allLines.length]  
+    for i in [0...allLines.length]
       allLines[i].stopActivity()
 
 
