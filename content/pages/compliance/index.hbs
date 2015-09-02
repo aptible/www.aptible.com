@@ -4,13 +4,6 @@ tracked_title: Full Service HIPAA Compliance
 sub_title: Aptible enables your digital health organization to implement an entire HIPAA compliance program for a fraction of the cost.
 id: compliance content-page
 images:
-  risk: /pages/assets/compliance/compliance-risk.png
-  risk_testimonial: /pages/assets/compliance/jim-boss.png
-  policies: /pages/assets/compliance/compliance-policies.png
-  training: /pages/assets/compliance/compliance-training.png
-  training_testimonial: /pages/assets/compliance/jim-boss.png
-  security_ops: /pages/assets/compliance/compliance-security-ops.png
-  model: /pages/assets/compliance/compliance-model.png
   social_kp: /pages/assets/compliance/compliance-logo-kp.png
   social_va: /pages/assets/compliance/compliance-logo-va.png
   social_md: /pages/assets/compliance/compliance-logo-md.png
@@ -47,13 +40,6 @@ cta:
   sub_title: No contracts, no risk.
   sub_title2: Open a development account today with $500 free credit.
   button: Open a Development Account
-newsletter:
-  title: Get the latest news on HIPAA
-  subtitle: "Straight to your inbox, no more than twice a month."
-  placeholder: Enter your email address
-  submit: Sign me up!
-  success: Thanks for signing up!
-  error: Please use a valid email
 ---
 
 
@@ -97,7 +83,7 @@ newsletter:
     <div class="row compliance-benefit compliance-benefit-testimonial">
       <div class="col-md-3 hidden-sm hidden-xs">
         <div class="compliance-benefit-image">
-          <img src="{{images.risk}}" alt="Risk Assessment" />
+          {{> compliance_risk }}
         </div>
       </div>
       <div class="col-md-7 col-md-offset-1 col-sm-12 compliance-benefit-copy">
@@ -131,7 +117,7 @@ newsletter:
       </div>
       <div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs">
         <div class="compliance-benefit-image">
-          <img src="{{images.policies}}" alt="Policies and Procedures" />
+          {{> compliance_policies }}
         </div>
       </div>
     </div>
@@ -140,7 +126,7 @@ newsletter:
     <div class="row compliance-benefit compliance-benefit-testimonial">
       <div class="col-md-3 hidden-sm hidden-xs">
         <div class="compliance-benefit-image">
-          <img src="{{images.training}}" alt="HIPAA training" />
+          {{> compliance_training }}
         </div>
       </div>
       <div class="col-md-7 col-md-offset-1 col-sm-12 compliance-benefit-copy">
@@ -179,7 +165,7 @@ newsletter:
       <p>{{#markdown}}{{security.body}}{{/markdown}}</p>
     </div>
     <div class="col-md-8 col-md-offset-2 col-sm-12">
-      <img src="{{images.model}}" alt="Aptible HIPAA Compliance Model" />
+      {{> compliance_model }}
     </div>
   </div>
 </div>
