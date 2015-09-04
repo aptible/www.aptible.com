@@ -1,4 +1,4 @@
-.full-service-hipaa-compliance {
+.compliance-content-page {
   h2 {
     font-size: 3em;
     letter-spacing: -0.03em;
@@ -172,6 +172,9 @@
     width: 80px;
   }
 }
+.compliance-testimonial-copy {
+  padding-right: 1.7em;
+}
 
 
 .compliance-model {
@@ -198,12 +201,11 @@
 // Responsive tweaks
 //--------------------------------
 
-
-/* Small devices (tablets, 768px to 992px) */
+// Small devices (tablets, 768px to 992px)
 @media (max-width: $screen-md-min) {
 
   // Page level changes
-  .full-service-hipaa-compliance {
+  .compliance-content-page {
     header.primary-header h2.primary-sub-title {
       width: 80%;
     }
@@ -228,14 +230,19 @@
   }
 }
 
+// md devices and lower < 991px wide
+@media (max-width: $screen-sm-max) {
+  .compliance-header-svgs,
+  .compliance-benefit-testimonial-type {
+    display: none;
+  }
+}
 
-
-/* xs devices (tablets, 768px and down) */
-@media (max-width: $screen-sm-min - 1) {
+/* sm devices (tablets, 768px and down) */
+@media (max-width: $screen-xs-max) {
 
   // Page level changes
-  .full-service-hipaa-compliance {
-
+  .compliance-content-page {
     header.primary-header {
       min-height: 400px;
       height: 100vh;
@@ -250,7 +257,6 @@
       }
     }
   }
-
 
   .compliance-find-out {
     bottom: 4px;
@@ -272,6 +278,9 @@
   .compliance-testimonial-image {
     display: none;
   }
+  .compliance-testimonial-copy {
+    padding-right: 0;
+  }
 
   .compliance-model svg {
     display: none;
@@ -280,6 +289,4 @@
   .compliance-cta {
     margin: 3em 0 4em;
   }
-
 }
-
