@@ -2,7 +2,7 @@
 title: Breach Indemnification Agreement
 tracked_title: Breach Indemnification Agreement
 description: "Aptible's default breach indemnification agreement."
-posted: 2015-03-23
+posted: 2015-09-10
 section: Legal
 sub_section: Agreements
 order: 2
@@ -12,14 +12,14 @@ Aptible, Inc.
 =============
 Breach Indemnification Agreement
 --------------
-Version 1.0 - March 2015
+Version 1.1 - September 2015
 
 This Aptible Breach Indemnification Agreement (**"BIA"**) between Aptible, Inc. (**"Aptible"**, **"us"** or **"we"**) and users of the Aptible Services (**"you"**) governs the use of the Aptible Services under the provisions of the Aptible Terms of Service (the **"Terms"**).
 
 Unless otherwise provided herein, this BIA is subject to the provisions of the Terms. We reserve the right to change the terms of this BIA in accordance with the Terms.
 
 ### 1. Applicability  
-This BIA applies separately to each of your PHI-Ready Accounts, as that term is defined in your Business Associate Agreement (**"BAA"**) with Aptible. This BIA does not apply to Development Accounts, or any other account for which you do not have a BAA in place with Aptible or have not applied the security controls and configurations required by the BAA.
+This BIA applies separately to each of your Dedicated Environments, as that term is defined the Terms. This BIA does not apply to shared environments, Development Accounts, or any other environment or account for which you do not have a Business Associate Agreement (**"BAA"**) in place with Aptible or have not applied the security controls and configurations required by the BAA.
 
 ### 2. Definitions
 Capitalized words and phrases have the meaning specified in the Terms. 
