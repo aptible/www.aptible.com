@@ -2,7 +2,7 @@
 title: Terms of Service
 tracked_title: Terms of Service
 description: "Aptible's terms of service"
-posted: 2015-04-02
+posted: 2015-09-10
 section: Legal
 sub_section: Agreements
 order: 0
@@ -22,7 +22,7 @@ Aptible, Inc.
 =============
 Terms of Service  
 ----------------
-Version 2.5 - April 2015
+Version 2.6 - September 2015
 
 Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**). 
 
@@ -36,7 +36,7 @@ You acknowledge and agree that, as provided in greater detail in this Agreement:
 
 - The Services are licensed, not sold to you, and that you may use the Services only as set forth in this Agreement;  
 - The Services are provided "as is" without warranties of any kind, and Aptible’s liability to you is limited;  
-- You are solely responsible for protecting the privacy and legal rights of your End Users;  
+- You are solely responsible for protecting the privacy and legal rights of your End Users, except as provided for in a Business Associate Agreement or Data Use Agreement between you and Aptible;  
 - You are solely responsible for exporting Your Content and your Applications from the Services prior to closing your Aptible account; and  
 - Disputes arising hereunder will be resolved by binding arbitration, and **BY ACCEPTING THIS AGREEMENT, YOU AND APTIBLE ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION.** YOU AGREE TO GIVE UP YOUR RIGHT TO GO TO COURT to assert or defend your rights under this contract (except for matters that may be taken to small claims court). Your rights will be determined by a NEUTRAL ARBITRATOR and NOT a judge or jury and your claims cannot be brought as a class action. Please review the Arbitration Agreement in Section 19 below for the details regarding your agreement to arbitrate any disputes with Aptible.
 
@@ -59,9 +59,11 @@ In addition, please see our policy on [Responsible Disclosure] of security vulne
 You must be at least eighteen (18) years of age to use the Services. By agreeing to this Agreement, you represent and warrant to us that: (a) you are at least eighteen (18) years of age; (b) you have not previously been suspended or removed from the Services; and (c) your registration and your use of the Services is in compliance with all applicable laws and regulations. If you are using the Services on behalf of an entity, organization, or company, you represent and warrant that you have the authority to bind that organization to this Agreement and you agree to be bound by this Agreement on behalf of that organization.  Aptible may, in its sole discretion, refuse to offer the Services to any person or entity, and may change its eligibility criteria at any time.
 
 ### 2. Your Account and Use of the Services
-To access the Services, you must create an Aptible account. When you register for the account, you may be required to provide us with some information about yourself, such as your phone number or other contact information. You agree that the information you provide to us is accurate and that you will keep it accurate and up-to-date at all times. You are responsible for all activities that occur under your account regardless of whether the activities are undertaken by you, your employees or a third party (including your contractors or agents). You may create sub-accounts for users within your organization. Each account and sub-account is protected by a password and/or a set of authorization keys. You are responsible for maintaining the security of your passwords and authorization keys. Aptible and our affiliates are not responsible for unauthorized access to your account, except to the extent caused by our breach of this Agreement.
+To access the Services, you must create an Aptible user account. You may also need to create an Aptible organization account, if one does not exist already.
 
-If you do not abide by your obligations, or if you engage in unauthorized uses, we may determine your account not to be in good standing and may take Remedial Action pursuant to Section 5. Good standing is determined at Aptible's sole discretion. 
+When you register for the accounts, you may be required to provide us with some information about yourself, such as your phone number or other contact information. You agree that the information you provide to us is accurate and that you will keep it accurate at all times. You are responsible for all activities that occur under your accounts, regardless of whether the activities are undertaken by you, your employees or a third party (including your contractors or agents). You may create additional user accounts for users within your organization. Each Aptible user account is protected by credentials. You are responsible for maintaining the security of your credentials. Aptible and our affiliates are not responsible for unauthorized access to your account, except to the extent caused by our breach of this Agreement.
+
+If you do not abide by your obligations, or if you engage in unauthorized uses, we may determine your account to be not in good standing and may take Remedial Action pursuant to Section 5. Good standing is determined at Aptible's sole discretion.
 
 APTIBLE RESERVES THE RIGHT TO DISABLE ANY USER'S ACCESS TO ANY PART OF THE SERVICE, AND TO TERMINATE ANY USER'S ACCOUNT.
 
@@ -76,7 +78,7 @@ You may terminate your account and this Agreement at any time in accordance with
 5. You will not attempt to disrupt the Services.  
 6. You will abide by the [Acceptable Use Policy].  
 7. You will abide by the restrictions in our [Support Policy] and [Security Policy] on how the Services may be implemented.  
-8. You will remit payment timely for the services, as specified in the [Fees and Pricing Policy] and any Billing Agreement you may execute.
+8. You will remit payment timely for the services, as specified in the [Fees and Pricing Policy] and any purchase order you may execute.
 
 **B. Unauthorized uses.** You are authorized access to the Services only to the extent necessary to develop and run Applications. You will not, and will not allow third parties under your control to:
 
@@ -139,7 +141,7 @@ We reserve the right to take Remedial Action if you are in breach of this Agreem
 ### 6. Intellectual Property
 **A. Content.** You are solely responsible for the development, operation, maintenance, and use of Your Content. For example, you are solely responsible for:
 
-1. Backing up and securing Content at the Application level, except as delineated in a Business Associate Agreement you may enter into with us;  
+1. Backing up and securing Content at the Application level, except as delineated in a Business Associate Agreement you may enter into with us, or to the extent backups or security controls are provided as part of the Services;  
 2. Compliance of Content with the [Acceptable Use Policy], other Policies, and any applicable laws or regulations;  
 3. Any claims relating to Your Content; and  
 4. Properly handling and processing notices sent to you (or any of your affiliates) by any person claiming that Your Content violates such person’s rights, including notices pursuant to the Digital Millennium Copyright Act.
@@ -220,7 +222,7 @@ We reserve the right, at our discretion, to change these Terms, as well as the P
 **B. Your Obligations to Us.** You agree that you will be responsible for your use of the Services, and you agree to defend and indemnify Aptible and its officers, directors, employees, consultants, affiliates, subsidiaries and agents (together, the "**Aptible Entities**") from and against every claim, liability, damage, loss, and expense, including reasonable attorneys' fees and costs, arising out of or in any way connected with: (a) your access to, use of, or alleged use of, the Services; (b) your violation of any portion of this Agreement, any representation, warranty, or agreement referenced in this Agreement, or any applicable law or regulation; (c) your violation of any third-party right, including any intellectual property right or publicity, confidentiality, other property, or privacy right; or (d) any dispute or issue between you and any third party. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you (without limiting your indemnification obligations with respect to that matter), and in that case, you agree to cooperate with our defense of that claim. The assumption of such defense or control by us, however, shall not excuse any of your indemnity obligations.
 
 ### 14. EXCLUSION OF WARRANTIES
-EXCEPT AS EXPRESSLY PROVIDED FOR HEREIN, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APTIBLE DOES NOT MAKE ANY OTHER WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR USE AND NONINFRINGEMENT. APTIBLE IS NOT RESPONSIBLE OR LIABLE FOR THE DELETION OF OR FAILURE TO STORE ANY CONTENT AND OTHER COMMUNICATIONS MAINTAINED OR TRANSMITTED THROUGH USE OF THE SERVICE. YOU ARE SOLELY RESPONSIBLE FOR SECURING AND BACKING UP YOUR APPLICATION AND CUSTOMER DATA. APTIBLE DOES NOT WARRANT THAT THE OPERATION OF THE SERVICES WILL BE ERROR-FREE, TIMELY, SECURE, OR UNINTERRUPTED. THE SERVICES ARE NOT DESIGNED, MANUFACTURED, OR INTENDED FOR HIGH RISK ACTIVITIES. YOU UNDERSTAND THAT YOU USE THE SERVICES AT YOUR OWN DISCRETION AND RISK.  
+EXCEPT AS EXPRESSLY PROVIDED FOR HEREIN, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APTIBLE DOES NOT MAKE ANY OTHER WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR USE AND NONINFRINGEMENT. APTIBLE IS NOT RESPONSIBLE OR LIABLE FOR THE DELETION OF OR FAILURE TO STORE ANY CONTENT AND OTHER COMMUNICATIONS MAINTAINED OR TRANSMITTED THROUGH USE OF THE SERVICE. YOU ARE SOLELY RESPONSIBLE FOR SECURING AND BACKING UP YOUR APPLICATION AND CUSTOMER DATA, EXCEPT WHERE BACKUP OR SECURITY CONTROLS ARE EXPRESSLY PROVIDED AS FEATURES OF THE SERVICES. APTIBLE DOES NOT WARRANT THAT THE OPERATION OF THE SERVICES WILL BE ERROR-FREE, TIMELY, OR UNINTERRUPTED. APTIBLE DOES NOT WARRANT THAT THE SERVICES WILL BE SECURE, EXCEPT AS EXPRESSLY DOCUMENTED. THE SERVICES ARE NOT DESIGNED, MANUFACTURED, OR INTENDED FOR HIGH RISK ACTIVITIES. YOU UNDERSTAND THAT YOU USE THE SERVICES AT YOUR OWN DISCRETION AND RISK.
 
 NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE SERVICES OR ANY MATERIALS OR CONTENT AVAILABLE THROUGH THE SERVICES WILL CREATE ANY WARRANTY REGARDING ANY OF THE APTIBLE ENTITIES OR THE SERVICES THAT IS NOT EXPRESSLY STATED IN THIS AGREEMENT. YOU ASSUME ALL RISK FOR ANY DAMAGE THAT MAY RESULT FROM YOUR USE OF OR ACCESS TO THE SERVICES AND ANY MATERIALS OR CONTENT AVAILABLE THROUGH THE SERVICES. YOU UNDERSTAND AND AGREE THAT YOU USE THE SERVICES, AND USE, ACCESS, DOWNLOAD, OR OTHERWISE OBTAIN MATERIALS OR CONTENT THROUGH THE SERVICE AND ANY ASSOCIATED SITES OR SERVICES, AT YOUR OWN DISCRETION AND RISK, AND THAT YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR PROPERTY (INCLUDING YOUR COMPUTER SYSTEM OR MOBILE DEVICE USED IN CONNECTION WITH THE SERVICE), OR THE LOSS OF DATA THAT RESULTS FROM THE USE OF THE SERVICE OR THE DOWNLOAD OR USE OF THAT MATERIAL OR CONTENT.
 
@@ -310,6 +312,8 @@ This Agreement supersedes all other agreements between the parties relating to i
 
 **"Content"** means software, data, text, audio, video, images or other content.
 
+**"Dedicated Environment"** means a dedicated Aptible environment running on in a dedicated network for which you have a valid, signed Business Associate Agreement with Aptible and have applied the required security configurations and controls as specified in that agreement.
+
 **"End User"** means any individual or entity that directly or indirectly through another user:
 
 1. Accesses or uses Your Content; or
@@ -320,8 +324,6 @@ The term **"End User"** does not include individuals or entities when they are a
 **"Fees and Pricing Policy"** means the policy currently available at https://www.aptible.com/legal/fees_and_pricing.html, as it may be updated by us from time to time.
 
 **"High Risk Activity"** means any activity where the failure of a supporting computer system could lead to death, personal injury, or severe physical or environmental damage, such as the operation of nuclear facilities, aircraft navigation, or direct life support systems.
-
-**"PHI-Ready Account"** means a non-Development Aptible account for which you have a valid, signed Business Associate Agreement with Aptible and have applied the required security configurations and controls as specified in that agreement.
 
 **"Privacy Policy"** means the policy currently available at https://www.aptible.com/legal/privacy.html, as it may be updated by us from time to time.
 

@@ -2,7 +2,7 @@
 title: Fees & Pricing Policy
 tracked_title: Pricing Policy
 description: "Aptible's fees and pricing policy."
-posted: 2015-04-02
+posted: 2015-09-10
 section: Legal
 sub_section: Policies
 ---
@@ -11,18 +11,15 @@ Aptible, Inc.
 =============
 Fees & Pricing Policy
 --------------
-Version 2.2 - April 2015
+Version 3.0 - September 2015
 
 This policy outlines how Aptible determines fees and charges for services. It is incorporated by reference into the Aptible Terms of Service.
 
-### Organizations
-An Organization represents a potentially regulated entity, like a business or a non-profit. All Aptible user accounts are managed through Organizations. When you sign up for Aptible, you may create a new Organization. Each Organization may have one or more accounts associated with it. **Only PHI-Ready Accounts with valid business associate agreements may be used to create, receive, transmit, or maintain regulated data.**
+### Base Fee
+Each Aptible account has a base fee. (For Development Accounts, the base fee is $0.) The base fee may include deployment platform resources, as specified in your account agreement. You may use those included resources across any Aptible stack or environment. You pay the base fee monthly, in advance. Discounts are available for prepaid plans.
 
-### Development Accounts
-Fees and charges for Development Accounts are based solely on the resources used. Development Accounts have no monthly minimum fees. Current pricing information is located at https://www.aptible.com/pricing.
-
-### Other Accounts
-Fees and charges for non-Development accounts are based on the resources used, subject to a monthly or annual minimum. You will execute separate billing agreements that specify fees and terms for your non-Development accounts. You will be billed the minimum at the beginning of each month, along with fees for any additional resources consumed during the previous month. Current pricing information is located at https://www.aptible.com/pricing.
+### Usage Fees
+At the end of each month, if you used more resources than are included in your plan, you simply pay for what you use. The spot usage prices are located at https://www.aptible.com/pricing.
 
 ### Late Payments
 Late payments may bear interest at the rate of 1.5% per month (or the highest rate permitted by law, if less) determined and compounded daily from the date due until the date paid. You will reimburse any costs or expenses (including, but not limited to, reasonable attorneys’ fees) incurred by Aptible to collect any amount that is not paid when due. Amounts due from you under may not be withheld or offset by you against amounts due to you for any reason. All amounts payable under the Aptible Terms of Service are denominated in United States dollars, and you will pay all such amounts in United States dollars.
