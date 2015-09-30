@@ -28,6 +28,12 @@
       </div>
     </nav>
 
+    {{#is dirname 'dist/compliance'}}
+      {{> compliance_header }}
+    {{/is}}
+    {{#is dirname 'dist'}}
+      {{> home_hero }}
+    {{/is}}
     <div class="container header-title-container">
       {{#if title}}
         <h1 class="primary-title">{{title}}</h1>
@@ -36,9 +42,5 @@
         <h2 class="primary-sub-title">{{sub_title}}</h2>
       {{/if}}
     </div>
-
-    {{#is dirname 'dist/compliance'}}
-      {{> compliance_header }}
-    {{/is}}
   </div>
 </header>
