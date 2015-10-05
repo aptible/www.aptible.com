@@ -8,26 +8,6 @@ posted: 2015-10-01
 section: Blog
 posts: true
 ---
-<style>
-  td, th {
-    padding: 5px;
-  }
-  th {
-    border-bottom: 1px solid $color-border-gray;
-  }
-  tr:nth-child(even) td {
-    background-color: #efefef;
-  }
-  .simple-ranking-table {
-   float: left;
-   width: 50%;
-  }
-  .simple-ranking-table td:first-of-type {
-     padding-right: 20px;
-     text-align: right;
-  }
-</style>
-
 *This is the first in a series of blog posts exploring the state of the digital health landscape from a technical perspective.*
 
 Working exclusively with companies in the digital health space, we are regularly asked about the technical trends in the space and one of the more common questions goes something like, “I’m thinking about building my new app in Go.  Are you seeing other companies use it?”  As a deployment platform for nearly 100 (as of October 2015) digital health companies with over 550 deployed applications, we have visibility into a fairly large sample.
