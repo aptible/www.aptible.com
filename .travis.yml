@@ -5,5 +5,5 @@ cache:
   - node_modules
 script:
 - PATH=$HOME/.local/bin:$PATH script/travis-deploy.sh
-env:
-  secure: tswdehR8ZUZZjLraFeD32gSj0X6kZQriEAW+el+wJz8nfyvbhFtW11KXfY3hQI939Up0fgKd5MtXFgEnEFXtqS/QgF7Sm7uwcr7lASRIYn2VvFLqgALCWx336dDWhH1pYCoOhH7j0a4Dv7EMXCcr/Ne0ymZbY2wVts/gK+Gnrzc=
+env: # IAM: travis-s3
+  secure: Q9zRLp8Iyl6yvs1jaF0Q6LqoEErymjVungepcjDeS1nvfA8Ag0aCO0s9iujZtKKrNSZJsX42862QAFYSsht3Et3PwaUgc7S+8EVN77IFFu3Grc2k5gNDSwcVSEM1VsGtoqpZOAuibZHnI7Pv6+e+obCAYUHPeyorzDJGOeTNV1Y=
