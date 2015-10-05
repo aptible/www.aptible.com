@@ -1,20 +1,18 @@
 ---
-title: Digital Health’s Most Popular Frameworks
-excerpt: "Working exclusively with companies in the digital health space, we are regularly asked about the technical trends in the space and one of the more common questions goes something like, “I’m thinking about building my new app in Go.  Are you seeing other companies use it?”"
+title: The Most Popular Languages in Digital Health
+excerpt: "Do you ever wonder how other healthcare companies build their technology?"
 author_name: Sam Yount
 author_email: sam@aptible.com
 author_id: sam
-posted: 2015-10-01
+posted: 2015-10-06
 section: Blog
 posts: true
 ---
 *This is the first in a series of blog posts exploring the state of the digital health landscape from a technical perspective.*
 
-Working exclusively with companies in the digital health space, we are regularly asked about the technical trends in the space and one of the more common questions goes something like, “I’m thinking about building my new app in Go.  Are you seeing other companies use it?”  As a deployment platform for nearly 100 (as of October 2015) digital health companies with over 550 deployed applications, we have visibility into a fairly large sample.
+Working exclusively with companies in digital health, we are regularly asked about technical trends. One common question is, "What types of languages and frameworks do you see the most?"  As a deployment platform for nearly 100 (as of October 2015) digital health companies with over 550 deployed applications, we have some interesting data.
 
-Our methodology for the survey is fairly simple.  We make language determinations based on  Git repos deployed on Aptible.  We have made an effort to only include the primary production applications and exclude any helper or logging apps--the [ELK logging stack](https://www.elastic.co/products) is popular, but that doesn’t tell you much about how applications are being built.
-
-Finally, a caveat, we make no claims about this being the de facto survey of the digital health space.  It’s only as accurate as the data source.  
+For this survey, we examined the primary language for apps deployed on Aptible. We have tried to only include primary production apps and exclude any helper or logging apps (e.g., the [ELK logging stack](https://www.elastic.co/products) is a popular utility to run on Aptible, but doesn’t us much about the main app.) Finally, of course, these data only represent apps deployed on Aptible, so  ASP.NET-specific languages are not represented.
 
 <div id="piechart"></div>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -46,11 +44,11 @@ Finally, a caveat, we make no claims about this being the de facto survey of the
   }
 </script>
 
-As this is the first time we have collected this data, we can’t make any definitive claims about trends.  That said there are a couple similar surveys done on broader audiences, [RedMonk survey on popular programming languages](http://redmonk.com/sogrady/2015/07/01/language-rankings-6-15/) and [BuiltWith’s Framework Usage Statistics](http://trends.builtwith.com/framework) The differences are somewhat illustrative.  
+As this is the first time we have collected this data, we can’t make any definitive claims about trends. There are other sources of data for the general tech community, such as [RedMonk's survey](http://redmonk.com/sogrady/2015/07/01/language-rankings-6-15/) on popular programming languages and [BuiltWith’s Framework Usage Statistics](http://trends.builtwith.com/framework).
 
 <table class="simple-ranking-table">
   <thead>
-    <tr><th colspan="2">RedMonk Rank</th></tr>
+    <tr><th colspan="2">RedMonk Language Ranks</th></tr>
   </thead>
   <tbody>
     <tr><td>1</td><td>JavaScript</td></tr>
@@ -72,7 +70,7 @@ As this is the first time we have collected this data, we can’t make any defin
 </table>
 <table class="simple-ranking-table clearfix">
   <thead>
-    <tr><th colspan="2">BuiltWith Top 10k</th></tr>
+    <tr><th colspan="2">BuiltWith Top 10k - Frameworks</th></tr>
   </thead>
   <tbody>
     <tr><td>1</td><td>PHP</td>
@@ -92,3 +90,5 @@ As this is the first time we have collected this data, we can’t make any defin
     <tr><td>15</td><td>Telerik Controls</td>
   </tbody>
 </table>
+
+Ruby and JavaScript dominate the Aptible sample, which makes sense because Aptible is used primarily to deploy web apps and mobile APIs. PHP is also popular, as it is on the open web. Java and PHP are used less frequently on Aptible than on the open web. To speculate, this may be because many Aptible apps were built recently, whereas top 10k sites may be older, with more legacy code.
