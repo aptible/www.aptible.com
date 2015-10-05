@@ -4,8 +4,6 @@ tracked_title: HIPAA Compliance for Digital Health
 sub_title: Compliance tools for building software in the cloud
 id: compliance content-page
 images:
-  risk_testimonial: /pages/assets/compliance/ian.png
-  training_testimonial: /pages/assets/compliance/ian.png
   social_kp: /pages/assets/compliance/compliance-logo-kp.png
   social_va: /pages/assets/compliance/compliance-logo-va.png
   social_md: /pages/assets/compliance/compliance-logo-md.png
@@ -24,9 +22,6 @@ risk_assessment:
     sub_title: Model and manage threats
     body: |-
       With Aptible, your HIPAA-mandated risk assessment maps to your technology stack in real time. Our risk analysis methodology is designed for high-security environments, and was developed in conjunction with the Department of Defense and the Office of the Director of National Intelligence. Having both your technology stack and compliance program centralized makes the process of maintaining your HIPAA documentation more accurate and efficient.
-    testimonial: |-
-      Aptible takes the pain out of HIPAA compliance. We saved a huge amount of time and money, and avoided risk by partnering with them.
-    author: Ian Yamey - CTO, PolicyGenius
 policies:
     title: Policies & Procedures
     sub_title: HIPAA policies tailored to your company
@@ -42,6 +37,26 @@ cta:
   sub_title: No contracts, no risk.
   sub_title2: Open a Development Account today and get $500 in usage credits.
   button: Open a Development Account
+#
+# Testimonials
+# Leave image, & copy blank to not render a testimonial
+risk_testimonial:
+  image: /pages/assets/compliance/ian.png
+  author: Ian Yamey - CTO, PolicyGenius
+  copy: |-
+    Aptible takes the pain out of HIPAA compliance. We saved a huge amount of time and money, and avoided risk by partnering with them.
+  # (read more link is optional, perhpas for a related blog post?)
+  read_more:
+policies_testimonial:
+  image:
+  author:
+  copy:
+  read_more:
+training_testimonial:
+  image:
+  author:
+  copy:
+  read_more:
 ---
 
 {{! white background social proof }}
@@ -107,18 +122,21 @@ cta:
         <div class="long-dash"></div>
         <p>{{#markdown}}{{risk_assessment.body}}{{/markdown}}</p>
 
-        {{! Customer Testimonial }}
-        <div class="compliance-testimonial">
-          <div class="compliance-testimonial-image">
-            <img src="{{images.risk_testimonial}}" alt="Risk Assessment" />
+        {{#and risk_testimonial.image risk_testimonial.copy}}
+          {{! Customer Testimonial }}
+          <div class="compliance-testimonial">
+            <div class="compliance-testimonial-image">
+              <img src="{{risk_testimonial.image}}" alt="Risk Assessment" />
+            </div>
+            <div class="compliance-testimonial-copy">
+              {{#markdown}}{{risk_testimonial.copy}}{{/markdown}}
+              <h5 class="hinted">{{risk_testimonial.author}}</h5>
+              {{#if risk_testimonial.read_more}}
+                <a href="{{risk_testimonial.read_more}}"><h5>Read More &rarr;</h5></a>
+              {{/if}}
+            </div>
           </div>
-          <div class="compliance-testimonial-copy">
-            {{#markdown}}{{risk_assessment.testimonial}}{{/markdown}}
-            <h5 class="hinted">{{risk_assessment.author}}</h5>
-            <a href="#"><h5>Read More &rarr;</h5></a>
-          </div>
-        </div>
-
+        {{/and}}
       </div>
     </div>
 
@@ -129,6 +147,21 @@ cta:
         <h2>{{policies.title}}</h2>
         <div class="long-dash"></div>
         <p>{{#markdown}}{{policies.body}}{{/markdown}}</p>
+        {{#and policies_testimonial.image policies_testimonial.copy}}
+          {{! Customer Testimonial }}
+          <div class="compliance-testimonial">
+            <div class="compliance-testimonial-image">
+              <img src="{{policies_testimonial.image}}" alt="Policies & Procedures" />
+            </div>
+            <div class="compliance-testimonial-copy">
+              {{#markdown}}{{policies_testimonial.copy}}{{/markdown}}
+              <h5 class="hinted">{{policies_testimonial.author}}</h5>
+              {{#if policies_testimonial.read_more}}
+                <a href="{{policies_testimonial.read_more}}"><h5>Read More &rarr;</h5></a>
+              {{/if}}
+            </div>
+          </div>
+        {{/and}}
       </div>
       <div class="col-md-3 col-md-offset-1">
         <div class="compliance-benefit-testimonial-type compliance-benefit-image">
@@ -149,18 +182,21 @@ cta:
         <h2>{{training.title}}</h2>
         <div class="long-dash"></div>
         <p>{{#markdown}}{{training.body}}{{/markdown}}</p>
-
-        {{! Customer Testimonial }}
-        <div class="compliance-testimonial">
-          <div class="compliance-testimonial-image">
-            <img src="{{images.risk_testimonial}}" alt="Risk Assessment" />
+        {{#and training_testimonial.image training_testimonial.copy}}
+          {{! Customer Testimonial }}
+          <div class="compliance-testimonial">
+            <div class="compliance-testimonial-image">
+              <img src="{{training_testimonial.image}}" alt="Training" />
+            </div>
+            <div class="compliance-testimonial-copy">
+              {{#markdown}}{{training_testimonial.copy}}{{/markdown}}
+              <h5 class="hinted">{{training_testimonial.author}}</h5>
+              {{#if training_testimonial.read_more}}
+                <a href="{{training_testimonial.read_more}}"><h5>Read More &rarr;</h5></a>
+              {{/if}}
+            </div>
           </div>
-          <div class="compliance-testimonial-copy">
-            {{#markdown}}{{risk_assessment.testimonial}}{{/markdown}}
-            <h5 class="hinted">{{risk_assessment.author}}</h5>
-            <a href="#"><h5>Read More &rarr;</h5></a>
-          </div>
-        </div>
+        {{/and}}
       </div>
     </div>
   </div>
