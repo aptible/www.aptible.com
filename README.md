@@ -40,6 +40,14 @@ grunt release:staging
 Note: these tasks also run `bundle install`, `npm install`, and `bower install`
 to ensure all dependencies are included in deploys.
 
+#### Continuous Deployment
+
+Note that deployment to staging happens automatically on every successful merge to master. This requires the encrypted AWS credentials for an authorized user to be stored in the .travis.yml configuration file.
+
+To update these credentials at any time, run:
+
+    travis encrypt -r aptible/www.aptible.com --add env AWS_ACCESS_KEY_ID=... AWS_SECRET_ACCESS_KEY=...
+
 Copyright &copy; 2015 Aptible
 
 [<img src="https://secure.gravatar.com/avatar/566f0093e212d9b808c0cece8a32480e?s=60" style="border-radius: 50%;" alt="@gib" />](https://github.com/gib)

@@ -44,6 +44,26 @@
     text-align: center;
   }
 
+  td, th {
+    padding: 5px;
+  }
+  th {
+    border-bottom: 1px solid $color-border-gray;
+  }
+  tr:nth-child(even) td {
+    background-color: #efefef;
+  }
+
+}
+
+// Note, floating two tables in this case. Second has class of "clearfix".
+.simple-ranking-table {
+  float: left;
+  width: 50%;
+  td:first-of-type {
+    padding-right: 20px;
+    text-align: right;
+  }
 }
 
 .post-meta {
