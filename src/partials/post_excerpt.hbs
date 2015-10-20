@@ -11,7 +11,7 @@
         <ul class="post-meta">
           <li>{{ gravatar this.data.author_email 'sm' }}</li>
           <li class="author"><a href="{{ author_path this.data }}">{{ this.data.author_name }}</a></li>
-          <li class="date">{{ moment this.data.posted format="D MMMM YYYY" }}</li>
+          <li class="date">{{ moment this.data.posted utc=null format="D MMMM YYYY" }}</li>
         </ul>
       </footer>
     </article>
