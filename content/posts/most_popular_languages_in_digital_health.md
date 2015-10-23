@@ -12,7 +12,7 @@ posts: true
 
 Working exclusively with companies in digital health, we are regularly asked about technical trends. One common question is, "What types of languages and frameworks do you see the most?"  As a deployment platform for nearly 100 (as of October 2015) digital health companies with over 550 deployed applications, we have some interesting data.
 
-For this survey, we examined the primary language for apps deployed on Aptible. We have tried to only include primary production apps and exclude any helper or logging apps (e.g., the [ELK logging stack](https://www.elastic.co/products) is a popular utility to run on Aptible, but doesn’t us much about the main app.) Finally, of course, these data only represent apps deployed on Aptible, so  ASP.NET-specific languages are not represented.
+For this survey, we examined the primary language for apps deployed on Aptible. We have tried to only include primary production apps and exclude any helper or logging apps (e.g., the [ELK logging stack](https://www.elastic.co/products) is a popular utility to run on Aptible, but doesn’t tell us much about the main app.) Finally, of course, these data only represent apps deployed on Aptible, so  ASP.NET-specific languages are not represented.
 
 <div id="piechart"></div>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
