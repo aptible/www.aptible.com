@@ -65,4 +65,4 @@ As this is the first time we have collected this data, we can’t make any defin
   </tbody>
 </table>
 
-The most interesting difference in these lists is with Redis.  The Aptible data is based on web and mobile applications while the DB-Englie list is based on a much broader variety of factors.  So Redis may make more sense for the types of applications currently "hot" in the health tech world.  It'll be interesting to see how the list changes and whether the Aptible list is a leading indicator of rapidly growing Redis popularity.
+The most interesting difference in these lists is with Redis.  The Aptible data is based on web and mobile applications while the DB-Engine list is based on a much broader variety of factors.  So Redis may make more sense for the types of applications currently "hot" in the health tech world.  It'll be interesting to see how the list changes and whether the Aptible list is a leading indicator of rapidly growing Redis popularity.
