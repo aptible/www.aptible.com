@@ -14,7 +14,7 @@ author_id: sam
   <div class="post-index author-archive">
     <div class="row section">
       <div class="col-sm-12">
-        {{#withSort pages 'data.posted' }}
+        {{#withSort pages 'data.posted' dir='desc'}}
           {{#is data.section "Blog"}}
             {{#is data.author_id 'sam' }}
               {{> post_excerpt}}

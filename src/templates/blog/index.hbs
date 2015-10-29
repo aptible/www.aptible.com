@@ -8,11 +8,11 @@ section: Company
   <div class="post-index">
     <div class="row section">
       <div class="col-sm-12">
-        {{#each pages}}
+        {{#withSort pages 'data.posted' dir='desc'}}
           {{#is data.section "Blog"}}
             {{> post_excerpt}}
           {{/is}}
-        {{/each}}
+        {{/withSort}}
       </div>
     </div>
   </div>
