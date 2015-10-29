@@ -8,7 +8,7 @@ posted: 2015-10-27
 section: Blog
 posts: true
 ---
-*This is the second in a series of blog posts exploring the state of the digital health landscape from a technical perspective.  Our first post on [popular languages] (https://www.aptible.com/blog/most_popular_languages_in_digital_health.html) has already proven to be one of our most read blog posts.  If there are other analysis you would like to see on the state of digital health, please get [in touch] (https://www.aptible.com/company/contact/)*
+*This is the second in a series of blog posts exploring the state of the digital health landscape from a technical perspective.  Our first post on [popular languages](https://www.aptible.com/blog/most_popular_languages_in_digital_health.html) has already proven to be one of our most read blog posts.  If there are other analysis you would like to see on the state of digital health, please get [in touch](https://www.aptible.com/company/contact/)*
 
 One of the things we have noticed in working with a variety of digital health companies is that there is much more willingness to explore database technologies when architechting a new application.  While developing in a new language typically takes a serious investment and will greatly slow initial progress, a different database variant may present lots of benefits with a minimal learning curve.  As such, I expect we'll see some interesting trends emerge as we repeat this survey over the coming months and years.
 
@@ -32,8 +32,6 @@ For this survey, we examined the database layer for applications deployed on Apt
 
     var options = {
       colors: ['#dc3912', '#36c', '#f90', '#109618', '#909', '#0099c6'],
-      //colors: ['#054d9f', '#0762cb', '#0865cf', '#669ddc', '#adc0d7', '#cce1f9'],
-      //colors: ['#cc342d', '#80bd01', '#ffd343', '#4f5b93', '#333', '#375eab'],
       height: 350,
       pieSliceText: 'label',
       tooltip: { text: 'percentage' }
@@ -44,9 +42,9 @@ For this survey, we examined the database layer for applications deployed on Apt
   }
 </script>
 
-As this is the first time we have collected this data, we can’t make any definitive claims about trends. However, DB-Engine is a great source for [trends in database popularity]  (http://db-engines.com/en/ranking). [Their methodology] (http://db-engines.com/en/ranking_definition), however is much squishier than our directly measured metrics.
+As this is the first time we have collected this data, we can’t make any definitive claims about trends. However, DB-Engine is a great source for [trends in database popularity](http://db-engines.com/en/ranking). [Their methodology](http://db-engines.com/en/ranking_definition), however is much squishier than our directly measured metrics.
 
-<table class="simple-ranking-table">
+<table style="margin: 0 auto 20px auto;">
   <thead>
     <tr><th colspan="2">DB-Engine October 2015 Ranking</th></tr>
   </thead>
