@@ -16,37 +16,16 @@ faq:
           We have two core products: Our deployment platform is a container service built on Amazon Web Services. It helps your engineers scale modern web architecture in secure, private, PHI-ready cloud environments. 
 
           Our compliance platform provides comprehensive risk, security, and HIPAA compliance management.
-
-  - section: Glossary
-    section_slug: glossary
-    questions:
-      - question: Container
+          
+       - question: What are the benefits of using Aptible?
         answer: |
-          A container is a lightweight virtual machine. Aptible uses Docker to build and run containers. Standard containers are allocated 1 GB of RAM. Higher RAM configurations are available upon request.
-
-      - question: Disk
-        answer: |
-          Disk storage refers to the underlying volumes used for database storage. Disk storage is enrypted at the filesystem level with 192-bit AES encryption. Aptible manages the encryption keys for you. Disk pricing includes nightly backups for 90 days and monthly backups for 6 years. Backups are stored in a geographic region separate from where your database runs.
-
-      - question: Domain
-        answer: |
-          A domain, or "VHOST," is an SSL/TLS endpoint. Domains are attached to a service and consist of a DNS service, an AWS Elastic Load Balancer, and an NGiNX container. 
-
-          To configure a VHOST, register a domain and procure an SSL certificate. (Wildcard, subdomain, and EV certificates all work.) After loading your VHOST with the certificate bundle and private key, you can point your domain's DNS to the endpoint. 
-
-          "Internal" VHOSTs can be used to expose a private service to other services on the same stack. Internal VHOSTs receive private IP addresses and cannot be accessed from the Internet.
-
-      - question: Service
-        answer: |
-          A service is comprised of one or more containers running the same process. By adding containers to a service, you can easily and quickly scale. Services run in your stack's app layer (see our [Reference Architecture Diagram](/pages/assets/aptible-reference-architecture.pdf)).
-
-      - question: Environment
-        answer: |
-          Environments are used to manage permissions. PHI-ready environments run on dedicated stacks. Dev environments run on shared stacks and must not handle PHI. Multiple environments on the same stack do not provide network isolation. 
-
-      - question: Stack
-        answer: |
-          The underlying infrastructure we use to build your environments. Each stack consists of an AWS VPC, EC2 instances, Elastic Load Balancers, Elastic Block Store volumes, and the Aptible platform utilities. Stacks provide network isolation. 
+          Aptible offers a HIPAA Platform as a Service (PaaS).
+          
+          With our deployment plaform we manage servers, network topology, security, backups, encryption, and organizational permissions so your engineers can focus on building great products.  Our operations team monitors your stack 24/7 and resolves most issues before you are even aware of them.
+          
+          Each PHI­ready Aptible stack is deployed into a secure, managed network. As a customer, you receive your own AWS Virtual Private Cloud, with dedicated infrastructure resources.
+  
+          Our managed accounts also include the compliance platform. As part of the compliance paltform we produce custom HIPAA documentation that's closely tied to your company and technology stack.  As your company grows and your technology changes, your documention changes along with it.  We handle HIPAA training for your entire team.  We also support your team with all HIPAA audits (both provider and HHS).
 
   - section: Pricing
     section_slug: pricing
@@ -110,6 +89,37 @@ faq:
 
           If you want both separation and the best possible performance, you can provision additional dedicated stacks for your staging environments.
 
+
+  - section: Glossary
+    section_slug: glossary
+    questions:
+      - question: Container
+        answer: |
+          A container is a lightweight virtual machine. Aptible uses Docker to build and run containers. Standard containers are allocated 1 GB of RAM. Higher RAM configurations are available upon request.
+
+      - question: Disk
+        answer: |
+          Disk storage refers to the underlying volumes used for database storage. Disk storage is enrypted at the filesystem level with 192-bit AES encryption. Aptible manages the encryption keys for you. Disk pricing includes nightly backups for 90 days and monthly backups for 6 years. Backups are stored in a geographic region separate from where your database runs.
+
+      - question: Domain
+        answer: |
+          A domain, or "VHOST," is an SSL/TLS endpoint. Domains are attached to a service and consist of a DNS service, an AWS Elastic Load Balancer, and an NGiNX container. 
+
+          To configure a VHOST, register a domain and procure an SSL certificate. (Wildcard, subdomain, and EV certificates all work.) After loading your VHOST with the certificate bundle and private key, you can point your domain's DNS to the endpoint. 
+
+          "Internal" VHOSTs can be used to expose a private service to other services on the same stack. Internal VHOSTs receive private IP addresses and cannot be accessed from the Internet.
+
+      - question: Service
+        answer: |
+          A service is comprised of one or more containers running the same process. By adding containers to a service, you can easily and quickly scale. Services run in your stack's app layer (see our [Reference Architecture Diagram](/pages/assets/aptible-reference-architecture.pdf)).
+
+      - question: Environment
+        answer: |
+          Environments are used to manage permissions. PHI-ready environments run on dedicated stacks. Dev environments run on shared stacks and must not handle PHI. Multiple environments on the same stack do not provide network isolation. 
+
+      - question: Stack
+        answer: |
+          The underlying infrastructure we use to build your environments. Each stack consists of an AWS VPC, EC2 instances, Elastic Load Balancers, Elastic Block Store volumes, and the Aptible platform utilities. Stacks provide network isolation. 
   - section: Compliance
     section_slug: compliance
     questions:
