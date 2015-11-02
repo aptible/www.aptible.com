@@ -22,6 +22,12 @@ to aid customers in managing their organization, access controls, and ops.
 It is built with [EmberJS](http://emberjs.com/), an open source JavaScript
 application framework.
 
+Contributing to the EmberJS community motivated our decision to open source
+the dashboard. Often available applications are small and optimized for
+evaluating the framework quickly. Sharing our production application builds on
+the many smaller examples and helps answer bigger questions around code
+organization, utilizing components, and test coverage.
+
 We use a copy-to-clipboard action throughout the app for
 long strings that a user would likely need to paste in a terminal
 (database connection strings, git commit references, links, etc.).
@@ -62,6 +68,7 @@ dashboard, and problem solved!
 
 
 ## Why is this awesome?
+
 * Code change discussions are out in the open, tagged and timestamped.
 * Customers
 [can](htts://github.com/aptible/dashboard.aptible.com/issues/418)
@@ -70,10 +77,44 @@ or
 [comment on](https://github.com/aptible/support/issues/103#issuecomment-109068707)
 issues directly.
 * The community can learn from and build on our open applications' structure.
+* Recruiting. [Like what you see?](https://www.aptible.com/company/careers/)
 
 
-Check out [Aptible's open source repositories](https://github.com/aptible).
-<br>Here are some highlights:
-- [public website](https://github.com/aptible/www.aptible.com)
-- [customer dashboard](https://github.com/aptible/dashboard)
-- [support documentation](https://github.com/aptible/support)
+Check out
+[all of Aptible's open source repositories](https://github.com/aptible)
+or pick from the following highlights:
+<table class="definitions-table">
+  <tr>
+    <td>[www.aptible.com](https://github.com/aptible/www.aptible.com)</td>
+    <td>Aptible's public website.</td>
+  </tr>
+  <tr>
+    <td>[dashboard](https://github.com/aptible/dashboard)</td>
+    <td>Aptible's customer dashboard (aka Diesel). It allows users to manage organizations, access controls, and ops.</td>
+  </tr>
+  <tr>
+    <td>[aptible-cli](https://github.com/aptible/aptible-cli)</td>
+    <td>Command-line interface for Aptible services.</td>
+  </tr>
+  <tr>
+    <td>[opsworks-cli](https://github.com/aptible/aptible-cli)</td>
+    <td>An alternative CLI for Amazon OpsWorks, focused on managing a large number of similarly provisioned stacks.</td>
+  </tr>
+  <tr>
+    <td>[support](https://github.com/aptible/support)</td>
+    <td>Aptible's support documentation.</td>
+  </tr>
+  <tr>
+    <td>[docker-nodejs](https://github.com/aptible/docker-nodejs)&#42;</td>
+    <td>Sample Docker files to get various versions of NodeJS running on Docker.
+    </td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;">[docker-cron-example](https://github.com/aptible/docker-cron-example)&#42;</td>
+    <td>Example implementation of cron jobs on Docker/Aptible.</td>
+  </tr>
+</table>
+
+<em>&#42; To see the latest Dockerfile examples and Docker related repositories,
+view [all of Aptible's repositories](https://github.com/aptible) and search
+for `Docker`.</em>
