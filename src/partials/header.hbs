@@ -1,46 +1,19 @@
-<header class="primary-header" {{#is dirname 'dist/technology'}}style="opacity:0"{{/is}}>
+<header class="primary-header">
   <div class="primary-header-bg">
-    <nav class="navbar navbar-primary" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">
-            <img src="/assets/images/aptible-logo.png" alt="Aptible" />
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="primary-nav">
-          <ul class="nav nav-primary navbar-nav navbar-right">
-            <li {{#is dirname 'dist/pricing'}} class="active"{{/is}}><a href="/pricing">Pricing</a></li>
-            <li {{#is dirname 'dist/technology'}} class="active"{{/is}}><a href="/technology">Technology</a></li>
-            <li {{#is dirname 'dist/compliance'}} class="active"{{/is}}><a href="/compliance">Compliance</a></li>
-            <li {{#is page.section 'Company'}} class="active"{{/is}}><a href="/company">Company</a></li>
-            <li><a href="{{config.support_url}}">Support</a></li>
-            <li><a href="{{config.dashboard_signup_url}}" class="btn btn-sm btn-round btn-primary">Sign Up</a></li>
-            <li><a href="{{config.dashboard_login_url}}" class="btn btn-sm btn-round btn-default">Log In</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+    {{> nav_bar }}
     {{#is dirname 'dist/compliance'}}
       {{> compliance_header }}
     {{/is}}
     {{#is dirname 'dist'}}
       {{> home_hero }}
     {{/is}}
-    <div class="container header-title-container">
-      {{#if title}}
+    {{#if title}}
+      <div class="container header-title-container">
         <h1 class="primary-title">{{title}}</h1>
-      {{/if}}
-      {{#if sub_title}}
-        <h2 class="primary-sub-title">{{sub_title}}</h2>
-      {{/if}}
-    </div>
+        {{#if sub_title}}
+          <h2 class="primary-sub-title">{{sub_title}}</h2>
+        {{/if}}
+      </div>
+    {{/if}}
   </div>
 </header>
