@@ -1,309 +1,82 @@
 ---
 section: Home
-title: HIPAA Compliance for Healthcare Innovators
 tracked_title: Home
-sub_title: Secure, private cloud deployment for digital health.
-about:
-  h1: One stop for HIPAA compliance, as a service.
-  h2: Aptible is the world’s first application deployment platform built to automate HIPAA compliance for web and mobile technology.
 
-feature_split:
+hero_title: Secure, compliant cloud deployment for digital health.
+
+# See partials/home_hero.hbs
+product_stack:
   deployment:
-    image: /pages/assets/technology/aptible-technology-introduction.png
-    title: Deployment Platform
+    title: Simplify deployment.
     body: |-
-      Run the applications and databases of your choice. Let us manage servers, network topology, security, backups, encryption, and organizational permissions so your engineers can focus on building great products.
+      Eliminate complex software releases with one-click deployment and zero downtime to rollbacks. Implement your existing code and workflows while we run your ops.
     cta:
-      text: Learn how Aptible's technology works
+      text: Aptible Deployment Platform
       href: /technology
   compliance:
-    image: /pages/assets/compliance/aptible-compliance-introduction.png
-    title: Compliance Engines
+    title: Streamline compliance.
     body: |-
-      Seamlessly integrate advanced compliance tools with the platform to generate all of the documentation, audit logs, and explanatory materials you need to demonstrate compliance with every aspect of HIPAA.
+      Because we run your platform, our HIPAA Compliance Engines streamline every component of the HIPAA Privacy, Security, and Breach Notification Rules.
     cta:
-      text: Learn how Aptible makes HIPAA compliance easy
+      text: HIPAA Compliance Engines
       href: /compliance
 
-how:
-  h1: How Aptible Works
-  p1: "- Push code to a Git remote \n\n- Run the languages, frameworks, and databases you choose\n\n- Manage compliance with an intuitive web dashboard \n\n- View status and generate audit reports in real time"
-  ctas:
-    1:
-      title: How does Aptible's technology work?
-      href: /technology
-    2:
-      title: How does Aptible help with every component of HIPAA compliance?
-      href: /compliance
-  tools:
-    title: Use the right tool for the right job.
-    description: "Never be forced to choose between good engineering and compliance: Aptible supports every major language and framework, and all of the most popular open source databases."
-    logos:
-      redis:
-        url: /pages/assets/redis.png
-        className: redis
-      mongo:
-        url: /pages/assets/mongodb.png
-        className: mongo
-      pg:
-        url: /pages/assets/postgres.png
-        className: pg
-      mysql:
-        url: /pages/assets/mysql.png
-        className: mysql
-      python:
-        url: /pages/assets/python-logo.png
-        className: python
-      node:
-        url: /pages/assets/nodejs.png
-        className: node
-      ruby:
-        url: /pages/assets/ruby.png
-        className: ruby
+# See partials/home_sections/why_aptible.hbs
 why:
+  title: Why choose Aptible?
+  sub-title: |-
+    Never have to choose between great engineering and comprehensive compliance.
   lockin:
-    title: No lock-in
+    title: Deploy with confidence
     description: |-
-      Integration is as simple as adding a single file to your codebase.  No proprietary APIs, no migration fees, and no dev/prod disparity.
+      One-click deployement, easily configured from the command line or from
+      our web dashboard. Our tools are designed to consolidate your security
+      program and isolate vulnerabilities so your team can focus on
+      application-level development.
     logo: /pages/assets/containers-small.png
     classNamr: containers
   compliance:
-    title: One-stop HIPAA compliance
+    title: Comprehensive compliance
     description: |-
-      Running your apps and databases gives our compliance tools deep hooks into your ops, saving you time and money on every aspect of HIPAA.
+      Seamlessly integrate advanced  tools to generate all of the documentation,
+      audit logs, and materials you need to comply with every aspect of HIPAA.
+      Integration is as simple as adding a single file to your codebase.
     logo: /pages/assets/compliance/hipaa-compliance.png
     className: compliance
   workflow:
-    title: Built for your workflow
+    title: Your workflow, our platform
     description: |-
-      If you're familiar with Heroku, you already know how to use Aptible: Push code to a Git remote, then configure and manage resources from the command line or through our web dashboard.
+      Run the languages, frameworks, and databases of your choice while
+      we run the servers, topology, backups, encryption, permissions and more.
+      Integration is as simple as adding a single file to your codebase.
     logo: /pages/assets/workflow.svg
     className: workflow
 
-customers:
-  enabled: false
-  pager:
-    customer_name: Pager
-    name: Oscar Salazar
-    title: Founder
-    photo: /pages/assets/customers/osalazar.jpg
-    logo: /pages/assets/customers/pager.png
-    testimonial: 'Vestibulum pretium placerat mollis. Donec ultricies odio enim, et vehicula purus blandit vitae. Proin eleifend blandit cursus. Cum sociis natoque penatibus et magnis dis parturient montes.'
-    url: http://getpager.com
-  nightingale:
-    customer_name: Nightingale
-    name: Eric Bakan
-    title: Founder
-    photo: /pages/assets/customers/eric.png
-    logo: /pages/assets/customers/nightingaleapp.jpg
-    testimonial: '22Vestibulum pretium placerat mollis. Donec ultricies odio enim, et vehicula purus blandit vitae. Proin eleifend blandit cursus. Cum sociis natoque penatibus et magnis dis parturient montes.'
-    url: http://nightingaleapp.com
+# See partials/home_sections/testimonial.hbs
+testimonial:
+  image: /pages/assets/compliance/ian.png
+  copy: |-
+    Aptible takes the pain out of HIPAA compliance. We saved a huge amount of
+    time and money, and avoided risk by partnering with them.
+  author: Ian Yamey - CTO, PolicyGenius
 
-newsletter:
-  title: "Get the Latest Devops and Security News"
-  subtitle: Straight to your inbox, no more than twice a month.
-  placeholder: Enter your email address
-  submit: "Sign me up!"
-  success: Thanks for signing up!
-  error: Please use a valid email
-
+# See partials/home_sections/get_started.hbs
+get-started:
+  title: Let's get started
+  sub-title: |-
+    No contracts, no risk. Open a Development Account today with $500 free credit.
+  cta:
+    href: https://dashboard.aptible.com/signup?plan=development
+    label: Open a Development Account
+  pricing:
+    label: View our pricing
 ---
-
 <div class="container">
-  <div class="row about-billboard">
-    <div class="col-md-10 col-md-offset-1 col-sm-12">
-      <h1>{{about.h1}}</h1>
-      <h2>{{about.h2}}</h2>
-    </div>
-  </div>
+  {{> credibility }}
 
-  <div class="feature-split">
-    <div class="panel panel-default">
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <div class="feature-split-col deployment">
-            <div class="feature-image">
-              <img src="{{feature_split.deployment.image}}" alt="{{feature_split.deployment.title}}" />
-            </div>
-            <div class="feature-info">
-              <h2 class="feature-title">{{feature_split.deployment.title}}</h2>
-              <div class="feature-body">{{feature_split.deployment.body }}</div>
-              {{#if feature_split.deployment.cta}}
-              <div class="feature-cta">
-                <a href="{{feature_split.deployment.cta.href}}">{{feature_split.deployment.cta.text}}</a>
-              </div>
-              {{/if}}
-            </div>
-          </div>
-        </div>
+  {{> why_aptible }}
 
-        <div class="divider"></div>
-        <div class="plus">
-          <span class="glyphicon glyphicon-plus"></span>
-        </div>
+  {{> testimonial }}
 
-        <div class="col-md-6 col-sm-12">
-          <div class="feature-split-col compliance">
-            <div class="feature-image">
-              <img src="{{feature_split.compliance.image}}" alt="{{feature_split.compliance.title}}" />
-            </div>
-            <div class="feature-info">
-              <h2 class="feature-title">{{feature_split.compliance.title}}</h2>
-              <div class="feature-body">{{feature_split.compliance.body }}</div>
-              {{#if feature_split.compliance.cta}}
-              <div class="feature-cta">
-                <a href="{{feature_split.compliance.cta.href}}">{{feature_split.compliance.cta.text}}</a>
-              </div>
-              {{/if}}
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="row section bordered aptible-benefits">
-    <h1>Benefits of Aptible</h1>
-    <div class="col-sm-4">
-      <div class="why-item">
-        <div class="why-icon {{why.lockin.className}}">
-          <img src="{{why.lockin.logo}}" />
-        </div>
-        <div class="why-description fact-item">
-          <h4>{{why.lockin.title}}</h4>
-          <div class="description">{{#markdown}}{{why.lockin.description}}{{/markdown}}</div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="why-item">
-        <div class="why-icon {{why.workflow.className}}">
-          <img src="{{why.workflow.logo}}" />
-        </div>
-        <div class="why-description fact-item">
-          <h4>{{why.workflow.title}}</h4>
-          <div class="description">{{#markdown}}{{why.workflow.description}}{{/markdown}}</div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="why-item">
-        <div class="why-icon {{why.compliance.className}}">
-          <img src="{{why.compliance.logo}}" />
-        </div>
-        <div class="why-description fact-item">
-          <h4>{{why.compliance.title}}</h4>
-          <div class="description">{{#markdown}}{{why.compliance.description}}{{/markdown}}</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row section workflow-cta">
-    <div class="col-md-6 col-md-offset-1 col-sm-12">
-      {{> ci_console}}
-    </div>
-    <div class="col-md-3 col-md-offset-1 col-sm-12">
-      <div class="home-cta-body">
-        <h3>Like Heroku?</h3>
-        <h2>You'll Love Aptible</h2>
-        <a class="btn btn-primary btn-lg" href="/pricing">Choose Your Account Type</a>
-        <div class="plan-info">Heroku is a trademark of Heroku, Inc. Aptible is not affiliated with Heroku.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row section">
-    <div class="col-sm-12">
-      <div class="panel panel-default why-aptible-panel">
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="how-aptible-works">
-                <h1>{{how.h1}}</h1>
-                <div class="how-description">{{#markdown}}{{how.p1}}{{/markdown}}</div>
-                <ul class="how-ctas">
-                  {{#each how.ctas}}
-                    <li><a href="{{href}}">{{title}}</a></li>
-                  {{/each}}
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 aptible-tools">
-              <div class="tools-carousel">
-                {{#each how.tools.logos}}
-                  <div class="tool logo">
-                    <img src="{{url}}" class="{{className}}" />
-                  </div>
-                {{/each}}
-              </div>
-              <div class="tools-description row">
-                <div class="col-sm-8 col-sm-offset-2">
-                  <div class="fact-item">
-                    <h4>{{how.tools.title}}</h4>
-                    <div class="description">{{how.tools.description}}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row home-newsletter-section">
-    <div class="col-md-8 col-md-offset-2 col-sm-12">
-      <div class="panel panel-default newsletter-signup-panel">
-        <div class="panel-body">
-          <h1 class="panel-title">{{newsletter.title}}</h1>
-          <h5 class="panel-sub">{{newsletter.subtitle}}</h5>
-          <div class="panel-cta">
-           {{> newsletter_signup}}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  {{> get_started }}
 </div>
-
-{{#if customers.enabled}}
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-      <div class="customers">
-        <h1>Our Customers</h1>
-        <div class="testimonials">
-          {{#each customers}}
-            <div class="testimonial">
-              <div class="testimonial-body">&ldquo;{{testimonial}}&rdquo;</div>
-              <div class="spacer"></div>
-              <ul class="post-meta">
-                <li><div class="gravatar sm"><img src="{{photo}}" /></div></li>
-                <li class="author">{{name}}</li>
-                <li class="date">{{title}} - {{customer_name}}</li>
-              </ul>
-            </div>
-          {{/each}}
-        </div>
-        <div class="logos">
-          <div class="row">
-            {{#each customers}}
-              <div class="col-sm-3">
-                <div class="logo {{slugify customer_name}}">
-                  <a href="{{url}}">
-                    <img src="{{logo}}" />
-                  </a>
-                </div>
-              </div>
-            {{/each}}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{{/if}}
