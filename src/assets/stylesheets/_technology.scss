@@ -1,16 +1,23 @@
 body.technology {
+  // background-color: #0650a2;
+  // background-image: none;
+  @include gradient-radial(#056CE0, #044B99); // Fallback to Bootstrap mixn
+  background-image: radial-gradient(circle at center 175px, #056ce0 0%, #044b99 90%);
+  background-size: auto auto;
+  background-position: center;
   height: 100%;
   width: 100%;
-  background-color: #034dcc;
-  background: url('/assets/images/abstract-header-blur.jpg');
-  background-size: cover;
-  background-position: center;
+
+  .navbar-primary {
+    background: none;
+  }
 }
 
 .technology {
   .primary-header {
     position: fixed;
     background-color: transparent;
+    opacity: 0;
     width: 100%;
     height: 0;
     z-index: 4;
@@ -30,7 +37,7 @@ body.technology {
     color: #0272b7;
     font-size: 34px;
     margin: 15px 0 90px;
-    text-align: center;    
+    text-align: center;
   }
 }
 
@@ -69,7 +76,7 @@ body.technology {
 }
 @-webkit-keyframes blink { 50% { visibility: hidden; }}
         @keyframes blink { 50% { visibility: hidden; }}
-        
+
 
 /*----------------------------------
   fullpages.css overrides
@@ -894,6 +901,3 @@ body.technology {
   }
 
 }
-
-
-

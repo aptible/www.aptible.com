@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                 helpers: ['helper-moment', 'src/helpers/**/*.js'],
                 layout: 'application.hbs',
                 layoutdir: 'src/layouts/',
-                partials: 'src/partials/**/*',
+                partials: 'src/partials/**/*.*',
                 data: 'config.yml',
                 collections: [{
                     name: 'pages',
