@@ -54,6 +54,9 @@
     background-color: #efefef;
   }
 
+  .text-center img {
+    margin: 0 auto;
+  }
 }
 
 // Note, floating two tables in this case. Second has class of "clearfix".
@@ -63,6 +66,19 @@
   td:first-of-type {
     padding-right: 20px;
     text-align: right;
+  }
+}
+
+.definitions-table {
+  tr td {
+    vertical-align: top;
+    padding: 10px 10px 15px;
+  }
+  tr td:first-of-type {
+    text-align: right;
+  }
+  tr:nth-child(even) td {
+    background-color: transparent;
   }
 }
 
