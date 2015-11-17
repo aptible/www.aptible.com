@@ -1,16 +1,402 @@
+//
+// Home Page
+//
+// Sections:
+//  - Hero                (see partials/home_hero.hbs)
+//  - Credibility         (see partials/home_sections/credibility.hbs)
+//  - Why Choose Aptible? (see partials/home_sections/why-aptible.hbs)
+//  - Testimonial         (see partials/home_sections/testimonial.hbs)
+//  - Get Started         (see partials/home_sections/get_started.hbs)
+//
+
+// TODO: Clean up :(
+$text-color: #2c3e50 !default;
+
+.arrow-link {
+  display: block;
+  font-size: 18px;
+  &:after {
+    content: '→';
+    padding-left: 5px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// TODO: FIX THESE
+.svg .primary-header-bg,
+.compliance-content-page header.primary-header .primary-header-bg {
+  background-image: none;
+}
+
+header.primary-header {
+  @include gradient-radial(#056CE0, #044B99); // Fallback to Bootstrap mixn
+  background-image: radial-gradient(circle at center 175px, #056ce0 0%, #044b99 90%);
+  background-size: auto auto;
+  background-position: center;
+}
+
+.navbar-primary {
+  background-color: rgba(6, 70, 141, 0.50);
+  padding-bottom: 10px;
+}
+
+//
+// Hero
+//
+// responsive, largest first
+.product-stack {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.product-stack--feature {
+  max-width: 280px;
+}
+
+.product-stack--deployment-guide {
+  transform: translate(20px, 26px);
+}
+.product-stack--compliance-guide {
+  transform: translate(-15px, -96px);
+}
+.product-stack--compliance-guide_md {
+  transform: translate(-16px, -33px);
+}
+.product-stack--deployment-guide_md {
+  transform: translate(-15px, -10px);
+}
+
+.feature-title {
+  font-family: ProximaNova-Light;
+  font-size: 36px;
+  color: #aadeed;
+  line-height: 44px;
+  margin-top: 0;
+  position: relative;
+  white-space: nowrap;
+  text-align: left;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+}
+.feature-deployment {
+  margin-left: 20px;
+  .feature-title {
+    transform: translateX(-42px);
+  }
+}
+.feature-compliance {
+  margin-right: 20px;
+}
+
+.feature-body {
+  color: #3498db;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  .btn {
+    margin-top: 25px;
+    display: block;
+  }
+}
+.product-stack--illustration {
+  img {
+    height: 460px;
+    width: auto;
+  }
+}
+.product-stack.product-stack-md {
+  display: none;
+}
+
+@media (min-width: $screen-sm-min) and (max-width: 1100px) {
+  .product-stack:not(.product-stack-md) {
+    display: none;
+  }
+  .feature-compliance {
+    margin-bottom: 50px;
+  }
+  .feature-deployment {
+    margin-left: 0;
+    .feature-title {
+      transform: none;
+    }
+  }
+  .product-stack.product-stack-md {
+    display: flex;
+    margin-bottom: 80px;
+    .product-stack--illustration {
+      margin-left: -80px;
+      transform: translateY(30px);
+    }
+  }
+}
+// Small Screens
+@media (max-width: $screen-xs-max) {
+  .home.index header.primary-header h1.primary-title.product-stack--title {
+    font-size: 38px;
+    line-height: normal;
+  }
+  .product-stack:not(.product-stack-md) {
+    flex-direction: column-reverse;
+  }
+  .feature-compliance {
+    margin-bottom: 40px;
+  }
+  .product-stack--deployment-guide,
+  .product-stack--compliance-guide {
+    display: none;
+  }
+  .feature-title {
+    position: static;
+    white-space: normal;
+  }
+  .feature-deployment {
+    margin-left: 0;
+    .feature-title {
+      transform: none;
+    }
+  }
+  .feature-compliance {
+    margin-right: 0;
+  }
+}
+//
+// Credibility
+//
+.credibility {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  height: 230px;
+  padding-top: 30px;
+
+  h2 {
+    color: #999;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    weight: normal;
+  }
+
+}
+// Scale down the header size for small screens
+@media (max-width: $screen-xs-max) {
+  .credibility.row.section {
+    border-radius: 0;
+    margin-bottom: 50px;
+    margin-top: 0;
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
+.credibility-carousel {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 120px);
+  transform: translateX(60px);
+  .slick-prev, .slick-next {
+    border-color: rgba(153, 153, 153, 1.0);
+    border-style: solid;
+    border-top-width: 2px;
+    border-bottom: none;
+    display: inline-block;
+    height: 30px;
+    top: -10px;
+    transition: border-color 0.25s ease-in-out;
+    vertical-align: middle;
+    width: 30px;
+    &:before {
+      display: none;
+    }
+    &:focus, &:hover {
+      border-color: rgba(153, 153, 153, 0.5);
+    }
+  }
+  .slick-prev {
+    border-left-width: 2px;
+    border-right: none;
+    left: -50px;
+    margin-left: 10px;
+    transform: rotate(-45deg);
+  }
+  .slick-next {
+    border-right-width: 2px;
+    border-left: none;
+    margin-right: 10px;
+    right: -50px;
+    transform: rotate(45deg);
+  }
+}
+.credibility-carousel div[class^='credibility-carousel--item'] {
+  height: 85px;
+  margin: 0 30px;
+  & path {
+    fill: #31414f;
+  }
+}
+.credibility-carousel--item-mayo {
+  transform: translateY(3px);
+}
+.credibility-carousel--item-kaiser {
+  transform: translateY(7px);
+}
+.credibility-carousel--item-uhc {
+  transform: translateY(22px);
+}
+.credibility-carousel--item-usdva {
+  transform: translateY(17px);
+}
+.credibility-carousel--item-stanford {
+  transform: translateY(18px);
+}
+
+//
+// Why Choose Aptible?
+//
+.why-title {
+  color: #196FA4;
+  font-family: ProximaNova-Light;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
+}
+.why-sub-title {
+  color: #2c3e50;
+  margin-bottom: 50px;
+  margin-top: 0;
+  font-weight: normal;
+  text-align: center;
+}
+.why-item--graphic {
+  background-image: linear-gradient(#01c0ff, #0190ff);
+  border-radius: 64px;
+  height: 128px;
+  margin: 0 auto 40px;
+  width: 128px;
+}
+.why-item--description {
+  text-align: center;
+  h3 {
+    color: #196FA4;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+// Small screens
+@media (max-width: $screen-xs-max) {
+  .why-aptible {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .why-item {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  .why-item--graphic {
+    margin-bottom: 20px;
+  }
+  .why-item--description {
+    margin-bottom: 40px;
+  }
+}
+
+//
+// Testimonial
+//
+.home-testimonial {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.home-testimonial--image {
+  margin-right: 100px;
+  img {
+    border-radius: 75px;
+  }
+}
+.home-testimonial--quote {
+  color: #2c3e50;
+  font-family: ProximaNova-Light;
+  font-size: 24px;
+  max-width: 475px;
+}
+.home-testimonial--author {
+  color: #ababab;
+  font-size: 18px;
+  margin-top: 24px;
+}
+@media (max-width: $screen-xs-max) {
+  .home-testimonial--quote {
+    margin: 50px;
+  }
+  .home-testimonial--image {
+    display: none;
+  }
+}
+
+//
+// Get Started
+//
+.get-started {
+  padding: 0 50px;
+  text-align: center;
+  &.row.section {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+  .btn {
+    margin-bottom: 30px;
+  }
+}
+.get-started--title {
+  color: #196FA4;
+  font-family: ProximaNova-Light;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.get-started--sub-title {
+  color: #2c3e50;
+  margin-bottom: 50px;
+  margin-top: 0;
+  line-height: 1.5;
+  font-weight: normal;
+}
+@media (max-width: $screen-xs-max) {
+  .get-started.row.section {
+    margin-bottom: 60px;
+    margin-top: 50px;
+  }
+}
+
 .home.index {
   header.primary-header {
-    height: 450px;
+    height: auto;
 
     .header-title-container {
       margin-top: 110px;
     }
 
     h1.primary-title {
+      font-family: ProximaNova-Light;
       font-size: 45px;
-      text-transform: none;
+      line-height: 45px;
+      color: #FFFFFF;
       @extend %smooth;
-      text-shadow: 2px 2px 4px rgba(black, 0.45);
+      text-shadow: 0px 2px 3px rgba(0,0,0,0.40);
+
+      padding: 0 20px;
+      text-align: center;
+      margin: 40px auto;
+      max-width: 640px;
     }
 
     h2.primary-sub-title {
@@ -28,143 +414,6 @@ header.primary-header {
 
       &.btn-round.btn-primary {
         background: #fff;
-      }
-    }
-  }
-}
-
-.about-billboard {
-  font-size: 18px;
-  line-height: 25px;
-  margin: 75px 0;
-  text-align: center;
-
-  h1 {
-    font-size: 36px;
-    color: $color-dark-blue;
-    margin: 0 0 20px;
-    font-weight: $weight-normal;
-  }
-
-  h2 {
-    font-weight: $weight-lighter;
-    font-size: 24px;
-    color: $color-light;
-    margin: 0;
-  }
-}
-
-.feature-split {
-  .panel {
-    position:relative;
-  }
-
-  .divider {
-    width: 4px;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    margin-left: -2px;
-    top: 0;
-    bottom: 0;
-    background: #f6f6f6;
-  }
-
-  .plus {
-    text-align: center;
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    left: 50%;
-    top: 169px;
-    margin-left: -40px;
-    background: #f6f6f6;
-    @include border-radius(40px);
-    @include box-shadow(inset 0 1px 4px 0 rgba(#000, .09));
-
-    .glyphicon {
-      color: $color-bright-blue;
-      font-size: 40px;
-      vertical-align: -43px;
-      left: 2px;
-    }
-  }
-
-  .feature-image {
-    text-align: center;
-    height: 331px;
-    margin-bottom: 50px;
-
-    img {
-      max-height: 100%;
-      max-width: 100%;
-    }
-  }
-  .compliance .feature-image {
-    img {
-      margin-top: 7px;
-    }
-  }
-
-  .feature-info {
-    text-align: center;
-  }
-
-  .feature-title {
-    font-size: 36px;
-    color: $color-dark-blue;
-    margin: 0 0 22px;
-  }
-
-  .feature-body {
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .feature-cta {
-    font-weight: $weight-bold;
-    margin-top: 30px;
-  }
-
-  .feature-split-col {
-    padding: 50px 80px 80px;
-  }
-}
-
-.aptible-benefits {
-  text-align: center;
-
-  &.row.section {
-    margin-top: 100px;
-  }
-
-  h1 {
-    font-size: 36px;
-    color: $color-dark-blue;
-    font-weight: $weight-normal;
-    margin: 0 0 10px;
-  }
-
-  .why-item {
-    padding: 0 20px;
-
-    .why-icon {
-      margin: 40px 0;
-      height: 140px;
-      text-align: center;
-
-      &.containers {}
-
-      &.compliance {
-        img {
-          margin-top: 32px;
-        }
-      }
-
-      &.workflow {
-        img {
-          margin-top: 25px;
-        }
       }
     }
   }
@@ -222,31 +471,6 @@ header.primary-header {
 
   .home-cta-body {
     margin-top: 85px;
-  }
-}
-
-.aptible-tools {
-  .tools-carousel {
-    margin: 70px auto 0;
-    width: 330px;
-  }
-
-  .slick-slide {
-    img {
-      margin: 0 auto;
-      max-width: 100%;
-
-      &.django {
-        width: 180px;
-        margin-top: 25px;
-      }
-
-    }
-  }
-
-  .tools-description {
-    text-align: center;
-    margin: 40px 0 0;
   }
 }
 
@@ -352,6 +576,7 @@ header.primary-header {
     border: 1px solid #d9d9d9;
     border-width: 1px 1px 0;
     border-radius: 5px;
+    background-color: -o-linear-gradient(-89deg, #f6f6f6 0%, #f0f0f0 100%);
     background-image: -o-linear-gradient(-89deg, #f6f6f6 0%, #f0f0f0 100%);
     background-image: -moz-linear-gradient(-89deg, #f6f6f6 0%, #f0f0f0 100%);
     background-image: -ms-linear-gradient(-89deg, #f6f6f6 0%, #f0f0f0 100%);
