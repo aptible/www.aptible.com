@@ -2,7 +2,7 @@
 title: Responsible Disclosure Policy
 tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2015-04-18
+posted: 2015-11-19
 section: Legal
 sub_section: Policies
 ---
@@ -12,7 +12,7 @@ Aptible, Inc.
 Responsible Disclosure Policy
 --------------
 
-Version 2.5 - April 2015
+Version 2.6 - November 2015
 
 ### Responsible Disclosure
 We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
@@ -61,44 +61,58 @@ Only the following services are in-scope:
 - Presence of application or web browser "autocomplete" or "save password" permission
 
 ### PGP
-If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for security@aptible.com is below:
+If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for support@aptible.com is below:
 
 ````
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-Version: GnuPG/MacGPG2 v2.0.20 (Darwin)
-Comment: GPGTools - https://gpgtools.org
 
-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
-=7jB2
+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
+ABPlw7VKjgBSRD8MBIo00fw=
+=earx
 -----END PGP PUBLIC KEY BLOCK-----
 ````
