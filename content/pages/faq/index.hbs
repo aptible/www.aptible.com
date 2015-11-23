@@ -11,20 +11,20 @@ faq:
     questions:
       - question: What does Aptible do?
         answer: |
-          Aptible helps digital health companies secure data and demonstrate HIPAA compliance. 
+          Aptible helps digital health companies secure data and demonstrate HIPAA compliance.
 
-          We have two core products: Our deployment platform is a container service built on Amazon Web Services. It helps your engineers scale modern web architecture in secure, private, PHI-ready cloud environments. 
+          We have two core products: Our deployment platform is a container service built on Amazon Web Services. It helps your engineers scale modern web architecture in secure, private, PHI-ready cloud environments.
 
           Our compliance platform provides comprehensive risk, security, and HIPAA compliance management.
-          
+
       - question: What are the benefits of using Aptible?
         answer: |
           Aptible offers a HIPAA Platform as a Service (PaaS).
-          
+
           With our deployment plaform we manage servers, network topology, security, backups, encryption, and organizational permissions so your engineers can focus on building great products.  Our operations team monitors your stack 24/7 and resolves most issues before you are even aware of them.
-          
+
           Each PHI­ready Aptible stack is deployed into a secure, managed network. As a customer, you receive your own AWS Virtual Private Cloud, with dedicated infrastructure resources.
-  
+
           Our managed accounts also include the compliance platform. As part of the compliance paltform we produce custom HIPAA documentation that's closely tied to your company and technology stack.  As your company grows and your technology changes, your documention changes along with it.  We handle HIPAA training for your entire team.  We also support your team with all HIPAA audits (both provider and HHS).
 
   - section: Pricing
@@ -34,15 +34,15 @@ faq:
         answer: |
           With a Managed Account, Aptible helps you set up and run a comprehensive HIPAA Business Associate compliance program, including risk assessments, policies and procedures, workforce training, incident response, BAA management, and application security management. As a Managed Account partner, our engineering and compliance teams will work with you directly to help you quickly pass security reviews and audits at the largest healthcare institutions in the country.
 
-          Platform Accounts are ideal for customers who just want to use the Aptible deployment platform. You can create, run, and scale apps and databases in dedicated, secure, PHI-ready environments. 
+          Platform Accounts are ideal for customers who just want to use the Aptible deployment platform. You can create, run, and scale apps and databases in dedicated, secure, PHI-ready environments.
 
           Managed Accounts include the functionality of Platform Accounts.
 
-      - question: How does pricing work? 
+      - question: How does pricing work?
         answer: |
           Each Aptible plan has a base price and included resources. After the base fee, simply pay for what you use beyond the included resources. Our [pricing calculator](/pricing) will help find the right plan and estimate your bill.
 
-      - question: Are there discounts at scale? 
+      - question: Are there discounts at scale?
         answer: |
           Yes, as you add planned capacity, we can offer discounts for larger platform users.
 
@@ -56,19 +56,20 @@ faq:
       - question: What technology can I use with Aptible?
         answer: |
           Any Linux-based language or framework. We have  [Quickstart Guides](https://support.aptible.com/quickstart) for many popular languages and databases. No Windows, sorry.
- 
-    - question: What databases are supported?
-        answer: |
-        Currently, Aptible supports the following databases:
 
-        - PostgreSQL
-        - Redis
-        - MongoDB
-        - MySQL
-        - CouchDB
-        - Elasticsearch
-      Databases can be provisioned either from the Dashboard or Aptible CLI. If you are interested in a database not listed here, we can help.  Please get in touch with [Aptible Support] (https://support.aptible.com/contact/).
-          
+      - question: What databases are supported?
+        answer: |
+          Currently, Aptible supports the following databases:
+
+          - PostgreSQL
+          - Redis
+          - MongoDB
+          - MySQL
+          - CouchDB
+          - Elasticsearch
+
+          Databases can be provisioned either from the Dashboard or Aptible CLI. If you are interested in a database not listed here, we can help.  Please get in touch with [Aptible Support](https://support.aptible.com/contact/).
+
       - question: Where can I get a demo of Aptible?
         answer: |
           The best way to find out if Aptible is right for you is to sign up for a [free Dev account](https://dashboard.aptible.com/signup?plan=development).  Our Dev account allows you to try all the the functionality of any of our PHI-ready accounts.  That said, if you'd like to talk with us about the platform, don't hesitate to [get in touch](https://support.aptible.com/contact/).
@@ -83,13 +84,13 @@ faq:
 
       - question: What about uptime? Do you have an SLA?
         answer: |
-          We provide a [99.95% Service Level Agreement](/legal/service_level_agreement.html) for all dedicated stacks. Custom SLAs are available upon request. 
+          We provide a [99.95% Service Level Agreement](/legal/service_level_agreement.html) for all dedicated stacks. Custom SLAs are available upon request.
 
           We report availability for the Aptible services at http://status.aptible.com.
 
       - question: Where is Aptible hosted? What regions are supported?
         answer: |
-          Aptible runs on AWS, so you enjoy the benefits and reliability of the AWS platform. You can run your dedicated Aptible stacks in any AWS region except China (Beijing) or GovCloud. 
+          Aptible runs on AWS, so you enjoy the benefits and reliability of the AWS platform. You can run your dedicated Aptible stacks in any AWS region except China (Beijing) or GovCloud.
 
       - question: How should I manage staging environments on Aptible?
         answer: |
@@ -97,7 +98,7 @@ faq:
 
           Using a Dev environment for staging has the benefit of server isolation between staging and production. Many large healthcare customers prefer this.
 
-          Dedicated environments may have better performance, especially during long staging builds. 
+          Dedicated environments may have better performance, especially during long staging builds.
 
 
   - section: Glossary
@@ -113,9 +114,9 @@ faq:
 
       - question: Domain
         answer: |
-          A domain, or "VHOST," is an SSL/TLS endpoint. Domains are attached to a service and consist of a DNS service, an AWS Elastic Load Balancer, and an NGiNX container. 
+          A domain, or "VHOST," is an SSL/TLS endpoint. Domains are attached to a service and consist of a DNS service, an AWS Elastic Load Balancer, and an NGiNX container.
 
-          To configure a VHOST, register a domain and procure an SSL certificate. (Wildcard, subdomain, and EV certificates all work.) After loading your VHOST with the certificate bundle and private key, you can point your domain's DNS to the endpoint. 
+          To configure a VHOST, register a domain and procure an SSL certificate. (Wildcard, subdomain, and EV certificates all work.) After loading your VHOST with the certificate bundle and private key, you can point your domain's DNS to the endpoint.
 
           "Internal" VHOSTs can be used to expose a private service to other services on the same stack. Internal VHOSTs receive private IP addresses and cannot be accessed from the Internet.
 
@@ -125,26 +126,26 @@ faq:
 
       - question: Environment
         answer: |
-          Environments are used to manage permissions. PHI-ready environments run on dedicated stacks. Dev environments run on shared stacks and must not handle PHI. Multiple environments on the same stack do not provide network isolation. 
+          Environments are used to manage permissions. PHI-ready environments run on dedicated stacks. Dev environments run on shared stacks and must not handle PHI. Multiple environments on the same stack do not provide network isolation.
 
       - question: Stack
         answer: |
-          The underlying infrastructure we use to build your environments. Each stack consists of an AWS VPC, EC2 instances, Elastic Load Balancers, Elastic Block Store volumes, and the Aptible platform utilities. Stacks provide network isolation. 
+          The underlying infrastructure we use to build your environments. Each stack consists of an AWS VPC, EC2 instances, Elastic Load Balancers, Elastic Block Store volumes, and the Aptible platform utilities. Stacks provide network isolation.
   - section: Compliance
     section_slug: compliance
     questions:
       - question: How do Business Associate Agreements work?
         answer: |
           You must have a Business Associate Agreement (BAA) in place with Aptible before you can use the Aptible services to create, receive, maintain, or transmit PHI. You will also need to sign BAAs with any other companies that handle PHI on your behalf. You do not need a BAA with AWS unless you intend to use an AWS service directly, such as S3 or RDS.
-      
+
       - question: What else might I need to comply with HIPAA?
         answer: |
-          In addition to a Managed Account, you may want:  
-          * Third-party services such as analytics, object storage, and messaging;  
-          * Productivity services, such as Google Apps for Business or Salesforce;  
-          * Workforce security services, such as password and mobile device management; and  
+          In addition to a Managed Account, you may want:
+          * Third-party services such as analytics, object storage, and messaging;
+          * Productivity services, such as Google Apps for Business or Salesforce;
+          * Workforce security services, such as password and mobile device management; and
           * Security assessments performed by an independent third party.
-          
+
           Our compliance platform will help you select the most appropriate services and integrate them into your compliance program.
 
       - question: Is Aptible audited?
