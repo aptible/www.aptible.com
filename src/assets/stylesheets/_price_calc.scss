@@ -130,6 +130,10 @@ $color-lighter-gray: #d8d6d6;
   .price-calc[data-full-service='on'] .price-calc__step--summary {
     width: 66.66%;
   }
+  .price-calc__step--summaries {
+    height: auto;
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: $screen-xs-min) {
@@ -144,6 +148,7 @@ $color-lighter-gray: #d8d6d6;
       width: 100%;
     }
     .price-calc__submit {
+      display: block;
       float: none;
       margin-top: 0;
       width: 100%;
@@ -257,7 +262,7 @@ $color-lighter-gray: #d8d6d6;
 }
 .price-calc__disk {
   .price-calc__included {
-    width: calc(45.5% - 6px);
+    width: calc(71.5% - 6px);
   }
 }
 .price-calc__domains {
@@ -437,4 +442,75 @@ $color-lighter-gray: #d8d6d6;
     font-weight: 200;
     line-height: 48px;
   }
+}
+
+//
+// Bonus Credit
+//
+.price-calc__bonus-credit {
+  background-color: #2ecc71;
+  height: 75px;
+  opacity: 0;
+  padding-top: 15px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transform: scale(0) translateY(-8px) rotate(-15deg);
+  @include transition(all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55));
+  width: 75px;
+  b, i {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  b {
+    font-size: 24px;
+  }
+  i {
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 0.15em;
+  }
+  .price-calc[data-phi='off'][data-full-service='off'] & {
+    opacity: 1;
+    transform: scale(1) translateY(-8px) rotate(15deg)
+  }
+}
+.starburst,
+.starburst span {
+  display: box;
+  box-align: center;
+  box-pack: center;
+}
+.starburst span {
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  transform: rotate(45deg);
+}
+.starburst:before,
+.starburst:after ,
+.starburst span:before,
+.starburst span:after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: inherit;
+   z-index: -1;
+  transform: rotate(30deg);
+}
+.starburst:after {
+  transform: rotate(-30deg);
+}
+.starburst span:after {
+  transform: rotate(30deg);
+}
+.starburst span:before {
+  transform: rotate(-30deg);
 }
