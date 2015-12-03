@@ -9,25 +9,28 @@ class PriceCalculator
   # Mutable Attributes
   handlesPHI    : false
   fullService   : false
-  containers    : 0
-  disks         : 0
-  domains       : 0
+  containers    : 2
+  disks         : 1
+  domains       : 1
   prevContainers: 0
   prevDisks     : 0
   prevDomains   : 0
 
   # Fixed
-  # Disks are 200 GB each
-  devContainers : 6
-  devDisks      : 5
-  devDomains    : 4
+  phiContainers : 6
+  phiDisks      : 8
+  phiDomains    : 4
+
+  diskValuesGB  : [0, 10, 20, 50, 100, 250, 500, 750, 1000, 1500, 2000]
+  diskLabels    : ['0 GB', '10 GB', '20 GB', '50 GB', '100 GB', '250 GB',
+                   '500 GB', '750 GB', '1 TB', '1.5 TB', '2 TB']
 
   # Prices
   # ~730 hours in a month
   perContainer  : (0.08 * 730).toFixed 2
-  perDisk       : (0.37 * 200).toFixed 2
+  perDisk       : (gb) -> (0.37 * gb).toFixed 2
   perDomain     : (0.05 * 730).toFixed 2
-  devBaseCost   : 499
+  phiBaseCost   : 499
 
   # Retain higher values if set, only up to what's included
   setDevBaseValues: ->
@@ -35,9 +38,9 @@ class PriceCalculator
       @prevContainers = @containers
       @prevDisks = @disks
       @prevDomains = @domains
-      @containers = Math.max(@containers, @devContainers)
-      @disks = Math.max(@disks, @devDisks)
-      @domains = Math.max(@domains, @devDomains)
+      @containers = Math.max(@containers, @phiContainers)
+      @disks = Math.max(@disks, @phiDisks)
+      @domains = Math.max(@domains, @phiDomains)
     else # restore
       @containers = @prevContainers
       @disks = @prevDisks
@@ -48,35 +51,29 @@ class PriceCalculator
   # is above or at the included dev values
   setValue: (attr, value) ->
     attrCap = attr[0].toUpperCase() + attr[1..]
-    @["prev#{attrCap}"] = value if @handlesPHI and value >= @["dev#{attrCap}"]
+    @["prev#{attrCap}"] = value if @handlesPHI and value >= @["phi#{attrCap}"]
     @[attr] = value
 
-  diskSize: ->
-    switch @disks
-      when 0, 1, 2, 3, 4
-        "#{@disks * 200} GB"
-      when 5, 10
-        "#{@disks * 0.2} TB"
-      else
-        "#{(@disks * 0.2).toFixed(1)} TB"
+  diskSize: -> @diskLabels[@disks]
 
   containersCost: ->
-    includedContainers = if @handlesPHI then @devContainers else 0
+    includedContainers = if @handlesPHI then @phiContainers else 0
     containers = if @containers > 10 then 10 else @containers
     @toCurrency Math.max(((containers - includedContainers) * @perContainer), 0)
 
   disksCost: ->
-    includedDisks = if @handlesPHI then @devDisks else 0
-    disks = if @disks > 10 then 10 else @disks
-    @toCurrency Math.max(((disks - includedDisks) * @perDisk), 0)
+    includedGB = @diskValuesGB[if @handlesPHI then @phiDisks else 0]
+    diskGB = @diskValuesGB[if @disks > 10 then 10 else @disks]
+    gb = Math.max(diskGB - includedGB, 0)
+    @toCurrency parseFloat(@perDisk(gb))
 
   domainsCost: ->
-    includedDomains = if @handlesPHI then @devDomains else 0
+    includedDomains = if @handlesPHI then @phiDomains else 0
     domains = if @domains > 10 then 10 else @domains
     @toCurrency Math.max(((domains - includedDomains) * @perDomain), 0)
 
   baseCost: ->
-    @toCurrency(if @handlesPHI then @devBaseCost else 0)
+    @toCurrency(if @handlesPHI then @phiBaseCost else 0)
 
   price: ->
     @toCurrency(

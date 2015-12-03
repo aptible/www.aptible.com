@@ -48,7 +48,7 @@
             <li class="price-calc__range-key" data-value="&plus;">&plus;</li>
           </ul>
           <div class="price-calc__range">
-            <input type="range" min="0" max="11" step="1" value="0" data-type="containers">
+            <input type="range" min="0" max="11" step="1" value="2" data-type="containers">
           </div>
           <div class="price-calc__included"></div>
         </div>
@@ -60,20 +60,20 @@
           </h3>
           <ul class="price-calc__range-keys" data-type="disks">
             <li class="price-calc__range-key" data-value="0">0</li>
-            <li class="price-calc__range-key" data-value="200GB">&centerdot;</li>
-            <li class="price-calc__range-key" data-value="400GB">&centerdot;</li>
-            <li class="price-calc__range-key" data-value="600GB">&centerdot;</li>
-            <li class="price-calc__range-key" data-value="800GB">&centerdot;</li>
+            <li class="price-calc__range-key" data-value="10GB">&centerdot;</li>
+            <li class="price-calc__range-key" data-value="20GB">&centerdot;</li>
+            <li class="price-calc__range-key" data-value="50GB">&centerdot;</li>
+            <li class="price-calc__range-key" data-value="100GB">&centerdot;</li>
+            <li class="price-calc__range-key" data-value="250GB">&centerdot;</li>
+            <li class="price-calc__range-key" data-value="500GB">&centerdot;</li>
+            <li class="price-calc__range-key" data-value="750GB">&centerdot;</li>
             <li class="price-calc__range-key" data-value="1TB">1TB</li>
-            <li class="price-calc__range-key" data-value="1.2TB">&centerdot;</li>
-            <li class="price-calc__range-key" data-value="1.4TB">&centerdot;</li>
-            <li class="price-calc__range-key" data-value="1.6TB">&centerdot;</li>
-            <li class="price-calc__range-key" data-value="1.8TB">&centerdot;</li>
+            <li class="price-calc__range-key" data-value="1.5TB">&centerdot;</li>
             <li class="price-calc__range-key" data-value="2TB">&centerdot;</li>
             <li class="price-calc__range-key" data-value="&plus;">&plus;</li>
           </ul>
           <div class="price-calc__range">
-            <input type="range" min="0" max="11" step="1" value="0" data-type="disks">
+            <input type="range" min="0" max="11" step="1" value="1" data-type="disks">
           </div>
           <div class="price-calc__included"></div>
         </div>
@@ -98,7 +98,7 @@
             <li class="price-calc__range-key" data-value="&plus;">&plus;</li>
           </ul>
           <div class="price-calc__range">
-            <input type="range" min="0" max="11" step="1" value="0" data-type="domains">
+            <input type="range" min="0" max="11" step="1" value="1" data-type="domains">
           </div>
           <div class="price-calc__included"></div>
         </div>
@@ -188,12 +188,17 @@
               </tr>
             </tbody>
           </table>
-					<table class="price-calc__data-summary price-calc__monthly-summary">
+          <div class="price-calc__bonus-credit starburst">
+            <span><b>{{intro_credit}}</b> <i>credit</i></span>
+          </div>
+          <table class="price-calc__data-summary price-calc__monthly-summary">
             <thead><tr><th class="caps">Total</th></tr></thead>
             <tbody><tr><td class="price-calc__monthly-total"></td></tr></tbody>
           </table>
 				</div>
-        <a class="price-calc__submit btn btn-primary btn-lg" href="https://dashboard.aptible.com/signup?plan=development">Get Started Now</a>
+        <a class="price-calc__submit btn btn-primary btn-lg" href="https://dashboard.aptible.com/signup?plan=development">
+          {{pricing_cta}}
+        </a>
       </div>
     </div>
   </div>
