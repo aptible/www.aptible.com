@@ -30,7 +30,7 @@ class PriceCalculator
   perContainer  : (0.08 * 730).toFixed 2
   perDisk       : (gb) -> (0.37 * gb).toFixed 2
   perDomain     : (0.05 * 730).toFixed 2
-  phiBaseCost   : 499
+  phiBaseCost   : 999
 
   # Retain higher values if set, only up to what's included
   setDevBaseValues: ->
