@@ -3,11 +3,11 @@ title: Plans and Pricing
 tracked_title: Pricing
 id: pricing
 description: "Aptible plans and pricing"
-posted: 2015-03-19
+posted: 2015-12-10
 production_title: Aptible Production Account
 
 hero_title: Try Aptible now with a Development Account
-hero_sub_title: No contracts, no risk.
+hero_sub_title: No commitment, no risk.
 hero_cta: Open a Development Account
 hero_url: https://dashboard.aptible.com/signup?plan=development
 
@@ -30,8 +30,8 @@ plans:
     descriptors:
     - Dedicated, PHI-ready stack
     - Comes with Business Associate Agreement, Breach Indemnification, and SLA
-    - $499/month base fee for 3 months, cancel any time
-    - $499/month thereafter w/ annual contract, or $799 monthly
+    - $999/month base fee for 3 months, cancel any time
+    - $999/month thereafter w/ annual contract, or $1299 monthly
     included:
     - 6 containers
     - 1TB disk
@@ -71,12 +71,12 @@ pricing:
 unique_situation:
   title: Need something special?
   sub_title: Custom container RAM sizes, optimized EC2 instance types, and high volume plans are available.
-  cta: Contact an Aptible Expert
+  cta: Request a Quote
   cta_url: /company/contact
 
 intro_credit: $500
 
-pricing_cta: Get Started Now
+pricing_cta: Request a Quote
 
 quick_start:
   - name: Ruby
@@ -108,27 +108,6 @@ quick_start:
     icon: /pages/assets/icons/python.svg
     slug: python
 
-questions_title: Questions? We have answers.
-questions:
-    - inquiry: What’s the difference between Platform and Managed accounts?
-      response: |
-        A Platform account is designed for companies who have HIPAA compliance in-house or are handling PHI only for testing and development. The entire technology infrastructure needed to handle PHI is encompassed in a Platform account. A Managed account, on the other hand, includes a platform account plus full-service compliance. The workforce training, documentation, reporting, and audit support for HIPAA compliance--pricing is variable based on the unique needs of your app and team.
-    - inquiry: What is the 1 TB Disk space used for?
-      response: |
-        The 1 TB of disk is shared across all of the containers and is used by both databases and file storage.
-    - inquiry: What’s a 1 GB container?  Can I get more?
-      response: |
-        The 1GB refers to the RAM per container.  Both the platform and managed accounts include six containers.  Typically customers use different containers for applications, databases, etc.  With the Docker deployment model, you can scale any application across multiple containers very easily.  At the Managed tier, we customize the specifications of your containers but most customers don’t need this.
-    - inquiry: How much load can I handle per container?
-      response: |
-        This depends on the language and web framework of your specific application. Typically, there is a direct correlation between RAM and concurrency. Having more RAM means that you can have more workers running concurrently. For instance, one container holds 1 GB RAM and a share of an AWS m3.medium (Intel Xeon E5-2670 v2).
-
-        We are happy to work with you to customize your container. Platform and Managed stacks are isolated per-customer, so you enjoy full resources of the instance dedicated to your apps.
-
-
-    - inquiry: When using one of the PHI-ready environments, should I have my Dev, Staging and Pro tiers all hosted in a PHI-ready environment or in a Dev environment?
-      response: |
-        Using a Dev environment has the benefit of server isolation between staging and production. So if an instance crashes, your other environments are unaffected. If that's not an issue, the PHI-ready environments are dedicated to just you, so performance can be better - especially during long builds. We have customers doing both, so it's really your preference.
 ---
 
 <div class="container">
@@ -149,21 +128,22 @@ questions:
 
   <div class="row section">
     <div class="col-xs-12 unit-pricing">
-      <h2 class="section-title">{{discount.title}}</h2>
-      <div class="intro-body text-center">
-        {{#markdown}}{{discount.body}}{{/markdown}}
-      </div>
+      <h2 class="section-title">Unit Pricing</h2>
+      <ul class="plan-attributes">
+        <li>All plans are scalable on demand, just pay for what you use:</li>
+        <li><strong>1 GB App/Database Containers:</strong> {{pricing.container}}</li>
+        <li><strong>Encrypted Disk:</strong> {{pricing.disk}}</li>
+        <li><strong>Domains:</strong> {{pricing.domain}}</li>
+      </ul>
     </div>
   </div>
 
   <div class="row section">
     <div class="col-xs-12 unit-pricing">
-      <h2 class="section-title">Unit Pricing</h2>
-      <ul class="plan-attributes">
-        <li><strong>1 GB App/Database Containers:</strong> {{pricing.container}}</li>
-        <li><strong>Encrypted Disk:</strong> {{pricing.disk}}</li>
-        <li><strong>Domains:</strong> {{pricing.domain}}</li>
-      </ul>
+      <h2 class="section-title">{{discount.title}}</h2>
+      <div class="intro-body text-center">
+        {{#markdown}}{{discount.body}}{{/markdown}}
+      </div>
     </div>
   </div>
 
@@ -202,22 +182,3 @@ questions:
       </div>
     </div>
   </div>
-
-  <div class="row section pricing-faq">
-    <div class="col-sm-12">
-      <div class="row q-a">
-        <h2 class="section-title">{{questions_title}}</h2>
-        {{#each questions}}
-          <div class="col-md-4 col-sm-2">
-            <div class="fact-item">
-              <h4>{{inquiry}}</h4>
-              <div class="description">{{#markdown}}{{response}}{{/markdown}}</div>
-            </div>
-          </div>
-          <div class="conditional-clear"></div>
-        {{/each}}
-      </div>
-      <h2 class="section-title">More questions? <a href="/company/contact">Contact us</a></h2>
-    </div>
-  </div>
-</div>
