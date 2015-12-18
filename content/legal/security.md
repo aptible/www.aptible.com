@@ -109,7 +109,7 @@ You are responsible for app-level security of the apps you deploy to Aptible.
 ##### **3.F - Customer Code**
 SSH public key authentication is used to limit access to your authorized backend users during git-based deploys. Following a successful push to an Aptible git endpoint, code is copied down to your stack's build layer. The resulting images are pushed to a private stack registry, backed by AWS S3, which provides redundant, access-controlled storage.
 
-##### **3.H - Databases**
+##### **3.G - Databases**
 Databases run in the database layer of your stack, on a private subnet accessible only from app or bastion layer. SSL/TLS is required if the database protocol supports it. Disk volumes backing databases are encrypted at the filesystem level using Aptible-managed AES 192-bit encryption. 
 
 #### **4. Contingency Planning**
@@ -127,7 +127,7 @@ AWS data centers are clustered into regions, and sub-clustered into availability
 
 - Physically separated
 - Located in lower-risk flood plains
-- Have independent uninterruptable power supplies and onsite backup generators
+- Equipped with independent uninterruptable power supplies and onsite backup generators
 - Fed via different grids from independent utilities, and
 - Redundantly connected to multiple tier-1 transit providers
 
