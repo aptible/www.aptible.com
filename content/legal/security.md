@@ -114,13 +114,15 @@ Databases run in the database layer of your stack, on a private subnet accessibl
 
 #### **4. Contingency Planning**
 ##### **4.A - Backups**
-Your account information, configuration data (such as environment variables), access logs, and operation history are stored in our API databases, which are backed up no less than every 24 hours, with a 7 day retention period.
+The Aptible platform automatically backs up several different types of data:
 
-Database disk volumes in PHI-ready environments are backed up nightly with differential snapshots. Backups are stored in a separate geographic region. Write-ahead logging is enabled for databases that support it, enabling recovery within seconds of failure.
+- Customer app code and the container images built from that code are stored in private, redundant, access-controlled registries. Aptible recommends that customers maintain the canonical version of their codebase in a distributed version control system, such as GitHub. In the event of an app-level outage, the Aptible platform automatically restores services from registry backups.
 
-Copies of your app repositories are stored in the Aptible API and in the build layer of your stack. The resulting Docker images are stored in the build layer of your stack and in a private Docker registry, backed by S3. The Aptible platform uses these to automatically recover your apps in the event of an availability incident. 
+- Customer metadata is stored in the Aptible operational API, backed by the Amazon Relational Database Service. This metadata includes customer account data (passwords, permissions, SSH keys), and app configuration data, such as environmental variables. Backups are taken nightly and retained for one week.
 
-You are responsible for maintaining the canonical version of your code.
+- Customer database disks for databases in PHI-ready environments are backed up nightly and retained daily for 90 days, and monthly for 6 years. No customer action is required.
+
+- For databases like PostgreSQL that support intermediate backups (e.g., write-ahead logs), Aptible configures these intermediate backups to span at least the time between daily backups, to enable fine-grained, point-in-time disaster recovery.
 
 ##### **4.B - Fault Tolerance**
 AWS data centers are clustered into regions, and sub-clustered into availability zones, each of which is designed as an independent failure zone, meaning they are:
@@ -136,5 +138,5 @@ For PHI-ready environments, Aptible automatically distributes app containers acr
 ##### **4.C - High Availability**
 Aptible supports high-availability configuration of databases that support it.
 
-##### **4.D - Disaster Recovery**
-The Aptible platform automatically recovers apps and databases from most failure scenarios. Raw database snapshots and restored database clones are available upon request for testing and recovery.
+##### **4.D - Disaster Prevention and Recovery**
+Aptible monitors the stability and availability of customer infrastructure and automatically recovers from disruptions, including app and database failures. In the event of a disaster, Aptible restores apps from the last healthy build image and restores data from the last backup. In the event of a database outage, the Aptible platform will automatically recover the underlying database instance and disk. If the disk is unavailable, Aptible will restore from a backup. Raw database snapshots and restored database clones are available upon request for testing and recovery.
