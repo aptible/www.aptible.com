@@ -7,6 +7,12 @@
   <body
     class="aptible-com {{#if id}}{{slugify id}}{{/if}} {{slugify title}} {{slugify page.section}} {{slugify basename}}">
 
+    {{#is page.section 'Home'}}
+      <div class="notice">
+        <a href="/blog/common_HIPAA_questions.html">Aptible answers common HIPAA compliance questions</a>
+      </div>
+    {{/is}}
+
     {{> header}}
 
     <div class="main" role="main">
