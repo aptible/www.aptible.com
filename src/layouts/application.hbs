@@ -8,8 +8,9 @@
     class="aptible-com {{#if id}}{{slugify id}}{{/if}} {{slugify title}} {{slugify page.section}} {{slugify basename}}">
 
     {{#is page.section 'Home'}}
-      <div class="notice">
-        <a href="/blog/common_HIPAA_questions.html">Aptible answers common HIPAA compliance questions</a>
+      <div class="notice no-animation">
+        <a class="notice__message" href="/blog/common_HIPAA_questions.html">Aptible answers common HIPAA compliance questions</a>
+        <a class="notice__close" href="#close-notice"><span></span><span></span></a>
       </div>
     {{/is}}
 

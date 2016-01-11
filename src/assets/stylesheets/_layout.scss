@@ -1,13 +1,16 @@
+.no-animation {
+  transition-duration: 0s !important;
+}
 .notice {
   background-color: #34495e;
   color: #fff;
-  text-align: center;
+  display: none;
   margin-top: -60px;
+  text-align: center;
   transition: margin-top 1s ease-in-out;
-  a {
-    color: #2ba4ef;
-    color: #ababab;
-    display: block;
+  .notice__message {
+    color: #ddd;
+    display: inline-block;
     padding: 20px;
     text-decoration: none;
     transition: color 0.25s ease-in-out;
@@ -23,6 +26,29 @@
         transform: translate(8px, 1px);
       }
     }
+  }
+}
+.notice__close {
+  height: 30px;
+  opacity: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transition: opacity 0.25s ease-in-out;
+  width: 30px;
+  span {
+    background-color: #fff  ;
+    display: block;
+    height: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 3px;
+    &:last-of-type {
+      transform: rotate(-45deg);
+    }
+  }
+  .notice:hover & {
+    opacity: 1;
   }
 }
 .sub-footer {
