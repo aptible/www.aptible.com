@@ -17,10 +17,10 @@ sales_email: sales@aptible.com
 hello_email: hello@aptible.com
 github: aptible
 twitter: aptible
-address_1: 155 Water St
-city: Brooklyn
-state: NY
-zip: 11201
+address_1: 1644 Platte St
+city: Denver
+state: CO
+zip: 80202
 
 blog_assets: '/blog/assets/'
 page_assets: '/pages/assets/'
