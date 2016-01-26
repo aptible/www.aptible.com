@@ -24,10 +24,16 @@ benefits:
       Place a longer description here.
 ---
 <div class="container main-content">
-  <div class="row section">
-    <div class="col-sm-12 text-center">
-      {{description}}
+  <div class="post-single">
+    <div class="row section">
+      <div class="col-sm-12 text-center">
+        {{description}}
+      </div>
+    </div>
+    <div class="post">
+      <div class="post-body">
+        {{> feature_benefits}}
+      </div>
     </div>
   </div>
-  {{> feature_benefits}}
 </div>
