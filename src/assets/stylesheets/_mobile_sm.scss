@@ -3,10 +3,12 @@
 }
 
 header.primary-header {
+  height: auto;
   background-position: center center;
 }
 
 header.primary-header .header-title-container h1.primary-title {
+  margin-bottom: 20px;
   margin-top: 0;
 }
 
