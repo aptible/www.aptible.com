@@ -1,6 +1,6 @@
 ---
 title: Trademark Policy & Guidelines
-tracked_title: Trademark Policy
+tracked_title: Trademarks
 description: "Aptible's trademark policy and guidance"
 posted: 2014-06-30
 section: Legal
