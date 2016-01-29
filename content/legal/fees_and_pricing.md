@@ -1,6 +1,6 @@
 ---
 title: Fees & Pricing Policy
-tracked_title: Pricing Policy
+tracked_title: Fees & Pricing
 description: "Aptible's fees and pricing policy."
 posted: 2015-09-10
 section: Legal

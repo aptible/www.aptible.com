@@ -1,6 +1,6 @@
 ---
 title: Breach Indemnification Agreement
-tracked_title: Breach Indemnification Agreement
+tracked_title: Breach Indemnification
 description: "Aptible's default breach indemnification agreement."
 posted: 2015-09-10
 section: Legal
