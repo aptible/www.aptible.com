@@ -1,8 +1,62 @@
 {{#each benefits}}
-  <div class="row section">
-    <div class="col-sm-12">
-      <h2>{{title}}</h2>
-      {{#markdown}}{{description}}{{/markdown}}
-    </div>
+  <div class="section row product-pages__{{slugify type}} {{style-options}}">
+
+    {{#is type "text-hero"}}
+      <div class="col-sm-12">
+        <h2 class="text-hero__title">{{title}}</h2>
+        <h3 class="text-hero__sub-title">
+          {{#markdown}}{{description}}{{/markdown}}
+        </h3>
+        {{> cta }}
+      </div>
+    {{/is}}
+
+    {{#is type "image-left"}}
+      <div class="col-sm-3 col-sm-offset-1 col-xs-12 product-pages__image">
+        <img src="{{image-url}}" />
+      </div>
+      <div class="col-sm-7 col-xs-12">
+        {{#if title}}
+          <h2>{{title}}</h2>
+        {{/if}}
+        {{#if author}}
+          <div class="product-pages__description">{{description}}</div>
+          <div class="home-testimonial--author">{{author}}</div>
+        {{else}}
+          <div class="product-pages__description">
+            {{#markdown}}{{description}}{{/markdown}}
+          </div>
+        {{/if}}
+        {{> cta }}
+      </div>
+    {{/is}}
+
+    {{#is type "image-right"}}
+      <div class="col-sm-7 col-xs-12 col-sm-offset-1">
+        <h2>{{title}}</h2>
+        <div class="product-pages__description">
+          {{#markdown}}{{description}}{{/markdown}}
+        </div>
+        {{> cta }}
+      </div>
+      <div class="col-sm-3 col-xs-12 product-pages__image">
+        <img src="{{image-url}}" />
+      </div>
+    {{/is}}
+
+    {{#is type "benefit-list"}}
+      <ul class="product-pages__list">
+        {{#each benefit-list}}
+          <li class="product-pages__list-item">
+            {{#if image-url}}
+              <img src="{{image-url}}">
+            {{/if}}
+            <h3>{{title}}</h3>
+            <h4>{{description}}</h4>
+          </li>
+        {{/each}}
+      </ul>
+    {{/is}}
+
   </div>
 {{/each}}
