@@ -19,11 +19,11 @@ faq:
       - question: What are the benefits of using Aptible?
         answer: |
           The Aptible deployment platform manages servers, network topology, security, backups, encryption, and backend access so your engineers can focus on building great products.  Our operations team monitors your stack 24/7 and resolves most issues before you are even aware of them.
-          
+
           Each PHI­-ready Aptible stack is deployed into a secure, managed network. As a customer, you receive your own AWS Virtual Private Cloud, with dedicated infrastructure resources.
-  
-          Our Managed Accounts also include our SaaS compliance platform, which streamlines and automates the administrative aspects of HIPAA, including risk assessments, policies and procedures, workforce training, and incident response.  As your company grows and your technology changes, your documentation changes along with it. 
-          
+
+          Our Managed Accounts also include our SaaS compliance platform, which streamlines and automates the administrative aspects of HIPAA, including risk assessments, policies and procedures, workforce training, and incident response.  As your company grows and your technology changes, your documentation changes along with it.
+
           Many customers report that the most valuable aspect of a Managed Account is our premium audit prep and assistance, to ensure you are able to pass security reviews for your customers, business partners, and HHS.
   - section: Pricing
     section_slug: pricing
@@ -54,7 +54,7 @@ faq:
           Any Linux-based language or framework. We have  [Quickstart Guides](https://support.aptible.com/quickstart) for many popular languages and databases. No Windows, sorry.
       - question: How can I get a demo of Aptible?
         answer: |
-          The best way to find out if Aptible is right for you is to sign up for a [free Development account](https://dashboard.aptible.com/signup?plan=development).  Development Accounts allow you to try all the the functionality of any of our PHI-ready accounts.  That said, if you'd like to talk with us about the platform, don't hesitate to [get in touch](https://support.aptible.com/contact/).
+          The best way to find out if Aptible is right for you is to sign up for a [free Development account](https://dashboard.aptible.com/signup?plan=development).  Development Accounts allow you to try all the the functionality of any of our PHI-ready accounts.  That said, if you'd like to talk with us about the platform, don't hesitate to [get in touch](https://aptible.zendesk.com/hc/en-us/requests/new).
       - question: How many containers will I need?
         answer: |
           It depends on your app and load patterns. We normally recommend opening a Development Account to test your app's performance with standard 1 GB RAM containers. The platform is highly scalable and designed to work with service components. Each service can scale independently, allowing you to adjust your usage to the level that suits your needs best.
@@ -63,16 +63,16 @@ faq:
           Aptible is designed around open source software and engineering best practices. Configuring your app to deploy is often as easy as adding a single, one-line file to your repo. Should you ever need to migrate, you will not need to re-engineer your architecture.
       - question: What about uptime? Do you have an SLA?
         answer: |
-          We provide a [99.95% Service Level Agreement](/legal/service_level_agreement.html) for all dedicated, PHI-ready stacks. Custom SLAs are available upon request. 
+          We provide a [99.95% Service Level Agreement](/legal/service_level_agreement.html) for all dedicated, PHI-ready stacks. Custom SLAs are available upon request.
           We report availability for the Aptible services at http://status.aptible.com.
       - question: Where is Aptible hosted? What regions are supported?
         answer: |
-          Aptible runs on AWS, so you enjoy the benefits and reliability of the AWS platform. You can currently run your dedicated Aptible stacks in any AWS region except China (Beijing) or GovCloud. 
+          Aptible runs on AWS, so you enjoy the benefits and reliability of the AWS platform. You can currently run your dedicated Aptible stacks in any AWS region except China (Beijing) or GovCloud.
       - question: How should I manage staging environments on Aptible?
         answer: |
           Platform and Managed Accounts include the ability to create both Development (shared) and PHI-ready (dedicated) environments. You stage your apps and databases in either.
           Using a Development environment for staging has the benefit of server isolation between staging and production. Many large healthcare customers prefer this.
-          Dedicated environments may have better performance, especially during long staging builds. 
+          Dedicated environments may have better performance, especially during long staging builds.
           If you want both separation and the best possible performance, you can provision additional dedicated stacks for your staging environments.
   - section: Glossary
     section_slug: glossary
@@ -85,15 +85,15 @@ faq:
           Disk storage refers to the underlying volumes used for database storage. Disk storage is encrypted at the filesystem level with 192-bit AES encryption. Aptible manages the encryption keys for you. Disk pricing includes nightly backups for 90 days and monthly backups for 6 years. Backups are stored in a geographic region separate from where your database runs.
       - question: Domain
         answer: |
-          A domain, or "VHOST," is an SSL/TLS endpoint. Domains are attached to a service and consist of a DNS service, an AWS Elastic Load Balancer, and an NGiNX container. 
-          To configure a VHOST, register a domain and procure an SSL certificate. (Wildcard, subdomain, and EV certificates all work.) After loading your VHOST with the certificate bundle and private key, you can point your domain's DNS to the endpoint. 
+          A domain, or "VHOST," is an SSL/TLS endpoint. Domains are attached to a service and consist of a DNS service, an AWS Elastic Load Balancer, and an NGiNX container.
+          To configure a VHOST, register a domain and procure an SSL certificate. (Wildcard, subdomain, and EV certificates all work.) After loading your VHOST with the certificate bundle and private key, you can point your domain's DNS to the endpoint.
           "Internal" VHOSTs can be used to expose a private service to other services on the same stack. Internal VHOSTs receive private IP addresses and cannot be accessed from the Internet.
       - question: Service
         answer: |
           A service is comprised of one or more containers running the same process. By adding containers to a service, you can easily and quickly scale. Services run in your stack's app layer (see our [Reference Architecture Diagram](/pages/assets/aptible-reference-architecture.pdf)).
       - question: Environment
         answer: |
-          Environments are used to manage permissions. PHI-ready environments run on dedicated stacks. Dev environments run on shared stacks and must not handle PHI. Multiple environments on the same stack do not provide network isolation. 
+          Environments are used to manage permissions. PHI-ready environments run on dedicated stacks. Dev environments run on shared stacks and must not handle PHI. Multiple environments on the same stack do not provide network isolation.
       - question: Stack
         answer: |
           The underlying infrastructure we use to build your environments. Each stack consists of an AWS VPC, EC2 instances, Elastic Load Balancers, Elastic Block Store volumes, and the Aptible platform utilities. Stacks provide network isolation.
