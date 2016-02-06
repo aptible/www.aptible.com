@@ -119,7 +119,9 @@ $color-lighter-gray: #d8d6d6;
     float: right;
     margin-top: 35px;
     opacity: 1;
+    position: relative;
     width: 49%;
+    z-index: 2;
   }
   .price-calc__monthly-breakdown {
     display: none;
