@@ -64,13 +64,8 @@ pricing:
   domain: $0.05/hour
 
 support_plans:
-  title: Premium Support
-  body: |
-    **Need help?** Aptible's Support and Customer Success teams are ready.
-
-    **Need more?** VPN and architecture support add-ons, account specific
-    slack channels, and dedicated support engineers are available.
-  cta: See Support Plans
+  title: Support Plans
+  cta: Learn More
 
 unique_situation:
   title: Need something special?
@@ -135,8 +130,34 @@ quick_start:
   <div class="row section bordered">
     <div class="col-xs-12 text-hero">
       <h2 class="section-title">{{support_plans.title}}</h2>
-      <div class="text-hero__sub-title">
-        {{#markdown}}{{support_plans.body}}{{/markdown}}
+      <div class="row">
+        <div class="col-xs-12 col-md-4 support-plan-summary">
+          <h4>Business</h4>
+          <ul>
+            <li>Normal severity response times in 12 hours or less</li>
+            <li>Email and portal channels</li>
+            <li>Included with every account</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-4 support-plan-summary">
+          <h4>Premium</h4>
+          <ul>
+            <li>Dedicated slack channel</li>
+            <li>Urgent severity response times in 1 hour or less</li>
+            <li>Administrative portal access to manage tickets</li>
+            <li>Email, portal, and slack channels</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-4 support-plan-summary">
+          <h4>Enterprise</h4>
+          <ul>
+            <li>Dedicated Support Engineer</li>
+            <li>Dedicated Technical Account Manager</li>
+            <li>Critical issue response times in 15 minutes or less</li>
+            <li>Included base VPN and architecture support</li>
+            <li>Email, portal, slack, and phone channels</li>
+          </ul>
+        </div>
       </div>
       <a href="/support" class="btn btn-primary btn-lg">{{support_plans.cta}}</a>
     </div>
