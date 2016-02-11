@@ -74,3 +74,26 @@
     margin: 50px 0 0;
   }
 }
+
+.support-plan-summary {
+  margin-bottom: 40px;
+  text-align: left;
+  h4 {
+    border-bottom: 2px solid currentColor;
+    color: #0272b7;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    margin: 0 10px 20px 10px;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+  ul {
+    margin: 0 20px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+}
