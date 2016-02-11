@@ -6,11 +6,6 @@ description: "Aptible plans and pricing"
 posted: 2015-12-10
 production_title: Aptible Production Account
 
-hero_title: Try Aptible now with a Development Account
-hero_sub_title: No commitment, no risk.
-hero_cta: Open a Development Account
-hero_url: https://dashboard.aptible.com/signup?plan=development
-
 plans_title: Explore Plans and Pricing
 
 step1_title: About You
@@ -68,6 +63,10 @@ pricing:
   disk: $0.37/GB/month
   domain: $0.05/hour
 
+support_plans:
+  title: Support Plans
+  cta: Learn More
+
 unique_situation:
   title: Need something special?
   sub_title: Custom container RAM sizes, optimized EC2 instance types, and high volume plans are available.
@@ -76,7 +75,7 @@ unique_situation:
 
 intro_credit: $500
 
-pricing_cta: Request a Quote
+pricing_cta: Get Started Now
 
 quick_start:
   - name: Ruby
@@ -111,22 +110,12 @@ quick_start:
 ---
 
 <div class="container">
-  <div class="row section bordered callout-section">
-    <div class="col-md-10 col-md-offset-1 col-sm-12 our-philosophy">
-      <h2 class="callout-title">{{hero_title}}</h2>
-      <div class="callout-body">{{hero_sub_title}}</div>
-      <div class="callout-cta">
-        <a href="{{hero_url}}" class="btn btn-lg btn-primary">{{hero_cta}}</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="row section">
+  <div class="row section bordered">
     <h2 class="section-title">{{plans_title}}</h2>
     {{> pricing_calculator}}
   </div>
 
-  <div class="row section">
+  <div class="row section bordered">
     <div id="unit-pricing" class="col-xs-12 unit-pricing">
       <h2 class="section-title">Unit Pricing</h2>
       <ul class="plan-attributes">
@@ -135,6 +124,42 @@ quick_start:
         <li><strong>Encrypted Disk:</strong> {{pricing.disk}}</li>
         <li><strong>Domains:</strong> {{pricing.domain}}</li>
       </ul>
+    </div>
+  </div>
+
+  <div class="row section bordered">
+    <div class="col-xs-12 text-hero">
+      <h2 class="section-title">{{support_plans.title}}</h2>
+      <div class="row">
+        <div class="col-xs-12 col-md-4 support-plan-summary">
+          <h4>Business</h4>
+          <ul>
+            <li>Normal severity response times in 12 hours or less</li>
+            <li>Email and portal channels</li>
+            <li>Included with every account</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-4 support-plan-summary">
+          <h4>Premium</h4>
+          <ul>
+            <li>Dedicated slack channel</li>
+            <li>Urgent severity response times in 1 hour or less</li>
+            <li>Administrative portal access to manage tickets</li>
+            <li>Email, portal, and slack channels</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-4 support-plan-summary">
+          <h4>Enterprise</h4>
+          <ul>
+            <li>Dedicated Support Engineer</li>
+            <li>Dedicated Technical Account Manager</li>
+            <li>Critical issue response times in 15 minutes or less</li>
+            <li>Included base VPN and architecture support</li>
+            <li>Email, portal, slack, and phone channels</li>
+          </ul>
+        </div>
+      </div>
+      <a href="/support" class="btn btn-primary btn-lg">{{support_plans.cta}}</a>
     </div>
   </div>
 
