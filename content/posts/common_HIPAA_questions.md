@@ -140,7 +140,7 @@ HIPAA has three main “rules,” or sets of regulations, that specify how regul
 
 For many engineering organizations, the Security Rule is the hardest, most burdensome part of HIPAA. It can also be confusing: The rule is divided into “standards,” which are required but often vague, and “implementation specifications,” which are either required or “addressable” and usually not much more specific than the standards. HHS is working on collecting questions from digital health developers, but firm guidance and best practices are still be hard to come by.
 
-In order to help you understand how the Security Rule may apply to a cloud-based SaaS team, I've included some questions and notes. If you read the [text of the regulations](http://www.hhs.gov/sites/default/files/hipaa-simplification-201303.pdf), you will notice that my notes are more specific than the 
+In order to help you understand how the Security Rule may apply to a cloud-based SaaS team, I've included some questions and notes. You can read the [text of the regulations](http://www.hhs.gov/sites/default/files/hipaa-simplification-201303.pdf) to compare. 
 
 ### Administrative Safeguards
 Management controls, encoded in policies and procedures, related to how you select and implement a security management program, including risk management.
