@@ -1,0 +1,87 @@
+---
+layout: landing-page.hbs
+
+get-started:
+  title: Let's get started
+  sub-title: |-
+    No contracts, no risk. Open a Development Account today with $500 free credit.
+  cta:
+    href: /
+    label: Learn More
+---
+<header class="primary-header">
+  <div class="primary-header-bg">
+    {{> nav_bar }}
+    <h3 class="product-stack--title primary-sub-title">Deploying a Secure Application</h3>
+    <h1 class="product-stack--title primary-title">AWS vs APTIBLE</h1>
+    <div class="product-stack">
+      <div class="product-stack--illustration">
+        <img src="/assets/images/product-stack.png">
+      </div>
+      <div class="product-stack--feature">
+        <h2 class="feature-title">
+          Build a great app.<br>Leave the rest to us
+        </h2>
+        <div class="feature-body">
+          <p>
+            Aptible helps you deploy complex architectures easily and securely
+            in 3 steps. We configure AWS instances so you don't have to. Just
+            build your app, and deploy.
+          </p>
+          <p>
+            Use your existing code and workflows while we run your app.
+          </p>
+          <a class="btn btn-lg btn-primary" href="/technology">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="main" role="main">
+  <div class="container">
+    <div class="vs">
+      <div class="vs--left">
+        <div class="vs--image">{{> amazon }}</div>
+        <h4 class="vs--title">21 Steps to deploy a secure application on AWS:</h4>
+        <ol class="amazon-vs-list" data-collapsable="true" data-is-collapsed="true">
+          <li>Develop your application</li>
+          <li>Add application level security</li>
+          <li>OS & Host Management and Security</li>
+          <li>Backend user identity access management</li>
+          <li>Network topology and security</li>
+          <li>Deployment pipeline and coordination</li>
+          <li>Security management process</li>
+          <li>Assigned security responsibility</li>
+          <li>Information Access Management</li>
+          <li>Security Awareness and Training</li>
+          <li>Security incident procedures</li>
+          <li>Contingency planning for database backups</li>
+          <li>Disaster recovery planning</li>
+          <li>Emergency mode operation plan</li>
+          <li>Testing and revision plan</li>
+          <li>Automatic backend logoff</li>
+          <li>Encryption and decryption of databases and applications </li>
+          <li>Backend audit controls</li>
+          <li>Transmission security integrity controls</li>
+          <li>Transmission security encryption</li>
+          <li>Deploy</li>
+        </ol>
+      </div>
+      <div class="vs--vs">vs</div>
+      <div class="vs--right">
+        <div class="vs--image">{{> aptible }}</div>
+        <h4 class="vs--title">3 Steps to deploy a secure application on Aptible:</h4>
+        <ol>
+          <li>Develop your application</li>
+          <li>Add application level security</li>
+          <li>Deploy</li>
+        </ol>
+        <div class="text-center">
+          {{> terminal }}
+        </div>
+      </div>
+    </div>
+    {{> get_started }}
+  </div>
+</div>
