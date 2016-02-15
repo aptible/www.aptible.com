@@ -9,6 +9,10 @@
     margin-bottom: 0;
   }
 }
+.table-overflow {
+  overflow-x: scroll;
+  width: 100%;
+}
 .support-plan-tiers {
   width: 100%;
   th {

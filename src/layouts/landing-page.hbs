@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <!-- Intentionally slugify the page title into the body classes -->
+  <body
+    class="aptible-com landing-page {{#if id}}{{slugify id}}{{/if}} {{slugify title}} {{slugify page.section}} {{slugify basename}}">
+
+    {{> body}}
+
+    <footer class="aptible-footer">
+      <div class="aptible-mark"><div class="mark"></div></div>
+      <div class="landing-page__copyright">© 2016 Aptible</div>
+    </footer>
+
+    {{> javascripts}}
+  </body>
+</html>
