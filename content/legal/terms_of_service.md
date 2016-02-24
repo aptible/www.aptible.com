@@ -2,7 +2,7 @@
 title: Terms of Service
 tracked_title: Terms of Service
 description: "Aptible's terms of service"
-posted: 2015-09-10
+posted: 2016-02-23
 section: Legal
 sub_section: Agreements
 order: 0
@@ -22,7 +22,7 @@ Aptible, Inc.
 =============
 Terms of Service  
 ----------------
-Version 2.6 - September 2015
+Version 2.7 - February 2016
 
 Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**). 
 
@@ -61,9 +61,11 @@ You must be at least eighteen (18) years of age to use the Services. By agreeing
 ### 2. Your Account and Use of the Services
 To access the Services, you must create an Aptible user account. You may also need to create an Aptible organization account, if one does not exist already.
 
-When you register for the accounts, you may be required to provide us with some information about yourself, such as your phone number or other contact information. You agree that the information you provide to us is accurate and that you will keep it accurate at all times. You are responsible for all activities that occur under your accounts, regardless of whether the activities are undertaken by you, your employees or a third party (including your contractors or agents). You may create additional user accounts for users within your organization. Each Aptible user account is protected by credentials. You are responsible for maintaining the security of your credentials. Aptible and our affiliates are not responsible for unauthorized access to your account, except to the extent caused by our breach of this Agreement.
+When you register for the accounts, you may be required to provide us with some information about yourself, such as your phone number or other contact information. You agree that the information you provide to us is accurate and that you will keep it accurate at all times. You are responsible for all activities that occur under your accounts, regardless of whether the activities are undertaken by you, your employees or a third party (including your contractors or agents). You may create additional user accounts for users within your organization. 
 
-If you do not abide by your obligations, or if you engage in unauthorized uses, we may determine your account to be not in good standing and may take Remedial Action pursuant to Section 5. Good standing is determined at Aptible's sole discretion.
+Each Aptible user account is protected by credentials. You are responsible for maintaining the security of your credentials. Aptible and our affiliates are not responsible for unauthorized access to your account, except to the extent caused by our breach of this Agreement.
+
+If you do not abide by your obligations, or if you violate our [Acceptable Use Policy], we may determine your account to be not in good standing and may take Remedial Action pursuant to Section 5. Good standing is determined at Aptible's sole discretion.
 
 APTIBLE RESERVES THE RIGHT TO DISABLE ANY USER'S ACCESS TO ANY PART OF THE SERVICE, AND TO TERMINATE ANY USER'S ACCOUNT.
 
@@ -80,23 +82,7 @@ You may terminate your account and this Agreement at any time in accordance with
 7. You will abide by the restrictions in our [Support Policy] and [Security Policy] on how the Services may be implemented.  
 8. You will remit payment timely for the services, as specified in the [Fees and Pricing Policy] and any purchase order you may execute.
 
-**B. Unauthorized uses.** You are authorized access to the Services only to the extent necessary to develop and run Applications. You will not, and will not allow third parties under your control to:
-
-1. Use the Services to create, receive, maintain, or transmit protected health information, as defined in 45 C.F.R. § 160.103, without a Business Associate Agreement in place between you and Aptible;  
-2. Access the Services to bring an intellectual property infringement claim against Aptible or any of Aptible’s affiliates, customers, vendors, business partners, or licensors;  
-3. Develop or create a competing product or service;  
-4. Copy, modify, create a derivative work of, reverse engineer, decompile, translate, disassemble, or otherwise attempt to extract the source code of the Services or any component thereof;  
-5. Use the Services for High Risk Activities (as defined in Section 22);  
-6. Sub-license, resell, or distribute the Services or any component thereof separate from any integrated application, or;  
-7. Process or store any data that is subject to the International Traffic in Arms Regulations maintained by the Department of State;  
-8. Use the Services for any illegal purpose or in violation of any local, state, national, or international law;  
-9. Violate, or encourage others to violate, any right of a third party, including by infringing or misappropriating any third party intellectual property right;  
-10. Post, upload, or distribute any Content or other content that is unlawful, defamatory, libelous, inaccurate, or that a reasonable person could deem to be objectionable, profane, indecent, pornographic, harassing, threatening, embarrassing, hateful, or otherwise inappropriate;  
-11. Interfere with security-related features of the Services, including by: (a) disabling or circumventing features that prevent or limit use or copying of any content; or (b) reverse engineering or otherwise attempting to discover the source code of any portion of the Services except to the extent that the activity is expressly permitted by applicable law;
-12. Interfere with the operation of the Services or any user’s enjoyment of the Services, including by: (a) uploading or otherwise any disseminating viruses, adware, spyware, worms, or other malicious code; (b) making any unsolicited offer or advertisement to another user of the Services, including any informational announcements, charity requests, and petitions for signatures; (c) attempting to collect, personal information about another user or third party without consent; (d) taking any action (directly or indirectly) that imposes or may impose (as determined by Aptible in its sole discretion) an unreasonable or disproportionately large load on Aptible’s or its third party providers' infrastructure; or (e) interfering with or disrupting any network, equipment, or server connected to or used to provide the Services, or violating any regulation, policy, or procedure of any network, equipment, or server;  
-13. Perform any fraudulent activity, including impersonating any person or entity or claiming a false affiliation; misrepresenting the source, identity or content of information transmitted via the Services; accessing any other Service account without permission, or falsifying your age or date of birth;  
-14. Sell or otherwise transfer the access granted under this Agreement, or any right or ability to view, access, or use any Content; or  
-15. Attempt to do any of the acts described in this Section 2(B), or assist or permit any person in engaging in any of the acts described in this Section 2(B).
+**B. Unauthorized uses.** You are authorized access to the Services only to the extent necessary to develop and run Applications. You will not, and will not allow third parties under your control to violate our [Acceptable Use Policy].
 
 ### 3. Privacy
 **A. Your privacy.** Please read our [Privacy Policy], the terms of which are incorporated into this Agreement.
