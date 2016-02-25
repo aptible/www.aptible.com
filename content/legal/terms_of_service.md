@@ -2,7 +2,7 @@
 title: Terms of Service
 tracked_title: Terms of Service
 description: "Aptible's terms of service"
-posted: 2016-02-23
+posted: 2016-02-24
 section: Legal
 sub_section: Agreements
 order: 0
@@ -22,7 +22,7 @@ Aptible, Inc.
 =============
 Terms of Service  
 ----------------
-Version 2.7 - February 2016
+Version 2.8 - February 2016
 
 Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**). 
 
@@ -298,7 +298,7 @@ This Agreement supersedes all other agreements between the parties relating to i
 
 **"Content"** means software, data, text, audio, video, images or other content.
 
-**"Dedicated Environment"** means a dedicated Aptible environment running on in a dedicated network for which you have a valid, signed Business Associate Agreement with Aptible and have applied the required security configurations and controls as specified in that agreement.
+**"Dedicated Environment"** means a dedicated Aptible environment running in a dedicated network for which you have a valid, signed Business Associate Agreement with Aptible and have applied the required security configurations and controls as specified in that agreement.
 
 **"End User"** means any individual or entity that directly or indirectly through another user:
 
