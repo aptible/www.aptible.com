@@ -1,19 +1,26 @@
 ---
-  header: Aptible helps TelePharm bring full-service pharmacies to rural communities
-  title: 'Aptible + TelePharm'
-  bodycol: 'col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'
-  imagecol: 'col-xs-12 col-md-12 col-lg-10 col-lg-offset-1'
+layout: landing-page.hbs
+header: Aptible helps TelePharm bring full-service pharmacies to rural communities
+title: 'Aptible + TelePharm'
+bodycol: 'col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'
+imagecol: 'col-xs-12 col-md-12 col-lg-10 col-lg-offset-1'
+
+get-started:
+  title: Let's talk.
+  sub-title: |-
+    Find out how to get started with $500 credit
+  cta:
+    href: https://dashboard.aptible.com/signup?plan=development
+    label: Open a Development Account
+    get-started:
 ---
 
 <div class="case-study">
   <div class="jumbotron">
     <div class="container">
       <nav class="navbar">
-        <a class="navbar-brand" href="/">
-          <img src="/assets/images/aptible-logo.png" alt="Aptible" />
-        </a>
+        <a class="navbar-brand aptible-logo--white" href="/">{{> aptible}}</a>
       </nav>
-
       <h1>{{header}}</h1>
     </div>
   </div>
@@ -54,20 +61,16 @@
       </div>
     </div>
 
-    <div class="case-study-quote">
+    <div class="case-study-quote hero--aptible">
       <div class="container">
         <div class="row">
           <div class="{{imagecol}}">
-            <img class="quote-hex" src="/pages/assets/case-studies/quote.png" />
-
-            <h2>
-              Working with Aptible has effectively multiplied our dev team.  It's like having a world-class DevOps team ensuring the reliability and scalability of our infrastructure.  Running our platform on top of AWS via Aptible has increased our peace of mind and we've had spectacular uptime since switching.
-            </h2>
-
+            <h2>Working with Aptible has effectively extended our dev team.
+               We now have a group of world-class DevOps ensuring the
+               reliability and scalability of our app.
+               Running in our platform on top of AWS has increased our peace
+               of mind and we have had spectacular uptime since switching.</h2>
             <div class="quote-source">
-              <div class="quote-image">
-                <img src="/pages/assets/case-studies/kent-safranski.png" alt="Kent Safranski - Senior Developer and Architect at TelePharm" />
-              </div>
               <div class="quote-author">
                 <div class="quote-name">Kent Safranski</div>
                 <div class="quote-title">Senior Developer and Architect at TelePharm</div>
@@ -89,16 +92,11 @@
     </div>
   </div>
 
-  <footer class="aptible-footer">
-    <div class="aptible-mark"><div class="mark"></div></div>
+  <div class="aptible-footer">
     <div class="container">
-
       <div class="row">
         <div class="{{bodycol}}">
-          <div class="case-study-logo">
-            <img src="/pages/assets/case-studies/telepharm-logo.png" />
-          </div>
-
+          <div class="case-study-logo"><img src="/pages/assets/case-studies/telepharm-logo.png" /></div>
           <h3>The TelePharm Story</h3>
           <p>
             In 2010, Roby Miller’s family owned a chain of six rural retail pharmacies in eastern Iowa. The small communities where their pharmacies were located couldn't provide enough business to cover the expense of operating a pharmacy, thanks largely to policy changes related to payments for prescription medications. The Miller family was forced to close one pharmacy and sell another – leaving the remaining pharmacies still at risk.
@@ -110,14 +108,15 @@
           </p>
         </div>
       </div>
+    </div>
+  </div>
 
-
-      <div class="row sub-footer">
-        <ul class="nav navbar-nav">
-          <li>© 2016 Aptible</li>
-        </ul>
+  <div class="telepharm__cta">
+    <div class="container">
+      <div class="row section get-started">
+        {{> get_started }}
       </div>
     </div>
-  </footer>
+  </div>
 
 </div>
