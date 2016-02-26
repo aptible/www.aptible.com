@@ -13,5 +13,8 @@ testimonial:
   <div class="home-testimonial--quote">
     &ldquo;{{testimonial.copy}}&rdquo;
     <div class="home-testimonial--author">{{testimonial.author}}</div>
+    {{#if testimonial.read_more}}
+      <a class="arrow-link" href="{{testimonial.read_more}}">Read More</a>
+    {{/if}}
   </div>
 </div>
