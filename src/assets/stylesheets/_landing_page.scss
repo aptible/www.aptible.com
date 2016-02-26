@@ -1,4 +1,5 @@
 .landing-page {
+  background-color: white;
   header.primary-header {
     height: auto;
     .navbar {
@@ -40,7 +41,15 @@
       text-transform: uppercase;
     }
   }
-
+  footer.aptible-footer {
+    margin-top: 0;
+    min-width: auto;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  footer.aptible-footer {
+    min-width: auto;
+  }
 }
 @media (min-width: $screen-sm-min) and (max-width: 1100px) {
   .landing-page {
@@ -73,11 +82,9 @@
   }
 }
 .vs {
-  border-bottom: 1px solid #f0f0f0;
   display: flex;
   height: 100%;
   justify-content: center;
-  margin-bottom: 75px;
   ol {
     padding: 0;
   }
@@ -89,6 +96,10 @@
 }
 .vs--left, .vs--right {
   padding: 100px 70px;
+  width: 50%;
+  hr {
+    margin: 40px 0;
+  }
 }
 .vs--left {
   border-right: 1px solid #f0f0f0;
@@ -106,8 +117,6 @@
   text-align: center;
   transform: translate(35px, 120px);
   width: 70px;
-}
-.vs--right {
 }
 .vs--title {
   color: black;
@@ -132,6 +141,7 @@
   }
   .vs--left, .vs--right {
     padding: 50px 30px;
+    width: 100%;
   }
   .vs--left {
     border-bottom: 1px solid #f0f0f0;

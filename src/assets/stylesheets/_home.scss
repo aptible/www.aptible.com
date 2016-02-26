@@ -17,10 +17,15 @@ $text-color: #2c3e50 !default;
   font-size: 18px;
   &:after {
     content: '→';
-    padding-left: 5px;
+    position: absolute;
+    transform: translate(4px, 1px);
+    transition: transform 0.25s ease-in-out;
   }
   &:hover {
     text-decoration: none;
+    &:after {
+      transform: translate(8px, 1px);
+    }
   }
 }
 
@@ -337,6 +342,7 @@ header.primary-header {
   color: #ababab;
   font-size: 18px;
   margin-top: 24px;
+  margin-bottom: 24px;
 }
 @media (max-width: $screen-xs-max) {
   .home-testimonial--quote {
