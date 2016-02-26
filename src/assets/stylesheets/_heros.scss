@@ -1,0 +1,136 @@
+.hero {
+  color: white;
+  width: 100%;
+}
+.hero--aptible {
+  @include gradient-radial(#056CE0, #044B99); // Fallback to Bootstrap mixn
+  background-image: radial-gradient(circle at center 175px, #056ce0 0%, #044b99 90%);
+  background-size: auto auto;
+  background-position: center;
+}
+.hero__content {
+  // display: flex;
+  max-width: 600px;
+}
+.hero__item {
+  align-self: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.hero__logo {
+  margin-bottom: 50px;
+  img[src*='2x'] {
+    width: 50%;
+  }
+}
+.hero__content--right {
+  float: right;
+  text-align: right;
+}
+.hero__title {
+  color: white;
+  font-size: 30px;
+  line-height: 35px;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.20);
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+.hero__copy {
+  color: #ffe4d7;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 50px;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.21);
+}
+.hero__cta.btn.btn-primary {
+  background-color: rgba(255,255,255,0.75);
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.21);
+  &:hover {
+    background-color: rgba(255,255,255,0.5);
+    text-shadow: none;
+  }
+}
+
+// Variations:
+.telepharm__hero {
+  background-color: #3aa9e0;
+  background-image: url(/pages/assets/customers/tp-hero-bg.png);
+  background-position: 48% 100%;
+  background-repeat: no-repeat;
+  .hero__cta.btn.btn-primary {
+    color: #005b89;
+    &:hover { color: #005b89; }
+  }
+}
+.telepharm__hero__item {
+  max-width: 500px;
+}
+.telepharm__hero-copy {
+  color: #c3ebff;
+}
+
+.pride-study__hero {
+  background-color: #ee6624;
+  background-image: url(/pages/assets/customers/pride-study-bg.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .hero__cta.btn.btn-primary {
+    color: #ee471b;
+    &:hover { color: #ee471b; }
+  }
+}
+.our-customers .pride-study__hero {
+
+}
+.ucsf-pride-study .pride-study__hero {
+  background-position: 100% 15%;
+}
+.pride-study__hero__content {
+  align-items: center;
+  display: flex;
+}
+.pride-study__hero__item {
+  max-width: 500px;
+  .hero__logo {
+    margin-bottom: 20px;
+  }
+}
+.pride-study__hero__iphone {
+  margin-bottom: 40px;
+  padding: 0;
+  position: absolute;
+  transform: translate(0, -50px) scale(0.9);
+}
+
+@media (max-width: $screen-sm-min) {
+  .hero__content, .pride-study__hero, .telepharm__hero, .hero__content--right {
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+  .pride-study__hero__item, .telepharm__hero__item {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}
+
+
+.pride-study__header {
+  padding-top: 50px;
+  text-align: center;
+  .aptible-logo--white {
+    margin: 0 auto 55px auto;
+    text-align: center;
+    width: 170px;
+  }
+  .header-title {
+    color: white;
+    font-size: 36px;
+    line-height: 44px;
+    padding-bottom: 70px;
+    text-align: center;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.32);
+  }
+}
