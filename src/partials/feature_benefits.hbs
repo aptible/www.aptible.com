@@ -9,6 +9,19 @@
         </h3>
         {{> cta }}
       </div>
+    {{/is}} 
+
+    {{#is type "definition-list"}}
+      <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+        {{#if title}}
+          <h2>{{title}}</h2>
+        {{/if}}
+        {{#if description}}
+          <div class="product-pages__description">
+            {{#markdown}}{{description}}{{/markdown}}
+          </div>
+        {{/if}}
+      </div>
     {{/is}}
 
     {{#is type "image-left"}}
@@ -45,6 +58,9 @@
     {{/is}}
 
     {{#is type "benefit-list"}}
+      {{#if title}}
+        <h2 class="text-hero__title">{{title}}</h2>
+      {{/if}}
       <ul class="product-pages__list">
         {{#each benefit-list}}
           <li class="product-pages__list-item">
