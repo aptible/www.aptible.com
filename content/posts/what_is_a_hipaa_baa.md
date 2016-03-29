@@ -14,6 +14,20 @@ For a broader overview of HIPAA, see our post on [common HIPAA questions](/blog/
 
 One caveat, as always: This post is for informational purposes only. Aptible is not a law firm, and this post is not legal advice. You should contact an attorney to obtain advice with respect to particular issues or problems, including contracts and BAAs.
 
+**Table of Contents**
+1. [What is a BAA?](#what-is-a-baa-)
+2. [What (or who?) is a Business Associate?](#what-or-who-is-a-business-associate-)
+    - [What does it mean to handle PHI "on behalf of" another entity?](#what-does-it-mean-to-handle-phi-on-behalf-of-another-entity-)
+    - [Do employees need to sign a BAA?](#do-employees-need-to-sign-a-baa-)
+    - [Do contractors need to sign a BAA?](#do-contractors-need-to-sign-a-baa-)
+3. [When is a BAA required?](#when-is-a-baa-required-)
+4. [What does the BAA requirement mean for choosing our stack?](#what-does-the-baa-requirement-mean-for-choosing-our-stack-)
+5. [What if a vendor signs a BAA, but I don't think they're really compliant?](#what-if-a-vendor-signs-a-baa-but-i-don-t-think-they-re-really-compliant-)
+6. [What needs to be in a BAA?](#what-needs-to-be-in-a-baa-)
+7. [What are other common terms to find in a BAA?](#what-are-other-common-terms-to-find-in-a-baa-)
+8. [What shouldn't be in a BAA?](#what-shouldn-t-be-in-a-baa-)
+9. [Example BAAs](#example-baas)
+
 # What is a BAA?
 "BAA" is an acronym for "business associate agreement," which is an industry term for what the HIPAA regulations call a "business associate contract." Same thing.
 
@@ -155,3 +169,5 @@ If you have any questions about this post, or you'd like to chat about how to de
 [4]: /blog/assets/what-is-a-hipaa-baa/aptible_baa_template.pdf
 [5]: /blog/assets/what-is-a-hipaa-baa/aptible_baa_20160317.pdf
 [6]: /legal/terms_of_service.html
+
+_Update - March 29, 2016: Added a table of contents._
