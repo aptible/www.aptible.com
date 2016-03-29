@@ -14,6 +14,19 @@ This post is lengthy, but if you read it all, by the end you will have a solid u
 
 One caveat: This post is for informational purposes only. Aptible is not a law firm, and this post is not legal advice. You should contact an attorney to obtain advice with respect to any particular issue or problem.
 
+**Table of Contents **
+
+1. [What is HIPAA?](#what-is-hipaa-)
+2. [Who does HIPAA regulate?](#who-does-hipaa-regulate-)
+3. [What data does HIPAA regulate?](#what-data-does-hipaa-regulate-)
+4. [Who will check if we are HIPAA-compliant?](#who-will-check-if-we-are-hipaa-compliant-)
+5. [Can we be fined for HIPAA violations where there is no breach of PHI?](#can-we-be-fined-for-hipaa-violations-where-there-is-no-breach-of-phi-)
+6. [How do we become HIPAA-compliant?](#how-do-we-become-hipaa-compliant-)
+7. [What are the HIPAA rules?](#what-are-the-hipaa-rules-)
+    - [The Privacy Rule](#the-privacy-rule)
+    - [The Security Rule](#the-security-rule)
+    - [The Breach Notification Rule](#the-breach-notification-rule)
+
 # What is HIPAA?
 HIPAA is a federal law that protects the privacy and security of health data. It is enforced by the Office for Civil Rights (OCR) of the U.S. Department of Health and Human Services (HHS).
 
@@ -231,4 +244,8 @@ The Breach Notification Rule also contains the rules under which unauthorized ac
 
 # Next Steps
 You now know just enough about HIPAA to be dangerous. As you plan out your go-to market strategy, you'll be able to identify potential issues before they arise. If you'd like to chat about how to design and scale a HIPAA-compliant engineering organization in the cloud, feel free to [contact us](https://support.aptible.com/contact/).
+
+Discuss this post on [Hacker News](https://news.ycombinator.com/item?id=11377862).
+
+_Update - March 29, 2016: Added a table of contents and link to Hacker News discussion._
 
