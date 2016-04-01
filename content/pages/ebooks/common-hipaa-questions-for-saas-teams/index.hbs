@@ -1,0 +1,73 @@
+---
+layout: landing-page.hbs
+---
+<header class="primary-header ebooks">
+  <div class="primary-header-bg">
+    {{> nav_bar }}
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1 ebooks-introduction">
+        <h2 class="ebooks-subheading title-text-shadow">
+          Download the
+          <div class="ebook-title">Common HIPAA Questions</div>
+          eBook for your SaaS team.
+        </h2>
+        <p>
+          Explosive growth in digital health over the last few years means there
+          are many developers and managers who haven't worked under HIPAA
+          before.
+        </p>
+        <p>
+          This PDF ebook is for engineering teams who could use some
+          help with the basics.
+        </p>
+      </div>
+      <div class="col-sm-5">
+        <div class="panel ebooks-panel">
+          <div class="panel-heading">I want to hear more from Aptible</div>
+          <div class="panel-body">
+            <form class="newsletter-signup" data-success="/assets/docs/CommonHIPAAQuestions.pdf">
+              <div class="message success">
+                <div class="alert alert-success">
+                  Thank you!
+                </div>
+              </div>
+              <div class="message danger">
+                <div class="alert alert-danger">
+                  Please complete all fields and make sure your email
+                  address is correct.
+                </div>
+              </div>
+              <div class="form-group">
+                <label>First Name</label>
+                <input required name="fname" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input required name="lname" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input required name="email" type="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Company</label>
+                <input required name="company" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign Me Up!">
+              </div>
+            </form>
+            <hr>
+            <p>
+              No thanks.
+              <a href="/assets/docs/CommonHIPAAQuestions.pdf">I'll just take the ebook.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
