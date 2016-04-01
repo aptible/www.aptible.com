@@ -280,7 +280,7 @@ module.exports = function(grunt) {
                 {
                     expand: true,
                     cwd: 'src/assets/',
-                    src: ['favicon.ico'],
+                    src: ['favicon.ico', 'docs/*.*'],
                     dest: 'dist/assets/'
                 }
                 ]
