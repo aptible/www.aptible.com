@@ -27,18 +27,20 @@ $ ->
             # Trigger Customer.io tracking...
             analytics.page()
 
-            traits = email: emailVal
+            traits =
+              email: emailVal,
+              name: "#{fname.val()} #{lname.val()}",
+              company_name: company.val()
 
-            unless _this.identified()
-              traits =
-                email: emailVal,
-                name: "#{fname.val()} #{lname.val()}",
-                company_name: company.val()
+            if _this.identified()
+              # Update traits for this identified user
+              analytics.identify analytics.user().id(), traits
+            else
+              # Create a new user with the submitted traits
               analytics.identify emailVal, traits
 
             success.show()
             _this.trackEBook(form.data('ebook'), traits) if form.data('ebook')
-
           else
             error.show()
             submit.removeAttr('disabled')
@@ -49,7 +51,6 @@ $ ->
     trackEBook: (path, traits = {}) ->
       book = path.split('/').reverse()[0]
       traits.book = book
-      analytics.identify analytics.user().id() if @identified()
       analytics.track 'Downloaded eBook', traits
       window.location.href = path
 
@@ -57,6 +58,7 @@ $ ->
       @.each () =>
         $(@).on 'click', (e) =>
           e.preventDefault()
+          analytics.identify analytics.user().id() if @identified()
           @trackEBook($(@).attr('href'))
 
   $('.ebook-form').eBookForm()
