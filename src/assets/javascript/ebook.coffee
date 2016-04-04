@@ -4,10 +4,10 @@ validateEmail = (email) ->
 
 $ ->
   $.fn.extend
-    newsletterForm: () ->
+    eBookForm: () ->
+      _this = @
       @.each () ->
         form = $(this)
-        fields = form.find('.form-fields')
         email = form.find('input[name="email"]')
         submit = form.find('input[type="submit"]')
         fname = form.find('input[name="fname"]')
@@ -27,25 +27,39 @@ $ ->
             # Trigger Customer.io tracking...
             analytics.page()
 
-            identified = typeof analytics.user().id == 'function' && analytics.user().id()
+            traits = email: emailVal
 
-            if identified
-              analytics.identify analytics.user().id(), newsletter_subscribed: true
-            else
+            unless _this.identified()
               traits =
-                email: evamilVal,
-                newsletter_subscribed: true,
+                email: emailVal,
                 name: "#{fname.val()} #{lname.val()}",
                 company_name: company.val()
               analytics.identify emailVal, traits
 
-            analytics.track 'Subscribed To Newsletter', { email: emailVal }
             success.show()
-            fields.hide()
-            window.location ?= form.data('success')
+            _this.trackEBook(form.data('ebook'), traits) if form.data('ebook')
 
           else
             error.show()
             submit.removeAttr('disabled')
 
-  $('.newsletter-signup').newsletterForm()
+    identified: () ->
+      typeof analytics.user().id == 'function' && analytics.user().id()
+
+    trackEBook: (path, traits = {}) ->
+      book = path.split('/').reverse()[0]
+      traits.book = book
+      analytics.identify analytics.user().id() if @identified()
+      analytics.track 'Downloaded eBook', traits
+      window.location.href = path
+
+    eBookDownload: () ->
+      @.each () =>
+        $(@).on 'click', (e) =>
+          e.preventDefault()
+          @trackEBook($(@).attr('href'))
+
+  $('.ebook-form').eBookForm()
+
+  if window.location.pathname.indexOf('ebooks') > -1
+    $("a[href$='.pdf']").eBookDownload()
