@@ -51,10 +51,8 @@ $ ->
       typeof analytics.user().id == 'function' && analytics.user().id()
 
     trackEBook: (path, traits = {}) ->
-      debugger
       book = path.split('/').reverse()[0]
       traits.book = book
-      console.log traits
       analytics.identify analytics.user().id() if @identified()
       analytics.track 'Downloaded eBook', traits
       window.location.href = path
@@ -67,6 +65,5 @@ $ ->
 
   $('.newsletter-signup').newsletterForm()
 
-  console.log window.location
   if window.location.pathname.indexOf('ebooks') > -1
     $("a[href$='.pdf']").eBookDownload()
