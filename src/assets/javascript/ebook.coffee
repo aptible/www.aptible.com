@@ -4,7 +4,7 @@ validateEmail = (email) ->
 
 $ ->
   $.fn.extend
-    newsletterForm: () ->
+    eBookForm: () ->
       _this = @
       @.each () ->
         form = $(this)
@@ -29,17 +29,13 @@ $ ->
 
             traits = email: emailVal
 
-            if _this.identified()
-              analytics.identify analytics.user().id(), newsletter_subscribed: true
-            else
+            unless _this.identified()
               traits =
                 email: emailVal,
-                newsletter_subscribed: true,
                 name: "#{fname.val()} #{lname.val()}",
                 company_name: company.val()
               analytics.identify emailVal, traits
 
-            analytics.track 'Subscribed To Newsletter', traits
             success.show()
             _this.trackEBook(form.data('ebook'), traits) if form.data('ebook')
 
@@ -63,7 +59,7 @@ $ ->
           e.preventDefault()
           @trackEBook($(@).attr('href'))
 
-  $('.newsletter-signup').newsletterForm()
+  $('.ebook-form').eBookForm()
 
   if window.location.pathname.indexOf('ebooks') > -1
     $("a[href$='.pdf']").eBookDownload()
