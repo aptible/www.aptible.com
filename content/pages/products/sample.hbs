@@ -1,0 +1,115 @@
+---
+id: product_sample
+tracked_title: Sample Product Feature
+section: product-pages
+posted: 2015-12-23
+
+title: Sample Product Feature
+sub_title: |
+  A sample sub-title will appear under the page title in the heading. A single
+  line or a paragraph are supported.
+
+benefits:
+  - benefit:
+    type: text-hero
+    title: |
+      This is a "Text Hero" with a long title. It can replace the sub-title
+      appearing in the blue heading.
+
+  - benefit:
+    type: benefit-list
+    style-options: bordered
+    benefit-list:
+    - benefit:
+      title: Benefit List Item 1
+      description: |
+        Supports all sizes of lists 1-n responsively with a flex layout.
+    - benefit:
+      title: CI Integration
+      description: |
+        Trigger deploys to staging or production from all major continuous integration providers.
+    - benefit:
+      title: Build Hooks
+      description: |
+        Trigger logic before and after builds, deploys, and trips to the store.
+    - benefit:
+      title: Unified Logging
+      description: |
+        Drain app and audit logs to a centralized destination of your choice, including a private logging stack on Aptible.
+    - benefit:
+      title: CI Integration
+      description: |
+        Trigger deploys to staging or production from all major continuous integration providers.
+
+  - benefit:
+    type: text-hero
+    title: Text Hero
+    description: |
+      This is an example of the Text Hero with a CTA and arrow link
+    cta:
+      label: CTA (optional)
+      url: /pricing
+    link:
+      label: Link (optional)
+      url: /pricing
+
+  - benefit:
+    type: benefit-list
+    style-options: bordered
+    benefit-list:
+    - benefit:
+      image-url: /assets/images/osvaldo-gray.svg
+      title: Benefit Item Image
+      description: |
+        Optional image on top
+    - benefit:
+      image-url: /assets/images/osvaldo-gray.svg
+      title: CI Integration
+      description: |
+        Trigger deploys to staging or production from all major continuous integration providers.
+    - benefit:
+      image-url: /assets/images/osvaldo-gray.svg
+      title: Benefit Item Image
+      description: |
+        Optional image on top
+
+  - benefit:
+    title: Image Left
+    type: image-left
+    image-url: /assets/images/osvaldo-gray.svg
+    description: |
+      Given an URL, puts an image to the left of a left aligned title /
+      sub-title group. Includes optional CTA and arrow links.
+      Image is above text on xs screens.
+    link:
+      label: Link (optional)
+      url: /pricing
+
+  - benefit:
+    title: Image Right
+    type: image-right
+    image-url: /assets/images/osvaldo-gray.svg
+    description: |
+      Given an URL, puts an image to the right of a left aligned title /
+      sub-title group. Includes optional CTA and arrow links.
+      Image is below text on xs screens.
+    cta:
+      label: CTA (optional)
+      url: /pricing
+    style-options: bordered
+
+  - benefit:
+    type: image-left
+    image-url: https://avatars3.githubusercontent.com/u/3422584?v=3&s=150
+    author: Chas Ballew, CEO Aptible
+    description: |
+      The Image Left type can work as a testimonial with an added class.
+      TODO: Make a testimonial component, clean up duplicated styles.
+    style-options: testimonial
+    link:
+      label: A Link To More
+      url: /pricing
+---
+<div class="container">
+  {{> feature_benefits}}
+</div>

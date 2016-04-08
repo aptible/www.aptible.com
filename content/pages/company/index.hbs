@@ -1,0 +1,115 @@
+---
+title: "About Us"
+tracked_title: "About Us"
+description: "Aptible's about page"
+posted: 2014-06-30
+section: Company
+mission: "To do this, we build devops tools that streamline information security compliance for web and mobile applications. We currently focus primarily in healthcare, on HIPAA compliance."
+employees:
+  chas:
+    name: Chas Ballew
+    title: Co-founder, CEO
+    email: chas@aptible.com
+    bio: "Chas is an attorney and a former government regulatory lawyer. Prior to founding Aptible, he served on active duty with the Office of the Army General Counsel in Washington, DC. He is a graduate of Princeton University and the University of Michigan Law School. He is [@chasballew](http://twitter.com/chasballew) on the web."
+  frank:
+    name: Frank Macreery
+    title: Co-founder, CTO
+    email: frank@aptible.com
+    bio: "Frank is an experienced software developer and architect. Prior to Aptible, he led engineering teams at Give Real, XGraph (acquired by Clearspring/AddThis), and Artsy. He holds a B.S.E. in Computer Science from Princeton University. He is [@fancyremarker](http://twitter.com/fancyremarker) on the web."
+  aaron:
+    name: Aaron Windsor
+    title: Lead Backend Engineer
+    email: aaron@aptible.com
+    bio: "Aaron leads backend development at Aptible. Prior to Aptible, he worked as an engineer at Application Security, Artsy, and Google."
+  blake:
+    name: Blake Pettersson
+    title: Senior Backend Engineer
+    email: blake@aptible.com
+    bio: "Blake is a backend developer who has previously worked at Ooyala (formerly Videoplaza) in Stockholm, Sweden as a platform engineer and now is trying to brush up on his Spanish."
+  colby:
+    name: Colby Pines
+    title: Technical Account Manager
+    email: colby@aptible.com
+    bio: "Prior to joining Aptible, Colby was a Platform Integrations TAM at AppNexus, where he provided technical consultation and support for demand-side and data provider partners. Outside of Aptible, Colby enjoys running, rock climbing, and jazz."
+  gib:
+    name: Gib Reimschüssel
+    title: Senior Frontend Engineer
+    email: gib@aptible.com
+    bio: "Gib has built web applications in small agencies, independently, and most recently for Artsy. Gib loves his family, animating SVGs, and building UI. He is [@greims](https://twitter.com/greims) on the web."
+  shah:
+    name: Shah Kader
+    title: Account Executive
+    email: shah@aptible.com
+    bio: "Shah helps new customers learn about Aptible and get set up with accounts. He was previously at LocalVox and Stack Exchange. Outside of Aptible, Shah enjoys biking, boxing, and is finishing up law school."
+  skylar:
+    name: Skylar Anderson
+    title: Lead Frontend Engineer
+    email: skylar@aptible.com
+    bio: "Skylar leads UI/UX at Aptible. Prior to Aptible, he worked as a freelance consultant, designing and building software for companies like Eli Lilly, Facebook, and ExactTarget."
+
+---
+<div class="container">
+  <div class="row section">
+    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+      <div class="intro-block">
+        <h1 class="intro-title">Our Mission</h1>
+        <h2 class="intro-heading">Help our customers work safely with the most meaningful, sensitive data in highly regulated industries. </h2>
+        <div class="intro-body">{{mission}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="intro-block">
+        <h1 class="intro-title">The Aptible Team</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="employees">
+      {{#each employees}}
+        <div class="col-md-6 col-sm-6 col-lg-4">
+          <div class="employee panel panel-default {{slugify name}}">
+            <div class="panel-body">
+              <div class="image-wrapper">
+                <div class="image">
+                  {{ gravatar email 'xxl' }}
+                </div>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="name">{{name}}</h5>
+                <h6 class="title">{{title}}</h6>
+              </div>
+              <div class="bio">
+                {{#markdown}}{{bio}}{{/markdown}}
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default were-hiring-panel">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h1 class="panel-title">Join us!</h1>
+              <h5 class="panel-sub">Help build the future of privacy and security on the web.</h2>
+              <div class="panel-cta">
+                <a href="/company/careers" class="btn btn-primary btn-lg">
+                  Careers at Aptible
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
