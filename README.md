@@ -48,6 +48,41 @@ To update these credentials at any time, run:
 
     travis encrypt -r aptible/www.aptible.com --add env AWS_ACCESS_KEY_ID=... AWS_SECRET_ACCESS_KEY=...
 
+#### Creating a Blog Post
+
+Blog posts consist of combination of [YAML front matter](http://jekyllrb.com/docs/frontmatter/) and [markdown](https://daringfireball.net/projects/markdown/basics).  In order to ensure your post functions properly, you'll need to provide the appropriate YAML front matter at the top of your .md file.
+
+````
+---
+title: Post Title
+excerpt: "When I say the terms \"IT Operations\" and \"Software Development\" together, what decade do you think of? Probably the 90s or at least early 2000s."
+author_name: Chas Ballew
+author_email: chas@aptible.com
+author_id: chas
+posted: 2014-06-01
+section: Blog
+---
+````
+
+#### Using media in your blog posts
+
+Use the `{{blog_asset_path}}` helper to build a relative URL to the media in the assets folder. The following will generate a path to `assets/aptible.png`. Note that you will still have to use Markdown or HTML syntax to generate the element.
+
+For example:
+```
+![]( {{ blog_asset_path 'aptible.png' }} )
+```
+or
+```
+<img src="{{ blog_asset_path 'aptible.png' }}" />
+```
+
+You may also store assets in sub folders
+
+````
+![]( {{ blog_asset_path 'logos/aptible.png' }} )
+````
+
 Copyright &copy; 2016 Aptible
 
 [<img src="https://secure.gravatar.com/avatar/566f0093e212d9b808c0cece8a32480e?s=60" style="border-radius: 50%;" alt="@gib" />](https://github.com/gib)

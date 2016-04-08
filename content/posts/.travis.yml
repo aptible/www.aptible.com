@@ -1,5 +1,0 @@
-sudo: false
-script:
-- PATH=$HOME/.local/bin:$PATH script/travis-deploy.sh
-env:
-  secure: I561JmbFzYrW1UsgcZb15Mw8WK3F/wEToNVcxhFXG+ps3cKX9ZtDarkFFnRkg0z7vJZcekyOEOTxquOVMbaNZffcgidT87K/FkRu205yrp8c4NUWcyDWNT+zpntQefEjsAujpm5q7pjWuThyXkj7HkdE40TAASt9QfcEM74Gwxk=
