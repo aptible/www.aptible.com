@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/aptible/www.aptible.com.png?branch=master)](https://travis-ci.org/aptible/www.aptible.com)
 
 ## www.aptible.com
-This is a static site generator that pulls in content pages from the [aptible-pages](https://github.com/aptible/aptible-pages), [aptible-blog](https://github.com/aptible/aptible-blog) and [aptible-legal](https://github.com/aptible/aptible-legal) repos.
+This is an Assemble.io-powered static site.
 
 #### Setting up
 
@@ -13,11 +13,7 @@ grunt setup
 
 #### Local Development
 
-`grunt setup` clones the aptible-pages, aptible-legal, and aptible-blog repos into the `content` folder. You can add your own fork as a remote and submit PRs for those repos directly. Run `grunt update` to pull the latest revisions of all dependent content repos.
-
-`grunt setup`, `grunt server`, and the deploy tasks all ensure dependencies are
-installed locally by running `bundle install`, `npm install`, and
-`bower install`.
+Run `grunt setup` to install Gem, Bower, and NPM dependencies.
 
 Run `grunt server` to see your changes on localhost.
 

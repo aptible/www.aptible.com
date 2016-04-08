@@ -298,7 +298,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('assemble');
 
     grunt.registerTask('require_setup', 'Ensures repo is setup', function() {
-        var dependencies = ['vendor/aptible-sass', 'content/legal', 'content/pages', 'content/posts', 'node_modules'],
+        var dependencies = ['vendor/aptible-sass', 'node_modules'],
         i = 0;
 
         for (i = 0; i < dependencies.length; i++) {
