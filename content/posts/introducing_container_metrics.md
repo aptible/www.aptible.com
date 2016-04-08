@@ -11,7 +11,7 @@ posts: true
 
 Aptible customers have been asking how they could view performance metrics such as RAM and CPU usage for their containers. We’re happy to announce that the wait is coming to an end!
 
-Last week, we started rolling out the first iteration of our new Container Metrics feature. As an Aptible user, this lets you visualize performance metrics for your app and database containers directly from your dashboard. In turn, you can use this information to identify performance bottlenecks and make informed scaling decisions.
+Last week, we started rolling out the first iteration of our new Container Metrics feature. You can access them via the "View Metrics" buttons on an App's service list, or the "Metrics" tab for a Database. As an Aptible user, this lets you visualize performance metrics for your app and database containers directly from your dashboard. In turn, you can use this information to identify performance bottlenecks and make informed scaling decisions.
 
 Metrics are available for apps and databases. In both cases, you can vizualize:
 
