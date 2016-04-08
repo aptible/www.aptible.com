@@ -131,51 +131,6 @@ module.exports = function(grunt) {
             }
         },
 
-        gitclone: {
-            legal: {
-                options: {
-                    branch: 'master',
-                    repository: 'https://github.com/aptible/aptible-legal.git',
-                    directory: 'content/legal'
-                }
-            },
-            pages: {
-                options: {
-                    branch: 'master',
-                    repository: 'https://github.com/aptible/aptible-pages.git',
-                    directory: 'content/pages'
-                }
-            },
-            blog: {
-                options: {
-                    branch: 'master',
-                    repository: 'https://github.com/aptible/aptible-blog.git',
-                    directory: 'content/posts'
-                }
-            }
-        },
-
-        gitpull: {
-            legal: {
-                options: {
-                    branch: 'master',
-                    cwd: 'content/legal'
-                }
-            },
-            pages: {
-                options: {
-                    branch: 'master',
-                    cwd: 'content/pages'
-                }
-            },
-            blog: {
-                options: {
-                    branch: 'master',
-                    cwd: 'content/posts'
-                }
-            }
-        },
-
         clean: {
             src: ['dist']
         },
@@ -330,7 +285,6 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-auto-install');
-    grunt.loadNpmTasks('grunt-git');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-compass');
@@ -369,8 +323,8 @@ module.exports = function(grunt) {
         grunt.config.set('assemble.options.env', env);
     });
 
-    grunt.registerTask('setup', ['install', 'auto_install', 'gitclone']);
-    grunt.registerTask('update', ['require_setup', 'gitpull']);
+    grunt.registerTask('setup', ['install', 'auto_install']);
+    grunt.registerTask('update', ['require_setup']);
     grunt.registerTask('dist', ['require_setup', 'install', 'clean', 'copy:assets', 'assemble', 'compass:site', 'coffee:compile']);
     grunt.registerTask('release:production', ['env:production', 'dist', 'exec:s3_sync:www.aptible.com']);
     grunt.registerTask('release:staging', ['env:staging', 'dist', 'exec:s3_sync:www.aptible-staging.com']);
