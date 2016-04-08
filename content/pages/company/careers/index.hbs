@@ -1,0 +1,60 @@
+---
+title: Careers
+tracked_title: Careers
+id: careers
+description: Aptible careers page
+posted: 2014-06-30
+section: Company
+mission_title: Help build the future of privacy and security on the web.
+mission: We are transforming the experience of building private, secure software systems in regulated industries. We are starting in digital health because the American healthcare system is broken and we want to empower those who can fix it. If you want to make a meaningful difference, join our team.
+slides:
+  rock:
+    title: Aptible HQ
+    caption: DUMBO, Brooklyn
+    url: /pages/assets/155_water.jpg
+---
+
+
+<div class="container">
+  <div class="row section careers-carousel-section">
+    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+
+      <div class="carousel">
+        {{#each slides}}
+          <div class="carousel-item">
+            <div class="item-shade"></div>
+            <img src="{{url}}" alt="{{name}}">
+            <div class="carousel-caption">
+              <h3>{{title}}</h3>
+              <p>{{caption}}</p>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row section working-at-aptible-description">
+    <!-- We're remote friendly: https://github.com/aptible/aptible-pages/pull/42 -->
+    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+      <div class="intro-block">
+        <h2 class="intro-heading">{{mission_title}}</h2>
+        <div class="intro-body">{{mission}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row section open-positions-at-aptible">
+    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+      <h2 class="section-title">Open Positions</h2>
+      <div class="openings">
+        <i class="fa fa-spin fa-spinner"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

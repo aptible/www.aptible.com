@@ -1,0 +1,122 @@
+---
+layout: landing-page.hbs
+header: Aptible helps TelePharm bring full-service pharmacies to rural communities
+title: 'Aptible + TelePharm'
+bodycol: 'col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2'
+imagecol: 'col-xs-12 col-md-12 col-lg-10 col-lg-offset-1'
+
+get-started:
+  title: Let's talk.
+  sub-title: |-
+    Find out how to get started with $500 credit
+  cta:
+    href: https://dashboard.aptible.com/signup?plan=development
+    label: Open a Development Account
+    get-started:
+---
+
+<div class="case-study">
+  <div class="jumbotron">
+    <div class="container">
+      <nav class="navbar">
+        <a class="navbar-brand aptible-logo--white" href="/">{{> aptible}}</a>
+      </nav>
+      <h1>{{header}}</h1>
+    </div>
+  </div>
+
+  <div class="case-study-logos">
+    <div class="container">
+      <img src="/pages/assets/case-studies/aptible+telepharm.png" alt="Aptible + TelePharm" />
+    </div>
+  </div>
+
+  <div class="case-study-body">
+    <div class="container">
+      <div class="row">
+        <div class="{{bodycol}}">
+
+        <p>
+          Across the United States, independent pharmacies are closing. Between 2010 and 2012, 46 pharmacies closed in Iowa alone, leaving more than 220,000 patients in rural areas without a local pharmacy. These residents, many of them elderly, were forced to travel long distances or even move just to access basic pharmacy services.
+        </p>
+        <p>
+          TelePharm was founded in 2012 to bring convenient, world-class pharmacy services back to these rural communities. Through their innovative pharmacy solutions, they provide underserved patients access to a complete pharmacy. TelePharm’s software is critical to the success of this new model, allowing them to securely manage the prescription workflow and verification process.
+        </p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="{{imagecol}}">
+          <img src="/pages/assets/case-studies/telepharm-screenshot.jpg" alt="TelePharm" class="screenshot" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="{{bodycol}}">
+          <p>
+            TelePharm came to Aptible looking for a better way to manage their development and deployment process, while maintaining HIPAA compliance.  With Aptible, the TelePharm team was able to get their apps and databases migrated and running in a few hours. With Aptible’s secure, PHI-ready deployment environments and DevOps tools, TelePharm has been able to achieve unparalleled agility, stability, and security.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-study-quote hero--aptible">
+      <div class="container">
+        <div class="row">
+          <div class="{{imagecol}}">
+            <h2>Working with Aptible has effectively extended our dev team.
+               We now have a group of world-class DevOps ensuring the
+               reliability and scalability of our app.
+               Running in our platform on top of AWS has increased our peace
+               of mind and we have had spectacular uptime since switching.</h2>
+            <div class="quote-source">
+              <div class="quote-author">
+                <div class="quote-name">Kent Safranski</div>
+                <div class="quote-title">Senior Developer and Architect at TelePharm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="{{bodycol}}">
+          <p>
+            With Aptible, TelePharm was able to easily migrate their services into a scalable, PHI-ready ecosystem. The convenience of deploying code to multiple environments has enabled them to quickly build, test and deploy new features. By running the entire software development lifecycle on Aptible, TelePharm has drastically shortened the time from when code is written to live deployment. Aptible frees up the dev team, letting them focus on the features and functionality that make TelePharm unique.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="aptible-footer">
+    <div class="container">
+      <div class="row">
+        <div class="{{bodycol}}">
+          <div class="case-study-logo"><img src="/pages/assets/case-studies/telepharm-logo.png" /></div>
+          <h3>The TelePharm Story</h3>
+          <p>
+            In 2010, Roby Miller’s family owned a chain of six rural retail pharmacies in eastern Iowa. The small communities where their pharmacies were located couldn't provide enough business to cover the expense of operating a pharmacy, thanks largely to policy changes related to payments for prescription medications. The Miller family was forced to close one pharmacy and sell another – leaving the remaining pharmacies still at risk.
+          </p>
+
+          <h3>TelePharm develops a solution</h3>
+          <p>
+            Then, in 2012, the Miller family was approached by a local health board to consider bringing a pharmacy back to their community. Wanting to help, Roby founded TelePharm and developed a solution that would be affordable, easy to maintain, and feasible in low-volume rural locations. In October 2012, TelePharm opened Iowa’s first telepharmacy and began helping other communities revive their local pharmacies. Since then, others have realized the value in the model that TelePharm created and more telepharmacies have opened across the United States. The number of TelePharm Pharmacies, as well as the TelePharm team, continue to grow today.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="telepharm__cta">
+    <div class="container">
+      <div class="row section get-started">
+        {{> get_started }}
+      </div>
+    </div>
+  </div>
+
+</div>

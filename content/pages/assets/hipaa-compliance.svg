@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="169px" height="58px" viewBox="0 0 169 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>HIPAA</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="169" height="58" rx="5"></rect>
+        <rect id="path-2" x="4" y="4" width="161" height="50" rx="5"></rect>
+        <linearGradient x1="50%" y1="13.6398566%" x2="50%" y2="93.0471952%" id="linearGradient-4">
+            <stop stop-color="#40D031" offset="0%"></stop>
+            <stop stop-color="#19AF2A" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.180785779 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home" sketch:type="MSArtboardGroup" transform="translate(-988.000000, -1672.000000)">
+            <g id="HIPAA" sketch:type="MSLayerGroup" transform="translate(988.000000, 1672.000000)">
+                <g id="Rectangle-46">
+                    <g>
+                        <use fill="#EFEFEF" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                        <use fill="none" xlink:href="#path-1"></use>
+                    </g>
+                    <mask id="mask-3" sketch:name="Rectangle 49" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Rectangle-49">
+                        <use stroke="#D2D2D2" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                        <use stroke="none" fill="none" xlink:href="#path-2"></use>
+                    </g>
+                    <rect id="Rectangle-47" fill="url(#linearGradient-4)" sketch:type="MSShapeGroup" mask="url(#mask-3)" x="4" y="-3" width="50" height="61"></rect>
+                </g>
+                <path d="M42.8261803,22.720448 C43.0579399,22.9522076 43.0579399,23.2998471 42.8261803,23.5316068 L26.0815451,40.276242 C25.8497854,40.5080016 25.5021459,40.5080016 25.2703863,40.276242 L21.5042918,36.5101475 C21.2725322,36.2783879 20.9248927,35.9307484 20.693133,35.6989887 L16.1738197,31.1796754 C15.9420601,30.9479158 15.9420601,30.6002763 16.1738197,30.3685166 L19.9399142,26.6024222 C20.1716738,26.3706626 20.5193133,26.3706626 20.751073,26.6024222 L25.2703863,31.1217355 C25.5021459,31.3534952 25.8497854,31.3534952 26.0815451,31.1217355 L38.248927,18.9543536 C38.4806867,18.7225939 38.8283262,18.7225939 39.0600858,18.9543536 L42.8261803,22.720448 L42.8261803,22.720448 Z" id="Shape" fill="#FFFFFF" filter="url(#filter-5)" sketch:type="MSShapeGroup"></path>
+                <path d="M82.3,38 L82.3,21.325 L79.375,21.325 L79.375,28.15 L70.7,28.15 L70.7,21.325 L67.775,21.325 L67.775,38 L70.7,38 L70.7,30.725 L79.375,30.725 L79.375,38 L82.3,38 Z M91.775,38 L91.775,21.325 L88.85,21.325 L88.85,38 L91.775,38 Z M101.25,38 L101.25,31.775 L105.65,31.775 C109.125,31.775 111.1,29.375 111.1,26.55 C111.1,23.725 109.15,21.325 105.65,21.325 L98.325,21.325 L98.325,38 L101.25,38 Z M105.25,29.2 L101.25,29.2 L101.25,23.9 L105.25,23.9 C106.9,23.9 108.1,24.95 108.1,26.55 C108.1,28.15 106.9,29.2 105.25,29.2 Z M129.65,38 L123.1,21.325 L119.45,21.325 L112.9,38 L116.225,38 L117.45,34.8 L125.1,34.8 L126.325,38 L129.65,38 Z M124.275,32.225 L118.275,32.225 L121.275,24.275 L124.275,32.225 Z M149.475,38 L142.925,21.325 L139.275,21.325 L132.725,38 L136.05,38 L137.275,34.8 L144.925,34.8 L146.15,38 L149.475,38 Z M144.1,32.225 L138.1,32.225 L141.1,24.275 L144.1,32.225 Z" fill="#2BA4EF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
