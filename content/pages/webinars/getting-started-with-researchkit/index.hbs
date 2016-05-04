@@ -1,0 +1,44 @@
+---
+layout: landing-page.hbs
+
+title: Getting Started with ResearchKit
+section: webinars
+
+webinar:
+  title: Getting Started with ResearchKit
+  date: May 17, 2016
+  time: 1:00 PM
+  timezone: Eastern US & Canada (GMT-4:00)
+  # Supports Markdown
+  description: |-
+    Join [Thread Research](http://threadresearch.com/) and [Aptible](/) to
+    see what's possible with ResearchKit, and learn about key considerations
+    in security, deployment, and design.
+  cta:
+    href: https://zoom.us/webinar/register/34e0e5c5fc096fe8dc2040ba88984b7b
+    label: Register Now
+---
+<header class="primary-header">
+  <div class="primary-header-bg">
+    {{> nav_bar }}
+    <div class="webinar">
+      <figure class="webinar-section webinar-illustration">
+        <img src="/pages/assets/webinars/researchkit-thread-aptible-2x.png">
+      </figure>
+      <div class="webinar-section webinar-content">
+        <h2 class="webinar--title">{{webinar.title}}</h1>
+        <div class="webinar--body">
+          {{#markdown}}{{webinar.description}}{{/markdown}}
+          <p class="webinar--datetime">
+            {{webinar.date}} at {{webinar.time}}
+            <br>
+            <sub>{{webinar.timezone}}</sub>
+          </p>
+          <p class="webinar--cta">
+            <a class="btn btn-lg btn-primary" href="{{webinar.cta.href}}">{{webinar.cta.label}}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
