@@ -83,11 +83,11 @@ faq:
       - question: Disk
         answer: |
           Disk storage refers to the underlying volumes used for database storage. Disk storage is encrypted at the filesystem level with 192-bit AES encryption. Aptible manages the encryption keys for you. Disk pricing includes nightly backups for 90 days and monthly backups for 6 years. Backups are stored in a geographic region separate from where your database runs.
-      - question: Domain
+      - question: Endpoint
         answer: |
-          A domain, or "VHOST," is an SSL/TLS endpoint. Domains are attached to a service and consist of a DNS service, an AWS Elastic Load Balancer, and an NGiNX container.
-          To configure a VHOST, register a domain and procure an SSL certificate. (Wildcard, subdomain, and EV certificates all work.) After loading your VHOST with the certificate bundle and private key, you can point your domain's DNS to the endpoint.
-          "Internal" VHOSTs can be used to expose a private service to other services on the same stack. Internal VHOSTs receive private IP addresses and cannot be accessed from the Internet.
+          An endpoint is a networking resource that exposes an app or database service. An SSL/TLS endpoint, for example, is often used to expose a web service to the Internet. Endpoints consist of a DNS service, an AWS Elastic Load Balancer, and at least one NGiNX container.
+          To configure an SSL/TLS endpoint, register a domain and procure an SSL certificate. (Wildcard, subdomain, and EV certificates all work.) After loading your endpoint with the certificate bundle and private key, you can point your domain's DNS to the endpoint address.
+          "Internal" endpoints can be used to expose a private service to other services on the same stack. Internal endpoints receive private IP addresses and cannot be accessed from the Internet.
       - question: Service
         answer: |
           A service is comprised of one or more containers running the same process. By adding containers to a service, you can easily and quickly scale. Services run in your stack's app layer (see our [Reference Architecture Diagram](/pages/assets/aptible-reference-architecture.pdf)).
