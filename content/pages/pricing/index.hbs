@@ -30,7 +30,7 @@ plans:
     included:
     - 6 containers
     - 1TB disk
-    - 4 domains
+    - 4 endpoints
   managed:
     name: Managed
     descriptors:
@@ -38,9 +38,9 @@ plans:
     - "As a Managed Account partner, our engineering and compliance teams will work with you directly to help you quickly pass security reviews and audits at the largest healthcare institutions in the country."
 
 tooltip:
-  containers: 1 GB RAM Docker containers. Estimate 1 container per app process, plus 1 per database. Custom container sizes available.
+  containers: Docker containers, 1 GB RAM by default. Easily scale container count and RAM footprint. To start, plan for 1 container per app process, plus 1 per database.
   disk: "Encrypted database storage. Includes backups: daily for 90 days, monthly for 6 years."
-  domains: SSL endpoint. Balances load across your app containers. May be public or internal.
+  endpoints: Expose apps and databases to the Internet, or internally as private services.
 
 needs_more:
   title: Scale much?
@@ -59,9 +59,9 @@ discount:
     are participating.
 
 pricing:
-  container: $0.08/hour
+  container: $0.08/GB/hour
   disk: $0.37/GB/month
-  domain: $0.05/hour
+  endpoint: $0.05/hour
 
 support_plans:
   title: Support Plans
@@ -120,9 +120,9 @@ quick_start:
       <h2 class="section-title">Unit Pricing</h2>
       <ul class="plan-attributes">
         <li>All plans are scalable on demand, just pay for what you use:</li>
-        <li><strong>1 GB App/Database Containers:</strong> {{pricing.container}}</li>
+        <li><strong>App/Database Containers:</strong> {{pricing.container}}</li>
         <li><strong>Encrypted Disk:</strong> {{pricing.disk}}</li>
-        <li><strong>Domains:</strong> {{pricing.domain}}</li>
+        <li><strong>Endpoints:</strong> {{pricing.endpoint}}</li>
       </ul>
     </div>
   </div>

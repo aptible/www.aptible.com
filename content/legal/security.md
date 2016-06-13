@@ -2,7 +2,7 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's security policy"
-posted: 2015-12-17
+posted: 2016-06-12
 section: Legal
 sub_section: Policies
 ---
@@ -11,7 +11,7 @@ Aptible, Inc.
 =============
 Security Policy & Practices
 ---------------------
-Version 3.0 - December 2015
+Version 3.1 - June 2016
 
 This policy outlines: 1) Aptible's security practices and resources, and 2)  your security obligations. This policy is incorporated by reference into the Aptible Terms of Service.
 
@@ -86,7 +86,7 @@ You may choose to run a host-based intrusion detection or prevention system that
 
 #### **3. Platform Security**
 ##### **3.A - Configuration and Change Management**
-For app services that have a VHOST (SSL/TLS endpoint) attached, the Aptible platform performs a health check on the container set before promoting it to the current release. If the health check fails, the container set is not promoted. Either way, the deploy is zero-downtime.
+For app services that have an SSL/TLS endpoint attached, the Aptible platform performs a health check on the container set before promoting it to the current release. If the health check fails, the container set is not promoted. Either way, the deploy is zero-downtime.
 
 For any deploy, you can roll back to a previous codebase by pushing a different ref to your Aptible git endpoint.
 
