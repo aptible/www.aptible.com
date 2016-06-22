@@ -2,7 +2,7 @@
 title: Responsible Disclosure Policy
 tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2015-11-19
+posted: 2016-06-21
 section: Legal
 sub_section: Policies
 ---
@@ -12,7 +12,7 @@ Aptible, Inc.
 Responsible Disclosure Policy
 --------------
 
-Version 2.6 - November 2015
+Version 2.7 - June 2016
 
 ### Responsible Disclosure
 We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
@@ -42,12 +42,14 @@ Only the following services are in-scope:
 - dashboard.aptible.com
 - gridiron.aptible.com
 - compliance.aptible.com
+- billing.aptible.com
 
 **The following types of reports/attacks are out of scope. Do not attempt them:**
 - DOS attacks
 - Brute forcing login/account management pages
 - Physical vulnerabilities
 - Social engineering attacks (e.g. phishing)
+- Email
 
 **The following types of bugs do not qualify for bounties:**
 - CSRF on forms that are available to anonymous users (e.g., signup, login, contact, Intercom)
@@ -59,6 +61,15 @@ Only the following services are in-scope:
 - Banner disclosure on common/public services
 - Disclosure of known public files or directories, (e.g. robots.txt)
 - Presence of application or web browser "autocomplete" or "save password" permission
+
+### Top Researchers
+- Frans Rosen
+- Adam Enger
+- Mohammed Shameem Shahnawaz
+- Josha Bronson, Bronsec Inc.
+- Jubaer Al Nazi, ServerGhosts, Bangaldesh
+- Ali Hassan Ghori
+- Nessim Jerbi
 
 ### PGP
 If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for support@aptible.com is below:
