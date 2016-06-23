@@ -67,7 +67,7 @@ Only the following services are in-scope:
 - Adam Enger
 - Mohammed Shameem Shahnawaz
 - Josha Bronson, Bronsec Inc.
-- Jubaer Al Nazi, ServerGhosts, Bangaldesh
+- Jubaer Al Nazi, ServerGhosts, Bangladesh
 - Ali Hassan Ghori
 - Nessim Jerbi
 
