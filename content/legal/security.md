@@ -2,7 +2,7 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's security policy"
-posted: 2016-06-12
+posted: 2016-06-22
 section: Legal
 sub_section: Policies
 ---
@@ -11,7 +11,7 @@ Aptible, Inc.
 =============
 Security Policy & Practices
 ---------------------
-Version 3.1 - June 2016
+Version 3.2 - June 2016
 
 This policy outlines: 1) Aptible's security practices and resources, and 2)  your security obligations. This policy is incorporated by reference into the Aptible Terms of Service.
 
@@ -82,13 +82,29 @@ The AWS network prohibits a host from sending traffic with a source IP or MAC ad
 p. 13 - ["Amazon Web Services: Overview of Security Processes - August 2015"](https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf)
 
 ##### **2.F - Intrusion Detection & Prevention**
-You may choose to run a host-based intrusion detection or prevention system that can be managed externally, such as AlertLogic, as an add-on. Aptible will ensure the host agents run and can connect to your external management service. You are responsible for procuring a license and operating the system.
+You may choose to run a host-based intrusion detection or prevention system that can be managed externally, such as Threat Stack, as an add-on. Aptible will ensure the host agents run and can connect to your external management service. You are responsible for procuring a license and operating the system.
+
+##### **2.G - Network and Host Vulnerability Scanning**
+Aptible scans both the Internet-facing network and private network of each customer VPC and its hosts monthly. Aptible is responsible for network and host security, and remediates adverse findings without customer intervention.
+
+##### **2.H - Host Hardening**
+Aptible host operating systems are hardened based on the Center for Internet Security's Security Configuration Benchmark for the OS and version in use. For all operating systems:
+
+- Operating systems are installed on hosts only from bare images, and only via automated configuration management. Services installed can be enumerated upon request.
+- Host password logins are disabled. SSH root keys are not permitted.
+- No user SSH keys are permitted on hosts by default. Aptible internal workforce user access is configured only on a per-user basis, and only when necessary to provide customer support.
+- Swap is disabled to avoid writing in-memory secrets to unencrypted volumes.
+- Command history for shell sessions is disabled.
+- Non-default SSH ports are used.
+- No password-based services are installed automatically. Password-based services (such as PostgreSQL) are provisioned only with unique, per-resource, Aptible-generated passphrases. No default passwords are permitted.
+- Host security updates are automated.
+- All host ports are opened only via whitelist.
 
 #### **3. Platform Security**
 ##### **3.A - Configuration and Change Management**
 For app services that have an SSL/TLS endpoint attached, the Aptible platform performs a health check on the container set before promoting it to the current release. If the health check fails, the container set is not promoted. Either way, the deploy is zero-downtime.
 
-For any deploy, you can roll back to a previous codebase by pushing a different ref to your Aptible git endpoint.
+For any deploy, you can roll back to a previous codebase by pushing a different ref to your Aptible Git endpoint.
 
 ##### **3.B - Isolation**
 PHI-ready environments are deployed on stacks isolated at the customer level. The VPC, network, underlying instances, and AWS virtual infrastructure are not shared with any other tenant.
@@ -120,7 +136,7 @@ The Aptible platform automatically backs up several different types of data:
 
 - Customer metadata is stored in the Aptible operational API, backed by the Amazon Relational Database Service. This metadata includes customer account data (passwords, permissions, SSH keys), and app configuration data, such as environmental variables. Backups are taken nightly and retained for one week.
 
-- Customer database disks for databases in PHI-ready environments are backed up nightly and retained daily for 90 days, and monthly for 6 years. No customer action is required.
+- Customer database disks are backed up nightly and retained daily for 90 days, and monthly for 6 years. No customer action is required.
 
 - For databases like PostgreSQL that support intermediate backups (e.g., write-ahead logs), Aptible configures these intermediate backups to span at least the time between daily backups, to enable fine-grained, point-in-time disaster recovery.
 
@@ -136,7 +152,9 @@ AWS data centers are clustered into regions, and sub-clustered into availability
 For PHI-ready environments, Aptible automatically distributes app containers across availability zones when a service is scaled to more than one container.
 
 ##### **4.C - High Availability**
-Aptible supports high-availability configuration of databases that support it.
+Aptible supports high-availability clustering configuration of databases that support it.
+
+App services on v2 stacks are automatically distriubuted across AWS availability zones as soon as they are scaled to more than one container.
 
 ##### **4.D - Disaster Prevention and Recovery**
 Aptible monitors the stability and availability of customer infrastructure and automatically recovers from disruptions, including app and database failures. In the event of a disaster, Aptible restores apps from the last healthy build image and restores data from the last backup. In the event of a database outage, the Aptible platform will automatically recover the underlying database instance and disk. If the disk is unavailable, Aptible will restore from a backup. Raw database snapshots and restored database clones are available upon request for testing and recovery.
