@@ -2,7 +2,7 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's security policy"
-posted: 2016-06-22
+posted: 2016-06-28
 section: Legal
 sub_section: Policies
 ---
@@ -11,7 +11,7 @@ Aptible, Inc.
 =============
 Security Policy & Practices
 ---------------------
-Version 3.2 - June 2016
+Version 3.3 - June 2016
 
 This policy outlines: 1) Aptible's security practices and resources, and 2)  your security obligations. This policy is incorporated by reference into the Aptible Terms of Service.
 
@@ -136,7 +136,7 @@ The Aptible platform automatically backs up several different types of data:
 
 - Customer metadata is stored in the Aptible operational API, backed by the Amazon Relational Database Service. This metadata includes customer account data (passwords, permissions, SSH keys), and app configuration data, such as environmental variables. Backups are taken nightly and retained for one week.
 
-- Customer database disks are backed up nightly and retained daily for 90 days, and monthly for 6 years. No customer action is required.
+- Customer database disks are automatically backed up nightly and retained daily for 90 days, and monthly for 6 years. No customer action is required. Two backup copies are kept: One in the region where the database runs, to facilitate fast disaster recovery; One in a separate geographic region to protect against loss of the original region. Customers may also take on-demand backups.
 
 - For databases like PostgreSQL that support intermediate backups (e.g., write-ahead logs), Aptible configures these intermediate backups to span at least the time between daily backups, to enable fine-grained, point-in-time disaster recovery.
 
