@@ -30,6 +30,6 @@ But wait, there’s more!
 
 In addition to displaying automatic daily backups, you can now trigger a new backup on demand from the dashboard or CLI. In the dashboard, simply select the large green “Create New Backup” button. From the CLI, make sure you are running the latest version (`gem update aptible-cli`) then use `aptible db:backup $HANDLE` to trigger a new backup.
 
-Now, before you do something scary with your database (like a big migration), you have an extra safety net. On-demand backups are easier than filling a support request and safer than using a tunnel to dump to a local environment, because you will never have to remember to purge data from your machine.
+Now, before you do something scary with your database (like a big migration), you have an extra safety net. On-demand backups are easier than filing a support request and safer than using a tunnel to dump to a local environment, because you will never have to remember to purge data from your machine.
 
 We hope you find both of these features useful! That’s it for today. As usual, if you have questions or feedback about this feature, just [get in touch](http://contact.aptible.com).
