@@ -2,7 +2,7 @@
 title: Support Policy
 tracked_title: Support
 description: "Aptible's support policy"
-posted: 2016-01-27
+posted: 2016-07-12
 section: Legal
 sub_section: Policies
 ---
@@ -11,7 +11,7 @@ Aptible, Inc.
 =============
 Support Policy
 --------------
-Version 2.2 - January 2016
+Version 2.3 - July 2016
 
 This policy outlines Aptible's support practices and resources. It also identifies your support obligations to your customers. It is incorporated by reference into the Aptible Terms of Service.
 
@@ -28,6 +28,9 @@ Aptible support does not include:
 - Developing your application code
 - Debugging custom software
 - Performing manual system administration tasks
+
+### Support Business Hours
+Normal Aptible business hours are 9am-6pm Eastern.
 
 ### Deprecation
 We will announce if we intend to discontinue or make backwards incompatible changes to any Service. We will always try to give you as much time as possible to make any necessary modifications to your applications or processes. This policy does not apply to versions, features, and functionality that we label as "beta" or "experimental."
