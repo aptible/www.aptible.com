@@ -4,7 +4,7 @@ excerpt: "Prebuild your images and deploy Aptible apps directly from a private r
 author_name: Blake Pettersson
 author_email: blake@aptible.com
 author_id: blake
-posted: 2016-07-14
+posted: 2016-07-31
 section: Blog
 posts: true
 ---
@@ -18,6 +18,7 @@ To start from scratch, first create an app on Aptible. You will still need to us
 Next, use the Aptible CLI's `aptible config:set` command to set a few environment variables:
 
   * `APTIBLE_DOCKER_IMAGE` - The name of the image to pull, in the format `repo/image_name:tag`. Repo and image_name are required. Tag is optional and will default to `latest`.
+  * `APTIBLE_PRIVATE_REGISTRY_HOST` - The private registry host to pull from. Required when pulling from a private registry. Defaults to `docker.io`
   * `APTIBLE_PRIVATE_REGISTRY_USERNAME` - The username to use when pulling the image. Required when pulling from a private registry.
   * `APTIBLE_PRIVATE_REGISTRY_PASSWORD` - The password of the registry to pull from. Required when pulling from a private registry. 
   * `APTIBLE_PRIVATE_REGISTRY_EMAIL` - The e-mail to use when pulling. Optional. Defaults to `.`
@@ -33,7 +34,7 @@ $ cd example-docker-app && git init .
 $ aptible apps:create example-docker-app --environment my-env
 > App example-docker-app created!
 > Git remote: git@beta.aptible.com:my-env/example-docker-app.git
-$ aptible config:set APTIBLE_DOCKER_IMAGE=[image name] APTIBLE_PRIVATE_REGISTRY_USERNAME=[username] APTIBLE_PRIVATE_REGISTRY_PASSWORD=[password]
+$ aptible config:set APTIBLE_PRIVATE_REGISTRY_HOST=[registry host] APTIBLE_DOCKER_IMAGE=[image name] APTIBLE_PRIVATE_REGISTRY_USERNAME=[username] APTIBLE_PRIVATE_REGISTRY_PASSWORD=[password]
 $ echo "web: bundle exec rails s" > Procfile
 $ git add Procfile && commit -m "test docker pull"
 $ git remote add aptible git@beta.aptible.com:my-env/example-docker-app.git
