@@ -18,7 +18,7 @@ $screen-lg-min: 1200px;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
-  @import 'mobile_md'
+  @import 'mobile_md';
 }
 
 /* Large devices (large desktops, 1200px and up) */
