@@ -11,7 +11,7 @@ Aptible, Inc.
 =============
 Privacy Policy
 --------------
-Version 2.3 - August 2016
+Version 2.4 - August 2016
 
 Your privacy is important to us at Aptible. We want to be clear how we use your information, and the ways in which you can protect your privacy.
 
@@ -100,7 +100,7 @@ For more information about the EU-U.S. Privacy Shield Framework, visit the [U.S.
 For more information about U.S.-Swiss Safe Harbor and to view our certification, visit the [U.S. Department of Commerce's Safe Harbor website](http://export.gov/safeharbor/).
 
 #### EU-U.S. Privacy Shield Onward Transfers
-For personal data transferred from the EU, if we transfer your personal data to a third party, we will ensure that the third party is contractually obligated to process your data only for limited, specific purposes consistent with this policy. We will also ensure that the third party will apply the same level of protection to that data as the EU-U.S. Privacy Shield Principles and will notify us if it makes a determination that it can no longer meet this obligation.
+For personal data transferred from the EU, if we transfer your personal data to a third party, we will ensure that the third party is contractually obligated to process your data only for limited, specific purposes consistent with this policy. We will also ensure that the third party will apply the same level of protection to that data as the EU-U.S. Privacy Shield Principles and will notify us if it makes a determination that it can no longer meet this obligation. Aptible may be potentially liable if these requirements are not met.
 
 #### Complaints, Questions, and Arbitration
 In compliance with the EU-U.S. Privacy Shield and U.S.-Swiss Safe Harbor Principles, we strive to resolve all complaints about privacy and the collection or use of customer information. If you have questions about our participation in the Privacy Shield or Safe Harbor programs or have a complaint, please send an e-mail to [privacy@aptible.com](mailto:privacy@aptible.com).
