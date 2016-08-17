@@ -50,7 +50,7 @@ Enjoy! As usual, [let us know if you have any feedback][7].
   [1]: https://community.aptible.com/t/installing-certbot-ssl/161/6  
   [2]: https://letsencrypt.org/2016/06/22/https-progress-june-2016.html  
   [3]: /blog/assets/managed-https/create_new_endpoint.png
-  [4]: https://support.aptible.com/topics/paas/how-to-modify-nginx-config/  
+  [4]: /support/topics/paas/how-to-modify-nginx-config/  
   [5]: https://www.ssllabs.com/ssltest/  
   [6]: /blog/assets/managed-https/ssl_labs.png  
   [7]: http://contact.aptible.com  

@@ -24,7 +24,7 @@ Terms of Service
 ----------------
 Version 2.8 - February 2016
 
-Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**). 
+Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**).
 
 These Terms of Service are a legally binding contract between you and Aptible regarding your use of the Services. The general form of this Agreement is that we grant you a license to use the Services, and in return you pay us and agree to abide by our terms and policies.
 
@@ -61,7 +61,7 @@ You must be at least eighteen (18) years of age to use the Services. By agreeing
 ### 2. Your Account and Use of the Services
 To access the Services, you must create an Aptible user account. You may also need to create an Aptible organization account, if one does not exist already.
 
-When you register for the accounts, you may be required to provide us with some information about yourself, such as your phone number or other contact information. You agree that the information you provide to us is accurate and that you will keep it accurate at all times. You are responsible for all activities that occur under your accounts, regardless of whether the activities are undertaken by you, your employees or a third party (including your contractors or agents). You may create additional user accounts for users within your organization. 
+When you register for the accounts, you may be required to provide us with some information about yourself, such as your phone number or other contact information. You agree that the information you provide to us is accurate and that you will keep it accurate at all times. You are responsible for all activities that occur under your accounts, regardless of whether the activities are undertaken by you, your employees or a third party (including your contractors or agents). You may create additional user accounts for users within your organization.
 
 Each Aptible user account is protected by credentials. You are responsible for maintaining the security of your credentials. Aptible and our affiliates are not responsible for unauthorized access to your account, except to the extent caused by our breach of this Agreement.
 
@@ -93,7 +93,7 @@ You may terminate your account and this Agreement at any time in accordance with
 2. Configuring and enforcing user access policies and permissions across your Applications; and
 3. Providing legally adequate privacy notices for your users, and informing them that their information may be available to Aptible and/or our affiliates.
 
-We provide support and training to help you with these responsibilities. Please see our [support resources](https://support.aptible.com), our [Support Policy], and our [training offerings](/training).
+We provide support and training to help you with these responsibilities. Please see our [support resources](/support), our [Support Policy], and our [training offerings](/training).
 
 ### 4. Fees and Charges
 **A. Payments and pricing.** You incur fees and charges based on your use of the Services. We calculate and bill fees and charges monthly or at the interval indicated in the Aptible [Fees and Pricing Policy], or your billing agreement, as appropriate. We may bill you more frequently if we determine that your account is at risk of non-payment. Any outstanding balance becomes immediately due and payable upon termination of this Agreement for any reason.

@@ -29,7 +29,7 @@ The Aptible compliance platform helps customers analyze risk using SP 800-30 Rev
 
 Databases are built from standardized images and run in private subnets, inaccessible from the outside Internet. We attach encrypted storage volumes and make nightly encrypted backups.
 
-The Dockerfiles we use to build database images are open source and [available on GitHub](https://github.com/aptible). If you don't see the one you want, you can [build a custom database using our specification](https://support.aptible.com/topics/paas/deploy-custom-database/).
+The Dockerfiles we use to build database images are open source and [available on GitHub](https://github.com/aptible). If you don't see the one you want, you can [build a custom database using our specification](/support/topics/paas/deploy-custom-database/).
 
 Please see our [Reference Architecture diagram](/pages/assets/aptible-reference-architecture.pdf), and [contact us](https://www.aptible.com/company/contact/) if you have questions.
 

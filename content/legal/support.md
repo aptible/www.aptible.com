@@ -16,7 +16,7 @@ Version 2.3 - July 2016
 This policy outlines Aptible's support practices and resources. It also identifies your support obligations to your customers. It is incorporated by reference into the Aptible Terms of Service.
 
 ### Technical Support
-We offer several options for technical support. See www.aptible.com/support for plans and pricing.
+We offer several options for technical support. See [www.aptible.com/support-plans](/support-plans/) for plans and pricing.
 
 Aptible support includes:
 - Answering questions about Aptible services and features
@@ -36,7 +36,7 @@ Normal Aptible business hours are 9am-6pm Eastern.
 We will announce if we intend to discontinue or make backwards incompatible changes to any Service. We will always try to give you as much time as possible to make any necessary modifications to your applications or processes. This policy does not apply to versions, features, and functionality that we label as "beta" or "experimental."
 
 ### Documentation
-We may provide documentation for the Services and their use. Our documentation may specify restrictions on how Applications may be built or configured. You agree to comply with any such restrictions as specified. Visit https://support.aptible.com for access to our support and documentation resources.
+We may provide documentation for the Services and their use. Our documentation may specify restrictions on how Applications may be built or configured. You agree to comply with any such restrictions as specified. Visit [https://www.aptible.com/support](/support/) for access to our support and documentation resources.
 
 ### End User Support
 You are responsible for providing customer service (if any) to End Users. We do not provide any support or services to End Users unless we have a separate agreement with you or an End User for the provision of such services.
