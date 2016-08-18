@@ -9,7 +9,7 @@ section: Blog
 posts: true
 ---
 If you are on an Aptible "v2" stack, which automatically scales your app containers across AWS Availability Zones, you have probably noticed that the `aptible logs` CLI command has been deprecated. As an alternative, you’ve been able to use [Log Drains][0] to collect app logs.
- 
+
 A Log Drain’s ability to persist logs (not just stream them) makes it a robust option, however each drain requires some setup. `aptible logs` is built in to the Aptible CLI, requires no additional setup, and makes it easy to see what is happening in your app _right now_.
 
 We’re happy to announce that `aptible logs` is available on Aptible v2 stacks!
@@ -20,15 +20,14 @@ If you already have the [Aptible CLI][1] installed, then you don’t need to do 
 If you don’t have the CLI installed, [follow the installation instructions][3] first.
 
 ## Technical Details
-`aptible logs` on v2 stacks is implemented as a Log Drain that doesn't drain: instead, it buffers logs received from log forwarders and allows clients to stream the buffer. 
+`aptible logs` on v2 stacks is implemented as a Log Drain that doesn't drain: instead, it buffers logs received from log forwarders and allows clients to stream the buffer.
 
-As a result, the first time you use `aptible logs` on a v2 stack, we’ll take a few minutes to automatically provision a special new "tail" Log Drain, if you don't already have one. Once you have a tail Log Drain, subsequent `aptible logs` calls are fast. 
+As a result, the first time you use `aptible logs` on a v2 stack, we’ll take a few minutes to automatically provision a special new "tail" Log Drain, if you don't already have one. Once you have a tail Log Drain, subsequent `aptible logs` calls are fast.
 
 If you have any questions or feedback about this new feature, [please let us know][4]!
 
-  [0]: https://support.aptible.com/topics/paas/how-to-use-log-drains/
+  [0]: /support/topics/paas/how-to-use-log-drains/
   [1]: https://github.com/aptible/aptible-cli
-  [2]: https://support.aptible.com/topics/cli/how-to-view-app-logs/
+  [2]: /support/topics/cli/how-to-view-app-logs/
   [3]: https://github.com/aptible/aptible-cli#installation
-  [4]: http://contact.aptible.com/ 
-  
+  [4]: http://contact.aptible.com/
