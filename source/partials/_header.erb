@@ -1,0 +1,22 @@
+<%
+  class_modifiers = '' if class_modifiers.blank?
+  subtitle = '' if subtitle.blank?
+  title = '' if title.blank?
+%>
+<header class="aptible-header <%= class_modifiers %>">
+  <div class="grid-container">
+    <%= partial 'partials/aptible-mark' %>
+  </div>
+
+  <div class="grid-container">
+    <% unless subtitle.blank? %>
+      <h2 class="heading__subtitle"><%= subtitle %></h2>
+    <% end %>
+
+    <% unless title.blank? %>
+      <h1 class="heading__title"><%= title %></h1>
+    <% end %>
+
+    <div class="heading__title-div"></div>
+  </div>
+</header>

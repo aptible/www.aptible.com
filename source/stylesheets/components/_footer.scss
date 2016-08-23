@@ -1,0 +1,24 @@
+//
+// Footer
+//
+.aptible-footer {
+  background-color: $dark-blue;
+  color: $light-blue;
+  .social-link {
+    path {
+      fill: $dark-blue-steel;
+      transition: fill $base-duration $base-timing;
+    }
+    &:hover, &:focus {
+      path {
+        fill: $sky-blue;
+      }
+    }
+  }
+}
+
+.copyright {
+  color: $dark-blue-steel;
+  font-size: 12px;
+  text-align: center;
+}

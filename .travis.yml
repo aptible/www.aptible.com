@@ -1,10 +1,14 @@
 sudo: false
+language: ruby
 cache:
   directories:
-    - vendor
-    - node_modules
+  - vendor/bundle
 env: # IAM: travis-s3
   secure: Q9zRLp8Iyl6yvs1jaF0Q6LqoEErymjVungepcjDeS1nvfA8Ag0aCO0s9iujZtKKrNSZJsX42862QAFYSsht3Et3PwaUgc7S+8EVN77IFFu3Grc2k5gNDSwcVSEM1VsGtoqpZOAuibZHnI7Pv6+e+obCAYUHPeyorzDJGOeTNV1Y=
-language: node_js
+install:
+- bundle install --deployment --retry 3
+- npm install bower
+- bower install
+- pip install --user awscli
 script:
-  - PATH=$HOME/.local/bin:$PATH script/travis-deploy.sh
+- bundle exec rake

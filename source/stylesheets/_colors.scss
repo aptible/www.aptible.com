@@ -1,0 +1,58 @@
+//
+// Colors
+//
+.white { color: $white; }
+.white-bg { background-color: $white; }
+
+.light-blue { color: $light-blue; }
+.light-blue-bg { background-color: $light-blue; }
+
+.sky-blue { color: $sky-blue; }
+.sky-blue-bg { background-color: $sky-blue; }
+
+.blue { color: $blue; }
+.blue-bg { background-color: $blue; }
+
+.blue-steel { color: $blue-steel; }
+.blue-steel-bg { background-color: $blue-steel; }
+
+.dark-blue { color: $dark-blue; }
+.dark-blue-bg { background-color: $dark-blue; }
+
+.dark-blue-steel { color: $dark-blue-steel; }
+.dark-blue-steel-bg { background-color: $dark-blue-steel; }
+
+.green { color: $green; }
+.green-bg { background-color: $green; }
+
+.dusk { color: $dusk; }
+.dusk-bg { background-color: $dusk; }
+
+.light-gray { color: $light-gray; }
+.light-gray-bg { background-color: $light-gray; }
+
+.medium-gray { color: $medium-gray; }
+.medium-gray-bg { background-color: $medium-gray; }
+
+.dark-gray { color: $dark-gray; }
+.dark-gray-bg { background-color: $dark-gray; }
+
+.dark-magenta { color: $dark-magenta; }
+.dark-magenta-bg { background-color: $dark-magenta; }
+
+.twilight { color: $twilight; }
+.twilight-bg { background-color: $twilight; }
+
+.midnight-blue { color: $midnight-blue; }
+.midnight-blue-bg { background-color: $midnight-blue; }
+
+.hero-gradient {
+  background-image: linear-gradient(0deg, $dark-magenta 0%, $twilight 52%, $midnight-blue 100%);
+  box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.10);
+}
+
+.hero-gradient--angled {
+  background-image: linear-gradient(-35deg, $dark-magenta 0%, $twilight 42%, $midnight-blue 86%, $blue 100%);
+  // background-image: url(/images/hero-gradient--angled.svg);
+  box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.10);
+}

@@ -1,0 +1,18 @@
+---
+header_title: Quickstart Guides
+header_subtitle: Step-by-step guides for getting started with Aptible
+header_search: false
+layout: layout
+---
+
+.documentation-main
+  .container
+    .categories
+      .row
+        - data.quickstart.each do |title, language|
+          .col-xs-12.col-sm-4.col-md-3
+            %a.category-box{ href: "/support/quickstart/#{language.url}", class: language.slug }
+              .category-icon
+                = partial "images/icons/#{language.svg}"
+              .category-footer
+                .category-title= title

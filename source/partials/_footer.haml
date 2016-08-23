@@ -1,0 +1,27 @@
+%footer.aptible-footer
+  .grid-container
+    = partial 'partials/aptible-mark', locals: { class_modifiers: 'aptible-mark--dark-bg' }
+    %nav.nav--flex
+      %ul.nav-list
+        %li.nav-item
+          %a{:href => "/ui-kit/typography.html"} Typography
+        %li.nav-item
+          %a{:href => "/ui-kit/layout.html"} Layout
+        %li.nav-item
+          %a{:href => "/ui-kit/colors.html"} Colors
+        %li.nav-item
+          %a{:href => "/ui-kit/navigation.html"} Navigation
+        %li.nav-item
+          %a{:href => "/ui-kit/forms.html"} Forms
+        %li.nav-item
+          %a{:href => "/ui-kit/buttons.html"} Buttons
+        %li.nav-item
+          %a{:href => "/ui-kit/components.html"} Components
+        %li.nav-item
+          %a{:href => "/ui-kit/cards.html"} Cards
+      %ul.nav-list.nav-list--right
+        %li.nav-item
+          %a.social-link{:href => "http://twitter.com/aptible"}= partial 'partials/social/twitter'
+        %li.nav-item
+          %a.social-link{:href => "http://github.com/aptible"}= partial 'partials/social/github'
+    %p.copyright © 2016 Aptible

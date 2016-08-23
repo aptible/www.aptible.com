@@ -1,0 +1,39 @@
+---
+colors:
+  - white
+  - light-blue
+  - sky-blue
+  - blue
+  - blue-steel
+  - dark-blue-steel
+  - dark-blue
+  - green
+  - dusk
+  - light-gray
+  - medium-gray
+  - dark-gray
+  - dark-magenta
+  - twilight
+  - midnight-blue
+---
+
+= partial 'partials/header', locals: { |
+    subtitle: 'Aptible UI Kit',        |
+    title: 'Colors'                    |
+  }                                    |
+
+.content
+  .grid-container.grid--4up
+    - current_page.data.colors.each do |color|
+      %div{:class => "grid-item card #{"#{color}-bg"}"}
+        %heading
+          = color.gsub('-', ' ').capitalize
+  .grid-container
+    %h1.headline--xxl Gradients
+  .grid-container.grid--2up
+    .grid-item.card.hero-gradient
+      %heading
+        Hero Gradient
+    .grid-item.card.hero-gradient--angled
+      %heading
+        Hero Gradient Angled

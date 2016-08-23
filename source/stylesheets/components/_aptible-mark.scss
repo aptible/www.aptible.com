@@ -1,0 +1,11 @@
+.aptible-mark {
+  margin-right: 15px;
+}
+.aptible-mark__title {
+  color: $blue-steel;
+}
+.aptible-mark--dark-bg {
+  .aptible-mark__gradient {
+    fill: $dark-blue-steel;
+  }
+}

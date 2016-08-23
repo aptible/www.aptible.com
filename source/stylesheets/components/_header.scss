@@ -1,0 +1,27 @@
+.aptible-header {
+  background-color: $dark-blue;
+  color: $light-blue;
+}
+
+.heading--large-gradient {
+  background-image: url(/images/hero-gradient--angled.svg);
+  background-repeat: no-repeat;
+}
+
+.heading__title {
+  color: white;
+  font-size: 60px;
+  font-weight: $semibold;
+}
+
+.heading__subtitle {
+  color: $sky-blue;
+  font-size: 14px;
+  font-weight: $light;
+}
+
+.heading__title-div {
+  background-color: $dark-gray;
+  height: 10px;
+  width: 35px;
+}

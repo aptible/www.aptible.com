@@ -1,0 +1,25 @@
+= partial 'partials/header', locals: { |
+    subtitle: 'Aptible UI Kit',        |
+    title: 'Buttons'                   |
+  }                                    |
+.content
+  .grid-container
+    %h2 Buttons
+    %a.btn{:href => ""} Link Button
+    %button Button
+    %input{:type => "submit", :value => "Submit Button"}/
+    %input.btn--outline{:type => "submit", :value => "Submit Button"}/
+  .grid-container
+    %h2 Disabled Buttons
+    %a.btn.disabled{:href => ""} Link Button
+    %button{:disabled => "disabled"} Button
+    %input.disabled{:type => "submit", :value => "Submit Button"}/
+    %input.btn--outline{:disabled => "disabled", :type => "submit", :value => "Submit Button"}/
+  .grid-container
+    %h2 Button Bar
+    .btn-bar
+      %a.btn{:href => ""} Link Button
+      %button Button
+      %input{:type => "reset"}/
+      %input{:type => "button", :value => "Button"}/
+      %button Button

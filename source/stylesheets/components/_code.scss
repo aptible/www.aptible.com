@@ -1,0 +1,35 @@
+.code {
+  color: $white;
+  font-size: 13px;
+}
+
+// Inline code: <code>displayed in monospace</code>
+code {
+  background-color: $light-blue;
+  color: $dark-blue-steel;
+  padding: flex-gutter() * 0.25;
+}
+
+.code__heading {
+  background-color: $dark-blue-steel;
+  line-height: 10px;
+  padding: 12px 12px 10px;
+}
+.code__heading-action {
+  background-color: $dark-blue;
+  border-radius: 6px;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 5px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+.code__body {
+  background-color: $dusk;
+  font-family: $monospace-font-family;
+  margin-top: 0;
+  padding-top: 20px;
+  overflow: auto;
+}

@@ -1,0 +1,1 @@
+All deploys are zero-downtime on Aptible. When you initiate a new deploy, we spin up a set of new containers side-by-side with the old ones. We wait for all of the new containers to become available and pass health checks before we route traffic to them and stop the old containers.

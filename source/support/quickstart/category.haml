@@ -1,0 +1,16 @@
+---
+layout: layout
+---
+
+.documentation-main
+  %h3.sub-title Which #{language.name} framework are you using?
+  .container
+    .categories
+      .row
+        .category-wrapper{ class: "category-#{language.articles.count}" }
+          - language.articles.each do |article|
+            .col-xs-12.col-sm-4.col-md-3
+              %a.category-box{ href: "/support/quickstart/#{article.url}", class: article.slug }
+                .category-icon= partial "/images/icons/#{article.svg}"
+                .category-footer
+                  .category-title= article.framework

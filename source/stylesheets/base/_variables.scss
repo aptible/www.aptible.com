@@ -1,0 +1,85 @@
+//
+// Variables:
+//  - Debugging
+//
+
+// Debugging
+$visual-grid: true;
+
+// Breakpoints
+$max-viewport: 1200px;
+$tablet-landscape: 1024px;
+$tablet-portrait: 768px;
+
+$medium-screen: new-breakpoint(max-width $tablet-portrait 4);
+$large-screen: new-breakpoint(max-width $tablet-landscape 4);
+
+// Typography
+// $base-font-family: $font-stack-system;
+// Gibson
+$base-font-family: "canada-type-gibson", sans-serif;
+$heading-font-family: $base-font-family;
+// Monaco
+$monospace-font-family: "Monaco", monospace;
+
+// Available Font Weights
+$light: 300;
+$regular: 400;
+$semibold: 600;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 5px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$white: white;
+$lighter-blue: #f5f8fd;
+$light-blue: #e9f1fd;
+$sky-blue: #93b0d2;
+$blue: #307AD1;
+$blue-steel: #627699;
+$dark-blue-steel: #45546e;
+$dark-blue: #172234;
+$green: #9bd037;
+$dusk: #212f45;
+$light-gray: #8b97a6;
+$medium-gray: #999;
+$dark-gray: #36455b;
+
+// Hero Gradient:
+$dark-magenta: #63183d;
+$twilight: #29384f;
+$midnight-blue: #1B283c;
+
+// Font Colors
+$base-font-color: $dark-blue-steel;
+$action-color: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Buttons
+// Add `.btn` to the default list
+$_buttons-list: prepend($_buttons-list, '.btn');
+
+// Animations
+$base-duration: 0.2s;
+$base-timing: ease-in-out;

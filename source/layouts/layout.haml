@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}/
+    / Use title if it's in the page YAML frontmatter
+    %title= current_page.data.title || "Middleman"
+    / TypeKit
+    %script{:src => "https://use.typekit.net/pqi8lpw.js"}
+    :javascript
+      try{Typekit.load({ async: true });}catch(e){}
+    = stylesheet_link_tag :all
+  %body{:class => page_classes}
+    = yield
+    = partial 'partials/footer'
+    = javascript_include_tag :all

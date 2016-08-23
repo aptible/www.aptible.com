@@ -1,0 +1,36 @@
+---
+# title defaults to 'Aptible Support'
+header_title: Aptible Support
+header_subtitle: How can we help?
+header_search: true
+categories:
+  quickstart:
+    title: Quickstart Guides
+    svg: quickstart.svg
+    url: /support/quickstart
+  # TODO: Enable documentation section
+  # documentation:
+  #   title: Documentation
+  #   svg: documentation.svg
+  #   url: /documentation
+  support:
+    title: Support Topics
+    svg: support.svg
+    url: /support/topics
+---
+
+= partial 'partials/headers/support-home', locals: locals
+
+.documentation-main
+  .container
+    .row
+      .col-xs-12.col-md-8.col-md-offset-2
+        .categories
+          .row
+            - current_page.data.categories.each do |category_name, category|
+              .col-xs-12.col-md-6
+                %a.category-box{ href: category['url'], class: category['svg'] }
+                  .category-icon
+                    = partial "images/icons/#{category['svg']}"
+                  .category-footer
+                    .category-title= category['title']

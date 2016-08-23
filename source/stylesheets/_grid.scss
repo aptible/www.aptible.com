@@ -1,0 +1,67 @@
+//
+// Grid / Layout
+// Variants:
+//  *--flush - remove all margins / padding
+//
+
+//
+// Sticky Footer
+// Push body content to fill the page below the header and above the footer
+//
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+
+//
+// Grid Container
+//
+.grid-container {
+  @include outer-container;
+  padding: 10px 0;
+  @media screen and (max-width: $max-viewport) {
+    padding: 0 flex-gutter();
+  }
+}
+
+.grid--2up {
+  .grid-item {
+    @media screen and (max-width: $tablet-portrait) {
+      @include span-columns(12);
+    }
+    @include span-columns(6);
+    @include omega(7n);
+  }
+}
+
+.grid--3up {
+  .grid-item {
+    @media screen and (max-width: $tablet-portrait) {
+      @include span-columns(12);
+    }
+    @include span-columns(4);
+    @include omega(5n);
+  }
+}
+
+// Default is 4up max...
+.grid-item {
+  @include span-columns(3);
+  @include omega(4n);
+  margin-bottom: 30px;
+  min-height: 200px;
+  @media screen and (max-width: $tablet-landscape) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    @include span-columns(12);
+  }
+}

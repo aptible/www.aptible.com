@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+
+    <!-- TypeKit -->
+    <script src="https://use.typekit.net/pqi8lpw.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <%= stylesheet_link_tag :all %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+
+    <%= partial 'partials/footer' %>
+    <%= javascript_include_tag :all %>
+  </body>
+</html>
