@@ -38,7 +38,7 @@ activate :directory_indexes
 # Topics (Support)
 data.topics.each do |title, category|
   category_url = "/support/topics/#{category.slug}"
-  page "#{category_url}/index.html", layout: 'topics.haml'
+  page "#{category_url}/index.html", layout: 'layout.haml'
   proxy "#{category_url}/index.html",
         'support/topics/category.html',
         locals: { category: category, title: title },
@@ -48,7 +48,7 @@ data.topics.each do |title, category|
 
   category.articles.each do |article|
     page "support/topics/#{article.url}.html",
-         layout: 'topics.haml', hidden: article.hidden do
+         layout: 'layout.haml', hidden: article.hidden do
       @category_url = category_url
       @category_title = title
       @title = article.title
@@ -73,7 +73,7 @@ data.quickstart.each do |language_name, language_data|
   end
 
   language_data.articles.each do |article|
-    page "support/quickstart/#{article.url}.html", layout: 'quickstart.haml' do
+    page "support/quickstart/#{article.url}.html", layout: 'layout.haml' do
       @framework = article.framework
       @language = language_data
       @title = "#{@framework} Quickstart"
