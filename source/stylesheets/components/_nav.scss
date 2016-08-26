@@ -44,14 +44,13 @@
 }
 
 .nav--header {
+  margin-bottom: 50px;
   .nav-item {
     color: $white;
     font-weight: $semibold;
     font-size: 15px;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.06);
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    @extend %smooth;
     &:hover, &:focus {
       color: $blue;
       outline: none;
@@ -59,6 +58,17 @@
   }
   .nav-item--active {
     color: $sky-blue;
+  }
+}
+
+.nav-item {
+  path {
+    transition: fill $base-duration $base-timing;
+  }
+  &:hover {
+    path {
+      fill: $action-color;
+    }
   }
 }
 

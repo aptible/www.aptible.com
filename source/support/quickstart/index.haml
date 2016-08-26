@@ -5,14 +5,17 @@ header_search: false
 layout: layout
 ---
 
-.documentation-main
-  .container
-    .categories
-      .row
-        - data.quickstart.each do |title, language|
-          .col-xs-12.col-sm-4.col-md-3
-            %a.category-box{ href: "/support/quickstart/#{language.url}", class: language.slug }
-              .category-icon
-                = partial "images/icons/#{language.svg}"
-              .category-footer
-                .category-title= title
+= partial 'partials/headers/support-home'
+
+.content
+  .grid-container.grid--4up
+
+    - data.quickstart.each do |title, language|
+
+      %a.card{ href: "/support/quickstart/#{language.url}", class: language.slug }
+        .card__body
+          .card__title= title
+          .card__title-rule
+          .card__copy= language.description
+        .card__icon
+          = partial "images/icons/#{language.svg}"

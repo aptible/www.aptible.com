@@ -8,29 +8,24 @@ categories:
     title: Quickstart Guides
     svg: quickstart.svg
     url: /support/quickstart
-  # TODO: Enable documentation section
-  # documentation:
-  #   title: Documentation
-  #   svg: documentation.svg
-  #   url: /documentation
   support:
     title: Support Topics
     svg: support.svg
     url: /support/topics
 ---
 
-= partial 'partials/headers/support-home', locals: locals
+= partial 'partials/headers/support-home'
 
-.documentation-main
-  .container
-    .row
-      .col-xs-12.col-md-8.col-md-offset-2
-        .categories
-          .row
-            - current_page.data.categories.each do |category_name, category|
-              .col-xs-12.col-md-6
-                %a.category-box{ href: category['url'], class: category['svg'] }
-                  .category-icon
-                    = partial "images/icons/#{category['svg']}"
-                  .category-footer
-                    .category-title= category['title']
+.content
+  .grid-container.grid--2up
+    - current_page.data.categories.each do |category_name, category|
+      %a.card{ href: category['url'], class: category['svg'] }
+        .card__body
+          .card__title= category['title']
+          .card__title-rule
+          .card__copy
+            Nam non malesuada augue, nec iaculis quam. Vestibulum molestie,
+            lectus nec rutrum gravida, ligula arcu ultricies est, a
+            sollicitudin mauris elit vitae eros.
+        .card__icon
+          = partial "images/icons/#{category['svg']}"

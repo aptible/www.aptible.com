@@ -1,0 +1,15 @@
+<svg width="36px" height="50px" viewBox="0 0 36 50">
+  <defs>
+    <linearGradient x1="50%" y1="15%" x2="50%" y2="85%" id="osx-hover">
+      <stop stop-color="#58B0E3" offset="0%"></stop>
+      <stop stop-color="#F44C26" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <polygon id="osx-shape" fill="url(#osx-hover)" points="35.8502717 0
+      33.4808378 0 17.9956302 22.3786415 17.8543472 22.3786415 2.4041661 0
+      0 0 16.6887623 24.0769811 0.0706415 48.0126792 2.4394868 48.0126792
+      17.8190264 25.7046792 17.9603095 25.7046792 33.3395547 48.0126792
+      35.7443095 48.0126792 19.1258944 24.0769811"></polygon>
+  </g>
+</svg>

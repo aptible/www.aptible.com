@@ -1,0 +1,44 @@
+.card {
+  background-color: $white;
+  border: 1px solid $light-blue;
+  display: block;
+  margin-bottom: 50px;
+  padding: 50px 25px;
+}
+
+.card__icon {
+  float: right;
+  svg {
+    max-width: 35px;
+  }
+  circle {
+    stroke: $light-med-gray;
+  }
+  path {
+    fill: $light-med-gray;
+  }
+}
+
+.card__body {
+  float: left;
+  max-width: 330px;
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: $semibold;
+  color: $dark-blue-steel;
+  margin-bottom: 15px;
+}
+
+.card__title-rule {
+  background-color: $light-blue;
+  height: 8px;
+  margin-bottom: 30px;
+  width: 30px;
+}
+
+.card__copy {
+  font-size: 16px;
+  color: $light-blue-gray;
+}

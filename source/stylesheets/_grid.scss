@@ -39,6 +39,17 @@ body {
     @include span-columns(6);
     @include omega(7n);
   }
+  .card {
+    @include span-columns(5);
+    @include omega(2n);
+    &:first-of-type {
+      @include shift(1);
+    }
+    @media screen and (max-width: $tablet-portrait) {
+      @include shift(1);
+      @include span-columns(10);
+    }
+  }
 }
 
 .grid--3up {

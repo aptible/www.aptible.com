@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="53px" height="45px" viewBox="0 0 53 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Using the Aptible CLI</title>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M49.2142857,0.0649715071 L3.78571429,0.0649715071 C1.69509595,0.0649715071 0,1.70676255 0,3.73163817 L0,40.3983048 C0,42.4231805 1.69509595,44.0649715 3.78571429,44.0649715 L49.2142857,44.0649715 C51.3049041,44.0649715 53,42.4231805 53,40.3983048 L53,3.73163817 C53,1.70676255 51.3049041,0.0649715071 49.2142857,0.0649715071 L49.2142857,0.0649715071 Z M7.57142857,25.7316382 L15.1428571,18.3983048 L7.57142857,11.0649715 L11.3571429,7.39830484 L22.7142857,18.3983048 L11.3571429,29.3983048 L7.57142857,25.7316382 L7.57142857,25.7316382 Z M37.8571429,29.3983048 L22.7142857,29.3983048 L22.7142857,25.7316382 L37.8571429,25.7316382 L37.8571429,29.3983048 L37.8571429,29.3983048 Z" id="Shape" fill="#C9D1DB" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

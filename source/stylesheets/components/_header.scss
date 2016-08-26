@@ -1,6 +1,8 @@
 .aptible-header {
   background-color: $dark-blue;
   color: $light-blue;
+  margin-bottom: 50px;
+  padding-top: 34px;
 }
 
 .heading--large-gradient {
@@ -14,10 +16,27 @@
   font-weight: $semibold;
 }
 
+.heading__title--centered {
+  @extend %smooth;
+  color: $white;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .heading__subtitle {
   color: $sky-blue;
   font-size: 14px;
   font-weight: $light;
+}
+
+.heading__subtitle--centered {
+  @extend %smooth;
+  color: $light-blue;
+  font-size: 20px;
+  font-weight: $light;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .heading__title-div {
