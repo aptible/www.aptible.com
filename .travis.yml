@@ -3,7 +3,7 @@ language: ruby
 cache:
   directories:
   - vendor/bundle
-env: # IAM: travis-s3
+env: # IAM: travis-s3 www.aptible-support.com
   secure: Q9zRLp8Iyl6yvs1jaF0Q6LqoEErymjVungepcjDeS1nvfA8Ag0aCO0s9iujZtKKrNSZJsX42862QAFYSsht3Et3PwaUgc7S+8EVN77IFFu3Grc2k5gNDSwcVSEM1VsGtoqpZOAuibZHnI7Pv6+e+obCAYUHPeyorzDJGOeTNV1Y=
 install:
 - bundle install --deployment --retry 3
@@ -12,3 +12,4 @@ install:
 - pip install --user awscli
 script:
 - bundle exec rake
+- PATH=$HOME/.local/bin:$PATH script/travis-deploy.sh
