@@ -25,7 +25,7 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :partials_dir, 'partials'
-set :haml, { ugly: true, format: :html5 }
+set :haml, ugly: true, format: :html5
 
 # (Semi-) secrets
 set :segmentio_writekey, ENV['SEGMENTIO_WRITEKEY'] || 'cn8oifbk6o'
