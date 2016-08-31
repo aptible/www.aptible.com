@@ -88,8 +88,11 @@
 
 .nav-list--breadcrumb {
   background-color: $lighter-blue;
+  margin-bottom: 50px;
+  padding: 10px 0;
   .nav-item {
     color: $light-gray;
+    font-size: 13px;
     font-weight: $semibold;
     margin-right: 12px;
     &:last-of-type {

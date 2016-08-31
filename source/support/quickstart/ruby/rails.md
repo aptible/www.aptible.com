@@ -1,10 +1,11 @@
-This guide will show you how to set up a Ruby app using the Rails framework and ActiveRecord + PostgreSQL. This guide is for Rails 4.0 or greater. If you are on an older version of Rails, your app will need [additional configuration](http://edgeguides.rubyonrails.org/configuring.html#configuring-a-database) to connect to a database.
-
-This guide assumes you have:
-
-- An Aptible account,
-- An SSH key associated with your Aptible user account, and
-- The [Aptible command line tool installed](/support/topics/cli/how-to-install-cli)
+---
+summary:
+  This guide will show you how to set up a Ruby app using the Rails framework
+  and ActiveRecord + PostgreSQL. This guide is for Rails 4.0 or greater. If you
+  are on an older version of Rails, your app will need
+  <a href="http://edgeguides.rubyonrails.org/configuring.html#configuring-a-database">additional configuration</a>
+  to connect to a database.
+---
 
 ## 1. Provision Your App
 
@@ -40,30 +41,31 @@ A few guidelines:
 
 Here is a sample Dockerfile for a conventional Rails app:
 
-    # Dockerfile
-    FROM quay.io/aptible/ruby:2.3
+  ```ruby
+  # Dockerfile
+  FROM quay.io/aptible/ruby:2.3
 
-    RUN apt-get update && apt-get -y install build-essential
+  RUN apt-get update && apt-get -y install build-essential
 
-    # System prerequisites
-    RUN apt-get update && apt-get -y install libpq-dev
+  # System prerequisites
+  RUN apt-get update && apt-get -y install libpq-dev
 
-    # If you require additional OS dependencies, install them here:
-    # RUN apt-get update && apt-get -y install imagemagick nodejs
+  # If you require additional OS dependencies, install them here:
+  # RUN apt-get update && apt-get -y install imagemagick nodejs
 
-    # Add Gemfile before rest of repo, for Docker caching purposes
-    # See http://ilikestuffblog.com/2014/01/06/
-    ADD Gemfile /app/
-    ADD Gemfile.lock /app/
-    WORKDIR /app
-    RUN bundle install
+  # Add Gemfile before rest of repo, for Docker caching purposes
+  # See http://ilikestuffblog.com/2014/01/06/
+  ADD Gemfile /app/
+  ADD Gemfile.lock /app/
+  WORKDIR /app
+  RUN bundle install
 
-    ADD . /app
-    RUN bundle exec rake assets:precompile
+  ADD . /app
+  RUN bundle exec rake assets:precompile
 
-    ENV PORT 3000
-    EXPOSE 3000
-
+  ENV PORT 3000
+  EXPOSE 3000
+  ```
 
 Here is a sample Procfile for a Ruby on Rails app:
 

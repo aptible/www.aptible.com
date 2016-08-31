@@ -20,11 +20,12 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true, tables: true
+set :markdown, fenced_code_blocks: true, smartypants: true
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :partials_dir, 'partials'
+set :haml, { ugly: true, format: :html5 }
 
 # (Semi-) secrets
 set :segmentio_writekey, ENV['SEGMENTIO_WRITEKEY'] || 'cn8oifbk6o'
@@ -32,7 +33,8 @@ set :swiftype_key, ENV['SWIFTYPE_KEY'] || 'dsMEc1fYviE2ShXAjYMW'
 set :swiftype_engine, ENV['SWIFTYPE_ENGINE'] || 'axuhZ5Lt1ZUziN-DqxnR'
 set :base_url, ENV['BASE_URL'] || 'https://www.aptible.com'
 
-activate :syntax, line_numbers: true
+activate :syntax, line_numbers: true, wrap: true
+activate :relative_assets
 activate :directory_indexes
 
 # Topics (Support)
@@ -48,7 +50,7 @@ data.topics.each do |title, category|
 
   category.articles.each do |article|
     page "support/topics/#{article.url}.html",
-         layout: 'layout.haml', hidden: article.hidden do
+         layout: 'topics.haml', hidden: article.hidden do
       @category_url = category_url
       @category_title = title
       @title = article.title
@@ -73,7 +75,7 @@ data.quickstart.each do |language_name, language_data|
   end
 
   language_data.articles.each do |article|
-    page "support/quickstart/#{article.url}.html", layout: 'layout.haml' do
+    page "support/quickstart/#{article.url}.html", layout: 'quickstart.haml' do
       @framework = article.framework
       @language = language_data
       @title = "#{@framework} Quickstart"
@@ -86,7 +88,7 @@ end
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+  activate :livereload, host: 'localhost'
 end
 
 # Build-specific configuration
@@ -137,7 +139,7 @@ helpers do
 
     "<title>#{title}</title> \n" \
     "<meta property=\"og:title\" content=\"#{title}\" > \n" \
-    "<meta class=\"swiftype\" name=\"title\" " \
+    '<meta class="swiftype" name="title" ' \
     "data-type=\"string\" content=\"#{swiftype_title}\" >"
   end
 
@@ -153,11 +155,12 @@ helpers do
     og_type = og_type.nil? ? 'website' : 'article'
 
     "<meta property=\"og:description\" content=\"#{description}\" >\n" \
-    "<meta property=\"og:url\" content=\"#{url}\" >\n"\
+    "<meta property=\"og:url\" content=\"#{url}\" >\n" \
     "<meta property=\"og:type\" content=\"#{og_type}\" >"
   end
 
   def contact_href
-    'https://aptible.zendesk.com/hc/en-us/requests/new'
+    # 'https://aptible.zendesk.com/hc/en-us/requests/new'
+    'http://contact.aptible.com'
   end
 end

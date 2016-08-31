@@ -1,10 +1,11 @@
-This guide teaches you how to set up a Websockets-based chat server written in Go on Aptible, using the Gorilla web toolkit.  With additional authentication, authorization, and data persistence, this example app has the potential to become a HIPAA-compliant web chat product that might command millions of dollars in seed funding.
-
-This guide assumes you have:
-
-- An Aptible account
-- An SSH key associated with your Aptible user account
-- The [Aptible command line tool installed](/support/topics/cli/how-to-install-cli)
+---
+summary:
+  This guide teaches you how to set up a Websockets-based chat server written in
+  Go on Aptible, using the Gorilla web toolkit.  With additional authentication,
+  authorization, and data persistence, this example app has the potential to
+  become a HIPAA-compliant web chat product that might command millions of
+  dollars in seed funding.
+---
 
 ## 1. Get the Code
 

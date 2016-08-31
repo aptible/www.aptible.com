@@ -1,13 +1,9 @@
-This guide will show you how to set up a PHP app using the Laravel framework
-and MySQL or Postgres. This guide is designed for Laravel 5.x and later,
-although it should work on Laravel 4.x as well.
-
-This guide assumes you have:
-
-- An Aptible account
-- An SSH key associated with your Aptible user account
-- The [Aptible command line tool installed](/support/topics/cli/how-to-install-cli)
-
+---
+summary:
+  This guide will show you how to set up a PHP app using the Laravel framework
+  and MySQL or Postgres. This guide is designed for Laravel 5.x and later,
+  although it should work on Laravel 4.x as well.
+---
 
 ## 1. Provision Your App
 

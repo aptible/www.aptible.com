@@ -3,6 +3,9 @@
 }
 .aptible-mark__title {
   color: $blue-steel;
+  line-height: 1;
+  margin: 0;
+  &::after { display: none; }
 }
 .aptible-mark--dark-bg {
   .aptible-mark__gradient {

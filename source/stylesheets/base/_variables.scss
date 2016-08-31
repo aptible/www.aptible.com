@@ -11,8 +11,8 @@ $max-viewport: 1200px;
 $tablet-landscape: 1024px;
 $tablet-portrait: 768px;
 
-$medium-screen: new-breakpoint(max-width $tablet-portrait 4);
-$large-screen: new-breakpoint(max-width $tablet-landscape 4);
+$medium-screen: new-breakpoint(min-width 768px);
+// $large-screen: new-breakpoint(max-width $tablet-landscape);
 
 // Typography
 // $base-font-family: $font-stack-system;
