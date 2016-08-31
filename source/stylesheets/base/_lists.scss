@@ -3,6 +3,33 @@ ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+ul.check-list {
+  list-style-image: image-url('icons/checklist-item.svg');
+  margin-left: 20px;
+  li {
+    line-height: 1.25;
+    margin-bottom: 1em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  margin-bottom: 2em;
+  padding-left: 2.5em;
+  li {
+    font-weight: $light;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+
+  }
 }
 
 dl {

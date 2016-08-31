@@ -1,0 +1,31 @@
+/ Template: topics.haml
+
+= wrap_layout :layout do
+  %header.breadcrumbs{ 'data-swiftype-index' => 'false' }
+    .container
+      %ol.breadcrumb
+        %li
+          %a{ href: '/support/topics' }Support
+        - if @category_url
+          %li
+            %a{ href: @category_url }= @category_title
+        %li.active= @title || title
+
+        .document-hero-title
+          - if @category_url
+            %h2= @category_title
+            %h1= @title || title
+          -else
+            %h1 Recent Questions: #{@title || title}
+
+.content
+  .grid-container
+    .markdown-document
+      = find_and_preserve do
+        = yield
+
+    .back
+      - if @category_title
+        %a{ href: @category_url }← Back to #{@category_title}
+      - else
+        %a{ href: '/support/topics' }← Back to all support topics

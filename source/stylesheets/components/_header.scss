@@ -5,6 +5,10 @@
   padding-top: 34px;
 }
 
+.aptible-header--with-breadcrumbs {
+  margin-bottom: 0;
+}
+
 .heading--large-gradient {
   background-image: url(/images/hero-gradient--angled.svg);
   background-repeat: no-repeat;
@@ -14,6 +18,7 @@
   color: white;
   font-size: 60px;
   font-weight: $semibold;
+  &::after { display: none; }
 }
 
 .heading__title--centered {
@@ -22,12 +27,14 @@
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
+  &::after { display: none; }
 }
 
 .heading__subtitle {
   color: $sky-blue;
   font-size: 14px;
   font-weight: $light;
+  &::after { display: none; }
 }
 
 .heading__subtitle--centered {
@@ -37,6 +44,7 @@
   font-weight: $light;
   text-align: center;
   margin-bottom: 100px;
+  &::after { display: none; }
 }
 
 .heading__title-div {

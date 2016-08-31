@@ -4,6 +4,7 @@
 .aptible-footer {
   background-color: $dark-blue;
   color: $light-blue;
+  padding: 2em 0;
   .social-link {
     path {
       fill: $dark-blue-steel;
@@ -17,8 +18,18 @@
   }
 }
 
-.copyright {
+.aptible-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.aptible-footer__nav {
+  margin-bottom: 30px;
+}
+
+.aptible-footer__copyright {
   color: $dark-blue-steel;
   font-size: 12px;
+  margin-bottom: 0;
   text-align: center;
 }

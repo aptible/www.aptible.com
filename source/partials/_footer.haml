@@ -1,27 +1,31 @@
 %footer.aptible-footer
   .grid-container
-    = partial 'partials/aptible-mark', locals: { class_modifiers: 'aptible-mark--dark-bg' }
-    %nav.nav--flex
+    %a.aptible-footer__logo{:href => "/"}
+      = partial 'partials/aptible-mark', locals: { class_modifiers: 'aptible-mark--dark-bg' }
+
+    %nav.aptible-footer__nav.nav--flex
       %ul.nav-list
         %li.nav-item
-          %a{:href => "/ui-kit/typography.html"} Typography
+          %a{:href => "/enclave"} Enclave
         %li.nav-item
-          %a{:href => "/ui-kit/layout.html"} Layout
+          %a{:href => "/gridiron"} Gridiron
         %li.nav-item
-          %a{:href => "/ui-kit/colors.html"} Colors
+          %a{:href => "/pricing"} Pricing
         %li.nav-item
-          %a{:href => "/ui-kit/navigation.html"} Navigation
+          %a{:href => "/company"} Company
         %li.nav-item
-          %a{:href => "/ui-kit/forms.html"} Forms
+          %a{:href => "/resources"} Resources
         %li.nav-item
-          %a{:href => "/ui-kit/buttons.html"} Buttons
+          %a{:href => "/blog"} Blog
         %li.nav-item
-          %a{:href => "/ui-kit/components.html"} Components
+          %a{:href => "/support"} Support
         %li.nav-item
-          %a{:href => "/ui-kit/cards.html"} Cards
+          %a{:href => contact_href} Contact Us
+
       %ul.nav-list.nav-list--right
         %li.nav-item
           %a.social-link{:href => "http://twitter.com/aptible"}= partial 'partials/social/twitter'
         %li.nav-item
           %a.social-link{:href => "http://github.com/aptible"}= partial 'partials/social/github'
-    %p.copyright © 2016 Aptible
+
+    %p.aptible-footer__copyright © 2016 Aptible

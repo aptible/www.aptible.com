@@ -11,11 +11,21 @@ h3,
 h4,
 h5,
 h6 {
+  @extend %smooth;
   font-family: $heading-font-family;
   font-size: modular-scale(1);
   line-height: $heading-line-height;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
+  margin: 0 0 30px;
+  &::after {
+    //height: 0.4em;
+    //width: 1.5em;
+    background-color: $light-blue;
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: 20px;
+    width: 25px;
+  }
 }
 
 p {
@@ -34,10 +44,21 @@ a {
   }
 }
 
+.document-title {
+  @extend %smooth;
+  font-size: 50px;
+  margin-bottom: 0.5em;
+}
+
+.document-summary {
+  @extend %smooth;
+  font-size: 30px;
+  font-weight: $light;
+  &::after { display: none; }
+}
+
 hr {
-  border-bottom: $base-border;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: $base-spacing 0;
+  border: 0;
+  border-bottom: 1px solid $light-blue;
+  margin-bottom: 50px;
 }

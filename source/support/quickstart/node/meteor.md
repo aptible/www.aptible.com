@@ -1,10 +1,8 @@
-This guide will show you how to set up a Meteor app backed by an Aptible MongoDB database.
-
-This guide assumes you have:
-
-- An Aptible account
-- An SSH key associated with your Aptible user account
-- The [Aptible command line tool installed](/support/topics/cli/how-to-install-cli)
+---
+summary:
+  This guide will show you how to set up a Meteor app backed by an Aptible
+  MongoDB database.
+---
 
 ## 1. Provision Your App
 

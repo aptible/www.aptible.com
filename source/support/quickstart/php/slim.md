@@ -1,10 +1,8 @@
-This guide will show you how to set up a PHP app using the Slim framework and MySQL, using the Paris ORM.
-
-This guide assumes you have:
-
-- An Aptible account
-- An SSH key associated with your Aptible user account
-- The [Aptible command line tool installed](/support/topics/cli/how-to-install-cli)
+---
+summary:
+  This guide will show you how to set up a PHP app using the Slim framework and
+  MySQL, using the Paris ORM.
+---
 
 ## 1. Provision Your App
 

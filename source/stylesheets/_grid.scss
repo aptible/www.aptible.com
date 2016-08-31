@@ -62,6 +62,43 @@ body {
   }
 }
 
+.grid-document {
+  @include span-columns(9);
+  float: left;
+  margin-bottom: 50px;
+  h2 {
+    margin: 3em 0 2em;
+    &:first-of-type{
+      margin-top: 0;
+    }
+  }
+  p {
+    font-weight: $light;
+    margin-bottom: 1.75em;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    @include span-columns(12);
+    @include omega();
+    float: none;
+  }
+}
+.grid-aside {
+  @include span-columns(3);
+  @include omega();
+  float: right;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: $tablet-portrait) {
+    @include span-columns(12);
+    float: none;
+  }
+}
+
+.quickstart__requirements {
+  background-color: $lighter-blue;
+  padding: 30px;
+}
+
 // Default is 4up max...
 .grid-item {
   @include span-columns(3);
