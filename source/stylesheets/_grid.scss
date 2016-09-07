@@ -54,8 +54,12 @@ body {
 
 .grid--3up {
   .grid-item {
-    @media screen and (max-width: $tablet-portrait) {
-      @include span-columns(12);
+    // @media screen and (max-width: $tablet-portrait) {
+    //   @include span-columns(12);
+    // }
+    @media screen and (max-width: $tablet-landscape) {
+      @include span-columns(6);
+      @include omega(3n);
     }
     @include span-columns(4);
     @include omega(5n);
@@ -65,7 +69,7 @@ body {
 .grid-document {
   @include span-columns(9);
   float: left;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   h2 {
     margin: 3em 0 2em;
     &:first-of-type{

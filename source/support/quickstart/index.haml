@@ -5,17 +5,14 @@ header_search: false
 layout: layout
 ---
 
-= partial 'partials/headers/support-home'
+= partial 'partials/headers/support-index'
 
 .content
   .grid-container.grid--4up
-
     - data.quickstart.each do |title, language|
-
-      %a.card{ href: "/support/quickstart/#{language.url}", class: language.slug }
-        .card__body
-          .card__title= title
-          .card__title-rule
-          .card__copy= language.description
-        .card__icon
-          = partial "images/icons/#{language.svg}"
+      %a.grid-item.card{ href: "/support/quickstart/#{language.url}", class: language.slug }
+        .card__header
+          %h3.card__title= title
+          .card__icon
+            = partial "images/icons/#{language.svg}"
+        .card__body= language.description

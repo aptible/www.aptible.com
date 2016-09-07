@@ -1,0 +1,301 @@
+---
+header_title: Aptible Toolbelt
+header_subtitle: A command-line interface for your Aptible services
+header_search: false
+layout: layout
+---
+
+= partial 'partials/headers/support-index'
+
+.content
+  .grid-container.grid--4up
+    .grid-item
+      %a.category-box.active{ href: '#osx', class: 'osx' }
+        .category-icon
+          = partial "images/icons/osx.svg"
+        .category-footer
+          .category-title OSX
+
+    .grid-item
+      %a.category-box{ href: '#ubuntu', class: 'ubuntu' }
+        .category-icon
+          = partial "images/icons/ubuntu.svg"
+        .category-footer
+          .category-title Ubuntu
+
+    .grid-item
+      %a.category-box{ href: '#debian', class: 'debian' }
+        .category-icon
+          = partial "images/icons/debian.svg"
+        .category-footer
+          .category-title Debian
+
+    .grid-item
+      %a.category-box{ href: '#enterprise-linux', class: 'enterprise-linux' }
+        .category-icon
+          = partial "images/icons/enterprise-linux.svg"
+        .category-footer
+          .category-title Enterprise Linux
+
+  .grid-container
+    -# OSX Panel
+    .card.download-panel.active#osx
+      %h2 OSX Yosemite
+      .download-container
+        %a.btn.btn-primary.btn-lg{ href: data.toolbelt.os.osx }
+          %i.fa.fa-download
+          %span Download #{data.toolbelt.version} for OSX
+      .installation-instructions
+        %h3 Installation Instructions
+        .help-block When the download completes, double click the downloaded package and follow the installation instructions.
+
+    -# Ubuntu Panel
+    .card.download-panel.split-panel#ubuntu
+      -# Ubuntu 14.04
+      .download-panel-left
+        %h2 Ubuntu 14.04
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.ubuntu['14.04'] }
+            %i.fa.fa-download
+            %span Download #{data.toolbelt.version} for Ubuntu 14.04
+      -# Ubuntu 16.04
+      .download-panel-right
+        %h2 Ubuntu 16.04
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.ubuntu['16.04'] }
+            %i.fa.fa-download
+            %span Download #{data.toolbelt.version} for Ubuntu 16.04
+      .installation-instructions
+        %h3 Installation Instructions
+        .help-block When the download completes, use your package manager (graphical or command line) and install the package. You'll need to use sudo to elevate your permissions.
+
+        %h4 Download URLs
+        %ul.download-urls
+          %li
+            %strong Ubuntu 14.04
+            %span= data.toolbelt.os.ubuntu['14.04']
+          %li
+            %strong Ubuntu 16.04
+            %span= data.toolbelt.os.ubuntu['16.04']
+
+
+    -# Debian Panel
+    .card.download-panel.split-panel#debian
+      -# Debian 7.10
+      .download-panel-left
+        %h2 Debian 7
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.debian['7'] }
+            %i.fa.fa-download
+            %span Download #{data.toolbelt.version} for Debian 7
+      -# Debian 8.4
+      .download-panel-right
+        %h2 Debian 8
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.debian['8'] }
+            %i.fa.fa-download
+            %span Download #{data.toolbelt.version} for Debian 8
+      .installation-instructions
+        %h3 Installation Instructions
+        .help-block When the download completes, use your package manager (graphical or command line) and install the package. You'll need to use sudo to elevate your permissions.
+
+        %h4 Download URLs
+        %ul.download-urls
+          %li
+            %strong Debian 7
+            %span= data.toolbelt.os.debian['7']
+          %li
+            %strong Debian 8
+            %span= data.toolbelt.os.debian['8']
+
+    -# Enterprise Linux Panel
+    .card.download-panel.split-panel#enterprise-linux
+      -# Enterprise Linux 6.7
+      .download-panel-left
+        %h2 Enterprise Linux 6
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.centos['6'] }
+            %i.fa.fa-download
+            %span Download #{data.toolbelt.version} for Enterprise Linux 6
+      -# Enterprise Linux 8.4
+      .download-panel-right
+        %h2 Enterprise Linux 7
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.centos['7'] }
+            %i.fa.fa-download
+            %span Download #{data.toolbelt.version} for Enterprise Linux 7
+      .installation-instructions
+        %h3 Installation Instructions
+        .help-block When the download completes, use your package manager (graphical or command line) and install the package. You'll need to use sudo to elevate your permissions.
+
+        %h4 Download URLs
+        %ul.download-urls
+          %li
+            %strong EL 6
+            %span= data.toolbelt.os.centos['6']
+          %li
+            %strong EL 7
+            %span= data.toolbelt.os.centos['7']
+
+  .container.markdown-document
+    %h2 Getting Started With Aptible Toolbelt
+
+    .toolbelt-section.row
+      .col-xs-5
+        %h3 Login
+        %p Once installed, you'll have access to the aptible command from your command shell. Log in using the email address and password you used when creating your Aptible account:
+
+      .col-xs-6.col-xs-offset-1
+        .console
+          %header.console-title-bar
+            %span.osx-button
+            %span.osx-button
+            %span.osx-button
+          %code.console-body
+            .console-group
+              .console-row $ aptible login
+            .console-group
+              .console-row
+                %span.subdued-color Email:
+                %span skylar@aptible.com
+              .console-row
+                %span.subdued-color Password:
+              .console-row
+                %span.subdued-color 2FA Token:
+                %span 555999
+            .console-group
+              .console-row
+                %span.success-color Success! Token written to $HOME/.aptible/tokens.json
+
+
+    .toolbelt-section.row
+      .col-xs-5
+        %h3 Create an App
+        %p You're now ready to create your first app
+      .col-xs-6.col-xs-offset-1
+        .console
+          %header.console-title-bar
+            %span.osx-button
+            %span.osx-button
+            %span.osx-button
+          %code.console-body
+            .console-group
+              .console-row $ aptible apps:create healthco-on-rails
+            .console-group
+              .console-row
+                %span.success-color healthco-on-rails created successfully!
+            .console-group
+              .console-row
+                %span.subdued-color git remote:
+              .console-row git@beta.aptible.com:healthco-on-rails.git
+
+    .toolbelt-section.row
+      .col-xs-12
+        %h3 Full CLI Command Reference
+        .console
+          %header.console-title-bar
+            %span.osx-button
+            %span.osx-button
+            %span.osx-button
+          %code.console-body
+            .console-group
+              .console-row $ aptible help
+            .clearfix
+              .console-group.split{ style: 'width: 300px;' }
+                .console-row aptible apps
+                .console-row aptible apps:create HANDLE
+                .console-row aptible apps:deprovision
+                .console-row aptible apps:scale TYPE NUMBER
+                .console-row aptible config
+                .console-row aptible config:add
+                .console-row aptible config:rm
+                .console-row aptible config:set
+                .console-row aptible config:unset
+                .console-row aptible db:clone SOURCE DEST
+                .console-row aptible db:create HANDLE
+                .console-row aptible db:deprovision HANDLE
+                .console-row aptible db:dump HANDLE
+                .console-row aptible db:execute HANDLE SQL_FILE
+                .console-row aptible db:list
+                .console-row aptible db:tunnel HANDLE
+                .console-row aptible domains
+                .console-row aptible help [COMMAND]
+                .console-row aptible login
+                .console-row aptible logs
+                .console-row aptible ps
+                .console-row aptible rebuild
+                .console-row aptible restart
+                .console-row aptible ssh [COMMAND]
+                .console-row aptible version
+              .console-group.split{ style: 'width: 450px;'}
+                .console-row
+                  %span.subdued-color # List all applications
+                .console-row
+                  %span.subdued-color # Create a new application
+                .console-row
+                  %span.subdued-color # Deprovision an app
+                .console-row
+                  %span.subdued-color # Scale app to NUMBER of instances
+                .console-row
+                  %span.subdued-color # Print an app's current configuration
+                .console-row
+                  %span.subdued-color # Add an ENV variable to an app
+                .console-row
+                  %span.subdued-color # Remove an ENV variable from an app
+                .console-row
+                  %span.subdued-color # Alias for config:add
+                .console-row
+                  %span.subdued-color # Alias for config:rm
+                .console-row
+                  %span.subdued-color # Clone a database to create a new one
+                .console-row
+                  %span.subdued-color # Create a new database
+                .console-row
+                  %span.subdued-color # Deprovision a database
+                .console-row
+                  %span.subdued-color # Dump a remote database to file
+                .console-row
+                  %span.subdued-color # Executes sql against a database
+                .console-row
+                  %span.subdued-color # List all databases
+                .console-row
+                  %span.subdued-color # Create a local tunnel to a database
+                .console-row
+                  %span.subdued-color # Print an app's current virtual domains
+                .console-row
+                  %span.subdued-color # Describe available commands or one specific command
+                .console-row
+                  %span.subdued-color # Log in to Aptible
+                .console-row
+                  %span.subdued-color # Follows logs from a running app
+                .console-row
+                  %span.subdued-color # Display running processes for an app - DEPRECATED
+                .console-row
+                  %span.subdued-color # Rebuild an app, and restart its services
+                .console-row
+                  %span.subdued-color # Restart all services associated with an app
+                .console-row
+                  %span.subdued-color # Run a command against an app
+                .console-row
+                  %span.subdued-color # Print Aptible CLI version
+
+    .toolbelt-section.row
+      .col-xs-6
+        %h3 Toolbelt Support Topics
+        %p
+          Additional documentation for using the Toolbelt is available on the
+          %a{ href: '/support/topics/cli' } Aptible Toolbelt topic page.
+        %ul.additional-topics
+          - data.topics["Aptible CLI"].articles.each do |article|
+            - next if article.hidden
+            %li
+              %a.category-article{ href: "/support/topics/#{article.url}" }= article.title
+
+      .col-xs-6
+        %h3 Aptible Toolbelt on GitHub
+        %p The Aptible Toolbelt is open source and available on GitHub
+        %ul.additional-topics
+          %li
+            %a.category-article{ href: 'https://github.com/aptible/omnibus-aptible-toolbelt'} https://github.com/aptible/omnibus-aptible-toolbelt
+          %li
+            %a.category-article{ href: 'https://github.com/aptible/aptible-cli'} https://github.com/aptible/aptible-cli

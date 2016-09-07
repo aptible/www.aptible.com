@@ -1,7 +1,7 @@
 If you want to migrate data from one Aptible database to another, or perform a backup and restore, you can use the Aptible CLI with the following steps:
 
 
-1. [Tunnel](https://support.aptible.com/support/topics/cli/how-to-connect-to-database-from-outside/) to the origin database:
+1. [Tunnel](/support/topics/cli/how-to-connect-to-database-from-outside/) to the origin database:
 
     ```bash
     aptible db:tunnel $ORIGIN_DB_HANDLE

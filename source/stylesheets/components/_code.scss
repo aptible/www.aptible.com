@@ -8,10 +8,16 @@ code, .code {
 }
 
 .highlight {
-  background-color: $dusk;
+  // Mimics the banded outline of a window bar for overflowing code contaniers
+  background-image: linear-gradient(
+                      to bottom,
+                      $dark-blue-steel,
+                      $dark-blue-steel 40px,
+                      $dusk calc(40px - 100%),
+                      $dusk);
   margin: 0;
   margin-bottom: 20px;
-  overflow-x: scroll;
+  overflow-x: auto;
   code {
     padding: 0;
   }
@@ -26,17 +32,18 @@ code, .code {
 }
 
 .rouge-table {
-  background-color: $dusk;
   color: $light-blue;
   display: block;
   font-family: $monospace-font-family;
   line-height: 1.25;
   margin: 0;
   margin-bottom: -20px;
+
+  // Faux window bar for code blocks
   &::before {
     background-color: $dark-blue-steel;
     background-image: image-url('icons/code-pseudo-actions.svg');
-    background-position: 10px center;
+    background-position: 10px 14px;
     background-repeat: no-repeat;
     content: '';
     display: block;
@@ -62,6 +69,6 @@ code, .code {
 }
 
 // Comments
-.c1 {
+.c, .c1 {
   color: $sky-blue;
 }

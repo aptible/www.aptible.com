@@ -1,31 +1,28 @@
 ---
-# title defaults to 'Aptible Support'
-header_title: Aptible Support
-header_subtitle: How can we help?
 header_search: true
 categories:
   quickstart:
-    title: Quickstart Guides
+    title: Getting Started Guides
     svg: quickstart.svg
     url: /support/quickstart
+    summary:
   support:
     title: Support Topics
     svg: support.svg
     url: /support/topics
+    summary:
 ---
 
-= partial 'partials/headers/support-home'
+= partial 'partials/headers/support-index', locals: {                       |
+    header_search: current_page.data.header_search                          |
+  }                                                                         |
 
 .content
   .grid-container.grid--2up
     - current_page.data.categories.each do |category_name, category|
-      %a.card{ href: category['url'], class: category['svg'] }
-        .card__body
-          .card__title= category['title']
-          .card__title-rule
-          .card__copy
-            Nam non malesuada augue, nec iaculis quam. Vestibulum molestie,
-            lectus nec rutrum gravida, ligula arcu ultricies est, a
-            sollicitudin mauris elit vitae eros.
-        .card__icon
-          = partial "images/icons/#{category['svg']}"
+      %a.grid-item.card{ href: category['url'], class: category['svg'] }
+        .card__header
+          %h3.card__title= category['title']
+          .card__icon
+            = partial "images/icons/#{category['svg']}"
+        .card__body= category['summary'] || lorem.paragraph

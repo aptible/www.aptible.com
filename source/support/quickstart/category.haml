@@ -1,6 +1,22 @@
 ---
-layout: layout
+header_title: Getting Started
+header_subtitle: Step-by-step guides for getting started with Aptible
 ---
+
+= partial 'partials/headers/support-index', locals: {                       |
+    header_title: header_title,                                             |
+    header_subtitle: header_subtitle                                        |
+  }                                                                         |
+
+.content
+  .grid-container.grid--4up
+    - data.quickstart.each do |title, language|
+      %a.grid-item.card{ href: "/support/quickstart/#{language.url}", class: language.slug }
+        .card__header
+          %h3.card__title= title
+          .card__icon
+            = partial "images/icons/#{language.svg}"
+        .card__body= language.description
 
 .documentation-main
   %h3.sub-title Which #{language.name} framework are you using?
