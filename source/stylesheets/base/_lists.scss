@@ -23,6 +23,7 @@ ul.check-list {
   list-style-image: image-url('icons/checklist-item.svg');
   margin-left: 20px;
   margin-bottom: 50px;
+  padding-left: 0;
   &:last-of-type {
     margin-bottom: 0;
   }
