@@ -1,6 +1,3 @@
----
----
-
 = partial 'partials/header', locals: { |
     subtitle: 'Aptible UI Kit',        |
     title: 'Navigation'                |
@@ -20,9 +17,9 @@
           %nav.nav-list
             %a.nav-item{:href => "customers/ucsf-pride-study/"} UCSF Pride Study
             %a.nav-item{:href => "customers/telepharm/"} Telepharm
-      %nav.nav-list.nav-list--right
-        %a.nav-item{:href => ""} Login
-        %button.nav-item.btn Sign Up
+
+      = partial 'partials/headers/login-signup'
+
   .code.grid-container
     .code__heading
       .code__heading-action
@@ -77,10 +74,6 @@
       %a.nav-bar__nav-item.nav-item{:href => ""} Apps
       %a.nav-bar__nav-item.nav-item{:href => ""} Databases
     .code
-      .code__heading
-        .code__heading-action
-        .code__heading-action
-        .code__heading-action
       %pre.code__body
         :preserve
 
@@ -92,3 +85,25 @@
                     <a class="nav-item" href="">Apps</a>
                     <a class="nav-item" href="">Databases</a>
                   </nav>
+
+
+  .grid-container
+    %h2 Back / Forward Links
+    %p
+      %a.arrow-link--left{ href: '/support/quickstart' } Arrow Link Left
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      %a.arrow-link--right{ href: '/support/quickstart' } Arrow Link Right
+
+    %pre.highlight.plaintext
+      %code
+        %table.rouge-table
+          %tbody
+            %tr
+              %td.rouge-gutter.gl
+                %pre.lineno
+                  1
+                  2
+              %td.rouge-code
+                %pre
+                  &lt;a class="arrow-link--left" href="..."&gt;Back&lt;/a&gt;
+                  &lt;a class="arrow-link--right" href="..."&gt;Forward&lt;/a&gt;

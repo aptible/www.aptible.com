@@ -38,83 +38,89 @@ A few guidelines:
 
 Here is a sample Dockerfile for a conventional Django app, running Python 2.7.6:
 
-    # Dockerfile
-    FROM quay.io/aptible/ubuntu:14.04
+```shell
+# Dockerfile
+FROM quay.io/aptible/ubuntu:14.04
 
-    # Basic dependencies
-    RUN apt-install build-essential python-dev python-setuptools
-    RUN apt-install libxml2-dev libxslt1-dev python-dev
+# Basic dependencies
+RUN apt-install build-essential python-dev python-setuptools
+RUN apt-install libxml2-dev libxslt1-dev python-dev
 
-    # PostgreSQL dev headers and client (uncomment if you use PostgreSQL)
-    # RUN apt-install libpq-dev postgresql-client-9.3 postgresql-contrib-9.3
+# PostgreSQL dev headers and client (uncomment if you use PostgreSQL)
+# RUN apt-install libpq-dev postgresql-client-9.3 postgresql-contrib-9.3
 
-    # MySQL dev headers (uncomment if you use MySQL)
-    # RUN apt-install libmysqlclient-dev
+# MySQL dev headers (uncomment if you use MySQL)
+# RUN apt-install libmysqlclient-dev
 
-    RUN easy_install pip
+RUN easy_install pip
 
-    # Add requirements.txt ONLY, then run pip install, so that Docker cache won't
-    # bust when changes are made to other repo files
-    ADD requirements.txt /app/
-    WORKDIR /app
-    RUN pip install -r requirements.txt
+# Add requirements.txt ONLY, then run pip install, so that Docker cache won't
+# bust when changes are made to other repo files
+ADD requirements.txt /app/
+WORKDIR /app
+RUN pip install -r requirements.txt
 
-    # Add repo contents to image
-    ADD . /app/
+# Add repo contents to image
+ADD . /app/
 
-    ENV PORT 3000
-    EXPOSE 3000
+ENV PORT 3000
+EXPOSE 3000
+```
 
 Here's an alternate Dockerfile, specifically for Python 3. (Thanks [JP Bader](https://github.com/lordB8r) for testing and contributing this!)
 
-    # Dockerfile specifically for python3
-    FROM python:3-wheezy
+```shell
+# Dockerfile specifically for python3
+FROM python:3-wheezy
 
-    # You can do python version this way (uncomment to configure):
-    # RUN apt-install python3-minimal
-    # RUN ln -s python3 /usr/bin/python
+# You can do python version this way (uncomment to configure):
+# RUN apt-install python3-minimal
+# RUN ln -s python3 /usr/bin/python
 
-    # See http://wiki.postgresql.org/wiki/Apt
-    ENV PG_VERSION=9.3 \
-        PG_USER=postgres \
-        PG_HOME=/var/lib/postgresql \
-        PG_RUNDIR=/run/postgresql \
-        PG_LOGDIR=/var/log/postgresql
+# See http://wiki.postgresql.org/wiki/Apt
+ENV PG_VERSION=9.3 \
+    PG_USER=postgres \
+    PG_HOME=/var/lib/postgresql \
+    PG_RUNDIR=/run/postgresql \
+    PG_LOGDIR=/var/log/postgresql
 
-    ENV PG_CONFDIR="/etc/postgresql/${PG_VERSION}/main" \
-        PG_BINDIR="/usr/lib/postgresql/${PG_VERSION}/bin" \
-        PG_DATADIR="${PG_HOME}/${PG_VERSION}/main"
+ENV PG_CONFDIR="/etc/postgresql/${PG_VERSION}/main" \
+    PG_BINDIR="/usr/lib/postgresql/${PG_VERSION}/bin" \
+    PG_DATADIR="${PG_HOME}/${PG_VERSION}/main"
 
-    RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
-        && echo 'deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
-        && apt-get update \
-        && DEBIAN_FRONTEND=noninteractive apt-get install -y postgresql-${PG_VERSION} postgresql-client-${PG_VERSION} postgresql-contrib-${PG_VERSION} \
-        && rm -rf ${PG_HOME} \
-        && rm -rf /var/lib/apt/lists/*
+RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
+    && echo 'deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
+    && apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y postgresql-${PG_VERSION} postgresql-client-${PG_VERSION} postgresql-contrib-${PG_VERSION} \
+    && rm -rf ${PG_HOME} \
+    && rm -rf /var/lib/apt/lists/*
 
-    # MySQL dev headers (uncomment if you use MySQL)
-    # RUN apt-install libmysqlclient-dev
+# MySQL dev headers (uncomment if you use MySQL)
+# RUN apt-install libmysqlclient-dev
 
-    # Add requirements.txt ONLY, then run pip install, so that Docker cache won't
-    # bust when changes are made to other repo files
-    ADD requirements.txt /app/
-    WORKDIR /app
-    RUN pip install -r requirements.txt
+# Add requirements.txt ONLY, then run pip install, so that Docker cache won't
+# bust when changes are made to other repo files
+ADD requirements.txt /app/
+WORKDIR /app
+RUN pip install -r requirements.txt
 
-    # Add repo contents to image
-    ADD . /app/
+# Add repo contents to image
+ADD . /app/
 
-    ENV PORT 8000
-    EXPOSE 8000
+ENV PORT 8000
+EXPOSE 8000
 
-    # Potentially have to set work directory for this to work
-    # WORKDIR /app/YOUR_APP
+# Potentially have to set work directory for this to work
+# WORKDIR /app/YOUR_APP
+```
 
 
 Here is a sample Procfile for a Django app, logging to stderr (note: `gunicorn` should be added to your `requirements.txt`):
 
-    # Procfile
-    web: gunicorn myproject.wsgi --log-file - --bind="0.0.0.0:$PORT"
+  ```shell
+# Procfile
+web: gunicorn myproject.wsgi --log-file - --bind="0.0.0.0:$PORT"
+  ```
 
 ## 4. Provision and Connect a Database
 
@@ -161,7 +167,7 @@ On each subsequent deploy, the Aptible platform will perform a health check on a
 
 ## 7. Migrate your Database
 
-Finally, you'll likely want to [SSH into your app](https://support.aptible.com/support/topics/cli/how-to-ssh-into-app/) and migrate the database:
+Finally, you'll likely want to [SSH into your app](/support/topics/cli/how-to-ssh-into-app/) and migrate the database:
 
     aptible ssh --app $APP_HANDLE
     python manage.py migrate

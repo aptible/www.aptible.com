@@ -1,17 +1,20 @@
 ---
 # title defaults to 'Aptible Support'
-header_title: Aptible Support
-header_subtitle: How can we help?
 ---
 
-.documentation-main
-  .container
-    .categories
-      .row
-      - data.topics.each do |title, topic|
-        .col-xs-12.col-sm-4.col-md-3
-          %a.category-box{ href: "/support/topics/#{topic.slug}", class: topic.slug }
-            .category-icon= partial "images/icons/#{topic.svg}"
+= partial 'partials/headers/support-index'
 
-            .category-footer
-              .category-title= title
+.content
+  .grid-container.grid--4up
+    - data.topics.each do |title, topic|
+      %a.grid-item.card{ href: "/support/topics/#{topic.slug}", class: topic.slug }
+        .card__header
+          %h3.card__title= title
+          .card__icon
+            = partial "images/icons/#{topic.svg}"
+        .card__body
+          -# - if defined? category
+          -#   = category['summary']
+          -# - else
+          -#   = lorem.sentence
+          -# %a{ href: "/support/topics#{topic.slug}" } Learn More

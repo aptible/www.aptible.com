@@ -1,0 +1,8 @@
+%nav.nav-list.nav-list--center
+  %a.nav-item{ href: '/support/quickstart/' } Getting Started
+  %a.nav-item{ href: '/support/toolbelt/' } Toolbelt
+  %a.nav-item{ href: '/support/topics/' } Topics
+  .nav-item.nav-item--search
+    %form#search-form{ action: '/support/search/', method: 'GET' }
+      = partial 'images/icons/search-loop.svg'
+      %input#swifttype-search-input.search--input{ type: 'search' }

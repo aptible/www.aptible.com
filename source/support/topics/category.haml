@@ -1,4 +1,9 @@
-.category-article-list
-  - (category.articles || []).each do |article|
-    - next if article.hidden
-    %a.category-article{ href: "/support/topics/#{article.url}" }= article.title
+= partial 'partials/headers/support-index'
+
+.content
+  .grid-container
+    .category-article-list
+      - (category.articles || []).each do |article|
+        - next if article.hidden
+        %p
+          %a.category-article{ href: "/support/topics/#{article.url}" }= article.title

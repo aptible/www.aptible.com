@@ -107,3 +107,16 @@
     margin-right: 12px;
   }
 }
+
+.nav--expandable {
+  list-style-type: none;
+  margin-bottom: 2em;
+  padding-left: 0;
+  li {
+    margin-bottom: 1.5em;
+    padding-left: 0;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

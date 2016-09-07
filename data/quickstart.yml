@@ -2,7 +2,6 @@
   slug: ruby
   svg: ruby.svg
   url: "ruby/rails"
-  description: ""
   articles:
     - framework: "Ruby on Rails"
       slug: "rails"
@@ -13,7 +12,6 @@
   slug: go
   svg: go.svg
   url: "go/gorilla"
-  description: ""
   articles:
     - framework: "Gorilla"
       slug: "gorilla"
@@ -24,7 +22,6 @@
   slug: node
   svg: node.svg
   url: "node/express"
-  description: ""
   articles:
     - framework: "Express"
       slug: "express"
@@ -39,7 +36,6 @@
   slug: java
   svg: java.svg
   url: "java/jersey"
-  description: ""
   articles:
     - framework: "Jersey"
       slug: "jersey"
@@ -50,7 +46,6 @@
   slug: scala
   svg: scala.svg
   url: "scala/play"
-  description: ""
   articles:
     - framework: "Scala Play"
       slug: "play"
@@ -61,7 +56,6 @@
   slug: php
   svg: php.svg
   url: "php/laravel"
-  description: ""
   articles:
     - framework: "Laravel"
       slug: "laravel"
@@ -76,7 +70,6 @@
   slug: python
   svg: python.svg
   url: 'python/django'
-  description: ""
   articles:
     - framework: "Django"
       slug: "django"

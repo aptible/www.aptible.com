@@ -50,7 +50,7 @@ data.topics.each do |title, category|
 
   category.articles.each do |article|
     page "support/topics/#{article.url}.html",
-         layout: 'topics.haml', hidden: article.hidden do
+         layout: 'support-document.haml', hidden: article.hidden do
       @category_url = category_url
       @category_title = title
       @title = article.title
@@ -75,7 +75,7 @@ data.quickstart.each do |language_name, language_data|
   end
 
   language_data.articles.each do |article|
-    page "support/quickstart/#{article.url}.html", layout: 'quickstart.haml' do
+    page "support/quickstart/#{article.url}.html", layout: 'support-document.haml' do
       @framework = article.framework
       @language = language_data
       @title = "#{@framework} Quickstart"

@@ -11,34 +11,36 @@
   svg {
     max-width: 35px;
   }
-  circle {
-    stroke: $light-med-gray;
-  }
-  path {
-    fill: $light-med-gray;
-  }
+  // circle {
+  //   stroke: $light-med-gray;
+  // }
+  // path {
+  //   fill: $light-med-gray;
+  // }
+}
+
+.card_header {
+  display: inline-block;
+  width: 100%;
 }
 
 .card__body {
-  float: left;
+  clear: both;
   max-width: 330px;
 }
 
 .card__title {
+  color: $dark-blue-steel;
+  float: left;
   font-size: 20px;
   font-weight: $semibold;
-  color: $dark-blue-steel;
-  margin-bottom: 15px;
+  &::after {
+    margin-top: 10px;
+    width: 27px;
+  }
 }
 
-.card__title-rule {
-  background-color: $light-blue;
-  height: 8px;
-  margin-bottom: 30px;
-  width: 30px;
-}
-
-.card__copy {
+.card__body {
   font-size: 16px;
   color: $light-blue-gray;
 }

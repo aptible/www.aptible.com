@@ -8,9 +8,24 @@ ol {
   }
 }
 
+ul {
+  list-style-type: disc;
+  margin-bottom: 2em;
+  padding-left: 2.5em;
+  li {
+    font-weight: $light;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+  }
+}
+
 ul.check-list {
   list-style-image: image-url('icons/checklist-item.svg');
   margin-left: 20px;
+  margin-bottom: 50px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
   li {
     line-height: 1.25;
     margin-bottom: 1em;

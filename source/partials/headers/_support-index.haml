@@ -1,0 +1,19 @@
+%header.aptible-header.hero-header.hero-header--support.hero-gradient--angled
+  .nav--flex.nav--header.grid-container
+    = partial 'partials/aptible-mark'
+    %h2.aptible-mark__title Support
+
+    = partial 'partials/support/navigation'
+    = partial 'partials/headers/login-signup'
+
+  .grid-container
+    %h1.heading__title--centered= current_page.data.header_title || 'Aptible Support'
+    %h2.heading__subtitle--centered= current_page.data.header_subtitle || 'How can we help?'
+    - if current_page.data.header_search
+      .search-bar
+        .search-bar-input
+          .input-group
+            %form#search-form{ action: '/support/search/', method: 'GET' }
+              %input#swifttype-search-input.form-control{ name: 'search', placeholder: 'Search Documentation, Support, and Quickstart guides', type: 'text' }
+              %button.input-group-addon{ type: 'submit' }
+                %i.fa.fa-search
