@@ -75,7 +75,8 @@ data.quickstart.each do |language_name, language_data|
   end
 
   language_data.articles.each do |article|
-    page "support/quickstart/#{article.url}.html", layout: 'support-document.haml' do
+    page "support/quickstart/#{article.url}.html",
+         layout: 'support-document.haml' do
       @framework = article.framework
       @language = language_data
       @title = "#{@framework} Quickstart"

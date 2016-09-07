@@ -1,11 +1,14 @@
 ---
-header_title: Quickstart Guides
+header_title: Getting Started
 header_subtitle: Step-by-step guides for getting started with Aptible
 header_search: false
 layout: layout
 ---
 
-= partial 'partials/headers/support-index'
+= partial 'partials/headers/support-index', locals: {                       |
+    header_title: current_page.data.header_title,                           |
+    header_subtitle: current_page.data.header_subtitle                      |
+  }                                                                         |
 
 .content
   .grid-container.grid--4up
