@@ -1,0 +1,11 @@
+%header.aptible-header.hero-header.hero-gradient--angled
+  .nav--flex.nav--header.grid-container
+    = partial 'partials/aptible-mark'
+    = partial 'partials/main-navigation'
+    = partial 'partials/headers/login-signup'
+
+  .grid-container
+    .blog-post__heading
+      %h2.heading__subtitle= page_subtitle
+      %h1.heading__title= page_title
+      .heading__summary= page_summary

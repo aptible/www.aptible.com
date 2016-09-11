@@ -62,3 +62,22 @@ hr {
   border-bottom: 1px solid $light-blue;
   margin-bottom: 50px;
 }
+
+// Specifics for generated markup
+.markdown-content {
+  font-size: 20px;
+  h2 {
+    margin: 3em 0 2em;
+    &:first-of-type{
+      margin-top: 0;
+    }
+  }
+  p {
+    font-weight: $light;
+    margin-bottom: 1.75em;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

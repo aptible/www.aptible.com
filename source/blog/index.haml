@@ -1,0 +1,8 @@
+---
+layout: blog_posts.haml
+---
+
+%ul.blog-posts
+  - blog_posts_by_date.each do |post|
+    %li.blog-posts__post
+      %a{ href: blog_post_path(post) }= post.data.title
