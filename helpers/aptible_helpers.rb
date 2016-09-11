@@ -13,8 +13,8 @@ module AptibleHelpers
 
   def blog_posts_by_date
     sitemap.resources
-      .select { |p| p.data['section'] == 'Blog' }
-      .sort_by { |p| p.data['posted'] }.reverse!
+           .select { |p| p.data['section'] == 'Blog' }
+           .sort_by { |p| p.data['posted'] }.reverse!
   end
 
   def blog_post_path(resource)
