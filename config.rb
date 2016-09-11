@@ -18,7 +18,6 @@ set :swiftype_key, ENV['SWIFTYPE_KEY'] || 'dsMEc1fYviE2ShXAjYMW'
 set :swiftype_engine, ENV['SWIFTYPE_ENGINE'] || 'axuhZ5Lt1ZUziN-DqxnR'
 set :base_url, ENV['BASE_URL'] || 'https://www.aptible.com'
 
-
 #
 # Extensions
 #
@@ -61,7 +60,6 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-
 
 # Blog
 # Requires the site to be "ready" to read from the sitemap resources
