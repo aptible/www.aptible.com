@@ -1,24 +1,9 @@
 require 'fog'
 require 'cgi'
 
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
 #
-# With no layout
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
-
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
-
+# Globa Settings
+#
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true
 set :css_dir, 'stylesheets'
@@ -33,9 +18,68 @@ set :swiftype_key, ENV['SWIFTYPE_KEY'] || 'dsMEc1fYviE2ShXAjYMW'
 set :swiftype_engine, ENV['SWIFTYPE_ENGINE'] || 'axuhZ5Lt1ZUziN-DqxnR'
 set :base_url, ENV['BASE_URL'] || 'https://www.aptible.com'
 
+
+#
+# Extensions
+#
 activate :syntax, line_numbers: true, wrap: true
 activate :relative_assets
 activate :directory_indexes
+
+# Build-specific configuration
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+end
+
+# Note: S3 Redirect does not work with Middleman v4
+activate :s3_redirect do |config|
+  config.bucket = ENV['S3_BUCKET'] || 'www.aptible-staging.com'
+  config.region = 'us-east-1'
+  config.after_build = false
+end
+
+data.redirects.each do |item|
+  redirect item['loc'], item['url']
+
+  # Zendesk will sometimes index slugged URLs by ID alone
+  # e.g. /hc/en-us/categories/200178460-Getting-Started ->
+  #      /hc/en-us/categories/200178460
+  match = item['loc'].match(/(^.*[0-9]{9})/)
+  redirect(match[1], item['url']) if match
+end
+
+# In development, reload the browser when files change
+configure :development do
+  activate :livereload, host: 'localhost'
+end
+
+#
+# Page options, layouts, aliases and proxies
+#
+page '/*.xml', layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false
+
+
+# Blog
+# Requires the site to be "ready" to read from the sitemap resources
+# page '/blog/*', layout: 'blog_post.haml'
+require 'pry'
+ready do
+  # binding.pry
+  # Posts
+  sitemap.resources.select {|p| p.data["section"] == 'Blog' }.each do |post|
+    page "/#{post.path}", layout: 'blog_post.haml'
+  end
+
+  # # Authors
+  # sitemap.resources.group_by { |p| p.data['author_id'] }.each do |author_id, posts|
+  #   page "/blog/authors/#{author_id}/index.html", layout: 'blog_author.haml',
+  #     :locals => { :author_id => author_id, :posts => posts }
+  # end
+end
 
 # Topics (Support)
 data.topics.each do |title, category|
@@ -85,34 +129,6 @@ data.quickstart.each do |language_name, language_data|
       @og_type = 'article'
     end
   end
-end
-
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload, host: 'localhost'
-end
-
-# Build-specific configuration
-configure :build do
-  activate :minify_css
-  activate :minify_javascript
-  activate :asset_hash
-end
-
-activate :s3_redirect do |config|
-  config.bucket = ENV['S3_BUCKET'] || 'www.aptible-staging.com'
-  config.region = 'us-east-1'
-  config.after_build = false
-end
-
-data.redirects.each do |item|
-  redirect item['loc'], item['url']
-
-  # Zendesk will sometimes index slugged URLs by ID alone
-  # e.g. /hc/en-us/categories/200178460-Getting-Started ->
-  #      /hc/en-us/categories/200178460
-  match = item['loc'].match(/(^.*[0-9]{9})/)
-  redirect(match[1], item['url']) if match
 end
 
 helpers do

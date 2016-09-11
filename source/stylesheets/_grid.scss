@@ -70,16 +70,6 @@ body {
   @include span-columns(9);
   float: left;
   margin-bottom: 100px;
-  h2 {
-    margin: 3em 0 2em;
-    &:first-of-type{
-      margin-top: 0;
-    }
-  }
-  p {
-    font-weight: $light;
-    margin-bottom: 1.75em;
-  }
   @media screen and (max-width: $tablet-portrait) {
     @include span-columns(12);
     @include omega();
