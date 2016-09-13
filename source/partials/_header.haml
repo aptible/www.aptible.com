@@ -1,9 +1,10 @@
 - class_modifiers = '' if class_modifiers.blank?
 - subtitle = '' if subtitle.blank?
-- title = '' if title.blank?
+- title = 'Aptible' if title.blank?
 %header{:class => "aptible-header #{class_modifiers}"}
   .grid-container
-    = partial 'partials/aptible-mark'
+    %a{ href: '/' }
+      = partial 'partials/aptible-mark'
   .grid-container
     - unless subtitle.blank?
       %h2.heading__subtitle= subtitle

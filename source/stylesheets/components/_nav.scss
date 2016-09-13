@@ -5,9 +5,6 @@
 .nav-item {
   display: inline-block;
   margin-right: 30px;
-  &:last-of-type {
-    margin-right: 0;
-  }
   a {
     color: $light-gray;
     transition: color $base-duration $base-timing;
@@ -75,6 +72,12 @@
 .nav-list--center {
   flex-grow: 1;
   text-align: center;
+  & > .nav-item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .nav-list--right {
@@ -108,6 +111,47 @@
   }
 }
 
+.nav-parent {
+  position: relative;
+  .nav-item--parent {
+    margin-right: 0;
+    &::after {
+      border: 1px solid currentColor;
+      border-radius: 1px;
+      border-width: 0 0 2px 2px;
+      content: '';
+      display: inline-block;
+      height: 5px;
+      transform: rotate(-45deg) translate(5px, 2px);
+      transition: transform $base-duration $base-timing;
+      width: 5px;
+    }
+  }
+  &:focus, &:hover {
+    & > .nav-item {
+      color: $blue;
+      outline: none;
+    }
+    .nav-item--parent::after {
+      transform: rotate(-45deg) translate(4px, 3px);
+    }
+    .nav-list__child-nav {
+      display: block;
+    }
+  }
+}
+
+.nav-list__child-nav {
+  display: none;
+  padding: 4px 10px;
+  position: absolute;
+  .nav-item {
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+  }
+}
+
 .nav--expandable {
   list-style-type: none;
   margin-bottom: 2em;
@@ -120,3 +164,8 @@
     }
   }
 }
+
+// quantity limit is 200 / month
+// give authorization number to doctor's office
+// 800-535-9481
+// Blue Cross ID

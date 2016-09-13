@@ -17,6 +17,11 @@
     = stylesheet_link_tag :all
 
   %body{:class => page_classes}
+    - if content_for? :header
+      = yield_content :header
+    - else
+      = partial 'header'
+
     = yield
 
     = partial 'partials/footer'

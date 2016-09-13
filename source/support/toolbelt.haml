@@ -5,7 +5,8 @@ header_search: false
 layout: layout
 ---
 
-= partial 'partials/headers/support-index'
+- content_for :header do
+  = partial 'partials/headers/support-index'
 
 .content
   .grid-container.grid--4up

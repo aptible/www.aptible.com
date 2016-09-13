@@ -6,7 +6,18 @@
 // Debugging
 $visual-grid: false;
 
+//
+// Grid
+//
+// See http://pxtoem.com/
+// $column: 4.2358em !default;// 67px column
+// $gutter: 1.618em !default; // 25px gutter
+$column: 4.375em !default;    // 70px column
+$gutter: 1.25em !default;     // 20px gutter
+
+//
 // Breakpoints
+//
 $max-viewport: 1200px;
 $tablet-landscape: 1024px;
 $tablet-portrait: 768px;
@@ -14,7 +25,9 @@ $tablet-portrait: 768px;
 $medium-screen: new-breakpoint(min-width 768px);
 // $large-screen: new-breakpoint(max-width $tablet-landscape);
 
+//
 // Typography
+//
 // $base-font-family: $font-stack-system;
 // Gibson
 $base-font-family: "canada-type-gibson", sans-serif;
@@ -40,7 +53,9 @@ $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
+//
 // Colors
+//
 $white: white;
 $lighter-blue: #f5f8fd;
 $light-blue: #e9f1fd;
@@ -82,6 +97,8 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Add `.btn` to the default list
 $_buttons-list: prepend($_buttons-list, '.btn');
 
-// Animations
+//
+// Transition / Animation
+//
 $base-duration: 0.2s;
 $base-timing: ease-in-out;
