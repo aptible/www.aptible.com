@@ -179,9 +179,4 @@ helpers do
     "<meta property=\"og:url\" content=\"#{url}\" >\n" \
     "<meta property=\"og:type\" content=\"#{og_type}\" >"
   end
-
-  def contact_href
-    # 'https://aptible.zendesk.com/hc/en-us/requests/new'
-    'http://contact.aptible.com'
-  end
 end

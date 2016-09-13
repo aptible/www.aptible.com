@@ -20,4 +20,13 @@ module AptibleHelpers
   def blog_post_path(resource)
     resource.eponymous_directory_path.chomp '/'
   end
+
+  def dashboard_href
+    'https://dashboard.aptible.com/login'
+  end
+
+  def contact_href
+    # 'https://aptible.zendesk.com/hc/en-us/requests/new'
+    'http://contact.aptible.com'
+  end
 end

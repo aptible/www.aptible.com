@@ -1,0 +1,192 @@
+---
+title: Plans and Pricing
+tracked_title: Pricing
+id: pricing
+description: "Aptible plans and pricing"
+posted: 2015-12-10
+production_title: Aptible Production Account
+
+plans_title: Explore Plans and Pricing
+
+step1_title: About You
+step2_title: Configuration
+step3_title: Summary
+
+plans:
+  dev:
+    name: Development
+    descriptors:
+    - No PHI allowed
+    - "No base fee: Pay only for usage"
+    included:
+    - $500 trial credit
+  platform:
+    name: Platform
+    descriptors:
+    - Dedicated, PHI-ready stack
+    - Comes with Business Associate Agreement, Breach Indemnification, and SLA
+    - $999/month base fee for 3 months, cancel any time
+    - $999/month thereafter w/ annual contract, or $1299 monthly
+    included:
+    - 6 containers
+    - 1TB disk
+    - 4 endpoints
+  managed:
+    name: Managed
+    descriptors:
+    - "With a Managed Account, Aptible helps you set up and run a comprehensive HIPAA Business Associate compliance program, including risk assessments, policies and procedures, workforce training, incident response, BAA management, and application security management."
+    - "As a Managed Account partner, our engineering and compliance teams will work with you directly to help you quickly pass security reviews and audits at the largest healthcare institutions in the country."
+
+tooltip:
+  containers: Docker containers, 1 GB RAM by default. Easily scale container count and RAM footprint. To start, plan for 1 container per app process, plus 1 per database.
+  disk: "Encrypted database storage. Includes backups: daily for 90 days, monthly for 6 years."
+  endpoints: Expose apps and databases to the Internet, or internally as private services.
+
+needs_more:
+  title: Scale much?
+  body: All Aptible services scale on demand at the unit price rates below. High volume plans and custom container RAM sizes are available.
+  cta: Contact Us
+  cta_url: http://contact.aptible.com
+
+discount:
+  title: Advertise your HIPAA compliance.
+  body: |
+    Add a [Powered by Aptible](/company/resources/#hipaa-badges-section)
+     badge on your site footer and get a __$100/month discount__.
+
+    Just
+    [drop us a line](http://contact.aptible.com) to let us know you
+    are participating.
+
+pricing:
+  container: $0.08/GB/hour
+  disk: $0.37/GB/month
+  endpoint: $0.05/hour
+
+support_plans:
+  title: Support Plans
+  cta: Learn More
+
+unique_situation:
+  title: Need something special?
+  sub_title: Custom container RAM sizes, optimized EC2 instance types, and high volume plans are available.
+  cta: Request a Quote
+  cta_url: http://contact.aptible.com
+
+intro_credit: $500
+
+pricing_cta: Get Started Now
+
+quick_start:
+  - name: Ruby
+    url: /support/quickstart/ruby/rails/
+    icon: /pages/assets/icons/ruby.svg
+    slug: ruby
+  - name: Go
+    url: /support/quickstart/go/gorilla/
+    icon: /pages/assets/icons/go.svg
+    slug: go
+  - name: Node
+    url: /support/quickstart/node/express/
+    icon: /pages/assets/icons/node.svg
+    slug: node
+  - name: Java
+    url: /support/quickstart/java/jersey/
+    icon: /pages/assets/icons/java.svg
+    slug: java
+  - name: Scala
+    url: /support/quickstart/scala/play/
+    icon: /pages/assets/icons/scala.svg
+    slug: scala
+  - name: PHP
+    url: /support/quickstart/php/laravel/
+    icon: /pages/assets/icons/php.svg
+    slug: php
+  - name: Python
+    url: /support/quickstart/python/django/
+    icon: /pages/assets/icons/python.svg
+    slug: python
+---
+
+- content_for :header do
+  %header.aptible-header.hero-header.hero-gradient--angled
+    .nav--flex.nav--header.grid-container
+      %a{ href: '/' }= partial 'partials/aptible-mark'
+      = partial 'partials/main-navigation'
+      = partial 'partials/headers/login-signup'
+
+    .grid-container
+      .centered-header
+        %h1.heading__title
+          Get a free development account to see how easy Aptible is to use
+          
+.grid-container
+  .row.section.bordered
+    %h2.section-title= current_page.data.plans_title
+    // partial
+  .row.section.bordered
+    #unit-pricing.col-xs-12.unit-pricing
+      %h2.section-title Unit Pricing
+      %ul.plan-attributes
+        %li All plans are scalable on demand, just pay for what you use:
+        %li
+          %strong App/Database Containers:
+          = current_page.data.pricing.container
+        %li
+          %strong Encrypted Disk:
+          = current_page.data.pricing.disk
+        %li
+          %strong Endpoints:
+          = current_page.data.pricing.endpoint
+  .row.section.bordered
+    .col-xs-12.text-hero
+      %h2.section-title= current_page.data.support_plans.title
+      .row
+        .col-xs-12.col-md-4.support-plan-summary
+          %h4 Business
+          %ul
+            %li Normal severity response times in 12 hours or less
+            %li Email and portal channels
+            %li Included with every account
+        .col-xs-12.col-md-4.support-plan-summary
+          %h4 Premium
+          %ul
+            %li Dedicated slack channel
+            %li Urgent severity response times in 1 hour or less
+            %li Administrative portal access to manage tickets
+            %li Email, portal, and slack channels
+        .col-xs-12.col-md-4.support-plan-summary
+          %h4 Enterprise
+          %ul
+            %li Dedicated Support Engineer
+            %li Dedicated Technical Account Manager
+            %li Critical issue response times in 15 minutes or less
+            %li Included base VPN and architecture support
+            %li Email, portal, slack, and phone channels
+      %a.btn.btn-primary.btn-lg{ href: '/support-plans/'}= current_page.data.support_plans.cta
+  .row.section
+    .col-xs-12.unit-pricing
+      %h2.section-title= current_page.data.discount.title
+      .intro-body.text-center
+        :markdown
+          = current_page.data.discount.body
+  .panel.panel-default.were-hiring-panel
+    .panel-body
+      .row
+        .col-sm-10.col-sm-offset-1
+          %h1.panel-title= current_page.data.unique_situation.title
+          %h5.panel-sub= current_page.data.unique_situation.sub_title
+          .panel-cta
+            %a.btn.btn-primary.btn-lg{ href: current_page.data.unique_situation.cta_url }
+              = current_page.data.unique_situation.cta
+  .row.section.bordered
+    .col-xs-12
+      .quick-starts.categories
+        %h2.section-title Quickstart Guides
+        - current_page.data.quick_start.each do |guide|
+          .col-xs-12.col-sm-4.col-md-3
+            %a{ class: "category-box #{guide.slug}", href: guide.url }
+              .category-icon
+                %img{ alt: guide.name, src: guide.icon}
+              .category-footer
+                .category-title= guide.name

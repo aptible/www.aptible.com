@@ -56,3 +56,14 @@
   color: $sky-blue;
   font-size: 24px;
 }
+
+// Todo: Generic grid layout for this
+.centered-header {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  h1::after {
+    display: none;
+  }
+}
