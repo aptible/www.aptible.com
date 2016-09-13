@@ -1,0 +1,31 @@
+- content_for :header do
+  %header.aptible-header.hero-header.hero-gradient--angled
+    .nav--flex.nav--header.grid-container
+      %a{ href: '/' }= partial 'partials/aptible-mark'
+      = partial 'partials/main-navigation'
+      = partial 'partials/headers/login-signup'
+
+    .grid-container
+      .centered-header
+        %h1.heading__title
+          Secure, HIPAA-compliant cloud deployment for digital health.
+
+    .grid-container.grid--2up
+      .grid-item
+        %h2.heading__subtitle Secure DevOps
+        %h1.heading__title Enclave
+        %p
+          Aptible Enclave is a Docker-based platform that enables secure
+          deployment into private AWS environments. Fast, efficient
+          engineering teams use Gravity to secure their most important
+          architecture.
+        %a.btn{ href: '/enclave' } Learn more about Enclave
+
+      .grid-item
+        %h2.heading__subtitle Manage HIPAA Compliance
+        %h1.heading__title Gridiron
+        %p
+          Aptible Gridiron helps software engineering teams stand up and
+          scale agile information security programs. Gridiron makes
+          compliance with complex regulations like HIPAA fast and easy.
+        %a.btn{ href: '/gridiron' } Learn more about Gridiron

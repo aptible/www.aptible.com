@@ -48,7 +48,7 @@
     font-size: 15px;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.06);
     @extend %smooth;
-    &:hover, &:focus {
+    &:focus, &:hover {
       color: $blue;
       outline: none;
     }
@@ -113,6 +113,18 @@
 
 .nav-parent {
   position: relative;
+  &:focus, &:hover {
+    > .nav-item {
+      color: $blue;
+      outline: none;
+    }
+    .nav-item--parent::after {
+      transform: rotate(-45deg) translate(4px, 3px);
+    }
+    .nav-list__child-nav {
+      display: block;
+    }
+  }
   .nav-item--parent {
     margin-right: 0;
     &::after {
@@ -126,17 +138,10 @@
       transition: transform $base-duration $base-timing;
       width: 5px;
     }
-  }
-  &:focus, &:hover {
-    & > .nav-item {
-      color: $blue;
-      outline: none;
-    }
-    .nav-item--parent::after {
-      transform: rotate(-45deg) translate(4px, 3px);
-    }
-    .nav-list__child-nav {
-      display: block;
+    &:focus, &:hover {
+      & + .nav-list__child-nav {
+        display: block
+      }
     }
   }
 }
