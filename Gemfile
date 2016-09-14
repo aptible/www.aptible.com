@@ -33,7 +33,7 @@ gem 'turbolinks', require: false
 
 # From support
 gem 'aptible-tasks'
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
 gem 'capybara'
 gem 'pry'
 gem 'rake'

@@ -1,38 +1,18 @@
-!!!
-%html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}/
+- content_for :header do
+  = partial 'headers/blog-post', locals: { |
+      page_subtitle: "#{current_page.data.author_name} - |
+                        #{post_date(current_page.data.posted)}", |
+      page_title: "#{current_page.data.title}", |
+      page_summary: "#{current_page.data.excerpt}" |
+    } |
 
-    / Use title if it's in the page YAML frontmatter
-    %title= "Aptible - Blog - #{current_page.data.title}"
+= wrap_layout :layout do
+  .content
+    .grid-container
+      .blog-post__author
+        %h4.blog-post__author-subtitle The Author
+        %h3.blog-post__author-name= current_page.data.author_name
 
-    / TypeKit
-    %script{:src => "https://use.typekit.net/pqi8lpw.js"}
-    :javascript
-      try{Typekit.load({ async: true });}catch(e){}
-
-    = stylesheet_link_tag :all
-
-  %body{:class => page_classes}
-    = partial 'headers/blog-post', locals: { |
-        page_subtitle: "#{current_page.data.author_name} - |
-                          #{post_date(current_page.data.posted)}", |
-        page_title: "#{current_page.data.title}", |
-        page_summary: "#{current_page.data.excerpt}" |
-      } |
-
-    .content
-      .grid-container
-        .blog-post__author
-          %h4.blog-post__author-subtitle The Author
-          %h3.blog-post__author-name= current_page.data.author_name
-
-        .blog-post.markdown-content
-          = find_and_preserve do
-            = yield
-
-    = partial 'partials/footer'
-    = javascript_include_tag :all
+      .blog-post.markdown-content
+        = find_and_preserve do
+          = yield

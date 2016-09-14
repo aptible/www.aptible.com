@@ -1,5 +1,16 @@
 %nav.nav-list.nav-list--center
-  %a.nav-item{ href: '/developers/' } Developers
-  %a.nav-item{ href: '/compliance/' } Compliance
-  %a.nav-item{ href: '/customers/' } Customers
-  %a.nav-item{ href: '/success/' } Help
+  %a.nav-item{ href: '/enclave' } Enclave
+  %a.nav-item{ href: '/gridiron' } Gridiron
+  %a.nav-item{ href: '/pricing' } Pricing
+  .nav-item.nav-parent{ tabindex: 0 }
+    %a.nav-item.nav-item--parent{ href: '/customers' } Customers
+    %nav.nav-list__child-nav
+      %a.nav-item{ href: '/cto' } CTO
+      %a.nav-item{ href: '/cto' } CEO
+      %a.nav-item{ href: '/securty-professional' } Security Professional
+  .nav-item.nav-parent{ tabindex: 0 }
+    %a.nav-item.nav-item--parent{ href: '/support' } Help
+    %nav.nav-list__child-nav
+      %a.nav-item{ href: '/support' } Documentation
+      %a.nav-item{ href: contact_href } Open A Ticket
+      %a.nav-item{ href: '/legal' } Legal

@@ -57,8 +57,13 @@
   font-size: 24px;
 }
 
-.heading__title-div {
-  background-color: $dark-gray;
-  height: 10px;
-  width: 35px;
+// Todo: Generic grid layout for this
+.centered-header {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  h1::after {
+    display: none;
+  }
 }

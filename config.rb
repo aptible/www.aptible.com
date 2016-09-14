@@ -2,7 +2,7 @@ require 'fog'
 require 'cgi'
 
 #
-# Globa Settings
+# Global Settings
 #
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true
@@ -63,14 +63,14 @@ page '/*.txt', layout: false
 
 # Blog
 # Requires the site to be "ready" to read from the sitemap resources
-# page '/blog/*', layout: 'blog_post.haml'
+page '/blog/*', layout: 'blog_post.haml'
 require 'pry'
 ready do
   # binding.pry
   # Posts
-  sitemap.resources.select { |p| p.data['section'] == 'Blog' }.each do |post|
-    page "/#{post.path}", layout: 'blog_post.haml'
-  end
+  # sitemap.resources.select { |p| p.data['section'] == 'Blog' }.each do |post|
+  #   page "/#{post.path}", layout: 'blog_post.haml'
+  # end
 
   # # Authors
   # sitemap.resources.group_by { |p| p.data['author_id'] }
@@ -79,6 +79,11 @@ ready do
   #     :locals => { :author_id => author_id, :posts => posts }
   # end
 end
+
+# Legal
+# Proxy /legal/index to Terms of Service
+page '/legal/*', layout: 'legal.haml'
+proxy '/legal/index.html', '/legal/terms_of_service.html'
 
 # Topics (Support)
 data.topics.each do |title, category|
@@ -173,10 +178,5 @@ helpers do
     "<meta property=\"og:description\" content=\"#{description}\" >\n" \
     "<meta property=\"og:url\" content=\"#{url}\" >\n" \
     "<meta property=\"og:type\" content=\"#{og_type}\" >"
-  end
-
-  def contact_href
-    # 'https://aptible.zendesk.com/hc/en-us/requests/new'
-    'http://contact.aptible.com'
   end
 end

@@ -35,8 +35,7 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     // background-color: shade($action-color, 20%);
     background-color: $green;
     color: $white;
