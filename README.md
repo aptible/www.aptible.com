@@ -5,3 +5,9 @@
 ## www.aptible.com
 Aptible's public web site: marketing, blog, support, and documentation. Built
 with [Middleman](https://middlemanapp.com/).
+
+NEXT:
+  - [x] Nav / Responsive
+  - [ ] Blog list style (will also work for support topics)
+  - [ ] Resources Footer
+  - [ ] Side navigation for Legal and FAQ

@@ -110,16 +110,13 @@ quick_start:
 
 - content_for :header do
   %header.aptible-header.hero-header.hero-gradient--angled
-    .nav--flex.nav--header.grid-container
-      %a{ href: '/' }= partial 'partials/aptible-mark'
-      = partial 'partials/main-navigation'
-      = partial 'partials/headers/login-signup'
+    = partial 'partials/main-nav'
 
     .grid-container
       .centered-header
         %h1.heading__title
           Get a free development account to see how easy Aptible is to use
-          
+
 .grid-container
   .row.section.bordered
     %h2.section-title= current_page.data.plans_title

@@ -19,6 +19,7 @@ $gutter: 1.25em !default;     // 20px gutter
 // Breakpoints
 //
 $max-viewport: 1200px;
+$nav-break: 900px;
 $tablet-landscape: 1024px;
 $tablet-portrait: 768px;
 
@@ -71,6 +72,7 @@ $light-med-gray: #c9d1db;
 $light-gray: #8b97a6;
 $medium-gray: #999;
 $dark-gray: #36455b;
+$purple: #9b59b6;
 
 // Hero Gradient:
 $dark-magenta: #63183d;
@@ -79,7 +81,7 @@ $midnight-blue: #1B283c;
 
 // Font Colors
 $base-font-color: $dark-blue-steel;
-$action-color: $blue;
+$action-color: $blue-steel;
 
 // Border
 $base-border-color: $light-gray;

@@ -3,8 +3,10 @@
 }
 .aptible-mark__title {
   color: $blue-steel;
+  display: inline-block;
   line-height: 1;
   margin: 0;
+  transform: translate(10px, -10px);
   &::after { display: none; }
 }
 .aptible-mark--dark-bg {

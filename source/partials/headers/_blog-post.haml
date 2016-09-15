@@ -1,8 +1,8 @@
 %header.aptible-header.hero-header.hero-gradient--angled
-  .nav--flex.nav--header.grid-container
-    %a{ href: '/' }= partial 'partials/aptible-mark'
-    = partial 'partials/main-navigation'
-    = partial 'partials/headers/login-signup'
+  = partial 'partials/main-nav', locals: {   |
+      section_title: 'Blog',                 |
+      section_url: '/blog'                   |
+    }                                        |
 
   .grid-container
     .blog-post__heading

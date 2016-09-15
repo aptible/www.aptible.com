@@ -40,6 +40,49 @@
   justify-content: space-between;
 }
 
+//
+// Expanding header nav hamburger thing
+//
+.nav-toggle {
+  display: none;
+  &:hover {
+    color: $action-color;
+  }
+}
+.nav-toggle__expand {
+  display: inline-block;
+  height: 22px;
+  width: 25px;
+}
+
+.nav-toggle__icon-bar {
+  background-color: $white;
+  border-radius: 1px;
+  display: block;
+  height: 4px;
+  position: relative;
+  transition-property: transform, top, background-color;
+  transition-duration: $base-duration;
+  transition-timing-function: $base-timing;
+  transition-delay: 0s, 0.5s, 0s;
+  width: auto;
+  &:nth-child(1) { top: 0; }
+  &:nth-child(2) { top: 5px; }
+  &:nth-child(3) { top: 10px; }
+}
+
+.nav-toggle__label {
+  display: inline-block;
+  font-weight: $semibold;
+  letter-spacing: -0.65em;
+  opacity: 0;
+  position: absolute;
+  transform: translate(35px, -28px);
+  transition-property: opacity, letter-spacing;
+  transition-duration: $base-duration, 0.5s;
+  transition-timing-function: $base-timing, cubic-bezier(0.520, 0.265, 0.000, 1.265);
+}
+
 .nav--header {
   margin-bottom: 50px;
   .nav-item {
@@ -49,13 +92,109 @@
     text-shadow: 0px 2px 3px rgba(0,0,0,0.06);
     @extend %smooth;
     &:focus, &:hover {
-      color: $blue;
+      color: $action-color;
       outline: none;
+      &.btn {
+        color: $white;
+      }
     }
   }
+
   .nav-item--active {
     color: $sky-blue;
   }
+
+  @media screen and (max-width: $nav-break) {
+    &.nav--flex {
+      display: block;
+      text-align: center;
+    }
+    .nav-list--center {
+      border-radius: 5px;
+      height: auto;
+      left: 0;
+      margin: 10px;
+      padding: 20px;
+      position: absolute;
+      text-align: left;
+      top: 0;
+      transform-origin: top left;
+      transform: scale(0.2);
+      transition: transform $base-duration $base-timing;
+      width: calc(100% - 20px);
+    }
+    .nav-toggle {
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .nav-list--right {
+      display: none;
+    }
+    .nav--dashboard-auth {
+      display: block;
+    }
+    .nav-item {
+      transition: opacity $base-duration $base-timing $base-duration*2;
+      display: block;
+      font-size: 16px;
+      font-weight: $regular;
+      line-height: 2.5;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      z-index: -9999;
+    }
+    .nav-item--parent {
+      color: $action-color;
+      font-weight: $semibold;
+      &::after {
+        display: none;
+      }
+    }
+    .nav-list__child-nav {
+      background-color: transparent;
+      display: block;
+      position: static;
+    }
+  }
+}
+
+@media screen and (max-width: $nav-break) {
+  .nav-list--center[data-state='open'] {
+    background-color: $dark-blue;
+    transition: transform $base-duration*2 cubic-bezier(0.520, 0.265, 0.000, 1.265) $base-duration;
+    transform: scale(1);
+    .nav-toggle__icon-bar {
+      background-color: $action-color;
+      transition-property: top, transform, background-color;
+      &:nth-child(1) {
+        top: 9px;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(3) {
+        top: 1px;
+        transform: rotate(135deg);
+        transform: rotate(-45deg);
+      }
+    }
+    .nav-toggle__label {
+      letter-spacing: 0.05em;
+      opacity: 1;
+    }
+    .nav-item {
+      transition: opacity $base-duration $base-timing $base-duration*2;
+      opacity: 1;
+      position: static;
+    }
+  }
+}
+
+.nav--dashboard-auth {
+  display: none;
 }
 
 .nav-item {
@@ -67,6 +206,10 @@
       fill: $action-color;
     }
   }
+}
+
+.nav-list--left .aptible-mark {
+  margin-right: 0;
 }
 
 .nav-list--center {
@@ -102,7 +245,7 @@
       color: $blue-steel;
     }
     &:focus, &:hover {
-      color: $blue;
+      color: $action-color;
       outline: none;
     }
   }
@@ -115,7 +258,7 @@
   position: relative;
   &:focus, &:hover {
     > .nav-item {
-      color: $blue;
+      color: $action-color;
       outline: none;
     }
     .nav-item--parent::after {
@@ -125,33 +268,36 @@
       display: block;
     }
   }
-  .nav-item--parent {
-    margin-right: 0;
-    &::after {
-      border: 1px solid currentColor;
-      border-radius: 1px;
-      border-width: 0 0 2px 2px;
-      content: '';
-      display: inline-block;
-      height: 5px;
-      transform: rotate(-45deg) translate(5px, 2px);
-      transition: transform $base-duration $base-timing;
-      width: 5px;
-    }
-    &:focus, &:hover {
-      & + .nav-list__child-nav {
-        display: block
-      }
+}
+.nav-item--parent {
+  margin-right: 0;
+  &::after {
+    border: 1px solid currentColor;
+    border-radius: 1px;
+    border-width: 0 0 2px 2px;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    transform: rotate(-45deg) translate(5px, 2px);
+    transition: transform $base-duration $base-timing;
+    width: 5px;
+  }
+  &:focus, &:hover {
+    & + .nav-list__child-nav {
+      display: block
     }
   }
 }
 
 .nav-list__child-nav {
+  background-color: $dark-blue;
+  border-radius: 5px;
   display: none;
-  padding: 4px 10px;
+  padding: 4px 15px;
   position: absolute;
   .nav-item {
     display: block;
+    line-height: 2;
     text-align: left;
     white-space: nowrap;
   }
@@ -169,8 +315,3 @@
     }
   }
 }
-
-// quantity limit is 200 / month
-// give authorization number to doctor's office
-// 800-535-9481
-// Blue Cross ID
