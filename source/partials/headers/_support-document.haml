@@ -1,6 +1,6 @@
 %header.aptible-header.aptible-header--with-breadcrumbs.hero-header.hero-header--support.hero-gradient--angled
-  .nav--flex.nav--header.grid-container
-    %a{ href: '/' }= partial 'partials/aptible-mark'
-    %h2.aptible-mark__title Support
-    = partial 'partials/support/navigation'
-    = partial 'partials/headers/login-signup'
+  = partial 'partials/main-nav', locals: {      |
+      nav_items: 'partials/support/nav-items',  |
+      section_title: 'Support',                 |
+      section_url: '/support'                   |
+    }                                           |

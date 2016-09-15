@@ -1,0 +1,17 @@
+- nav_items = nav_items || 'partials/nav-items'
+.nav--flex.nav--header.grid-container
+  .nav-list--left
+    %a{ href: '/' }= partial 'partials/aptible-mark'
+    - if defined? section_title
+      %h2.aptible-mark__title
+        %a{ href: section_url }= section_title
+  %nav.nav-list.nav-list--center
+    %a.nav-toggle
+      .nav-toggle__expand
+        %span.nav-toggle__icon-bar
+        %span.nav-toggle__icon-bar
+        %span.nav-toggle__icon-bar
+      %span.nav-toggle__label Menu
+    = partial nav_items
+  %nav.nav-list.nav-list--right
+    = partial 'partials/headers/login-signup'

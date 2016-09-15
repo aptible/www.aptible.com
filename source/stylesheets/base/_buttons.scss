@@ -2,7 +2,6 @@
   -webkit-font-smoothing: antialiased;
   appearance: none;
   border: 0;
-  background-color: $action-color;
   background-color: $blue;
   border-radius: $base-border-radius;
   color: $white;
@@ -36,19 +35,17 @@
   }
 
   &:hover, &:focus {
-    // background-color: shade($action-color, 20%);
-    background-color: $green;
+    background-color: $purple;
     color: $white;
     outline: none;
   }
-
 }
 
 .btn--outline {
   background-color: transparent;
-  border: 1px solid $blue;
+  border: 1px solid $action-color;
   box-shadow: 0px 0px 4px 0px rgba(77,159,255,0.35);
-  color: $blue;
+  color: $action-color;
   transition: color $base-duration $base-timing, border-color $base-duration $base-timing;
   &:hover {
     background-color: transparent;
