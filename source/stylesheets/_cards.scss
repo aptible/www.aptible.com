@@ -38,3 +38,29 @@
   font-size: 16px;
   color: $light-blue-gray;
 }
+.card__body--on-dark {
+  color: tint($light-sky-blue, 75%);
+}
+
+.card--on-dark {
+  background-color: $dusk;
+  border: 1px solid tint($dusk, 10%);
+}
+
+.card__subitle {
+  font-size: 14px;
+  font-weight: $light;
+}
+.card__subitle--on-dark {
+  color: $light-sky-blue;
+}
+.card__title {
+  font-size: 20px;
+}
+.card__title--on-dark {
+  color: $white;
+  &::after {
+    margin-top: 15px;
+    background-color: $dark-gray;
+  }
+}
