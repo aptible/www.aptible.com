@@ -118,9 +118,6 @@
       position: absolute;
       text-align: left;
       top: 0;
-      transform-origin: top left;
-      transform: scale(0.2);
-      transition: transform $base-duration $base-timing;
       width: calc(100% - 20px);
     }
     .nav-toggle {
@@ -163,8 +160,6 @@
 @media screen and (max-width: $nav-break) {
   .nav-list--center[data-state='open'] {
     background-color: $dark-blue;
-    transition: transform $base-duration*2 cubic-bezier(0.520, 0.265, 0.000, 1.265) $base-duration;
-    transform: scale(1);
     .nav-toggle__icon-bar {
       background-color: $action-color;
       transition-property: top, transform, background-color;

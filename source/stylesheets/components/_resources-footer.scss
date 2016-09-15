@@ -1,0 +1,33 @@
+.resources-footer {
+  background-image: linear-gradient(
+                      to bottom,
+                      transparent, transparent 1px,
+                      $dusk calc(1px - 100%), $dusk);
+  border-top: 1px solid $white;
+}
+.resources-footer__slant {
+  width: 100%;
+  position: absolute;
+}
+.resources-footer__header {
+  padding-top: 90px;
+  max-width: 66.66%;
+  @media screen and (max-width: $tablet-landscape) {
+    max-width: 100%;
+  }
+}
+h2.resources-footer__header__title {
+  font-size: 30px;
+  color: $white;
+  &::after {
+    background-color: $dark-gray;
+    margin-top: 16px;
+    width: 35px;
+  }
+}
+.resources-footer__header__summary {
+  color: $sky-blue;
+  font-size: 20px;
+  font-weight: $light;
+  margin-bottom: 30px;
+}
