@@ -1,8 +1,24 @@
 ---
 layout: blog_posts.haml
 ---
+- content_for :header do
+  %header.aptible-header.hero-header.hero-gradient--angled
+    = partial 'partials/main-nav', locals: {   |
+        section_title: 'Blog',                 |
+        section_url: '/blog'                   |
+      }                                        |
 
-%ul.blog-posts
-  - blog_posts_by_date.each do |post|
-    %li.blog-posts__post
-      %a{ href: blog_post_path(post) }= post.data.title
+    .grid-container
+      .blog-post__heading
+        .blog-posts__post
+          %a.blog-posts__link{ href: blog_post_path(latest_blog_post) }
+            - latest = latest_blog_post.data
+            %h2.heading__subtitle= "#{latest.author_name} - #{post_date(latest.posted)}"
+            %h1.heading__title= latest.title
+            .heading__summary= latest.excerpt
+
+- posts = blog_posts_by_date
+- posts[1..posts.length].each do |post|
+  .blog-posts__post
+    %a.blog-posts__link{ href: blog_post_path(post) }
+      = partial 'partials/blog-list-item', locals: { post: post }
