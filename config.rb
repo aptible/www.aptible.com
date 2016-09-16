@@ -65,18 +65,18 @@ page '/*.txt', layout: false
 # Requires the site to be "ready" to read from the sitemap resources
 page '/blog/*', layout: 'blog_post.haml'
 # ready do
-  # binding.pry
-  # Posts
-  # sitemap.resources.select { |p| p.data['section'] == 'Blog' }.each do |post|
-  #   page "/#{post.path}", layout: 'blog_post.haml'
-  # end
-
-  # # Authors
-  # sitemap.resources.group_by { |p| p.data['author_id'] }
-  #                   .each do |author_id, posts|
-  #   page "/blog/authors/#{author_id}/index.html", layout: 'blog_author.haml',
-  #     :locals => { :author_id => author_id, :posts => posts }
-  # end
+#   binding.pry
+#   Posts
+#   sitemap.resources.select { |p| p.data['section'] == 'Blog' }.each do |post|
+#     page "/#{post.path}", layout: 'blog_post.haml'
+#   end
+#
+#   # Authors
+#   sitemap.resources.group_by { |p| p.data['author_id'] }
+#                     .each do |author_id, posts|
+#     page "/blog/authors/#{author_id}/index.html", layout: 'blog_author.haml',
+#       :locals => { :author_id => author_id, :posts => posts }
+#   end
 # end
 
 # Legal
