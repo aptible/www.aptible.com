@@ -64,8 +64,7 @@ page '/*.txt', layout: false
 # Blog
 # Requires the site to be "ready" to read from the sitemap resources
 page '/blog/*', layout: 'blog_post.haml'
-require 'pry'
-ready do
+# ready do
   # binding.pry
   # Posts
   # sitemap.resources.select { |p| p.data['section'] == 'Blog' }.each do |post|
@@ -78,7 +77,7 @@ ready do
   #   page "/blog/authors/#{author_id}/index.html", layout: 'blog_author.haml',
   #     :locals => { :author_id => author_id, :posts => posts }
   # end
-end
+# end
 
 # Legal
 # Proxy /legal/index to Terms of Service
@@ -93,6 +92,8 @@ data.topics.each do |title, category|
         'support/topics/category.html',
         locals: { category: category, title: title },
         ignore: true do
+    @title = title
+    @category = category
     @description = "Aptible support questions about #{title}"
   end
 

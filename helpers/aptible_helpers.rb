@@ -11,6 +11,10 @@ module AptibleHelpers
     string_date.strftime('%B %e, %Y')
   end
 
+  def latest_blog_post
+    blog_posts_by_date.first
+  end
+
   def blog_posts_by_date
     sitemap.resources
            .select { |p| p.data['section'] == 'Blog' }
@@ -18,7 +22,7 @@ module AptibleHelpers
   end
 
   def blog_post_path(resource)
-    resource.eponymous_directory_path.chomp '/'
+    '/' + resource.eponymous_directory_path.chomp('/')
   end
 
   def dashboard_href

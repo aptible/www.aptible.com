@@ -1,10 +1,30 @@
 - content_for :header do
-  = partial 'partials/headers/support-index'
+  %header.aptible-header.aptible-header--with-breadcrumbs.hero-header.hero-header--support.hero-gradient--angled
+    = partial 'partials/main-nav', locals: {      |
+        nav_items: 'partials/support/nav-items',  |
+        section_title: 'Support',                 |
+        section_url: '/support'                   |
+      }                                           |
+
+    .grid-container
+      %h1.heading__title--centered= @title
+      %h2.heading__subtitle--centered= @description
+
+%nav.nav-list--breadcrumb
+  .grid-container
+    %a.nav-item{:href => '/support'} Support
+    %span.nav-item--separator
+    %a.nav-item{:href => '/support/topics/'} Topics
+    %span.nav-item--separator
+    %a.nav-item{:href => "/support/topics/#{@category.slug}" }= @title
 
 .content
   .grid-container
-    .category-article-list
+    .blog-posts
       - (category.articles || []).each do |article|
         - next if article.hidden
-        %p
-          %a.category-article{ href: "/support/topics/#{article.url}" }= article.title
+        .blog-posts__post
+          %a.blog-posts__link{ href: "/support/topics/#{article.url}" }
+            %h1.post__title= article.title
+
+  = partial 'partials/resources-footer'

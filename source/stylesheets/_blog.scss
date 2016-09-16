@@ -3,6 +3,13 @@
   @include span-columns(8);
   margin-bottom: 50px;
 
+  .blog-posts__post {
+    border-bottom: none;
+    &::after {
+      border-color: $blue-steel;
+    }
+  }
+
   @media screen and (max-width: $tablet-portrait) {
     @include shift(1);
     @include span-columns(10);
@@ -37,6 +44,60 @@
 .blog-posts {
   @include shift(2);
   @include span-columns(8);
+  padding: 0;
+  list-style: none;
+
+  @media screen and (max-width: $tablet-portrait) {
+    @include shift(1);
+    @include span-columns(10);
+  }
+}
+
+.blog-posts__post {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $light-blue;
+  margin-bottom: 30px;
+  width: 100%;
+  &::after {
+    border-color: $blue;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 5px 5px 0 0;
+    content: '';
+    display: inline-block;
+    height: 15px;
+    transform: rotate(45deg);
+    transition: transform $base-duration $base-timing;
+    width: 15px;
+  }
+}
+
+.blog-posts__link {
+  flex-grow: 1;
+  max-width: calc(100% - 30px);
+}
+
+.post__subtitle {
+  color: $sky-blue;
+  font-size: 16px;
+  margin-bottom: 10px;
+  &::after { display: none; }
+}
+.post__title {
+  color: $dark-blue-steel;
+  font-size: 30px;
+  font-weight: $semibold;
+  margin-bottom: 20px;
+  &::after { display: none; }
+}
+.post__summary {
+  color: $light-blue-gray;
+  font-size: 24px;
+  font-weight: $light;
+  margin-bottom: 30px;
+  width: 75%;
 }
 
 .blog-post__author-subtitle {
