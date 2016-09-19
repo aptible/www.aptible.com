@@ -2,7 +2,7 @@
 title: Responsible Disclosure Policy
 tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2016-09-15
+posted: 2016-09-19
 section: Legal
 sub_section: Policies
 ---
@@ -70,7 +70,7 @@ The following types of issues are examples of reports we have paid cash bounties
 - HTML injection
 
 #### Submissions
-Please email [security@aptible.com](mailto:security@aptible.com) to report an issue. If you would like to include a video, please link to an unpublished YouTube URL. We cannot accept binary videos or files.
+Please email [security@aptible.com](mailto:security@aptible.com) to report an issue. If you would like to include a video, please link to an unpublished YouTube URL. We cannot accept binary files of any kind, including videos or PDFs.
 
 ### Top Researchers
 - Frans Rosen
