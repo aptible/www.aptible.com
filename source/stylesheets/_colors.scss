@@ -64,7 +64,10 @@
 }
 
 .hero-gradient--angled {
-  background-image: linear-gradient(-35deg, $dark-magenta 0%, $twilight 42%, $midnight-blue 86%, $blue 100%);
-  // background-image: url(/images/hero-gradient--angled.svg);
+  background-image: linear-gradient(-35deg,
+                                    $dark-magenta 0%,
+                                    $twilight 42%,
+                                    $midnight-blue 78%,
+                                    $blue 130%);
   box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.10);
 }
