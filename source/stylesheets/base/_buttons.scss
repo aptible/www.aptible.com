@@ -12,7 +12,7 @@
   font-size: 16px;
   font-weight: $semibold;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: $small-spacing $base-spacing * 0.65;
   text-decoration: none;
   text-shadow: 0px 2px 3px rgba(0,0,0,0.06);
   transition-property: background-color, color, opacity;
@@ -41,16 +41,23 @@
   }
 }
 
+.btn + .btn {
+  margin-left: $small-spacing * 2;
+}
+
 .btn--outline {
-  background-color: transparent;
   border: 1px solid $action-color;
+  background-color: transparent;
   box-shadow: 0px 0px 4px 0px rgba(77,159,255,0.35);
-  color: $action-color;
-  transition: color $base-duration $base-timing, border-color $base-duration $base-timing;
-  &:hover {
+  border-radius: $base-border-radius;
+  color: $white;
+  line-height: 0.9;
+  transition-property: border-color, box-shadow;
+  transition-duration: $base-duration;
+  transition-timing-function: $base-timing;
+  &:focus, &:hover {
     background-color: transparent;
-    border-color: $dark-magenta;
-    color: $dark-magenta;
+    border-color: $purple;
   }
 }
 

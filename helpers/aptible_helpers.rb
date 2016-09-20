@@ -29,6 +29,10 @@ module AptibleHelpers
     'https://dashboard.aptible.com/login'
   end
 
+  def open_account_href
+    'https://dashboard.aptible.com/signup'
+  end
+
   def contact_href
     # 'https://aptible.zendesk.com/hc/en-us/requests/new'
     'http://contact.aptible.com'

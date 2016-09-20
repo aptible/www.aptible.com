@@ -1,0 +1,43 @@
+.grid--2up {
+  .product-page__hero-header {
+    @media screen and (max-width: $nav-break) {
+      @include span-columns(12);
+    }
+    @media screen and (max-width: 387px) {
+      .btn + .btn {
+        &::before {
+          content: '';
+          display: block;
+        }
+        margin-left: 0;
+        margin-top: $small-spacing * 2;
+      }
+    }
+  }
+
+  .product-page__enclave, .product-page__gridiron {
+    margin-top: 40px;
+    text-align: center;
+
+    @media screen and (max-width: $nav-break) {
+      height: 150px;
+      margin-bottom: 0;
+      margin-top: 0;
+      min-height: 0;
+      position: absolute;
+      right: 20px;
+      width: auto;
+      text-right: center;
+      svg {
+        height: 150px;
+      }
+    }
+  }
+}
+
+.product-page__gridiron {
+  svg {
+    height: 300px;
+    width: auto;
+  }
+}
