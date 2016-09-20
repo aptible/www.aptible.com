@@ -29,6 +29,10 @@ h6 {
   }
 }
 
+.no-hr::after {
+  display: none;
+}
+
 p {
   margin: 0 0 $small-spacing;
 }
@@ -80,5 +84,27 @@ hr {
 }
 
 .text-center {
+  text-align: center;
+}
+
+.heading--single-center {
+  color: $dark-blue-steel;
+  font-size: 30px;
+  font-weight: $semibold;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  &::after {
+    display: none;
+  }
+}
+
+.summary--single-center {
+  color: $light-blue-gray;
+  font-size: 20px;
+  font-weight: $light;
+  margin-bottom: 50px;
   text-align: center;
 }

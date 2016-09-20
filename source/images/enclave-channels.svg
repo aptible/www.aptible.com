@@ -1,0 +1,142 @@
+<svg width="514px" height="327px" viewBox="0 0 514 327">
+    <title>channels</title>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="enclave-channels-filter-1">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.115262681 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M5.09375,301.384766 L507.427734,1.62792969" id="enclave-channels-path-2"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="enclave-channels-filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.459627329   0 0 0 0 1  0 0 0 0.568868886 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M5.39160156,246.033203 L421.277344,1.51538086" id="enclave-channels-path-4"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="enclave-channels-filter-5">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.459627329   0 0 0 0 1  0 0 0 0.568868886 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M36.5,20.5 L36.5,14.5" id="enclave-channels-path-6"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="enclave-channels-filter-7">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.459627329   0 0 0 0 1  0 0 0 0.568868886 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M36.5,14.5 L59.482666,0.487304688" id="enclave-channels-path-8"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="enclave-channels-filter-9">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.459627329   0 0 0 0 1  0 0 0 0.568868886 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M18.5,31.5 L26.5,31.5" id="enclave-channels-path-10"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="enclave-channels-filter-11">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.459627329   0 0 0 0 1  0 0 0 0.568868886 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M26.5,31.5 L69.5,6.5" id="enclave-channels-path-12"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="enclave-channels-filter-13">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.459627329   0 0 0 0 1  0 0 0 0.568868886 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M0.5,41.5 L19.5,41.5" id="enclave-channels-path-14"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="enclave-channels-filter-15">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.459627329   0 0 0 0 1  0 0 0 0.568868886 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M19.5,41.5 L75.0581055,9.12475586" id="enclave-channels-path-16"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="enclave-channels-filter-17">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.459627329   0 0 0 0 1  0 0 0 0.568868886 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="enclave-channels-Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="enclave-channels-channels" filter="url(#enclave-channels-filter-1)" transform="translate(2.000000, 4.000000)">
+            <g id="enclave-channels-bottom-lane" transform="translate(0.000000, 10.000000)">
+                <g id="enclave-channels-Line">
+                    <use fill="black" fill-opacity="1" filter="url(#enclave-channels-filter-3)" xlink:href="#enclave-channels-path-2"></use>
+                    <use stroke-opacity="0.611837636" stroke="#40BFFF" stroke-width="1" stroke-linecap="round" xlink:href="#enclave-channels-path-2"></use>
+                </g>
+                <circle id="enclave-channels-entry" fill-opacity="0.61" fill="#40BFFF" cx="2.875" cy="302.625" r="2.375"></circle>
+                <path d="M2.5,299.5 L504.7854,0.548583984" id="enclave-channels-Line" stroke-opacity="0.0891077899" stroke="#40BFFF" stroke-linecap="round"></path>
+                <path d="M5.5,304.5 L509.28125,2.83813477" id="enclave-channels-Line" stroke-opacity="0.0891077899" stroke="#40BFFF" stroke-linecap="round"></path>
+            </g>
+            <g id="enclave-channels-top-lane" transform="translate(71.000000, 2.000000)">
+                <g id="enclave-channels-Line">
+                    <use fill="black" fill-opacity="1" filter="url(#enclave-channels-filter-5)" xlink:href="#enclave-channels-path-4"></use>
+                    <use stroke-opacity="0.611837636" stroke="#40BFFF" stroke-width="1" stroke-linecap="round" xlink:href="#enclave-channels-path-4"></use>
+                </g>
+                <circle id="enclave-channels-entry" fill-opacity="0.61" fill="#40BFFF" cx="3.07499695" cy="246.875" r="2.375"></circle>
+                <path d="M2.484375,244.366211 L417.577637,0.2421875" id="enclave-channels-Line" stroke-opacity="0.0891077899" stroke="#40BFFF" stroke-linecap="round"></path>
+                <path d="M4.87304688,249.69043 L423.154541,3.08276367" id="enclave-channels-Line" stroke-opacity="0.0891077899" stroke="#40BFFF" stroke-linecap="round"></path>
+            </g>
+            <g id="enclave-channels-exits" transform="translate(427.000000, 0.000000)">
+                <g id="enclave-channels-Line">
+                    <use fill="black" fill-opacity="1" filter="url(#enclave-channels-filter-7)" xlink:href="#enclave-channels-path-6"></use>
+                    <use stroke-opacity="0.611837636" stroke="#40BFFF" stroke-width="1" stroke-linecap="round" xlink:href="#enclave-channels-path-6"></use>
+                </g>
+                <g id="enclave-channels-Line">
+                    <use fill="black" fill-opacity="1" filter="url(#enclave-channels-filter-9)" xlink:href="#enclave-channels-path-8"></use>
+                    <use stroke-opacity="0.611837636" stroke="#40BFFF" stroke-width="1" stroke-linecap="round" xlink:href="#enclave-channels-path-8"></use>
+                </g>
+                <g id="enclave-channels-Line">
+                    <use fill="black" fill-opacity="1" filter="url(#enclave-channels-filter-11)" xlink:href="#enclave-channels-path-10"></use>
+                    <use stroke-opacity="0.611837636" stroke="#40BFFF" stroke-width="1" stroke-linecap="round" xlink:href="#enclave-channels-path-10"></use>
+                </g>
+                <g id="enclave-channels-Line">
+                    <use fill="black" fill-opacity="1" filter="url(#enclave-channels-filter-13)" xlink:href="#enclave-channels-path-12"></use>
+                    <use stroke-opacity="0.611837636" stroke="#40BFFF" stroke-width="1" stroke-linecap="round" xlink:href="#enclave-channels-path-12"></use>
+                </g>
+                <g id="enclave-channels-Line">
+                    <use fill="black" fill-opacity="1" filter="url(#enclave-channels-filter-15)" xlink:href="#enclave-channels-path-14"></use>
+                    <use stroke-opacity="0.611837636" stroke="#40BFFF" stroke-width="1" stroke-linecap="round" xlink:href="#enclave-channels-path-14"></use>
+                </g>
+                <g id="enclave-channels-Line">
+                    <use fill="black" fill-opacity="1" filter="url(#enclave-channels-filter-17)" xlink:href="#enclave-channels-path-16"></use>
+                    <use stroke-opacity="0.611837636" stroke="#40BFFF" stroke-width="1" stroke-linecap="round" xlink:href="#enclave-channels-path-16"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -31,6 +31,19 @@ body {
   }
 }
 
+.grid-container--bordered {
+  border-bottom: 1px solid $light-blue;
+  margin-bottom: 50px;
+}
+
+.grid--single-center {
+  text-align: center;
+  .grid-item {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+}
+
 .grid--2up {
   .grid-item {
     @media screen and (max-width: $tablet-portrait) {
@@ -48,6 +61,23 @@ body {
     @media screen and (max-width: $tablet-portrait) {
       @include shift(1);
       @include span-columns(10);
+    }
+  }
+}
+
+.grid--2up-flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $tablet-portrait) {
+    display: block;
+  }
+
+  .grid-item {
+    flex-grow: 1;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    @media screen and (max-width: $tablet-landscape) {
     }
   }
 }
@@ -76,6 +106,7 @@ body {
     float: none;
   }
 }
+
 .grid-aside {
   @include span-columns(3);
   @include omega();
@@ -105,5 +136,58 @@ body {
   }
   @media screen and (max-width: $tablet-portrait) {
     @include span-columns(12);
+  }
+}
+
+
+//
+// Logo grids
+// Defaults to 2up
+//
+.logo-grid {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-grid__item {
+  align-self: center;
+  border-left: 1px solid $light-blue;
+  border-top: 1px solid $light-blue;
+  height: 150px;
+  position: relative;
+  width: 50%;
+  &:nth-child(1), &:nth-child(2) {
+    border-top: none;
+  }
+  &:nth-child(2n+1) {
+    border-left: none;
+  }
+  svg, img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 80%;
+    max-height: 130px;
+  }
+}
+
+.logo-grid--4up {
+  .logo-grid__item {
+    width: 25%;
+    &:nth-child(2n+1) {
+      border-left: 1px solid $light-blue;
+    }
+    &:nth-child(4n+1) {
+      border-left: none;
+    }
+    &:nth-child(3), &:nth-child(4) {
+      border-top: none;
+    }
+    @media screen and (max-width: $tablet-portrait) {
+      width: 50%;
+    }
   }
 }

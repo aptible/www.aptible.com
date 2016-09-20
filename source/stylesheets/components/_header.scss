@@ -2,6 +2,7 @@
   background-color: $dark-blue;
   color: $light-blue;
   margin-bottom: 50px;
+  overflow: hidden;
   padding-top: 34px;
 }
 
@@ -66,4 +67,66 @@
   h1::after {
     display: none;
   }
+}
+
+
+.home-hero__products {
+  margin-top: 20px;
+}
+
+.product-hero {
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.product-hero__illustration {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+  svg {
+    height: 188px;
+  }
+}
+
+.product-hero__description {
+  font-weight: $light;
+  font-size: 20px;
+  line-height: 1.25;
+  max-width: 490px;
+  margin: 0 auto 40px;
+}
+
+.enclave-home-hero {
+  #app-grid-shadow {
+    display:none;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    text-align: left;
+  }
+}
+
+.enclave-home-hero__channels {
+  position: absolute;
+  transform: translate(-210px, 45px);
+  z-index: 3;
+  @media screen and (max-width: $tablet-portrait) {
+    transform: translate(-210px, 45px);
+  }
+}
+
+.gridiron-home-hero {
+  @media screen and (max-width: $tablet-portrait) {
+    text-align: right;
+  }
+}
+
+.gridiron-home-hero__join-channels {
+  position: absolute;
+  transform: translate(-346px, -225px);
+  // @media screen and (max-width: $tablet-portrait) {
+  //   transform: translate(-210px, 45px);
+  // }
 }

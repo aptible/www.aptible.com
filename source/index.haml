@@ -1,5 +1,5 @@
 - content_for :header do
-  %header.aptible-header.hero-header.hero-gradient--angled
+  %header.aptible-header.hero-gradient--angled
     = partial 'partials/main-nav'
 
     .grid-container
@@ -7,24 +7,92 @@
         %h1.heading__title
           Secure, HIPAA-compliant cloud deployment for digital health.
 
-    .grid-container.grid--2up
-      .grid-item
+    .grid-container.grid--2up.home-hero__products
+      .enclave-home-hero.product-hero.grid-item
+        .enclave-home-hero__channels
+          = partial 'images/enclave-channels.svg'
+        .enclave-home-hero__illustration.product-hero__illustration
+          = partial 'images/enclave.svg'
         %h2.heading__subtitle Secure DevOps
-        %h1.heading__title Enclave
-        %p
+        %h1.heading__title.no-hr Enclave
+        %p.product-hero__description
           Aptible Enclave is a Docker-based platform that enables secure
           deployment into private AWS environments. Fast, efficient
-          engineering teams use Gravity to secure their most important
+          engineering teams use Enclave to secure their most important
           architecture.
         %a.btn{ href: '/enclave' } Learn more about Enclave
 
-      .grid-item
+      .gridiron-home-hero.product-hero.grid-item
+        .gridiron-home-hero__illustration.product-hero__illustration
+          = partial 'images/stack.svg'
+        .gridiron-home-hero__join-channels
+          = partial 'images/enclave-to-stack.svg'
         %h2.heading__subtitle Manage HIPAA Compliance
-        %h1.heading__title Gridiron
-        %p
+        %h1.heading__title.no-hr Gridiron
+        %p.product-hero__description
           Aptible Gridiron helps software engineering teams stand up and
           scale agile information security programs. Gridiron makes
           compliance with complex regulations like HIPAA fast and easy.
         %a.btn{ href: '/gridiron' } Learn more about Gridiron
+
+.content
+  .grid-container.grid-container--bordered.grid--single-center
+    .grid-item
+      %h2.heading--single-center
+        Developers use Aptible to secure sensitive data with powerful security,
+        compliance, and DevOps tools.
+
+      %p.summary--single-center
+        Open a Development Account today with $500 free credit.
+
+      %a.btn{ href: '/pricing' } Open a Development Account
+
+  .healthcare-systems.grid-container.grid--2up.grid--2up-flex.grid-container--bordered
+    .grid-item
+      %h2.heading__title
+        Our customers work with the best health systems in the world.
+      %p.heading__summary
+        Major health systems trust Aptible to secure data and cloud
+        architecture for their technology partners.
+
+    .grid-item
+      .logo-grid
+        .logo-grid__item
+          = partial '/images/healthcare-systems/va.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/uhc.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/stanfordmed.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/kaiserpermanente.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/johnshopkinsmed.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/mayoclinic.svg'
+
+  .grid-container.grid--single-center
+    .grid-item
+      %h2.heading--single-center
+        Aptible helps hundreds of digital health companies get to market faster
+        with less risk.
+
+      -# TODO: SVGs julia@scriptdash.com
+      .logo-grid.logo-grid--4up
+        .logo-grid__item
+          = partial '/images/customers/ucsf.svg'
+        .logo-grid__item
+          = image_tag 'customers/spectra.png'
+        .logo-grid__item
+          = image_tag 'customers/everplans.png'
+        .logo-grid__item
+          = image_tag 'customers/lumahealth.png'
+        .logo-grid__item
+          = image_tag 'customers/nuspine.png'
+        .logo-grid__item
+          = image_tag 'customers/healthify.png'
+        .logo-grid__item
+          = partial '/images/customers/1bios.svg'
+        .logo-grid__item
+          = image_tag 'customers/telepharm.png'
 
 = partial 'partials/resources-footer'
