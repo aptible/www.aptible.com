@@ -4,6 +4,15 @@
   margin-bottom: 50px;
   overflow: hidden;
   padding-top: 34px;
+  // &::before {
+  //   background-image: url(/images/hero-grid.svg);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   content: '';
+  //   height: calc(100% + 34px);
+  //   position: absolute;
+  //   width: 100%;
+  // }
 }
 
 .aptible-header--with-breadcrumbs {
@@ -19,8 +28,10 @@
   color: white;
   font-size: 50px;
   font-weight: $semibold;
+  margin-bottom: 40px;
   &::after {
     background-color: $dark-gray;
+    margin-top: 30px;
     width: 30px;
   }
 }
@@ -56,6 +67,12 @@
   @extend %smooth;
   color: $sky-blue;
   font-size: 24px;
+}
+.heading__summary--light-blue {
+  @extend %smooth;
+  color: $light-blue;
+  font-size: 24px;
+  margin-bottom: 50px;
 }
 
 // Todo: Generic grid layout for this

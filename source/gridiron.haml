@@ -1,0 +1,19 @@
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
+
+    .grid-container.grid--2up
+      .grid-item.product-page__hero-header
+        %h2.heading__subtitle Manage HIPAA Compliance
+        %h1.heading__title Gridiron
+        %p.heading__summary--light-blue
+          Aptible Gridiron helps software engineering teams stand up and scale
+          agile information security programs. Gridiron makes compliance with
+          complex regulations like HIPAA fast and easy.
+
+        %p.heading__summary--light-blue
+          %a.btn{ href: dashboard_href } Open a Development Account
+          %a.btn.btn--outline{ href: '/pricing' } See Pricing
+
+      .grid-item.product-page__gridiron
+        = partial '/images/stack.svg'
