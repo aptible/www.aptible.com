@@ -20,6 +20,118 @@
         = partial '/images/enclave.svg'
 
 .content
-  .grid-container.grid-container--bordered.grid--single-center
+  .grid-container
+    .feature-carousel__triggers
+      %a.feature-carousel__btn.active{ href: '#stack' } The Stack
+      %a.feature-carousel__btn{ href: '#network' } The Network
+      %a.feature-carousel__btn{ href: '#load-balancing' } Load Balancing
+      %a.feature-carousel__btn{ href: '#user-access' } Team Access
+      %a.feature-carousel__btn{ href: '#apps' } Apps
+      %a.feature-carousel__btn{ href: '#databases' } Databases
+
+  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--stack.active
+    .feature-carousel__details.grid-item
+      .heading__subtitle The Stack
+      %h2.heading__title The Enclave Container Platform
+      %p.heading__summary
+        Aptible Enclave is a deployment platform designed to securely deploy
+        Docker containers into HIPAA-ready environments. We manage zero-downtime
+        deployments, scale your clusters, encrypt and back up your data, and
+        run your ops, allowing you to focus on development.
+
+    .feature-carousel__illustration.grid-item
+      = partial '/images/enclave-features/stack.svg'
+
+  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--network
+    .feature-carousel__details.grid-item
+      .heading__subtitle The Network
+      %h2.heading__title= lorem.words 4
+      %p.heading__summary= lorem.paragraph
+
+    .feature-carousel__illustration.grid-item
+      = partial '/images/enclave-features/network.svg'
+
+  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--load-balancing
+    .feature-carousel__details.grid-item
+      .heading__subtitle Load Balancing
+      %h2.heading__title= lorem.words 4
+      %p.heading__summary= lorem.paragraph
+
+    .feature-carousel__illustration.grid-item
+      = partial '/images/enclave-features/load-balancing.svg'
+
+  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--user-access
+    .feature-carousel__details.grid-item
+      .heading__subtitle Team Access
+      %h2.heading__title= lorem.words 4
+      %p.heading__summary= lorem.paragraph
+
+    .feature-carousel__illustration.grid-item
+      = partial '/images/enclave-features/user-access.svg'
+
+  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--apps
+    .feature-carousel__details.grid-item
+      .heading__subtitle Apps
+      %h2.heading__title= lorem.words 4
+      %p.heading__summary= lorem.paragraph
+
+    .feature-carousel__illustration.grid-item
+      = partial '/images/enclave-features/apps.svg'
+
+  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--databases
+    .feature-carousel__details.grid-item
+      .heading__subtitle Databases
+      %h2.heading__title= lorem.words 4
+      %p.heading__summary= lorem.paragraph
+
+    .feature-carousel__illustration.grid-item
+      = partial '/images/enclave-features/load-balancing.svg'
+
+.aptible-header.hero-gradient--angled
+  .grid-container
+    %h2.heading__title--centered
+      The Enclave Deployment Platform for Healthcare Innovators
+    %p.heading__summary
+      Deploy Docker containers into secure, isolated, HIPAA-ready environments.
+
+  .grid-container
+    %h3 Meet the Gravity Deployment Platform
+    %ol
+      %li
+        Create and configure apps and databases directly from the Aptible Toolbelt
+      %li
+        Simple git-based, zero-downtime deployments
+      %li
+        Stream app logs directly to your console
+      %li
+        $$ Profit $$
+
+    %a.btn{ href: open_account_href } Open a Development Account
+
+.content
+  .grid-container.grid--single-center
+    .grid-item
+      %h2.heading--single-center Enclave Features
+      %p.summary--single-center= lorem.paragraph
+
+  .grid-container.grid-container--bordered
+    - 12.times do
+      .grid-item
+        %h4= lorem.words 3
+        %p= lorem.sentence
+
+  .grid-container.grid--single-center
+    .grid-item
+      %h2.heading--single-center Getting Started with Enclave
+      %p.summary--single-center= lorem.paragraph
+
+  .grid-container.grid-container--bordered
+    - data.quickstart.each do |title, language|
+      %a.grid-item.card{ href: "/support/quickstart/#{language.url}", class: language.slug }
+        .card__header
+          %h3.card__title= title
+          .card__icon
+            = partial "images/icons/#{language.svg}"
+        .card__body= lorem.sentence
 
 = partial 'partials/resources-footer'
