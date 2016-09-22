@@ -47,9 +47,13 @@
   border: 1px solid tint($dusk, 10%);
 }
 
-.card__subitle {
+.card__subtitle {
   font-size: 14px;
   font-weight: $light;
+  margin-bottom: 10px;
+  &::after {
+    display: none;
+  }
 }
 .card__subitle--on-dark {
   color: $light-sky-blue;
