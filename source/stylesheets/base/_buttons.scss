@@ -62,6 +62,7 @@
 }
 
 .arrow-link--left, .arrow-link--right {
+  color: $blue;
   display: inline-block;
 }
 .arrow-link--left {
@@ -72,7 +73,7 @@
     transition: transform 0.25s ease-in-out;
     transform: translate(-20px, 1px);
   }
-  &:hover::before {
+  &:hover::before, &:focus::before {
     transform: translate(-24px, 1px);
   }
 }
@@ -85,7 +86,7 @@
     transition: transform 0.25s ease-in-out;
     transform: translate(-4px, 1px);
   }
-  &:hover::after {
+  &:hover::after, &:focus::after {
     transform: translate(0px, 1px);
   }
 }

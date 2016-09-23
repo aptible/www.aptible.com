@@ -3,19 +3,34 @@
 @import "mixins";
 @import "normalize";
 @import "bourbon";
-@import "base/base";   /* Bitters needs to be imported before Neat */
+
+/* Bitters needs to be imported before Neat */
+@import "base/base";
 @import "neat";
 
+/**
+ * Layout / Global
+ */
 @import "grid";
-@import "cards";
-@import "colors";
-@import "blog";
+@import "cards"; /* TODO: move to components */
+@import "colors"; /* TODO: add to base? */
+
+/**
+ * Components
+ */
 @import "components/header";
 @import "components/footer";
 @import "components/aptible-mark";
 @import "components/typography";
 @import "components/nav";
 @import "components/code";
+@import "components/resources";
 @import "components/resources-footer";
+@import "components/filter";
+
+/**
+ * Pages / Sections
+ */
+@import "blog";
 @import "healthcare-systems";
 @import "product-page";

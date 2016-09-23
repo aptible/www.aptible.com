@@ -5,8 +5,9 @@ author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
 posted: 2016-01-05
-section: Blog
-posts: true
+section: Resources
+categories:
+- HIPAA Compliance
 ---
 As a DevOps platform, we talk to a lot of software engineering teams. Explosive growth in digital health over the last few years means there are many developers and managers who haven’t worked under HIPAA before. This article is for engineering teams who could use some help with the basics.
 
