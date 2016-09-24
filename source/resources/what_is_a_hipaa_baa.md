@@ -5,8 +5,10 @@ author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
 posted: 2016-03-28
-section: Blog
-posts: true
+section: Resources
+featured: true
+categories:
+- HIPAA Compliance
 ---
 At Aptible, we get a lot of questions about HIPAA business associate agreements, or "BAAs." This post will explain some of the essential concepts that cloud-hosted software development organizations should know about BAAs.
 

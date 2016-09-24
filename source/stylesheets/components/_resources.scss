@@ -1,0 +1,38 @@
+.resources-list {
+}
+
+.resource-article {
+  border: 1px solid $light-blue;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.resource-article--featured::before {
+  background-color: $blue;
+  color: $white;
+  content: 'Featured Resource';
+  font-size: 12px;
+  line-height: 2.25;
+  padding: 0 40px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.resource-article__header {
+  width: 100%;
+}
+
+.resource-article__title {
+}
+
+.resource-article__tags {
+}
+
+.resource-article__tag {
+}
+
+.resource-article__excerpt {
+}
+
+.resource-article__author-date {
+}

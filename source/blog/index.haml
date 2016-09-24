@@ -11,7 +11,7 @@ layout: blog_posts.haml
     .grid-container
       .blog-post__heading
         .blog-posts__post
-          %a.blog-posts__link{ href: blog_post_path(latest_blog_post) }
+          %a.blog-posts__link{ href: resource_link_path(latest_blog_post) }
             - latest = latest_blog_post.data
             %h2.heading__subtitle= "#{latest.author_name} - #{post_date(latest.posted)}"
             %h1.heading__title= latest.title
@@ -20,5 +20,5 @@ layout: blog_posts.haml
 - posts = blog_posts_by_date
 - posts[1..posts.length].each do |post|
   .blog-posts__post
-    %a.blog-posts__link{ href: blog_post_path(post) }
+    %a.blog-posts__link{ href: resource_link_path(post) }
       = partial 'partials/blog-list-item', locals: { post: post }

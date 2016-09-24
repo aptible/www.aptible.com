@@ -2,7 +2,7 @@
   background-color: $dark-blue;
   color: $light-blue;
   margin-bottom: 50px;
-  overflow: hidden;
+  // overflow: hidden; -- need overflow here for small headers
   padding-top: 34px;
   // &::before {
   //   background-image: url(/images/hero-grid.svg);

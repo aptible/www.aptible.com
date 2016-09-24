@@ -108,3 +108,18 @@ hr {
   margin-bottom: 50px;
   text-align: center;
 }
+
+// TODO: Where to put this? Blog? More generic type style? Grid?
+// Start searching for recurring heading styles.
+// Should remove the global &::after
+.post-title {
+  font-size: 16px;
+  font-weight: $semibold;
+  margin-bottom: 10px;
+  &::after { display: none; }
+}
+.post-excerpt {
+  color: $light-blue-gray;
+  font-size: 14px;
+  font-weight: $regular;
+}
