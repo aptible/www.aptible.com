@@ -21,7 +21,7 @@ module AptibleHelpers
            .sort_by { |p| p.data['posted'] }.reverse!
   end
 
-  def resources_by_category(category='all', featured=false)
+  def resources_by_category(category = 'all', featured = false)
     filtered = sitemap.resources.select { |r| r.data['section'] == 'Resources' }
     unless category == 'all'
       filtered = filtered.select { |r| r.data['categories'].include? category }
