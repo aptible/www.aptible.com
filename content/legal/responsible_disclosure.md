@@ -2,7 +2,7 @@
 title: Responsible Disclosure Policy
 tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2016-06-21
+posted: 2016-09-19
 section: Legal
 sub_section: Policies
 ---
@@ -12,7 +12,7 @@ Aptible, Inc.
 Responsible Disclosure Policy
 --------------
 
-Version 2.7 - June 2016
+Version 2.8 - September 2016
 
 ### Responsible Disclosure
 We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
@@ -22,15 +22,13 @@ If you discover a security vulnerability, please give us the chance to fix it by
 Thank you for your work and interest in making the community safer and more secure!
 
 ### Bounty Program
-Aptible rewards security researchers for reporting vulnerabilities. Please email [security@aptible.com](mailto:security@aptible.com) to report an issue.
-
-If you would like to be eligible for a bounty, please read this carefully.
+Aptible rewards security researchers for reporting vulnerabilities. If you would like to be eligible for a bounty, please read this carefully.
 
 #### Rules
 1. **NEVER** attempt to gain access to another user's account or data.  
 2. **NEVER** attempt to degrade the services.  
 3. **NEVER** impact other users with your testing.  
-4. Test only on in-scope domains, listed below.  
+4. Test only in-scope services, listed below.  
 5. Do not use fuzzers, scanners, or other automated tools to find vulnerabilities.  
 
 Doing any of the above will render you ineligible for cash bounties.
@@ -51,16 +49,28 @@ Only the following services are in-scope:
 - Social engineering attacks (e.g. phishing)
 - Email
 
-**The following types of bugs do not qualify for bounties:**
+#### Common False Positives
+**The following types of issues are commonly reported and do not qualify for bounties:**
 - CSRF on forms that are available to anonymous users (e.g., signup, login, contact, Intercom)
-- Self-XSS and issues exploitable only through Self-XSS
+- Self-XSS and issues exploitable only through self-XSS
 - Clickjacking and issues only exploitable through clickjacking
+- Email authentication settings
+- Email rate limiting/flood attacks
 - Functional, UI and UX bugs and spelling mistakes
 - Descriptive error messages (e.g. stack traces, application or server errors)
 - HTTP 404 codes/pages or other HTTP error codes/pages
 - Banner disclosure on common/public services
 - Disclosure of known public files or directories, (e.g. robots.txt)
 - Presence of application or web browser "autocomplete" or "save password" permission
+
+#### Example Issues
+The following types of issues are examples of reports we have paid cash bounties for:
+- Arbitrary directory traversal on Git endpoints
+- Improper direct object references
+- HTML injection
+
+#### Submissions
+Please email [security@aptible.com](mailto:security@aptible.com) to report an issue. If you would like to include a video, please link to an unpublished YouTube URL. We cannot accept binary files of any kind, including videos or PDFs.
 
 ### Top Researchers
 - Frans Rosen
