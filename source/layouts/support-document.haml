@@ -8,9 +8,9 @@
       %span.nav-item--separator
       - if quickstart? current_page.path
         %a.nav-item{:href => '/support/quickstart/'} Get Started Guides
-        - if @language_data
+        - if @language.articles.count > 1
           %span.nav-item--separator
-          %a.nav-item{:href => @language_data}= @language_data.name
+          %a.nav-item{:href => quickstart_index_href(@language)}= @language.name
         %span.nav-item--separator
         %a.nav-item{:href => ''} #{ @title }
       - else
@@ -28,22 +28,25 @@
       %hr
 
       .grid-aside
-        .grid-aside__block
-          - if quickstart? current_page.path
+        - if quickstart? current_page.path
+          .grid-aside__block
             %h2 This guide requires that you have:
             %ul.check-list
               %li An Aptible account
               %li An SSH key associated with your Aptible user account
               %li The <a href="/support/toolbelt">Aptible Toolbelt</a> installed
 
-          -# - if quickstart? current_page.path
-          -#   %h2 Getting Started Guides
-          -#   %ul.nav--expandable
-          -#     -# - data.quickstart.each do |guide|
-          -#     -#   %li= guide.title
-          -#
-          -# TODO: Experiment. Get some feedback
-          - if @category_title
+          - if @language.articles.count > 1
+            .grid-aside__block
+              %h2= "Other #{@language.name} Quickstart Guides"
+              %ul.nav--expandable
+                - @language.articles.each do |article|
+                  - if !current_page.path.include? article.url
+                    %li
+                      %a{ href: "/support/quickstart/#{article.url}" }= article.framework
+
+        - if @category_title
+          .grid-aside__block
             %h2= @category_title
             %ul.nav--expandable
               - data.topics[@category_title].articles.each do |article|

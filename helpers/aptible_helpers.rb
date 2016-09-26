@@ -11,6 +11,14 @@ module AptibleHelpers
     string_date.strftime('%B %e, %Y')
   end
 
+  def quickstart_index_href(language)
+    if language.articles.count == 1
+      language.url
+    else
+      "/support/quickstart/#{language.slug}"
+    end
+  end
+
   def latest_blog_post
     blog_posts_by_date.first
   end
