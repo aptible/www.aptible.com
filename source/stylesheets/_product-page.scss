@@ -122,21 +122,6 @@
   }
 }
 
-.feature-carousel__details {
-  .heading__title {
-    color: $dark-blue-steel;
-    font-size: 30px;
-    margin-bottom: 30px;
-    text-transform: capitalize;
-    &::after { background-color: $light-blue; }
-  }
-  .heading__summary {
-    color: $light-blue-gray;
-    font-size: 20px;
-    font-weight: $light;
-  }
-}
-
 .feature-carousel__illustration {
   text-align: center;
 }

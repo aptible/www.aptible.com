@@ -1,0 +1,121 @@
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
+
+    .grid-container
+      .centered-header
+        %h2.heading__subtitle Customers
+        %h1.heading__title
+          We help our customers protect sensitive data, when the stakes matter.
+
+    .grid-container.grid--2up.customers
+      .grid-item
+        %h2.heading__subtitle Aptible For
+        %h1.heading__title.no-hr CEOs
+        %p.heading__description
+          Every great CEO understands the value of time and the importance of
+          risk. Learn how Aptible will help you and your team get to market
+          faster and control key risks.
+
+      .grid-item
+        %h2.heading__subtitle Aptible For
+        %h1.heading__title.no-hr CTOs
+        %p.heading__description
+          As a CTO, architect, or lead engineer, choosing Aptible helps you
+          reduce technical debt, remove technical friction, and buy your team
+          more bandwidth to focus on core compencies.
+
+      .grid-item
+        %h2.heading__subtitle Aptible For
+        %h1.heading__title.no-hr Security Professionals
+        %p.heading__description
+          Security engineers, security officers, and security consultants use
+          Aptible to secure private AWS stacks and build out risk-based
+          security management programs that scale.
+
+      .grid-item
+        %h2.heading__subtitle Aptible For
+        %h1.heading__title.no-hr Compliance Professionals
+        %p.heading__description
+          You know compliance is the starting line, not the finish. Learn how
+          Aptible helps cloud-based engineering teams run great compliance and
+          security management programs.
+
+.content
+  .grid-container.grid-container--bordered.grid--single-center
+    .grid-item
+      %h2.heading--single-center Case Studies
+      %p.summary--single-center
+        The best engineering teams in digital health use Aptible to protect
+        their data while moving fast. Learn how Aptible can help you focus on
+        the most important parts of your business.
+
+    .grid-container.grid--2up.customers
+      .grid-item
+        %h1.heading__title.heading__title--dark
+          The Engineers at THREAD Research Turned to Aptible
+        %p.heading__description.heading__summary--light-blue-gray
+          Built on Amazon Web Services, Aptible’s secure, compliant cloud
+          platform allowed UCSF to launch The Pride Study in less than 6 weeks,
+          for 90% less than the cost of a traditional IT solution.
+        %a.btn.btn--outline{ href: '/customers/ucsf-pride-study' }
+          Read the full story
+
+      .grid-item
+        %h1.heading__title.heading__title--dark
+          Aptible Helps TelePharm Bring Full- service Pharmacies to
+          Rural Communities
+        %p.heading__description.heading__summary--light-blue-gray
+          "Working with Aptible has effectively extended our dev team. We now
+          have a group of world-class DevOps ensuring the reliability and
+          scalability of our app."
+        %a.btn.btn--outline{ href: '/customers/telepharm' }
+          Read the full story
+
+  .grid-container.grid-container--bordered.grid--single-center
+    .grid-item
+      %h2.heading--single-center Customer Stories
+      %p.summary--single-center
+        Aptible helps hundreds of digital health companies get to market fast
+        and safely, with less risk. Learn why our customers love us.
+
+  .grid-container.grid-container--bordered.grid--single
+    .grid-item.customer-banner.customer-banner--horizontal
+      .customer-banner__title-svg Pager
+      .customer-banner__quote
+        "Aptible provides us a robust and secure platform to build our
+        technology on. It's alleviated pain points with HIPAA compliance and
+        saved us tons of money and time."
+      .customer-banner__cutsomer SAMEER KHANNA, VP of  ENGINEERING, PAGER
+
+  .grid-container.grid-container--bordered.grid--3up
+    .grid-item.customer-banner.customer-banner--vertical
+      .customer-banner__title-svg aidin
+      .customer-banner__quote
+        "Aptible provides infrastructure software we’ve come to rely on every
+        day. They’ve played a significant role in our appeal and ability to
+        take on new clients--both in our sales process and technical
+        integration process."
+      .customer-banner__cutsomer JAMES DEMPSEY, LEAD DEVELOPER, AIDIN
+
+    .grid-item.customer-banner.customer-banner--vertical
+      .customer-banner__title-svg policygenius
+      .customer-banner__quote
+        "Aptible takes the pain out of HIPAA compliance. We saved a huge
+        amount of time and money, and avoided risk by partnering with them."
+      .customer-banner__cutsomer IAN YAMEY, CTO, POLICYGENIUS
+
+    .grid-item.customer-banner.customer-banner--vertical
+      .customer-banner__title-svg healthify
+      .customer-banner__quote
+        "When evaluating a vendor, our priorities were trust, transparency,
+        and reliability.  Aptible hits them all, allowing us to focus on what
+        we do without worrying about all the layers of legal and technical
+        ops hurdles."
+      .customer-banner__cutsomer DAN LEVENSON, CTO, HEALTHIFY
+
+  .grid-container.grid--single-center
+    .grid-item
+      = partial 'customer-logo-grid'
+
+= partial 'partials/resources-footer'

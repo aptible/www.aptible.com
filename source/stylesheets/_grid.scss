@@ -54,7 +54,7 @@ body {
       @include span-columns(12);
     }
     @include span-columns(6);
-    @include omega(7n);
+    @include omega(2n);
   }
   .card {
     @include span-columns(5);
