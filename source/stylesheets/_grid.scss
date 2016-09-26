@@ -100,6 +100,11 @@ body {
   }
 }
 
+.grid--4up-center {
+  display: flex;
+  justify-content: center;
+}
+
 .grid-document {
   @include span-columns(9);
   float: left;

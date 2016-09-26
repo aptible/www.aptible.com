@@ -8,9 +8,9 @@
       %span.nav-item--separator
       - if quickstart? current_page.path
         %a.nav-item{:href => '/support/quickstart/'} Get Started Guides
-        - if @language_data
+        - if @language.articles.count > 1
           %span.nav-item--separator
-          %a.nav-item{:href => @language_data}= @language_data.name
+          %a.nav-item{:href => quickstart_index_href(@language)}= @language.name
         %span.nav-item--separator
         %a.nav-item{:href => ''} #{ @title }
       - else

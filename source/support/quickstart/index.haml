@@ -14,7 +14,7 @@ layout: layout
 .content
   .grid-container.grid--4up
     - data.quickstart.each do |title, language|
-      %a.grid-item.card{ href: "/support/quickstart/#{language.url}", class: language.slug }
+      %a.grid-item.card{ href: quickstart_index_href(language), class: language.slug }
         .card__header
           %h3.card__title= title
           .card__icon
