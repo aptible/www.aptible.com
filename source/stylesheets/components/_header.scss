@@ -45,6 +45,14 @@
   &::after { display: none; }
 }
 
+.heading__title--dark {
+  color: $dark-blue-steel;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  &::after { background-color: $light-blue; }
+}
+
 .heading__subtitle {
   color: $sky-blue;
   font-size: 16px;
@@ -73,6 +81,12 @@
   color: $light-blue;
   font-size: 24px;
   margin-bottom: 50px;
+}
+
+.heading__summary--light-blue-gray {
+  color: $light-blue-gray;
+  font-size: 20px;
+  font-weight: $light;
 }
 
 // Todo: Generic grid layout for this
