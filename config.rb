@@ -61,25 +61,33 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+#
 # Blog
+#
 # Requires the site to be "ready" to read from the sitemap resources
 page '/blog/*', layout: 'blog_post.haml'
-# ready do
-#   binding.pry
-#   Posts
-#   sitemap.resources.select { |p| p.data['section'] == 'Blog' }.each do |post|
-#     page "/#{post.path}", layout: 'blog_post.haml'
-#   end
-#
-#   # Authors
-#   sitemap.resources.group_by { |p| p.data['author_id'] }
-#                     .each do |author_id, posts|
-#     page "/blog/authors/#{author_id}/index.html", layout: 'blog_author.haml',
-#       :locals => { :author_id => author_id, :posts => posts }
-#   end
-# end
 
+# Authors
+ready do
+  # Create dynamic pages for each blog post author
+  by_author = sitemap.resources
+                     .select { |p| p.data['section'] == 'Blog' }
+                     .group_by { |p| p.data['author_id'] }
+  by_author.each do |author|
+    author_id = author[0]
+    # lists their posts by date
+    posts = author[1]
+            .select { |p| p.data['author_id'] == author_id }
+            .sort_by { |p| p.data['posted'] }.reverse!
+    page "/blog/authors/#{author[0]}.html", layout: 'blog_posts.haml'
+    proxy "/blog/authors/#{author[0]}.html", '/blog/author.html',
+          locals: { author_id: author[0], posts: posts }
+  end
+end
+
+#
 # Legal
+#
 # Proxy /legal/index to Terms of Service
 page '/legal/*', layout: 'legal.haml'
 proxy '/legal/index.html', '/legal/terms_of_service.html'
