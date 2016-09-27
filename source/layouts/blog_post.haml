@@ -11,10 +11,12 @@
     .grid-container
       .blog-post__author
         %h4.blog-post__author-subtitle The Author
-        %h3.blog-post__author-name= current_page.data.author_name
+        %h3.blog-post__author-name
+          %a{ href: blog_post_author_href(current_page) }
+            = current_page.data.author_name
 
       .blog-post.markdown-content
         = find_and_preserve do
           = yield
-          
+
   = partial 'partials/resources-footer'

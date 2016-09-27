@@ -1,0 +1,14 @@
+---
+layout: blog_posts.haml
+---
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav', locals: {   |
+        section_title: 'Blog',                 |
+        section_url: '/blog'                   |
+      }                                        |
+
+- posts.each do |post|
+  .blog-posts__post
+    %a.blog-posts__link{ href: resource_link_path(post) }
+      = partial 'partials/blog-list-item', locals: { post: post }

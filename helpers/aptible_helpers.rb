@@ -23,6 +23,10 @@ module AptibleHelpers
     blog_posts_by_date.first
   end
 
+  def blog_post_author_href(post)
+    "/blog/authors/#{post.data.author_id}"
+  end
+
   def blog_posts_by_date
     sitemap.resources
            .select { |p| p.data['section'] == 'Blog' }
