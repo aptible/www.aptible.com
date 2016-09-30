@@ -13,7 +13,7 @@ $(document).on 'turbolinks:load', ->
     window.location.href = $(@).find('h3 a').attr('href')
 
   form = document.getElementById('search-form')
-  field = document.getElementById('swiftype-search-input')
+  field = document.getElementById('st-default-search-input')
 
   return unless form && field
 
