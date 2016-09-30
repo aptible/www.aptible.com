@@ -1,0 +1,205 @@
+//
+// Support Header Search Bar
+//
+.search-bar {
+  position: relative;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: $nav-break) {
+    width: 100%;
+  }
+}
+
+.search-bar__form {
+  background-color: rgba(0,0,0,0.10);
+  border: 8px solid rgba(0,0,0,0.10);
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.search-bar__input {
+  background: $white;
+  border: none;
+  color: $light-blue-gray;
+  display: inline-block;
+  outline: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 10px 35px 10px 12px;
+  &::-webkit-input-placeholder {
+    color: $sky-blue;
+    font-style: italic;
+  }
+}
+
+.search-bar__submit {
+  background-color: transparent;
+  display: inline-block;
+  padding: .5em .75em .5em .5em;
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  transition: right, $base-duration, $base-timing;
+  &::after {
+    border-color: $sky-blue;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 5px 5px 0 0;
+    content: '';
+    display: inline-block;
+    height: 15px;
+    transition: border-color, $base-duration, $base-timing;
+    transform: rotate(45deg);
+    width: 15px;
+  }
+  &:hover, &:focus {
+    background-color: transparent;
+    outline: none;
+    right: 10px;
+    &::after {
+      border-color: $blue;
+    }
+  }
+}
+
+//
+// Nav item search, revelable input
+//
+.search-nav__form {
+  display: inline-block;
+  svg {
+    cursor: pointer;
+    display: inline-block;
+    display: none;
+    position: relative;
+    transform: translate(-17px, 3px);
+    z-index: 0;
+    path {
+      fill: $white;
+      transition: fill $base-duration $base-timing;
+    }
+  }
+}
+
+.search-nav__input {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  background-image: url('/images/icons/search-loop.svg');
+  background-color: transparent;
+  background-position: right center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: $regular;
+  height: 22px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  transition: width $base-duration * 2 $base-timing;
+  width: 20px;
+  -webkit-appearance: none;
+  &:focus, &[value] {
+    background-image: none;
+    border-bottom: 1px solid $blue-steel;
+    border-bottom-width: 1px;
+    outline: none;
+    margin-left: 0;
+    padding-right: 15px;
+    width: 200px;
+    box-shadow: none;
+    & + svg {
+      display: inline-block;
+      path {
+        fill: $blue-steel;
+      }
+    }
+  }
+}
+
+//
+// Swiftype results
+//
+// The specificity required for swiftype css is... intense
+// See also _swiftype-results.scss
+.aptible-www {
+  .swiftype-widget {
+    .autocomplete {
+      background-color: transparent;
+      box-shadow: none;
+      transform: translateY(8px);
+
+      ul {
+        background-color: $dark-blue;
+        background-image: none;
+        border-radius: 5px;
+      }
+
+      li {
+        background-image: none;
+        background-color: transparent;
+        border-bottom: none;
+        border-radius: 0;
+        border-top: none;
+        transition: all $base-duration $base-timing;
+        &:first-child {
+          border-top: none;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+        }
+        &:last-child {
+          border-bottom: none;
+          border-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        &.active {
+          background-color: rgba(0, 0, 0, .2);
+          background-image: none;
+          border-bottom: none;
+          border-top: none;
+          box-shadow: none;
+          .title {
+            color: $white;
+            font-weight: $regular;
+            em {
+              color: $light-blue;
+              border-bottom: 1px dashed currentColor;
+              font-weight: $regular;
+            }
+          }
+          .sections {
+            color: $sky-blue;
+            em {
+              color: $sky-blue;
+              border-bottom: 1px dashed currentColor;
+              font-weight: $regular;
+            }
+          }
+        }
+      }
+
+      .title {
+        color: $white;
+        font-weight: $regular;
+        line-height: 2;
+        em {
+          color: $light-blue;
+          border-bottom: 1px dashed currentColor;
+          font-weight: $regular;
+        }
+      }
+
+      .sections {
+        color: $sky-blue;
+        em {
+          color: $sky-blue;
+          border-bottom: 1px dashed currentColor;
+          font-weight: $regular;
+        }
+      }
+    }
+  }
+}

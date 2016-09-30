@@ -1,20 +1,16 @@
 ---
+header_search: true
 title:  Search Aptible Support
 ---
-.container.no-nav
-  .row
-    .col-md-10.col-md-offset-1.col-sm-12
-      .document-hero-title
-        %h1 Search Aptible Support
-        .search-bar
-          .search-bar-input
-            .input-group
-              %form#large-search-form{ action: '/support/search/' }
-                %input#swifttype-search-input-large.form-control{ placeholder: 'Search Documentation, Support, and Quickstart guides', type: 'text' }
-                %button.input-group-addon{ type: 'submit' }
-                  %i.fa.fa-search
 
-      #st-results-large-container
-        .loading-results
-          %i.fa.fa-spin.fa-spinner
+- content_for :header do
+  = partial 'partials/headers/support-index', locals: {                       |
+      header_search: current_page.data.header_search                          |
+    }                                                                         |
 
+.content
+  .grid-container
+    #st-results-large-container.blog-posts{:style => "display: block;"}
+      = partial 'loading-indicator'
+
+= partial 'resources-footer'

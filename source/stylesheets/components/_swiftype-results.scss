@@ -1,0 +1,127 @@
+//
+// swiftype Search Results (/support/search/index.html)
+//
+// The specificity required for swiftype css is... intense
+// See also _search-bar.scss
+.aptible-www {
+
+  div.swiftype {
+
+    div.st-result-listing {
+
+      div.st-search-summary {
+        border-bottom: 1px solid #e9f1fd;
+        margin-bottom: 50px;
+
+        h2 {
+          color: $light-blue-gray;
+          font-size: 16px;
+          font-weight: $regular;
+          padding-bottom: 1em;
+          text-align: right;
+
+          &::after {
+            display: none;
+          }
+
+          strong {
+            font-weight: $semibold;
+          }
+
+          .st-query {
+            color: $light-blue-gray;
+            border-bottom: 1px dashed currentColor;
+            font-style: normal;
+            font-weight: $semibold;
+            padding: 0 .2em;
+          }
+        }
+
+        &.no_results {
+          border-bottom: none;
+          h2 {
+            color: $dark-blue-steel;
+            font-size: 30px;
+            font-weight: $semibold;
+            font-style: italic;
+            letter-spacing: .08em;
+            margin-bottom: 20px;
+            padding-bottom: 0;
+            text-align: center;
+            .st-query {
+              color: $dark-blue-steel;
+              font-style: italic;
+            }
+          }
+          margin: 100px;
+        }
+      }
+
+      div.st-result.with_image {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $light-blue;
+        margin-bottom: 30px;
+        width: 100%;
+        &::after {
+          border-color: $blue;
+          border-radius: 2px;
+          border-style: solid;
+          border-width: 5px 5px 0 0;
+          content: '';
+          display: inline-block;
+          height: 15px;
+          position: relative;
+          top: -10px;
+          transform: rotate(45deg);
+          transition: transform $base-duration $base-timing;
+          width: 15px;
+        }
+        .st-result-image {
+          display: none;
+        }
+        div.st-result-text {
+          margin-left: 0;
+          max-width: calc(100% - 40px);
+
+          h3 {
+            color: $dark-blue-steel;
+            font-size: 30px;
+            font-weight: $semibold;
+            margin-bottom: 20px;
+            &::after { display: none; }
+            a {
+              color: $dark-blue-steel;
+            }
+          }
+        }
+
+        div.st-metadata {
+          margin-bottom: 30px;
+          // white-space: nowrap;
+          // overflow: hidden;
+          // text-overflow: ellipsis;
+
+          .st-snippet {
+            color: $light-blue-gray;
+            font-size: 24px;
+            font-weight: $light;
+
+            em {
+              border-bottom: 1px dashed currentColor;
+              font-style: normal;
+              font-weight: $regular;
+            }
+          }
+        }
+      }
+
+      .st-pagination {
+        border-top: none;
+        text-align: right;
+      }
+    }
+  }
+}

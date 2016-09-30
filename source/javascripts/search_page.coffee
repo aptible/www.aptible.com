@@ -9,14 +9,22 @@ $(document).on 'turbolinks:load', ->
   window.addEventListener('hashchange', onHashChange)
   onHashChange()
 
-document.addEventListener 'DOMContentLoaded', ->
-  form = document.getElementById('large-search-form')
-  field = document.getElementById('swifttype-search-input-large')
+  $('#st-results-large-container').delegate '.st-result', 'click', (e) ->
+    window.location.href = $(@).find('h3 a').attr('href')
+
+  form = document.getElementById('search-form')
+  field = document.getElementById('st-default-search-input')
 
   return unless form && field
 
-  onFormSubmit = (e) ->
+  $(form).on 'submit', (e) ->
     e.preventDefault()
     document.location.href = "/support/search/#stq=#{field.value}&stp=1"
 
-  form.addEventListener('submit', onFormSubmit)
+  # TODO: know when swiftype loads content
+  # debugger;
+  # $('a.st-prev').each ->
+  #   $(@).addClass('.arrow-link--left').text('Previous')
+  #
+  # $('a.st-next').each ->
+  #   $(@).addClass('.arrow-link--right').text('Next')
