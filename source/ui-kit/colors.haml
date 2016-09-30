@@ -1,4 +1,7 @@
 ---
+section: 'ui-kit'
+slug:    'colors'
+title:   'Colors'
 colors:
   - white
   - lighter-blue
@@ -21,10 +24,8 @@ colors:
   - midnight-blue
 ---
 
-= partial 'partials/header', locals: { |
-    subtitle: 'Aptible UI Kit',        |
-    title: 'Colors'                    |
-  }                                    |
+- content_for :header do
+  = partial 'partials/ui-kit-header'
 
 .content
   .grid-container.grid--4up

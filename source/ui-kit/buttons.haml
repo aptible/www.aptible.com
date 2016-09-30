@@ -1,7 +1,12 @@
-= partial 'partials/header', locals: { |
-    subtitle: 'Aptible UI Kit',        |
-    title: 'Buttons'                   |
-  }                                    |
+---
+title:   'Buttons'
+section: 'ui-kit'
+slug:    'buttons'
+---
+
+- content_for :header do
+  = partial 'partials/ui-kit-header'
+
 .content
   .grid-container
     %h2 Buttons
