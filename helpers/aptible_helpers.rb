@@ -11,6 +11,10 @@ module AptibleHelpers
     string_date.strftime('%B %e, %Y')
   end
 
+  def active_nav_item(path)
+    current_page.path.include?(path) ? 'nav-item--active' : ''
+  end
+
   def quickstart_index_href(language)
     if language.articles.count == 1
       language.url

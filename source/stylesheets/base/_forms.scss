@@ -85,36 +85,3 @@ select {
   max-width: 100%;
   width: auto;
 }
-
-// Overload ST styles
-.swiftype-widget {
-  .autocomplete {
-    width: 219px !important;
-    margin-left: -25px !important;
-    margin-top: 3px !important;
-  }
-}
-
-.search--input {
-  background-color: transparent;
-  background: none;
-  border-bottom: 0 solid $sky-blue;
-  border-radius: 0;
-  border-width: 0;
-  border: 0;
-  box-shadow: none;
-  color: #fff;
-  display: inline-block;
-  font-size: 12px;
-  height: 22px;
-  margin-right: 20px;
-  outline: none;
-  position: absolute;
-  padding: 0;
-  transition: all $base-duration $base-timing;
-  width: 30px;
-  &:focus {
-    border-bottom-width: 1px;
-    width: 300px;
-  }
-}

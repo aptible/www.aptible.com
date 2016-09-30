@@ -68,6 +68,8 @@
     content: '';
     display: inline-block;
     height: 15px;
+    position: relative;
+    top: -15px;
     transform: rotate(45deg);
     transition: transform $base-duration $base-timing;
     width: 15px;

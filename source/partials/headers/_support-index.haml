@@ -10,9 +10,10 @@
     %h2.heading__subtitle--centered= current_page.data.header_subtitle || 'How can we help?'
     - if current_page.data.header_search
       .search-bar
-        .search-bar-input
-          .input-group
-            %form#search-form{ action: '/support/search/', method: 'GET' }
-              %input#swifttype-search-input.form-control{ name: 'search', placeholder: 'Search Documentation, Support, and Quickstart guides', type: 'text' }
-              %button.input-group-addon{ type: 'submit' }
-                %i.fa.fa-search
+        %form#search-form.search-bar__form{ action: '/support/search/index.html', method: 'GET' }
+          %input#swiftype-search-input.search-bar__input{             |
+            name: 'search',                                           |
+            placeholder: 'Search all Topics and Quick Start Guides',  |
+            type: 'text'                                              |
+          }                                                           |
+          %button.search-bar__submit{ type: 'submit', value: '' }

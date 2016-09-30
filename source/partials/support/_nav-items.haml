@@ -1,12 +1,13 @@
-%a.nav-item{ href: '/support/quickstart/' } Getting Started
-%a.nav-item{ href: '/support/toolbelt/' } Toolbelt
-%a.nav-item{ href: '/support/topics/' } Topics
+%a.nav-item{ class: active_nav_item('quickstart'), href: '/support/quickstart' } Getting Started
+%a.nav-item{ class: active_nav_item('toolbelt'), href: '/support/toolbelt' } Toolbelt
+%a.nav-item{ class: active_nav_item('topics'), href: '/support/topics' } Topics
 
 .nav--dashboard-auth
   %a.nav-item{ href: dashboard_href } Login
   %a.nav-item{ href: '/pricing'} Sign Up
 
-.nav-item.nav-item--search
-  %form#search-form{ action: '/support/search/', method: 'GET' }
-    = partial 'images/icons/search-loop.svg'
-    %input#swifttype-search-input.search--input{ type: 'search' }
+- unless current_page.data.header_search
+  .nav-item.nav-item--search
+    %form#search-form.search-nav__form{ action: '/support/search/index.html', method: 'GET' }
+      %input#swifttype-search-input.search-nav__input{ type: 'search' }
+      = partial 'images/icons/search-loop.svg'

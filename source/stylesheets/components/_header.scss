@@ -67,8 +67,10 @@
   font-size: 20px;
   font-weight: $light;
   text-align: center;
-  margin-bottom: 100px;
   &::after { display: none; }
+  &:last-child {
+    margin-bottom: 100px;
+  }
 }
 
 .heading__summary {
