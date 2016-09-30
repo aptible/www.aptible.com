@@ -1,9 +1,14 @@
 - class_modifiers = '' if class_modifiers.blank?
 - subtitle = '' if subtitle.blank?
 - title = 'Aptible' if title.blank?
-%header{:class => "aptible-header #{class_modifiers}"}
+%header.aptible-header{ class: class_modifiers }
   .grid-container
-    %a{ href: '/' }= partial 'partials/aptible-mark'
+    = partial 'partials/main-nav', locals: {      |
+        nav_items: 'partials/support/nav-items',  |
+        section_title: 'UI Kit',                  |
+        section_url: '/ui-kit'                    |
+      }                                           |
+
   .grid-container
     - unless subtitle.blank?
       %h2.heading__subtitle= subtitle

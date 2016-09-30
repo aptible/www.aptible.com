@@ -12,7 +12,8 @@ module AptibleHelpers
   end
 
   def active_nav_item(path)
-    current_page.path.include?(path) ? 'nav-item--active' : ''
+    match = current_page.path.include?(path) || current_page.path == path
+    match ? 'nav-item--active' : ''
   end
 
   def quickstart_index_href(language)

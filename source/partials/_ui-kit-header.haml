@@ -1,0 +1,27 @@
+%header.aptible-header
+  .grid-container
+    .nav--flex.nav--header.grid-container
+
+      .nav-list--left
+        %a{ href: '/' }= partial 'partials/aptible-mark'
+        %h2.aptible-mark__title
+          %a{ href: '/ui-kit' } UI Kit
+
+      %nav.nav-list.nav-list--center
+        %a.nav-toggle
+          .nav-toggle__expand
+            %span.nav-toggle__icon-bar
+            %span.nav-toggle__icon-bar
+            %span.nav-toggle__icon-bar
+          %span.nav-toggle__label Menu
+
+        - sitemap.resources.select { |r| r.data['section'] == 'ui-kit' }.each do |kit|
+          %a.nav-item{ class: active_nav_item(kit.data.slug), href: "/#{kit.data.section}/#{kit.data.slug}" }
+            = kit.data.title
+
+      %nav.nav-list.nav-list--right
+        = partial 'partials/headers/login-signup'
+
+  .grid-container
+    %h2.heading__subtitle UI Kit
+    %h1.heading__title= current_page.data.title
