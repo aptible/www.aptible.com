@@ -9,5 +9,5 @@
 - unless current_page.data.header_search
   .nav-item.nav-item--search
     %form#search-form.search-nav__form{ action: '/support/search/index.html', method: 'GET' }
-      %input#st-default-search-input.search-nav__input{ type: 'search' }
+      %input.st-default-search-input.search-nav__input{ type: 'search' }
       = partial 'images/icons/search-loop.svg'

@@ -1,6 +1,29 @@
 //
 // Support Header Search Bar
 //
+
+// Reset Swiftype input styles
+.aptible-www {
+  .st-ui-search-input,
+  .st-default-search-input {
+    background-clip: border-box;
+    background: $white 0 0 none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: $light-blue-gray;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: 14px;
+    font-weight: $regular;
+    height: auto;
+    line-height: 16px;
+    padding: 10px 35px 10px 12px;
+    width: 100%;
+  }
+}
+
 .search-bar {
   position: relative;
   width: 65%;
@@ -21,11 +44,12 @@
 .search-bar__input {
   background: $white;
   border: none;
+  box-shadow: none;
   color: $light-blue-gray;
   display: inline-block;
-  outline: none;
-  box-shadow: none;
+  font-size: $base-font-size;
   margin: 0;
+  outline: none;
   padding: 10px 35px 10px 12px;
   &::-webkit-input-placeholder {
     color: $sky-blue;
@@ -39,7 +63,7 @@
   padding: .5em .75em .5em .5em;
   position: absolute;
   right: 12px;
-  top: 14px;
+  top: 11px;
   transition: right, $base-duration, $base-timing;
   &::after {
     border-color: $sky-blue;
@@ -82,7 +106,7 @@
   }
 }
 
-.search-nav__input {
+.aptible-www .st-default-search-input.search-nav__input {
   background-color: transparent;
   border-radius: 0;
   border: none;
@@ -98,7 +122,6 @@
   outline: none;
   margin: 0;
   padding: 0;
-  transition: width $base-duration * 2 $base-timing;
   width: 20px;
   -webkit-appearance: none;
   &:focus, &[value] {
@@ -119,31 +142,39 @@
   }
 }
 
+.search-nav__input--with-transition {
+  transition: width $base-duration * 2 $base-timing;
+}
+
 //
 // Swiftype results
 //
-// The specificity required for swiftype css is... intense
-// See also _swiftype-results.scss
 .aptible-www {
-  .swiftype-widget {
-    .autocomplete {
+  div.st-default-autocomplete {
+    background-color: transparent;
+    box-shadow: none;
+    transform: translateY(8px);
+
+    .st-autocomplete-results {
+      background-color: $dark-blue;
+      background-image: none;
+      border-radius: 5px;
+    }
+
+    div.st-query-present {
       background-color: transparent;
-      box-shadow: none;
-      transform: translateY(8px);
+      box-sizing: border-box;
+      margin-top: 0;
 
-      ul {
-        background-color: $dark-blue;
-        background-image: none;
-        border-radius: 5px;
-      }
-
-      li {
+      a.st-ui-result {
         background-image: none;
         background-color: transparent;
-        border-bottom: none;
+        border-bottom: 1px solid $dark-blue-steel;
         border-radius: 0;
         border-top: none;
+        margin-bottom: 0;
         transition: all $base-duration $base-timing;
+
         &:first-child {
           border-top: none;
           border-top-right-radius: 5px;
@@ -155,49 +186,31 @@
           border-bottom-right-radius: 5px;
           border-bottom-left-radius: 5px;
         }
-        &.active {
-          background-color: rgba(0, 0, 0, .2);
+        &:hover, &:focus, &.active, &.st-keyboard-active-item {
+          background-color: rgba(255, 255, 255, .1);
           background-image: none;
-          border-bottom: none;
           border-top: none;
           box-shadow: none;
-          .title {
-            color: $white;
-            font-weight: $regular;
-            em {
-              color: $light-blue;
-              border-bottom: 1px dashed currentColor;
-              font-weight: $regular;
-            }
-          }
-          .sections {
-            color: $sky-blue;
-            em {
-              color: $sky-blue;
-              border-bottom: 1px dashed currentColor;
-              font-weight: $regular;
-            }
-          }
         }
-      }
-
-      .title {
-        color: $white;
-        font-weight: $regular;
-        line-height: 2;
-        em {
-          color: $light-blue;
-          border-bottom: 1px dashed currentColor;
+        .st-ui-type-heading {
+          color: $white !important;
+          font-size: 16px;
           font-weight: $regular;
+          line-height: 1.2;
         }
-      }
-
-      .sections {
-        color: $sky-blue;
-        em {
+        .st-ui-type-detail {
           color: $sky-blue;
-          border-bottom: 1px dashed currentColor;
-          font-weight: $regular;
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+        .st-ui-type-detail,
+        .st-ui-type-heading {
+          em {
+            color: $light-blue;
+            background-color: transparent !important;
+            border-bottom: 1px dashed currentColor;
+            font-weight: $regular;
+          }
         }
       }
     }

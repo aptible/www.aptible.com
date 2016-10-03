@@ -1,30 +1,21 @@
 $(document).on 'turbolinks:load', ->
-  results = document.getElementById('st-results-large-container')
-  return unless results
+  $navSearch = $('.search-nav__input')
+  if $navSearch.length > 0
+    $navSearch.data 'query', $navSearch.val()
 
-  onHashChange = (e) ->
-    display = if window.location.hash.match(/stq=/) then 'block' else 'none'
-    results.style.display = display
+    updateTransitionClass = ->
+      $navSearch.val ''
+      if $navSearch.data('query') is ''
+        $navSearch.addClass('search-nav__input--with-transition');
+      else
+        $navSearch.removeClass('search-nav__input--with-transition');
 
-  window.addEventListener('hashchange', onHashChange)
-  onHashChange()
+    $navSearch.on 'change', ->
+      console.log $navSearch.val()
+      $navSearch.data 'query', $navSearch.val()
 
-  $('#st-results-large-container').delegate '.st-result', 'click', (e) ->
-    window.location.href = $(@).find('h3 a').attr('href')
+    $navSearch.on 'focus', ->
+      $navSearch.val $navSearch.data('query')
 
-  form = document.getElementById('search-form')
-  field = document.getElementById('st-default-search-input')
-
-  return unless form && field
-
-  $(form).on 'submit', (e) ->
-    e.preventDefault()
-    document.location.href = "/support/search/#stq=#{field.value}&stp=1"
-
-  # TODO: know when swiftype loads content
-  # debugger;
-  # $('a.st-prev').each ->
-  #   $(@).addClass('.arrow-link--left').text('Previous')
-  #
-  # $('a.st-next').each ->
-  #   $(@).addClass('.arrow-link--right').text('Next')
+    $navSearch.on 'blur', updateTransitionClass
+    updateTransitionClass()
