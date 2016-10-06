@@ -1,0 +1,95 @@
+.severity-chip {
+  background-color: $blue;
+  border-radius: 4px;
+  color: $white;
+  cursor: help;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: $semibold;
+  letter-spacing: .05em;
+  margin-bottom: .4em;
+  margin-right: .2em;
+  padding: .3em .6em;
+  text-transform: uppercase;
+  text-align: center;
+  &::after {
+    background-color: $dark-blue-steel;
+    color: $white;
+    content: '';
+    display: block;
+    font-weight: $regular;
+    letter-spacing: .1em;
+    opacity: 0;
+    padding: .5em;
+    position: absolute;
+    text-transform: none;
+    transform: translate(-10px, 8px);
+    transition-duration: $base-duration;
+    transition-property: opacity, transform;
+    transition-timing-function: $base-timing;
+    z-index: -1;
+  }
+  &:hover::after {
+    opacity: 1;
+    transform: translate(-10px, 10px);
+    z-index: 0;
+  }
+}
+
+.severity-chip--full {
+  cursor: inherit;
+  display: block;
+  padding: .6em 0;
+  width: 100%;
+  &::after { display: none; }
+}
+
+.severity-chip--low {
+  background-color: $severity-low;
+  &::before {
+    content: 'Low';
+  }
+  &::after {
+    content: '< 24hrs • 9am-6pm Eastern';
+  }
+}
+
+.severity-chip--normal {
+  background-color: $severity-normal;
+  &::before {
+    content: 'Normal';
+  }
+  &::after {
+    content: '< 24hrs • 9am-6pm Eastern';
+  }
+}
+
+.severity-chip--high {
+  background-color: $severity-high;
+  &::before {
+    content: 'High';
+  }
+  &::after {
+    content: '< 6hrs • 24/7';
+  }
+}
+
+.severity-chip--urgent {
+  background-color: $severity-urgent;
+  &::before {
+    content: 'Urgent';
+  }
+  &::after {
+    content: '< 1hr • 24/7';
+  }
+}
+
+.severity-chip--critical {
+  background-color: $severity-critical;
+  &::before {
+    content: 'Critical';
+  }
+  &::after {
+    content: '< 15min • 24/7';
+  }
+}

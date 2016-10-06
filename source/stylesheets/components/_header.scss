@@ -41,7 +41,6 @@
 }
 
 .heading__title--centered {
-  @extend %smooth;
   color: $white;
   font-size: 40px;
   margin-bottom: 20px;
@@ -66,7 +65,6 @@
 }
 
 .heading__subtitle--centered {
-  @extend %smooth;
   color: $light-blue;
   font-size: 20px;
   font-weight: $light;
@@ -78,12 +76,10 @@
 }
 
 .heading__summary {
-  @extend %smooth;
   color: $sky-blue;
   font-size: 24px;
 }
 .heading__summary--light-blue {
-  @extend %smooth;
   color: $light-blue;
   font-size: 24px;
   margin-bottom: 50px;

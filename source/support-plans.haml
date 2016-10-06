@@ -1,0 +1,211 @@
+---
+title: Support Plans
+tracked_title: Support Plans
+id: support-plans
+description: "Aptible support plans and pricing"
+---
+
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled.aptible-header--adjacent
+    = partial 'partials/main-nav'
+    .grid-container.support-plans__page-header
+      .centered-header.centered-header--wide
+        %h1.heading__title.support-plans__title Support Plans
+
+.content
+  .support-plans__table.grid-container
+    %table.table--dark
+      %thead
+        %tr
+          %th.support-plans__column-heading Features
+          %th
+            .support-plan__subtitle Included with every Aptible account
+            .support-plan__title Business
+          %th
+            .support-plan__subtitle From $499/month
+            .support-plan__title Premium
+          %th
+            .support-plan__subtitle From $4,999/month
+            .support-plan__title Enterprise
+      %tbody
+        %tr
+          %th Technical Support
+          %td Aptible Support Team
+          %td Aptible Support Team
+          %td Dedicated Technical Support Engineer
+        %tr
+          %th Case Severities
+          %td
+            .severity-chip.severity-chip--low
+            .severity-chip.severity-chip--normal
+          %td
+            .severity-chip.severity-chip--low
+            .severity-chip.severity-chip--normal
+            .severity-chip.severity-chip--high
+            .severity-chip.severity-chip--urgent
+          %td
+            .severity-chip.severity-chip--low
+            .severity-chip.severity-chip--normal
+            .severity-chip.severity-chip--high
+            .severity-chip.severity-chip--urgent
+            .severity-chip.severity-chip--critical
+        %tr
+          %th Architecture Support
+          %td Add-on
+          %td Add-on
+          %td
+            Real-time support for planned architectural, scaling,
+            and migration events.
+        %tr
+          %th VPN Support and Training
+          %td Add-on
+          %td Add-on
+          %td Includes initial training and 5 hours/month of VPN support.
+        %tr
+          %th Account Assistance
+          %td Aptible Customer Success Team
+          %td Aptible Customer Success Team
+          %td Dedicated Technical Account Manager
+        %tr
+          %th Support Portal Access
+          %td Standard
+          %td
+            Admin - Designate team members who can manage all tickets across
+            your organization.
+          %td
+            Admin - Designate team members who can manage all tickets across
+            your organization.
+        %tr
+          %th Channels
+          %td
+            .support-plans__channels Email, Portal
+          %td
+            .support-plans__slack-hash= partial '/images/slack-hash.svg'
+            .support-plans__channels Email, Portal, Slack
+          %td
+            .support-plans__slack-hash= partial '/images/slack-hash.svg'
+            .support-plans__channels Email, Portal, Slack, Phone
+        %tr
+          %th Pricing
+          %td Included with every Aptible account
+          %td Greater of $499 or 10% of monthly Aptible Invoice
+          %td Greater of $4,999 or 10% of monthly Aptible Invoice
+        %tr
+          %th Number of Seats
+          %td Unlimited
+          %td Unlimited
+          %td Unlimited
+        %tr
+          %th Number of Cases
+          %td Unlimited
+          %td Unlimited
+          %td Unlimited
+
+  .grid-container.grid--single-center.grid-container--bordered
+    .grid-item
+      %h2.unit-pricing-components__title Target Response Times
+      %p.unit-pricing-components__summary
+        We will use all reasonable efforts to provide responses within these
+        time frames.
+
+      .support-severities
+        %table
+          %tbody
+            %tr
+              %td
+                .severity-chip.severity-chip--full.severity-chip--low
+              %td
+                .severity-chip.severity-chip--full.severity-chip--normal
+              %td
+                .severity-chip.severity-chip--full.severity-chip--high
+              %td
+                .severity-chip.severity-chip--full.severity-chip--urgent
+              %td
+                .severity-chip.severity-chip--full.severity-chip--critical
+
+            %tr
+              %td
+                .support-severity__segment__label Target Response Time
+                .support-severity__segment__value < 24 hours
+              %td
+                .support-severity__segment__label Target Response Time
+                .support-severity__segment__value < 24 hours
+              %td
+                .support-severity__segment__label Target Response Time
+                .support-severity__segment__value < 6 hours
+              %td
+                .support-severity__segment__label Target Response Time
+                .support-severity__segment__value < 1 hour
+              %td
+                .support-severity__segment__label Target Response Time
+                .support-severity__segment__value < 15 minutes
+
+            %tr
+              %td
+                .support-severity__segment__label Severity
+                .support-severity__segment__value
+                  You have a general development question,
+                  or you want to request a feature.
+              %td
+                .support-severity__segment__label Severity
+                .support-severity__segment__value
+                  Non-critical functions of your application are behaving
+                  abnormally, or you have a time-sensitive development question.
+              %td
+                .support-severity__segment__label Severity
+                .support-severity__segment__value
+                  Important functions of your application are impaired
+                  or degraded.
+              %td
+                .support-severity__segment__label Severity
+                .support-severity__segment__value
+                  Your business is significantly impacted. Important
+                  functions of your application are unavailable.
+              %td
+                .support-severity__segment__label Severity
+                .support-severity__segment__value
+                  Your business is at risk. Critical functions of your
+                  application are unavailable.
+
+            %tr
+              %td
+                .support-severity__segment__label Support Hours
+                .support-severity__segment__value 9am-6pm Eastern
+              %td
+                .support-severity__segment__label Support Hours
+                .support-severity__segment__value 9am-6pm Eastern
+              %td
+                .support-severity__segment__label Support Hours
+                .support-severity__segment__value 24/7
+              %td
+                .support-severity__segment__label Support Hours
+                .support-severity__segment__value 24/7
+              %td
+                .support-severity__segment__label Support Hours
+                .support-severity__segment__value 24/7
+
+  .unit-pricing-components.grid-container.grid--single-center.grid-container--bordered
+    .grid-item
+      %h2.unit-pricing-components__title Support Plan Add-ons
+      %p.unit-pricing-components__summary
+
+      .unit-pricing-components__container
+        .unit-pricing-component
+          .unit-pricing-component--icon
+            = partial 'images/feature-icons/setup.svg'
+          .unit-pricing-component--item VPN Setup
+          .unit-pricing-component--price
+            $249/mo for first connection
+            $99/mo for additional connections
+
+        .unit-pricing-component
+          .unit-pricing-component--icon
+            = partial 'images/feature-icons/training.svg'
+          .unit-pricing-component--item VPN Training
+          .unit-pricing-component--price $799/hour,<br>5 hour minimum per month
+
+        .unit-pricing-component
+          .unit-pricing-component--icon
+            = partial 'images/feature-icons/training.svg'
+          .unit-pricing-component--item Architectural Training
+          .unit-pricing-component--price $799/hour,<br>5 hour minimum per month

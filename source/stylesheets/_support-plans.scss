@@ -1,0 +1,84 @@
+.support-plans__page-header {
+  padding-bottom: 0;
+  margin-bottom: 350px;
+}
+
+.support-plans__title {
+  font-size: 60px;
+}
+
+.support-plan__subtitle {
+  color: $blue-steel;
+  font-size: 14px;
+  font-weight: $regular;
+}
+.support-plan__title {
+  color: $white;
+  font-size: 26px;
+  font-weight: $semibold;
+}
+
+.support-plans__table {
+  margin-bottom: -220px;
+  padding-top: 0;
+  transform: translateY(-270px);
+
+  // max-width:
+  overflow-x: scroll;
+  // padding-bottom: 40px;
+  // text-align: center;
+  table {
+    min-width: 1200px;
+  }
+  @media screen and (max-width: $max-viewport) {
+    padding: 0;
+  }
+}
+
+th.support-plans__column-heading {
+  color: $blue-steel;
+  font-size: 11px;
+  font-weight: $semibold;
+  text-transform: uppercase;
+}
+
+.support-plans__slack-hash {
+  display: inline-block;
+  margin-right: 10px;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  & + .support-plans__channels {
+    transform: translateY(-15px);
+  }
+}
+
+.support-plans__channels {
+  display: inline-block;
+}
+
+.support-severities {
+  max-width: 980px;
+  margin: 0 auto;
+  overflow-x: scroll;
+  padding-bottom: 40px;
+  text-align: center;
+  table {
+    min-width: 900px;
+  }
+  td + td {
+    padding-left: 20px;
+  }
+}
+
+.support-severity__segment__label {
+  color: $dark-blue-steel;
+  font-size: 15px;
+  font-weight: $semibold;
+}
+
+.support-severity__segment__value {
+  color: $sky-blue;
+  font-size: 14px;
+}

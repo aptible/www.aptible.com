@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-@import "mixins";
 @import "normalize";
 @import "bourbon";
 
@@ -34,6 +33,7 @@
 @import "components/pricing-tiers";
 @import "components/unit-pricing";
 @import "components/support-pricing-tiers";
+@import "components/severity-chips";
 
 /**
  * Pages / Sections
@@ -41,3 +41,4 @@
 @import "blog";
 @import "healthcare-systems";
 @import "product-page";
+@import "support-plans";
