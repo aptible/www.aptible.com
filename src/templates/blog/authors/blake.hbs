@@ -1,0 +1,27 @@
+---
+title: Aptible Blog
+layout: application.hbs
+section: Company
+author_name: Blake Pettersson
+author_email: 'blake@aptible.com'
+author_id: blake
+---
+
+<div class="container main-content">
+
+  {{> author_intro }}
+
+  <div class="post-index author-archive">
+    <div class="row section">
+      <div class="col-sm-12">
+        {{#withSort pages 'data.posted' dir='desc'}}
+          {{#is data.section "Blog"}}
+            {{#is data.author_id 'blake' }}
+              {{> post_excerpt}}
+            {{/is}}
+          {{/is}}
+        {{/withSort}}
+      </div>
+    </div>
+  </div>
+</div>
