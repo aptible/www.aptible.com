@@ -1,8 +1,11 @@
 body {
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   background-color: $white;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  font-smoothing: antialiased;
   line-height: $base-line-height;
 }
 
@@ -12,7 +15,6 @@ h3,
 h4,
 h5,
 h6 {
-  @extend %smooth;
   font-family: $heading-font-family;
   font-size: modular-scale(1);
   line-height: $heading-line-height;
@@ -50,13 +52,11 @@ a {
 }
 
 .document-title {
-  @extend %smooth;
   font-size: 50px;
   margin-bottom: 0.5em;
 }
 
 .document-summary {
-  @extend %smooth;
   font-size: 30px;
   font-weight: $light;
   &::after { display: none; }
