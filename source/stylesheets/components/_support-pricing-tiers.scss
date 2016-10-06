@@ -1,0 +1,40 @@
+.support-pricing-tiers {
+  padding-top: 0;
+}
+
+.support-pricing-tier {
+  border-left: 1px solid $light-blue;
+  display: inline-block;
+  height: 475px;
+  padding: 50px 25px;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  width: calc(33.33% - 3px);
+  &:first-of-type {
+    border-left: none;
+  }
+}
+
+.support-pricing-tier__slack {
+  height: 50px;
+  position: absolute;
+  left: 25px;
+  bottom: 50px;
+  width: auto;
+}
+
+.support-pricing-tier__summary {
+  color: $blue-steel;
+  font-size: 16px;
+  font-weight: $light;
+  line-height: 1.5;
+  margin-bottom: 0;
+  &::after { display: none; }
+}
+
+.support-pricing-tier__name {
+  color: $dark-blue-steel;
+  font-size: 30px;
+  font-weight: $semibold;
+}

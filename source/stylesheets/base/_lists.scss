@@ -18,7 +18,7 @@ ul {
   }
 }
 
-ul.check-list {
+ul.checklist {
   list-style-image: image-url('icons/checklist-item.svg');
   margin-left: 20px;
   margin-bottom: 50px;
@@ -33,6 +33,9 @@ ul.check-list {
       margin-bottom: 0;
     }
   }
+}
+ul.checklist--blue {
+  list-style-image: image-url('icons/checklist-item--blue.svg');
 }
 
 ol {

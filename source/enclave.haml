@@ -40,7 +40,7 @@
         run your ops, allowing you to focus on development.
 
     .feature-carousel__illustration.grid-item
-      = partial '/images/enclave-features/stack.svg'
+      = partial '/images/enclave-features/gridrion.svg'
 
   .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--network
     .feature-carousel__details.grid-item
@@ -103,8 +103,6 @@
         Simple git-based, zero-downtime deployments
       %li
         Stream app logs directly to your console
-      %li
-        $$ Profit $$
 
     %a.btn{ href: open_account_href } Open a Development Account
 
@@ -114,18 +112,14 @@
       %h2.heading--single-center Enclave Features
       %p.summary--single-center= lorem.paragraph
 
-  .grid-container.grid-container--bordered
-    - 12.times do
-      .grid-item
-        %h4= lorem.words 3
-        %p= lorem.sentence
+  = partial 'partials/enclave-features'
 
   .grid-container.grid--single-center
     .grid-item
       %h2.heading--single-center Getting Started with Enclave
       %p.summary--single-center= lorem.paragraph
 
-  .grid-container.grid-container--bordered
+  .grid-container.grid-container--ruled
     - data.quickstart.each do |title, language|
       %a.grid-item.card{ href: "/support/quickstart/#{language.url}", class: language.slug }
         .card__header
