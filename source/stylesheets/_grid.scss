@@ -35,16 +35,22 @@ body {
   padding: 0;
 }
 
-.grid-container--bordered {
+.grid-container--ruled {
   border-bottom: 1px solid $light-blue;
   margin-bottom: 50px;
 }
 
 .grid--single-center {
   text-align: center;
+
   .grid-item {
     padding-bottom: 50px;
     width: 100%;
+  }
+
+  .grid-item--adjacent {
+    min-height: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -158,6 +164,12 @@ body {
   }
 }
 
+.grid-item--adjacent {
+  margin-bottom: 0;
+  min-height: 0;
+  padding-bottom: 0;
+}
+
 
 //
 // Logo grids
@@ -209,4 +221,24 @@ body {
       width: 50%;
     }
   }
+}
+
+.grid-container--bordered {
+  border: 1px solid $light-blue;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  padding-bottom: 0;
+  padding-top: 50px;
+  .grid-item {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    min-height: 0;
+  }
+}
+
+.grid-container--bordered__tray {
+  background: $lighter-blue;
+  border-top: 1px solid $light-blue;
+  padding: 20px 0;
+  text-align: center;
 }

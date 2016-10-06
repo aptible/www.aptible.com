@@ -1,0 +1,55 @@
+.unit-pricing-components {
+  max-width: 800px;
+}
+
+.unit-pricing-components__title {
+  color: $dark-blue-steel;
+  font-size: 20px;
+  font-weight: $semibold;
+  line-height: 1.5;
+  margin-bottom: 0;
+  &::after { display: none; }
+}
+
+.unit-pricing-components__summary {
+  color: $light-blue-gray;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.unit-pricing-components__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.unit-pricing-component {
+  width: 220px;
+  margin-bottom: 50px;
+}
+
+.unit-pricing-component--icon {
+  align-items: center;
+  background-color: $lighter-blue;
+  border-radius: 35px;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  margin: 0 auto 20px;
+  width: 70px;
+}
+
+.unit-pricing-component--item {
+  font-size: 16px;
+  font-weight: $semibold;
+  color: $dark-blue-steel;
+  line-height: 1.5;
+}
+
+.unit-pricing-component--price {
+  font-size: 16px;
+  color: $sky-blue;
+  line-height: 1.5;
+}

@@ -15,6 +15,10 @@
   // }
 }
 
+.aptible-header--adjacent {
+  margin-bottom: 0;
+}
+
 .aptible-header--with-breadcrumbs {
   margin-bottom: 0;
 }
@@ -101,6 +105,9 @@
     display: none;
   }
 }
+.centered-header--wide {
+  max-width: 1000px;
+}
 
 
 .home-hero__products {
@@ -133,7 +140,7 @@
 }
 
 .enclave-home-hero {
-  #app-grid-shadow {
+  .enclave-grid-shadow {
     display:none;
   }
   @media screen and (max-width: $tablet-portrait) {
