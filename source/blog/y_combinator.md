@@ -8,19 +8,19 @@ posted: 2014-09-18
 section: Blog
 posts: true
 ---
-Having just come through Y Combinator, we frequently get asked whether it was worth it. The answer is absolutely yes, no hesitation. While the experience is still fresh, I want to encourage you to [apply for the next cycle](http://www.ycombinator.com/apply/) and give some advice for getting in. 
+Having just come through Y Combinator, we frequently get asked whether it was worth it. The answer is absolutely yes, no hesitation. While the experience is still fresh, I want to encourage you to [apply for the next cycle](http://www.ycombinator.com/apply/) and give some advice for getting in.
 
 ## Apply Now
 
-You have a early-stage startup, or at least an idea for one. You know Y Combinator is fantastic: the network is legendary, the terms are fair, the other founders are incredible, and it provides an amazing lift for customer acquisition, fundraising, and recruiting. 
+You have a early-stage startup, or at least an idea for one. You know Y Combinator is fantastic: the network is legendary, the terms are fair, the other founders are incredible, and it provides an amazing lift for customer acquisition, fundraising, and recruiting.
 
-The catch is that acceptance rates are brutal. Somewhere below 3% of applicants get an offer. 
+The catch is that acceptance rates are brutal. Somewhere below 3% of applicants get an offer.
 
 Should you skip this application cycle and apply later, when your company is more mature?
 
-No. 
+No.
 
-**You should apply now, even if you don't think you are ready.** 
+**You should apply now, even if you don't think you are ready.**
 
 There are two main reasons for this:
 
@@ -36,15 +36,15 @@ Here's how to get in:
 
 ## Step 0: Make something people want.
 
-That's it! 
+That's it!
 
-I'm kidding but not really. 
+I'm kidding but not really.
 
 "Make something people want" is YC's motto. It's also what they look for in companies. It's not always sufficient, but it is necessary. If you do it, the rest can fall into place. If you don't do it, you're toast. Or Clinkle.
 
-Others have written about how to find something to make that people want. I won't get into that here, but I will add that most of the YC application process reduces to *proving* you've made something people want. 
+Others have written about how to find something to make that people want. I won't get into that here, but I will add that most of the YC application process reduces to *proving* you've made something people want.
 
-How do you prove it? Having paying customers is convincing. Having a lot of users is also convincing. 
+How do you prove it? Having paying customers is convincing. Having a lot of users is also convincing.
 
 Showing that people want something *similar* to what you made or that you *could* make something people want are not convincing.
 
@@ -58,7 +58,7 @@ Spend time thinking carefully about the questions. Don't spend any time trying t
 
 Some tips:  
 - Be honest with yourself. You know what your weaknesses are. Don't shy away from them, but don't waste too much time worrying if you can't change them. For example, when we submitted our application, Aptible had no paying customers. We work in a regulated industry (healthcare) where getting security and stability right is critical, and we were confident that waiting was the right choice.
-- Use every question to show that people want what you make. We made sure to explain what our waitlist looked like and how many customers had signed contracts to pay soon. 
+- Use every question to show that people want what you make. We made sure to explain what our waitlist looked like and how many customers had signed contracts to pay soon.
 - One or two sentences is fine for most answers. Be clear and direct, then move on.
 - Don't overthink the video. Introduce yourselves, briefly explain what you're working on, and spend the rest of your time explaining how you know people want what you make. [Follow the instructions](http://www.ycombinator.com/video/). Here's [our video](https://www.youtube.com/watch?v=3CU9lizkbCs).
 
@@ -67,20 +67,20 @@ Some tips:
 The application questions are a subset of the questions you may be asked at an interview.  
 
 Before our interview, Frank and I:  
-- Collected all of the known Y Combinator interview questions we could find 
-- Wrote out 1-2 sentence answers 
-- Agreed on which founder would lead on the answer, and 
+- Collected all of the known Y Combinator interview questions we could find
+- Wrote out 1-2 sentence answers
+- Agreed on which founder would lead on the answer, and
 - Practiced with flash cards until we could answer every question fluently
 
 Writing your answers out will help you formulate concise, consistent responses.
 
-To test our fluency, we did mock interviews with each other, with our startup/tech friends, and with YC alums. 
+To test our fluency, we did mock interviews with each other, with our startup/tech friends, and with YC alums.
 
 **Mock interviews are the best way to practice.** You will be shocked and disappointed by how incompetent you sound at first. Don't worry, you'll improve dramatically with repetition.
 
 As one of our investors puts it, "You're going to be telling people what you do eight times a day for the rest of the company's life. Get good at it."
 
-Below are the questions we used to prepare. I don't remember where we found each one, so apologies to the original sources. I've grouped them into categories by how important I think they are. The groups are my own and do not reflect YC's views. 
+Below are the questions we used to prepare. I don't remember where we found each one, so apologies to the original sources. I've grouped them into categories by how important I think they are. The groups are my own and do not reflect YC's views.
 
 *Remember:* One or two sentences each. If you prepare longer answers, you'll be flustered when the YC partners cut you off to ask another question. James Cunningham and Colin Hayhurst (GoScale, S12) built a [fun app with a timer](http://ipaulgraham.herokuapp.com/) to help you practice concise answers.
 
@@ -94,7 +94,7 @@ These are the most important questions. They are all different ways of determini
 1. How will you make money?
 1. How much money could you make per year?
 1. Why isn't someone already doing this?
-1. Why will you succeed over others? What do you understand that others don't? 
+1. Why will you succeed over others? What do you understand that others don't?
 1. What have you learned so far from working on your product?
 1. How much does customer acquisition cost?
 1. How many users do you have?
@@ -152,13 +152,13 @@ These are questions that have a correct answer.
 If you get asked these in an interview, either you're not doing well or you're being tested. Try to preempt them with good answers to the more critical questions.
 
 1. How do we know your team will stick together? Will your team stick at this?
-1. What else have you created together? 
+1. What else have you created together?
 1. Are you open to changing your idea?
 1. Someone just showed us an idea like this right before you guys. I don't like it. What else do you have?
 
 ### **Softballs**
 
-Have answers, but don't stress about these questions. 
+Have answers, but don't stress about these questions.
 
 1. What systems have you hacked?
 1. Tell us about a tough problem you solved?
@@ -169,14 +169,14 @@ Have answers, but don't stress about these questions.
 
 ## Step 3: Start Now
 
-Step 3 might be "Accept", but if you interview, you should have already decided. You give up ~7% of the company for $120k in funding. YC will increase the value of your company by much more than 7%, without question. You will not get a better deal from fairer, more transparent partners anywhere. 
+Step 3 might be "Accept", but if you interview, you should have already decided. You give up ~7% of the company for $120k in funding. YC will increase the value of your company by much more than 7%, without question. You will not get a better deal from fairer, more transparent partners anywhere.
 
 You will only have about 100 days between getting accepted and Demo Day to make the most convincing case possible to investors. If you don't get in, you have about 200 days to prove you can make something people want before you can apply again. Start now.
 
-## p.s. 
+## p.s.
 
 Good job on making it to the end! Feel free to ping me on [Twitter](https://twitter.com/chasballew) or with the contact link above if you have questions. After interview invitations go out, I'll volunteer a limited number of mock interview spots on Twitter.
 
 *Updates:*  
-- Moved "What else do you have?" to the trouble section. 
+- Moved "What else do you have?" to the trouble section.
 - You can find the Hacker News discussion for this post [here](https://news.ycombinator.com/item?id=8334957).
