@@ -1,3 +1,4 @@
+- titles = ["Common HIPAA Questions", "What is a HIPAA BAA?", "How to Get Into Y Combinator"]
 .resources-footer
   %img.resources-footer__slant{ src: '/images/angle-cap.svg' }
 
@@ -10,32 +11,9 @@
 
   .grid-container
     .grid--3up
-      %a.grid-item.card.card--on-dark{ href: '' }
-        .card__header
-          .card__subtitle.card__subitle--on-dark Compliance
-          %h3.card__title.card__title--on-dark What is a HIPAA BAA?
-        .card__body.card__body--on-dark
-          At Aptible, we get a lot of questions about HIPAA business
-          associate agreements, or "BAAs." This post will explain some
-          of the essential concepts that cloud-hosted software development
-          organizations should know about BAAs.
-
-      %a.grid-item.card.card--on-dark{ href: '' }
-        .card__header
-          .card__subtitle.card__subitle--on-dark Compliance
-          %h3.card__title.card__title--on-dark Common HIPAA Questions
-        .card__body.card__body--on-dark
-          At Aptible, we get a lot of questions about HIPAA business
-          associate agreements, or "BAAs." This post will explain some
-          of the essential concepts that cloud-hosted software development
-          organizations should know about BAAs.
-
-      %a.grid-item.card.card--on-dark{ href: '' }
-        .card__header
-          .card__subtitle.card__subitle--on-dark Compliance
-          %h3.card__title.card__title--on-dark What is a HIPAA BAA?
-        .card__body.card__body--on-dark
-          At Aptible, we get a lot of questions about HIPAA business
-          associate agreements, or "BAAs." This post will explain some
-          of the essential concepts that cloud-hosted software development
-          organizations should know about BAAs.
+      - resources_by_title(titles).each do |resource|
+        %a.grid-item.card.card--on-dark{ href: resource.path }
+          .card__header
+            .card__subtitle.card__subitle--on-dark= resource_subtitle(resource)
+            %h3.card__title.card__title--on-dark= resource.data.title
+          .card__body.card__body--on-dark= resource.data.excerpt
