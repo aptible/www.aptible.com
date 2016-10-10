@@ -35,7 +35,7 @@ module AptibleHelpers
   end
 
   def resource_subtitle(resource)
-    subtitle = resource.data['categories'] || "Blog"
+    subtitle = resource.data['categories'] || 'Blog'
     subtitle.is_a?(Array) ? subtitle.first : subtitle
   end
 
