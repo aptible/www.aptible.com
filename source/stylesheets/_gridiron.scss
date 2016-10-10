@@ -1,0 +1,28 @@
+.gridiron__threat-model {
+  background: url(/images/gridiron-graph.svg) no-repeat center -100px;
+  background-size: 100% auto;
+  position: relative;
+  min-height: 600px;
+  @media screen and (max-width: $tablet-landscape) {
+    background-image: none;
+    margin-bottom: 50px;
+    min-height: 0;
+    .grid-item {
+      padding: 0 20px;
+    }
+    .angle-cap--bottom {
+      display: none;
+    }
+  }
+}
+
+.gridiron__workforce-training {
+  background: $lighter-blue url(/images/angle-cap-top.svg) no-repeat top left;
+  background-size: cover;
+  border-top: 1px solid $white;
+  padding: 150px 0;
+  margin-bottom: 50px;
+  @media screen and (max-width: $tablet-landscape) {
+    padding: 100px 0;
+  }
+}

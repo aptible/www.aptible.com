@@ -7,9 +7,9 @@
         %h2.heading__subtitle Manage HIPAA Compliance
         %h1.heading__title Gridiron
         %p.heading__summary--light-blue
-          Aptible Gridiron helps software engineering teams stand up and scale
-          agile information security programs. Gridiron makes compliance with
-          complex regulations like HIPAA fast and easy.
+          Aptible Gridiron enables your digital health organization to
+          implement an entire HIPAA business associate compliance program for
+          a fraction of the cost of traditional methods.
 
         %p.heading__summary--light-blue
           %a.btn{ href: open_account_href } Open a Development Account
@@ -19,6 +19,80 @@
         = partial '/images/gridiron.svg'
 
 .content
-  .grid-container.grid-container--ruled.grid--single-center
+  .grid-container.grid--single-center
+    .grid-item
+      %h2.heading--single-center
+        Having both your technology stack and compliance program centralized
+        makes the process of maintaining your HIPAA documentation more accurate
+        and efficient.
+      %p.summary--adjacent.summary--single-center
+        Gridiron will walk you through each part of HIPAA compliance, including
+        the Security Rule and Privacy Rule to make sure your organization is
+        covering everything that is required.
 
+  -# = partial 'images/gridiron-graph.svg'
+.content.content--capped.gridiron__threat-model
+  .grid-container.grid--2up
+    .grid-item
+      .heading__subtitle Model and Manage Threats
+      %h2.heading__title.heading__title--dark Model Threats in Real Time
+      %p.heading__summary.heading__summary--light-blue-gray
+        With Aptible, your HIPAA-mandated risk assessment maps to your
+        technology stack in real time. Our risk analysis methodology is
+        designed for high-security environments, and was developed in
+        conjunction with the Department of Defense and the Office of the
+        Director of National Intelligence.
+  %img.angle-cap--bottom{ src: '/images/angle-cap-bottom.svg' }
+
+.content.content--capped.gridiron__policies-procedures
+  .grid-container.grid--2up-flex
+    .grid-item
+      .heading__subtitle HIPAA Policies Customized to your Company
+      %h2.heading__title.heading__title--dark Policies & Procedures
+      %p.heading__summary.heading__summary--light-blue-gray
+        Finding a canned list of policies and procedures on the Internet is
+        easy. Making sure your internal policies and controls are relevant,
+        accurate, and ready to survive an audit is hard. Aptible policies are
+        specific to web and mobile apps deployed in the cloud and are updated
+        to reflect current best practices.
+    .grid-item.grid-item--image
+      = partial 'images/gridiron-features/policies-procedures.svg'
+
+.content.content--capped.gridiron__workforce-training
+  .grid-container.grid--2up-flex
+    .grid-item
+      .heading__subtitle Understanding Compliance
+      %h2.heading__title.heading__title--dark Workforce Training
+      %p.heading__summary.heading__summary--light-blue-gray
+        Your entire team - from your HIPAA Security Officer to your developers
+        and general workforce members - receives role-based training. Our
+        online training system makes tracking employee progress extremely easy.
+        All completed training is auditable, making it easy to demonstrate
+        compliance.
+    .grid-item.grid-item--image
+      = partial 'images/gridiron-features/workforce-training.svg'
+  %img.angle-cap--bottom{ src: '/images/angle-cap-bottom.svg' }
+
+.content.content--capped
+  .grid-container.grid--single-center
+    .grid-item.grid-item--adjacent
+      %h2.heading--single-center
+        Our customers work with the best health systems in the world.
+      %p.summary--single-center
+        Major health systems trust Aptible to secure data and cloud
+        architecture for their technology partners.
+    .grid-item.healthcare-systems__logos
+      .logo-grid.logo-grid--3up
+        .logo-grid__item
+          = partial '/images/healthcare-systems/va.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/uhc.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/stanfordmed.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/kaiserpermanente.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/johnshopkinsmed.svg'
+        .logo-grid__item
+          = partial '/images/healthcare-systems/mayoclinic.svg'
 = partial 'partials/resources-footer'

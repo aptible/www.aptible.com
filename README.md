@@ -13,3 +13,11 @@ NEXT:
 
 - [ ] Responsive
   - [ ] support pricing tiers on /pricing
+
+For Frank:
+
+@fancyremarker -- this is the spot to add the Enclave features list.
+Shows up on the pricing page as well. Currently has as a unique title on the
+product page and pricing page
+
+https://github.com/aptible/www.aptible.com/blob/rebrand/source/partials/_enclave-features.haml

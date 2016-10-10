@@ -24,6 +24,21 @@ module AptibleHelpers
     end
   end
 
+  # Preserve the order of the supplied titles for the results
+  def resources_by_title(titles)
+    resources = []
+    titles.each do |title|
+      resources << sitemap.resources
+                          .select { |p| p.data['title'] == title }.first
+    end
+    resources
+  end
+
+  def resource_subtitle(resource)
+    subtitle = resource.data['categories'] || 'Blog'
+    subtitle.is_a?(Array) ? subtitle.first : subtitle
+  end
+
   def latest_blog_post
     blog_posts_by_date.first
   end
