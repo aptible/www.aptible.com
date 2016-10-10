@@ -1,13 +1,7 @@
 .resources-footer {
-  background-image: linear-gradient(
-                      to bottom,
-                      transparent, transparent 1px,
-                      $dusk calc(1px - 100%), $dusk);
+  background: $dusk url(/images/angle-cap-top.svg) no-repeat top left;
+  background-size: cover;
   border-top: 1px solid $white;
-}
-.resources-footer__slant {
-  width: 100%;
-  position: absolute;
 }
 .resources-footer__header {
   padding-top: 90px;

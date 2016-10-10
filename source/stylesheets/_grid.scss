@@ -87,16 +87,11 @@ body {
     flex-grow: 1;
     margin-bottom: 50px;
     padding: 0 20px;
-    @media screen and (max-width: $tablet-landscape) {
-    }
   }
 }
 
 .grid--3up {
   .grid-item {
-    // @media screen and (max-width: $tablet-portrait) {
-    //   @include span-columns(12);
-    // }
     @media screen and (max-width: $tablet-landscape) {
       @include span-columns(6);
       @include omega(3n);
@@ -170,6 +165,12 @@ body {
   padding-bottom: 0;
 }
 
+.grid-item--image {
+  text-align: center;
+  svg {
+    max-height: 275px;
+  }
+}
 
 //
 // Logo grids
@@ -202,6 +203,30 @@ body {
     transform: translateY(-50%);
     max-width: 80%;
     max-height: 130px;
+  }
+}
+.logo-grid--3up {
+  .logo-grid__item {
+    width: 33.33%;
+    &:nth-child(2n+1) {
+      border-left: 1px solid $light-blue;
+    }
+    &:nth-child(3n+1) {
+      border-left: none;
+    }
+    &:nth-child(3) {
+      border-top: none;
+    }
+    @media screen and (max-width: $tablet-portrait) {
+      width: 50%;
+      &:nth-child(3) {
+        border-top: 1px solid $light-blue;
+        border-left: none;
+      }
+      &:nth-child(4) {
+        border-left: 1px solid $light-blue;
+      }
+    }
   }
 }
 
@@ -241,4 +266,20 @@ body {
   border-top: 1px solid $light-blue;
   padding: 20px 0;
   text-align: center;
+}
+
+//
+// Angled capped content wrappers
+//
+.content--capped {
+  background-size: 100% auto;
+  position: relative;
+}
+
+.angle-cap--bottom {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
 }

@@ -1,7 +1,5 @@
 - titles = ["Common HIPAA Questions", "What is a HIPAA BAA?", "How to Get Into Y Combinator"]
 .resources-footer
-  %img.resources-footer__slant{ src: '/images/angle-cap.svg' }
-
   .grid-container
     %header.resources-footer__header
       %h2.resources-footer__header__title Resources
@@ -12,7 +10,7 @@
   .grid-container
     .grid--3up
       - resources_by_title(titles).each do |resource|
-        %a.grid-item.card.card--on-dark{ href: resource.path }
+        %a.grid-item.card.card--on-dark{ href: resource.destination_path }
           .card__header
             .card__subtitle.card__subitle--on-dark= resource_subtitle(resource)
             %h3.card__title.card__title--on-dark= resource.data.title

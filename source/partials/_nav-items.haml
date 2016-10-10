@@ -1,6 +1,6 @@
-%a.nav-item{ href: '/enclave' } Enclave
-%a.nav-item{ href: '/gridiron' } Gridiron
-%a.nav-item{ href: '/pricing' } Pricing
+%a.nav-item{ href: '/enclave', class: active_nav_item('enclave') } Enclave
+%a.nav-item{ href: '/gridiron', class: active_nav_item('gridiron') } Gridiron
+%a.nav-item{ href: '/pricing', class: active_nav_item('pricing') } Pricing
 
 %a.nav-item{ href: '/customers' } Customers
 -# TODO: When we get back to customer pages...
@@ -14,7 +14,7 @@
 -#     %a.nav-item{ href: '/case-studies' } Case Studies
 
 .nav-item.nav-parent{ tabindex: 0 }
-  %a.nav-item.nav-item--parent{ href: '/support' } Help
+  %a.nav-item.nav-item--parent{ href: '/support', class: active_nav_item('support') } Help
   %nav.nav-list__child-nav
     %a.nav-item{ href: '/resources' } Resources
     %a.nav-item{ href: '/support/topics' } Support Topics
@@ -25,4 +25,4 @@
 
 .nav--dashboard-auth
   %a.nav-item{ href: dashboard_href } Login
-  %a.nav-item{ href: '/pricing'} Sign Up
+  %a.nav-item{ href: open_account_href } Sign Up
