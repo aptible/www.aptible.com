@@ -90,7 +90,7 @@ end
 #
 # Proxy /legal/index to Terms of Service
 page '/legal/*', layout: 'legal.haml'
-proxy '/legal/index.html', '/legal/terms_of_service.html'
+proxy '/legal/index.html', '/legal/terms-of-service.html'
 
 # Topics (Support)
 data.topics.each do |title, category|
