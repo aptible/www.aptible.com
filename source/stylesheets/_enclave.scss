@@ -1,0 +1,52 @@
+// box shadow for terminal section
+// box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.28);
+.enclave-features {
+}
+
+.enclave-feature {
+  min-height: 0;
+}
+
+.enclave-feature__title {
+  color: $dark-blue-steel;
+  font-size: 16px;
+  font-weight: $semibold;
+  margin-bottom: 0;
+  line-height: 1.5;
+  &::after { display: none; }
+}
+
+.enclave-feature__summary {
+  color: $light-blue-gray;
+  font-weight: $light;
+  font-size: 16px;
+}
+
+.enclave-demo {
+  text-align: center;
+  padding-bottom: 0;
+  padding-top: 100px;
+  .heading__title--centered, .heading__summary {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .heading__title--centered {
+    color: $light-blue;
+    font-size: 30px;
+    font-weight: $semibold;
+    margin-bottom: 40px;
+  }
+  .heading__summary {
+    color: $sky-blue;
+    font-size: 20px;
+    font-weight: $light;
+    margin-bottom: 50px;
+  }
+}
+
+.meet-enclave-title {
+  color: $light-blue;
+  font-size: 26px;
+  font-weight: $semibold;
+  &::after { display: none; }
+}

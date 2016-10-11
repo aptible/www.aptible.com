@@ -63,7 +63,6 @@
   position: relative;
   transition: border-color $base-duration $base-timing;
   transform: translateX(-1px);
-
   white-space: nowrap;
 
   &.active {
@@ -95,6 +94,11 @@
     border-right-width: 1px;
   }
 
+  svg {
+    transform: translateY(5px);
+    margin-right: 5px;
+  }
+
   @media screen and (max-width: $nav-break) {
     width: 150px;
     border-top-left-radius: $base-border-radius;
@@ -124,6 +128,9 @@
 
 .feature-carousel__illustration {
   text-align: center;
+  img {
+    max-width: 100%;
+  }
 }
 
 .btn-bar {
