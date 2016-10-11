@@ -8,6 +8,10 @@ code, .code {
   white-space: nowrap;
 }
 
+pre {
+
+}
+
 .highlight {
   // Mimics the banded outline of a window bar for overflowing code contaniers
   background-image: linear-gradient(
@@ -66,7 +70,10 @@ code, .code {
 }
 .rouge-code {
   border-bottom: none;
-  padding-right: 20px;
+  padding: 0 20px 0 0;
+}
+.rouge-code--no-num {
+  padding: 0 20px;
 }
 
 // Comments

@@ -22,12 +22,24 @@
 .content
   .grid-container
     .feature-carousel__triggers
-      %a.feature-carousel__btn.active{ href: '#stack' } The Stack
-      %a.feature-carousel__btn{ href: '#network' } The Network
-      %a.feature-carousel__btn{ href: '#load-balancing' } Load Balancing
-      %a.feature-carousel__btn{ href: '#user-access' } Team Access
-      %a.feature-carousel__btn{ href: '#apps' } Apps
-      %a.feature-carousel__btn{ href: '#databases' } Databases
+      %a.feature-carousel__btn.active{ href: '#stack' }
+        = partial 'images/feature-icons/icon-stack.svg'
+        The Stack
+      %a.feature-carousel__btn{ href: '#network' }
+        = partial 'images/feature-icons/icon-network.svg'
+        The Network
+      %a.feature-carousel__btn{ href: '#load-balancing' }
+        = partial 'images/feature-icons/icon-load-balancing.svg'
+        Load Balancing
+      %a.feature-carousel__btn{ href: '#user-access' }
+        = partial 'images/feature-icons/icon-user-access.svg'
+        Team Access
+      %a.feature-carousel__btn{ href: '#apps' }
+        = partial 'images/feature-icons/icon-apps.svg'
+        Apps
+      %a.feature-carousel__btn{ href: '#databases' }
+        = partial 'images/feature-icons/icon-databases.svg'
+        Databases
 
   .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--stack.active
     .feature-carousel__details.grid-item
@@ -40,71 +52,90 @@
         run your ops, allowing you to focus on development.
 
     .feature-carousel__illustration.grid-item
-      = partial '/images/enclave-features/stack.svg'
+      %img{ src: '/images/enclave-features/stack.png' }
 
   .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--network
     .feature-carousel__details.grid-item
       .heading__subtitle The Network
-      %h2.heading__title= lorem.words 4
-      %p.heading__summary= lorem.paragraph
+      %h2.heading__title.heading__title--dark= lorem.words 4
+      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
 
     .feature-carousel__illustration.grid-item
-      = partial '/images/enclave-features/network.svg'
+      %img{ src: '/images/enclave-features/network.png' }
 
   .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--load-balancing
     .feature-carousel__details.grid-item
       .heading__subtitle Load Balancing
-      %h2.heading__title= lorem.words 4
-      %p.heading__summary= lorem.paragraph
+      %h2.heading__title.heading__title--dark= lorem.words 4
+      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
 
     .feature-carousel__illustration.grid-item
-      = partial '/images/enclave-features/load-balancing.svg'
+      %img{ src: '/images/enclave-features/load-balancing.png' }
 
   .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--user-access
     .feature-carousel__details.grid-item
       .heading__subtitle Team Access
-      %h2.heading__title= lorem.words 4
-      %p.heading__summary= lorem.paragraph
+      %h2.heading__title.heading__title--dark= lorem.words 4
+      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
 
     .feature-carousel__illustration.grid-item
-      = partial '/images/enclave-features/user-access.svg'
+      %img{ src: '/images/enclave-features/user-access.png' }
 
   .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--apps
     .feature-carousel__details.grid-item
       .heading__subtitle Apps
-      %h2.heading__title= lorem.words 4
-      %p.heading__summary= lorem.paragraph
+      %h2.heading__title.heading__title--dark= lorem.words 4
+      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
 
     .feature-carousel__illustration.grid-item
-      = partial '/images/enclave-features/apps.svg'
+      %img{ src: '/images/enclave-features/apps.png' }
 
   .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--databases
     .feature-carousel__details.grid-item
       .heading__subtitle Databases
-      %h2.heading__title= lorem.words 4
-      %p.heading__summary= lorem.paragraph
+      %h2.heading__title.heading__title--dark= lorem.words 4
+      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
 
     .feature-carousel__illustration.grid-item
-      = partial '/images/enclave-features/load-balancing.svg'
+      %img{ src: '/images/enclave-features/databases.png' }
 
-.aptible-header.hero-gradient--angled
-  .grid-container
-    %h2.heading__title--centered
-      The Enclave Deployment Platform for Healthcare Innovators
-    %p.heading__summary
-      Deploy Docker containers into secure, isolated, HIPAA-ready environments.
+.content.hero-gradient--angled
+  .grid-container.grid--single-center
+    .enclave-demo.grid-item.grid-item--adjacent
+      %h2.heading__title--centered
+        The Enclave Deployment Platform for Healthcare Innovators
+      %p.heading__summary
+        Deploy Docker containers into secure, isolated, HIPAA-ready environments.
 
-  .grid-container
-    %h3 Meet the Gravity Deployment Platform
-    %ol
-      %li
-        Create and configure apps and databases directly from the Aptible Toolbelt
-      %li
-        Simple git-based, zero-downtime deployments
-      %li
-        Stream app logs directly to your console
+  .grid-container.grid--2up-flex
+    .grid-item
+      %pre.highlight.plaintext
+        %table.rouge-table
+          %tbody
+            %tr
+              %td.rouge-code.rouge-code--no-num
+                %pre $ mkdir example-docker-app
+                $ cd example-docker-app &amp;&amp; git init .
+                $ aptible apps:create example-docker-app --environment my-env
+                &gt; App example-docker-app created!
+                &gt; Git remote: git@beta.aptible.com:my-env/example-docker-app.git
+                $ aptible config:set APTIBLE_PRIVATE_REGISTRY_HOST=[registry host] APTIBLE_DOCKER_IMAGE=[image name] APTIBLE_PRIVATE_REGISTRY_USERNAME=[username] APTIBLE_PRIVATE_REGISTRY_PASSWORD=[password]
+                $ echo "web: bundle exec rails s" &gt; Procfile
+                $ git add Procfile &amp;&amp; commit -m "test docker pull"
+                $ git remote add aptible git@beta.aptible.com:my-env/example-docker-app.git
+                $ git push aptible master</pre></td></tr></tbody></table>
 
-    %a.btn{ href: open_account_href } Open a Development Account
+    .grid-item
+      %h3.meet-enclave-title Meet the Enclave Deployment Platform
+      %ol
+        %li
+          Create and configure apps and databases directly from the Aptible Toolbelt
+        %li
+          Simple git-based, zero-downtime deployments
+        %li
+          Stream app logs directly to your console
+
+      %a.btn{ href: open_account_href } Open a Development Account
 
 .content
   .grid-container.grid--single-center

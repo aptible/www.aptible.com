@@ -5,7 +5,7 @@ author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
 posted: 2016-01-05
-section: Resources
+section: Blog
 categories:
 - HIPAA Compliance
 ---
