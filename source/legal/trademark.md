@@ -7,11 +7,7 @@ section: Legal
 sub_section: Policies
 ---
 
-Aptible, Inc.
-=============
-Trademark Policy & Guidelines
-----------------
-Version 2.0 - July 2014
+Version 2.1 - October 2016
 
 This policy grants you limited permission to use the Aptible Marks in connection with your use of the Services. It is incorporated by reference into the Aptible Terms of Service.
 
@@ -27,7 +23,7 @@ For the purposes of these Trademark Guidelines, "**Aptible Marks**" means the fo
 
 Logo:  
 
-![Aptible Logo](/assets/images/aptible-dark-logo-350.png)
+![Aptible Logo](/images/aptible-dark-logo-350.png)
 
 ### Limited Permission
 Provided that you are in good standing with a current and valid account for use of the Services and provided, further, that you comply at all times with the terms of both the Terms of Service and these Trademark Guidelines, we grant you a limited, non-exclusive, non-transferable permission, under our intellectual property rights in and to the Aptible Marks, and only to the limited extent of our intellectual property rights in and to the Aptible Marks, to use the Aptible Marks for the following limited purpose, and only for such limited purpose:

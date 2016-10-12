@@ -1,12 +1,12 @@
 $(document).on 'turbolinks:load', ->
-  form = document.getElementById('search-form')
-  field = form.getElementsByTagName('input')[0]
-  return unless form && field
+  $form = $('#search-form')
+  $field = $form.find('input') if $form.length > 0
+  return unless $field
 
   onFormSubmit = (e) ->
     e.preventDefault()
     setTimeout (->
-      document.location.href = "/support/search/#stq=#{field.value}&stp=1"
+      document.location.href = "/support/search/#stq=#{$field.val()}&stp=1"
     ), 20
 
-  form.addEventListener('submit', onFormSubmit)
+  $form.on 'submit', onFormSubmit
