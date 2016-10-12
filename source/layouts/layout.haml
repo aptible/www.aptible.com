@@ -17,10 +17,8 @@
     = stylesheet_link_tag :all
 
   %body.aptible-www{ class: page_classes }
-    - if content_for? :header
-      = yield_content :header
-    - else
-      = partial 'header'
+    -# - if content_for? :header
+    = yield_content :header
 
     %div{ data: { swiftype: { name: 'body', type: 'text', index: 'true' } } }
       = yield

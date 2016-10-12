@@ -1,0 +1,16 @@
+.faq {
+  .heading__title--centered {
+    margin-bottom: 50px;
+  }
+  .markdown-content {
+    h2 {
+      font-size: 36px;
+      display: inline-block;
+      margin-top: 0;
+      a {
+        position: absolute;
+        right: 100px;
+      }
+    }
+  }
+}

@@ -7,10 +7,6 @@ section: Legal
 sub_section: Policies
 ---
 
-Aptible, Inc.
-=============
-Support Policy
---------------
 Version 2.3 - July 2016
 
 This policy outlines Aptible's support practices and resources. It also identifies your support obligations to your customers. It is incorporated by reference into the Aptible Terms of Service.

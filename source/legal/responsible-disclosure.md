@@ -7,11 +7,6 @@ section: Legal
 sub_section: Policies
 ---
 
-Aptible, Inc.
-=============
-Responsible Disclosure Policy
---------------
-
 Version 2.7 - June 2016
 
 ### Responsible Disclosure

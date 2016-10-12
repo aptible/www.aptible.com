@@ -8,10 +8,6 @@ sub_section: Agreements
 order: 1
 ---
 
-Aptible, Inc.
-=============
-Service Level Agreement
---------------
 Version 1.3 - September 2015
 
 This Aptible Service Level Agreement (**"SLA"**) between Aptible, Inc. (**"Aptible"**, **"us"** or **"we"**) and users of the Aptible Services (**"you"**) governs the use of the Aptible Containerized Services under the provisions of the [Aptible Terms of Service](/legal/terms_of_service.html) (the **"Terms"**).
@@ -44,7 +40,7 @@ Service Credits are calculated as a percentage of the total charges paid by you 
 - For Monthly Uptime Percentage less than 99.95% but equal to or greater than 99.0%, you will be eligible for a 10% Service Credit.
 - For Monthly Uptime Percentage less than 99.0%, you will be eligible for a 30% Service Credit.
 
-We will apply any Service Credits only against future payments for the Services otherwise due from you. At our discretion, we may issue the Service Credit to the credit card you used to pay for the billing cycle in which the Unavailability occurred. Service Credits will not entitle you to any refund or other payment from Aptible. A Service Credit will be applicable and issued only if the credit amount for the applicable monthly billing cycle is greater than one dollar ($1 USD). Service Credits may not be transferred or applied to any other account. 
+We will apply any Service Credits only against future payments for the Services otherwise due from you. At our discretion, we may issue the Service Credit to the credit card you used to pay for the billing cycle in which the Unavailability occurred. Service Credits will not entitle you to any refund or other payment from Aptible. A Service Credit will be applicable and issued only if the credit amount for the applicable monthly billing cycle is greater than one dollar ($1 USD). Service Credits may not be transferred or applied to any other account.
 
 ### 4. Sole Remedy
 Unless otherwise provided in the Terms, your sole and exclusive remedy for any unavailability, non-performance, or other failure by us to provide the Aptible Containerized Services is the receipt of a Service Credit (if eligible) in accordance with the terms of this SLA.
@@ -61,11 +57,11 @@ If the Monthly Uptime Percentage of such request is confirmed by us and is less 
 
 ### 6. Aptible SLA Exclusions
 The Service Commitment does not apply to any unavailability, suspension or termination of the Aptible Containerized Services, or any other Aptible Containerized Service performance issues:  
-1. That result from a suspension or Remedial Action, as described in the Terms; 
+1. That result from a suspension or Remedial Action, as described in the Terms;
 2. Caused by factors outside of our reasonable control, including any force majeure event, Internet access, or problems beyond the demarcation point of the Aptible network;  
 3. That result from any actions or inactions of you or any third party;  
 4. That result from the equipment, software or other technology of you or any third party (other than third party equipment within our direct control);  
 5. That result from failures of Aptible Containerized Services not attributable to Unavailability; or   
-6. That result from any Maintenance. 
+6. That result from any Maintenance.
 
 If availability is impacted by factors other than those used in our Monthly Uptime Percentage calculation, then we may issue a Service Credit considering such factors at our discretion.

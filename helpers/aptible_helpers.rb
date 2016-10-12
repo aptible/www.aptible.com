@@ -12,7 +12,7 @@ module AptibleHelpers
   end
 
   def active_nav_item(path)
-    match = current_page.path.include?(path) || current_page.path == path
+    match = current_page.url.include?(path) || current_page.url == path
     match ? 'nav-item--active' : ''
   end
 
@@ -45,6 +45,23 @@ module AptibleHelpers
 
   def blog_post_author_href(post)
     "/blog/authors/#{post.data.author_id}"
+  end
+
+  def legal_sections
+    sitemap.resources
+           .select { |p| p.data['section'] == 'Legal' }
+           .group_by { |p| p.data['sub_section'] }.keys.sort
+  end
+
+  require 'pry'
+  def legal_section(sub_section)
+    l = sitemap.resources
+               .select do |p|
+                 p.data['section'] == 'Legal' &&
+                   p.data['sub_section'] == sub_section &&
+                   p.url != '/legal/'
+               end
+    l.sort_by { |p| p.data['order'] }
   end
 
   def blog_posts_by_date

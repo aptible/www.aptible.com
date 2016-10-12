@@ -7,10 +7,6 @@ section: Legal
 sub_section: Policies
 ---
 
-Aptible, Inc.
-=============
-Fees & Pricing Policy
---------------
 Version 3.0 - September 2015
 
 This policy outlines how Aptible determines fees and charges for services. It is incorporated by reference into the Aptible Terms of Service.

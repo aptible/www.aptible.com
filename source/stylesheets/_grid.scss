@@ -129,6 +129,15 @@ body {
   }
 }
 
+.grid-aside--left {
+  .grid-aside {
+    float: left;
+  }
+  .grid-document {
+    float: right;
+  }
+}
+
 .grid-aside__block {
   background-color: $lighter-blue;
   margin-bottom: 30px;

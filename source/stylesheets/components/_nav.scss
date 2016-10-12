@@ -311,3 +311,65 @@
     }
   }
 }
+
+//
+// Side nav (legal and FAQ)
+//
+.side-nav {
+  margin-bottom: 30px;
+}
+.side-nav--fixed {
+  position: fixed;
+  top: 50px;
+  width: 280px;
+  z-index: 0;
+}
+.side-nav--stuck {
+  position: absolute;
+  width: 280px;
+  z-index: 0;
+}
+.side-nav__to-top {
+  font-size: 16px;
+  font-weight: $regular;
+}
+.side-nav__section-heading {
+  margin-bottom: .5em;
+  &::after { display: none; }
+}
+.side-nav__item {
+  background-color: transparent;
+  display: block;
+  margin-bottom: .5em;
+  margin-right: .5em;
+  padding: .5em;
+  padding-right: 0;
+  position: relative;
+  transition: background-color $base-duration $base-timing;
+  &::after {
+    background-color: transparent;
+    content: '';
+    display: inline-block;
+    height: 28px;
+    right: -15px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: background-color $base-duration $base-timing;
+    top: 6px;
+    width: 28px;
+    z-index: -1;
+  }
+  &:hover, &:focus {
+    background-color: tint($lighter-blue, 40%);
+    outline: none;
+    &::after {
+      background-color: tint($lighter-blue, 40%);
+    }
+  }
+  &.nav-item--active {
+    background-color: $lighter-blue;
+    &::after {
+      background-color: $lighter-blue;
+    }
+  }
+}

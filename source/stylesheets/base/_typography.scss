@@ -81,7 +81,13 @@ hr {
     font-weight: $light;
     margin-bottom: 1.75em;
   }
+
+  strong {
+    font-weight: $semibold;
+  }
+
 }
+
 
 .text-center {
   text-align: center;

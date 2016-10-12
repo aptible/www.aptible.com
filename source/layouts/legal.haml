@@ -1,5 +1,25 @@
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav', locals: { |
+        section_title: 'Legal',              |
+        section_url: '/legal'                |
+      }                                      |
+
 = wrap_layout :layout do
   .content
-    .grid-container
-      = find_and_preserve do
-        = yield
+    .grid-container.grid-aside--left
+      .grid-aside
+        - legal_sections.each do |section|
+          %h3.side-nav__section-heading= section
+          %nav.side-nav
+            - legal_section(section).each do |resource|
+              %a.side-nav__item{ href: resource.url, class: active_nav_item(resource.url) }
+                = resource.data.title
+
+      .grid-document.markdown-content
+        %h1.document-title= current_page.data.title
+
+        = find_and_preserve do
+          = yield
+
+  = partial 'partials/resources-footer'

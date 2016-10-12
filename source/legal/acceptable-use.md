@@ -7,10 +7,6 @@ section: Legal
 sub_section: Policies
 ---
 
-Aptible, Inc.
-=============
-Acceptable Use Policy
----------------------
 Version 2.2 - February 2016
 
 This policy describes prohibited uses of the Aptible Services and the website located at https://www.aptible.com and any subdomains (the "**Aptible Site**"). It is incorporated by reference into the Aptible Terms of Service. Capitalized terms used but not otherwise defined herein have the meaning ascribed to such terms in the Aptible Terms of Service.
@@ -31,7 +27,7 @@ Prohibited activities or content include:
 5. Harmful Content: Content or other computer technology that may damage, interfere with, surreptitiously intercept, or expropriate any system, program, or data, including viruses, Trojan horses, worms, time bombs, or cancelbots.
 
 ### No HIPAA Violations
-You agree not to use the Services to create, receive, maintain, or transmit protected health information, as defined in 45 C.F.R. § 160.103, without a Business Associate Agreement in place between you and Aptible. You agree only to use the Services as permitted by your Business Associate Agreement, including the 
+You agree not to use the Services to create, receive, maintain, or transmit protected health information, as defined in 45 C.F.R. § 160.103, without a Business Associate Agreement in place between you and Aptible. You agree only to use the Services as permitted by your Business Associate Agreement, including the
 
 ### No High Risk Activities
 You agree not to use the Services for High Risk Activities, as defined in the Aptible Terms of Service.
@@ -84,7 +80,7 @@ You agree not to:
 4. Sub-license, resell, or distribute the Services or any component thereof separate from any integrated application;
 5. Violate, or encourage others to violate, any right of a third party, including by infringing or misappropriating any third party intellectual property right;  
 6. Post, upload, or distribute any Content or other content that is unlawful, defamatory, libelous, inaccurate, or that a reasonable person could deem to be objectionable, profane, indecent, pornographic, harassing, threatening, embarrassing, hateful, or otherwise inappropriate;
-7. Perform any fraudulent activity, including impersonating any person or entity or claiming a false affiliation; misrepresenting the source, identity or content of information transmitted via the Services; accessing any other Service account without permission, or falsifying your age or date of birth. 
+7. Perform any fraudulent activity, including impersonating any person or entity or claiming a false affiliation; misrepresenting the source, identity or content of information transmitted via the Services; accessing any other Service account without permission, or falsifying your age or date of birth.
 
 ### Our Monitoring and Enforcement
 We reserve the right, but do not assume the obligation, to investigate any violation of this policy or misuse of the Services or Aptible Site. We may:

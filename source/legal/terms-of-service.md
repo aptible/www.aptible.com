@@ -8,21 +8,17 @@ sub_section: Agreements
 order: 0
 ---
 <!-- Reference Links -->
-[Service Level Agreement]:/legal/service_level_agreement.html
-[Breach Indemnification Agreement]:/legal/breach_indemnification_agreement.html
-[Acceptable Use Policy]:/legal/acceptable_use.html
-[Fees and Pricing Policy]:/legal/fees_and_pricing.html
-[Privacy Policy]:/legal/privacy.html
-[Responsible Disclosure]:/legal/responsible_disclosure.html
-[Security Policy]:/legal/security.html
-[Support Policy]:/legal/support.html
-[Trademark Policy]:/legal/trademark.html
+[Service Level Agreement]:/legal/service-level-agreement
+[Breach Indemnification Agreement]:/legal/breach-indemnification-agreement
+[Acceptable Use Policy]:/legal/acceptable-use
+[Fees and Pricing Policy]:/legal/fees-and-pricing
+[Privacy Policy]:/legal/privacy
+[Responsible Disclosure]:/legal/responsible-disclosure
+[Security Policy]:/legal/security
+[Support Policy]:/legal/support
+[Trademark Policy]:/legal/trademark
 
-Aptible, Inc.
-=============
-Terms of Service  
-----------------
-Version 2.8 - February 2016
+Version 2.9 - October 2016
 
 Welcome, and thank you for your interest in Aptible, Inc. (**"Aptible"**, **"we,"** or **"us"**) and the Aptible services, including any platforms, APIs, interfaces, related web sites, networks, embeddable widgets, downloadable software, and other services provided by us and in which a link to these Terms of Service is displayed (the **"Services"**).
 
@@ -288,7 +284,7 @@ This Agreement supersedes all other agreements between the parties relating to i
 
 ### 22. Definitions
 
-**"Acceptable Use Policy"** means the policy currently available at https://www.aptible.com/legal/acceptable_use.html, as it may be updated by us from time to time.
+**"Acceptable Use Policy"** means the policy currently available at https://www.aptible.com/legal/acceptable-use, as it may be updated by us from time to time.
 
 **"Application"** means software you run using the Services.
 
@@ -307,18 +303,18 @@ This Agreement supersedes all other agreements between the parties relating to i
 
 The term **"End User"** does not include individuals or entities when they are accessing or using the Services or any Content under their own Aptible account, rather than your account.
 
-**"Fees and Pricing Policy"** means the policy currently available at https://www.aptible.com/legal/fees_and_pricing.html, as it may be updated by us from time to time.
+**"Fees and Pricing Policy"** means the policy currently available at https://www.aptible.com/legal/fees-and-pricing, as it may be updated by us from time to time.
 
 **"High Risk Activity"** means any activity where the failure of a supporting computer system could lead to death, personal injury, or severe physical or environmental damage, such as the operation of nuclear facilities, aircraft navigation, or direct life support systems.
 
-**"Privacy Policy"** means the policy currently available at https://www.aptible.com/legal/privacy.html, as it may be updated by us from time to time.
+**"Privacy Policy"** means the policy currently available at https://www.aptible.com/legal/privacy, as it may be updated by us from time to time.
 
 **"Remedial Action"** means our right under this Agreement to suspend your access or your End Users' access to the Services, and to suspend or remove an Application, in the event that this Agreement is breached.
 
-**"Security Policy"** means the policy currently available at https://www.aptible.com/legal/security.html, as it may be updated by us from time to time.
+**"Security Policy"** means the policy currently available at https://www.aptible.com/legal/security, as it may be updated by us from time to time.
 
-**"Support Policy"** means the policy currently available at https://www.aptible.com/legal/support.html, as it may be updated by us from time to time.
+**"Support Policy"** means the policy currently available at https://www.aptible.com/legal/support, as it may be updated by us from time to time.
 
-**"Trademark Policy"** means the policy currently available at https://www.aptible.com/legal/trademark.html, as it may be updated by us from time to time.
+**"Trademark Policy"** means the policy currently available at https://www.aptible.com/legal/trademark, as it may be updated by us from time to time.
 
 **"Your Content"** means Content you or any End User (a) runs on the Services, (b) causes to interface with the Services, or (c) uploads to the Services under your account or otherwise transfers, processes, uses, or stores in connection with your account.
