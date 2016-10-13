@@ -24,8 +24,6 @@
   .content
     .grid-container.quickstart
       %h1.document-title= @title || title
-      %h2.document-summary= current_page.data.summary || lorem.sentence
-      %hr
 
       .grid-aside
         - if quickstart? current_page.path

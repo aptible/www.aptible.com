@@ -24,7 +24,7 @@ $(document).on 'turbolinks:load', ->
     update = ->
       currentScrollTop = lastScrollTop
       ticking = false
-      viewportWidth = $win.widt()
+      viewportWidth = $win.width()
 
       if currentScrollTop > fixedNavBoundary && viewportWidth > 768
         $sideNav.addClass 'side-nav--fixed'

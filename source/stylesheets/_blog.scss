@@ -69,10 +69,14 @@
     display: inline-block;
     height: 15px;
     position: relative;
+    right: 0;
     top: -15px;
     transform: rotate(45deg);
-    transition: transform $base-duration $base-timing;
+    transition: right $base-duration $base-timing;
     width: 15px;
+  }
+  &:hover::after {
+    right: -10px;
   }
 }
 

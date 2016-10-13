@@ -16,12 +16,11 @@
 
     = stylesheet_link_tag :all
 
-  %body.aptible-www{ class: page_classes }
+  %body.aptible-www{ class: page_classes, data: { swiftype: { name: 'body', type: 'text', index: 'true' } } }
     -# - if content_for? :header
     = yield_content :header
 
-    %div{ data: { swiftype: { name: 'body', type: 'text', index: 'true' } } }
-      = yield
+    = yield
 
     = partial 'partials/footer'
 
@@ -40,7 +39,9 @@
         e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
       })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-      _st('install','dsMEc1fYviE2ShXAjYMW','2.0.0');
+      $(document).on('turbolinks:load', function() {
+        _st('install','dsMEc1fYviE2ShXAjYMW','2.0.0');
+      });
 
       try{Typekit.load();}catch(e){}
 

@@ -164,6 +164,7 @@
     .nav-toggle__icon-bar {
       background-color: $action-color;
       transition-property: top, transform, background-color;
+      transition-delay: $base-duration * 2;
       &:nth-child(1) {
         top: 9px;
         transform: rotate(45deg);
@@ -182,7 +183,7 @@
       opacity: 1;
     }
     .nav-item {
-      transition: opacity $base-duration $base-timing $base-duration*2;
+      transition: opacity $base-duration $base-timing;
       opacity: 1;
       position: static;
     }

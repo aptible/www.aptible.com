@@ -145,6 +145,8 @@
 }
 
 .enclave-home-hero__channels {
+  // TODO: fix this
+  display: none;
   position: absolute;
   transform: translate(-210px, 45px);
   z-index: 3;
@@ -160,6 +162,8 @@
 }
 
 .gridiron-home-hero__join-channels {
+  // TODO: fix this
+  display: none;
   position: absolute;
   transform: translate(-346px, -225px);
   // @media screen and (max-width: $tablet-portrait) {
