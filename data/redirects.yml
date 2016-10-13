@@ -94,3 +94,11 @@
   url: /support/topics/paas/how-to-add-internal-or-external-endpoint
 - loc: /company/resources/index.html
   url: /media
+- loc: /company/press/
+  url: /media
+- loc: /technology
+  url: /enclave
+- loc: /compliance
+  url: /gridiron
+- loc: /company/careers/
+  url: /company

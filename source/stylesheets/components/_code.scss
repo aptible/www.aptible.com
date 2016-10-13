@@ -56,6 +56,18 @@ pre {
     width: 100%;
   }
 }
+.rouge-table--full-width {
+  overflow-x: auto;
+  .rouge-code--terminal {
+    white-space: nowrap;
+  }
+  td {
+    white-space: nowrap;
+    .terminal, .terminal-response, .terminal-interactive {
+      white-space: nowrap;
+    }
+  }
+}
 .rouge-gutter {
   border-bottom: none;
   text-align: right;
@@ -73,7 +85,23 @@ pre {
   padding: 0 20px 0 0;
 }
 .rouge-code--no-num {
-  padding: 0 20px;
+  padding: 0 20px 25px;
+  vertical-align: top;
+}
+.rouge-code--terminal {
+  font-size: 13px;
+  font-family: Monaco, monospace;
+  line-height: 1.5;
+  white-space: normal;
+}
+.terminal {
+  color: $white;
+}
+.terminal-interactive {
+  color: #b9e4f0;
+}
+.terminal-response {
+  color: $green;
 }
 
 // Comments
