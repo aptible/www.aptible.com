@@ -9,7 +9,7 @@
   .grid-container
     .grid--3up
       - resources_by_title(titles).each do |resource|
-        %a.grid-item.card.card--on-dark{ href: resource.destination_path }
+        %a.grid-item.card.card--on-dark{ href: resource.url }
           .card__header
             .card__subtitle.card__subitle--on-dark= resource_subtitle(resource)
             %h3.card__title.card__title--on-dark= resource.data.title

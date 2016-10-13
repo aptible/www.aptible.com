@@ -47,6 +47,35 @@
   border: 1px solid tint($dusk, 10%);
 }
 
+.card--media {
+  padding: 0;
+  .card__body {
+    padding: 25px;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.card__header--media {
+  padding: 25px;
+  background-color: $lighter-blue;
+  text-align: center;
+  img {
+    max-width: 50%;
+  }
+}
+
+.card__header--light-media {
+  background-color: $dark-blue-steel;
+}
+
+.card--media__title {
+  font-weight: $semibold;
+  line-height: 3.2;
+  text-transform: uppercase;
+}
+
 .card__subtitle {
   font-size: 14px;
   font-weight: $light;

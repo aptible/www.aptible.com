@@ -93,12 +93,25 @@ body {
 
 .grid--3up {
   .grid-item {
+    @include span-columns(4);
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
     @media screen and (max-width: $tablet-landscape) {
       @include span-columns(6);
-      @include omega(3n);
+      &:nth-child(3n+3) {
+        margin-right: flex-gutter();
+      }
+      &:nth-child(2n+2) {
+        margin-right: 0;
+      }
     }
-    @include span-columns(4);
-    @include omega(5n);
+    @media screen and (max-width: $tablet-portrait) {
+      @include span-columns(12);
+      &:nth-child(3n+3), &:nth-child(2n+2) {
+        margin-right: flex-gutter();
+      }
+    }
   }
 }
 
@@ -154,18 +167,22 @@ body {
   }
 }
 
-// Default is 4up max...
 .grid-item {
-  @include span-columns(3);
-  @include omega(4n);
   margin-bottom: 30px;
   min-height: 200px;
-  @media screen and (max-width: $tablet-landscape) {
-    @include span-columns(6);
-    @include omega(2n);
-  }
-  @media screen and (max-width: $tablet-portrait) {
-    @include span-columns(12);
+}
+
+.grid--4up {
+  .grid-item {
+    @include span-columns(3);
+    @include omega(4n);
+    @media screen and (max-width: $tablet-landscape) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+    @media screen and (max-width: $tablet-portrait) {
+      @include span-columns(12);
+    }
   }
 }
 
