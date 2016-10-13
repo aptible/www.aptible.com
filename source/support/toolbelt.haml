@@ -9,62 +9,70 @@ layout: layout
   = partial 'partials/headers/support-index'
 
 .content
-  .grid-container.grid--4up
-    .grid-item
-      %a.category-box.active{ href: '#osx', class: 'osx' }
-        .category-icon
-          = partial "images/icons/osx.svg"
-        .category-footer
-          .category-title OSX
+  .grid-container.grid--4up.toolbelt-platforms
+    %a.active.grid-item.card.toolbelt-platform{ href: '#osx', class: 'osx' }
+      .card__header.toolbelt-platform--logo
+        = partial "images/icons/osx.svg"
+      .card__body
+        %h3 macOS
+        %p Download the macOS binary.
 
-    .grid-item
-      %a.category-box{ href: '#ubuntu', class: 'ubuntu' }
-        .category-icon
-          = partial "images/icons/ubuntu.svg"
-        .category-footer
-          .category-title Ubuntu
+    %a.grid-item.card.toolbelt-platform{ href: '#ubuntu', class: 'ubuntu' }
+      .card__header.toolbelt-platform--logo
+        = partial "images/icons/ubuntu.svg"
+      .card__body
+        %h3 Ubuntu
+        %p
+          Download a binary for Ubuntu
+          = data.toolbelt.os.ubuntu.keys[0]
+          or
+          = data.toolbelt.os.ubuntu.keys[1]
 
-    .grid-item
-      %a.category-box{ href: '#debian', class: 'debian' }
-        .category-icon
-          = partial "images/icons/debian.svg"
-        .category-footer
-          .category-title Debian
+    %a.grid-item.card.toolbelt-platform{ href: '#debian', class: 'debian' }
+      .card__header.toolbelt-platform--logo
+        = partial "images/icons/debian.svg"
+      .card__body
+        %h3 Debian
+        %p
+          Download a binary for Debian
+          = data.toolbelt.os.debian.keys[0]
+          or
+          = data.toolbelt.os.debian.keys[1]
 
-    .grid-item
-      %a.category-box{ href: '#enterprise-linux', class: 'enterprise-linux' }
-        .category-icon
-          = partial "images/icons/enterprise-linux.svg"
-        .category-footer
-          .category-title Enterprise Linux
+    %a.grid-item.card.toolbelt-platform{ href: '#enterprise-linux', class: 'enterprise-linux' }
+      .card__header.toolbelt-platform--logo
+        = partial "images/icons/enterprise-linux.svg"
+      .card__body
+        %h3 Enterprise Linux
+        %p
+          Download a binary for Enterprise Linux
+          = data.toolbelt.os.centos.keys[0]
+          or
+          = data.toolbelt.os.centos.keys[1]
 
-  .grid-container
+  .grid-container.grid--single-center.download-panels
     -# OSX Panel
-    .card.download-panel.active#osx
-      %h2 OSX Yosemite
-      .download-container
-        %a.btn.btn-primary.btn-lg{ href: data.toolbelt.os.osx }
-          %i.fa.fa-download
-          %span Download #{data.toolbelt.version} for OSX
-      .installation-instructions
-        %h3 Installation Instructions
-        .help-block When the download completes, double click the downloaded package and follow the installation instructions.
+    .grid-item.download-panel.active#osx
+      %h2.download-panel__title Download Aptible Toolbelt for macOS
+      %a.btn.btn-primary.btn-lg{ href: data.toolbelt.os.osx }
+        = partial '/images/icons/icon-download.svg'
+        Download #{data.toolbelt.version} for macOS
 
     -# Ubuntu Panel
-    .card.download-panel.split-panel#ubuntu
+    .grid-item.card.download-panel.split-panel#ubuntu
       -# Ubuntu 14.04
       .download-panel-left
         %h2 Ubuntu 14.04
         .download-container
           %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.ubuntu['14.04'] }
-            %i.fa.fa-download
+            = partial '/images/icons/icon-download.svg'
             %span Download #{data.toolbelt.version} for Ubuntu 14.04
       -# Ubuntu 16.04
       .download-panel-right
         %h2 Ubuntu 16.04
         .download-container
           %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.ubuntu['16.04'] }
-            %i.fa.fa-download
+            = partial '/images/icons/icon-download.svg'
             %span Download #{data.toolbelt.version} for Ubuntu 16.04
       .installation-instructions
         %h3 Installation Instructions
@@ -81,20 +89,20 @@ layout: layout
 
 
     -# Debian Panel
-    .card.download-panel.split-panel#debian
+    .grid-item.card.download-panel.split-panel#debian
       -# Debian 7.10
       .download-panel-left
         %h2 Debian 7
         .download-container
           %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.debian['7'] }
-            %i.fa.fa-download
+            = partial '/images/icons/icon-download.svg'
             %span Download #{data.toolbelt.version} for Debian 7
       -# Debian 8.4
       .download-panel-right
         %h2 Debian 8
         .download-container
           %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.debian['8'] }
-            %i.fa.fa-download
+            = partial '/images/icons/icon-download.svg'
             %span Download #{data.toolbelt.version} for Debian 8
       .installation-instructions
         %h3 Installation Instructions
@@ -116,14 +124,14 @@ layout: layout
         %h2 Enterprise Linux 6
         .download-container
           %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.centos['6'] }
-            %i.fa.fa-download
+            = partial '/images/icons/icon-download.svg'
             %span Download #{data.toolbelt.version} for Enterprise Linux 6
       -# Enterprise Linux 8.4
       .download-panel-right
         %h2 Enterprise Linux 7
         .download-container
           %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.centos['7'] }
-            %i.fa.fa-download
+            = partial '/images/icons/icon-download.svg'
             %span Download #{data.toolbelt.version} for Enterprise Linux 7
       .installation-instructions
         %h3 Installation Instructions
@@ -138,162 +146,132 @@ layout: layout
             %strong EL 7
             %span= data.toolbelt.os.centos['7']
 
-  .container.markdown-document
-    %h2 Getting Started With Aptible Toolbelt
+  .container.aptible-toolbelt
+    .grid-container.grid--2up.grid-container--ruled
+      .grid-item
+        %h3.heading__subtitle Getting Started
+        %h2.heading__title Logging In
+        %p.heading__summary
+          Once installed, you'll have access to the aptible command from your
+          command shell. Log in using the email address and password you used
+          when creating your Aptible account:
 
-    .toolbelt-section.row
-      .col-xs-5
-        %h3 Login
-        %p Once installed, you'll have access to the aptible command from your command shell. Log in using the email address and password you used when creating your Aptible account:
+      .grid-item
+        %pre.highlight.plaintext
+          %table.rouge-table
+            %tr
+              %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+                .terminal $ aptible login
+                .terminal-interactive Email: skylar@aptible.com
+                .terminal-interactive Password:
+                .terminal-interactive 2FA Token: 555999
+                .terminal-response Success! Token written to $HOME/.aptible/tokens.json
 
-      .col-xs-6.col-xs-offset-1
-        .console
-          %header.console-title-bar
-            %span.osx-button
-            %span.osx-button
-            %span.osx-button
-          %code.console-body
-            .console-group
-              .console-row $ aptible login
-            .console-group
-              .console-row
-                %span.subdued-color Email:
-                %span skylar@aptible.com
-              .console-row
-                %span.subdued-color Password:
-              .console-row
-                %span.subdued-color 2FA Token:
-                %span 555999
-            .console-group
-              .console-row
-                %span.success-color Success! Token written to $HOME/.aptible/tokens.json
+    .grid-container.grid--2up.grid-container--ruled
+      .grid-item
+        %h3.heading__subtitle Getting Started
+        %h2.heading__title Create an App
+        %p.heading__summary
+          You're now ready to create your first Aptible app. Use the
+          %code aptible apps:create
+          command to create an app.  Once the app is created, you’ll be shown
+          a git remote you can push your app to.
 
+      .grid-item
+        %pre.highlight.plaintext
+          %table.rouge-table
+            %tr
+              %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+                .terminal $ aptible apps:create healthco-on-rails
+                .terminal-interactive healthco-on-rails created successfully!
+                .terminal-interactive git remote:
+                .terminal-response git@beta.aptible.com:healthco-on-rails.git
 
-    .toolbelt-section.row
-      .col-xs-5
-        %h3 Create an App
-        %p You're now ready to create your first app
-      .col-xs-6.col-xs-offset-1
-        .console
-          %header.console-title-bar
-            %span.osx-button
-            %span.osx-button
-            %span.osx-button
-          %code.console-body
-            .console-group
-              .console-row $ aptible apps:create healthco-on-rails
-            .console-group
-              .console-row
-                %span.success-color healthco-on-rails created successfully!
-            .console-group
-              .console-row
-                %span.subdued-color git remote:
-              .console-row git@beta.aptible.com:healthco-on-rails.git
+    .grid-container.grid--single-center
+      .grid-item
+        %h2.heading__title.heading__title--centered Full CLI Command Reference
 
-    .toolbelt-section.row
-      .col-xs-12
-        %h3 Full CLI Command Reference
-        .console
-          %header.console-title-bar
-            %span.osx-button
-            %span.osx-button
-            %span.osx-button
-          %code.console-body
-            .console-group
-              .console-row $ aptible help
-            .clearfix
-              .console-group.split{ style: 'width: 300px;' }
-                .console-row aptible apps
-                .console-row aptible apps:create HANDLE
-                .console-row aptible apps:deprovision
-                .console-row aptible apps:scale TYPE NUMBER
-                .console-row aptible config
-                .console-row aptible config:add
-                .console-row aptible config:rm
-                .console-row aptible config:set
-                .console-row aptible config:unset
-                .console-row aptible db:clone SOURCE DEST
-                .console-row aptible db:create HANDLE
-                .console-row aptible db:deprovision HANDLE
-                .console-row aptible db:dump HANDLE
-                .console-row aptible db:execute HANDLE SQL_FILE
-                .console-row aptible db:list
-                .console-row aptible db:tunnel HANDLE
-                .console-row aptible domains
-                .console-row aptible help [COMMAND]
-                .console-row aptible login
-                .console-row aptible logs
-                .console-row aptible ps
-                .console-row aptible rebuild
-                .console-row aptible restart
-                .console-row aptible ssh [COMMAND]
-                .console-row aptible version
-              .console-group.split{ style: 'width: 450px;'}
-                .console-row
-                  %span.subdued-color # List all applications
-                .console-row
-                  %span.subdued-color # Create a new application
-                .console-row
-                  %span.subdued-color # Deprovision an app
-                .console-row
-                  %span.subdued-color # Scale app to NUMBER of instances
-                .console-row
-                  %span.subdued-color # Print an app's current configuration
-                .console-row
-                  %span.subdued-color # Add an ENV variable to an app
-                .console-row
-                  %span.subdued-color # Remove an ENV variable from an app
-                .console-row
-                  %span.subdued-color # Alias for config:add
-                .console-row
-                  %span.subdued-color # Alias for config:rm
-                .console-row
-                  %span.subdued-color # Clone a database to create a new one
-                .console-row
-                  %span.subdued-color # Create a new database
-                .console-row
-                  %span.subdued-color # Deprovision a database
-                .console-row
-                  %span.subdued-color # Dump a remote database to file
-                .console-row
-                  %span.subdued-color # Executes sql against a database
-                .console-row
-                  %span.subdued-color # List all databases
-                .console-row
-                  %span.subdued-color # Create a local tunnel to a database
-                .console-row
-                  %span.subdued-color # Print an app's current virtual domains
-                .console-row
-                  %span.subdued-color # Describe available commands or one specific command
-                .console-row
-                  %span.subdued-color # Log in to Aptible
-                .console-row
-                  %span.subdued-color # Follows logs from a running app
-                .console-row
-                  %span.subdued-color # Display running processes for an app - DEPRECATED
-                .console-row
-                  %span.subdued-color # Rebuild an app, and restart its services
-                .console-row
-                  %span.subdued-color # Restart all services associated with an app
-                .console-row
-                  %span.subdued-color # Run a command against an app
-                .console-row
-                  %span.subdued-color # Print Aptible CLI version
+        %pre.highlight.plaintext
+          %table.rouge-table.rouge-table--full-width
+            %tbody
+              %tr
+                %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+                  .terminal $ aptible help
+                  .terminal Commands:
+                  .terminal &nbsp; aptible apps
+                  .terminal &nbsp; aptible apps:create HANDLE
+                  .terminal &nbsp; aptible apps:deprovision
+                  .terminal &nbsp; aptible apps:scale TYPE NUMBER
+                  .terminal &nbsp; aptible backup:list DB_HANDLE
+                  .terminal &nbsp; aptible backup:restore [--handle HANDLE] [--size SIZE_GB]
+                  .terminal &nbsp; aptible config
+                  .terminal &nbsp; aptible config:add
+                  .terminal &nbsp; aptible config:rm
+                  .terminal &nbsp; aptible config:set
+                  .terminal &nbsp; aptible config:unset
+                  .terminal &nbsp; aptible db:backup HANDLE
+                  .terminal &nbsp; aptible db:clone SOURCE DEST
+                  .terminal &nbsp; aptible db:create HANDLE
+                  .terminal &nbsp; aptible db:deprovision HANDLE
+                  .terminal &nbsp; aptible db:dump HANDLE
+                  .terminal &nbsp; aptible db:execute HANDLE SQL_FILE
+                  .terminal &nbsp; aptible db:list
+                  .terminal &nbsp; aptible db:tunnel HANDLE
+                  .terminal &nbsp; aptible domains
+                  .terminal &nbsp; aptible help [COMMAND]
+                  .terminal &nbsp; aptible login
+                  .terminal &nbsp; aptible logs
+                  .terminal &nbsp; aptible ps
+                  .terminal &nbsp; aptible rebuild
+                  .terminal &nbsp; aptible restart
+                  .terminal &nbsp; aptible ssh [COMMAND]
+                  .terminal &nbsp; aptible version
+                %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+                  .terminal-interactive &nbsp;
+                  .terminal-interactive &nbsp;
+                  .terminal-interactive # List all applications
+                  .terminal-interactive # Create a new application
+                  .terminal-interactive # Deprovision an app
+                  .terminal-interactive # Scale app to NUMBER of instances
+                  .terminal-interactive # List backups for a database
+                  .terminal-interactive # Restore a backup
+                  .terminal-interactive # Print an app's current configuration
+                  .terminal-interactive # Add an ENV variable to an app
+                  .terminal-interactive # Remove an ENV variable from an app
+                  .terminal-interactive # Alias for config:add
+                  .terminal-interactive # Alias for config:rm
+                  .terminal-interactive # Backup a database
+                  .terminal-interactive # Clone a database to create a new one
+                  .terminal-interactive # Create a new database
+                  .terminal-interactive # Deprovision a database
+                  .terminal-interactive # Dump a remote database to file
+                  .terminal-interactive # Executes sql against a database
+                  .terminal-interactive # List all databases
+                  .terminal-interactive # Create a local tunnel to a database
+                  .terminal-interactive # Print an app's current virtual domains
+                  .terminal-interactive # Describe available commands or one specific command
+                  .terminal-interactive # Log in to Aptible
+                  .terminal-interactive # Follows logs from a running app
+                  .terminal-interactive # Display running processes for an app - DEPRECATED
+                  .terminal-interactive # Rebuild an app, and restart its services
+                  .terminal-interactive # Restart all services associated with an app
+                  .terminal-interactive # Run a command against an app
+                  .terminal-interactive # Print Aptible CLI version
 
-    .toolbelt-section.row
-      .col-xs-6
-        %h3 Toolbelt Support Topics
-        %p
+    .grid-container.grid--2up
+      .grid-item
+        %h2.heading__title Toolbelt Support Topics
+        %p.heading__summary
           Additional documentation for using the Toolbelt is available on the
-          %a{ href: '/support/topics/cli' } Aptible Toolbelt topic page.
+          <a href='/support/topics'>Aptible Toolbelt topic page</a>.
         %ul.additional-topics
           - data.topics["Aptible CLI"].articles.each do |article|
             - next if article.hidden
             %li
               %a.category-article{ href: "/support/topics/#{article.url}" }= article.title
 
-      .col-xs-6
-        %h3 Aptible Toolbelt on GitHub
+      .grid-item
+        %h2.heading__title Aptible Toolbelt on GitHub
         %p The Aptible Toolbelt is open source and available on GitHub
         %ul.additional-topics
           %li

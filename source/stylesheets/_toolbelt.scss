@@ -1,0 +1,72 @@
+.aptible-toolbelt {
+  .heading__subtitle {
+    color: $blue-steel;
+    font-size: 16px;
+    font-weight: $light;
+  }
+  .heading__title {
+    color: $dark-blue-steel;
+    font-size: 30px;
+    font-weight: $semibold;
+    &::after { background-color: $light-blue; }
+  }
+  .heading__summary {
+    color: $light-blue-gray;
+    font-size: 20px;
+    font-weight: $light;
+  }
+  .grid-item > pre {
+    transform: translateY(50px);
+  }
+}
+
+.toolbelt-platforms {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.toolbelt-platform {
+  background-color: $white;
+  border-color: $lighter-blue;
+  margin-bottom: flex-gutter();
+  padding: 20px;
+  transition-property: background-color, border-color;
+  transition-duration: $base-duration;
+  transition-timing-function: $base-timing;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0;
+  }
+  .card__body {
+    height: 120px;
+  }
+
+  &.active, &:hover, &:focus {
+    background-color: $lighter-blue;
+    border-color: $lighter-blue;
+    outline: none;
+  }
+}
+
+.toolbelt-platform--logo {
+  text-align: center;
+  height: 100px;
+}
+
+.download-panels {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.download-panel {
+  background-color: $lighter-blue;
+  border-color: $lighter-blue;
+  display: none;
+  &:target {
+    display: block;
+  }
+}
