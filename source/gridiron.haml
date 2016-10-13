@@ -4,12 +4,10 @@
 
     .grid-container.grid--2up
       .grid-item.product-page__hero-header
-        %h2.heading__subtitle Manage HIPAA Compliance
+        %h2.heading__subtitle Manage Security & Compliance
         %h1.heading__title Gridiron
         %p.heading__summary--light-blue
-          Aptible Gridiron enables your digital health organization to
-          implement an entire HIPAA business associate compliance program for
-          a fraction of the cost of traditional methods.
+          Aptible Gridiron helps engineering teams set up and run robust security and compliance programs.
 
         %p.heading__summary--light-blue
           %a.btn{ href: open_account_href } Open a Development Account
@@ -22,53 +20,58 @@
   .grid-container.grid--single-center
     .grid-item
       %h2.heading--single-center
-        Having both your technology stack and compliance program centralized
-        makes the process of maintaining your HIPAA documentation more accurate
-        and efficient.
+        "We take security seriously" is bullsh*t.
       %p.summary--adjacent.summary--single-center
-        Gridiron will walk you through each part of HIPAA compliance, including
-        the Security Rule and Privacy Rule to make sure your organization is
-        covering everything that is required.
+        Easy to say, hard to do. Good security takes attention to detail, and running a great security management program is difficult: complicated, time-consuming, repetetive, and boring – even more so when you add HIPAA, SOC, ISO, and other compliance requirements. 
+        %br
+        %br
+        Small software engineering teams struggle to understand security requirements and translate rules into action. Growing teams struggle to track and consistently execute security activities.
+        %br
+        %br
+        Until now.
 
   -# = partial 'images/gridiron-graph.svg'
 .content.content--capped.gridiron__threat-model
   .grid-container.grid--2up
     .grid-item
-      .heading__subtitle Model and Manage Threats
-      %h2.heading__title.heading__title--dark Model Threats in Real Time
+      -# .heading__subtitle Model and Manage Threats
+      %h2.heading__title.heading__title--dark Meet Gridiron
       %p.heading__summary.heading__summary--light-blue-gray
-        With Aptible, your HIPAA-mandated risk assessment maps to your
-        technology stack in real time. Our risk analysis methodology is
-        designed for high-security environments, and was developed in
-        conjunction with the Department of Defense and the Office of the
-        Director of National Intelligence.
+        Aptible Gridiron is a modern security management platform for cloud-based software engineering teams. 
   %img.angle-cap--bottom{ src: '/images/angle-cap-bottom.svg' }
 
 .content.content--capped.gridiron__policies-procedures
   .grid-container.grid--2up-flex
     .grid-item
-      .heading__subtitle HIPAA Policies Customized to your Company
-      %h2.heading__title.heading__title--dark Policies & Procedures
+      -# .heading__subtitle Powerful Tools
+      %h2.heading__title.heading__title--dark Solve for Compliance
       %p.heading__summary.heading__summary--light-blue-gray
-        Finding a canned list of policies and procedures on the Internet is
-        easy. Making sure your internal policies and controls are relevant,
-        accurate, and ready to survive an audit is hard. Aptible policies are
-        specific to web and mobile apps deployed in the cloud and are updated
-        to reflect current best practices.
+        Gridiron makes it easy to:
+        %ul
+          %li Analyze and quantify risk
+          %li Select and implement security controls
+          %li Generate sane, relevant security and compliance policies
+          %li Train your workforce in security and secure coding practices 
+          %li Respond to security and privacy incidents
+          %li Manage risk from your vendors and supply chain
+          %li Conduct internal audits and compliance status checks
+          %li Prepare for external audits and certifications
+
     .grid-item.grid-item--image
       = partial 'images/gridiron-features/policies-procedures.svg'
 
 .content.content--capped.gridiron__workforce-training
   .grid-container.grid--2up-flex
     .grid-item
-      .heading__subtitle Understanding Compliance
-      %h2.heading__title.heading__title--dark Workforce Training
+      -# .heading__subtitle Easy Management
+      %h2.heading__title.heading__title--dark You look like an all-star
       %p.heading__summary.heading__summary--light-blue-gray
-        Your entire team - from your HIPAA Security Officer to your developers
-        and general workforce members - receives role-based training. Our
-        online training system makes tracking employee progress extremely easy.
-        All completed training is auditable, making it easy to demonstrate
-        compliance.
+        %ul
+          %li Get your team HIPAA-compliant or ready for SOC, ISO, PCI certification in days, not months
+          %li Get your product to market with live data fast
+          %li Assure your customers their data is safe with you
+          %li Unlock enterprise markets and big sales contracts
+    
     .grid-item.grid-item--image
       = partial 'images/gridiron-features/workforce-training.svg'
   %img.angle-cap--bottom{ src: '/images/angle-cap-bottom.svg' }
