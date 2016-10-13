@@ -13,8 +13,7 @@ description: "Aptible plans and pricing"
     .grid-container.pricing-page-header
       .centered-header.centered-header--wide
         %h1.heading__title
-          Get a pay-as-you-go development account to see
-          how easy Aptible is to use
+          Plans and Pricing
 
 .content
   .pricing-tiers.grid-container
@@ -25,8 +24,12 @@ description: "Aptible plans and pricing"
         .pricing-tier__subtitle Pay as you go
         .pricing-tier__title Development
       %ul.pricing-tier__checklist.checklist.checklist--blue
-        %li.pricing-tier__checklist-item
-          Shared Tenancy, perfect for development or staging
+        %li.pricing-tier__checklist-item Aptible Enclave deployment platform
+        %li.pricing-tier__checklist-item No contracts, no commitments
+        %li.pricing-tier__checklist-item $500 credit towards usage for new accounts
+        %li.pricing-tier__checklist-item Shared tenancy
+        %li.pricing-tier__checklist-item Ideal for development or staging
+        %li.pricing-tier__checklist-item Easy to upgrade when you are ready for a dedicated stack
 
     .pricing-tier
       %header.pricing-tier__header
@@ -34,12 +37,14 @@ description: "Aptible plans and pricing"
           = partial 'images/enclave.svg'
         .pricing-tier__subtitle
           %span.pricing-tier__price 999
-          \/ month
+          \/ month base, annual contract
         .pricing-tier__title Platform
       %ul.pricing-tier__checklist.checklist.checklist--blue
-        %li.pricing-tier__checklist-item Gravity Deployment Platform
-        %li.pricing-tier__checklist-item Pay-as-you-go pricing
-        %li.pricing-tier__checklist-item 24/7 Incident  monitoring
+        %li.pricing-tier__checklist-item Aptible Enclave deployment platform
+        %li.pricing-tier__checklist-item Dedicated, isolated Enclave stack
+        %li.pricing-tier__checklist-item Includes HIPAA BAA, SLA, Breach Indemnification
+        %li.pricing-tier__checklist-item 24/7 ops and incident monitoring
+        %li.pricing-tier__checklist-item Base fee includes 6 GB RAM for app/database containers; 1 TB encrypted database disk, including backups; 4 SSL/TLS endpoints
 
     .pricing-tier
       %header.pricing-tier__header
@@ -49,13 +54,15 @@ description: "Aptible plans and pricing"
           = partial 'images/gridiron.svg'
         .pricing-tier__subtitle
           %span.pricing-tier__price 1,999
-          \/ month
+          \/ month base, annual contract
         .pricing-tier__title Pilot
       %ul.pricing-tier__checklist.checklist.checklist--blue
-        %li.pricing-tier__checklist-item
-          Gravity Deployment Platform
-        %li.pricing-tier__checklist-item
-          Gridiron self-service compliance management system
+        %li.pricing-tier__checklist-item Aptible Enclave + Aptible Gridiron
+        %li.pricing-tier__checklist-item Dedicated, isolated Enclave stack
+        %li.pricing-tier__checklist-item Includes HIPAA BAA, SLA, Breach Indemnification
+        %li.pricing-tier__checklist-item 24/7 ops and incident monitoring
+        %li.pricing-tier__checklist-item Base fee includes 6 GB RAM for app/database containers; 1 TB encrypted database disk, including backups; 4 SSL/TLS endpoints
+        %li.pricing-tier__checklist-item Premium support included
 
     .pricing-tier
       %header.pricing-tier__header
@@ -66,25 +73,23 @@ description: "Aptible plans and pricing"
         .pricing-tier__subtitle Custom Pricing
         .pricing-tier__title Managed
       %ul.pricing-tier__checklist.checklist.checklist--blue
-        %li.pricing-tier__checklist-item Gravity Deployment Platform
-        %li.pricing-tier__checklist-item Pay-as-you-go pricing
-        %li.pricing-tier__checklist-item 24/7 Incident  monitoring
-        %li.pricing-tier__checklist-item Nightly encrypted Backups
-        %li.pricing-tier__checklist-item Business-level Support Plan
-        %li.pricing-tier__checklist-item
-          Compatable with all languages and frameworks
+        %li.pricing-tier__checklist-item Aptible Enclave + Aptible Gridiron
+        %li.pricing-tier__checklist-item Dedicated audit assistance
+        %li.pricing-tier__checklist-item Custom MSA, BAA, SLAs available
+        %li.pricing-tier__checklist-item High-volume unit pricing
+        %li.pricing-tier__checklist-item Premium support included
 
   .unit-pricing-components.grid-container.grid--single-center.grid-container--bordered
     .grid-item
       %h2.unit-pricing-components__title Unit Pricing
       %p.unit-pricing-components__summary
-        All plans are scalable on demand, just pay for what you use:
+        All Enclave plans scale on demand, just pay for what you use:
       .unit-pricing-components__container
         .unit-pricing-component.unit-pricing-component--containers
           .unit-pricing-component--icon
             = partial 'images/feature-icons/containers.svg'
           .unit-pricing-component--item App & Database Containers
-          .unit-pricing-component--price $0.08/GB/hour
+          .unit-pricing-component--price $0.08/GB RAM/hour
 
         .unit-pricing-component.unit-pricing-component--disk
           .unit-pricing-component--icon
@@ -111,18 +116,18 @@ description: "Aptible plans and pricing"
 
       %a.btn{ href: open_account_href } Open Your Account
 
+  -# .grid-container.grid--single-center
+  -#   .grid-item.grid-item--adjacent
+  -#     %h2.heading--single-center Included in all Aptible Plans
+  -#     %p.summary--single-center
+  -#       No contracts, no risk. Open a Development Account today with
+  -#       $500 free credit.
+
+  -# = partial 'partials/enclave-features'
+
   .grid-container.grid--single-center
     .grid-item.grid-item--adjacent
-      %h2.heading--single-center Included in all Aptible Plans
-      %p.summary--single-center
-        No contracts, no risk. Open a Development Account today with
-        $500 free credit.
-
-  = partial 'partials/enclave-features'
-
-  .grid-container.grid--single-center
-    .grid-item.grid-item--adjacent
-      %h2.heading--single-center Custom Support Plans
+      %h2.heading--single-center Support Plans
 
   .support-pricing-tiers.grid-container.grid-container--bordered
     .support-pricing-tier
@@ -130,7 +135,7 @@ description: "Aptible plans and pricing"
       %h2.support-pricing-tier__name Business
       %ul.checklist.checklist--blue
         %li Normal severity response times in 12 hours or less
-        %li Email and portal channels
+        %li Manage tickets via email and web portal
         %li Included with every account
 
 
@@ -138,10 +143,9 @@ description: "Aptible plans and pricing"
       %h3.support-pricing-tier__summary Dedicated slack channel
       %h2.support-pricing-tier__name Premium
       %ul.checklist.checklist--blue
-        %li Dedicated slack channel
+        %li Dedicated, private Slack channel
         %li Urgent severity response times in 1 hour or less
-        %li Administrative portal access to manage tickets
-        %li Email, portal, and slack channels
+        %li Administrative portal access to manage all tickets
 
       %img.support-pricing-tier__slack{ src: '/images/slack.svg' }
 
@@ -153,10 +157,10 @@ description: "Aptible plans and pricing"
         %li Dedicated Support Engineer
         %li Dedicated Technical Account Manager
         %li Critical issue response times in 15 minutes or less
-        %li Included base VPN and architecture support
-        %li Email, portal, slack, and phone channels
+        %li Includes base VPN and architecture support
+        %li Email, portal, Slack, and phone channels
 
       %img.support-pricing-tier__slack{ src: '/images/slack.svg' }
 
     .grid-container--bordered__tray.gri-item
-      %a.btn{ href: '/support-plans' } Learn more about custom support
+      %a.btn{ href: '/support-plans' } Learn More About Support
