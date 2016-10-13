@@ -2,58 +2,102 @@
   .enclave-feature.grid-item
     %h4.enclave-feature__title Network Isolation
     %p.enclave-feature__summary
-      In an Aptible dedicated environment, the entire infrastructure is deployed in your own private VPC: app containers, databases, load balancers — even the internal Aptible services necessary to deliver platform functionality. None of these resources are shared with other Aptible customers.
+      In an Aptible dedicated environment, the entire infrastructure is
+      deployed in your own private VPC: app containers, databases, load
+      balancers — even the internal Aptible services necessary to deliver
+      platform functionality. None of these resources are shared with other
+      Aptible customers.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title Managed Databases
     %p.enclave-feature__summary
-      Aptible supports 7 different database technologies: PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, CouchDB and RabbitMQ. If you need a new database container, just click a button! We support replication/clustering for PostgreSQL, MySQL, MongoDB and Redis.
+      Aptible supports 7 different database technologies: PostgreSQL, MySQL,
+      MongoDB, Redis, Elasticsearch, CouchDB and RabbitMQ. If you need a new
+      database container, just click a button! We support
+      replication/clustering for PostgreSQL, MySQL, MongoDB and Redis.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title Database Encryption
     %p.enclave-feature__summary
-      Every Aptible Managed Database is encrypted at rest using AES-192 encryption and with a unique key per database. For all databases that natively support SSL, Aptible enforces encryption in transit — so you can be sure your records are safe, no matter how your apps are configured.
+      Every Aptible Managed Database is encrypted at rest using AES-192
+      encryption and with a unique key per database. For all databases that
+      natively support SSL, Aptible enforces encryption in transit — so you
+      can be sure your records are safe, no matter how your apps are
+      configured.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title Encrypted Backups
     %p.enclave-feature__summary
-      Databases are automatically backed up every 24 hours, and each backup is replicated across 2 AWS regions. Additional backups can be triggered on-demand any time. You can easily restore from any backup using the Aptible CLI.
+      Databases are automatically backed up every 24 hours, and each backup is
+      replicated across 2 AWS regions. Additional backups can be triggered on-
+      demand any time. You can easily restore from any backup using the
+      Aptible CLI.
+
   .enclave-feature.grid-item
     %h4.enclave-feature__title HTTPS Endpoints
     %p.enclave-feature__summary
-      Don't panic the next time an OpenSSL vulnerability is announced. On Aptible, all web traffic goes through Aptible HTTPS Endpoints, which securely balance traffic across your apps' containers. You can bring a custom SSL certificate or choose a Managed HTTPS Endpoint, leaving certificate procurement and renewal to us.
+      Don't panic the next time an OpenSSL vulnerability is announced. On
+      Aptible, all web traffic goes through Aptible HTTPS Endpoints, which
+      securely balance traffic across your apps' containers. You can bring a
+      custom SSL certificate or choose a Managed HTTPS Endpoint, leaving
+      certificate procurement and renewal to us.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title Scaling and High Availability
     %p.enclave-feature__summary
-      If you've deployed an app on Aptible, you've already done all the work necessary to support horizontal and vertical scaling. You choose the size of each container, as well as the number of containers necessary to run your app. We take care of scaling your containers across Availability Zones with zero downtime.
+      If you've deployed an app on Aptible, you've already done all the work
+      necessary to support horizontal and vertical scaling. You choose the
+      size of each container, as well as the number of containers necessary to
+      run your app. We take care of scaling your containers across
+      Availability Zones with zero downtime.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title Remote Access
     %p.enclave-feature__summary
-      Aptible makes it easy for privileged users to access apps and databases from outside the Aptible network. Using the Aptible CLI, users can launch an SSH session against any app, or create a tunnel to any database. Every SSH session and tunnel gets recorded in a permanent audit log that can be reviewed on the Aptible Dashboard.
+      Aptible makes it easy for privileged users to access apps and databases
+      from outside the Aptible network. Using the Aptible CLI, users can
+      launch an SSH session against any app, or create a tunnel to any
+      database. Every SSH session and tunnel gets recorded in a permanent
+      audit log that can be reviewed on the Aptible Dashboard.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title Container Metrics
     %p.enclave-feature__summary
-      Every Aptible app and database container comes with built-in Container Metrics, allowing you to track a container's RAM usage, load, disk I/O and disk usage over time. These metrics are charted for you on the Aptible Dashboard, and can be used to augment app monitoring services like New Relic.
+      Every Aptible app and database container comes with built-in Container
+      Metrics, allowing you to track a container's RAM usage, load, disk I/O
+      and disk usage over time. These metrics are charted for you on the
+      Aptible Dashboard, and can be used to augment app monitoring services
+      like New Relic.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title VPN and VPC Peering
     %p.enclave-feature__summary
-      Working with regulated data often means interfacing with legacy systems and networks. Aptible offers Managed VPN Connections to make it easy to bridge a modern Aptible deployment to an on-premise or non-AWS environment. We also support peering with an existing AWS VPC at no additional charge.
+      Working with regulated data often means interfacing with legacy systems
+      and networks. Aptible offers Managed VPN Connections to make it easy to
+      bridge a modern Aptible deployment to an on-premise or non-AWS
+      environment. We also support peering with an existing AWS VPC at no
+      additional charge.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title Log Management
     %p.enclave-feature__summary
-      Aptible manages the collection and delivery of your apps' logs to any number of log destinations you choose. We support Syslog, HTTPS and Elasticsearch Log Drains. With our CLI, you can even stream logs to your terminal in real time.
+      Aptible manages the collection and delivery of your apps' logs to any
+      number of log destinations you choose. We support Syslog, HTTPS and
+      Elasticsearch Log Drains. With our CLI, you can even stream logs to your
+      terminal in real time.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title Two-factor Authentication
     %p.enclave-feature__summary
-      Compromised credentials are one of the biggest threats to data security for modern web companies. That's why Aptible makes it easy to enforce two-factor authentication for all access to the Aptible platform, whether from the Dashboard or the CLI.
+      Compromised credentials are one of the biggest threats to data security
+      for modern web companies. That's why Aptible makes it easy to enforce
+      two-factor authentication for all access to the Aptible platform,
+      whether from the Dashboard or the CLI.
 
   .enclave-feature.grid-item
     %h4.enclave-feature__title Role-based Access Controls
     %p.enclave-feature__summary
-      Define as many roles as you need to represent your company's functional roles and privilege requirements. Segment your apps and databases into separate logical environments and restrict access separately on each environment. There's no charge for additional roles or environments.
+      Define as many roles as you need to represent your company's functional
+      roles and privilege requirements. Segment your apps and databases into
+      separate logical environments and restrict access separately on each
+      environment. There's no charge for additional roles or environments.
