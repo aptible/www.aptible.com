@@ -92,3 +92,5 @@
   url: /support/topics/troubleshooting/endpoint-not-responding
 - loc: /support/topics/paas/how-to-add-external-domain/
   url: /support/topics/paas/how-to-add-internal-or-external-endpoint
+- loc: /company/resources/index.html
+  url: /media

@@ -1,0 +1,101 @@
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav', locals: { |
+        section_title: 'Media Kit',          |
+        section_url: '/media'                |
+      }                                      |
+    .grid-container
+      %h1.heading__title--centered Media Kit
+
+.content
+  .grid-container.grid--3up
+    .card.grid-item.card--media
+      .card__header
+        %img{ src: "/press-kit/color/web-horizontal-color-750.png" }
+      .card__body
+        %h3 Aptible Logo - Color
+        %p
+          %a{ href: "/press-kit/color/web-horizontal-color.ai", target: "_blank" } Download .ai
+        %p
+          %a{ href: "/press-kit/color/web-horizontal-color-750.png", target: "_blank" } Download .png
+
+    .card.grid-item.card--media
+      .card__header
+        %img{ src: "/press-kit/white/web-horizontal-white-750.png" }
+      .card__body
+        %h3 Aptible Logo - White
+        %p
+          %a{ href: "/press-kit/white/web-horizontal-white.ai", target: "_blank" } Download .ai
+        %p
+          %a{ href: "/press-kit/white/web-horizontal-white-750.png", target: "_blank" } Download .png
+
+
+    .card.grid-item.card--media
+      .card__header
+        %h3 Aptible Press Kit
+      .card__body
+        %h3 Press Kit
+        %p
+          %a{ href: "/press-kit/aptible_press_kit.zip", target: "_blank" } Download .zip
+
+
+  .grid-container.grid--single-center
+    .grid-item.grid-item--adjacent
+      %h2.heading--single-center HIPAA-Compliant. Powered by Aptible.
+      %p.summary--single-center
+        Feel free to use these badges on your site. We suggest linking the
+        image to <a href="https://www.aptible.com">aptible.com</a>.
+
+  .grid-container.grid--3up
+    .card.grid-item.card--media
+      .card__header
+        %img{ src: "/press-kit/badges/solid-dark/solid-dark.svg" }
+      .card__body
+        %h3 HIPAA Badge - Solid Dark
+        %p
+          %a{ href: "/press-kit/badges/solid-dark/solid-dark.ai", target: "_blank" } Download .ai
+        %p
+          %a{ href: "/press-kit/badges/solid-dark/solid-dark.png", target: "_blank" } Download .png
+
+    .card.grid-item.card--media
+      .card__header
+        %img{ src: "/press-kit/badges/solid-blue/solid-blue.svg" }
+      .card__body
+        %h3 HIPAA Badge - Solid Blue
+        %p
+          %a{ href: "/press-kit/badges/solid-blue/solid-blue.ai", target: "_blank" } Download .ai
+        %p
+          %a{ href: "/press-kit/badges/solid-blue/solid-blue.png", target: "_blank" } Download .png
+
+    .card.grid-item.card--media
+      .card__header
+        %img{ src: "/press-kit/badges/solid-light/solid-light.svg" }
+      .card__body
+        %h3 HIPAA Badge - Solid Light
+        %p
+          %a{ href: "/press-kit/badges/solid-light/solid-light.ai", target: "_blank" } Download .ai
+        %p
+          %a{ href: "/press-kit/badges/solid-light/solid-light.png", target: "_blank" } Download .png
+
+    .card.grid-item.card--media
+      .card__header
+        %img{ src: "/press-kit/badges/outline-dark/outline-dark.svg" }
+      .card__body
+        %h3 HIPAA Badge - Outline Dark
+        %p
+          %a{ href: "/press-kit/badges/outline-dark/outline-dark.ai", target: "_blank" } Download .ai
+        %p
+          %a{ href: "/press-kit/badges/outline-dark/outline-dark.png", target: "_blank" } Download .png
+
+    .card.grid-item.card--media
+      .card__header
+        %img{ src: "/press-kit/badges/outline-light/outline-light.svg" }
+      .card__body
+        %h3 HIPAA Badge - Outline Light
+        %p
+          %a{ href: "/press-kit/badges/outline-light/outline-light.ai", target: "_blank" } Download .ai
+        %p
+          %a{ href: "/press-kit/badges/outline-light/outline-light.png", target: "_blank" } Download .png
+
+
+= partial 'partials/resources-footer'
