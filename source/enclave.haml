@@ -114,24 +114,22 @@
           %tr
             %td.rouge-code.rouge-code--no-num.rouge-code--terminal
               .terminal $ aptible apps:create healthco-on-rails
-              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Authorizing...</span>
-              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Creating app...</span>
-              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: healthco-on-rails created successfully.</span>
+              .terminal-interactive <span class="terminal-response">INFO: Authorizing...</span>
+              .terminal-interactive <span class="terminal-response">INFO: healthco-on-rails created successfully.</span>
               .terminal &nbsp;
               .terminal &nbsp;
               .terminal $ git remote add aptible git@beta.aptible.com:healthco-on-rails.git
               .terminal $ git push aptible master
               .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Authorizing...</span>
-              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Initiating deploy...</span>
               .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Deploy succeeded.</span>
               .terminal &nbsp;
               .terminal &nbsp;
               .terminal $ aptible logs --app healthco-on-rails
               .terminal-interactive Connected to logs from log-tail-feelsgoodman
-              .terminal-response 2016-10-01T16:39:17.720Z [compliance.aptible.com-web] I, [2016-10-01T16:39:17.720261 #9]  INFO -- : Started GET "/" for 0.0.0.0 at 2016-10-01 16:39:17 +0000
-              .terminal-response 2016-10-01T16:39:17.722Z [compliance.aptible.com-web] I, [2016-10-01T16:39:17.722171 #9]  INFO -- : Processing by PagesController#show as HTML
-              .terminal-response 2016-10-01T16:39:18.364Z [compliance.aptible.com-web] I, [2016-10-01T16:39:18.364582 #9]  INFO -- :   Rendered healthco-web/index.haml.erb (0.7ms)
-              .terminal-response 2016-10-01T16:39:19.761Z [compliance.aptible.com-web] I, [2016-10-01T16:39:19.761016 #9]  INFO -- : Completed 200 OK in 0.9ms
+              .terminal-response 2016-10-01T16:39:17.720Z [healthco-on-rails-web] => Booting WEBrick
+              .terminal-response 2016-10-01T16:39:17.722Z [healthco-on-rails-web] => Rails 4.2.7.1 application starting in production on http://0.0.0.0:3000
+              .terminal-response 2016-10-01T16:39:18.364Z [healthco-on-rails-web] => Run `rails server -h` for more startup options
+              .terminal-response 2016-10-01T16:39:19.761Z [healthco-on-rails-web] => Ctrl-C to shutdown server
 
     .grid-item.grid-item--one-third.meet-enclave__copy
       %h3.meet-enclave-title Meet the Enclave Deployment Platform
@@ -140,7 +138,7 @@
           Create and configure apps and databases directly from the
           %a{ href: "/support/toolbelt"} Aptible Toolbelt
         .meet-enclave-step__item
-          Simple git-based, zero-downtime deployments
+          Simply "git push" for a zero-downtime deployment
         .meet-enclave-step__item
           Stream app logs directly to your console
 
