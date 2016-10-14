@@ -2,7 +2,7 @@
 header_search: true
 categories:
   quickstart:
-    title: Getting Started Guides
+    title: Quickstart Guides
     svg: quickstart.svg
     url: /support/quickstart
     summary:
@@ -22,8 +22,7 @@ categories:
   .grid-container.grid--2up
     - current_page.data.categories.each do |category_name, category|
       %a.grid-item.card{ href: category['url'], class: category['svg'] }
-        .card__header
+        .card__icon
+          = partial "images/icons/#{category['svg']}"
+        .card__body.card__body--centered
           %h3.card__title= category['title']
-          .card__icon
-            = partial "images/icons/#{category['svg']}"
-        .card__body= category['summary'] || lorem.paragraph
