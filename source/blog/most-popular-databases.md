@@ -12,7 +12,7 @@ posts: true
 
 One of the things we have noticed in working with a variety of digital health companies is that there is much more willingness to explore database technologies when architechting a new application.  While developing in a new language typically takes a serious investment and will greatly slow initial progress, a different database variant may present lots of benefits with a minimal learning curve.  As such, I expect we'll see some interesting trends emerge as we repeat this survey over the coming months and years.
 
-For this survey, we examined the database layer for applications deployed on Aptible. The pupulation of databases is limited by what Aptible (and AWS) support. That said, we are very quick to add support for any database requested by users. 
+For this survey, we examined the database layer for applications deployed on Aptible. The pupulation of databases is limited by what Aptible (and AWS) support. That said, we are very quick to add support for any database requested by users.
 
 <div id="piechart"></div>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -44,7 +44,7 @@ For this survey, we examined the database layer for applications deployed on Apt
 
 As this is the first time we have collected this data, we can’t make any definitive claims about trends. However, DB-Engine is a great source for [trends in database popularity](http://db-engines.com/en/ranking). [Their methodology](http://db-engines.com/en/ranking_definition), however is much squishier than our directly measured metrics.
 
-<table style="margin: 0 auto 20px auto;">
+<table style="margin: 0 0 20px 25%;" class="simple-ranking-table">
   <thead>
     <tr><th colspan="2">DB-Engine October 2015 Ranking</th></tr>
   </thead>

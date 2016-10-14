@@ -1,0 +1,50 @@
+.not-ready {
+  display: none;
+}
+.case-study {
+  min-height: 768px;
+  padding: 200px 40px 40px;
+  text-align: left;
+  .heading__title {
+    color: #f9fcff;
+    font-size: 30px;
+    font-weight: $semibold;
+    text-align: left;
+    &::after {
+      background-color: rgba(255,255,255,.5);
+    }
+  }
+  .heading__description {
+    color: #f9fcff;
+    font-size: 18px;
+    font-weight: $regular;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.case-study--thread {
+  background-color: #eb3927;
+  background-image: url(/images/customers/thread-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-top: 0;
+}
+.case-study--thread__iphone {
+  position: relative;
+  top: -20px;
+}
+
+.case-study--telepharm {
+  background-color: #3aa9e0;
+  background-image: url(/images/customers/telepharm-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-top: 382px;
+}
+
+
+.story--pager {
+}

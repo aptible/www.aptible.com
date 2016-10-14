@@ -32,8 +32,6 @@ For this survey, we examined the primary language for apps deployed on Aptible. 
 
     var options = {
       colors: ['#dc3912', '#36c', '#f90', '#109618', '#909', '#0099c6'],
-      //colors: ['#054d9f', '#0762cb', '#0865cf', '#669ddc', '#adc0d7', '#cce1f9'],
-      //colors: ['#cc342d', '#80bd01', '#ffd343', '#4f5b93', '#333', '#375eab'],
       height: 350,
       pieSliceText: 'label',
       tooltip: { text: 'percentage' }
@@ -68,7 +66,7 @@ As this is the first time we have collected this data, we can’t make any defin
     <tr><td>15</td><td>Go</td></tr>
   </tbody>
 </table>
-<table class="simple-ranking-table clearfix">
+<table class="simple-ranking-table">
   <thead>
     <tr><th colspan="2">BuiltWith Top 10k - Frameworks</th></tr>
   </thead>

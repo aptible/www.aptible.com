@@ -9,7 +9,7 @@ addJobs = (job_data) ->
     link = posting.hostedUrl
 
     posting_html.push([
-      '<div class="card grid-item">',
+      '<div class="card grid-item card--opening">',
         '<div class="card__header">',
           '<h3 class="card__subtitle">',
             team, ' ', location, ' ', commitment,

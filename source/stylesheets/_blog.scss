@@ -121,4 +121,21 @@
   color: $dark-blue-steel;
   letter-spacing: 0px;
   &::after { display: none; }
+  a {
+    color: $action-color;
+  }
+}
+
+.simple-ranking-table {
+  width: 48%;
+  display: inline-block;
+  td {
+    padding: 5px;
+  }
+  tbody td:first-of-type {
+    text-align: right;
+  }
+  tbody tr:nth-child(even) {
+    background-color: $lighter-blue;
+  }
 }
