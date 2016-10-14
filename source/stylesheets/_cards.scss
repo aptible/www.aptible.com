@@ -7,9 +7,10 @@
 }
 
 .card__icon {
-  float: right;
+  margin-bottom: 20px;
+  text-align: center;
   svg {
-    max-width: 35px;
+    height: 50px;
   }
 }
 
@@ -23,15 +24,17 @@
   max-width: 330px;
 }
 
+.card__body--centered {
+  text-align: center;
+}
+
 .card__title {
   color: $dark-blue-steel;
   float: left;
   font-size: 20px;
   font-weight: $semibold;
-  &::after {
-    margin-top: 10px;
-    width: 27px;
-  }
+  margin-bottom: 0;
+  &::after { display: none; }
 }
 
 .card__body {
@@ -40,6 +43,7 @@
 }
 .card__body--on-dark {
   color: tint($light-sky-blue, 75%);
+  height: 50px;
 }
 
 .card--on-dark {
@@ -92,7 +96,9 @@
 }
 .card__title--on-dark {
   color: $white;
+    margin-bottom: 1.5em;
   &::after {
+    display: block;
     margin-top: 15px;
     background-color: $dark-gray;
   }

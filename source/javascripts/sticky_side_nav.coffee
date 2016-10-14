@@ -1,29 +1,18 @@
 $(document).on 'turbolinks:load', ->
   $sideNav = $ '.grid-aside--left .grid-aside'
-  ticking = false
   $win = $ window
-  lastScrollTop = $win.scrollTop()
   $footer = $('.resources-footer')
   $footer = $('.aptible-footer') unless $footer.length > 0
+  $htmlBody = $('html, body')
 
   if $sideNav.length > 0
     sideNavHeight = $sideNav.outerHeight()
     sideNavTop = $sideNav.position().top
     footerTop = $footer.position().top
     fixedNavBoundary = $('header.aptible-header').outerHeight();
-    bottomBoundary = footerTop - sideNavHeight;
-
-    console.log sideNavHeight, footerTop
-
-    onScroll = ->
-      lastScrollTop = $win.scrollTop()
-      requestTick()
-
-    $win.on 'scroll', onScroll
 
     update = ->
-      currentScrollTop = lastScrollTop
-      ticking = false
+      currentScrollTop = $win.scrollTop()
       viewportWidth = $win.width()
 
       if currentScrollTop > fixedNavBoundary && viewportWidth > 768
@@ -40,24 +29,26 @@ $(document).on 'turbolinks:load', ->
         $sideNav.removeClass 'side-nav--stuck'
         $sideNav.css 'top', ''
 
-    requestTick = ->
-      requestAnimationFrame(update) unless ticking
-      ticking = true
+      requestAnimationFrame(update)
 
     update()
-    requestAnimationFrame(update)
 
+    #
+    # Attempt some smooooth scrolling
+    # Don't scroll if a scroll animation is already in progress or they'll
+    # get backed up and super janky.
+    #
     $('.side-nav__to-top').on 'click', ->
-      $('html, body').animate({
-        scrollTop: 0
-      }, 1000)
-      return false;
+      unless $htmlBody.is(':animated')
+        $htmlBody.animate({
+          scrollTop: 0
+        }, 1000)
+        return false;
 
-    $('a[href*="#"]').on 'click', ->
-      requestTick()
-      $target = $(this.hash)
-      if ($target.length)
-        $('html, body').animate({
+    $('a.side-nav__item[href*="#"]').on 'click', ->
+      $target = $ @hash
+      if ($target.length && !$htmlBody.is(':animated'))
+        $htmlBody.animate({
           scrollTop: $target.offset().top - 50
         }, 1000)
         return false;
