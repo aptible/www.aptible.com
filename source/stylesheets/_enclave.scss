@@ -1,3 +1,56 @@
+.enclave-intro {
+  margin-bottom: 50px;
+}
+
+.meet-enclave-title {
+  color: $light-blue;
+  font-size: 26px;
+  font-weight: $semibold;
+  &::after { display: none; }
+}
+
+.meet-enclave {
+  padding: 0;
+}
+.meet-enclave__terminal {
+  margin-bottom: 0;
+  .highlight {
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.07);
+    padding-bottom: 50px;
+  }
+}
+.meet-enclave__copy {
+  @media screen and (max-width: $tablet-landscape) {
+    margin: 30px;
+    width: calc(100% - 60px);
+  }
+}
+.meet-enclave-steps {
+  counter-reset: step;
+  margin-bottom: 20px;
+}
+.meet-enclave-step__item {
+  color: $sky-blue;
+  counter-increment: step;
+  display: block;
+  font-size: 16px;
+  padding-left: 25px;
+  margin-bottom: 1em;
+  &::before {
+    border: 1px solid $blue;
+    border-radius: 8px;
+    content: counter(step);
+    display: inline-block;
+    font-size: 10px;
+    font-weight: $semibold;
+    padding-bottom: 0;
+    position: absolute;
+    transform: translate(-25px, 3px);
+    text-align: center;
+    width: 16px;
+  }
+}
+
 // box shadow for terminal section
 // box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.28);
 .enclave-features {
@@ -11,7 +64,7 @@
   color: $dark-blue-steel;
   font-size: 16px;
   font-weight: $semibold;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   line-height: 1.5;
   &::after { display: none; }
 }
@@ -42,11 +95,4 @@
     font-weight: $light;
     margin-bottom: 50px;
   }
-}
-
-.meet-enclave-title {
-  color: $light-blue;
-  font-size: 26px;
-  font-weight: $semibold;
-  &::after { display: none; }
 }

@@ -47,6 +47,7 @@
   display: flex;
   margin-bottom: 50px;
   @media screen and (max-width: $nav-break) {
+    display: none;
     flex-direction: column;
   }
 }
@@ -115,6 +116,7 @@
   opacity: 0;
   height: 0;
   overflow: hidden;
+  padding: 0;
   transition-property: opacity;
   transition-duration: $base-duration;
   transition-timing-function: $base-timing;
@@ -124,12 +126,16 @@
     padding: 10px 0;
     opacity: 1;
   }
+  @media screen and (max-width: $nav-break) {
+    height: auto;
+    opacity: 1;
+  }
 }
 
 .feature-carousel__illustration {
   text-align: center;
   img {
-    max-width: 100%;
+    height: 350px;
   }
 }
 

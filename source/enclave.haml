@@ -20,7 +20,7 @@
         = partial '/images/enclave.svg'
 
 .content
-  .grid-container
+  .grid-container.not-ready
     .feature-carousel__triggers
       %a.feature-carousel__btn.active{ href: '#stack' }
         = partial 'images/feature-icons/icon-stack.svg'
@@ -99,7 +99,7 @@
     .feature-carousel__illustration.grid-item
       %img{ src: '/images/enclave-features/databases.png' }
 
-.content.hero-gradient--angled
+.content.hero-gradient--angled.enclave-intro
   .grid-container.grid--single-center
     .enclave-demo.grid-item.grid-item--adjacent
       %h2.heading__title--centered
@@ -107,56 +107,61 @@
       %p.heading__summary
         Deploy Docker containers into secure, isolated, HIPAA-ready environments.
 
-  .grid-container.grid--2up-flex
-    .grid-item
+  .grid-container.meet-enclave
+    .grid-item.grid-item--two-thirds.meet-enclave__terminal
       %pre.highlight.plaintext
-        %table.rouge-table
-          %tbody
-            %tr
-              %td.rouge-code.rouge-code--no-num
-                %pre $ mkdir example-docker-app
-                $ cd example-docker-app &amp;&amp; git init .
-                $ aptible apps:create example-docker-app --environment my-env
-                &gt; App example-docker-app created!
-                &gt; Git remote: git@beta.aptible.com:my-env/example-docker-app.git
-                $ aptible config:set APTIBLE_PRIVATE_REGISTRY_HOST=[registry host] APTIBLE_DOCKER_IMAGE=[image name] APTIBLE_PRIVATE_REGISTRY_USERNAME=[username] APTIBLE_PRIVATE_REGISTRY_PASSWORD=[password]
-                $ echo "web: bundle exec rails s" &gt; Procfile
-                $ git add Procfile &amp;&amp; commit -m "test docker pull"
-                $ git remote add aptible git@beta.aptible.com:my-env/example-docker-app.git
-                $ git push aptible master</pre></td></tr></tbody></table>
+        %table.rouge-table.rouge-table--full-width
+          %tr
+            %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+              .terminal $ aptible apps:create healthco-on-rails
+              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Authorizing...</span>
+              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Creating app...</span>
+              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: healthco-on-rails created successfully.</span>
+              .terminal &nbsp;
+              .terminal &nbsp;
+              .terminal $ git remote add aptible git@beta.aptible.com:healthco-on-rails.git
+              .terminal $ git push aptible master
+              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Authorizing...</span>
+              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Initiating deploy...</span>
+              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Deploy succeeded.</span>
+              .terminal &nbsp;
+              .terminal &nbsp;
+              .terminal $ aptible logs --app healthco-on-rails
+              .terminal-interactive Connected to logs from log-tail-feelsgoodman
+              .terminal-response 2016-10-01T16:39:17.720Z [compliance.aptible.com-web] I, [2016-10-01T16:39:17.720261 #9]  INFO -- : Started GET "/" for 0.0.0.0 at 2016-10-01 16:39:17 +0000
+              .terminal-response 2016-10-01T16:39:17.722Z [compliance.aptible.com-web] I, [2016-10-01T16:39:17.722171 #9]  INFO -- : Processing by PagesController#show as HTML
+              .terminal-response 2016-10-01T16:39:18.364Z [compliance.aptible.com-web] I, [2016-10-01T16:39:18.364582 #9]  INFO -- :   Rendered healthco-web/index.haml.erb (0.7ms)
+              .terminal-response 2016-10-01T16:39:19.761Z [compliance.aptible.com-web] I, [2016-10-01T16:39:19.761016 #9]  INFO -- : Completed 200 OK in 0.9ms
 
-    .grid-item
+    .grid-item.grid-item--one-third.meet-enclave__copy
       %h3.meet-enclave-title Meet the Enclave Deployment Platform
-      %ol
-        %li
-          Create and configure apps and databases directly from the Aptible Toolbelt
-        %li
+      .meet-enclave-steps
+        .meet-enclave-step__item
+          Create and configure apps and databases directly from the
+          %a{ href: "/support/toolbelt"} Aptible Toolbelt
+        .meet-enclave-step__item
           Simple git-based, zero-downtime deployments
-        %li
+        .meet-enclave-step__item
           Stream app logs directly to your console
 
       %a.btn{ href: open_account_href } Open a Development Account
 
 .content
   .grid-container.grid--single-center
-    .grid-item
+    .grid-item.grid-item--adjacent
       %h2.heading--single-center Enclave Features
-      %p.summary--single-center= lorem.paragraph
 
   = partial 'partials/enclave-features'
 
   .grid-container.grid--single-center
-    .grid-item
+    .grid-item.grid-item--adjacent
       %h2.heading--single-center Getting Started with Enclave
-      %p.summary--single-center= lorem.paragraph
 
-  .grid-container.grid-container--ruled
+  .grid-container.grid--4up
     - data.quickstart.each do |title, language|
-      %a.grid-item.card{ href: "/support/quickstart/#{language.url}", class: language.slug }
-        .card__header
+      %a.grid-item.card{ href: quickstart_index_href(language), class: language.slug }
+        .card__icon= partial "images/icons/#{language.svg}"
+        .card__body
           %h3.card__title= title
-          .card__icon
-            = partial "images/icons/#{language.svg}"
-        .card__body= lorem.sentence
 
 = partial 'partials/resources-footer'
