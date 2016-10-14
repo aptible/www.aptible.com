@@ -6,6 +6,17 @@
   padding: 50px 25px;
 }
 
+.card--opening {
+  height: 400px;
+  .card__title::after {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card__body {
+    max-width: 100%;
+  }
+}
+
 .card__icon {
   margin-bottom: 20px;
   text-align: center;
