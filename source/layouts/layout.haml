@@ -9,24 +9,11 @@
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Aptible"
 
-    / TypeKit
     %script{:src => "https://use.typekit.net/pqi8lpw.js"}
     :javascript
+      // TypeKit
       try { Typekit.load({ async: true }); } catch(e) {}
 
-    = stylesheet_link_tag :all
-
-  %body.aptible-www{ class: page_classes, data: { swiftype: { name: 'body', type: 'text', index: 'true' } } }
-    -# - if content_for? :header
-    = yield_content :header
-
-    = yield
-
-    = partial 'partials/footer'
-
-    = javascript_include_tag :all
-    :javascript
-      // Init all the things
       // No google analytics locally
       if (window.location.hostname !== 'localhost') {
         !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
@@ -34,19 +21,28 @@
         }}();
       }
 
+      // Swiftype
       (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
         (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
         e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
       })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-      $(document).on('turbolinks:load', function() {
-        _st('install','dsMEc1fYviE2ShXAjYMW','2.0.0');
-      });
+      _st('install','#{swiftype_key}', '2.0.0');
 
-      try{Typekit.load();}catch(e){}
+    = stylesheet_link_tag :all
 
+  %body.aptible-www{ class: page_classes, data: { swiftype: { name: 'body', type: 'text', index: 'true' } } }
+    = yield_content :header
+
+    = yield
+
+    = partial 'partials/footer'
+
+    = javascript_include_tag :all
+
+    :javascript
+      // Record analytics page visits
       $(document).on('turbolinks:load', function() {
-        _st('install','#{swiftype_key}');
         if (window.location.hostname !== 'localhost') {
           analytics.page();
         }
