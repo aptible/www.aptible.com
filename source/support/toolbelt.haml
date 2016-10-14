@@ -10,7 +10,7 @@ layout: layout
 
 .content
   .grid-container.grid--4up.toolbelt-platforms
-    %a.active.grid-item.card.toolbelt-platform{ href: '#osx', class: 'osx' }
+    %a.active.grid-item.card.toolbelt-platform{ href: '#macos', class: 'macos' }
       .card__header.toolbelt-platform--logo
         = partial "images/icons/osx.svg"
       .card__body
@@ -52,33 +52,20 @@ layout: layout
 
   .grid-container.grid--single-center.download-panels
     -# OSX Panel
-    .grid-item.download-panel.active#osx
-      %h2.download-panel__title Download Aptible Toolbelt for macOS
-      %a.btn.btn-primary.btn-lg{ href: data.toolbelt.os.osx }
+    .grid-item.download-panel.split-panel.active#macos
+      %h3.no-hr Download Aptible Toolbelt for macOS
+      %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.osx }
         = partial '/images/icons/icon-download.svg'
         Download #{data.toolbelt.version} for macOS
 
     -# Ubuntu Panel
     .grid-item.card.download-panel.split-panel#ubuntu
-      -# Ubuntu 14.04
-      .download-panel-left
-        %h2 Ubuntu 14.04
-        .download-container
-          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.ubuntu['14.04'] }
-            = partial '/images/icons/icon-download.svg'
-            %span Download #{data.toolbelt.version} for Ubuntu 14.04
-      -# Ubuntu 16.04
-      .download-panel-right
-        %h2 Ubuntu 16.04
-        .download-container
-          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.ubuntu['16.04'] }
-            = partial '/images/icons/icon-download.svg'
-            %span Download #{data.toolbelt.version} for Ubuntu 16.04
       .installation-instructions
         %h3 Installation Instructions
-        .help-block When the download completes, use your package manager (graphical or command line) and install the package. You'll need to use sudo to elevate your permissions.
-
-        %h4 Download URLs
+        .help-block
+          When the download completes, use your package manager (graphical or
+          command line) and install the package. You'll need to use sudo to
+          elevate your permissions.
         %ul.download-urls
           %li
             %strong Ubuntu 14.04
@@ -86,29 +73,26 @@ layout: layout
           %li
             %strong Ubuntu 16.04
             %span= data.toolbelt.os.ubuntu['16.04']
-
+      -# Ubuntu 14.04
+      .download-panel-left
+        %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.ubuntu['14.04'] }
+          = partial '/images/icons/icon-download.svg'
+          %span Download #{data.toolbelt.version} for Ubuntu 14.04
+      -# Ubuntu 16.04
+      .download-panel-right
+        %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.ubuntu['16.04'] }
+          = partial '/images/icons/icon-download.svg'
+          %span Download #{data.toolbelt.version} for Ubuntu 16.04
 
     -# Debian Panel
     .grid-item.card.download-panel.split-panel#debian
-      -# Debian 7.10
-      .download-panel-left
-        %h2 Debian 7
-        .download-container
-          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.debian['7'] }
-            = partial '/images/icons/icon-download.svg'
-            %span Download #{data.toolbelt.version} for Debian 7
-      -# Debian 8.4
-      .download-panel-right
-        %h2 Debian 8
-        .download-container
-          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.debian['8'] }
-            = partial '/images/icons/icon-download.svg'
-            %span Download #{data.toolbelt.version} for Debian 8
       .installation-instructions
         %h3 Installation Instructions
-        .help-block When the download completes, use your package manager (graphical or command line) and install the package. You'll need to use sudo to elevate your permissions.
+        .help-block
+          When the download completes, use your package manager (graphical or
+          command line) and install the package. You'll need to use sudo to
+          elevate your permissions.
 
-        %h4 Download URLs
         %ul.download-urls
           %li
             %strong Debian 7
@@ -116,28 +100,30 @@ layout: layout
           %li
             %strong Debian 8
             %span= data.toolbelt.os.debian['8']
+      -# Debian 7.10
+      .download-panel-left
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.debian['7'] }
+            = partial '/images/icons/icon-download.svg'
+            %span Download #{data.toolbelt.version} for Debian 7
+      -# Debian 8.4
+      .download-panel-right
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.debian['8'] }
+            = partial '/images/icons/icon-download.svg'
+            %span Download #{data.toolbelt.version} for Debian 8
+
 
     -# Enterprise Linux Panel
     .card.download-panel.split-panel#enterprise-linux
       -# Enterprise Linux 6.7
-      .download-panel-left
-        %h2 Enterprise Linux 6
-        .download-container
-          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.centos['6'] }
-            = partial '/images/icons/icon-download.svg'
-            %span Download #{data.toolbelt.version} for Enterprise Linux 6
-      -# Enterprise Linux 8.4
-      .download-panel-right
-        %h2 Enterprise Linux 7
-        .download-container
-          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.centos['7'] }
-            = partial '/images/icons/icon-download.svg'
-            %span Download #{data.toolbelt.version} for Enterprise Linux 7
       .installation-instructions
         %h3 Installation Instructions
-        .help-block When the download completes, use your package manager (graphical or command line) and install the package. You'll need to use sudo to elevate your permissions.
+        .help-block
+          When the download completes, use your package manager (graphical or
+          command line) and install the package. You'll need to use sudo to
+          elevate your permissions.
 
-        %h4 Download URLs
         %ul.download-urls
           %li
             %strong EL 6
@@ -145,6 +131,20 @@ layout: layout
           %li
             %strong EL 7
             %span= data.toolbelt.os.centos['7']
+
+      .download-panel-left
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.centos['6'] }
+            = partial '/images/icons/icon-download.svg'
+            %span Download #{data.toolbelt.version} for Enterprise Linux 6
+
+      -# Enterprise Linux 8.4
+      .download-panel-right
+        .download-container
+          %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.centos['7'] }
+            = partial '/images/icons/icon-download.svg'
+            %span Download #{data.toolbelt.version} for Enterprise Linux 7
+
 
   .container.aptible-toolbelt
     .grid-container.grid--2up.grid-container--ruled

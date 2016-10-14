@@ -20,17 +20,48 @@
   }
 }
 
+.download-button {
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.split-panel {
+
+}
+
+.download-panel-left, .download-panel-right {
+  display: inline-block;
+  margin-bottom: 0;
+  width: 49%;
+}
+
+.help-block {
+  margin-bottom: 20px;
+}
+
+.download-urls {
+  margin-bottom: 40px;
+}
+
+.installation-instructions {
+  text-align: left;
+}
+
 .toolbelt-platforms {
   margin-bottom: 0;
   padding-bottom: 0;
   padding-top: 0;
+  polygon, path {
+    fill: $sky-blue;
+  }
 }
 
 .toolbelt-platform {
   background-color: $white;
   border-color: $lighter-blue;
   margin-bottom: flex-gutter();
-  padding: 20px;
+  padding: 40px 20px 20px;
   transition-property: background-color, border-color;
   transition-duration: $base-duration;
   transition-timing-function: $base-timing;
@@ -55,6 +86,9 @@
 .toolbelt-platform--logo {
   text-align: center;
   height: 100px;
+  svg {
+    height: 50px;
+  }
 }
 
 .download-panels {
@@ -66,7 +100,8 @@
   background-color: $lighter-blue;
   border-color: $lighter-blue;
   display: none;
-  &:target {
+  padding-top: 50px;
+  &.active {
     display: block;
   }
 }

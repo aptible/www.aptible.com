@@ -1,5 +1,5 @@
 $(document).on 'turbolinks:load', ->
-  buttons = $('.os-panels a.category-box')
+  buttons = $('.toolbelt-platform')
   panels = $('.download-panels .download-panel')
   download_buttons = $('.download-button')
 
