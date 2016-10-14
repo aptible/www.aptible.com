@@ -11,7 +11,6 @@ $(document).on 'turbolinks:load', ->
         $navSearch.removeClass('search-nav__input--with-transition');
 
     $navSearch.on 'change', ->
-      console.log $navSearch.val()
       $navSearch.data 'query', $navSearch.val()
 
     $navSearch.on 'focus', ->
