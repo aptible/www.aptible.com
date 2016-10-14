@@ -73,6 +73,7 @@
 }
 
 .nav-toggle__label {
+  color: $action-color;
   display: inline-block;
   font-weight: $semibold;
   letter-spacing: -0.65em;
@@ -186,6 +187,12 @@
       transition: opacity $base-duration $base-timing;
       opacity: 1;
       position: static;
+    }
+  }
+  .nav-list--center[data-state='closed'] {
+    .nav-item {
+      display: none;
+      opacity: 0;
     }
   }
 }

@@ -61,6 +61,10 @@
   }
 }
 
+.btn--outline--white {
+  border-color: $white;
+}
+
 .arrow-link--left, .arrow-link--right {
   color: $blue;
   display: inline-block;
