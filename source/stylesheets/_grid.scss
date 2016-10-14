@@ -115,6 +115,19 @@ body {
   }
 }
 
+.grid-item--two-thirds {
+  @include span-columns(8);
+  @media screen and (max-width: $tablet-landscape) {
+    @include span-columns(12);
+  }
+}
+.grid-item--one-third {
+  @include span-columns(3);
+  @media screen and (max-width: $tablet-landscape) {
+    @include span-columns(12);
+  }
+}
+
 .grid--4up-center {
   display: flex;
   justify-content: center;
@@ -246,12 +259,14 @@ body {
     }
     @media screen and (max-width: $tablet-portrait) {
       width: 50%;
-      &:nth-child(3) {
-        border-top: 1px solid $light-blue;
+      &:nth-child(2n+1) {
         border-left: none;
       }
-      &:nth-child(4) {
+      &:nth-child(2n+2) {
         border-left: 1px solid $light-blue;
+      }
+      &:nth-child(3) {
+        border-top: 1px solid $light-blue;
       }
     }
   }

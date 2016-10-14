@@ -1,5 +1,5 @@
 ---
-header_title: Getting Started
+header_title: Quickstart Guides
 header_subtitle: Step-by-step guides for getting started with Aptible
 ---
 
@@ -12,24 +12,20 @@ header_subtitle: Step-by-step guides for getting started with Aptible
 .content
   - if language
     .grid-container.grid--single-center
-      .grid-item
+      .grid-item.grid-item--adjacent
         %h2.heading--single-center
           Which #{language.name} framework are you using?
 
     .grid-container.grid--4up.grid--4up-center
       - language.articles.each do |article|
-        %a.grid-item.card{ href: "/support/quickstart/#{article.url}", class: article.slug }
-          .card__header
+        %a.grid-item.card{ href: quickstart_index_href(article), class: article.slug }
+          .card__icon= partial "images/icons/#{article.svg}"
+          .card__body
             %h3.card__title= article.framework
-            .card__icon
-              = partial "images/icons/#{article.svg}"
-          .card__body= article.description
   - else
     .grid-container.grid--4up
       - data.quickstart.each do |title, language|
-        %a.grid-item.card{ href: "/support/quickstart/#{quickstart_index_href(language)}", class: language.slug }
-          .card__header
+        %a.grid-item.card{ href: quickstart_index_href(language), class: language.slug }
+          .card__icon= partial "images/icons/#{language.svg}"
+          .card__body
             %h3.card__title= title
-            .card__icon
-              = partial "images/icons/#{language.svg}"
-          .card__body= language.description

@@ -8,6 +8,14 @@
   margin: 0;
   transform: translate(10px, -10px);
   &::after { display: none; }
+  a {
+    color: $action-color;
+    &:active,
+    &:focus,
+    &:hover {
+      color: shade($action-color, 25%);
+    }
+  }
 }
 .aptible-mark--dark-bg {
   .aptible-mark__gradient {

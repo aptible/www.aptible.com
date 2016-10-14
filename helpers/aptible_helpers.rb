@@ -17,8 +17,8 @@ module AptibleHelpers
   end
 
   def quickstart_index_href(language)
-    if language.articles.count == 1
-      language.url
+    if (language.articles && language.articles.count == 1) || !language.articles
+      "/support/quickstart/#{language.url}"
     else
       "/support/quickstart/#{language.slug}"
     end

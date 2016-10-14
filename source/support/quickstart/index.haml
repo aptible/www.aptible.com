@@ -1,5 +1,5 @@
 ---
-header_title: Getting Started
+header_title: Quickstart Guides
 header_subtitle: Step-by-step guides for getting started with Aptible
 header_search: false
 layout: layout
@@ -15,8 +15,6 @@ layout: layout
   .grid-container.grid--4up
     - data.quickstart.each do |title, language|
       %a.grid-item.card{ href: quickstart_index_href(language), class: language.slug }
-        .card__header
+        .card__icon= partial "images/icons/#{language.svg}"
+        .card__body
           %h3.card__title= title
-          .card__icon
-            = partial "images/icons/#{language.svg}"
-        .card__body= language.description
