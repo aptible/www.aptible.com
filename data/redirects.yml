@@ -160,3 +160,11 @@
   url: /legal/terms-of-service
 - loc: /legal/trademark.html
   url: /legal/trademark
+- loc: /about
+  url: /company
+- loc: /benfits
+  url: /technology
+- loc: /docs
+  url: /support
+- loc: /training
+  url: /
