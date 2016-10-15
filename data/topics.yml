@@ -91,6 +91,8 @@
       url: "paas/how-to-perform-long-running-tasks"
     - title: "How can I download a backup of an Aptible database?"
       url: "paas/how-to-download-database-backup"
+    - title: "How does Aptible enforce memory limits?"
+      url: "paas/memory-management-reference"
 
 "Aptible CLI":
   slug: "cli"

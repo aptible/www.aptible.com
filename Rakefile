@@ -42,14 +42,14 @@ namespace :deploy do
     Rake::Task[:deploy].invoke('www.aptible-staging.com')
   end
 
-  # desc 'Build and deploy site to www.aptible.com'
-  # task :production do
-  #   ENV['BASE_URL'] = 'https://www.aptible.com'
-  #   ENV['SEGMENTIO_WRITEKEY'] = 'cn8oifbk6o'
-  #   ENV['SWIFTYPE_KEY'] = 'dsMEc1fYviE2ShXAjYMW'
-  #   ENV['SWIFTYPE_ENGINE'] = 'axuhZ5Lt1ZUziN-DqxnR'
-  #   Rake::Task[:deploy].invoke('www.aptible.com')
-  # end
+  desc 'Build and deploy site to www.aptible.com'
+  task :production do
+    ENV['BASE_URL'] = 'https://www.aptible.com'
+    ENV['SEGMENTIO_WRITEKEY'] = 'cn8oifbk6o'
+    ENV['SWIFTYPE_KEY'] = 'dsMEc1fYviE2ShXAjYMW'
+    ENV['SWIFTYPE_ENGINE'] = 'axuhZ5Lt1ZUziN-DqxnR'
+    Rake::Task[:deploy].invoke('www.aptible.com')
+  end
 end
 
 RSpec::Core::RakeTask.new(:spec)
