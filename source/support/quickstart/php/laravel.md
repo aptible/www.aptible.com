@@ -169,13 +169,13 @@ your database, and pushing your code to Aptible.
 To add the environment variables, use:
 
 ```
-aptible config:set --app "$APP_HANDE" \
+aptible config:set --app "$APP_HANDLE" \
   "DB_CONNECTION=aptible" \
   "DATABASE_URL=$DATABASE_URL" \
   "APP_DEBUG=false"
 ```
 
-Make sure you set or substitute `$APP_HANDE` and `$DATABASE_URL` respectively
+Make sure you set or substitute `$APP_HANDLE` and `$DATABASE_URL` respectively
 with the handle you chose for your app and the URL Aptible provided when you
 provisioned your database.
 
@@ -236,11 +236,11 @@ To store sessions in the database instead, you need to:
     it'll run the next time you deploy.
   + Instruct Laravel to use your database to store sessions by setting the
     `SESSION_DRIVER` environment variable: `aptible config:set --app
-    "$APP_HANDE" "SESSION_DRIVER=database"`.
+    "$APP_HANDLE" "SESSION_DRIVER=database"`.
 
 Second, your app will be using the `APP_KEY` from your `.env` file, which is
 presumably your development `APP_KEY`. You should generate a new one, and set
-it via `aptible config:set --app "$APP_HANDE" "APP_KEY=$NEW_APP_KEY"` (make
+it via `aptible config:set --app "$APP_HANDLE" "APP_KEY=$NEW_APP_KEY"` (make
 sure you set or substitute `$NEW_APP_KEY` here).
 
   [10]: /support/topics/cli/how-to-view-app-logs/
