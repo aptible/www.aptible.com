@@ -2,13 +2,13 @@
 title: Breach Indemnification Agreement
 tracked_title: Breach Indemnification
 description: "Aptible's default breach indemnification agreement."
-posted: 2016-03-12
+posted: 2016-10-16
 section: Legal
 sub_section: Agreements
 order: 2
 ---
 
-Version 1.2 - March 2016
+Version 1.3 - October 2016
 
 This Aptible Breach Indemnification Agreement (**"BIA"**) between Aptible, Inc. (**"Aptible"**, **"us"** or **"we"**) and users of the Aptible Services (**"you"**) governs the use of the Aptible Services under the provisions of the Aptible Terms of Service (the **"Terms"**).
 
@@ -28,7 +28,7 @@ Capitalized words and phrases have the meaning specified in the Terms.
 
 **"Covered Expenses"** means (a) all damages, costs, and attorneys’ fees finally awarded against you in any Covered Claim; and (b) all out-of-pocket costs (including reasonable attorneys’ fees) that you reasonably incurred in connection with the defense of a Covered Claim (other than attorneys’ fees and costs incurred without Aptible’s consent after Aptible has accepted defense of the Covered Claim).
 
-**"Excluded Breach"** means any Breach of PHI that in any way results from: (a) a failure to properly configure your Aptible Containerized Services to protect PHI; (b) a failure to properly configure or enforce user access policies and permissions in your Aptible Containerized Services or Aptible account to protect PHI; (c) any other vulnerability introduced by your Aptible Containerized Service itself (and not the infrastructure or Aptible platform on which it is hosted); or (d) your breach of the Aptible Terms of Service, your BAA, or this BIA.
+**"Excluded Breach"** means any Breach of PHI that in any way results from: (a) a failure to properly configure your Aptible Containerized Services to protect PHI; (b) a failure to properly configure or enforce user access policies and permissions in your Aptible Containerized Services or Aptible account to protect PHI; (c&#41; any other vulnerability introduced by your Aptible Containerized Service itself (and not the infrastructure or Aptible platform on which it is hosted); or (d) your breach of the Aptible Terms of Service, your BAA, or this BIA.
 
 **"Governmental Agency"** means any court, administrative agency or commission or other federal, state, county, or local governmental entity, instrumentality, agency or commission.
 
