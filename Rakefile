@@ -45,7 +45,7 @@ namespace :deploy do
   desc 'Build and deploy site to www.aptible.com'
   task :production do
     ENV['BASE_URL'] = 'https://www.aptible.com'
-    ENV['SEGMENTIO_WRITEKEY'] = 'cn8oifbk6o'
+    ENV['SEGMENTIO_WRITEKEY'] = 'rkt88i7k3w'
     ENV['SWIFTYPE_KEY'] = 'dsMEc1fYviE2ShXAjYMW'
     ENV['SWIFTYPE_ENGINE'] = 'axuhZ5Lt1ZUziN-DqxnR'
     Rake::Task[:deploy].invoke('www.aptible.com')
