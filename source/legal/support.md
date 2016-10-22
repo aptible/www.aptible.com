@@ -2,12 +2,12 @@
 title: Support Policy
 tracked_title: Support
 description: "Aptible's support policy"
-posted: 2016-07-12
+posted: 2016-10-12
 section: Legal
 sub_section: Policies
 ---
 
-Version 2.3 - July 2016
+Version 2.4 - October 2016
 
 This policy outlines Aptible's support practices and resources. It also identifies your support obligations to your customers. It is incorporated by reference into the Aptible Terms of Service.
 
@@ -15,12 +15,14 @@ This policy outlines Aptible's support practices and resources. It also identifi
 We offer several options for technical support. See [www.aptible.com/support-plans](/support-plans/) for plans and pricing.
 
 Aptible support includes:
+
 - Answering questions about Aptible services and features
 - Advice regarding best practices for app deployment and architecture
 - Troubleshooting Aptible services and products
 - Limited support of third party applications, services and frameworks
 
 Aptible support does not include:
+
 - Developing your application code
 - Debugging custom software
 - Performing manual system administration tasks
