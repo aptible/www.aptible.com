@@ -20,8 +20,6 @@ h6 {
   line-height: $heading-line-height;
   margin: 0 0 30px;
   &::after {
-    //height: 0.4em;
-    //width: 1.5em;
     background-color: $light-blue;
     content: '';
     display: block;

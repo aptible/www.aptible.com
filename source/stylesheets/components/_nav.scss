@@ -119,7 +119,7 @@
       position: absolute;
       text-align: left;
       top: 0;
-      width: calc(100% - 20px);
+      width: calc(100% - 60px);
       z-index: 10;
     }
     .nav-toggle {
@@ -161,6 +161,7 @@
 @media screen and (max-width: $nav-break) {
   .nav-list--center[data-state='open'] {
     background-color: $dark-blue;
+    width: calc(100% - 20px);
     .nav-toggle__icon-bar {
       background-color: $action-color;
       transition-property: top, transform, background-color;
@@ -321,12 +322,10 @@
 .side-nav--fixed {
   position: fixed;
   top: 50px;
-  width: 280px;
   z-index: 0;
 }
 .side-nav--stuck {
   position: absolute;
-  width: 280px;
   z-index: 0;
 }
 .side-nav__to-top {
@@ -338,38 +337,16 @@
   &::after { display: none; }
 }
 .side-nav__item {
-  background-color: transparent;
+  color: $blue-steel;
   display: block;
   margin-bottom: .5em;
   margin-right: .5em;
   padding: .5em;
   padding-right: 0;
   position: relative;
-  transition: background-color $base-duration $base-timing;
-  &::after {
-    background-color: transparent;
-    content: '';
-    display: inline-block;
-    height: 28px;
-    right: -15px;
-    position: absolute;
-    transform: rotate(45deg);
-    transition: background-color $base-duration $base-timing;
-    top: 6px;
-    width: 28px;
-    z-index: -1;
-  }
-  &:hover, &:focus {
-    background-color: tint($lighter-blue, 40%);
+  transition: color $base-duration $base-timing;
+  &:hover, &:focus, &.nav-item--active {
+    color: shade($blue, 25%);
     outline: none;
-    &::after {
-      background-color: tint($lighter-blue, 40%);
-    }
-  }
-  &.nav-item--active {
-    background-color: $lighter-blue;
-    &::after {
-      background-color: $lighter-blue;
-    }
   }
 }
