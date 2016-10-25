@@ -2,6 +2,10 @@
 layout: blog_posts.haml
 ---
 
+- posts = posts || []
+- @title = posts.count > 0 ? posts.first.data.author_name : ''
+- @description = posts.count > 0 ? "Aptible posts written by #{posts.first.data.author_name}" : ''
+
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
     = partial 'partials/main-nav', locals: {   |
@@ -9,8 +13,7 @@ layout: blog_posts.haml
         section_url: '/blog'                   |
       }                                        |
 
-- posts = posts || []
 - posts.each do |post|
   .blog-posts__post
-    %a.blog-posts__link{ href: resource_link_path(post) }
+    %a.blog-posts__link{ href: post.url }
       = partial 'partials/blog-list-item', locals: { post: post }

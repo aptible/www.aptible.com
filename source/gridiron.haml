@@ -1,5 +1,8 @@
 ---
+# These variables are used in the page title and meta tags
 title: Gridiron - Manage Security & Compliance
+description: Aptible Gridiron helps engineering teams set up and run robust
+             security and compliance programs.
 ---
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
@@ -10,7 +13,8 @@ title: Gridiron - Manage Security & Compliance
         %h2.heading__subtitle Manage Security & Compliance
         %h1.heading__title Gridiron
         %p.heading__summary--light-blue
-          Aptible Gridiron helps engineering teams set up and run robust security and compliance programs.
+          Aptible Gridiron helps engineering teams set up and run robust
+          security and compliance programs.
 
         %p.heading__summary--light-blue
           %a.btn{ href: open_account_href } Open a Development Account
@@ -23,14 +27,12 @@ title: Gridiron - Manage Security & Compliance
   .grid-container.grid--single-center
     .grid-item
       %h2.heading--single-center
-        "We take security seriously" is bullsh*t.
-      %p.summary--adjacent.summary--single-center
+        &ldquo;We take security seriously&rdquo; is bullsh*t.
+      %p.summary--single-center
         Easy to say, hard to do. Good security takes attention to detail, and running a great security management program is difficult: complicated, time-consuming, repetitive, and boring – even more so when you add HIPAA, SOC, ISO, and other compliance requirements.
-        %br
-        %br
+      %p.summary--single-center
         Small software engineering teams struggle to understand security requirements and translate rules into action. Growing teams struggle to track and consistently execute security activities.
-        %br
-        %br
+      %p.summary--adjacent.summary--single-center
         Until now.
 
   -# = partial 'images/gridiron-graph.svg'

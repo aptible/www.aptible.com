@@ -1,5 +1,10 @@
 ---
+# These variables are used in the page title and meta tags
 title: Enclave - Secure DevOps
+description: Aptible Enclave is a container platform that simplifies secure
+             deployment and development best practices. Unlike using IaaS
+             directly, Enclave is turnkey for regulated apps, and includes
+             robust DevOps and security automation.
 ---
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
@@ -9,11 +14,7 @@ title: Enclave - Secure DevOps
       .grid-item.product-page__hero-header
         %h2.heading__subtitle Secure DevOps
         %h1.heading__title Enclave
-        %p.heading__summary--light-blue
-          Aptible Enclave is a container platform that simplifies secure
-          deployment and development best practices. Unlike using IaaS
-          directly, Enclave is turnkey for regulated apps, and includes robust
-          DevOps and security automation.
+        %p.heading__summary--light-blue= current_page.data.description
 
         %p.heading__summary--light-blue
           %a.btn{ href: open_account_href } Open a Development Account

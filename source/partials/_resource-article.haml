@@ -1,5 +1,5 @@
 - featured_class = resource.data.featured ? ' resource-article--featured' : ''
-%a{ class: "resource-article#{featured_class}", href: resource_link_path(resource) }
+%a{ class: "resource-article#{featured_class}", href: resource.url }
   %header.resource-article__header
     %h2.resource-article__title= resource.data.title
     .resource-article__tags

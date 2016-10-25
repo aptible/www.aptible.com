@@ -34,7 +34,7 @@
           %h3.post-title= post.data.title
           %p.post-excerpt
             = post.data.excerpt
-            %a.arrow-link--right{ href: resource_link_path(post) } Keep reading
+            %a.arrow-link--right{ href: post.url } Keep reading
 
     .grid-document
       .filter
