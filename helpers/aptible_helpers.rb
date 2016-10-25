@@ -13,7 +13,8 @@ module AptibleHelpers
   end
 
   def page_image
-    current_page.data.image || '/images/meta/page-image.png'
+    img_src = current_page.data.image || 'meta/page-image.png'
+    "#{base_url}/#{asset_path(:images, img_src)}"
   end
 
   def page_url
