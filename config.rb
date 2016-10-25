@@ -1,5 +1,4 @@
 require 'fog'
-require 'cgi'
 
 #
 # Global Settings
@@ -141,51 +140,5 @@ data.quickstart.each do |language_name, language_data|
                      "with #{@framework} on Aptible"
       @og_type = 'article'
     end
-  end
-end
-
-helpers do
-  def title_tags(opts = {})
-    current_page = opts[:page]
-
-    # Article pages pass @title as an option
-    title = opts[:title]
-
-    # Some pages also set it in front matter
-    title ||= current_page.metadata[:locals][:title] ||
-              current_page.data.header_title
-
-    # Some pages just have a default title, which we don't want to repeat
-    if title.nil? || title == 'Aptible Support'
-      swiftype_title = title = 'Aptible Support'
-    else
-      # Use a clean title for Swifttype
-      swiftype_title = title
-      title = "#{title} | Aptible Support"
-    end
-
-    title = CGI.escapeHTML(title) if title
-    swiftype_title = CGI.escapeHTML(swiftype_title) if swiftype_title
-
-    "<title>#{title}</title> \n" \
-    "<meta property=\"og:title\" content=\"#{title}\" > \n" \
-    '<meta class="swiftype" name="title" ' \
-    "data-type=\"string\" content=\"#{swiftype_title}\" >"
-  end
-
-  def meta_tags(opts = {})
-    description = opts[:description]
-    og_type = opts[:og_type]
-
-    description ||= current_page.data.header_subtitle
-    description = CGI.escapeHTML(description) if description
-
-    url = "#{base_url}#{current_page.url}"
-
-    og_type = og_type.nil? ? 'website' : 'article'
-
-    "<meta property=\"og:description\" content=\"#{description}\" >\n" \
-    "<meta property=\"og:url\" content=\"#{url}\" >\n" \
-    "<meta property=\"og:type\" content=\"#{og_type}\" >"
   end
 end

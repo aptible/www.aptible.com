@@ -111,8 +111,10 @@ hr {
   color: $light-blue-gray;
   font-size: 20px;
   font-weight: $light;
-  margin-bottom: 50px;
   text-align: center;
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
 }
 
 .summary--adjacent {

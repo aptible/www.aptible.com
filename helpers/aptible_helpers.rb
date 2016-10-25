@@ -1,4 +1,25 @@
+require 'cgi'
+
 module AptibleHelpers
+  def page_title
+    current_page.data.title || @title || 'Aptible'
+  end
+
+  def page_description
+    description = current_page.data.description || @description ||
+                  current_page.data.header_subtitle ||
+                  current_page.data.excerpt || ''
+    CGI.escapeHTML(description)
+  end
+
+  def page_image
+    current_page.data.image || '/images/meta/page-image.png'
+  end
+
+  def page_url
+    "#{base_url}#{current_page.url}"
+  end
+
   def quickstart?(url)
     url.include? 'support/quickstart'
   end
@@ -53,7 +74,6 @@ module AptibleHelpers
            .group_by { |p| p.data['sub_section'] }.keys.sort
   end
 
-  require 'pry'
   def legal_section(sub_section)
     l = sitemap.resources
                .select do |p|
@@ -82,10 +102,6 @@ module AptibleHelpers
     else
       filtered.select { |r| !r.data.include? 'featured' }
     end
-  end
-
-  def resource_link_path(resource)
-    '/' + resource.eponymous_directory_path.chomp('/')
   end
 
   def dashboard_href
