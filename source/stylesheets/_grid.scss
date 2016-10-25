@@ -296,6 +296,13 @@ body {
   margin-bottom: 50px;
   padding-bottom: 0;
   padding-top: 50px;
+  @media screen and (max-width: $max-viewport) {
+    border-radius: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .grid-item {
     padding-bottom: 0;
     margin-bottom: 0;
