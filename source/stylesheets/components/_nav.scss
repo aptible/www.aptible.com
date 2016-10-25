@@ -119,7 +119,7 @@
       position: absolute;
       text-align: left;
       top: 0;
-      width: calc(100% - 20px);
+      width: calc(100% - 60px);
       z-index: 10;
     }
     .nav-toggle {
@@ -161,6 +161,7 @@
 @media screen and (max-width: $nav-break) {
   .nav-list--center[data-state='open'] {
     background-color: $dark-blue;
+    width: calc(100% - 20px);
     .nav-toggle__icon-bar {
       background-color: $action-color;
       transition-property: top, transform, background-color;
