@@ -3,8 +3,6 @@ title: Plans and Pricing
 tracked_title: Pricing
 id: pricing
 description: "Aptible plans and pricing"
-
--# plans:
 ---
 
 - content_for :header do
@@ -130,37 +128,36 @@ description: "Aptible plans and pricing"
       %h2.heading--single-center Support Plans
 
   .support-pricing-tiers.grid-container.grid-container--bordered
-    .support-pricing-tier
-      %h3.support-pricing-tier__summary Included with every account
-      %h2.support-pricing-tier__name Business
-      %ul.checklist.checklist--blue
-        %li Normal severity response times in 12 hours or less
-        %li Manage tickets via email and web portal
-        %li Included with every account
+    .support-pricing-tiers__flex
+      .support-pricing-tier
+        %h3.support-pricing-tier__summary Included with every account
+        %h2.support-pricing-tier__name Business
+        %ul.checklist.checklist--blue
+          %li Normal severity response times in 12 hours or less
+          %li Manage tickets via email and web portal
+          %li Included with every account
 
 
-    .support-pricing-tier
-      %h3.support-pricing-tier__summary Dedicated slack channel
-      %h2.support-pricing-tier__name Premium
-      %ul.checklist.checklist--blue
-        %li Dedicated, private Slack channel
-        %li Urgent severity response times in 1 hour or less
-        %li Administrative portal access to manage all tickets
+      .support-pricing-tier
+        %h3.support-pricing-tier__summary Dedicated slack channel
+        %h2.support-pricing-tier__name Premium
+        %ul.checklist.checklist--blue
+          %li Dedicated, private Slack channel
+          %li Urgent severity response times in 1 hour or less
+          %li Administrative portal access to manage all tickets
+        %img.support-pricing-tier__slack{ src: '/images/slack.svg' }
 
-      %img.support-pricing-tier__slack{ src: '/images/slack.svg' }
-
-    .support-pricing-tier
-      %h3.support-pricing-tier__summary
-        Dedicated slack channel and support engineer
-      %h2.support-pricing-tier__name Enterprise
-      %ul.checklist.checklist--blue
-        %li Dedicated Support Engineer
-        %li Dedicated Technical Account Manager
-        %li Critical issue response times in 15 minutes or less
-        %li Includes base VPN and architecture support
-        %li Email, portal, Slack, and phone channels
-
-      %img.support-pricing-tier__slack{ src: '/images/slack.svg' }
+      .support-pricing-tier
+        %h3.support-pricing-tier__summary
+          Dedicated slack channel and support engineer
+        %h2.support-pricing-tier__name Enterprise
+        %ul.checklist.checklist--blue
+          %li Dedicated Support Engineer
+          %li Dedicated Technical Account Manager
+          %li Critical issue response times in 15 minutes or less
+          %li Includes base VPN and architecture support
+          %li Email, portal, Slack, and phone channels
+        %img.support-pricing-tier__slack{ src: '/images/slack.svg' }
 
     .grid-container--bordered__tray.gri-item
       %a.btn{ href: '/support-plans' } Learn More About Support

@@ -1,27 +1,37 @@
 .support-pricing-tiers {
   padding-top: 0;
+  @media screen and (max-width: $tablet-portrait) {
+    border-width: 0;
+  }
+}
+
+.support-pricing-tiers__flex {
+  align-items: stretch;
+  display: flex;
+  @media screen and (max-width: $tablet-portrait) {
+    flex-direction: column;
+  }
 }
 
 .support-pricing-tier {
   border-left: 1px solid $light-blue;
-  display: inline-block;
-  height: 475px;
   padding: 50px 25px;
-  position: relative;
   text-align: left;
   vertical-align: top;
-  width: calc(33.33% - 3px);
+  flex: 1;
   &:first-of-type {
     border-left: none;
+  }
+  .checklist:last-of-type {
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    border-bottom: 1px solid $light-blue;
   }
 }
 
 .support-pricing-tier__slack {
-  height: 50px;
-  position: absolute;
-  left: 25px;
-  bottom: 50px;
-  width: auto;
+  max-height: 50px;
 }
 
 .support-pricing-tier__summary {
