@@ -6,12 +6,12 @@ $(document).on 'turbolinks:load', ->
   $htmlBody = $('html, body')
 
   if $sideNav.length > 0
-    sideNavHeight = $sideNav.outerHeight()
-    sideNavTop = $sideNav.position().top
-    footerTop = $footer.position().top
-    fixedNavBoundary = $('header.aptible-header').outerHeight();
-
     update = ->
+      sideNavWidth = $sideNav.outerWidth()
+      sideNavHeight = $sideNav.outerHeight()
+      sideNavTop = $sideNav.offset().top
+      footerTop = $footer.position().top
+      fixedNavBoundary = $('header.aptible-header').outerHeight();
       currentScrollTop = $win.scrollTop()
       viewportWidth = $win.width()
 
