@@ -4,6 +4,9 @@ notify you as a customer before enabling memory limits on your infrastructure).
 
 In the rest of this document, we'll refer to this feature as memory management.
 
+Note: this feature was presented on the Aptible Update Webinar of October 2016.
+[You can view the video presentation online.][0]
+
 
 # How does memory management work?
 
@@ -71,3 +74,5 @@ For app containers, you can update your memory limit via the Dashboard.
 For database containers, please contact support (increasing the memory
 footprint of a database involves downtime, and the Aptible team will work with
 you to coordinate a good timeframe).
+
+[0]: https://youtu.be/SIV0uPnz7i4?t=9m53s
