@@ -29,10 +29,6 @@ module AptibleHelpers
     url.include? 'support/topics'
   end
 
-  def post_date(string_date)
-    string_date.strftime('%B %e, %Y')
-  end
-
   def active_nav_item(path)
     match = current_page.url.include?(path) || current_page.url == path
     match ? 'nav-item--active' : ''
@@ -61,14 +57,6 @@ module AptibleHelpers
     subtitle.is_a?(Array) ? subtitle.first : subtitle
   end
 
-  def latest_blog_post
-    blog_posts_by_date.first
-  end
-
-  def blog_post_author_href(post)
-    "/blog/authors/#{post.data.author_id}"
-  end
-
   def legal_sections
     sitemap.resources
            .select { |p| p.data['section'] == 'Legal' }
@@ -83,24 +71,6 @@ module AptibleHelpers
                    p.url != '/legal/'
                end
     l.sort_by { |p| p.data['order'] }
-  end
-
-  def blog_posts_by_date
-    sitemap.resources
-           .select { |p| p.data['section'] == 'Blog' }
-           .sort_by { |p| p.data['posted'] }.reverse!
-  end
-
-  def prev_post(current_post)
-    ordered_posts = blog_posts_by_date
-    current = ordered_posts.index { |p| p.path == current_post.path }
-    current > 0 ? ordered_posts.at(current - 1) : nil
-  end
-
-  def next_post(current_post)
-    ordered_posts = blog_posts_by_date
-    current = ordered_posts.index { |p| p.path == current_post.path }
-    ordered_posts.at current + 1
   end
 
   def resources_by_category(category = 'all', featured = false)
