@@ -91,6 +91,18 @@ module AptibleHelpers
            .sort_by { |p| p.data['posted'] }.reverse!
   end
 
+  def prev_post(current_post)
+    ordered_posts = blog_posts_by_date
+    current = ordered_posts.index { |p| p.path == current_post.path }
+    current > 0 ? ordered_posts.at(current - 1) : nil
+  end
+
+  def next_post(current_post)
+    ordered_posts = blog_posts_by_date
+    current = ordered_posts.index { |p| p.path == current_post.path }
+    ordered_posts.at current + 1
+  end
+
   def resources_by_category(category = 'all', featured = false)
     filtered = sitemap.resources.select { |r| r.data['section'] == 'Resources' }
     unless category == 'all'

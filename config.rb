@@ -63,10 +63,12 @@ page '/*.txt', layout: false
 #
 # Blog
 #
-# Requires the site to be "ready" to read from the sitemap resources
 page '/blog/*', layout: 'blog_post.haml'
+# See /source/feed.xml.builder
+page '/feed.xml', layout: false
 
 # Authors
+# Requires the site to be "ready" to read from the sitemap resources
 ready do
   # Create dynamic pages for each blog post author
   by_author = sitemap.resources
