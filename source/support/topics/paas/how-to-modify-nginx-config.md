@@ -13,18 +13,19 @@ Aptible endpoints use [NGiNX proxies](https://github.com/aptible/docker-nginx) t
   and receive this header will refuse to reconnect via HTTP for up to a year
   after they receive the Strict-Transport-Security header.
 
-* `DISABLE_WEAK_CIPHER_SUITES`: Aptible's supported SSL protocols and cipher
-  suites balance security and support for older clients. If you wish to target
-  only modern clients, you can set the `DISABLE_WEAK_CIPHER_SUITES`
-  environment variable to disable the SSLv3 protocol and the RC4 cipher, both
-  of which are otherwise allowed in the default configuration.
+* ([Legacy ELB Endpoints Only][0]) `DISABLE_WEAK_CIPHER_SUITES`: Aptible's
+  supported SSL protocols and cipher suites balance security and support for
+  older clients.  If you wish to target only modern clients, you can set the
+  `DISABLE_WEAK_CIPHER_SUITES` environment variable to disable the SSLv3
+  protocol and the RC4 cipher, both of which are otherwise allowed in the
+  default configuration.
 
-* `SSL_CIPHERS_OVERRIDE` and `SSL_PROTOCOLS_OVERRIDE`: Users who need more
-  control over the exact cipher suites and protocols offered by their servers
-  can completely override the NGiNX `ssl_ciphers` and `ssl_protocols`
-  directives by setting either or both of these environment variables in their
-  app configuration.
-  Please pay careful attention to the documentation for both
+* ([Legacy ELB Endpoints Only][0]) `SSL_CIPHERS_OVERRIDE` and
+  `SSL_PROTOCOLS_OVERRIDE`: Users who need more control over the exact cipher
+  suites and protocols offered by their servers can completely override the
+  NGiNX `ssl_ciphers` and `ssl_protocols` directives by setting either or both
+  of these environment variables in their app configuration.  Please pay
+  careful attention to the documentation for both
   [`ssl_ciphers`](http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_ciphers)
   and
   [`ssl_protocols`](http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_protocols)
@@ -52,3 +53,5 @@ aptible restart --app $APP_HANDLE
 aptible config:set DISABLE_WEAK_CIPHER_SUITES=true SSL_PROTOCOLS_OVERRIDE="TLSv1.1 TLSv1.2" --app $APP_HANDLE
 aptible restart --app $APP_HANDLE
 ```
+
+[0]: /support/topics/paas/upgrading-to-alb-endpoints
