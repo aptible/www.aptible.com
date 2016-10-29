@@ -1,8 +1,9 @@
 ---
 description: Powerful security and DevOps tools for engineering teams.
 ---
+
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled
+  %header.aptible-header.hero-gradient--angled.aptible-header--double-grid
     = partial 'partials/main-nav'
 
     .grid-container
@@ -10,7 +11,7 @@ description: Powerful security and DevOps tools for engineering teams.
         %h1.heading__title
           Powerful security and DevOps tools for engineering teams.
 
-    .grid-container.grid--2up.home-hero__products
+    .grid-container.grid--2up.home-hero__products.aptible-header__bottom-grid__riser
       .enclave-home-hero.product-hero.grid-item
         .enclave-home-hero__channels
           = partial 'images/enclave-channels.svg'

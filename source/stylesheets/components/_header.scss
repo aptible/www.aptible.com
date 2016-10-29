@@ -2,17 +2,78 @@
   background-color: $dark-blue;
   color: $light-blue;
   margin-bottom: 50px;
-  // overflow: hidden; -- need overflow here for small headers
   padding-top: 34px;
-  // &::before {
-  //   background-image: url(/images/hero-grid.svg);
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   content: '';
-  //   height: calc(100% + 34px);
-  //   position: absolute;
-  //   width: 100%;
-  // }
+}
+
+.aptible-header--single-grid,
+.aptible-header--double-grid {
+  position: relative;
+  @media screen and (max-width: $nav-break) {
+    .nav-list--center {
+      // Absolute childrens' top: 0 is the nearest relative parent
+      // This -34px is the top padding of .aptible-header which is now position
+      // relative in order to support the absolute pinning of the header grids.
+      top: -34px;
+    }
+  }
+  .grid-container {
+    position: relative;
+  }
+  &::before {
+    background-color: transparent;
+    background-image: url(/images/header-top-grid.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+.aptible-header__top-grid {
+  height: 33.33%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+.aptible-header--single-grid {
+  &::before {
+    background-position: 0 -100px;
+    height: 100%;
+  }
+}
+.aptible-header--double-grid,
+.aptible-header--bottom-grid {
+  position: relative;
+  &::after {
+    background-size: cover;
+    background-color: transparent;
+    background-image: url(/images/header-bottom-grid.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 33.33%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+.aptible-header__bottom-grid__riser {
+  position: relative;
+  z-index: 1;
 }
 
 .aptible-header--adjacent {
