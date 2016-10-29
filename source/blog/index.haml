@@ -20,7 +20,7 @@ description: Posts detailing feature updates, compliance resources, and
             %h1.heading__title= latest.title
             .heading__summary= latest.excerpt
 
-- posts = blog_posts_by_date
+- posts = blog_posts_newest_first
 - posts[1..posts.length].each do |post|
   .blog-posts__post
     %a.blog-posts__link{ href: post.url }
