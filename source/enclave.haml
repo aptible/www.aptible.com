@@ -7,10 +7,10 @@ description: Aptible Enclave is a container platform that simplifies secure
              robust DevOps and security automation.
 ---
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled
+  %header.aptible-header.hero-gradient--angled.aptible-header--double-grid
     = partial 'partials/main-nav'
 
-    .grid-container.grid--2up
+    .grid-container.grid--2up.aptible-header__bottom-grid__riser
       .grid-item.product-page__hero-header
         %h2.heading__subtitle Secure DevOps
         %h1.heading__title Enclave
@@ -58,52 +58,7 @@ description: Aptible Enclave is a container platform that simplifies secure
     .feature-carousel__illustration.grid-item
       %img{ src: '/images/enclave-features/stack.png' }
 
--#  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--network
--#    .feature-carousel__details.grid-item
--#      .heading__subtitle The Network
--#      %h2.heading__title.heading__title--dark= lorem.words 4
--#      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
--#
--#    .feature-carousel__illustration.grid-item
--#      %img{ src: '/images/enclave-features/network.png' }
--#
--#  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--load-balancing
--#    .feature-carousel__details.grid-item
--#      .heading__subtitle Load Balancing
--#      %h2.heading__title.heading__title--dark= lorem.words 4
--#      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
--#
--#    .feature-carousel__illustration.grid-item
--#      %img{ src: '/images/enclave-features/load-balancing.png' }
--#
--#  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--user-access
--#    .feature-carousel__details.grid-item
--#      .heading__subtitle Team Access
--#      %h2.heading__title.heading__title--dark= lorem.words 4
--#      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
--#
--#    .feature-carousel__illustration.grid-item
--#      %img{ src: '/images/enclave-features/user-access.png' }
--#
--#  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--apps
--#    .feature-carousel__details.grid-item
--#      .heading__subtitle Apps
--#      %h2.heading__title.heading__title--dark= lorem.words 4
--#      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
--#
--#    .feature-carousel__illustration.grid-item
--#      %img{ src: '/images/enclave-features/apps.png' }
--#
--#  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--databases
--#    .feature-carousel__details.grid-item
--#      .heading__subtitle Databases
--#      %h2.heading__title.heading__title--dark= lorem.words 4
--#      %p.heading__summary.heading__summary--light-blue-gray= lorem.paragraph
--#
--#    .feature-carousel__illustration.grid-item
--#      %img{ src: '/images/enclave-features/databases.png' }
-
-.content.hero-gradient--angled.enclave-intro
+.content.hero-gradient--angled.enclave-intro.aptible-header--bottom-grid
   .grid-container.grid--single-center
     .enclave-demo.grid-item.grid-item--adjacent
       %h2.heading__title--centered
@@ -112,7 +67,7 @@ description: Aptible Enclave is a container platform that simplifies secure
         Deploy Docker containers into secure, isolated, HIPAA-ready environments.
 
   .grid-container.meet-enclave
-    .grid-item.grid-item--two-thirds.meet-enclave__terminal
+    .grid-item.grid-item--two-thirds.meet-enclave__terminal.aptible-header__bottom-grid__riser
       %pre.highlight.plaintext
         %table.rouge-table.rouge-table--full-width
           %tr
@@ -135,7 +90,7 @@ description: Aptible Enclave is a container platform that simplifies secure
               .terminal-response 2016-10-01T16:39:18.364Z [healthco-on-rails-web] => Run `rails server -h` for more startup options
               .terminal-response 2016-10-01T16:39:19.761Z [healthco-on-rails-web] => Ctrl-C to shutdown server
 
-    .grid-item.grid-item--one-third.meet-enclave__copy
+    .grid-item.grid-item--one-third.meet-enclave__copy.aptible-header__bottom-grid__riser
       %h3.meet-enclave-title Meet the Enclave Deployment Platform
       .meet-enclave-steps
         .meet-enclave-step__item

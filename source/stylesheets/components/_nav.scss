@@ -118,7 +118,6 @@
       padding: 20px;
       position: absolute;
       text-align: left;
-      top: 0;
       width: calc(100% - 60px);
       z-index: 10;
     }
@@ -292,6 +291,7 @@
   display: none;
   padding: 4px 15px;
   position: absolute;
+  z-index: 1;
   .nav-item {
     display: block;
     line-height: 2;
