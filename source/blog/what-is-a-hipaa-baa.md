@@ -16,7 +16,7 @@ For a broader overview of HIPAA, see our post on [common HIPAA questions](/blog/
 
 One caveat, as always: This post is for informational purposes only. Aptible is not a law firm, and this post is not legal advice. You should contact an attorney to obtain advice with respect to particular issues or problems, including contracts and BAAs.
 
-**Table of Contents**
+# Table of Contents
 1. [What is a BAA?](#what-is-a-baa-)
 2. [What (or who?) is a Business Associate?](#what-or-who-is-a-business-associate-)
     - [What does it mean to handle PHI "on behalf of" another entity?](#what-does-it-mean-to-handle-phi-on-behalf-of-another-entity-)
@@ -54,7 +54,9 @@ No, members of your workforce are not your business associates, but you are resp
 Probably. Most of the time independent contractors and consultants will not be under your direct control and should be treated as business associates, meaning they need to be prepared to comply fully with HIPAA, including signing a BAA and accepting liability for compliance.
 
 # When is a BAA required?
-Any time a business associate relationship exists between two parties, they are required to execute a BAA.* There are two kinds of business associate relationships:
+Any time a business associate relationship exists between two parties, they are required to execute a BAA. (Note that a BAA doesn't need to be a standalone agreement. The required provisions be can incorporated into terms of service, master service agreements, data security agreements, etc.) 
+
+There are two kinds of business associate relationships:
 
 1. Between a covered entity and a business associate; and
 2. Between a business associate and a subcontractor business associate.
@@ -67,8 +69,6 @@ For example, if you sell SaaS that handles PHI to a large self-insured employer 
 2. Aptible is your business associate, and
 3. AWS is Aptible's business associate, but
 4. Neither you nor your customer are required to have a BAA with AWS unless you also use AWS directly.
-
-*Note that a BAA doesn't need to be a standalone agreement. The required provisions be can incorporated into terms of service, master service agreements, data security agreements, etc.
 
 # What does the BAA requirement mean for choosing our stack?
 In addition to Aptible or another hosting provider, you probably use a range of third-party app and workflow services to build your products and run your business. For example, you might want to use Twilio for sending SMS, Mailgun for transactional email, Mixpanel for analytics, AWS RDS for your database, Papertrail for logging, Slack for internal communication, Gmail for email, etc. Some of those providers will sign BAAs, others will not.
@@ -173,3 +173,4 @@ If you have any questions about this post, or you'd like to chat about how to de
 [6]: /legal/terms_of_service.html
 
 _Update - March 29, 2016: Added a table of contents._
+_Update - October 29, 2016: Formatting edits._
