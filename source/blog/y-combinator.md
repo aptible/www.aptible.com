@@ -56,7 +56,8 @@ Now, armed with proof that you make something people want, you are ready to appl
 
 Spend time thinking carefully about the questions. Don't spend any time trying to [game the application](http://en.wikipedia.org/wiki/Lipstick_on_a_pig).
 
-Some tips:  
+Some tips:
+
 - Be honest with yourself. You know what your weaknesses are. Don't shy away from them, but don't waste too much time worrying if you can't change them. For example, when we submitted our application, Aptible had no paying customers. We work in a regulated industry (healthcare) where getting security and stability right is critical, and we were confident that waiting was the right choice.
 - Use every question to show that people want what you make. We made sure to explain what our waitlist looked like and how many customers had signed contracts to pay soon.
 - One or two sentences is fine for most answers. Be clear and direct, then move on.
@@ -67,6 +68,7 @@ Some tips:
 The application questions are a subset of the questions you may be asked at an interview.  
 
 Before our interview, Frank and I:  
+
 - Collected all of the known Y Combinator interview questions we could find
 - Wrote out 1-2 sentence answers
 - Agreed on which founder would lead on the answer, and
@@ -144,7 +146,7 @@ These questions concern narrative, team, and tactics. They are important, but on
 These are questions that have a correct answer.
 
 1. What will you do if we don't fund you? *Keep working on this, because it's a good idea that we can execute.*
-1. Would you relocate to Silicon Valley? *Yes.*
+1. Would you relocate to Silicon Valley during YC? *Yes.*
 1. Who is "the boss"? *(Agree on one founder.)*
 
 ### **Trouble questions**
@@ -177,6 +179,6 @@ You will only have about 100 days between getting accepted and Demo Day to make 
 
 Good job on making it to the end! Feel free to ping me on [Twitter](https://twitter.com/chasballew) or with the contact link above if you have questions. After interview invitations go out, I'll volunteer a limited number of mock interview spots on Twitter.
 
-*Updates:*  
-- Moved "What else do you have?" to the trouble section.
-- You can find the Hacker News discussion for this post [here](https://news.ycombinator.com/item?id=8334957).
+You can find the Hacker News discussion for this post [here](https://news.ycombinator.com/item?id=8334957).
+
+_Update - October 29, 2016: Formatting edits._

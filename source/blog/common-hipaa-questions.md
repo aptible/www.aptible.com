@@ -15,7 +15,7 @@ This post is lengthy, but if you read it all, by the end you will have a solid u
 
 One caveat: This post is for informational purposes only. Aptible is not a law firm, and this post is not legal advice. You should contact an attorney to obtain advice with respect to any particular issue or problem.
 
-**Table of Contents **
+# Table of Contents
 
 1. [What is HIPAA?](#what-is-hipaa-)
 2. [Who does HIPAA regulate?](#who-does-hipaa-regulate-)
@@ -249,3 +249,5 @@ You now know just enough about HIPAA to be dangerous. As you plan out your go-to
 Discuss this post on [Hacker News](https://news.ycombinator.com/item?id=11377862).
 
 _Update - March 29, 2016: Added a table of contents and link to Hacker News discussion._
+_Update - October 29, 2016: Formatting edits._
+
