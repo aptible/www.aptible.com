@@ -16,7 +16,7 @@ module AptibleHelpers
     img_src = current_page.data.image || 'meta/page-image.png'
     # Needs the fingerprinted filename from asset_path, but can't find an
     # absolute path option, hence this sad hack to replace `../`.
-    "#{base_url}/#{asset_path(:images, img_src).gsub(/\.\.\//, '')}"
+    "#{base_url}/#{asset_path(:images, img_src).gsub(%r{\.\.\/}, '')}"
   end
 
   def page_url
