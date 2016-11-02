@@ -28,7 +28,7 @@
         %p= lorem.words 15
         %a.arrow-link--right{ href: '/blog' } View the blog
 
-      - posts = blog_posts_by_date
+      - posts = blog_posts_newest_first
       - posts.take(3).each do |post|
         .grid-aside__block.grid-aside__block--segment
           %h3.post-title= post.data.title
