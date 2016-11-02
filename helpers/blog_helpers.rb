@@ -22,7 +22,7 @@ module BlogHelpers
   end
 
   def prev_post(current_post)
-    if index_of_post(current_post) > 0
+    if index_of_post(current_post).positive?
       return blog_posts_oldest_first.at(index_of_post(current_post) - 1)
     end
     nil
