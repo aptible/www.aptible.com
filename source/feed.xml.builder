@@ -4,7 +4,7 @@ xml.feed xmlns: 'http://www.w3.org/2005/Atom' do
   xml.subtitle 'Posts detailing feature updates, compliance resources, and information useful to users of Aptible\'s security and DevOps tools.'
   xml.id 'https://www.aptible.com/blog'
   xml.link rel: 'alternate', type: 'text/html', hreflang: 'en', href: 'https://www.aptible.com/'
-  xml.link href: 'https://www.aptible.com/blog'
+  xml.link href: 'https://www.aptible.com/blog/'
   xml.link href: 'https://www.aptible.com/feed.xml', rel: 'self'
   xml.updated latest_blog_post.data.posted.to_time.iso8601
   xml.author { xml.name 'Aptible Blog RSS' }
