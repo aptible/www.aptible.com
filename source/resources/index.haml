@@ -2,7 +2,7 @@
   %header.aptible-header.aptible-header--with-breadcrumbs.hero-gradient--angled
     = partial 'partials/main-nav', locals: {      |
         section_title: 'Resources',               |
-        section_url: '/resources'                 |
+        section_url: '/resources/'                |
       }                                           |
 
 .filter-state
@@ -26,7 +26,7 @@
       .grid-aside__block.grid-aside__block--segment
         %h3 From the Blog
         %p= lorem.words 15
-        %a.arrow-link--right{ href: '/blog' } View the blog
+        %a.arrow-link--right{ href: '/blog/' } View the blog
 
       - posts = blog_posts_newest_first
       - posts.take(3).each do |post|
