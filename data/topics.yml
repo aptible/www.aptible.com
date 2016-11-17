@@ -95,6 +95,8 @@
       url: "paas/memory-management-reference"
     - title: "Upgrading to ALB Endpoints"
       url: "paas/upgrading-to-alb-endpoints"
+    - title: "How do I deploy a private Docker image?"
+      url: "paas/how-to-deploy-from-private-repository"
 
 "Aptible CLI":
   slug: "cli"
