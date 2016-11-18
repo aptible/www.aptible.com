@@ -17,7 +17,8 @@ To start from scratch, first create an app on Aptible. You will still need to us
 
 Next, use the Aptible CLI's `aptible config:set` command to set a few environment variables:
 
-  * `APTIBLE_DOCKER_IMAGE` - The name of the image to pull, in the format `repo/image_name:tag`. Repo and image_name are required. Tag is optional and will default to `latest`.
+  * `APTIBLE_DOCKER_IMAGE` - The name of the image to pull, in the format `registry_host/repo/image_name:tag`. Repo and image name are required. Tag is optional and will default to `latest`. 
+  If you are not using Docker Hub (if for example you're using quay.io) then the registry host name is also required.  
   * `APTIBLE_PRIVATE_REGISTRY_HOST` - The private registry host to pull from. Required when pulling from a private registry. Defaults to `docker.io`
   * `APTIBLE_PRIVATE_REGISTRY_USERNAME` - The username to use when pulling the image. Required when pulling from a private registry.
   * `APTIBLE_PRIVATE_REGISTRY_PASSWORD` - The password of the registry to pull from. Required when pulling from a private registry.
@@ -43,10 +44,10 @@ $ git push aptible master
 
 In this example, because you set `APTIBLE_DOCKER_IMAGE`, when you `git push` the platform will pull and run the image specified using the provided credentials.
 
-Note that if a Dockerfile is present, `APTIBLE_DOCKER_IMAGE` will override the `FROM` directive.
+Note that if a Dockerfile is present, `APTIBLE_DOCKER_IMAGE` will override the `Dockerfile` and the `Dockerfile` will be ignored.
 
 ## Extending a Private Image  
-You may want to still build an app from scratch upon deploy, but would like to standardize or harden a private base image. In this case, your Aptible app will still need a Dockerfile commited to version control, but the Dockerfile's `FROM` directive can now reference the image you specify in `APTIBLE_DOCKER_IMAGE`.
+You may want to still build an app from scratch upon deploy, but would like to standardize or harden a private base image. In this case, your Aptible app will still need a Dockerfile commited to version control, but the Dockerfile's `FROM` directive can reference a private image. Be sure to specify your registry credentials with the variables above, but be sure to _omit_ `APTIBLE_DOCKER_IMAGE` (since otherwise the `Dockerfile` will be ignored).
 
 As usual, we would love to hear your feedback! If you have any questions or comments, [please let us know][0]!
 
