@@ -2,13 +2,13 @@
 title: Service Level Agreement
 tracked_title: Service Level Agreement
 description: "Aptible's default SLA."
-posted: 2015-09-10
+posted: 2016-11-26
 section: Legal
 sub_section: Agreements
 order: 1
 ---
 
-Version 1.3 - September 2015
+Version 1.4 - November 2016
 
 This Aptible Service Level Agreement (**"SLA"**) between Aptible, Inc. (**"Aptible"**, **"us"** or **"we"**) and users of the Aptible Services (**"you"**) governs the use of the Aptible Containerized Services under the provisions of the [Aptible Terms of Service](/legal/terms_of_service.html) (the **"Terms"**).
 
@@ -31,7 +31,8 @@ A Monthly Uptime Percentage of 99.95% means that we guarantee you will experienc
 **"Service Credit"** means a credit denominated in US dollars, calculated as set forth below, that we may credit back to an eligible account.
 
 **"Unavailable"** and **"Unavailability"** mean:  
-- For apps, when all of your apps have no external connectivity
+
+- For apps, when all of your apps have no external connectivity  
 - For databases, when all of your databases have no connectivity, as confirmed by our monitoring.
 
 ### 3. Service Commitments and Service Credits
@@ -57,6 +58,7 @@ If the Monthly Uptime Percentage of such request is confirmed by us and is less 
 
 ### 6. Aptible SLA Exclusions
 The Service Commitment does not apply to any unavailability, suspension or termination of the Aptible Containerized Services, or any other Aptible Containerized Service performance issues:  
+
 1. That result from a suspension or Remedial Action, as described in the Terms;
 2. Caused by factors outside of our reasonable control, including any force majeure event, Internet access, or problems beyond the demarcation point of the Aptible network;  
 3. That result from any actions or inactions of you or any third party;  

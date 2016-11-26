@@ -2,13 +2,13 @@
 title: Breach Indemnification Agreement
 tracked_title: Breach Indemnification
 description: "Aptible's default breach indemnification agreement."
-posted: 2016-10-16
+posted: 2016-11-26
 section: Legal
 sub_section: Agreements
 order: 2
 ---
 
-Version 1.3 - October 2016
+Version 1.4 - November 2016
 
 This Aptible Breach Indemnification Agreement (**"BIA"**) between Aptible, Inc. (**"Aptible"**, **"us"** or **"we"**) and users of the Aptible Services (**"you"**) governs the use of the Aptible Services under the provisions of the Aptible Terms of Service (the **"Terms"**).
 
@@ -39,7 +39,7 @@ Capitalized words and phrases have the meaning specified in the Terms.
 **"Unsecured Protected Health Information"** has the meaning specified in 45 CFR § 164.402.
 
 ### 3. Indemnity
-**A. Defense.**  Subject to Section 3(C) of this BIA, Aptible will either defend you from or settle any claim, proceeding, or suit (**"Claim"**) brought by a Third Party against you to the extent the Claim results directly from a Covered Breach (**"Covered Claim"**) if you:  
+**A. Defense.**  Subject to Section 3(C&#41; of this BIA, Aptible will either defend you from or settle any claim, proceeding, or suit (**"Claim"**) brought by a Third Party against you to the extent the Claim results directly from a Covered Breach (**"Covered Claim"**) if you:  
 
 1. Give Aptible prompt written notice of the Covered Claim;  
 2. Grant Aptible full control over the defense and settlement of the Covered Claim;  
@@ -48,7 +48,7 @@ Capitalized words and phrases have the meaning specified in the Terms.
 
 You must not defend or settle any Covered Claim without Aptible’s prior written consent.  You have the right to participate in the defense of the Covered Claim at your own expense and with counsel of your own choosing, but Aptible will have sole control over the defense and settlement of the Covered Claim.
 
-**B. Indemnification.**  Subject to Section 3(C) of this BIA, Aptible will indemnify you from and pay:
+**B. Indemnification.**  Subject to Section 3(C&#41; of this BIA, Aptible will indemnify you from and pay:
 
 1. All Covered Expenses incurred by you in connection with a Covered Claim; and
 2. Any monetary fines imposed on you by a Governmental Agency in connection with a Regulatory Investigation for carrying out practices for the protection of PHI that you implemented pursuant to Aptible’s express written recommendations.

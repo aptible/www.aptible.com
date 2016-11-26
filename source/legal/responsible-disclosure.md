@@ -2,12 +2,12 @@
 title: Responsible Disclosure Policy
 tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2016-10-16
+posted: 2016-11-26
 section: Legal
 sub_section: Policies
 ---
 
-Version 2.8 - October 2016
+Version 2.9 - November 2016
 
 ### Responsible Disclosure
 We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
@@ -46,7 +46,6 @@ Only the following services are in-scope:
 - Brute forcing login/account management pages  
 - Physical vulnerabilities  
 - Social engineering attacks (e.g. phishing)  
-- Email  
 
 **The following types of bugs do not qualify for bounties:**  
 
@@ -59,6 +58,8 @@ Only the following services are in-scope:
 - Banner disclosure on common/public services  
 - Disclosure of known public files or directories, (e.g. robots.txt)  
 - Presence of application or web browser "autocomplete" or "save password" permission  
+- Email auth (SPF records, etc)  
+- User enumeration on login  
 
 ### Top Researchers
 - Frans Rosen
