@@ -2,7 +2,7 @@
 title: Service Level Agreement
 tracked_title: Service Level Agreement
 description: "Aptible's default SLA."
-posted: 2016-11-26
+posted: 2016-11-29
 section: Legal
 sub_section: Agreements
 order: 1
@@ -30,16 +30,15 @@ A Monthly Uptime Percentage of 99.95% means that we guarantee you will experienc
 
 **"Service Credit"** means a credit denominated in US dollars, calculated as set forth below, that we may credit back to an eligible account.
 
-**"Unavailable"** and **"Unavailability"** mean:  
-
-- For apps, when all of your apps have no external connectivity  
-- For databases, when all of your databases have no connectivity, as confirmed by our monitoring.
+**"Unavailable"** and **"Unavailability"** mean, for app services and databases, when your service or database is not running or not reachable due to Aptible's fault. This excludes (a) containers that are unreachable or not running because the container's provisioned resources (RAM, CPU, disk, as applicable) are insufficient; and (b) members of a database cluster where the cluster as a whole is running and reachable.
 
 ### 3. Service Commitments and Service Credits
-Service Credits are calculated as a percentage of the total charges paid by you (excluding one-time payments, e.g. for training, etc.) for the monthly billing cycle in which the Unavailability occurred in accordance with the schedule below:
+Service Credits are calculated as a percentage of the total charges due on your Enclave invoice for the monthly billing cycle in which the Unavailability occurred, applied proportionally to the Services that were Unavailable, in accordance with the schedule below:
 
-- For Monthly Uptime Percentage less than 99.95% but equal to or greater than 99.0%, you will be eligible for a 10% Service Credit.
-- For Monthly Uptime Percentage less than 99.0%, you will be eligible for a 30% Service Credit.
+- For Monthly Uptime Percentage less than 99.95% but equal to or greater than 99.0%, you will be eligible for a Service Credit of 10% of the charges attributable to the affected resources
+- For Monthly Uptime Percentage less than 99.0%, you will be eligible for a Service Credit of 30% of the charges attributable to the affected resources
+
+For example, if you have an app container that is Unavailable for 25 minutes, you would be eligible for a Service Credit for 10% of that container's usage for the month. 
 
 We will apply any Service Credits only against future payments for the Services otherwise due from you. At our discretion, we may issue the Service Credit to the credit card you used to pay for the billing cycle in which the Unavailability occurred. Service Credits will not entitle you to any refund or other payment from Aptible. A Service Credit will be applicable and issued only if the credit amount for the applicable monthly billing cycle is greater than one dollar ($1 USD). Service Credits may not be transferred or applied to any other account.
 
@@ -57,13 +56,13 @@ To receive a Service Credit, you must submit a claim by emailing support@aptible
 If the Monthly Uptime Percentage of such request is confirmed by us and is less than the Service Commitment, then we will issue the Service Credit to you within one billing cycle following the month in which your request is confirmed by us. Your failure to provide the request and other information as required above will disqualify you from receiving a Service Credit.
 
 ### 6. Aptible SLA Exclusions
-The Service Commitment does not apply to any unavailability, suspension or termination of the Aptible Containerized Services, or any other Aptible Containerized Service performance issues:  
+The Service Commitment does not apply to any unavailability, suspension or termination of the Aptible Containerized Services, or any other Aptible Containerized Service performance issue:  
 
-1. That result from a suspension or Remedial Action, as described in the Terms;
+1. That results from a suspension or Remedial Action, as described in the Terms;
 2. Caused by factors outside of our reasonable control, including any force majeure event, Internet access, or problems beyond the demarcation point of the Aptible network;  
-3. That result from any actions or inactions of you or any third party;  
-4. That result from the equipment, software or other technology of you or any third party (other than third party equipment within our direct control);  
-5. That result from failures of Aptible Containerized Services not attributable to Unavailability; or   
-6. That result from any Maintenance.
+3. That results from any actions or inactions of you or any third party;  
+4. That results from the equipment, software or other technology of you or any third party (other than third party equipment within our direct control);  
+5. That results from failures of Aptible Containerized Services not attributable to Unavailability; or   
+6. That results from any Maintenance.
 
 If availability is impacted by factors other than those used in our Monthly Uptime Percentage calculation, then we may issue a Service Credit considering such factors at our discretion.
