@@ -32,7 +32,7 @@ gem 'neat'
 gem 'turbolinks', require: false
 
 # From support
-gem 'aptible-tasks'
+gem 'aptible-tasks', '~> 0.5.7'
 # gem 'bootstrap-sass'
 gem 'capybara'
 gem 'pry'
