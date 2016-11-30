@@ -9,7 +9,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    aptible-tasks (0.5.5)
+    aptible-tasks (0.5.7)
       rake (~> 10.0)
       rubocop (= 0.42.0)
     ast (2.3.0)
@@ -340,7 +340,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aptible-tasks
+  aptible-tasks (~> 0.5.7)
   bitters
   bourbon
   capybara
