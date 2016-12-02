@@ -125,6 +125,11 @@ function generateAptibleConnection() {
   ];
   $scheme = $url["scheme"];
   if ($scheme === "mysql") {
+    // NOTE: The options below are required to run on Aptible, because Aptible
+    // enforces SSL on connections to your MySQL database and uses a
+    // self-signed certificate for MySQL (the latter due to MySQL's poor
+    // security record). If you remove them, your app will fail to connect
+    // to MySQL with an Access Denied error.
     // NOTE: PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT is a non-standard option
     // provided by the quay.io/aptible/php Docker image. If you're using
     // another image, this won't work (of course, if you're using Postgres,
