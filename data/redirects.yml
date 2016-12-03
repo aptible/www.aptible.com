@@ -168,3 +168,5 @@
   url: /support
 - loc: /training
   url: /
+- loc: /compliance/how-long-should-we-retain-audit-logs
+  url: /compliance/how-long-should-we-retain-hipaa-audit-logs
