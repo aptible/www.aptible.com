@@ -83,7 +83,11 @@ hr {
   strong {
     font-weight: $semibold;
   }
-
+  blockquote {
+    border-left: 4px solid $light-blue;
+    padding-left: 30px;
+    font-style: italic;
+  }
 }
 
 
