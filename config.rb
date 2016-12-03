@@ -103,7 +103,7 @@ data.topics.each do |title, category|
         ignore: true do
     @title = title
     @category = category
-    @description = "Aptible support questions about #{title}"
+    @description = "Common questions and answers"
   end
 
   category.articles.each do |article|
