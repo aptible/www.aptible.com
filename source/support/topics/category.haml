@@ -25,6 +25,6 @@
         - next if article.hidden
         .blog-posts__post
           %a.blog-posts__link{ href: "/support/topics/#{article.url}" }
-            %h1.post__title= article.title
+            %p= article.title
 
   = partial 'partials/resources-footer'
