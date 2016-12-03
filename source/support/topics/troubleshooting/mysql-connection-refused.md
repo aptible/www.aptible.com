@@ -1,4 +1,4 @@
-If you are connecting to an MySQL database on Aptible, either through your app or when running `aptible db:tunnel $DB_HANDLE` and using the `mysql` command line client, you may hit the folowing error:
+If you are connecting to an MySQL database on Aptible, either through your app or when running `aptible db:tunnel $DB_HANDLE` and using the `mysql` command line client, you may hit the following error:
 
       ERROR 1045 (28000): Access denied for user 'aptible'@'ip-[IP_ADDRESS].ec2.internal' (using password: YES)
 
