@@ -198,5 +198,7 @@
   slug: "compliance"
   svg: "hipaa.svg"
   articles:
-    - title: "How long should we retain audit logs?"
-      url: "compliance/how-long-should-we-retain-audit-logs"
+    - title: "How long should we retain HIPAA audit logs?"
+      url: "compliance/how-long-should-we-retain-hipaa-audit-logs"
+    - title: "Does HIPAA allow me to send PHI to patients in unencrypted emails or SMS messages?"
+      url: "compliance/does-hipaa-allow-me-to-send-phi-to-patients-in-unencrypted-emails-or-sms-messages"
