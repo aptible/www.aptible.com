@@ -40,7 +40,7 @@
 
     = stylesheet_link_tag :all
 
-  %body.aptible-www{ class: page_classes, data: { swiftype: { name: 'body', type: 'text', index: 'true' } } }
+  %body.aptible-www{ class: page_classes, "data-swiftype-index" => "false" }
     = yield_content :header
 
     = yield
