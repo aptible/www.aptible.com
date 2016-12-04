@@ -64,7 +64,7 @@
 
     .st-ui-type-heading {
       color: $dark-blue-steel !important;
-      font-size: 30px;
+      font-size: modular-scale(1);
       font-weight: $semibold;
       overflow: visible;
       margin-bottom: 20px;
@@ -78,7 +78,7 @@
     .st-ui-type-detail,
     .st-ui-type-detail-bold {
       color: $light-blue-gray;
-      font-size: 24px;
+      font-size: 18px;
       font-weight: $light;
       margin-bottom: 30px;
       max-height: 100px;
