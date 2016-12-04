@@ -182,7 +182,7 @@
       url: "troubleshooting/permission-denied-git-push"
     - title: "I'm seeing unexpected requests in my app logs. What should I do?"
       url: "troubleshooting/unexpected-requests-in-app-logs"
-    - title: "What is a CSR and how do generate one for an SSL/TLS certificate?"
+    - title: "What is a CSR and how do I generate one for an SSL/TLS certificate?"
       url: "troubleshooting/what-is-a-csr"
 
 "Migrating to Aptible":
