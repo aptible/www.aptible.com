@@ -163,7 +163,7 @@
 - loc: /support/topics/compliance/how-long-should-we-retain-audit-logs
   url: /support/topics/compliance/how-long-should-we-retain-hipaa-audit-logs
 - loc: /support/topics/paas/what-databases-does-aptible-support
-  url: /support/topics/enclave/what-databases-does-aptible-enclave-support
+  url: /support/topics/enclave/what-databases-does-enclave-support
 - loc: /support/topics/paas/deploy-custom-database
   url: /support/topics/enclave/deploy-custom-database
 - loc: /support/topics/paas/how-to-add-background-worker
@@ -249,7 +249,7 @@
 - loc: /support/topics/paas/how-can-i-whitelist-my-app-ip
   url: /support/topics/enclave/how-can-i-whitelist-my-app-ip
 - loc: /support/topics/paas/how-to-configure-dns-for-aptible-endpoints
-  url: /support/topics/enclave/how-to-configure-dns-for-aptible-endpoints
+  url: /support/topics/enclave/how-to-configure-dns-for-enclave-endpoints
 - loc: /support/topics/paas/what-kinds-of-isolation-can-aptible-provide
   url: /support/topics/enclave/what-kinds-of-isolation-can-enclave-provide
 - loc: /support/topics/paas/how-to-determine-original-ip-address-of-request
