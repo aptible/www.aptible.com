@@ -4,7 +4,7 @@ require 'fog'
 # Global Settings
 #
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true
+set :markdown, fenced_code_blocks: true, smartypants: true, tables: true
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
@@ -103,7 +103,7 @@ data.topics.each do |title, category|
         ignore: true do
     @title = title
     @category = category
-    @description = "Common questions and answers"
+    @description = category.header
   end
 
   category.articles.each do |article|

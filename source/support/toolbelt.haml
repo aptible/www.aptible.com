@@ -266,7 +266,7 @@ layout: layout
           Additional documentation for using the Toolbelt is available on the
           <a href='/support/topics'>Aptible Toolbelt topic page</a>.
         %ul.additional-topics
-          - data.topics["Aptible CLI"].articles.each do |article|
+          - data.topics["The Aptible CLI"].articles.each do |article|
             - next if article.hidden
             %li
               %a.category-article{ href: "/support/topics/#{article.url}" }= article.title
