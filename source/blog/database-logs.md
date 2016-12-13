@@ -56,7 +56,7 @@ For Syslog Log Drains, the database handle and type is included as the source pr
 
 Update: `aptible logs` now supports databases! [Download the latest CLI][3] and use `aptible logs --database HANDLE`.
 
-However, if you’re still running on Aptible legacy infrastructure (your Aptible Dashboard will point that out when you try to provision a Log Drain), we encourage you to get in touch with support to coordinate a migration and gain access to database logs, as well as a growing number of other new features (such as [ALB Endpoints][0], support for [deploying directly from a Docker image][1] or [on-demand database restore][2]).
+If you are still running on Aptible legacy infrastructure (as indicated in the Aptible Dashboard when you provision a Log Drain), we encourage you to contact Aptible Support to coordinate a migration. This will give you access to database logs, as well as a growing number of other new features (such as [ALB Endpoints][0], support for [deploying directly from a Docker image][1] and [on-demand database restores][2]).
 
 Enjoy!
 
