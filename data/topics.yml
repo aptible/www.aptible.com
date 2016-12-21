@@ -98,6 +98,10 @@
       url: "enclave/upgrading-to-alb-endpoints"
     - title: "How do I deploy a private Docker image?"
       url: "enclave/how-to-deploy-from-private-repository"
+    - title: "How do I use my domain apex on Aptible?"
+      url: "enclave/how-do-i-use-my-domain-apex-on-aptible"
+    - title: "How do I set up an apex redirect using AWS?"
+      url: "enclave/how-do-i-setup-an-apex-redirect-using-aws"
 
 "The Aptible CLI":
   header: "Using Enclave from the command line"

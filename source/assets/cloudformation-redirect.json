@@ -1,0 +1,123 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Outputs": {
+        "DistributionHostname": {
+            "Description": "Use this domain name in your DNS provider.",
+            "Value": {
+                "Fn::GetAtt": [
+                    "RootDistribution",
+                    "DomainName"
+                ]
+            }
+        }
+    },
+    "Parameters": {
+        "Domain": {
+            "Description": "Root domain for your website, which you want to redirect from (e.g.: example.com)",
+            "Type": "String"
+        },
+        "Subdomain": {
+            "Default": "www",
+            "Description": "Subdomain for your app hosted on Aptible, which you want to redirect to (e.g.: www)",
+            "Type": "String"
+        },
+        "ViewerBucketName": {
+            "AllowedPattern": "^[^.]+$",
+            "ConstraintDescription": "must not contain dots",
+            "Description": "A name for the S3 bucket that will host your static redirect. The only requirement for this name is to be unique and not contain dots. End-users will never see it.",
+            "Type": "String"
+        }
+    },
+    "Resources": {
+        "RootBucket": {
+            "Properties": {
+                "AccessControl": "PublicRead",
+                "BucketName": {
+                    "Ref": "ViewerBucketName"
+                },
+                "WebsiteConfiguration": {
+                    "RedirectAllRequestsTo": {
+                        "HostName": {
+                            "Fn::Join": [
+                                "",
+                                [
+                                    {
+                                        "Ref": "Subdomain"
+                                    },
+                                    ".",
+                                    {
+                                        "Ref": "Domain"
+                                    }
+                                ]
+                            ]
+                        },
+                        "Protocol": "https"
+                    }
+                }
+            },
+            "Type": "AWS::S3::Bucket"
+        },
+        "RootCertificate": {
+            "Properties": {
+                "DomainName": {
+                    "Ref": "Domain"
+                }
+            },
+            "Type": "AWS::CertificateManager::Certificate"
+        },
+        "RootDistribution": {
+            "Properties": {
+                "DistributionConfig": {
+                    "Aliases": [
+                        {
+                            "Ref": "Domain"
+                        }
+                    ],
+                    "DefaultCacheBehavior": {
+                        "ForwardedValues": {
+                            "QueryString": true
+                        },
+                        "MinTTL": "0",
+                        "MaxTTL": "3600",
+                        "DefaultTTL": "3600",
+                        "SmoothStreaming": false,
+                        "TargetOriginId": {
+                          "Ref": "RootBucket"
+                        },
+                        "ViewerProtocolPolicy": "allow-all"
+                    },
+                    "Enabled": true,
+                    "Origins": [
+                        {
+                            "CustomOriginConfig": {
+                                "OriginProtocolPolicy": "http-only"
+                            },
+                            "DomainName": {
+                              "Fn::Join": [
+                                "",
+                                [
+                                  { "Ref": "RootBucket" },
+                                  ".s3-website-",
+                                  { "Ref" : "AWS::Region" },
+                                  ".amazonaws.com"
+                                ]
+                              ]
+                            },
+                            "Id": {
+                              "Ref": "RootBucket"
+                            }
+                        }
+                    ],
+                    "PriceClass": "PriceClass_100",
+                    "ViewerCertificate": {
+                        "AcmCertificateArn": {
+                            "Ref": "RootCertificate"
+                        },
+                        "SslSupportMethod": "sni-only"
+                    }
+                }
+            },
+            "Type": "AWS::CloudFront::Distribution"
+        }
+    }
+}
