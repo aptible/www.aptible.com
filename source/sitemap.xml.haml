@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+%urlset{ xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9' }
+  - sitemap.resources.each do |resource|
+    - next if resource.metadata[:options][:hidden]
+    - next unless resource.ext == '.html'
+    - next if resource.path =~ /^ui-kit/
+    %url
+      %loc= "#{base_url}#{resource.url}"
