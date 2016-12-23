@@ -1,6 +1,15 @@
 require 'spec_helper'
 
 describe 'robots.txt', type: :feature do
+  let(:base_url) { 'https://www.aptible.com' }
+
+  around do |example|
+    original_base_url = Capybara.app.config[:base_url]
+    Capybara.app.config[:base_url] = base_url
+    example.run
+    Capybara.app.config[:base_url] = original_base_url
+  end
+
   describe 'on any environment' do
     before do
       visit '/robots.txt'
@@ -16,8 +25,9 @@ describe 'robots.txt', type: :feature do
   end
 
   describe 'when served from anywhere but production www' do
+    let(:base_url) { 'http://testing.example.com' }
+
     it 'includes a disallow all (root) directive' do
-      Capybara.app.config[:base_url] = 'http://testing.example.com'
       visit '/robots.txt'
       expect(page.html).to include('Disallow: /')
     end
@@ -25,7 +35,6 @@ describe 'robots.txt', type: :feature do
 
   describe 'when served from https://www.aptible.com' do
     it 'does not include a disallow directive' do
-      Capybara.app.config[:base_url] = 'https://www.aptible.com'
       visit '/robots.txt'
       expect(page.html).to_not include('Disallow: /')
     end
