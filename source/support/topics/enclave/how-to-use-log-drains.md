@@ -1,5 +1,5 @@
-Log Drains let you collect stdout and stderr logs from your apps deployed on Aptible and route
-them to a log destination.
+Log Drains let you collect stdout and stderr logs from your apps and databases
+deployed on Aptible and route them to a log destination.
 
 ## What log destinations are supported? ##
 
@@ -61,6 +61,8 @@ Drains. This can cause log routing to crash if one log destination is
 unavailable. If you are still running on legacy infrastructure, we recommend
 scheduling an upgrade to our current infrastructure, where log forwarding is
 more reliable.
+
+Additionally, database logs are not available on Aptible legacy infrastructure.
 
 
   [10]: /support/topics/paas/how-to-set-up-papertrail/
