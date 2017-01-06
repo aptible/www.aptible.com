@@ -1,13 +1,15 @@
+build: 127
 os:
   centos:
-    '6': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/115/pkg/aptible-toolbelt-0.8.2%2B20170104122125%7Ecentos.6.8-1.el6.x86_64.rpm
-    '7': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/115/pkg/aptible-toolbelt-0.8.2%2B20170104122122%7Ecentos.7.2.1511-1.el7.x86_64.rpm
+    '6': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/127/pkg/aptible-toolbelt-0.8.3%2B20170106122225%7Ecentos.6.8-1.el6.x86_64.rpm
+    '7': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/127/pkg/aptible-toolbelt-0.8.3%2B20170106123434%7Ecentos.7.2.1511-1.el7.x86_64.rpm
   debian:
-    '7': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/115/pkg/aptible-toolbelt_0.8.2%2B20170104121709%7Edebian.7.11-1_amd64.deb
-    '8': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/115/pkg/aptible-toolbelt_0.8.2%2B20170104121753%7Edebian.8.6-1_amd64.deb
-  osx: https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/115/pkg/aptible-toolbelt-0.8.2%2B20170104122210-mac-os-x.10.11.6-1.pkg
+    '7': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/127/pkg/aptible-toolbelt_0.8.3%2B20170106121349%7Edebian.7.11-1_amd64.deb
+    '8': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/127/pkg/aptible-toolbelt_0.8.3%2B20170106121530%7Edebian.8.6-1_amd64.deb
+  osx: https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/127/pkg/aptible-toolbelt-0.8.3%2B20170106121847-mac-os-x.10.11.6-1.pkg
   ubuntu:
-    '14.04': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/115/pkg/aptible-toolbelt_0.8.2%2B20170104121729%7Eubuntu.14.04-1_amd64.deb
-    '16.04': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/115/pkg/aptible-toolbelt_0.8.2%2B20170104121719%7Eubuntu.16.04-1_amd64.deb
-version: v0.8.2
+    '14.04': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/127/pkg/aptible-toolbelt_0.8.3%2B20170106121502%7Eubuntu.14.04-1_amd64.deb
+    '16.04': https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/127/pkg/aptible-toolbelt_0.8.3%2B20170106121444%7Eubuntu.16.04-1_amd64.deb
+  windows: https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/127/pkg/aptible-toolbelt-0.8.3%2B20170106120109%7Ewindows.6.3.9600-1-x64.msi
+version: v0.8.3
 
