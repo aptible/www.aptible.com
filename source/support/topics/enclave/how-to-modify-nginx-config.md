@@ -4,9 +4,9 @@ Aptible endpoints use [NGiNX proxies](https://github.com/aptible/docker-nginx) t
   HTTPS. Your app can detect which protocol is being used by examining a
   request's `X-Forwarded-Proto` header, which is set to "https" if HTTPS was
   used and is unset otherwise. To disallow HTTP at the Aptible Endpoint
-  entirely, you can set the `FORCE_SSL` environment variable in your app's
-  configuration. This will cause your app's Endpoints to redirect all HTTP
-  traffic to HTTPS and set the
+  entirely, you can set the `FORCE_SSL` environment variable to `true` in your
+  app's configuration. This will cause your app's Endpoints to redirect all
+  HTTP traffic to HTTPS and set the
   [Strict-Transport-Security](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security)
   header on responses with a max age of 1 year. Make sure you understand the
   implications of setting the Strict-Transport-Security header before using
@@ -17,8 +17,8 @@ Aptible endpoints use [NGiNX proxies](https://github.com/aptible/docker-nginx) t
 * ([Legacy ELB Endpoints Only][0]) `DISABLE_WEAK_CIPHER_SUITES`: The default
   Aptible ELB Endpoint protocols and cipher suites balance security and support
   for older clients. If you wish to target only modern clients, you can set the
-  `DISABLE_WEAK_CIPHER_SUITES` environment variable to disable the SSLv3
-  protocol and the RC4 cipher, both of which are otherwise allowed in the
+  `DISABLE_WEAK_CIPHER_SUITES` environment variable to `true` to disable the
+  SSLv3 protocol and the RC4 cipher, both of which are otherwise allowed in the
   default configuration.
 
 * ([Legacy ELB Endpoints Only][0]) `SSL_CIPHERS_OVERRIDE` and
