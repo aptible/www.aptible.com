@@ -22,8 +22,13 @@
 
 .download-button {
   svg {
+    height: 16px;
     margin-right: 10px;
   }
+}
+
+.download-requirements {
+  margin: 20px 0 0;
 }
 
 .split-panel {

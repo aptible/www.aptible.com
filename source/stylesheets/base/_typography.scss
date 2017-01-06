@@ -28,6 +28,11 @@ h6 {
   }
 }
 
+.subdued {
+  color: $light-blue-gray;
+  font-size: 12px;
+}
+
 .no-hr::after {
   display: none;
 }

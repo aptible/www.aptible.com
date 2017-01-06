@@ -10,13 +10,20 @@ layout: layout
   = partial 'partials/headers/support-index'
 
 .content
-  .grid-container.grid--4up.toolbelt-platforms
+  .grid-container.grid--5up.toolbelt-platforms
     %a.active.grid-item.card.toolbelt-platform{ href: '#macos', class: 'macos' }
       .card__header.toolbelt-platform--logo
         = partial "images/icons/osx.svg"
       .card__body
         %h3 macOS
         %p Download the macOS binary.
+
+    %a.grid-item.card.toolbelt-platform{ href: '#windows', class: 'windows' }
+      .card__header.toolbelt-platform--logo
+        = partial "images/icons/windows.svg"
+      .card__body
+        %h3 Windows
+        %p Download the Windows binary.
 
     %a.grid-item.card.toolbelt-platform{ href: '#ubuntu', class: 'ubuntu' }
       .card__header.toolbelt-platform--logo
@@ -146,6 +153,13 @@ layout: layout
             = partial '/images/icons/icon-download.svg'
             %span Download #{data.toolbelt.version} for Enterprise Linux 7
 
+    -# Windows Panel
+    .grid-item.download-panel.split-panel.active#windows
+      %h3.no-hr Download Aptible Toolbelt for Windows
+      %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.windows }
+        = partial '/images/icons/icon-download.svg'
+        Download #{data.toolbelt.version} for Windows
+      .subdued.download-requirements Requires 64 bit Windows 8.1 or greater or 64 bit Windows Server 2012r2 or greater
 
   .container.aptible-toolbelt
     .grid-container.grid--2up.grid-container--ruled
