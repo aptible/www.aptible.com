@@ -199,6 +199,28 @@ body {
   }
 }
 
+
+.grid--5up {
+  .grid-item {
+    width: 18.4%;
+    float: left;
+    margin-right: 2%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: $tablet-landscape) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+    @media screen and (max-width: $tablet-portrait) {
+      @include span-columns(12);
+    }
+  }
+}
+
+
 .grid-item--adjacent {
   margin-bottom: 0;
   min-height: 0;
