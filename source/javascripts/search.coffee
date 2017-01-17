@@ -1,4 +1,4 @@
-$(document).on 'turbolinks:load', ->
+$ ->
   button = document.getElementById('header-search-button')
   container = document.getElementById('header-search-bar')
   input = document.getElementById('swifttype-search-input')

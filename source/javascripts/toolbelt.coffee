@@ -1,4 +1,4 @@
-$(document).on 'turbolinks:load', ->
+$ ->
   buttons = $('.toolbelt-platform')
   panels = $('.download-panels .download-panel')
   download_buttons = $('.download-button')
