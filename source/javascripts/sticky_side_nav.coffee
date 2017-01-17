@@ -1,4 +1,4 @@
-$(document).on 'turbolinks:load', ->
+$ ->
   $sideNav = $ '.grid-aside--left .grid-aside'
   $win = $ window
   $footer = $('.resources-footer')

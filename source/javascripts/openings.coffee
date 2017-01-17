@@ -28,7 +28,7 @@ addJobs = (job_data) ->
 
   $('.openings').html posting_html.join('')
 
-$(document).on 'turbolinks:load', ->
+$ ->
   if $('.openings').length > 0
     $.ajax
       dataType: 'json'

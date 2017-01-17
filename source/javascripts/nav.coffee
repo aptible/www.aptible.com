@@ -1,6 +1,8 @@
-$(document).on 'turbolinks:load', ->
+$ ->
   $('.nav-toggle').on 'click', ->
-    $parent = $ $(@).parent();
+    $parent = $ $(@).parent()
     if $parent.attr('data-state') is 'open'
-      return $parent.attr 'data-state', ''
+      $parent.attr 'data-state', ''
+      return false
     $parent.attr 'data-state', 'open'
+    false

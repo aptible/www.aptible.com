@@ -118,7 +118,7 @@
       padding: 20px;
       position: absolute;
       text-align: left;
-      width: calc(100% - 60px);
+      top: 0;
       z-index: 10;
     }
     .nav-toggle {
@@ -185,6 +185,18 @@
       transition: opacity $base-duration $base-timing $base-duration*2;
       opacity: 1;
       position: static;
+    }
+  }
+}
+
+.aptible-header--single-grid,
+.aptible-header--double-grid {
+  @media screen and (max-width: $nav-break) {
+    .nav-list--center {
+      // Absolute childrens' top: 0 is the nearest relative parent
+      // This -34px is the top padding of .aptible-header which is now position
+      // relative in order to support the absolute pinning of the header grids.
+      top: -34px;
     }
   }
 }

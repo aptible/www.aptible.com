@@ -1,4 +1,4 @@
-$(document).on 'turbolinks:load', ->
+$ ->
   $navSearch = $('.search-nav__input')
   if $navSearch.length > 0
     $navSearch.data 'query', $navSearch.val()

@@ -1,4 +1,4 @@
-$(document).on 'turbolinks:load', ->
+$ ->
   $form = $('#search-form')
   $field = $form.find('input') if $form.length > 0
   return unless $field

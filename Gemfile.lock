@@ -322,9 +322,6 @@ GEM
     timers (4.0.4)
       hitimes
     trollop (2.1.2)
-    turbolinks (5.0.1)
-      turbolinks-source (~> 5)
-    turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.15)
@@ -354,9 +351,8 @@ DEPENDENCIES
   rake
   redcarpet
   rspec
-  turbolinks
   tzinfo-data
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.13.0
+   1.13.6
