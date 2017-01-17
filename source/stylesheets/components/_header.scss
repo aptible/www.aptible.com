@@ -8,14 +8,6 @@
 .aptible-header--single-grid,
 .aptible-header--double-grid {
   position: relative;
-  @media screen and (max-width: $nav-break) {
-    .nav-list--center {
-      // Absolute childrens' top: 0 is the nearest relative parent
-      // This -34px is the top padding of .aptible-header which is now position
-      // relative in order to support the absolute pinning of the header grids.
-      top: -34px;
-    }
-  }
   .grid-container {
     position: relative;
   }
@@ -68,6 +60,15 @@
     position: absolute;
     width: 100%;
     z-index: 0;
+  }
+}
+
+@media screen and (max-width: $nav-break) {
+  .aptible-header--single-grid::before,
+  .aptible-header--double-grid::before,
+  .aptible-header--double-grid::after,
+  .aptible-header--bottom-grid::after {
+    display: none;
   }
 }
 
