@@ -1,8 +1,22 @@
-%a.nav-item{ href: '/enclave/', class: active_nav_item('enclave') } Enclave
-%a.nav-item{ href: '/gridiron/', class: active_nav_item('gridiron') } Gridiron
+.nav-item.nav-parent{ tabindex: 0 }
+  %a.nav-item.nav-item--parent{ href: '/enclave/' } Products
+  %nav.nav-list__child-nav
+    %a.nav-item{ href: '/enclave/', class: active_nav_item('enclave') } Enclave
+    %a.nav-item{ href: '/gridiron/', class: active_nav_item('gridiron') } Gridiron
+
 %a.nav-item{ href: '/pricing/', class: active_nav_item('pricing') } Pricing
 
-%a.nav-item{ href: '/customers/' } Customers
+.nav-item.nav-parent{ tabindex: 0 }
+  %a.nav-item.nav-item--parent{ href: '/support/' } Developers
+  %nav.nav-list__child-nav
+    %a.nav-item{ href: '/support/topics/' } Documentation
+    %a.nav-item{ href: '/resources/' } Resources
+    %a.nav-item{ href: '/support/quickstart/' } Quickstart Guides
+    %a.nav-item{ href: contact_href } Open a Ticket
+    %a.nav-item{ href: status_href } Status
+    %a.nav-item{ href: 'http://github.com/aptible' } Github
+
+%a.nav-item{ href: '/customers/' } Our Customers
 -# TODO: When we get back to customer pages...
 -# .nav-item.nav-parent{ tabindex: 0 }
 -#   %a.nav-item.nav-item--parent{ href: '/customers/' } Customers
@@ -14,14 +28,12 @@
 -#     %a.nav-item{ href: '/case-studies/' } Case Studies
 
 .nav-item.nav-parent{ tabindex: 0 }
-  %a.nav-item.nav-item--parent{ href: '/support/', class: active_nav_item('support') } Help
+  %a.nav-item.nav-item--parent{ href: '/company/' } Company
   %nav.nav-list__child-nav
-    -# %a.nav-item{ href: '/resources/' } Resources
-    %a.nav-item{ href: '/support/topics/' } Support Topics
-    %a.nav-item{ href: '/support/quickstart/' } Quickstart Guides
-    %a.nav-item{ href: contact_href } Open a Ticket
-    %a.nav-item{ href: '/legal/' } Legal
+    %a.nav-item{ href: '/company/' } About Aptible
     %a.nav-item{ href: '/faq/' } FAQ
+    %a.nav-item{ href: '/legal/' } Legal
+    %a.nav-item{ href: '/blog/' } Blog
 
 .nav--dashboard-auth
   %a.nav-item{ href: dashboard_href } Login

@@ -88,6 +88,12 @@ ready do
 end
 
 #
+# resources
+#
+page '/resources/*', layout: 'resource.haml'
+page '/resources/index.html', layout: 'layout.haml'
+
+#
 # Legal
 #
 # Proxy /legal/index to Terms of Service

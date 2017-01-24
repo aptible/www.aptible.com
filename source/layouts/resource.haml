@@ -1,0 +1,19 @@
+- content_for :header do
+  -# NOTE: Add .aptible-header--with-breadcrumbs when restoring filters
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav', locals: {      |
+        section_title: 'Resources',               |
+        section_url: '/resources/'                |
+      }                                           |
+
+= wrap_layout :layout do
+  .content
+    .grid-container.grid-container--no-padding
+      .grid-document.markdown-content
+        = find_and_preserve do
+          = yield
+
+      .grid-aside
+        = partial 'resources-aside'
+
+  = partial 'partials/resources-footer'

@@ -75,18 +75,14 @@ module AptibleHelpers
     l.sort_by { |p| p.data['order'] }
   end
 
-  def resources_by_category(category = 'all', featured = false)
-    filtered = sitemap.resources.select { |r| r.data['section'] == 'Resources' }
-    unless category == 'all'
-      filtered = filtered.select { |r| r.data['categories'].include? category }
-    end
-    filtered.sort_by { |r| r.data['posted'] }.reverse!
+  def resources_oldest_first
+    sitemap.resources
+            .select { |r| r.data['section'] == 'Resources' }
+            .sort_by { |r| r.data['posted'] }
+  end
 
-    if featured
-      filtered.select { |r| r.data.include? 'featured' }
-    else
-      filtered.select { |r| !r.data.include? 'featured' }
-    end
+  def resources_newest_first
+    resources_oldest_first.reverse!
   end
 
   def dashboard_href
@@ -100,5 +96,9 @@ module AptibleHelpers
   def contact_href
     # 'https://aptible.zendesk.com/hc/en-us/requests/new'
     'http://contact.aptible.com'
+  end
+
+  def status_href
+    'http://status.aptible.com/'
   end
 end

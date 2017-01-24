@@ -1,11 +1,11 @@
 ---
 title: Common HIPAA Questions
-excerpt: "HIPAA 101 for software engineering teams."
+excerpt: HIPAA 101 for software engineering teams.
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
 posted: 2016-01-05
-section: Blog
+section: Resources
 categories:
 - HIPAA Compliance
 ---
@@ -250,4 +250,3 @@ Discuss this post on [Hacker News](https://news.ycombinator.com/item?id=11377862
 
 _Update - March 29, 2016: Added a table of contents and link to Hacker News discussion._
 _Update - October 29, 2016: Formatting edits._
-
