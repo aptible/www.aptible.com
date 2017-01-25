@@ -1,6 +1,6 @@
 ---
 title: Gridiron Compliance Model
-excerpt: The Gridiron Compliance Model provides robust security and compliance.
+excerpt: The Gridiron Compliance Model describes how Gridiron transforms complex security and compliance tasks into manageable and repeatable business processes.
 author_name: Henry Hund
 author_email: henry@aptible.com
 author_id: henry
