@@ -1,11 +1,13 @@
 ---
 title: Common HIPAA Questions
 excerpt: HIPAA 101 for software engineering teams.
+header_image: /images/resources/common-hipaa-questions.jpg
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
 posted: 2016-01-05
 section: Resources
+featured: false
 categories:
 - HIPAA Compliance
 ---
@@ -17,13 +19,13 @@ One caveat: This post is for informational purposes only. Aptible is not a law f
 
 # Table of Contents
 
-1. [What is HIPAA?](#what-is-hipaa-)
-2. [Who does HIPAA regulate?](#who-does-hipaa-regulate-)
-3. [What data does HIPAA regulate?](#what-data-does-hipaa-regulate-)
-4. [Who will check if we are HIPAA-compliant?](#who-will-check-if-we-are-hipaa-compliant-)
-5. [Can we be fined for HIPAA violations where there is no breach of PHI?](#can-we-be-fined-for-hipaa-violations-where-there-is-no-breach-of-phi-)
-6. [How do we become HIPAA-compliant?](#how-do-we-become-hipaa-compliant-)
-7. [What are the HIPAA rules?](#what-are-the-hipaa-rules-)
+1. [What is HIPAA?](#what-is-hipaa)
+2. [Who does HIPAA regulate?](#who-does-hipaa-regulate)
+3. [What data does HIPAA regulate?](#what-data-does-hipaa-regulate)
+4. [Who will check if we are HIPAA-compliant?](#who-will-check-if-we-are-hipaa-compliant)
+5. [Can we be fined for HIPAA violations where there is no breach of PHI?](#can-we-be-fined-for-hipaa-violations-where-there-is-no-breach-of-phi)
+6. [How do we become HIPAA-compliant?](#how-do-we-become-hipaa-compliant)
+7. [What are the HIPAA rules?](#what-are-the-hipaa-rules)
     - [The Privacy Rule](#the-privacy-rule)
     - [The Security Rule](#the-security-rule)
     - [The Breach Notification Rule](#the-breach-notification-rule)

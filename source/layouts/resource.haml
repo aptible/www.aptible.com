@@ -1,15 +1,20 @@
+- resource = current_page.data
 - content_for :header do
-  -# NOTE: Add .aptible-header--with-breadcrumbs when restoring filters
-  %header.aptible-header.hero-gradient--angled
+  %header.aptible-header.aptible-header--with-breadcrumbs.hero-gradient--angled
     = partial 'partials/main-nav', locals: {      |
         section_title: 'Resources',               |
         section_url: '/resources/'                |
       }                                           |
 
 = wrap_layout :layout do
+  .content.resource__header
+    .grid-container.grid-container--no-padding.resource__header-wrap{ style: resource_header_style(resource) }
+      %h1.heading__title= resource.title
+      .heading__summary= resource.excerpt
+
   .content
     .grid-container.grid-container--no-padding
-      .grid-document.markdown-content
+      .grid-document.markdown-content.resource-article
         = find_and_preserve do
           = yield
 

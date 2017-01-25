@@ -1,13 +1,21 @@
+//
+// Listed resources at /resources
+//
 .resources-list {
 }
 
-.resource-article {
+.resource-item {
   border: 1px solid $light-blue;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  transition: border-color, $base-duration, $base-timing;
+  &:hover, &:focus {
+    border-color: $blue;
+    outline: none;
+  }
 }
 
-.resource-article--featured::before {
+.resource-item--featured::before {
   background-color: $blue;
   color: $white;
   content: 'Featured Resource';
@@ -18,21 +26,59 @@
   width: 100%;
 }
 
-.resource-article__header {
+.resource-item__header {
+  background-image: url(/images/resources/default.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 150px 20px 10px;
   width: 100%;
 }
 
-.resource-article__title {
+.resource-item__title {
+  color: white;
+  font-size: 30px;
+  &::after {
+    background-color: rgba(255,255,255,.2);
+  }
 }
 
-.resource-article__tags {
+.resource-item__body {
+  padding: 50px 20px;
 }
 
-.resource-article__tag {
+.resource-item__tags {
+  display: none;
 }
 
-.resource-article__excerpt {
+.resource-item__tag {
 }
 
-.resource-article__author-date {
+.resource-item__excerpt {
+  color: $blue-steel;
+  font-size: 20px;
+  font-weight: $light;
+}
+
+.resource-item__author-date {
+  display: none;
+}
+
+//
+// Single resource page
+//
+.resource__header {
+  background-color: $lighter-blue;
+  margin-bottom: 50px;
+}
+.resource__header-wrap {
+  background-color: black;
+  background-image: url(/images/resources/default.png);
+  background-size: cover;
+  padding: 65px 30px;
+}
+
+.resource-article {
+  @media screen and (max-width: $tablet-landscape) {
+    padding: 0 20px;
+  }
 }

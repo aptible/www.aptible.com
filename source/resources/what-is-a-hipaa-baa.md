@@ -1,12 +1,13 @@
 ---
 title: What is a HIPAA BAA?
 excerpt: "What do software developers need to know about Business Associate Agreements?"
+header_image: /images/resources/what-is-a-baa.jpg
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
 posted: 2016-03-28
 section: Resources
-featured: true
+featured: false
 categories:
 - HIPAA Compliance
 ---
@@ -17,12 +18,12 @@ For a broader overview of HIPAA, see our post on [common HIPAA questions](/resou
 One caveat, as always: This post is for informational purposes only. Aptible is not a law firm, and this post is not legal advice. You should contact an attorney to obtain advice with respect to particular issues or problems, including contracts and BAAs.
 
 # Table of Contents
-1. [What is a BAA?](#what-is-a-baa-)
-2. [What (or who?) is a Business Associate?](#what-or-who-is-a-business-associate-)
-    - [What does it mean to handle PHI "on behalf of" another entity?](#what-does-it-mean-to-handle-phi-on-behalf-of-another-entity-)
-    - [Do employees need to sign a BAA?](#do-employees-need-to-sign-a-baa-)
-    - [Do contractors need to sign a BAA?](#do-contractors-need-to-sign-a-baa-)
-3. [When is a BAA required?](#when-is-a-baa-required-)
+1. [What is a BAA?](#what-is-a-baa)
+2. [What (or who?) is a Business Associate?](#what-or-who-is-a-business-associate)
+    - [What does it mean to handle PHI "on behalf of" another entity?](#what-does-it-mean-to-handle-phi-on-behalf-of-another-entity)
+    - [Do employees need to sign a BAA?](#do-employees-need-to-sign-a-baa)
+    - [Do contractors need to sign a BAA?](#do-contractors-need-to-sign-a-baa)
+3. [When is a BAA required?](#when-is-a-baa-required)
 4. [What does the BAA requirement mean for choosing our stack?](#what-does-the-baa-requirement-mean-for-choosing-our-stack-)
 5. [What if a vendor signs a BAA, but I don't think they're really compliant?](#what-if-a-vendor-signs-a-baa-but-i-don-t-think-they-re-really-compliant-)
 6. [What needs to be in a BAA?](#what-needs-to-be-in-a-baa-)

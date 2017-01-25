@@ -5,7 +5,7 @@ require 'fog'
 #
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true, tables: true,
-               strikethrough: true
+               strikethrough: true, with_toc_data: true
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'

@@ -59,6 +59,14 @@ module AptibleHelpers
     subtitle.is_a?(Array) ? subtitle.first : subtitle
   end
 
+  def resource_header_style(resource)
+    if resource.header_image
+      "background-image: url(#{resource.header_image});"
+    else
+      ''
+    end
+  end
+
   def legal_sections
     sitemap.resources
            .select { |p| p.data['section'] == 'Legal' }
@@ -77,8 +85,8 @@ module AptibleHelpers
 
   def resources_oldest_first
     sitemap.resources
-            .select { |r| r.data['section'] == 'Resources' }
-            .sort_by { |r| r.data['posted'] }
+           .select { |r| r.data['section'] == 'Resources' }
+           .sort_by { |r| r.data['posted'] }
   end
 
   def resources_newest_first

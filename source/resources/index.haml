@@ -25,7 +25,7 @@
 
       .resources-list
         - resources_oldest_first.each do |resource|
-          = partial 'resource-article',  locals: { resource: resource }
+          = partial 'resource-item',  locals: { resource: resource }
 
     .grid-aside
       = partial 'resources-aside'

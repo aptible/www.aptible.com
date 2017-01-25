@@ -1,0 +1,64 @@
+//
+// Newsletter Signup
+//
+.newsletter-form {
+  position: relative;
+  &:focus { outline: none; }
+}
+
+.newsletter-form__email {
+  -webkit-appearance: none;
+  border-color: $light-blue;
+  border-radius: 0;
+  border-width: 2px;
+  box-shadow: none;
+  color: $blue-steel;
+  display: inline-block;
+  outline: none;
+  &::-webkit-input-placeholder {
+    color: $sky-blue;
+  }
+  &:focus, &:hover {
+    border-color: $sky-blue;
+    box-shadow: none;
+    outline: none;
+  }
+  &:invalid {
+    border-color: $dark-magenta;
+  }
+}
+
+.newsletter-form__submit {
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  height: 34px;
+  padding: 0;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  transition: right, $base-duration, $base-timing;
+  width: 34px;
+  &::after {
+    border-color: $sky-blue;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 5px 5px 0 0;
+    content: '';
+    color: black;
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    transition: border-color, $base-duration, $base-timing;
+    transform: rotate(45deg) translateX(-10px);
+    width: 15px;
+  }
+  &:hover, &:focus {
+    background-color: transparent;
+    outline: none;
+    right: 2px;
+    &::after {
+      border-color: $blue;
+    }
+  }
+}

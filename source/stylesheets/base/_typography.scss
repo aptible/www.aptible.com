@@ -140,4 +140,7 @@ hr {
   color: $light-blue-gray;
   font-size: 14px;
   font-weight: $regular;
+  .arrow-link--right {
+    padding-left: 5px;
+  }
 }
