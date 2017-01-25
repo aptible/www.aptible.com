@@ -24,7 +24,7 @@
       -#   %a.filter-option.filter-option--selected{ href: '' } All
 
       .resources-list
-        - resources_oldest_first.each do |resource|
+        - resources_newest_first.each do |resource|
           = partial 'resource-item',  locals: { resource: resource }
 
     .grid-aside
