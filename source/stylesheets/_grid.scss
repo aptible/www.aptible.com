@@ -134,7 +134,7 @@ body {
 }
 
 .grid-document {
-  @include span-columns(9);
+  @include span-columns(8);
   float: left;
   margin-bottom: 100px;
   @media screen and (max-width: $tablet-portrait) {
@@ -145,7 +145,7 @@ body {
 }
 
 .grid-aside {
-  @include span-columns(3);
+  @include span-columns(4);
   @include omega();
   float: right;
   margin-bottom: 50px;

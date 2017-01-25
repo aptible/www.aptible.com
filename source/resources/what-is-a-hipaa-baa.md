@@ -1,28 +1,29 @@
 ---
 title: What is a HIPAA BAA?
 excerpt: "What do software developers need to know about Business Associate Agreements?"
+header_image: /images/resources/what-is-a-baa.jpg
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
 posted: 2016-03-28
-section: Blog
-featured: true
+section: Resources
+featured: false
 categories:
 - HIPAA Compliance
 ---
 At Aptible, we get a lot of questions about HIPAA business associate agreements, or "BAAs." This post will explain some of the essential concepts that cloud-hosted software development organizations should know about BAAs.
 
-For a broader overview of HIPAA, see our post on [common HIPAA questions](/blog/common_HIPAA_questions.html).
+For a broader overview of HIPAA, see our post on [common HIPAA questions](/resources/common-hipaa-questions/).
 
 One caveat, as always: This post is for informational purposes only. Aptible is not a law firm, and this post is not legal advice. You should contact an attorney to obtain advice with respect to particular issues or problems, including contracts and BAAs.
 
 # Table of Contents
-1. [What is a BAA?](#what-is-a-baa-)
-2. [What (or who?) is a Business Associate?](#what-or-who-is-a-business-associate-)
-    - [What does it mean to handle PHI "on behalf of" another entity?](#what-does-it-mean-to-handle-phi-on-behalf-of-another-entity-)
-    - [Do employees need to sign a BAA?](#do-employees-need-to-sign-a-baa-)
-    - [Do contractors need to sign a BAA?](#do-contractors-need-to-sign-a-baa-)
-3. [When is a BAA required?](#when-is-a-baa-required-)
+1. [What is a BAA?](#what-is-a-baa)
+2. [What (or who?) is a Business Associate?](#what-or-who-is-a-business-associate)
+    - [What does it mean to handle PHI "on behalf of" another entity?](#what-does-it-mean-to-handle-phi-on-behalf-of-another-entity)
+    - [Do employees need to sign a BAA?](#do-employees-need-to-sign-a-baa)
+    - [Do contractors need to sign a BAA?](#do-contractors-need-to-sign-a-baa)
+3. [When is a BAA required?](#when-is-a-baa-required)
 4. [What does the BAA requirement mean for choosing our stack?](#what-does-the-baa-requirement-mean-for-choosing-our-stack-)
 5. [What if a vendor signs a BAA, but I don't think they're really compliant?](#what-if-a-vendor-signs-a-baa-but-i-don-t-think-they-re-really-compliant-)
 6. [What needs to be in a BAA?](#what-needs-to-be-in-a-baa-)
@@ -38,7 +39,7 @@ BAAs are hybrid contractual and regulatory instruments, meaning they both satisf
 Like most contracts, if one party violates the agreement, the other party may have remedies. Unlike most contracts, if a BAA isn't in place, isn't complete, or is violated, both parties may be in trouble with the federal government.
 
 # What (or who?) is a Business Associate?
-Check out that post on [common HIPAA questions](/blog/common_HIPAA_questions.html). The most common type of business associate is a person or organization that creates, receives, transmits, or maintains protected health information (PHI) "on behalf of" a covered entity or another business associate.
+Check out that post on [common HIPAA questions](/resources/common-hipaa-questions/). The most common type of business associate is a person or organization that creates, receives, transmits, or maintains protected health information (PHI) "on behalf of" a covered entity or another business associate.
 
 The regulations are more nuanced, but in the real world, if you handle identifiable patient data for *any* reason, most covered entities (healthcare providers, insurance companies, pharmacies, self-ensured employers, etc.) will consider you to be a business associate and make you sign a BAA.
 
@@ -54,7 +55,7 @@ No, members of your workforce are not your business associates, but you are resp
 Probably. Most of the time independent contractors and consultants will not be under your direct control and should be treated as business associates, meaning they need to be prepared to comply fully with HIPAA, including signing a BAA and accepting liability for compliance.
 
 # When is a BAA required?
-Any time a business associate relationship exists between two parties, they are required to execute a BAA. (Note that a BAA doesn't need to be a standalone agreement. The required provisions be can incorporated into terms of service, master service agreements, data security agreements, etc.) 
+Any time a business associate relationship exists between two parties, they are required to execute a BAA. (Note that a BAA doesn't need to be a standalone agreement. The required provisions be can incorporated into terms of service, master service agreements, data security agreements, etc.)
 
 There are two kinds of business associate relationships:
 

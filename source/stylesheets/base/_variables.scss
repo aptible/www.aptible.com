@@ -19,8 +19,8 @@ $gutter: 1.25em !default;     // 20px gutter
 // Breakpoints
 //
 $max-viewport: 1200px;
-$nav-break: 900px;
 $tablet-landscape: 1024px;
+$nav-break: $tablet-landscape; //900px;
 $tablet-portrait: 768px;
 
 $medium-screen: new-breakpoint(min-width 768px);

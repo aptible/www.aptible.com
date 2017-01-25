@@ -1,52 +1,31 @@
 - content_for :header do
-  %header.aptible-header.aptible-header--with-breadcrumbs.hero-gradient--angled
+  -# NOTE: Add .aptible-header--with-breadcrumbs when restoring filters
+  %header.aptible-header.hero-gradient--angled
     = partial 'partials/main-nav', locals: {      |
         section_title: 'Resources',               |
         section_url: '/resources/'                |
       }                                           |
 
-.filter-state
-  .grid-container
-    %span.filter-state__subject Resources
-    %span.filter-state__tag All
+-# TODO: Add filtering when we have more resources
+-# .filter-state
+-#   .grid-container
+-#     %span.filter-state__subject Resources
+-#     %span.filter-state__tag All
 
 .content
   .grid-container.grid-container--no-padding
-    .grid-aside
-      %input.filter-search{ type: 'search', placeholder: 'Search Resources' }
-
-      .grid-aside__block
-        %h3 Newsletter
-        %p
-          Sign up for our newsletter for the latest on Aptible and
-          HIPAA Compliance Resources.
-        %p
-          %input{ type: 'email', placeholder: 'Email Address' }
-
-      .grid-aside__block.grid-aside__block--segment
-        %h3 From the Blog
-        %p= lorem.words 15
-        %a.arrow-link--right{ href: '/blog/' } View the blog
-
-      - posts = blog_posts_newest_first
-      - posts.take(3).each do |post|
-        .grid-aside__block.grid-aside__block--segment
-          %h3.post-title= post.data.title
-          %p.post-excerpt
-            = post.data.excerpt
-            %a.arrow-link--right{ href: post.url } Keep reading
-
     .grid-document
-      .filter
-        .filter-label Resource Categories:
-        %a.filter-option{ href: '' } Compliance
-        %a.filter-option{ href: '' } Developer
-        %a.filter-option{ href: '' } Other
-        %a.filter-option.filter-option--selected{ href: '' } All
+      -# TODO: Add filtering when we have more resources
+      -# .filter
+      -#   .filter-label Resource Categories:
+      -#   %a.filter-option{ href: '' } Compliance
+      -#   %a.filter-option{ href: '' } Developer
+      -#   %a.filter-option{ href: '' } Other
+      -#   %a.filter-option.filter-option--selected{ href: '' } All
 
       .resources-list
-        - resources_by_category('all', true).each do |resource|
-          = partial 'resource-article',  locals: { resource: resource }
+        - resources_oldest_first.each do |resource|
+          = partial 'resource-item',  locals: { resource: resource }
 
-        - resources_by_category('all', false).each do |resource|
-          = partial 'resource-article',  locals: { resource: resource }
+    .grid-aside
+      = partial 'resources-aside'

@@ -1,0 +1,18 @@
+-# %input.filter-search{ type: 'search', placeholder: 'Search Resources' }
+
+.grid-aside__block
+  %h3 Security &amp; Compliance Digest
+  %p
+    Sign up to get the best in security and compliance delivered monthly.
+  %form.newsletter-form
+    %input#aptible-newsletter-subscription-email.newsletter-form__email{ type: 'email', placeholder: 'Email Address' }
+    %button.newsletter-form__submit{ type: 'submit', value: ' ' }
+
+- blog_posts_newest_first.take(3).each_with_index do |post, index|
+  .grid-aside__block.grid-aside__block--segment
+    - if index == 0
+      %h3 From the Blog
+    %h3.post-title= post.data.title
+    %p.post-excerpt
+      = post.data.excerpt
+      %a.arrow-link--right{ href: post.url } Keep reading

@@ -5,7 +5,7 @@ require 'fog'
 #
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true, tables: true,
-               strikethrough: true
+               strikethrough: true, with_toc_data: true
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
@@ -86,6 +86,12 @@ ready do
           locals: { author_id: author[0], posts: posts }
   end
 end
+
+#
+# resources
+#
+page '/resources/*', layout: 'resource.haml'
+page '/resources/index.html', layout: 'layout.haml'
 
 #
 # Legal

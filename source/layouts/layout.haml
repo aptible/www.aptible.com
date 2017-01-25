@@ -23,11 +23,14 @@
       // TypeKit
       try { Typekit.load({ async: true }); } catch(e) {}
 
-      // No google analytics locally
+      // No analytics locally
       if (window.location.hostname !== 'localhost') {
+        /* segmentio */
         !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
           analytics.load("#{segmentio_writekey}");
         }}();
+        // Autopilot
+        (function(o){var b="https://api.autopilothq.com/anywhere/",t="1267246580184c38b76d8ec048b700a4c2e30c3bd56f45f2ac4a383868d29a98",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};if(!o.noaa){z(b+"aa/"+t+'?'+p,false)};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});
       }
 
       // Swiftype
@@ -35,7 +38,6 @@
         (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
         e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
       })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
       _st('install','#{swiftype_key}', '2.0.0');
 
     = stylesheet_link_tag :all
@@ -46,6 +48,8 @@
     = yield
 
     = partial 'partials/footer'
+
+    = partial 'partials/notification'
 
     = javascript_include_tag :all
 
