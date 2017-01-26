@@ -18,10 +18,10 @@ The Aptible Update Webinar Series is a quarterly presentation that covers recent
 
 We hosted our second Update Webinar on January 25. In it, we covered:
 
-- A preview of Gridiron, our security management and compliance platform
+- A preview of [Gridiron](https://www.aptible.com/resources/gridiron-compliance-model/), our security management and compliance platform
 - Improvements to the Enclave deployment process for reliability, predictability and speed
-- Enclave database logging
-- The Enclave CLI for Windows
+- Enclave [database logging](https://www.aptible.com/blog/database-logs/) and enhanced [Redis](https://www.aptible.com/blog/redis-ssl/) and [RabbitMQ](https://www.aptible.com/blog/rabbitmq-management/) support
+- The [Enclave CLI for Windows](https://www.aptible.com/blog/windows-cli/)
 - Continual efforts to strengthen Enclave security
 
 The next Aptible Update Webinar will be on April 25, 2017, at 11am PST/2pm EST.
