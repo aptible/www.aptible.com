@@ -13,6 +13,10 @@ In either case, the new IP address will be taken from a pool of pre-defined IP a
 
 #### Determining your Aptible stack's outbound IP address
 
-If you have `curl` installed in your Docker image and you want to retrieve your stack's current IP yourself, you can `aptible ssh` to your app and run `curl ipinfo.io`.
+In your Aptible Dashboard, note the environment your app resides in.
 
-For retrieving the other IP(s) in your stack's IP pool, send a request to [support](http://contact.aptible.com) and we will provide them for you.
+Then, navigate to your Organization Settings (click on your name and then Settings under your user), and open the Environments tab.
+
+The IP addresses that make up your stack IP pool are listed there, for each of your environments.
+
+![](/images/support/topics/paas/how-can-i-whitelist-my-app-ip/dashboard.png)
