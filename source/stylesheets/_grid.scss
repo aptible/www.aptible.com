@@ -133,6 +133,12 @@ body {
   justify-content: center;
 }
 
+@media (max-width: $tablet-portrait) {
+  .grid--2up .grid-item--mobile-hidden {
+    display: none;
+  }
+}
+
 .grid-document {
   @include span-columns(8);
   float: left;

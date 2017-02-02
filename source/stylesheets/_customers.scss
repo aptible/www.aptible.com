@@ -48,3 +48,339 @@
 
 .story--pager {
 }
+
+
+//
+// UCSF Pride Study
+//
+.pride-study__hero {
+  background-color: #ee6624;
+  background-image: url(/images/customers/stories/pride-study-bg.png);
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  min-height: 400px;
+  padding-top: 130px;
+  .aptible-mark {
+    margin-bottom: 30px;
+    transform: scale(1.5);
+  }
+  h1 {
+    color: $white;
+    margin-bottom: 0;
+  }
+}
+
+.pride-study__intro {
+  padding-right: 30px;
+  text-align: center;
+
+  h2 {
+    color: #F8712F;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 45px;
+    text-align: left;
+  }
+  p {
+    color: #4a4a4a;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  img {
+    max-width: 100%;
+  }
+  figcaption {
+    color: #909090;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 15px;
+    text-align: left;
+  }
+}
+.pride-study--gray-text {
+  margin-bottom: 50px;
+  path#THE-PRIDE-STUDY {
+    fill: #aeaeae;
+  }
+}
+.pride-study__challenges {
+  margin-bottom: 50px;
+  h2 {
+    color: #F8712F;
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 0 40px;
+    text-align: center;
+  }
+}
+.pride-study__challenge {
+  color: #aeaeae;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+  h3 {
+    color: #F8712F;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 35px;
+  }
+  p {
+    font-size: 16px;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
+.pride-study__thread {
+  background-color: #2f323a;
+  background-image: url(/images/customers/stories/diamond-bg.png);
+  background-repeat: repeat;
+  padding: 75px 0;
+}
+.pride-study__solution {
+  color: white;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 50px;
+  max-width: 500px;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.75);
+  strong {
+    color: #24e299;
+    font-weight: normal;
+  }
+}
+.pride-study__figures {
+  align-items: center;
+  display: flex;
+}
+.thread--green path {
+  fill: #24e299;
+}
+.rounded-plus {
+  margin: 0 20px;
+  path {
+    fill: white;
+  }
+}
+.researchkit {
+  background-image: url(/images/customers/stories/researchkit_2x.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 140px;
+  width: 140px;
+}
+.pride-study__thread__iphone {
+  position: absolute;
+  transform: translate(-105px, -105px);
+}
+@media (min-width: $tablet-portrait) and (max-width: 992px) {
+  .pride-study__thread__iphone {
+    transform: translate(-15px, -55px);
+  }
+  .researchkit {
+    width: 100px;
+  }
+}
+@media (max-width: $tablet-portrait) {
+  .pride-study__solution {
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+  .pride-study__figures {
+    justify-content: center;
+  }
+  .researchkit {
+    width: 100px;
+  }
+}
+
+.pride-study__aptible {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  .primary-sub-title {
+    color: #aadeed;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 0;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.24);
+  }
+  .primary-title {
+    color: white;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 65px;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.24);
+  }
+  .product-stack {
+    margin-bottom: 0;
+  }
+  .aptible-logo--white {
+    height: 50px;
+    margin-bottom: 45px;
+  }
+  .feature-title {
+    white-space: normal;
+    margin-bottom: 45px;
+  }
+}
+
+.product-stack--illustration {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.product-stack--feature {
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+  .aptible-mark {
+    margin-bottom: 50px;
+    transform: scale(2) translateX(25%)
+  }
+  .feature-title {
+    font-size: 30px;
+  }
+  @media (max-width: $tablet-portrait) {
+    padding: 0 50px;
+  }
+}
+
+.pride-study__conclusion {
+  margin-bottom: 100px;
+  text-align: center;
+  transform: translateY(-50px);
+
+  .the-pride-study {
+    height: 106px;
+    transform: translateY(-53px);
+    path#THE-PRIDE-STUDY { display: none; }
+  }
+  .pride-study__figures {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .ucsf svg {
+    width: 105px;
+  }
+  .thread {
+    svg {
+      width: 170px;
+    }
+    path {
+      fill: #044b99;
+    }
+  }
+  .rounded-plus {
+    margin: 0 30px;
+    path {
+      fill: #2d9e88;
+    }
+  }
+  #aptible-large-logo-svg {
+    width: 170px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 31px;
+    margin: 0 auto 90px;
+    max-width: 850px;
+  }
+}
+@media (max-width: 615px) {
+  .pride-study__conclusion {
+    margin-bottom: 50px;
+    .pride-study__figures {
+      margin-bottom: 20px;
+    }
+  }
+}
+.pride-study__cta {
+  margin-bottom: 40px;
+}
+
+//
+// Telepharm
+//
+.telepharm__header {
+  padding: 25px;
+  background-color: #3aa9e0;
+  background-image: url(/images/customers/stories/tp-hero-bg.png);
+  background-position: 55% 10%;
+  background-repeat: no-repeat;
+  color: $white;
+  margin: 0;
+  min-height: 400px;
+  padding-top: 130px;
+  .aptible-mark {
+    margin-bottom: 30px;
+    transform: scale(1.5);
+  }
+  h1 {
+    color: $white;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.telepharm__logos {
+  height: 170px;
+  text-align: center;
+  img {
+    margin-top: 47px;
+    width: 599px;
+    max-width: 100%;
+  }
+}
+
+.telepharm__aptible-header {
+  padding: 0;
+  padding-top: 60px;
+  h2 {
+    &::after {
+      background-color: transparent;
+      content: '”';
+      display: inline;
+      margin: 0;
+      height: auto;
+      width: auto;
+    }
+    &::before {
+      content: '“';
+    }
+    font-weight: $light;
+    line-height: 1.5;
+    margin: 0 auto 40px auto;
+    max-width: 500px;
+  }
+  .quote-name {
+    text-transform: uppercase;
+  }
+}
+
+.telepharm__copy {
+  p {
+    font-size: 18px;
+    margin: 0 50px 40px;
+    text-align: left;
+  }
+  h2, h3 {
+    margin: 0 50px 20px;
+    text-align: left;
+  }
+  img {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
