@@ -137,6 +137,13 @@
   }
 }
 
+.heading__subtitle--strong {
+  color: $light-blue;
+  font-size: 35px;
+  font-weight: $semibold;
+  margin-bottom: 30px;
+}
+
 .heading__summary {
   color: $sky-blue;
   font-size: 24px;
@@ -151,6 +158,11 @@
   color: $light-blue-gray;
   font-size: 20px;
   font-weight: $light;
+}
+
+.heading__summary--small {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 // Todo: Generic grid layout for this

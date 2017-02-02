@@ -85,3 +85,40 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+.single-line {
+  position: relative;
+  &:focus { outline: none; }
+}
+
+.single-line__input {
+  -webkit-appearance: none;
+  border-color: $light-blue;
+  border-radius: 5px;
+  border-width: 2px;
+  box-shadow: none;
+  color: $blue-steel;
+  display: inline-block;
+  outline: none;
+  &::-webkit-input-placeholder {
+    color: $sky-blue;
+  }
+  &:focus, &:hover {
+    border-color: $sky-blue;
+    box-shadow: none;
+    outline: none;
+  }
+  &:invalid {
+    border-color: $dark-magenta;
+  }
+}
+
+.single-line__submit {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  display: inline-block;
+  padding: .85em 1.2em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
