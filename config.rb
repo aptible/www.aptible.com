@@ -33,6 +33,7 @@ configure :build do
 end
 
 # Contentful
+# rubocop:disable LineLength
 activate :contentful do |f|
   f.space = { aptible: '8djp5jlzqrnc' }
   f.access_token = '9f900421de36456577e619e3fbf7f0870954b64ad8f0ead9f3d80f55ceaf4bee'
@@ -43,6 +44,7 @@ activate :contentful do |f|
                       customers: 'customer',
                       customer_stories: 'customerStories' }
 end
+# rubocop:enable LineLength
 
 # Note: S3 Redirect does not work with Middleman v4
 activate :s3_redirect do |config|
@@ -103,8 +105,8 @@ end
 # contentful blog posts
 #
 if data.respond_to? 'aptible'
-  data.aptible.blog_posts.each do |id, post|
-    proxy "/blog/#{post.slug}/index.html", "/blog/post.html", locals: {
+  data.aptible.blog_posts.each do |_id, post|
+    proxy "/blog/#{post.slug}/index.html", '/blog/post.html', locals: {
       cms_post: post,
       path: "/blog/#{post.slug}/index.html",
       data: {
