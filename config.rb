@@ -32,6 +32,18 @@ configure :build do
   activate :asset_hash
 end
 
+# Contentful
+activate :contentful do |f|
+  f.space = { aptible: '8djp5jlzqrnc' }
+  f.access_token = '9f900421de36456577e619e3fbf7f0870954b64ad8f0ead9f3d80f55ceaf4bee'
+  f.all_entries = true
+  f.cda_query = { include: 3 }
+  f.content_types = { blog_posts: 'blogPost',
+                      employees: 'employee',
+                      customers: 'customer',
+                      customer_stories: 'customerStories' }
+end
+
 # Note: S3 Redirect does not work with Middleman v4
 activate :s3_redirect do |config|
   config.bucket = ENV['S3_BUCKET'] || 'www.aptible-staging.com'
@@ -84,6 +96,28 @@ ready do
     page "/blog/authors/#{author[0]}.html", layout: 'blog_posts.haml'
     proxy "/blog/authors/#{author[0]}.html", '/blog/author.html',
           locals: { author_id: author[0], posts: posts }
+  end
+end
+
+#
+# contentful blog posts
+#
+if data.respond_to? 'aptible'
+  data.aptible.blog_posts.each do |id, post|
+    proxy "/blog/#{post.slug}/index.html", "/blog/post.html", locals: {
+      cms_post: post,
+      path: "/blog/#{post.slug}/index.html",
+      data: {
+        title: post.title,
+        excerpt: post.excerpt,
+        author_name: post.author.name,
+        author_email: post.author.email,
+        author_id: post.author.slug,
+        posted: post.posted,
+        section: 'Blog',
+        posts: true
+      }
+    }
   end
 end
 

@@ -4,6 +4,11 @@ module BlogHelpers
   end
 
   def blog_posts_oldest_first
+    # cms_posts = data.aptible.blog_posts.values
+    # posts = sitemap.resources
+    #                .select { |p| p.data['section'] == 'Blog' }
+    # all_posts = cms_posts + posts
+    # all_posts.sort_by { |p| p.data ? p.data['posted'] : p.posted }
     sitemap.resources
            .select { |p| p.data['section'] == 'Blog' }
            .sort_by { |p| p.data['posted'] }

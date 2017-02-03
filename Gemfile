@@ -23,6 +23,9 @@ gem 'middleman-livereload'
 gem 'middleman-s3_redirect'
 gem 'middleman-syntax'
 
+# Contenful CMS - Note: currently works with Middleman 3, v4 is experimental
+gem 'contentful_middleman'
+
 # Thoughtbot's Bourbon Suite - SASS mixins, grid system
 gem 'bitters'
 gem 'bourbon'

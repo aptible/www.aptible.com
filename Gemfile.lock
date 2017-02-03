@@ -48,7 +48,18 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    contentful (0.12.0)
+      http (~> 1.0)
+      json (~> 1.8)
+      multi_json (~> 1)
+    contentful-webhook-listener (0.3.0)
+    contentful_middleman (1.2.0)
+      contentful (~> 0.8)
+      contentful-webhook-listener (~> 0.1)
+      middleman-core (~> 3.3)
     diff-lcs (1.2.5)
+    domain_name (0.5.20161129)
+      unf (>= 0.0.5, < 1.0.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -192,6 +203,14 @@ GEM
     hitimes (1.2.4)
     hooks (0.4.1)
       uber (~> 0.0.14)
+    http (1.0.4)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 1.0.1)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (1.0.1)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     inflecto (0.0.2)
@@ -328,6 +347,9 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.2)
     unicode-display_width (1.1.0)
     xml-simple (1.1.5)
     xpath (2.0.0)
@@ -341,6 +363,7 @@ DEPENDENCIES
   bitters
   bourbon
   capybara
+  contentful_middleman
   middleman (~> 3.3.7)
   middleman-jquery
   middleman-livereload
