@@ -10,6 +10,9 @@ desc 'Tag current HEAD and push to release branch'
 task :deploy, [:bucket] => :redirect do |_t, args|
   raise 'No bucket specified' unless args[:bucket]
 
+  # Update Contentful data
+  system!('bundle exec middleman contentful')
+
   # Build site
   system!('bundle exec middleman build')
 
