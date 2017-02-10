@@ -1,12 +1,44 @@
+- content_for :header do
+  = partial 'headers/blog-post', locals: { |
+      page_subtitle: "#{cms_post.author.name} - |
+                        #{post_date(cms_post.posted)}", |
+      page_title: "#{cms_post.title}", |
+      page_summary: "#{cms_post.excerpt}" |
+    } |
+
+- prev_post = prev_post(cms_post)
+- next_post = next_post(cms_post)
 = wrap_layout :layout do
   .content
     .grid-container
       .blog-post__author
         %h4.blog-post__author-subtitle by
         %h3.blog-post__author-name
-          %a{ href: blog_post_author_href(current_page) }
-            = current_page.data.author_name
+          %a{ href: "/blog/authors/#{cms_post.author.slug}" }
+            = cms_post.author.name
 
       .blog-post.markdown-content
         = find_and_preserve do
           = yield
+
+    .grid-container
+      %nav.blog-posts__nav
+        .blog-posts__link--footer
+          %a.blog-posts__link--all{ href: '/blog/' }
+            %span.post__title All Posts
+        - if prev_post
+          %a.blog-posts__link--footer.blog-posts__link--prev{ href: blog_post_href(prev_post) }
+            %div
+              %span.post__subtitle= "#{prev_post.data.author_name} - #{post_date(prev_post.data.posted)}"
+              %span.post__title= prev_post.data.title
+        - else
+          .blog-posts__link--footer
+        - if next_post
+          %a.blog-posts__link--footer.blog-posts__link--next{ href: blog_post_href(next_post) }
+            %div
+              %span.post__subtitle= "#{next_post.data.author_name} - #{post_date(next_post.data.posted)}"
+              %span.post__title= next_post.data.title
+        - else
+          .blog-posts__link--footer
+
+  = partial 'partials/resources-footer'

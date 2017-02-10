@@ -1,5 +1,21 @@
 require 'fog'
 
+class BlogPostMapper < ContentfulMiddleman::Mapper::Base
+  def map(context, entry)
+    super
+    context.data = {
+      title: entry.title,
+      excerpt: entry.excerpt,
+      author_name: entry.author.name,
+      author_email: entry.author.email,
+      author_id: entry.author.slug,
+      posted: entry.posted,
+      section: 'Blog',
+      posts: true
+    }
+  end
+end
+
 #
 # Global Settings
 #
@@ -39,7 +55,7 @@ activate :contentful do |f|
   f.access_token = '9f900421de36456577e619e3fbf7f0870954b64ad8f0ead9f3d80f55ceaf4bee'
   f.all_entries = true
   f.cda_query = { include: 3 }
-  f.content_types = { blog_posts: 'blogPost',
+  f.content_types = { blog_posts: { id: 'blogPost', mapper: BlogPostMapper },
                       employees: 'employee',
                       customers: 'customer',
                       customer_stories: 'customerStories' }
@@ -86,9 +102,9 @@ page '/feed.xml', layout: false
 # Requires the site to be "ready" to read from the sitemap resources
 ready do
   # Create dynamic pages for each blog post author
-  by_author = sitemap.resources
-                     .select { |p| p.data['section'] == 'Blog' }
-                     .group_by { |p| p.data['author_id'] }
+  by_author = (sitemap.resources + data.aptible.blog_posts.values)
+  by_author = by_author.select { |p| p.data['section'] == 'Blog' }
+                       .group_by { |p| p.data['author_id'] }
   by_author.each do |author|
     author_id = author[0]
     # lists their posts by date
@@ -106,20 +122,13 @@ end
 #
 if data.respond_to? 'aptible'
   data.aptible.blog_posts.each do |_id, post|
-    proxy "/blog/#{post.slug}/index.html", '/blog/post.html', locals: {
-      cms_post: post,
-      path: "/blog/#{post.slug}/index.html",
-      data: {
-        title: post.title,
-        excerpt: post.excerpt,
-        author_name: post.author.name,
-        author_email: post.author.email,
-        author_id: post.author.slug,
-        posted: post.posted,
-        section: 'Blog',
-        posts: true
-      }
-    }
+    proxy "/blog/#{post.slug}/index.html",
+          '/blog/post.html',
+          locals: {
+            cms_post: post,
+            path: "/blog/#{post.slug}/index.html"
+          },
+          ignore: true
   end
 end
 

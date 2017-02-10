@@ -17,11 +17,12 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # See https://middlemanapp.com/basics/upgrade-v4/
 # - Dropped support for providing a block to page & proxy.
 # - Dropped support for instance variables inside templates.
-gem 'middleman', '~>3.3.7'
+gem 'middleman', '~>3.4'
 gem 'middleman-jquery'
 gem 'middleman-livereload'
 gem 'middleman-s3_redirect'
 gem 'middleman-syntax'
+# gem 'middleman-pagination'
 
 # Contenful CMS - Note: currently works with Middleman 3, v4 is experimental
 gem 'contentful_middleman'
