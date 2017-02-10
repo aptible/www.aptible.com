@@ -7,10 +7,10 @@
         Free research and guidance to help software engineering teams navigate security and compliance.
 
   .grid-container
-    .grid--3up
+    .grid--3up-flex
       - resources_by_title(titles).each do |resource|
         %a.grid-item.card.card--on-dark{ href: resource.url }
           .card__header
             .card__subtitle.card__subitle--on-dark= resource_subtitle(resource)
             %h3.card__title.card__title--on-dark= resource.data.title
-          .card__body.card__body--on-dark= resource.data.excerpt
+          %p.card__body.card__body--on-dark= resource.data.excerpt
