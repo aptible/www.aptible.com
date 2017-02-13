@@ -20,17 +20,17 @@ For the last few months, we have been working closely with a group of companies 
 We are also excited to announce our relationships with three fantastic organizations:
 <br />
 <br />
-<div align="center">[<img src="{{ blog_asset_path 'logos/ycombinator.png' }}" height="150px" />](http://www.ycombinator.com)</div>
+<div align="center">[<img src="/images/blog/logos/ycombinator.png" height="150px" />](http://www.ycombinator.com)</div>
 <br />
 Aptible is proud to be part of Y Combinator's S14 batch. All of the partners have been amazing - YC is one of those rare organizations that is every bit as great on the inside as you hope it would be from the outside. Thanks especially to Justin, Garry, Kat, Jon, and Aaron for helping us prepare for this launch.
 <br />
 <br />
 <br />
-<div align="center">[<img src="{{ blog_asset_path 'logos/rock_health.svg' }}" height="150px" />](http://rockhealth.com/)</div>
+<div align="center">[<img src="/images/blog/logos/rock_health.svg" height="150px" />](http://rockhealth.com/)</div>
 We are also part of the seventh Rock Health class. Rock Health is the premier advocate for digital health. Their entire team has been wonderful and made it a joy to come to the office every day. We are particularly grateful to Mollie, Halle, and Malay for their help so far.
 <br />
 <br />
-<div align="center">[<img src="{{ blog_asset_path 'logos/cooper.svg' }}" height="150px" />](http://www.cooper.com/)</div>
+<div align="center">[<img src="/images/blog/logos/cooper.svg" height="150px" />](http://www.cooper.com/)</div>
 Cooper is the top user experience design firm in the country. Through a partnership with Rock Health, they are helping us turn some incredibly complex regulatory and technical applications into beautiful, usable, intuitive tools that delight our customers. Lauren Ruiz and Doug LeMoine have been especially generous with their time, and we thank them!
 <br />
 <br />

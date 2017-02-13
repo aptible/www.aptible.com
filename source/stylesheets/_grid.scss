@@ -115,6 +115,21 @@ body {
   }
 }
 
+.grid--3up-flex {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+  .grid-item {
+    width: 32%;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    flex-direction: column;
+    .grid-item {
+      width: 100%;
+    }
+  }
+}
+
 .grid-item--two-thirds {
   @include span-columns(8);
   @media screen and (max-width: $tablet-landscape) {
