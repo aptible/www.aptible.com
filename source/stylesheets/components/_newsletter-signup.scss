@@ -18,6 +18,9 @@
   &::-webkit-input-placeholder {
     color: $sky-blue;
   }
+  &:invalid {
+    border-color: $light-blue !important;
+  }
   &:focus, &:hover {
     border-color: $sky-blue;
     box-shadow: none;
