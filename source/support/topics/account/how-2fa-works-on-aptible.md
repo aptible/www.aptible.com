@@ -17,4 +17,4 @@ After enabling 2FA:
 - If you have an existing token, it will continue to work until it expires.
 - You will periodically be prompted for a 2FA code when your current token expires. The current maximum token lifetime is 7 days.
 
-When you enable 2FA, you will receive emergency backup codes for use if your device is lost, stolen, or temporarily unavailable. Keep these in a safe place. If you don't have your device and are unable to access a backup code, please have one of your organization’s owners [contact Aptible support](contact_href).
+When you enable 2FA, you will receive emergency backup codes for use if your device is lost, stolen, or temporarily unavailable. Keep these in a safe place. If you don't have your device and are unable to access a backup code, please have one of your organization’s owners [contact Aptible support](http://contact.aptible.com).

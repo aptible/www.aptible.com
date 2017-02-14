@@ -13,9 +13,9 @@ For billing information, navigate to your account settings in the Aptible dashbo
     - The estimated monthly cost of your current configuration
     - Your account's current balance
 
-4. To pay by ACH, send a [support ticket](contact_href) with the following bank information:
+4. To pay by ACH, send a [support ticket](http://contact.aptible.com) with the following bank information:
     - Account owner name
     - Routing Number
     - Account Number
 
-5. To change the recipient of monthly invoices (automatically sent at time of payment), please [contact support](contact_href).
+5. To change the recipient of monthly invoices (automatically sent at time of payment), please [contact support](http://contact.aptible.com).
