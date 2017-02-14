@@ -39,7 +39,8 @@ activate :contentful do |f|
   # rubocop:disable LineLength
   f.access_token = ENV['CONTENTFUL_KEY'] || 'b66d39f51cfcc747ca3af1b7731bd00cf877b659d69514845ba837ddae473605'
   # rubocop:enable LineLength
-  f.use_preview_api = ENV['CONTENTFUL_PREVIEW'] || true
+  # Use preview (draft) content everywhere EXCEPT production
+  f.use_preview_api = ENV['CONTENTFUL_PREVIEW'] == 'production' ? false : true
   f.all_entries = true
   f.cda_query = { include: 3 }
   f.content_types = {

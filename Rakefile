@@ -45,6 +45,7 @@ namespace :deploy do
     # rubocop:disable LineLength
     ENV['CONTENTFUL_KEY'] = 'b66d39f51cfcc747ca3af1b7731bd00cf877b659d69514845ba837ddae473605'
     # rubocop:enable LineLength
+    ENV['CONTENTFUL_ENV'] = 'staging'
     Rake::Task[:deploy].invoke('www.aptible-staging.com')
   end
 
@@ -57,7 +58,7 @@ namespace :deploy do
     # rubocop:disable LineLength
     ENV['CONTENTFUL_KEY'] = '9f900421de36456577e619e3fbf7f0870954b64ad8f0ead9f3d80f55ceaf4bee'
     # rubocop:enable LineLength
-    ENV['CONTENTFUL_PREVIEW'] = false
+    ENV['CONTENTFUL_ENV'] = 'production'
     Rake::Task[:deploy].invoke('www.aptible.com')
   end
 end
