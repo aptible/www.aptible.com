@@ -123,14 +123,14 @@ ready do
             locals: { author_id: author[0], posts: posts }
     end
   rescue
-    raise "Contentful Data Error: Ensure all draft blog posts have an author"
+    raise 'Contentful Data Error: Ensure all draft blog posts have an author'
   end
 end
 
 #
 # contentful blog posts
 #
-if (data.respond_to?('aptible') && !data.aptible.blog_posts.nil?)
+if data.respond_to?('aptible') && !data.aptible.blog_posts.nil?
   data.aptible.blog_posts.values.each do |post|
     proxy "/blog/#{post.slug}/index.html",
           '/blog/post.html',
