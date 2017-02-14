@@ -42,6 +42,9 @@ namespace :deploy do
     ENV['SEGMENTIO_WRITEKEY'] = 'K24Jna8XS0PRiQiISYZ563qC3SfHF241'
     ENV['SWIFTYPE_KEY'] = '6oJmuDaosp-WnxZNZcxQ'
     ENV['SWIFTYPE_ENGINE'] = 'omxnF9kXa-PmS4uNyRSC'
+    # rubocop:disable LineLength
+    ENV['CONTENTFUL_KEY'] = 'b66d39f51cfcc747ca3af1b7731bd00cf877b659d69514845ba837ddae473605'
+    # rubocop:enable LineLength
     Rake::Task[:deploy].invoke('www.aptible-staging.com')
   end
 
@@ -51,6 +54,10 @@ namespace :deploy do
     ENV['SEGMENTIO_WRITEKEY'] = 'rkt88i7k3w'
     ENV['SWIFTYPE_KEY'] = 'dsMEc1fYviE2ShXAjYMW'
     ENV['SWIFTYPE_ENGINE'] = 'axuhZ5Lt1ZUziN-DqxnR'
+    # rubocop:disable LineLength
+    ENV['CONTENTFUL_KEY'] = '9f900421de36456577e619e3fbf7f0870954b64ad8f0ead9f3d80f55ceaf4bee'
+    # rubocop:enable LineLength
+    ENV['CONTENTFUL_PREVIEW'] = false
     Rake::Task[:deploy].invoke('www.aptible.com')
   end
 end

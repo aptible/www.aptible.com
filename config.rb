@@ -3,6 +3,7 @@ require 'fog'
 class BlogPostMapper < ContentfulMiddleman::Mapper::Base
   def map(context, entry)
     super
+
     context.data = {
       title: entry.title,
       excerpt: entry.excerpt,
@@ -49,18 +50,19 @@ configure :build do
 end
 
 # Contentful
-# rubocop:disable LineLength
 activate :contentful do |f|
   f.space = { aptible: '8djp5jlzqrnc' }
-  f.access_token = '9f900421de36456577e619e3fbf7f0870954b64ad8f0ead9f3d80f55ceaf4bee'
-  f.all_entries = true
+  # rubocop:disable LineLength
+  f.access_token = ENV['CONTENTFUL_KEY'] || 'b66d39f51cfcc747ca3af1b7731bd00cf877b659d69514845ba837ddae473605'
+  # rubocop:enable LineLength
+  f.use_preview_api = ENV['CONTENTFUL_PREVIEW'] || true
+  # f.all_entries = true
   f.cda_query = { include: 3 }
   f.content_types = { blog_posts: { id: 'blogPost', mapper: BlogPostMapper },
                       employees: 'employee',
                       customers: 'customer',
                       customer_stories: 'customerStories' }
 end
-# rubocop:enable LineLength
 
 # Note: S3 Redirect does not work with Middleman v4
 activate :s3_redirect do |config|
@@ -102,26 +104,34 @@ page '/feed.xml', layout: false
 # Requires the site to be "ready" to read from the sitemap resources
 ready do
   # Create dynamic pages for each blog post author
-  by_author = (sitemap.resources + data.aptible.blog_posts.values)
-  by_author = by_author.select { |p| p.data['section'] == 'Blog' }
-                       .group_by { |p| p.data['author_id'] }
-  by_author.each do |author|
-    author_id = author[0]
-    # lists their posts by date
-    posts = author[1]
-            .select { |p| p.data['author_id'] == author_id }
-            .sort_by { |p| p.data['posted'] }.reverse!
-    page "/blog/authors/#{author[0]}.html", layout: 'blog_posts.haml'
-    proxy "/blog/authors/#{author[0]}.html", '/blog/author.html',
-          locals: { author_id: author[0], posts: posts }
+  by_author = sitemap.resources
+  if data.respond_to?('aptible') && !data.aptible.blog_posts.nil?
+    by_author.concat(data.aptible.blog_posts.values)
+  end
+
+  begin
+    by_author = by_author.select { |p| p.data['section'] == 'Blog' }
+                         .group_by { |p| p.data['author_id'] }
+    by_author.each do |author|
+      author_id = author[0]
+      # lists their posts by date
+      posts = author[1]
+              .select { |p| p.data['author_id'] == author_id }
+              .sort_by { |p| p.data['posted'] }.reverse!
+      page "/blog/authors/#{author[0]}.html", layout: 'blog_posts.haml'
+      proxy "/blog/authors/#{author[0]}.html", '/blog/author.html',
+            locals: { author_id: author[0], posts: posts }
+    end
+  rescue
+    raise "Contentful Data Error: Ensure all draft blog posts have an author"
   end
 end
 
 #
 # contentful blog posts
 #
-if data.respond_to? 'aptible'
-  data.aptible.blog_posts.each do |_id, post|
+if (data.respond_to?('aptible') && !data.aptible.blog_posts.nil?)
+  data.aptible.blog_posts.values.each do |post|
     proxy "/blog/#{post.slug}/index.html",
           '/blog/post.html',
           locals: {
