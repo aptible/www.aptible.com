@@ -1,5 +1,22 @@
 require 'fog'
 
+class BlogPostMapper < ContentfulMiddleman::Mapper::Base
+  def map(context, entry)
+    super
+
+    context.data = {
+      title: entry.title,
+      excerpt: entry.excerpt,
+      author_name: entry.author.name,
+      author_email: entry.author.email,
+      author_id: entry.author.slug,
+      posted: entry.posted,
+      section: 'Blog',
+      posts: true
+    }
+  end
+end
+
 #
 # Global Settings
 #
@@ -30,6 +47,21 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
+end
+
+# Contentful
+activate :contentful do |f|
+  f.space = { aptible: '8djp5jlzqrnc' }
+  # rubocop:disable LineLength
+  f.access_token = ENV['CONTENTFUL_KEY'] || 'b66d39f51cfcc747ca3af1b7731bd00cf877b659d69514845ba837ddae473605'
+  # rubocop:enable LineLength
+  f.use_preview_api = ENV['CONTENTFUL_PREVIEW'] || true
+  # f.all_entries = true
+  f.cda_query = { include: 3 }
+  f.content_types = { blog_posts: { id: 'blogPost', mapper: BlogPostMapper },
+                      employees: 'employee',
+                      customers: 'customer',
+                      customer_stories: 'customerStories' }
 end
 
 # Note: S3 Redirect does not work with Middleman v4
@@ -73,17 +105,42 @@ page '/feed.xml', layout: false
 ready do
   # Create dynamic pages for each blog post author
   by_author = sitemap.resources
-                     .select { |p| p.data['section'] == 'Blog' }
-                     .group_by { |p| p.data['author_id'] }
-  by_author.each do |author|
-    author_id = author[0]
-    # lists their posts by date
-    posts = author[1]
-            .select { |p| p.data['author_id'] == author_id }
-            .sort_by { |p| p.data['posted'] }.reverse!
-    page "/blog/authors/#{author[0]}.html", layout: 'blog_posts.haml'
-    proxy "/blog/authors/#{author[0]}.html", '/blog/author.html',
-          locals: { author_id: author[0], posts: posts }
+  begin
+    by_author.concat(data.aptible.blog_posts.values)
+  rescue
+    puts 'Booooooo'
+  end
+
+  begin
+    by_author = by_author.select { |p| p.data['section'] == 'Blog' }
+                         .group_by { |p| p.data['author_id'] }
+    by_author.each do |author|
+      author_id = author[0]
+      # lists their posts by date
+      posts = author[1]
+              .select { |p| p.data['author_id'] == author_id }
+              .sort_by { |p| p.data['posted'] }.reverse!
+      page "/blog/authors/#{author[0]}.html", layout: 'blog_posts.haml'
+      proxy "/blog/authors/#{author[0]}.html", '/blog/author.html',
+            locals: { author_id: author[0], posts: posts }
+    end
+  rescue
+    raise 'Contentful Data Error: Ensure all draft blog posts have an author'
+  end
+end
+
+#
+# contentful blog posts
+#
+if data.respond_to?('aptible') && !data.aptible.blog_posts.nil?
+  data.aptible.blog_posts.values.each do |post|
+    proxy "/blog/#{post.slug}/index.html",
+          '/blog/post.html',
+          locals: {
+            cms_post: post,
+            path: "/blog/#{post.slug}/index.html"
+          },
+          ignore: true
   end
 end
 

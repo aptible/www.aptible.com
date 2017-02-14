@@ -1,0 +1,4 @@
+---
+layout: cms_post.haml
+---
+= Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(config[:markdown])).render cms_post.body

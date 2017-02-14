@@ -150,7 +150,7 @@ For PHI-ready environments, Aptible automatically distributes app containers acr
 ##### **4.C - High Availability**
 Aptible supports high-availability clustering configuration of databases that support it.
 
-App services on v2 stacks are automatically distriubuted across AWS availability zones as soon as they are scaled to more than one container.
+App services on v2 stacks are automatically distributed across AWS availability zones as soon as they are scaled to more than one container.
 
 ##### **4.D - Disaster Prevention and Recovery**
 Aptible monitors the stability and availability of customer infrastructure and automatically recovers from disruptions, including app and database failures. In the event of a disaster, Aptible restores apps from the last healthy build image and restores data from the last backup. In the event of a database outage, the Aptible platform will automatically recover the underlying database instance and disk. If the disk is unavailable, Aptible will restore from a backup. Raw database snapshots and restored database clones are available upon request for testing and recovery.

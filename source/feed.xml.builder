@@ -9,12 +9,17 @@ xml.feed xmlns: 'http://www.w3.org/2005/Atom' do
   xml.updated latest_blog_post.data.posted.to_time.iso8601
   xml.author { xml.name 'Aptible Blog RSS' }
   blog_posts_newest_first[0..10].each do |post|
-    file = File.open(post.source_file, 'r')
-    content = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new()).render file.read
+    if post.is_a?(Hash)
+      body = post.body
+    else
+      file = File.open(post.source_file, 'r')
+      body = file.read
+    end
+    content = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new()).render body
     xml.entry do
       xml.title post.data.title
-      xml.link 'rel' => 'alternate', 'href' => post.url
-      xml.id post.url
+      xml.link 'rel' => 'alternate', 'href' => blog_post_href(post)
+      xml.id blog_post_href(post)
       xml.published post.data.posted.to_time.iso8601
       xml.updated post.data.posted.to_time.iso8601
       xml.author { xml.name 'Aptible' }
