@@ -14,7 +14,7 @@ module CustomMappers
           posts: true
         }
       rescue
-        puts "Check contentful post data. Unable to map."
+        puts 'Check contentful post data. Unable to map.'
       end
     end
   end
