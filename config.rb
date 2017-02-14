@@ -105,8 +105,10 @@ page '/feed.xml', layout: false
 ready do
   # Create dynamic pages for each blog post author
   by_author = sitemap.resources
-  if data.respond_to?('aptible') && !data.aptible.blog_posts.nil?
+  begin
     by_author.concat(data.aptible.blog_posts.values)
+  rescue
+    puts 'Booooooo'
   end
 
   begin
