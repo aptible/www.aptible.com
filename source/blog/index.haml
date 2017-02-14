@@ -14,7 +14,7 @@ description: Posts detailing feature updates, compliance resources, and
     .grid-container
       .blog-post__heading
         .blog-posts__post
-          %a.blog-posts__link{ href: latest_blog_post.url }
+          %a.blog-posts__link{ href: blog_post_href(latest_blog_post) }
             - latest = latest_blog_post.data
             %h2.heading__subtitle= "#{latest.author_name} - #{post_date(latest.posted)}"
             %h1.heading__title= latest.title
@@ -23,5 +23,5 @@ description: Posts detailing feature updates, compliance resources, and
 - posts = blog_posts_newest_first
 - posts[1..posts.length].each do |post|
   .blog-posts__post
-    %a.blog-posts__link{ href: post.url }
+    %a.blog-posts__link{ href: blog_post_href(post) }
       = partial 'partials/blog-list-item', locals: { post: post }

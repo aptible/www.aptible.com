@@ -3,10 +3,16 @@ module BlogHelpers
     "/blog/authors/#{post.data.author_id}"
   end
 
+  def blog_post_href(post)
+    # Contentful posts are a Thor Hash, others are Middleman Sitemap Resources
+    return "/blog/#{post.slug}/" if post.is_a?(Hash)
+    post.url
+  end
+
   def blog_posts_oldest_first
-    sitemap.resources
-           .select { |p| p.data['section'] == 'Blog' }
-           .sort_by { |p| p.data['posted'] }
+    mm_posts = sitemap.resources.select { |p| p.data['section'] == 'Blog' }
+    cms_posts = data.aptible.blog_posts.values
+    (mm_posts + cms_posts).sort_by { |p| p.data['posted'] }
   end
 
   def blog_posts_newest_first
@@ -18,7 +24,9 @@ module BlogHelpers
   end
 
   def index_of_post(post)
-    blog_posts_oldest_first.index { |p| p.path == post.path }
+    blog_posts_oldest_first.index do |p|
+      blog_post_href(p) == blog_post_href(post)
+    end
   end
 
   def prev_post(current_post)
