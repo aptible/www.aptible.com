@@ -53,9 +53,7 @@ activate :contentful do |f|
     customer_stories: 'customerStories'
   }
   puts ''
-  puts 'Contentful Access Token'
-  puts f.access_token
-  puts f.use_preview_api
+  puts "Activating Contentful Access Token with preview? ${f.use_preview_api}"
   puts ''
 end
 
