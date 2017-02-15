@@ -40,7 +40,7 @@ activate :contentful do |f|
   f.access_token = ENV['CONTENTFUL_KEY'] || 'b66d39f51cfcc747ca3af1b7731bd00cf877b659d69514845ba837ddae473605'
   # rubocop:enable LineLength
   # Use preview (draft) content everywhere EXCEPT production
-  f.use_preview_api = ENV['CONTENTFUL_PREVIEW'] != 'production'
+  f.use_preview_api = ENV['CONTENTFUL_ENV'] != 'production'
   f.all_entries = true
   f.cda_query = { include: 3 }
   f.content_types = {
@@ -52,6 +52,11 @@ activate :contentful do |f|
     customers: 'customer',
     customer_stories: 'customerStories'
   }
+  puts ''
+  puts 'Contentful Access Token'
+  puts f.access_token
+  puts f.use_preview_api
+  puts ''
 end
 
 # Note: S3 Redirect does not work with Middleman v4
