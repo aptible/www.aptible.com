@@ -52,6 +52,11 @@ activate :contentful do |f|
     customers: 'customer',
     customer_stories: 'customerStories'
   }
+  puts ''
+  puts 'Contentful Access Token'
+  puts f.access_token
+  puts f.use_preview_api
+  puts ''
 end
 
 # Note: S3 Redirect does not work with Middleman v4
