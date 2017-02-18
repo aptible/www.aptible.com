@@ -1,4 +1,5 @@
-- nav_items = nav_items || 'partials/nav-items'
+- signup ||= 'cta'
+- nav_items ||= 'partials/nav-items'
 .nav--flex.nav--header.grid-container
   .nav-list--left
     %a{ href: '/' }= partial 'partials/aptible-mark'
@@ -16,8 +17,12 @@
     = partial nav_items
 
     %a.nav-item{ href: dashboard_href } Login
-    .nav-item= partial 'partials/signup-cta', locals: { |
-                  cta_label: 'Get Started',             |
-                  cta_placeholder: 'Enter your email',  |
-                  class_name: 'signup-cta--small'       |
-                }                                       |
+
+    - if signup == 'cta'
+      .nav-item= partial 'partials/signup-cta', locals: { |
+                    cta_label: 'Get Started',             |
+                    cta_placeholder: 'Enter your email',  |
+                    class_name: 'signup-cta--small'       |
+                  }                                       |
+    - else
+      %a.nav-item{ href: open_account_href } Signup
