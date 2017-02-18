@@ -108,17 +108,28 @@ select {
     box-shadow: none;
     outline: none;
   }
-  &:invalid {
-    border-color: $dark-magenta;
-  }
 }
 
 .single-line__submit {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   display: inline-block;
-  padding: .85em 1.2em;
+  padding: 13px 15px 14px;
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.signup-cta--small {
+  display: inline-block;
+  margin-left: 40px;
+  .single-line__input {
+    font-size: 13px;
+    min-width: 270px;
+    padding: 6.5px;
+  }
+  .single-line__submit {
+    font-size: 13px;
+    padding: 11px 15px 12px;
+  }
 }

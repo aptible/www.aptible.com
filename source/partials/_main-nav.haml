@@ -5,13 +5,19 @@
     - if defined? section_title
       %h2.aptible-mark__title
         %a{ href: section_url }= section_title
-  %nav.nav-list.nav-list--center
+  %nav.nav-list.nav-list--right
     %a.nav-toggle
       .nav-toggle__expand
         %span.nav-toggle__icon-bar
         %span.nav-toggle__icon-bar
         %span.nav-toggle__icon-bar
       %span.nav-toggle__label Menu
+
     = partial nav_items
-  %nav.nav-list.nav-list--right
-    = partial 'partials/headers/login-signup'
+
+    %a.nav-item{ href: dashboard_href } Login
+    .nav-item= partial 'partials/signup-cta', locals: { |
+                  cta_label: 'Get Started',             |
+                  cta_placeholder: 'Enter your email',  |
+                  class_name: 'signup-cta--small'       |
+                }                                       |

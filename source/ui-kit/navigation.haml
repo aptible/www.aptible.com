@@ -10,36 +10,63 @@ title: 'Navigation'
 .content
   .grid-container
     %h2 Header Nav
-  %header.aptible-header
-    .nav--flex.nav--header.grid-container
-      = partial 'partials/aptible-mark'
-      %nav.nav-list.nav-list--center
-        %a.nav-item{:href => ""} Compliance
-        %a.nav-item.nav-item--active{:href => ""} Pricing
-        %a.nav-item.nav-list{:href => ""}
-          Customers
-          %nav.nav-list
-            %a.nav-item{:href => "customers/ucsf-pride-study/"} UCSF Pride Study
-            %a.nav-item{:href => "customers/telepharm/"} Telepharm
+    %pre.highlight.plaintext
+      %code
+        %table.rouge-table
+          %tbody
+            %tr
+              %td.rouge-gutter.gl
+              %td.rouge-code
+                %pre
+                  :preserve
+                    .nav--flex.nav--header.grid-container
+                      .nav-list--left
+                        %a{ href: '/' }= partial 'partials/aptible-mark'
+                        - if defined? section_title
+                          %h2.aptible-mark__title
+                            %a{ href: section_url }= section_title
+                      %nav.nav-list.nav-list--right
+                        %a.nav-toggle
+                          .nav-toggle__expand
+                            %span.nav-toggle__icon-bar
+                            %span.nav-toggle__icon-bar
+                            %span.nav-toggle__icon-bar
+                          %span.nav-toggle__label Menu
 
-      = partial 'partials/headers/login-signup'
+                        .nav-item.nav-parent{ tabindex: 0 }
+                          %a.nav-item.nav-item--parent{ href: '/enclave/' } Products
+                          %nav.nav-list__child-nav
+                            %a.nav-item{ href: '/enclave/', class: active_nav_item('enclave') } Enclave
+                            %a.nav-item{ href: '/gridiron/', class: active_nav_item('gridiron') } Gridiron
 
-  .code.grid-container
-    .code__heading
-      .code__heading-action
-      .code__heading-action
-      .code__heading-action
-    %pre.code__body
-      :preserve
-          &lt;nav class=&quot;nav-list--breadcrumb&quot;&gt;
-            &lt;div class=&quot;grid-container&quot;&gt;
-              &lt;a class=&quot;nav-item&quot; href=&quot;&quot;&gt;Support&lt;/a&gt;
-              &lt;span class=&quot;nav-item--separator&quot;&gt;&lt;/span&gt;
-              &lt;a class=&quot;nav-item&quot; href=&quot;&quot;&gt;Quickstart Guides&lt;/a&gt;
-              &lt;span class=&quot;nav-item--separator&quot;&gt;&lt;/span&gt;
-              &lt;a class=&quot;nav-item&quot; href=&quot;&quot;&gt;Ruby on Rails&lt;/a&gt;
-            &lt;/div&gt;
-          &lt;/nav&gt;
+                        %a.nav-item{ href: '/pricing/', class: active_nav_item('pricing') } Pricing
+
+                        .nav-item.nav-parent{ tabindex: 0 }
+                          %a.nav-item.nav-item--parent{ href: '/support/' } Developers
+                          %nav.nav-list__child-nav
+                            %a.nav-item{ href: '/support/topics/' } Documentation
+                            %a.nav-item{ href: '/resources/' } Resources
+                            %a.nav-item{ href: '/support/quickstart/' } Quickstart Guides
+                            %a.nav-item{ href: contact_href } Open a Ticket
+                            %a.nav-item{ href: status_href } Status
+                            %a.nav-item{ href: 'http://github.com/aptible', target: '_blank' } Github
+
+                        .nav-item.nav-parent{ tabindex: 0 }
+                          %a.nav-item.nav-item--parent{ href: '/company/' } Company
+                          %nav.nav-list__child-nav
+                            %a.nav-item{ href: '/company/' } About Aptible
+                            %a.nav-item{ href: '/customers/' } Our Customers
+                            %a.nav-item{ href: '/faq/' } FAQ
+                            %a.nav-item{ href: '/legal/' } Legal
+                            %a.nav-item{ href: '/blog/' } Blog
+                            %a.nav-item{ href: '/media/' } Media Kit
+
+                        %a.nav-item{ href: dashboard_href } Login
+                        .nav-item= partial 'partials/signup-cta', locals: { |
+                                      cta_label: 'Get Started',             |
+                                      cta_placeholder: 'Enter your email',  |
+                                      class_name: 'signup-cta--small'       |
+                                    }                                       |
 
   .grid-container
     %h2 Breadcrumb
@@ -50,46 +77,24 @@ title: 'Navigation'
       %a.nav-item{:href => ""} Quickstart Guides
       %span.nav-item--separator
       %a.nav-item{:href => ""} Ruby on Rails
-  .code.grid-container
-    .code__heading
-      .code__heading-action
-      .code__heading-action
-      .code__heading-action
-    %pre.code__body
-      :preserve
-
-              <nav class="nav-list--breadcrumb">
-                <div class="grid-container">
-                  <a class="nav-item" href="">Support</a>
-                  <span class="nav-item--separator"></span>
-                  <a class="nav-item" href="">Quickstart Guides</a>
-                  <span class="nav-item--separator"></span>
-                  <a class="nav-item" href="">Ruby on Rails</a>
-                </div>
-              </nav>
 
   .grid-container
-    %h2 Nav Bar
-    %nav.nav-bar
-      %a.nav-bar__nav-item.nav-item{:href => ""} The Stack
-      %a.nav-bar__nav-item.nav-item{:href => ""} The Network
-      %a.nav-bar__nav-item.nav-item{:href => ""} Load Balancing
-      %a.nav-bar__nav-item.nav-item{:href => ""} Team Access
-      %a.nav-bar__nav-item.nav-item{:href => ""} Apps
-      %a.nav-bar__nav-item.nav-item{:href => ""} Databases
-    .code
-      %pre.code__body
-        :preserve
-
-                  <nav class="nav-bar">
-                    <a class="nav-item" href="">The Stack</a>
-                    <a class="nav-item" href="">The Network</a>
-                    <a class="nav-item" href="">Load Balancing</a>
-                    <a class="nav-item" href="">Team Access</a>
-                    <a class="nav-item" href="">Apps</a>
-                    <a class="nav-item" href="">Databases</a>
-                  </nav>
-
+    %pre.highlight.plaintext
+      %code
+        %table.rouge-table
+          %tbody
+            %tr
+              %td.rouge-gutter.gl
+              %td.rouge-code
+                %pre
+                  :preserve
+                    %nav.nav-list--breadcrumb
+                      .grid-container
+                        %a.nav-item{:href => ""} Support
+                        %span.nav-item--separator
+                        %a.nav-item{:href => ""} Quickstart Guides
+                        %span.nav-item--separator
+                        %a.nav-item{:href => ""} Ruby on Rails
 
   .grid-container
     %h2 Back / Forward Links
@@ -104,10 +109,10 @@ title: 'Navigation'
           %tbody
             %tr
               %td.rouge-gutter.gl
-                %pre.lineno
-                  1
-                  2
               %td.rouge-code
                 %pre
-                  &lt;a class="arrow-link--left" href="..."&gt;Back&lt;/a&gt;
-                  &lt;a class="arrow-link--right" href="..."&gt;Forward&lt;/a&gt;
+                  :preserve
+                    %a.arrow-link--left{ href: '...' } Arrow link left
+                    %a.arrow-link--right{ href: '...' } Arrow link right
+
+  .grid-container
