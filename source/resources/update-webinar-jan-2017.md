@@ -24,7 +24,7 @@ We hosted our second Update Webinar on January 25. In it, we covered:
 - The [Enclave CLI for Windows](https://www.aptible.com/blog/windows-cli/)
 - Continual efforts to strengthen Enclave security
 
-The next Aptible Update Webinar will be on April 25, 2017, at 11am PST/2pm EST.
+The next Aptible Update Webinar will be on April 18, 2017, at 11am PST/2pm EST.
 
 <p class="text-center">
   <a class="btn" href="https://zoom.us/webinar/register/a9e02bd11c01969ec5b9141539e44ee6">Register Now</a>
