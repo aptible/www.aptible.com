@@ -2,12 +2,12 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's security policy"
-posted: 2016-06-28
+posted: 2017-02-27
 section: Legal
 sub_section: Policies
 ---
 
-Version 3.4 - October 2016
+Version 3.5 - February 2017
 
 This policy outlines: 1) Aptible's security practices and resources, and 2)  your security obligations. This policy is incorporated by reference into the Aptible Terms of Service.
 
@@ -57,20 +57,20 @@ p. 8 - ["Amazon Web Services: Overview of Security Processes - August 2015"](htt
 Please see our [Reference Architecture Diagram](/pages/assets/aptible-reference-architecture.pdf) and [FAQ](/faq) for an explanation of the terms in this section.
 
 ##### **2.A - Secure Architecture**
-Aptible stacks run in separate AWS Virtual Private Clouds. Each stack is an isolated network. Most services run in a private subnet. Only SSL/TLS endpoints and a bastion host are exposed to the Internet. Backend users connect to the stack through the bastion host, which restricts access to stack components and logs activity for security review.
+Aptible Enclave stacks run in separate AWS Virtual Private Clouds. Each stack is an isolated network. Most services run in a private subnet. Only SSL/TLS endpoints and a bastion host are exposed to the Internet. Backend users connect to the stack through the bastion host, which restricts access to stack components and logs activity for security review.
 
 ##### **2.B - Firewalls**
 All stack hosts run mandatory inbound firewalls configured in deny-all mode. HTTP, HTTPS, and SSH ports are opened as necessary.
 
 ##### **2.C - DDoS Protection and Mitigation**
-Aptible's VPC-based approach means that most stack components are not accessible from the Internet, and cannot be targeted directly by a DDoS attack.
+Enclave's VPC-based approach means that most stack components are not accessible from the Internet, and cannot be targeted directly by a DDoS attack.
 
-Aptible SSL/TLS endpoints include an AWS Elastic Load Balancer, which only supports valid TCP requests, meaning DDoS attacks such as UDP and SYN floods will not reach your app layer.
+Enclave SSL/TLS endpoints include an AWS Elastic Load Balancer, which only supports valid TCP requests, meaning DDoS attacks such as UDP and SYN floods will not reach your app layer.
 
 Should you need to add capacity to deal with a potential attack, you can instantly scale your stack using the Aptible dashboard or command line tool.
 
 ##### **2.D - Port Scanning**
-AWS monitors and stops unauthorized port scanning. Because most of an Aptible stack is private, and all hosts run strict firewalls, port scanning is generally ineffective.
+AWS monitors and stops unauthorized port scanning. Because most of an Enclave stack is private, and all hosts run strict firewalls, port scanning is generally ineffective.
 
 ##### **2.E - Spoofing & Sniffing**
 The AWS network prohibits a host from sending traffic with a source IP or MAC address other than its own. The AWS hypervisor will also not deliver any traffic to a host the traffic is not addressed to, meaning even an instance running in promiscuous mode will not receive or be able to "sniff" traffic intended for other hosts.
@@ -84,7 +84,7 @@ You may choose to run a host-based intrusion detection or prevention system that
 Aptible scans both the Internet-facing network and private network of each customer VPC and its hosts monthly. Aptible is responsible for network and host security, and remediates adverse findings without customer intervention.
 
 ##### **2.H - Host Hardening**
-Aptible host operating systems are hardened based on the Center for Internet Security's Security Configuration Benchmark for the OS and version in use. For all operating systems:
+Enclave host operating systems are hardened based on the Center for Internet Security's Security Configuration Benchmark for the OS and version in use. For all operating systems:
 
 - Operating systems are installed on hosts only from bare images, and only via automated configuration management. Services installed can be enumerated upon request.
 - Host password logins are disabled. SSH root keys are not permitted.
@@ -98,18 +98,18 @@ Aptible host operating systems are hardened based on the Center for Internet Sec
 
 #### **3. Platform Security**
 ##### **3.A - Configuration and Change Management**
-For app services that have an SSL/TLS endpoint attached, the Aptible platform performs a health check on the container set before promoting it to the current release. If the health check fails, the container set is not promoted. Either way, the deploy is zero-downtime.
+For app services that have an SSL/TLS endpoint attached, Enclave performs a health check on the container set before promoting it to the current release. If the health check fails, the container set is not promoted. Either way, the deploy is zero-downtime.
 
-For any deploy, you can roll back to a previous codebase by pushing a different ref to your Aptible Git endpoint.
+For any deploy, you can roll back to a previous codebase by pushing a different ref to your app's Git endpoint.
 
 ##### **3.B - Isolation**
-PHI-ready environments are deployed on stacks isolated at the customer level. The VPC, network, underlying instances, and AWS virtual infrastructure are not shared with any other tenant.
+Dedicated, PHI-ready environments are deployed on stacks isolated at the customer level. The VPC, network, underlying instances, and AWS virtual infrastructure are not shared with any other tenant.
 
 ##### **3.C - Access Management and Restrictions**
 Aptible workforce members are only granted administrative privileges on customer stacks on an as-needed, least-privilege basis. Access reviews are performed on a regular basis.
 
 ##### **3.D - Logging and Monitoring**
-Aptible logs AWS and Aptible API activity, and host activity within your stack. The Aptible platform monitors performance indicators such as disk, memory, compute, and logging issues, and automatically resolves them on your behalf.
+Aptible logs AWS and Aptible API activity, and host activity within your stack. Enclave monitors performance indicators such as disk, memory, compute, and logging issues, and automatically resolves them on your behalf.
 
 ##### **3.E - Security Assessments**
 Aptible conducts regular security and vulnerability assessments of stack hosts and our applications. Code undergoes automated testing and manual code review prior to being deployed to production. Our security team receives regular notifications of vulnerabilities and patches on a continuous basis.
@@ -122,7 +122,7 @@ You are responsible for app-level security of the apps you deploy to Aptible.
 SSH public key authentication is used to limit access to your authorized backend users during git-based deploys. Following a successful push to an Aptible git endpoint, code is copied down to your stack's build layer. The resulting images are pushed to a private stack registry, backed by AWS S3, which provides redundant, access-controlled storage.
 
 ##### **3.G - Databases**
-Databases run in the database layer of your stack, on a private subnet accessible only from app or bastion layer. SSL/TLS is required if the database protocol supports it. Disk volumes backing databases are encrypted at the filesystem level using Aptible-managed AES 192-bit encryption.
+Databases run in the database layer of your stack, on a private subnet accessible only from app or bastion layer. SSL/TLS is required if the database protocol supports it. Disk volumes backing databases are encrypted at the filesystem level using Aptible-managed AES encryption. You can check whether your database uses AES-192 or AES-256 in the Enclave dashboard.
 
 #### **4. Contingency Planning**
 ##### **4.A - Backups**
@@ -148,9 +148,9 @@ AWS data centers are clustered into regions, and sub-clustered into availability
 For PHI-ready environments, Aptible automatically distributes app containers across availability zones when a service is scaled to more than one container.
 
 ##### **4.C - High Availability**
-Aptible supports high-availability clustering configuration of databases that support it.
+Enclave allows you to set up high-availability clustering for databases that support it.
 
 App services on v2 stacks are automatically distributed across AWS availability zones as soon as they are scaled to more than one container.
 
 ##### **4.D - Disaster Prevention and Recovery**
-Aptible monitors the stability and availability of customer infrastructure and automatically recovers from disruptions, including app and database failures. In the event of a disaster, Aptible restores apps from the last healthy build image and restores data from the last backup. In the event of a database outage, the Aptible platform will automatically recover the underlying database instance and disk. If the disk is unavailable, Aptible will restore from a backup. Raw database snapshots and restored database clones are available upon request for testing and recovery.
+Aptible monitors the stability and availability of customer infrastructure and automatically recovers from disruptions, including app and database failures. In the event of a disaster, Aptible restores apps from the last healthy build image and restores data from the last backup. In the event of a database outage, Enclave will automatically recover the underlying database instance and disk. If the disk is unavailable, Enclave will restore from a backup. Raw database snapshots and restored database clones are available upon request for testing and recovery.
