@@ -43,7 +43,7 @@ Here is a sample Dockerfile for a conventional Rails app:
 
   ```ruby
   # Dockerfile
-  FROM quay.io/aptible/ruby:2.3
+  FROM quay.io/aptible/ruby:2.3-ubuntu-16.04
 
   RUN apt-get update && apt-get -y install build-essential
 
