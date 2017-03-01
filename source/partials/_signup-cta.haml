@@ -1,6 +1,6 @@
 - cta_label ||= 'Sign Up'
 - cta_placeholder ||= 'Email'
-%a.btn.btn-primary{ href: 'https://dashboard.aptible.com/signup' }= cta_label
--# %form.signup-cta.single-line{ action: 'http://localhost:4200/signup' }
--#   %input.single-line__input{ type: 'email', placeholder: cta_placeholder }
--#   %button.single-line__submit{ type: 'submit' }= cta_label
+- class_name ||= ''
+%form.signup-cta.single-line{ action: open_account_href, method: 'get', class: class_name }
+  %input.single-line__input{ type: 'email', name: 'email', placeholder: cta_placeholder }
+  %button.single-line__submit{ type: 'submit' }= cta_label

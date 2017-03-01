@@ -1,6 +1,6 @@
 .blog-post__heading {
-  @include shift(2);
-  @include span-columns(8);
+  @include grid-shift(2);
+  @include grid-column(8);
   margin-bottom: 50px;
 
   .blog-posts__post {
@@ -11,45 +11,45 @@
   }
 
   @media screen and (max-width: $tablet-portrait) {
-    @include shift(1);
-    @include span-columns(10);
+    @include grid-shift(1);
+    @include grid-column(10);
   }
 }
 
 .blog-post__author {
-  @include span-columns(2);
+  @include grid-column(2);
   @media screen and (max-width: $tablet-landscape) {
-    @include shift(2);
-    @include span-columns(8);
+    @include grid-shift(2);
+    @include grid-column(8);
   }
   @media screen and (max-width: $tablet-portrait) {
-    @include shift(1);
-    @include span-columns(10);
+    @include grid-shift(1);
+    @include grid-column(10);
   }
 }
 
 .blog-post {
-  @include span-columns(8);
+  @include grid-column(8);
   margin-bottom: 50px;
 
   @media screen and (max-width: $tablet-landscape) {
-    @include shift(2);
+    @include grid-shift(2);
   }
   @media screen and (max-width: $tablet-portrait) {
-    @include shift(1);
-    @include span-columns(10);
+    @include grid-shift(1);
+    @include grid-column(10);
   }
 }
 
 .blog-posts {
-  @include shift(2);
-  @include span-columns(8);
+  @include grid-shift(2);
+  @include grid-column(8);
   padding: 0;
   list-style: none;
 
   @media screen and (max-width: $tablet-portrait) {
-    @include shift(1);
-    @include span-columns(10);
+    @include grid-shift(1);
+    @include grid-column(10);
   }
 }
 
@@ -67,13 +67,13 @@
     border-width: 5px 5px 0 0;
     content: '';
     display: inline-block;
-    height: 15px;
+    height: 14px;
     position: relative;
     right: 0;
     top: -15px;
     transform: rotate(45deg);
     transition: right $base-duration $base-timing;
-    width: 15px;
+    width: 14px;
   }
   &:hover::after {
     right: -10px;

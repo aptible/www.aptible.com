@@ -16,6 +16,10 @@
 .sky-blue { color: $sky-blue; }
 .sky-blue-bg { background-color: $sky-blue; }
 
+.light-sky-blue { color: $light-sky-blue; }
+.light-sky-blue-bg { background-color: $light-sky-blue; }
+
+
 .blue { color: $blue; }
 .blue-bg { background-color: $blue; }
 
@@ -33,6 +37,9 @@
 
 .dusk { color: $dusk; }
 .dusk-bg { background-color: $dusk; }
+
+.light-dusk { color: $light-dusk; }
+.light-dusk-bg { background-color: $light-dusk; }
 
 .light-med-gray { color: $light-med-gray; }
 .light-med-gray-bg { background-color: $light-med-gray; }
@@ -69,5 +76,4 @@
                                     $twilight 42%,
                                     $midnight-blue 78%,
                                     $blue 130%);
-  box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.10);
 }

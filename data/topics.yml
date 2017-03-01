@@ -102,6 +102,8 @@
       url: "enclave/how-do-i-use-my-domain-apex-on-aptible"
     - title: "How do I set up an apex redirect using AWS?"
       url: "enclave/how-do-i-setup-an-apex-redirect-using-aws"
+    - title: "How do I filter traffic to my app?"
+      url: "enclave/how-do-i-filter-traffic-to-my-app"
 
 "The Aptible CLI":
   header: "Using Enclave from the command line"

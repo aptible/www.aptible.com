@@ -6,6 +6,17 @@
   padding: 50px 25px;
 }
 
+.card--full {
+  width: 100%;
+}
+
+.card--dark {
+  border-radius: 10px;
+  background-color: rgba(0,0,0,.25);
+  border-width: 0;
+  padding: 30px;
+}
+
 .card--opening {
   height: 400px;
   .card__title::after {
@@ -19,7 +30,6 @@
 
 .card__icon {
   margin-bottom: 20px;
-  text-align: center;
   svg {
     height: 50px;
   }
@@ -30,9 +40,16 @@
   width: 100%;
 }
 
+.card__icon {
+  text-align: center;
+  img, svg {
+    max-height: 75px;
+    margin-bottom: 10px;
+  }
+}
+
 .card__body {
   clear: both;
-  max-width: 330px;
 }
 
 .card__body--centered {

@@ -22,11 +22,7 @@
   margin-bottom: -220px;
   padding-top: 0;
   transform: translateY(-270px);
-
-  // max-width:
-  overflow-x: scroll;
-  // padding-bottom: 40px;
-  // text-align: center;
+  overflow: auto;
   table {
     min-width: 1200px;
   }
@@ -61,7 +57,7 @@ th.support-plans__column-heading {
 .support-severities {
   max-width: 980px;
   margin: 0 auto;
-  overflow-x: scroll;
+  overflow: auto;
   padding-bottom: 40px;
   text-align: center;
   table {

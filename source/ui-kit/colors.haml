@@ -3,25 +3,24 @@ section: 'ui-kit'
 slug:    'colors'
 title:   'Colors'
 colors:
-  - white
-  - lighter-blue
-  - light-blue
-  - light-blue-gray
-  - sky-blue
-  - blue
-  - blue-steel
-  - dark-blue-steel
-  - dark-blue
-  - green
-  - dusk
-  - light-med-gray
-  - light-gray
-  - medium-gray
-  - dark-gray
-  - dark-magenta
-  - purple
-  - twilight
-  - midnight-blue
+  - white,#fff;
+  - lighter-blue,#f5f8fd;
+  - light-blue,#e9f1fd;
+  - sky-blue,#93b0d2;
+  - blue,#307AD1;
+  - light-sky-blue,#afcced;
+  - blue-steel,#627699;
+  - dark-blue-steel,#45546e;
+  - dark-blue,#172234;
+  - light-blue-gray,#7383A0;
+  - green,#9bd037;
+  - dusk,#212f45;
+  - light-med-gray,#c9d1db;
+  - light-gray,#8b97a6;
+  - medium-gray,#999;
+  - dark-gray,#36455b;
+  - purple,#9b59b6;
+  - light-dusk,#2d3c54;
 ---
 
 - content_for :header do
@@ -29,16 +28,21 @@ colors:
 
 .content
   .grid-container.grid--4up
-    - current_page.data.colors.each do |color|
-      %div{:class => "grid-item card #{"#{color}-bg"}"}
-        %heading
-          = color.gsub('-', ' ').capitalize
+    .grid-collapse
+      - current_page.data.colors.each do |c|
+        - color = c.split(',')[0]
+        - hex = c.split(',')[1]
+        %div{:class => "grid-item card #{"#{color}-bg"}"}
+          %heading
+            = color.gsub('-', ' ').capitalize
+            %span.color-hex= hex
   .grid-container
     %h1.headline--xxl Gradients
   .grid-container.grid--2up
-    .grid-item.card.hero-gradient
-      %heading
-        Hero Gradient
-    .grid-item.card.hero-gradient--angled
-      %heading
-        Hero Gradient Angled
+    .grid-collapse
+      .grid-item.card.hero-gradient
+        %heading
+          Hero Gradient
+      .grid-item.card.hero-gradient--angled
+        %heading
+          Hero Gradient Angled
