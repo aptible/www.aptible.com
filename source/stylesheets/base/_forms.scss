@@ -100,6 +100,7 @@ select {
   color: $blue-steel;
   display: inline-block;
   outline: none;
+  padding-right: 125px;
   &::-webkit-input-placeholder {
     color: $sky-blue;
   }
@@ -108,16 +109,13 @@ select {
     box-shadow: none;
     outline: none;
   }
-  &:invalid {
-    border-color: $dark-magenta;
-  }
 }
 
 .single-line__submit {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   display: inline-block;
-  padding: .85em 1.2em;
+  padding: 15px 15px 13px;
   position: absolute;
   top: 0;
   right: 0;

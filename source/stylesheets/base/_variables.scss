@@ -1,4 +1,4 @@
-//
+
 // Variables:
 //  - Debugging
 //
@@ -10,17 +10,17 @@ $visual-grid: false;
 // Grid
 //
 // See http://pxtoem.com/
-// $column: 4.2358em !default;// 67px column
-// $gutter: 1.618em !default; // 25px gutter
-$column: 4.375em !default;    // 70px column
-$gutter: 1.25em !default;     // 20px gutter
+$neat-grid: (
+  columns: 12,
+  gutter: 20px
+);
 
 //
 // Breakpoints
 //
 $max-viewport: 1200px;
 $tablet-landscape: 1024px;
-$nav-break: $tablet-landscape; //900px;
+$nav-break: 1050px;
 $tablet-portrait: 768px;
 
 $medium-screen: new-breakpoint(min-width 768px);

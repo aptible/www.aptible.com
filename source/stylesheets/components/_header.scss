@@ -147,7 +147,14 @@
 .heading__summary {
   color: $sky-blue;
   font-size: 24px;
+  line-height: 1.2;
 }
+
+.heading__summary--sibling {
+  margin-bottom: 50px;
+  max-width: 540px;
+}
+
 .heading__summary--light-blue {
   color: $light-blue;
   font-size: 24px;

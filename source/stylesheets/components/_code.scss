@@ -20,6 +20,8 @@ pre {
                       $dark-blue-steel 40px,
                       $dusk calc(40px - 100%),
                       $dusk);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin: 0;
   overflow-x: auto;
   padding-bottom: 20px;
@@ -43,6 +45,8 @@ pre {
 }
 
 .rouge-table {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   color: $light-blue;
   display: block;
   font-family: $monospace-font-family;
@@ -52,18 +56,18 @@ pre {
 
   // Faux window bar for code blocks
   &::before {
-    background-color: $dark-blue-steel;
     background-image: image-url('icons/code-pseudo-actions.svg');
-    background-position: 10px 14px;
+    background-position: 20px 14px;
     background-repeat: no-repeat;
     content: '';
     display: block;
     padding: 20px;
-    width: 100%;
+    position: absolute;
+    width: 100px;
   }
 }
 .rouge-table--full-width {
-  overflow-x: auto;
+  overflow: auto;
   .rouge-code--terminal {
     white-space: nowrap;
   }
@@ -77,7 +81,7 @@ pre {
 .rouge-gutter {
   border-bottom: none;
   text-align: right;
-  padding: 0 20px;
+  padding: 40px 0 0 20px;
   width: auto;
 }
 .gl {
@@ -88,10 +92,10 @@ pre {
 }
 .rouge-code {
   border-bottom: none;
-  padding: 0 20px 0 0;
+  padding: 40px 20px 0 0;
 }
 .rouge-code--no-num {
-  padding: 0 20px 25px;
+  padding: 40px 20px 25px;
   vertical-align: top;
 }
 .rouge-code--terminal {

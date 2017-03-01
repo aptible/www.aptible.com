@@ -16,13 +16,6 @@
   }
 }
 
-.nav-bar {
-  display: flex;
-}
-.nav-bar__nav-item {
-  @extend .btn;
-}
-
 .nav-item--separator {
   border-radius: 1px;
   border-bottom: 3px solid $light-blue;
@@ -110,7 +103,7 @@
       display: block;
       text-align: center;
     }
-    .nav-list--center {
+    .nav-list--right {
       border-radius: 5px;
       height: auto;
       left: 0;
@@ -125,12 +118,6 @@
       cursor: pointer;
       display: inline-block;
       margin-bottom: 10px;
-    }
-    .nav-list--right {
-      display: none;
-    }
-    .nav--dashboard-auth {
-      display: block;
     }
     .nav-item {
       display: block;
@@ -158,7 +145,7 @@
 }
 
 @media screen and (max-width: $nav-break) {
-  .nav-list--center[data-state='open'] {
+  .nav-list--right[data-state='open'] {
     background-color: $dark-blue;
     width: calc(100% - 20px);
     .nav-toggle__icon-bar {
@@ -186,23 +173,28 @@
       opacity: 1;
       position: static;
     }
+    .signup-cta--small {
+      margin-left: 0;
+    }
+    .single-line__input {
+      padding: 0 6.5px;
+    }
+    .single-line__submit {
+      top: 3px;
+    }
   }
 }
 
 .aptible-header--single-grid,
 .aptible-header--double-grid {
   @media screen and (max-width: $nav-break) {
-    .nav-list--center {
+    .nav-list--right {
       // Absolute childrens' top: 0 is the nearest relative parent
       // This -34px is the top padding of .aptible-header which is now position
       // relative in order to support the absolute pinning of the header grids.
       top: -34px;
     }
   }
-}
-
-.nav--dashboard-auth {
-  display: none;
 }
 
 .nav-item {
@@ -220,23 +212,15 @@
   margin-right: 0;
 }
 
-.nav-list--center {
+.nav-list--right {
+  display: inline-block;
   flex-grow: 1;
-  text-align: center;
+  text-align: right;
   & > .nav-item {
-    margin-right: 30px;
+    margin-right: 40px;
     &:last-child {
       margin-right: 0;
     }
-  }
-}
-
-.nav-list--right {
-  display: inline-block;
-  text-align: right;
-  .nav-item {
-    margin-left: 20px;
-    margin-right: 0;
   }
 }
 
@@ -279,6 +263,7 @@
   }
 }
 .nav-item--parent {
+  margin-left: 0;
   margin-right: 0;
   &::after {
     border: 1px solid currentColor;
