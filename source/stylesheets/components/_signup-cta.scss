@@ -12,6 +12,22 @@
     padding: 24px 25px 22px;
     right: -1px;
   }
+  @media screen and (max-width: $nav-break) {
+    margin-right: 0;
+
+    .single-line__input {
+      border-radius: 5px;
+      font-size: 14px;
+      padding :10px;
+      width: 100%;
+    }
+    .single-line__submit {
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      font-size: 14px;
+      padding: 16px 25px 15px;
+    }
+  }
 }
 
 .signup-cta--small {

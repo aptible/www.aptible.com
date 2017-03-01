@@ -1,7 +1,7 @@
 .grid--2up {
   .product-page__hero-header {
     @media screen and (max-width: $nav-break) {
-      @include span-columns(12);
+      @include grid-column(12);
     }
     @media screen and (max-width: 387px) {
       .btn + .btn {

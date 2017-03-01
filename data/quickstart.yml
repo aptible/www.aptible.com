@@ -1,22 +1,16 @@
-"Ruby":
-  slug: ruby
-  svg: ruby.svg
-  url: "ruby/rails"
+"Python":
+  slug: python
+  svg: python.svg
+  url: 'python/django'
   articles:
-    - framework: "Ruby on Rails"
-      slug: "rails"
-      svg: "rails.svg"
-      url: "ruby/rails"
-
-"Go":
-  slug: go
-  svg: go.svg
-  url: "go/gorilla"
-  articles:
-    - framework: "Gorilla"
-      slug: "gorilla"
-      svg: "go.svg"
-      url: "go/gorilla"
+    - framework: "Django"
+      slug: "django"
+      svg: "django.svg"
+      url: "python/django"
+    - framework: "Flask"
+      slug: "flask"
+      svg: "flask.svg"
+      url: "python/flask"
 
 "Node":
   slug: node
@@ -31,6 +25,30 @@
       slug: "meteor"
       svg: "node.svg"
       url: "node/meteor"
+
+"Ruby":
+  slug: ruby
+  svg: ruby.svg
+  url: "ruby/rails"
+  articles:
+    - framework: "Ruby on Rails"
+      slug: "rails"
+      svg: "rails.svg"
+      url: "ruby/rails"
+
+"PHP":
+  slug: php
+  svg: php.svg
+  url: "php/laravel"
+  articles:
+    - framework: "Laravel"
+      slug: "laravel"
+      svg: "laravel.svg"
+      url: "php/laravel"
+    - framework: "Slim"
+      slug: "slim"
+      svg: "php.svg"
+      url: "php/slim"
 
 "Java":
   slug: java
@@ -52,30 +70,12 @@
       svg: "play.svg"
       url: "scala/play"
 
-"PHP":
-  slug: php
-  svg: php.svg
-  url: "php/laravel"
+"Go":
+  slug: go
+  svg: go.svg
+  url: "go/gorilla"
   articles:
-    - framework: "Laravel"
-      slug: "laravel"
-      svg: "laravel.svg"
-      url: "php/laravel"
-    - framework: "Slim"
-      slug: "slim"
-      svg: "php.svg"
-      url: "php/slim"
-
-"Python":
-  slug: python
-  svg: python.svg
-  url: 'python/django'
-  articles:
-    - framework: "Django"
-      slug: "django"
-      svg: "django.svg"
-      url: "python/django"
-    - framework: "Flask"
-      slug: "flask"
-      svg: "flask.svg"
-      url: "python/flask"
+    - framework: "Gorilla"
+      slug: "gorilla"
+      svg: "go.svg"
+      url: "go/gorilla"

@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 @import "normalize";
-@import "bourbon";
+@import "bourbon/bourbon";
 
 /* Bitters needs to be imported before Neat */
 @import "base/base";
-@import "neat";
+@import "neat/neat";
 
 /**
  * Layout / Global
@@ -17,25 +17,7 @@
 /**
  * Components
  */
-@import "components/header";
-@import "components/footer";
-@import "components/aptible-mark";
-@import "components/typography";
-@import "components/nav";
-@import "components/code";
-@import "components/resources";
-@import "components/loading-indicator";
-@import "components/resources-footer";
-@import "components/filter";
-@import "components/search-bar";
-@import "components/swiftype-results";
-@import "components/pricing-tiers";
-@import "components/unit-pricing";
-@import "components/support-pricing-tiers";
-@import "components/severity-chips";
-@import "components/newsletter-signup";
-@import "components/notification";
-@import "components/vs-list";
+@import "components/*";
 
 /**
  * Pages / Sections
@@ -46,6 +28,7 @@
 @import "faq";
 @import "gridiron";
 @import "healthcare-systems";
+@import "home";
 @import "product-page";
 @import "support-plans";
 @import "toolbelt";

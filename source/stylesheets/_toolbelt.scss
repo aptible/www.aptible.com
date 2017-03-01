@@ -65,7 +65,7 @@
 .toolbelt-platform {
   background-color: $white;
   border-color: $lighter-blue;
-  margin-bottom: flex-gutter();
+  margin-bottom: 20px;
   padding: 40px 20px 20px;
   transition-property: background-color, border-color;
   transition-duration: $base-duration;

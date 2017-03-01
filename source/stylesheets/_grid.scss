@@ -25,11 +25,18 @@ body {
 // Grid Container
 //
 .grid-container {
-  @include outer-container;
+  @include grid-container;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 0;
   @media screen and (max-width: $max-viewport) {
-    padding: 0 flex-gutter();
+    padding: 0 20px;
   }
+}
+
+.grid-collapse {
+  @include grid-collapse;
 }
 
 .grid-container--no-padding {
@@ -57,21 +64,27 @@ body {
 
 .grid--2up {
   .grid-item {
-    @media screen and (max-width: $tablet-portrait) {
-      @include span-columns(12);
-    }
-    @include span-columns(6);
-    @include omega(2n);
+    @include grid-column(6);
   }
-  .card {
-    @include span-columns(5);
-    @include omega(2n);
-    &:nth-of-type(2n + 1) {
-      @include shift(1);
+  .grid-item--small {
+    @include grid-column(5);
+    @include grid-push(1);
+    @media screen and (max-width: $nav-break) {
+      @include grid-column(6);
+      @include grid-push(0);
     }
+  }
+  .grid-item,
+  .grid-item--small {
     @media screen and (max-width: $tablet-portrait) {
-      @include shift(1);
-      @include span-columns(10);
+      @include grid-column(12);
+    }
+  }
+  > .card {
+    @include grid-column(6);
+    @media screen and (max-width: $tablet-portrait) {
+      @include grid-shift(1);
+      @include grid-column(10);
     }
   }
 }
@@ -93,23 +106,23 @@ body {
 
 .grid--3up {
   .grid-item {
-    @include span-columns(4);
-    &:nth-child(3n+3) {
-      margin-right: 0;
+    @include grid-column(4);
+    &:nth-child(3n+1) {
+      margin-left: 0;
     }
     @media screen and (max-width: $tablet-landscape) {
-      @include span-columns(6);
-      &:nth-child(3n+3) {
-        margin-right: flex-gutter();
+      @include grid-column(6);
+      &:nth-child(3n+1) {
+        margin-left: 20px;
       }
-      &:nth-child(2n+2) {
-        margin-right: 0;
+      &:nth-child(2n+1) {
+        margin-left: 0;
       }
     }
     @media screen and (max-width: $tablet-portrait) {
-      @include span-columns(12);
-      &:nth-child(3n+3), &:nth-child(2n+2) {
-        margin-right: flex-gutter();
+      @include grid-column(12);
+      &:nth-child(3n+1), &:nth-child(2n+1) {
+        margin-left: 20px;
       }
     }
   }
@@ -131,15 +144,15 @@ body {
 }
 
 .grid-item--two-thirds {
-  @include span-columns(8);
+  @include grid-column(8);
   @media screen and (max-width: $tablet-landscape) {
-    @include span-columns(12);
+    @include grid-column(12);
   }
 }
 .grid-item--one-third {
-  @include span-columns(3);
+  @include grid-column(3);
   @media screen and (max-width: $tablet-landscape) {
-    @include span-columns(12);
+    @include grid-column(12);
   }
 }
 
@@ -155,24 +168,22 @@ body {
 }
 
 .grid-document {
-  @include span-columns(8);
+  @include grid-column(8);
   float: left;
   margin-bottom: 100px;
   @media screen and (max-width: $tablet-portrait) {
-    @include span-columns(12);
-    @include omega();
+    @include grid-column(12);
     float: none;
   }
 }
 
 .grid-aside {
-  @include span-columns(4);
-  @include omega();
+  @include grid-column(4);
   float: right;
   margin-bottom: 50px;
 
   @media screen and (max-width: $tablet-portrait) {
-    @include span-columns(12);
+    @include grid-column(12);
     float: none;
   }
 }
@@ -208,14 +219,16 @@ body {
 
 .grid--4up {
   .grid-item {
-    @include span-columns(3);
-    @include omega(4n);
+    @include grid-column(3);
+    &:nth-child(4n+1) {
+      margin-left: 0;
+      clear: left;
+    }
     @media screen and (max-width: $tablet-landscape) {
-      @include span-columns(6);
-      @include omega(2n);
+      @include grid-column(6);
     }
     @media screen and (max-width: $tablet-portrait) {
-      @include span-columns(12);
+      @include grid-column(12);
     }
   }
 }
@@ -232,11 +245,10 @@ body {
     }
 
     @media screen and (max-width: $tablet-landscape) {
-      @include span-columns(6);
-      @include omega(2n);
+      @include grid-column(6);
     }
     @media screen and (max-width: $tablet-portrait) {
-      @include span-columns(12);
+      @include grid-column(12);
     }
   }
 }
@@ -319,10 +331,10 @@ body {
   .logo-grid__item {
     width: 25%;
     &:nth-child(2n+1) {
-      border-left: 1px solid $light-blue;
+      border-right: 1px solid $light-blue;
     }
     &:nth-child(4n+1) {
-      border-left: none;
+      border-right: none;
     }
     &:nth-child(3), &:nth-child(4) {
       border-top: none;

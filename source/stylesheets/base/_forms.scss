@@ -100,6 +100,7 @@ select {
   color: $blue-steel;
   display: inline-block;
   outline: none;
+  padding-right: 125px;
   &::-webkit-input-placeholder {
     color: $sky-blue;
   }
@@ -114,22 +115,8 @@ select {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   display: inline-block;
-  padding: 13px 15px 14px;
+  padding: 15px 15px 13px;
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.signup-cta--small {
-  display: inline-block;
-  margin-left: 40px;
-  .single-line__input {
-    font-size: 13px;
-    min-width: 270px;
-    padding: 6.5px;
-  }
-  .single-line__submit {
-    font-size: 13px;
-    padding: 11px 15px 12px;
-  }
 }

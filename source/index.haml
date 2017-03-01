@@ -1,84 +1,155 @@
 ---
+title: HIPAA Security and Compliance Platform
 description: Powerful security and DevOps tools for engineering teams.
 ---
 
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled.aptible-header--double-grid
+  %header.aptible-header.hero-gradient--angled.aptible-header--with-breadcrumbs
     = partial 'partials/main-nav'
 
-    .grid-container
-      .centered-header
-        %h1.heading__title
-          Powerful security and DevOps tools for engineering teams.
+    .grid-container.grid--2up.aptible-header__bottom
+      .home-hero.grid-collapse
+        .home-hero__copy
+          %h1.home__heading__title
+            Keep your apps, data, and people secure.
+          %p.home__heading__summary.heading__summary.heading__summary--sibling
+            Aptible protects your most important assets when the stakes matter
+            most. Hundreds of developers use Aptible to secure data and build
+            strong compliance programs.
+          = partial 'partials/signup-cta', locals: { |
+                cta_label: 'Get Started',            |
+                cta_placeholder: 'Enter your email'  |
+              }                                      |
+          = partial 'partials/signup-demo-request'
 
-    .grid-container.grid--2up.home-hero__products.aptible-header__bottom-grid__riser
-      .enclave-home-hero.product-hero.grid-item
-        .enclave-home-hero__channels
-          = partial 'images/enclave-channels.svg'
-        .enclave-home-hero__illustration.product-hero__illustration
-          = partial 'images/enclave.svg'
-        %h2.heading__subtitle Secure DevOps
-        %h1.heading__title.no-hr Enclave
-        %p.product-hero__description
-          Aptible Enclave is a Docker-based platform that enables secure
-          deployment into private AWS environments. Fast, efficient
-          engineering teams use Enclave to secure their most important
-          architecture.
-        %a.btn{ href: '/enclave/' } Learn more about Enclave
+        .home-hero__quotes
+          .home__customer-quotes
+            .card.card--dark
+              .customer-quote__logo
+                %img{ src: 'images/customers/pager.png' }
+              .customer-quote
+                “Aptible provides us a robust and secure platform to build our
+                technology on. It's alleviated pain points with HIPAA compliance
+                and saved us tons of money and time.”
+              .customer-quote__author Sameer Khanna - VP of Engineering
+            .card.card--dark
+              .customer-quote__logo
+                = partial 'images/customers/aidin.svg'
+              .customer-quote
+                “Aptible provides infrastructure software we've come to rely on every
+                day. They’ve played a significant role in our appeal and ability to
+                take on new clients—both in our sales process and technical
+                integration process.”
+              .customer-quote__author James Dempsey - Lead Developer
 
-      .gridiron-home-hero.product-hero.grid-item
-        .gridiron-home-hero__illustration.product-hero__illustration
-          = partial 'images/gridiron.svg'
-        .gridiron-home-hero__join-channels
-          = partial 'images/enclave-to-gridiron.svg'
-        %h2.heading__subtitle Manage Security & Compliance
-        %h1.heading__title.no-hr Gridiron
-        %p.product-hero__description
-          Aptible Gridiron helps software engineering teams stand up and
-          scale agile information security programs. Gridiron makes
-          compliance with complex regulations like HIPAA fast and easy.
-        %a.btn{ href: '/gridiron/' } Learn more about Gridiron
+    .home__customers.aptible-header--angled.aptible-header--bottom-grid
+      .grid-container.grid--single-center
+        %h2.home__customers__title
+          The most innovative companies use Aptible to protect sensitive data
+          and keep their organizations compliant with critical regulatory
+          frameworks.
+        .home__customers-logos
+          .home__customers-logo
+            = partial '/images/customers/ucsf.svg'
+          .home__customers-logo.home__customers-logo--spectra
+            = image_tag 'customers/spectra-sky.png'
+          .home__customers-logo
+            = partial '/images/customers/everplans.svg'
+          .home__customers-logo
+            = image_tag 'customers/nuspine-sky.png'
+          .home__customers-logo.home__customers-logo--healthify
+            = partial '/images/customers/healthify.svg'
+          .home__customers-logo.home__customers-logo--1bios
+            = partial '/images/customers/1bios.svg'
+        %a.btn{ href: '/customers/' } Learn how these companies use Aptible
+
+.content.home__enclave
+  .home__section__container.grid-container.grid-item--adjacent
+    .home__enclave-intro
+      %h1.home__section__title.heading__title Enclave
+      %p.home__section__summary
+        Deploy apps, databases, and secure network architecture in minutes.
+        Enclave is a turnkey container deployment platform that provides
+        security and compliance management.
+      %a.btn{ href: '/enclave/' } Learn More
+
+    .home__enclave-terminal
+      %pre.highlight.plaintext
+        %table.rouge-table.rouge-table--full-width
+          %tr
+            %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+              .terminal $ aptible apps:create healthco-on-rails
+              .terminal-interactive <span class="terminal-response">INFO: Authorizing...</span>
+              .terminal-interactive <span class="terminal-response">INFO: healthco-on-rails created successfully.</span>
+              .terminal &nbsp;
+              .terminal &nbsp;
+              .terminal $ git remote add aptible git@beta.aptible.com:healthco-on-rails.git
+              .terminal $ git push aptible master
+              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Authorizing...</span>
+              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Deploy succeeded.</span>
+              .terminal &nbsp;
+              .terminal &nbsp;
+              .terminal $ aptible logs --app healthco-on-rails
+              .terminal-interactive Connected to logs from log-tail-feelsgoodman
+              .terminal-response 2016-10-01T16:39:17.720Z [healthco-on-rails-web] => Booting WEBrick
+              .terminal-response 2016-10-01T16:39:17.722Z [healthco-on-rails-web] => Rails 4.2.7.1 application starting in production on http://0.0.0.0:3000
+              .terminal-response 2016-10-01T16:39:18.364Z [healthco-on-rails-web] => Run `rails server -h` for more startup options
+              .terminal-response 2016-10-01T16:39:19.761Z [healthco-on-rails-web] => Ctrl-C to shutdown server
+
+.content.home__gridiron
+  .home__gridiron-graph
+    .home__section__container.grid-container.grid-item--adjacent
+      .home__gridiron-intro
+        %h1.home__section__title.heading__title
+          Gridiron
+        %p.home__section__summary
+          Ensure your organization meets and maintains security and compliance
+          requirements. Gridiron provides you with the developer-focused tools,
+          training, and expert guidance your company needs to comply with
+          regulatory requirements and pass security reviews.
+        %p
+          %a.btn{ href: '/gridiron/' } Learn More
+      .home__gridiron-intro
+        -# black grid placeholder
 
 .content
-  .grid-container.grid-container--ruled.grid--single-center
+  .home__guides.grid-container.grid--single-center
     .grid-item
-      %h2.heading--single-center
-        Aptible Enclave is a HIPAA-compliant, AWS-based secure deployment platform for DevOps teams.
+      .home__guides__hgroup
+        %h2.home__guides__title
+          Developers First
+        %p.home__guides__subtitle
+          Aptible helps secure the internet by giving developers the tools and
+          expertise to protect sensitive data.
+      .home__guides__languages
+        - data.quickstart.each do |title, language|
+          %a.home__guides__language{ href: quickstart_index_href(language), class: language.slug }
+            = partial "images/icons/#{language.svg}"
 
-      %p.summary--single-center
-        Try Enclave today with $500 free credit
-
-      %a.btn{ href: '/pricing/' } See Pricing & Plans
-
-  .healthcare-systems.grid-container.grid--2up.grid--2up-flex.grid-container--ruled
-    .grid-item
-      %h2.heading__title
-        Our customers work with the best health systems in the world.
-      %p.heading__summary
-        Major health systems trust Aptible to secure data and cloud
-        architecture for their technology partners.
-
-    .grid-item
-      .logo-grid
-        .logo-grid__item
-          = partial '/images/healthcare-systems/va.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/uhc.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/stanfordmed.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/kaiserpermanente.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/johnshopkinsmed.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/mayoclinic.svg'
-
-  .grid-container.grid--single-center
-    .grid-item
-      %h2.heading--single-center
-        Aptible helps hundreds of digital health companies get to market faster
-        with less risk.
-
-      = partial 'customer-logo-grid'
+.content
+  .home-quotes
+    .home-quote
+      .home-quote__bubble
+        .home-quote__body
+          “When evaluating a vendor, our priorities were trust, transparency,
+          and reliability. Aptible hits them all, allowing us to focus on what
+          we do without worrying about all the layers of legal and technical ops
+          hurdles.”
+        .home-quote__author
+          Dan Levenson - CTO
+      .home-quote__logo
+        = partial 'images/customers/healthify.svg'
 
 = partial 'partials/resources-footer'
+
+.content.hero-gradient--angled
+  .footer__signup.grid-container.grid--single-center
+    .grid-item
+      %h2.footer__signup-title
+        Get secure and compliant this afternoon.
+      .footer__signup-form
+        = partial 'partials/signup-cta', locals: { |
+              cta_label: 'Get Started',            |
+              cta_placeholder: 'Enter your email'  |
+            }                                      |
+        = partial 'partials/signup-demo-request'
