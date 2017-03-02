@@ -27,5 +27,15 @@
         - resources_newest_first.each do |resource|
           = partial 'resource-item',  locals: { resource: resource }
 
+        -# One-off for AWS vs Aptible
+        %a{ class: "resource-item", href: '/aws-vs-aptible/' }
+          %header.resource-item__header
+            %h2.resource-item__title HIPAA Compliant Deployment: AWS vs Aptible
+          .resource-item__body
+            .resource-item__tags
+            .resource-item__excerpt
+              Enjoy the scalability and security of the AWS cloud without needing
+              an entire DevOps team to manage it.
+
     .grid-aside
       = partial 'resources-aside'
