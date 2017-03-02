@@ -4,10 +4,7 @@
   %h3 Security &amp; Compliance Digest
   %p
     Sign up to get the best in security and compliance delivered monthly.
-  %form.newsletter-form
-    %input{ type: 'hidden', name: 'event', value: 'subscribed' }
-    %input#aptible-newsletter-subscription-email.newsletter-form__email{ required: true, name: 'newsletter-form__email', type: 'email', placeholder: 'Email Address' }
-    %button.newsletter-form__submit{ type: 'submit', value: ' ' }
+  = partial 'newsletter-signup'
 
 - blog_posts_newest_first.take(3).each_with_index do |post, index|
   .grid-aside__block.grid-aside__block--segment
