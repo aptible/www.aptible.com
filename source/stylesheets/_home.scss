@@ -38,9 +38,11 @@
 
 .home__customers {
   background-color: rgba(0,0,0,.25);
+  margin-bottom: 0;
   padding-bottom: 50px;
   padding-top: 50px;
-  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
   &::after { display: none; }
 
   // Reset the gradient or this panel is all magenta
@@ -151,6 +153,7 @@
       overflow: hidden;
       padding-right: 0;
       padding-top: 40px;
+      position: relative;
     }
   }
 }
@@ -160,6 +163,8 @@
   flex-flow: row wrap;
   justify-content: space-between;
   padding-top: 100px;
+  position: relative;
+  z-index: 1;
   @media screen and (max-width: 1200px) {
     overflow: hidden;
     padding-right: 0;

@@ -56,14 +56,14 @@
     bottom: 0;
     content: '';
     display: block;
-    height: 33.33%;
+    height: 15vw;
     position: absolute;
     width: 100%;
     z-index: 0;
   }
 }
 
-@media screen and (max-width: $nav-break) {
+@media screen and (max-width: $tablet-portrait) {
   .aptible-header--single-grid::before,
   .aptible-header--double-grid::before,
   .aptible-header--double-grid::after,
@@ -147,7 +147,10 @@
 .heading__summary {
   color: $sky-blue;
   font-size: 24px;
+  font-weight: normal;
   line-height: 1.2;
+  margin-bottom: 0;
+  &::after { display: none; }
 }
 
 .heading__summary--sibling {
