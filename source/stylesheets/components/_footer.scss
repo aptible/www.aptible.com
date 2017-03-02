@@ -38,6 +38,8 @@
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
 }
 
 .footer__signup-form {
@@ -65,6 +67,11 @@
 .footer__signup-title {
   font-size: 40px;
   color: $white;
-  margin-bottom: 80px;
+  margin: 0 auto 80px auto;
+  max-width: 800px;
   &::after { display: none; }
+  @media screen and (max-width: $tablet-portrait) {
+    font-size: 6vw;
+    margin-bottom: 40px;
+  }
 }

@@ -4,7 +4,7 @@ description: Powerful security and DevOps tools for engineering teams.
 ---
 
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled.aptible-header--with-breadcrumbs
+  %header.aptible-header.hero-gradient--angled.aptible-header--with-breadcrumbs.aptible-header--bottom-grid
     = partial 'partials/main-nav'
 
     .grid-container.grid--2up.aptible-header__bottom
@@ -16,10 +16,10 @@ description: Powerful security and DevOps tools for engineering teams.
             Aptible protects your most important assets when the stakes matter
             most. Hundreds of developers use Aptible to secure data and build
             strong compliance programs.
-          = partial 'partials/signup-cta', locals: { |
-                cta_label: 'Get Started',            |
-                cta_placeholder: 'Enter your email'  |
-              }                                      |
+          = partial 'partials/signup-cta', locals: {     |
+                cta_label: 'Get Started',                |
+                cta_placeholder: 'Enter your work email' |
+              }                                          |
           = partial 'partials/signup-demo-request'
 
         .home-hero__quotes
@@ -42,7 +42,7 @@ description: Powerful security and DevOps tools for engineering teams.
                 integration process.”
               .customer-quote__author James Dempsey - Lead Developer
 
-    .home__customers.aptible-header--angled.aptible-header--bottom-grid
+    .home__customers.aptible-header--angled
       .grid-container.grid--single-center
         %h2.home__customers__title
           The most innovative companies use Aptible to protect sensitive data
@@ -63,7 +63,7 @@ description: Powerful security and DevOps tools for engineering teams.
             = partial '/images/customers/1bios.svg'
         %a.btn{ href: '/customers/' } Learn how these companies use Aptible
 
-.content.home__enclave
+.content.home__enclave.aptible-header--bottom-grid
   .home__section__container.grid-container.grid-item--adjacent
     .home__enclave-intro
       %h1.home__section__title.heading__title Enclave
@@ -142,14 +142,14 @@ description: Powerful security and DevOps tools for engineering teams.
 
 = partial 'partials/resources-footer'
 
-.content.hero-gradient--angled
+.content.hero-gradient--angled.aptible-header--bottom-grid
   .footer__signup.grid-container.grid--single-center
     .grid-item
       %h2.footer__signup-title
         Get secure and compliant this afternoon.
       .footer__signup-form
-        = partial 'partials/signup-cta', locals: { |
-              cta_label: 'Get Started',            |
-              cta_placeholder: 'Enter your email'  |
-            }                                      |
+        = partial 'partials/signup-cta', locals: {      |
+              cta_label: 'Get Started',                 |
+              cta_placeholder: 'Enter your work email'  |
+            }                                           |
         = partial 'partials/signup-demo-request'

@@ -1,8 +1,17 @@
 require 'cgi'
 
 module AptibleHelpers
+  # Determine what the page title should be
   def page_title
-    current_page.data.title || @title || 'Aptible'
+    pg_title = current_page.data.title || @title || 'Aptible'
+    if current_page.metadata[:locals] &&
+       current_page.metadata[:locals][:cms_post]
+      pg_title = current_page.metadata[:locals][:cms_post][:title]
+    end
+    if current_page.url.include?('/blog') && pg_title != 'Aptible Blog'
+      return pg_title + ' | Aptible Blog'
+    end
+    pg_title
   end
 
   def page_description
