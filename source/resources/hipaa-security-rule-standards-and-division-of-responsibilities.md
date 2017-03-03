@@ -13,4 +13,4 @@ categories:
 
 Aptible Enclave and Gridiron are designed to help cloud-based development teams meet even the strictest security and compliance requirements.
 
-The HIPAA Security Rule: Standards & Division of Responsibility <a href="/assets/aptible-hipaa-security-rule-standards-division-of-responsibility.xlsx" target="_blank">spreadsheet</a> details each of the standards within the HIPAA Security Rule and how Aptible works with customers to ensure compliance.
+The HIPAA Security Rule: Standards & Division of Responsibility <a href="https://docs.google.com/spreadsheets/d/1121FSOtK2-6Oo4GABm4oAI4xYnsbOksuw1Pxjb2ya5Y" target="_blank">spreadsheet</a> details each of the standards within the HIPAA Security Rule and how Aptible works with customers to ensure compliance.
