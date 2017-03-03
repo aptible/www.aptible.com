@@ -19,7 +19,7 @@ module AptibleHelpers
     when pg_title.empty?
       return 'Aptible'
     end
-    
+
     pg_title + '| Aptible'
   end
 
