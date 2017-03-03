@@ -6,7 +6,7 @@ shared_examples 'a valid page' do |article, _, path|
   it 'should have a page title' do
     title = article['title']
     CGI.escapeHTML(title) if title
-    expect(page).to have_title(article['title'])
+    expect(page).to have_title title
   end
 
   it 'should have a header' do

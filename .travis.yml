@@ -11,5 +11,6 @@ install:
 - bundle install --deployment --retry 3
 - pip install --user awscli
 script:
+- bundle exec middleman contentful
 - bundle exec rake
 - PATH=$HOME/.local/bin:$PATH script/travis-deploy.sh
