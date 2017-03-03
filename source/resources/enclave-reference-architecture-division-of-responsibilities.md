@@ -1,6 +1,6 @@
 ---
 title: Enclave Reference Architecture & Division of Responsibilities
-excerpt: These reference documents describe how you can focus on building great products and deploy securely with Enclave.
+excerpt: These reference documents describe how Enclave enables you to deploy securely so you can focus on building great products.
 author_name: Henry Hund
 author_email: henry@aptible.com
 author_id: henry
