@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'support index', type: :feature do
   before do
-    visit '/support'
+    visit '/support/'
   end
 
   it 'adds "Aptible Support" to the title' do

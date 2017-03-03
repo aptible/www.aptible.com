@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe 'index', type: :feature do
+describe 'blog index', type: :feature do
   before do
-    visit '/blog'
+    visit '/blog/'
   end
 
   it 'includes Aptible Blog in the page title' do
