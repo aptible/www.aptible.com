@@ -25,6 +25,18 @@
     .grid-container.quickstart
       %h1.document-title= @title || title
 
+      .grid-document.markdown-content
+        = find_and_preserve do
+          = yield
+
+        .back
+          - if defined? @category_title
+            %a.arrow-link--left{ href: @category_url } Back to #{@category_title}
+          - elsif quickstart? current_page.path
+            %a.arrow-link--left{ href: '/support/quickstart/' } Back to Quickstart Guides
+          - else
+            %a.arrow-link--left{ href: '/support/topics/' } Back to support topics
+            
       .grid-aside{ "data-swiftype-index" => "false" }
         - if quickstart? current_page.path
           .grid-aside__block
@@ -50,15 +62,3 @@
               - data.topics[@category_title].articles.each do |article|
                 %li
                   %a{ href: "/support/topics/#{article.url}" }= article.title
-
-      .grid-document.markdown-content
-        = find_and_preserve do
-          = yield
-
-        .back
-          - if defined? @category_title
-            %a.arrow-link--left{ href: @category_url } Back to #{@category_title}
-          - elsif quickstart? current_page.path
-            %a.arrow-link--left{ href: '/support/quickstart/' } Back to Quickstart Guides
-          - else
-            %a.arrow-link--left{ href: '/support/topics/' } Back to support topics
