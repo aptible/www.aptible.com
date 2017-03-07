@@ -8,6 +8,12 @@
 = wrap_layout :layout do
   .content
     .grid-container.grid-aside--left
+      .grid-document.markdown-content
+        %h1.document-title= current_page.data.title
+
+        = find_and_preserve do
+          = yield
+          
       .grid-aside
         - legal_sections.each do |section|
           %h3.side-nav__section-heading= section
@@ -16,10 +22,5 @@
               %a.side-nav__item{ href: resource.url, class: active_nav_item(resource.url) }
                 = resource.data.title
 
-      .grid-document.markdown-content
-        %h1.document-title= current_page.data.title
-
-        = find_and_preserve do
-          = yield
 
   = partial 'partials/resources-footer'
