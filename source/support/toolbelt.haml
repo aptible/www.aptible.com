@@ -276,9 +276,10 @@ layout: layout
     .grid-container.grid--2up
       .grid-item
         %h2.heading__title Toolbelt Support Topics
-        %p.heading__summary
+        %p
           Additional documentation for using the Toolbelt is available on the
-          <a href='/support/topics'>Aptible Toolbelt topic page</a>.
+          <br>
+          <a href='/support/topics/cli/'>Aptible Toolbelt topic page</a>.
         %ul.additional-topics
           - data.topics["The Aptible CLI"].articles.each do |article|
             - next if article.hidden
