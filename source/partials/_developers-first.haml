@@ -1,0 +1,12 @@
+.guides-intro.grid-container.grid--single-center
+  .grid-item
+    .guides-intro__hgroup
+      %h2.guides-intro__title
+        Developers First
+      %p.guides-intro__subtitle
+        Aptible helps secure the internet by giving developers the tools and
+        expertise to protect sensitive data.
+    .guides-intro__languages
+      - data.quickstart.each do |title, language|
+        %a.guides-intro__language{ href: quickstart_index_href(language), class: language.slug }
+          = partial "images/icons/#{language.svg}"

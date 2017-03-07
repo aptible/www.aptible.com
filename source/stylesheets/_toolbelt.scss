@@ -39,6 +39,16 @@
   display: inline-block;
   margin-bottom: 0;
   width: 49%;
+
+  @media screen and (max-width: $tablet-portrait) {
+    display: block;
+    width: 100%;
+  }
+}
+.download-panel-left {
+  @media screen and (max-width: $tablet-portrait) {
+    margin-bottom: 20px;
+  }
 }
 
 .help-block {
@@ -59,6 +69,14 @@
   padding-top: 0;
   polygon, path {
     fill: $sky-blue;
+  }
+}
+
+.toolbelt-platform--logo {
+  text-align: center;
+  height: 100px;
+  svg {
+    height: 50px;
   }
 }
 
@@ -87,12 +105,42 @@
     outline: none;
   }
 }
-
-.toolbelt-platform--logo {
-  text-align: center;
-  height: 100px;
-  svg {
-    height: 50px;
+.toolbelt-platforms {
+  @media screen and (max-width: $max-viewport) {
+    .grid-item {
+      margin-right: 1.6%;
+      min-height: 50px;
+      padding-top: 20px;
+      width: 18%;
+    }
+    .card__body {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: $tablet-landscape) {
+    align-items: center;
+    .toolbelt-platform.grid-item {
+      margin-right: 2%;
+      width: 18%;
+    }
+    .toolbelt-platform--logo {
+      height: 50px;
+      margin: 0 auto;
+      width: 50px;
+      svg {
+        max-height: 50px;
+        max-width: 50px;
+      }
+    }
+    .card__body {
+      display: none;
+    }
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    .toolbelt-platform--logo, svg {
+      height: 8vw;
+      width: 8vw;
+    }
   }
 }
 
@@ -105,6 +153,7 @@
   background-color: $lighter-blue;
   border-color: $lighter-blue;
   display: none;
+  overflow: auto;
   padding-top: 50px;
   &.active {
     display: block;

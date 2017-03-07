@@ -1,18 +1,10 @@
-
-// Variables:
-//  - Debugging
-//
-
-// Debugging
-$visual-grid: false;
-
 //
 // Grid
 //
-// See http://pxtoem.com/
+$grid-gutter: 20px;
 $neat-grid: (
   columns: 12,
-  gutter: 20px
+  gutter: $grid-gutter
 );
 
 //
