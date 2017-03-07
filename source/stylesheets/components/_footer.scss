@@ -37,7 +37,7 @@
 .footer__signup {
   margin: 0 auto;
   padding-top: 100px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   position: relative;
   z-index: 1;
 }
@@ -67,11 +67,40 @@
 .footer__signup-title {
   font-size: 40px;
   color: $white;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 20px auto;
   max-width: 800px;
   &::after { display: none; }
   @media screen and (max-width: $tablet-portrait) {
     font-size: 6vw;
-    margin-bottom: 40px;
+  }
+}
+.footer__signup-subtitle {
+  color: $sky-blue;
+  margin-bottom: 20px;
+  font-size: 30px;
+  code {
+    background-color: #000;
+    border-radius: 8px;
+    color: $white;
+    display: inline-block;
+    font-size: 26px;
+    line-height: 1.5;
+    margin-left: 8px;
+    padding: 0 .3em;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    font-size: 3vw;
+    margin-bottom: 20px;
+    code {
+      border-radius: 4px;
+      margin-left: 5px;
+      font-size: 2.7vw;
+    }
+  }
+}
+.footer__signup__hgroup {
+  margin: 0 auto 60px auto;
+  @media screen and (max-width: $tablet-portrait) {
+    margin-bottom: 20px;
   }
 }
