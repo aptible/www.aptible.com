@@ -8,7 +8,7 @@ posted: 2017-01-23
 section: Resources
 featured: false
 categories:
-- HIPAA Compliance
+- Aptible Product Reference
 ---
 
 Aptible Gridiron helps software engineering teams stand up and scale information security programs. With Gridiron, your team can become HIPAA-compliant or ready for SOC, ISO, or PCI certification in days, not months.
