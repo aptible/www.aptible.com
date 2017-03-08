@@ -26,7 +26,7 @@ description: Powerful security and DevOps tools for engineering teams.
           .home__customer-quotes
             .card.card--dark
               .customer-quote__logo
-                %img{ src: 'images/customers/pager.png' }
+                %img{ src: '/images/customers/pager.png' }
               .customer-quote
                 “Aptible provides us a robust and secure platform to build our
                 technology on. It's alleviated pain points with HIPAA compliance
@@ -113,18 +113,7 @@ description: Powerful security and DevOps tools for engineering teams.
         -# black grid placeholder
 
 .content
-  .home__guides.grid-container.grid--single-center
-    .grid-item
-      .home__guides__hgroup
-        %h2.home__guides__title
-          Developers First
-        %p.home__guides__subtitle
-          Aptible helps secure the internet by giving developers the tools and
-          expertise to protect sensitive data.
-      .home__guides__languages
-        - data.quickstart.each do |title, language|
-          %a.home__guides__language{ href: quickstart_index_href(language), class: language.slug }
-            = partial "images/icons/#{language.svg}"
+  = partial 'developers-first'
 
 .content
   .home-quotes
@@ -144,12 +133,12 @@ description: Powerful security and DevOps tools for engineering teams.
 
 .content.hero-gradient--angled.aptible-header--bottom-grid
   .footer__signup.grid-container.grid--single-center
-    .grid-item
+    .footer__signup__hgroup
       %h2.footer__signup-title
         Get secure and compliant this afternoon.
-      .footer__signup-form
-        = partial 'partials/signup-cta', locals: {      |
-              cta_label: 'Get Started',                 |
-              cta_placeholder: 'Enter your work email'  |
-            }                                           |
-        = partial 'partials/signup-demo-request'
+    .footer__signup-form
+      = partial 'partials/signup-cta', locals: {      |
+            cta_label: 'Get Started',                 |
+            cta_placeholder: 'Enter your work email'  |
+          }                                           |
+      = partial 'partials/signup-demo-request'

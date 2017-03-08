@@ -1,5 +1,4 @@
 ---
-# These variables are used in the page title and meta tags
 title: Enclave - Secure DevOps
 description: Aptible Enclave is a container platform that simplifies secure
              deployment and development best practices. Unlike using IaaS
@@ -7,66 +6,89 @@ description: Aptible Enclave is a container platform that simplifies secure
              robust DevOps and security automation.
 ---
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled.aptible-header--double-grid
+  %header.aptible-header.hero-gradient--angled.aptible-header--with-breadcrumbs.aptible-header--bottom-grid
     = partial 'partials/main-nav'
 
-    .grid-container.grid--2up.aptible-header__bottom-grid__riser
-      .grid-item.product-page__hero-header
-        %h2.heading__subtitle Secure DevOps
-        %h1.heading__title Enclave
-        %p.heading__summary--light-blue= current_page.data.description
+    .enclave-hero.grid-container.grid--2up.aptible-header__bottom
+      .home-hero.grid-collapse
+        .home-hero__copy
+          %h1.home__heading__title
+            Enclave
+          %p.home__heading__summary.heading__summary.heading__summary--sibling
+            A secure container deployment platform. Deploy apps, databases, and
+            secure network architecture with Enclave's flexible command line
+            interface.
 
-        %p.heading__summary--light-blue
-          %a.btn{ href: open_account_href } Open a Development Account
-          %a.btn.btn--outline{ href: '/pricing/' } See Pricing
+          = partial 'partials/signup-cta', locals: {     |
+                cta_label: 'Get Started',                |
+                cta_placeholder: 'Enter your work email' |
+              }                                          |
+          = partial 'partials/signup-demo-request'
 
-      .grid-item.product-page__enclave
-        = partial '/images/enclave.svg'
+        .home-hero__quotes
+          .home__customer-quotes
+            .card.card--dark
+              .customer-quote__logo
+                %img{ src: '/images/customers/pager.png' }
+              .customer-quote
+                “Aptible provides us a robust and secure platform to build our
+                technology on. It's alleviated pain points with HIPAA compliance
+                and saved us tons of money and time.”
+              .customer-quote__author Sameer Khanna - VP of Engineering
 
-.content
-  .grid-container.not-ready
-    .feature-carousel__triggers
-      %a.feature-carousel__btn.active{ href: '#stack' }
-        = partial 'images/feature-icons/icon-stack.svg'
-        The Stack
-      %a.feature-carousel__btn{ href: '#network' }
-        = partial 'images/feature-icons/icon-network.svg'
-        The Network
-      %a.feature-carousel__btn{ href: '#load-balancing' }
-        = partial 'images/feature-icons/icon-load-balancing.svg'
-        Load Balancing
-      %a.feature-carousel__btn{ href: '#user-access' }
-        = partial 'images/feature-icons/icon-user-access.svg'
-        Team Access
-      %a.feature-carousel__btn{ href: '#apps' }
-        = partial 'images/feature-icons/icon-apps.svg'
-        Apps
-      %a.feature-carousel__btn{ href: '#databases' }
-        = partial 'images/feature-icons/icon-databases.svg'
-        Databases
+    .enclave-hero__terminal
+      %pre.highlight.plaintext
+        %table.rouge-table
+          %tr
+            %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+              .terminal $ aptible login
+              .terminal-interactive Email: osvaldo@aptible.com
+              .terminal-interactive Password:
+              .terminal-interactive 2FA Token: 555999
+              .terminal-response Success! Token written to $HOME/.aptible/tokens.json
 
-  .feature-carousel.grid-container.grid--2up.grid--2up-flex.feature-carousel--stack.active
-    .feature-carousel__details.grid-item
-      .heading__subtitle The Stack
-      %h2.heading__title.heading__title--dark The Enclave Container Platform
-      %p.heading__summary.heading__summary--light-blue-gray
-        Aptible Enclave is a deployment platform designed to securely deploy
-        Docker containers into HIPAA-ready environments. We manage zero-downtime
-        deployments, scale your clusters, encrypt and back up your data, and
-        run your ops, allowing you to focus on development.
+    .home__customers.aptible-header--angled
+      .grid-container.grid--single-center
+        %h2.home__customers__title
+          Enclave helps these companies to deploy, scale and keep their apps,
+          databases and network architecture secure.
 
-    .feature-carousel__illustration.grid-item
-      %img{ src: '/images/enclave-features/stack.png' }
+        .home__customers-logos
+          .home__customers-logo
+            = partial '/images/customers/ucsf.svg'
+          .home__customers-logo.home__customers-logo--spectra
+            = image_tag 'customers/spectra-sky.png'
+          .home__customers-logo
+            = partial '/images/customers/everplans.svg'
+          .home__customers-logo
+            = image_tag 'customers/nuspine-sky.png'
+          .home__customers-logo.home__customers-logo--healthify
+            = partial '/images/customers/healthify.svg'
+          .home__customers-logo.home__customers-logo--1bios
+            = partial '/images/customers/1bios.svg'
+        %a.btn{ href: '/customers/' } Learn how these companies use Enclave
 
-.content.hero-gradient--angled.enclave-intro.aptible-header--bottom-grid
+.content.hero-dark.enclave-intro.aptible-header--bottom-grid
   .grid-container.grid--single-center
     .enclave-demo.grid-item.grid-item--adjacent
       %h2.heading__title--centered
-        The Enclave Deployment Platform for Healthcare Innovators
-      %p.heading__summary
-        Deploy Docker containers into secure, isolated, HIPAA-ready environments.
+        Deploy your apps and databases securely
 
   .grid-container.meet-enclave
+    .grid-item.grid-item--one-third.meet-enclave__copy.aptible-header__bottom-grid__riser
+      %h3.meet-enclave-title
+      .meet-enclave-steps
+        .meet-enclave-step__item
+          Create and configure apps and databases directly from the
+          %a{ href: "/support/toolbelt"} Aptible command line interface
+        .meet-enclave-step__item
+          Deploy with <code>git push</code>
+        .meet-enclave-step__item
+          Your app is running securely with zero-downtime deployment and
+          streaming logs available
+
+      %a.btn{ href: '/aws-vs-aptible/' } Compare to DIY with AWS
+
     .grid-item.grid-item--two-thirds.meet-enclave__terminal.aptible-header__bottom-grid__riser
       %pre.highlight.plaintext
         %table.rouge-table.rouge-table--full-width
@@ -90,19 +112,6 @@ description: Aptible Enclave is a container platform that simplifies secure
               .terminal-response 2016-10-01T16:39:18.364Z [healthco-on-rails-web] => Run `rails server -h` for more startup options
               .terminal-response 2016-10-01T16:39:19.761Z [healthco-on-rails-web] => Ctrl-C to shutdown server
 
-    .grid-item.grid-item--one-third.meet-enclave__copy.aptible-header__bottom-grid__riser
-      %h3.meet-enclave-title Meet the Enclave Deployment Platform
-      .meet-enclave-steps
-        .meet-enclave-step__item
-          Create and configure apps and databases directly from the
-          %a{ href: "/support/toolbelt"} Aptible Toolbelt
-        .meet-enclave-step__item
-          Simply "git push" for a zero-downtime deployment
-        .meet-enclave-step__item
-          Stream app logs directly to your console
-
-      %a.btn{ href: open_account_href } Open a Development Account
-
 .content
   .grid-container.grid--single-center
     .grid-item.grid-item--adjacent
@@ -110,15 +119,47 @@ description: Aptible Enclave is a container platform that simplifies secure
 
   = partial 'partials/enclave-features'
 
-  .grid-container.grid--single-center
-    .grid-item.grid-item--adjacent
-      %h2.heading--single-center Getting Started with Enclave
+.content.developers-first--over-bottom
+  = partial 'developers-first'
 
-  .grid-container.grid--4up
-    - data.quickstart.each do |title, language|
-      %a.grid-item.card{ href: quickstart_index_href(language), class: language.slug }
-        .card__icon= partial "images/icons/#{language.svg}"
-        .card__body
-          %h3.card__title= title
+.content.about-aptible-hero
+  .about-aptible-hero__pattern
+    .grid-container.about-aptible-hero__container
+      .about-aptible-hero__item
+        %h2.about-aptible-hero__title About Aptible
+      .about-aptible-hero__item
+        %h3.about-aptible-hero__subtitle Always Improving
+        %p
+          Aptible is constantly adding new functionality to help developers
+          work safely with and protect the most meaningful, sensitive data in
+          highly regulated industries.
+        %p.actions
+          %a.btn{ href: '/blog/' } Check out our newest features
 
-= partial 'partials/resources-footer'
+      .about-aptible-hero__item
+        %h3.about-aptible-hero__subtitle A Real Partner
+        %p
+          We provide clear and transparent documentation, enterprise-level
+          support and guidance with your security and compliance challenges.
+          We've helped hundreds of developers in some of the world's most
+          innovative companies get up and running quickly and securely.
+        %p.actions
+          %a.btn{ href: '/support/' } Check out our docs
+        %p.actions
+          %a.btn{ href: '/support-plans/' } Check out our support options
+
+
+
+.content.hero-gradient--angled.aptible-header--bottom-grid
+  .footer__signup.grid-container.grid--single-center
+    .footer__signup__hgroup
+      %h2.footer__signup-title
+        Get your app deployed in minutes.
+      .footer__signup-subtitle
+        Security as easy as <code>git push</code>
+    .footer__signup-form
+      = partial 'partials/signup-cta', locals: {      |
+            cta_label: 'Get Started',                 |
+            cta_placeholder: 'Enter your work email'  |
+          }                                           |
+      = partial 'partials/signup-demo-request'

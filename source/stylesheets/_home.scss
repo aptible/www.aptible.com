@@ -32,10 +32,6 @@
   }
 }
 
-    @media screen and (max-width: $tablet-portrait) {
-      transform: scale(.8,.8);
-    }
-
 .home__customers {
   background-color: rgba(0,0,0,.25);
   margin-bottom: 0;
@@ -261,7 +257,7 @@
 
 }
 
-.home__guides {
+.guides-intro {
   background-color: $white;
   box-shadow: 0 0 18px 0 rgba(0,0,0,.12);
   border-radius: 12px;
@@ -281,13 +277,13 @@
   }
 }
 
-.home__guides__languages {
+.guides-intro__languages {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
-.home__guides__language {
+.guides-intro__language {
   align-items: center;
   background-color: $lighter-blue;
   border-radius: 5px;
@@ -320,12 +316,12 @@
   }
 }
 
-.home__guides__hgroup {
+.guides-intro__hgroup {
   max-width: 700px;
   margin: 0 auto;
 }
 
-.home__guides__title {
+.guides-intro__title {
   color: $dark-blue-steel;
   font-weight: $semibold;
   font-size: 50px;
@@ -337,7 +333,7 @@
   }
 }
 
-.home__guides__subtitle {
+.guides-intro__subtitle {
   color: $sky-blue;
   font-size: 30px;
   line-height: 1.25;
@@ -422,7 +418,7 @@ a:hover, a:focus {
     fill: #8aca41;
   }
   .ruby-svg {
-    fill: #c00;
+    fill: #EF6060;
   }
   .php-svg {
     fill: #4F5B93;
