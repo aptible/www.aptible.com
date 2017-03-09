@@ -1,9 +1,10 @@
 - content_for :header do
-  %header.aptible-header.aptible-header--with-breadcrumbs.hero-gradient--angled.aptible-header--double-grid
+  %header.aptible-header.hero-gradient--angled.aptible-header--single-grid.aptible-header--with-breadcrumbs
     = partial 'partials/main-nav', locals: {      |
         nav_items: 'partials/support/nav-items',  |
         section_title: 'Support',                 |
-        section_url: '/support'                   |
+        section_url: '/support',                  |
+        signup: 'link'                            |
       }                                           |
 
     .grid-container
