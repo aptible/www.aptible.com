@@ -39,6 +39,10 @@
 //
 .nav-toggle {
   display: none;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  z-index: 99;
   &:hover, &:focus {
     color: $action-color;
   }
@@ -46,6 +50,7 @@
 .nav-toggle__expand {
   display: inline-block;
   height: 22px;
+  position: relative;
   width: 25px;
 }
 
@@ -65,17 +70,23 @@
   &:nth-child(3) { top: 10px; }
 }
 
-.nav-toggle__label {
-  color: $action-color;
-  display: inline-block;
-  font-weight: $semibold;
-  letter-spacing: -0.65em;
-  opacity: 0;
-  position: absolute;
-  transform: translate(35px, -28px);
-  transition-property: opacity, letter-spacing;
-  transition-duration: $base-duration, 0.5s;
-  transition-timing-function: $base-timing, cubic-bezier(0.520, 0.265, 0.000, 1.265);
+.nav-toggle[data-state=open] {
+  .nav-toggle__icon-bar {
+    background-color: $action-color;
+    transition-property: top, transform, background-color;
+    &:nth-child(1) {
+      top: 9px;
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(3) {
+      top: 1px;
+      transform: rotate(135deg);
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .nav--header {
@@ -148,26 +159,6 @@
   .nav-list--right[data-state='open'] {
     background-color: $dark-blue;
     width: calc(100% - 20px);
-    .nav-toggle__icon-bar {
-      background-color: $action-color;
-      transition-property: top, transform, background-color;
-      &:nth-child(1) {
-        top: 9px;
-        transform: rotate(45deg);
-      }
-      &:nth-child(2) {
-        transform: rotate(45deg);
-      }
-      &:nth-child(3) {
-        top: 1px;
-        transform: rotate(135deg);
-        transform: rotate(-45deg);
-      }
-    }
-    .nav-toggle__label {
-      letter-spacing: 0.05em;
-      opacity: 1;
-    }
     .nav-item {
       transition: opacity $base-duration $base-timing $base-duration*2;
       opacity: 1;

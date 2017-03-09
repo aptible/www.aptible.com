@@ -125,4 +125,8 @@ module AptibleHelpers
   def status_href
     'http://status.aptible.com/'
   end
+
+  def community_href
+    'https://community.aptible.com/'
+  end
 end

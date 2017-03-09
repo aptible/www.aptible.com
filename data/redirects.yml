@@ -94,6 +94,16 @@
   url: /gridiron
 - loc: /company/careers/
   url: /company
+- loc: /blog/authors/blake.html
+  url: /blog/authors/blake
+- loc: /blog/authors/chas.html
+  url: /blog/authors/chas
+- loc: /blog/authors/gib.html
+  url: /blog/authors/gib
+- loc: /blog/authors/sam.html
+  url: /blog/authors/sam
+- loc: /blog/authors/thomas.html
+  url: /blog/authors/thomas
 - loc: /blog/aws_webinar_06_2015.html
   url: /blog/aws-webinar-06-2015
 - loc: /blog/common_HIPAA_questions.html

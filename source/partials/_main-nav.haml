@@ -6,14 +6,14 @@
     - if defined? section_title
       %h2.aptible-mark__title
         %a{ href: section_url }= section_title
-  %nav.nav-list.nav-list--right
-    %a.nav-toggle
-      .nav-toggle__expand
-        %span.nav-toggle__icon-bar
-        %span.nav-toggle__icon-bar
-        %span.nav-toggle__icon-bar
-      %span.nav-toggle__label Menu
 
+  %a.nav-toggle
+    .nav-toggle__expand
+      %span.nav-toggle__icon-bar
+      %span.nav-toggle__icon-bar
+      %span.nav-toggle__icon-bar
+
+  %nav.nav-list.nav-list--right
     = partial nav_items
 
     %a.nav-item{ href: dashboard_href } Login
