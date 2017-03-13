@@ -1,0 +1,73 @@
+//
+// Pagination Links
+//
+.nav--pagination {
+  float: right;
+  margin-bottom: 50px;
+  @media screen and (max-width: $tablet-portrait) {
+    .page-link--prev, .page-link--next {
+      display: none;
+    }
+  }
+}
+.page-links {
+  margin: 0 auto;
+}
+.page-link {
+  display: inline-block;
+  font-weight: $light;
+  line-height: 1.5;
+  margin: 0 10px;
+  padding: 0 10px;
+  &:focus {
+    outline: none;
+  }
+}
+.page-link--prev::before,
+.page-link--next::after {
+  border-color: $blue;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  content: '';
+  display: inline-block;
+  height: 8px;
+  position: relative;
+  top: -1px;
+  transform: rotate(135deg);
+  transition: left $base-duration $base-timing;
+  width: 8px;
+}
+.page-link--prev {
+  &::before {
+    left: -5px;
+  }
+  &:focus::before, &:hover::before {
+    left: -10px;
+  }
+}
+.page-link--next {
+  &::after {
+    transition: right $base-duration $base-timing;
+    right: -5px;
+    transform: rotate(-45deg);
+  }
+  &:focus::after, &:hover::after {
+    right: -10px;
+  }
+}
+.page-link--active {
+  color: $blue;
+  font-weight: $semibold;
+}
+.page-link--page {
+  border: 2px solid transparent;
+  border-radius: 2px;
+  transition: border $base-duration $base-timing;
+  &:hover, &:focus {
+    border-color: $light-blue;
+  }
+}
+.page-link--invisible {
+  visibility: hidden;
+}
