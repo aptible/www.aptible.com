@@ -83,6 +83,9 @@ pre {
   text-align: right;
   padding: 40px 0 0 20px;
   width: auto;
+  &:not(:empty) {
+    padding-right: 20px;
+  }
 }
 .gl {
 
