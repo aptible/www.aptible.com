@@ -3,7 +3,7 @@ module PaginationHelpers
   def total_pages(set_size)
     return 1 if set_size <= PAGE_SIZE
     total = set_size / PAGE_SIZE
-    total = total + 1 unless set_size % PAGE_SIZE == 0
+    total += 1 unless set_size % PAGE_SIZE == 0
     total
   end
 
@@ -28,13 +28,9 @@ module PaginationHelpers
   end
 
   def page_links(set, root_path)
-    links = Array.new
-    set.each_with_index do |p, index|
-      if index == 0
-        links << root_path
-      else
-        links << "#{root_path}page/#{index + 1}/"
-      end
+    links = [root_path]
+    set.each_with_index do |_p, index|
+      links << "#{root_path}page/#{index + 1}/" unless index == 0
     end
     links
   end

@@ -93,32 +93,6 @@ page '/blog/*', layout: 'blog_post.haml'
 # See /source/feed.xml.builder
 page '/feed.xml', layout: false
 
-# Authors
-# Requires the site to be "ready" to read from the sitemap resources
-ready do
-  # Create dynamic pages for each blog post author
-  by_author = sitemap.resources
-  begin
-    by_author.concat(data.aptible.blog_posts.values)
-    by_author = by_author.select { |p| p.data['section'] == 'Blog' }
-                         .group_by { |p| p.data['author_id'] }
-    by_author.each do |author|
-      author_id = author[0]
-      # lists their posts by date
-      posts = author[1]
-              .select { |p| p.data['author_id'] == author_id }
-              .sort_by { |p| p.data['posted'] }.reverse!
-      # page "/blog/authors/#{author[0]}/index.html", layout: 'blog_posts.haml'
-      proxy "/blog/authors/#{author[0]}/index.html", '/blog/author.html',
-            locals: { author_id: author[0], posts: posts }
-    end
-  rescue
-    # This should not happen on a published post which requires an author, but
-    # draft posts can be saved without one
-    puts 'Contentful Data Error: Ensure all draft blog posts have an author'
-  end
-end
-
 #
 # contentful blog posts
 #
@@ -199,40 +173,64 @@ data.quickstart.each do |language_name, language_data|
   end
 end
 
-#
-# Pagination
-#
-# Proxy pages for paginated resources
-#
 ready do
-  # Blog posts
-  mm_posts = sitemap.resources.select { |p| p.data['section'] == 'Blog' }
-  cms_posts = data.aptible.blog_posts.values
-  all_posts = (mm_posts + cms_posts).sort_by { |p| p.data['posted'] }
-  all_posts.reverse!
-  # Create subsets and a proxy page for each
-  subsets = paginated_subsets(all_posts)
-  page_links = page_links(subsets, '/blog/')
-  subsets.each_with_index do |subset, index|
-    if index == 0
-      subset = subset[1..PaginationHelpers::PAGE_SIZE]
-      proxy '/blog/index.html', '/blog/posts.html',
-            locals: {
-              all_posts: all_posts,
-              current_page: 1,
-              page_links: page_links,
-              posts: subset
-            }
-    else
-      current_page = index + 1
-      proxy "/blog/page/#{current_page}/index.html",
-            '/blog/posts.html',
-            locals: {
-              all_posts: all_posts,
-              current_page: current_page,
-              page_links: page_links,
-              posts: subset
-            }
+  begin
+    #
+    # Pagination
+    #
+    # Proxy pages for paginated resources
+    #
+    # Blog posts
+    mm_posts = sitemap.resources.select { |p| p.data['section'] == 'Blog' }
+    cms_posts = data.aptible.blog_posts.values
+    all_posts = (mm_posts + cms_posts).sort_by { |p| p.data['posted'] }
+    all_posts.reverse!
+    # Create subsets and a proxy page for each
+    subsets = paginated_subsets(all_posts)
+    page_links = page_links(subsets, '/blog/')
+    subsets.each_with_index do |subset, index|
+      if index == 0
+        subset = subset[1..PaginationHelpers::PAGE_SIZE]
+        proxy '/blog/index.html', '/blog/posts.html',
+              locals: {
+                all_posts: all_posts,
+                current_page: 1,
+                page_links: page_links,
+                posts: subset
+              }
+      else
+        current_page = index + 1
+        proxy "/blog/page/#{current_page}/index.html",
+              '/blog/posts.html',
+              locals: {
+                all_posts: all_posts,
+                current_page: current_page,
+                page_links: page_links,
+                posts: subset
+              }
+      end
     end
+
+    # Authors
+    # Requires the site to be "ready" to read from the sitemap resources
+    # Create dynamic pages for each blog post author
+    by_author = sitemap.resources
+    by_author.concat(data.aptible.blog_posts.values)
+    by_author = by_author.select { |p| p.data['section'] == 'Blog' }
+                         .group_by { |p| p.data['author_id'] }
+    by_author.each do |author|
+      author_id = author[0]
+      # lists their posts by date
+      posts = author[1]
+              .select { |p| p.data['author_id'] == author_id }
+              .sort_by { |p| p.data['posted'] }.reverse!
+      # page "/blog/authors/#{author[0]}/index.html", layout: 'blog_posts.haml'
+      proxy "/blog/authors/#{author[0]}/index.html", '/blog/author.html',
+            locals: { author_id: author[0], posts: posts }
+    end
+  rescue
+    # This should not happen on a published post which requires an author, but
+    # draft posts can be saved without one
+    puts 'Contentful Data Error: Ensure all draft blog posts have an author'
   end
 end
