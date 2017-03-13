@@ -106,6 +106,7 @@
   }
 }
 
+// Specifying the .aptible-www keeps swiftype from moving our cheese
 .aptible-www .st-default-search-input.search-nav__input {
   background-color: transparent;
   border-radius: 0;
@@ -114,7 +115,7 @@
   background-color: transparent;
   background-position: right center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: transparent;
   display: inline-block;
   font-size: 15px;
   font-weight: $regular;
@@ -128,6 +129,7 @@
     background-image: none;
     border-bottom: 1px solid $blue-steel;
     border-bottom-width: 1px;
+    color: $white;
     outline: none;
     margin-left: 0;
     padding-right: 15px;
