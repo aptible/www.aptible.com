@@ -1,9 +1,10 @@
 ---
-layout: blog_posts.haml
 title: Aptible Blog
 description: Posts detailing feature updates, compliance resources, and
              information useful to users of Aptible's security and DevOps tools.
+layout: blog_posts.haml
 ---
+- latest_post = all_posts.first
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
     = partial 'partials/main-nav', locals: {   |
@@ -14,14 +15,20 @@ description: Posts detailing feature updates, compliance resources, and
     .grid-container
       .blog-post__heading
         .blog-posts__post
-          %a.blog-posts__link{ href: blog_post_href(latest_blog_post) }
-            - latest = latest_blog_post.data
+          %a.blog-posts__link{ href: blog_post_href(latest_post) }
+            - latest = latest_post.data
             %h2.heading__subtitle= "#{latest.author_name} - #{post_date(latest.posted)}"
             %h1.heading__title= latest.title
             .heading__summary= latest.excerpt
 
-- posts = blog_posts_newest_first
-- posts[1..posts.length].each do |post|
+- posts.each do |post|
   .blog-posts__post
     %a.blog-posts__link{ href: blog_post_href(post) }
       = partial 'partials/blog-list-item', locals: { post: post }
+
+= partial 'partials/page-links', locals: {  |
+    current_page: current_page,             |
+    page_links: page_links,                 |
+    set: all_posts,                         |
+    subset: posts                           |
+  }                                         |

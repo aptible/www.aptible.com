@@ -108,8 +108,8 @@ ready do
       posts = author[1]
               .select { |p| p.data['author_id'] == author_id }
               .sort_by { |p| p.data['posted'] }.reverse!
-      page "/blog/authors/#{author[0]}.html", layout: 'blog_posts.haml'
-      proxy "/blog/authors/#{author[0]}.html", '/blog/author.html',
+      # page "/blog/authors/#{author[0]}/index.html", layout: 'blog_posts.haml'
+      proxy "/blog/authors/#{author[0]}/index.html", '/blog/author.html',
             locals: { author_id: author[0], posts: posts }
     end
   rescue
@@ -195,6 +195,44 @@ data.quickstart.each do |language_name, language_data|
       @description = 'Step-by-step instructions for getting started '\
                      "with #{@framework} on Aptible"
       @og_type = 'article'
+    end
+  end
+end
+
+#
+# Pagination
+#
+# Proxy pages for paginated resources
+#
+ready do
+  # Blog posts
+  mm_posts = sitemap.resources.select { |p| p.data['section'] == 'Blog' }
+  cms_posts = data.aptible.blog_posts.values
+  all_posts = (mm_posts + cms_posts).sort_by { |p| p.data['posted'] }
+  all_posts.reverse!
+  # Create subsets and a proxy page for each
+  subsets = paginated_subsets(all_posts)
+  page_links = page_links(subsets, '/blog/')
+  subsets.each_with_index do |subset, index|
+    if index == 0
+      subset = subset[1..PaginationHelpers::PAGE_SIZE]
+      proxy '/blog/index.html', '/blog/posts.html',
+            locals: {
+              all_posts: all_posts,
+              current_page: 1,
+              page_links: page_links,
+              posts: subset
+            }
+    else
+      current_page = index + 1
+      proxy "/blog/page/#{current_page}/index.html",
+            '/blog/posts.html',
+            locals: {
+              all_posts: all_posts,
+              current_page: current_page,
+              page_links: page_links,
+              posts: subset
+            }
     end
   end
 end
