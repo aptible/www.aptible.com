@@ -63,7 +63,7 @@ variables `DISABLE_WEAK_CIPHER_SUITES`, `SSL_CIPHERS_OVERRIDE` and
 
 ALB Endpoints have different configurations and **cannot be modified**. For
 most customers, the default HTTPS configuration for ALB Endpoints is an ideal
-balance between security and compatability. The default ALB Endpoint
+balance between security and compatibility. The default ALB Endpoint
 configuration supports TLS 1.0, TLS 1.1, and TLS 1.2, but not SSLv3. This is
 roughly equivalent to the ELB Endpoint configuration that results when you set
 `DISABLE_WEAK_CIPHER_SUITES=true`.
@@ -124,5 +124,5 @@ specific endpoint will appear.
 
 
 [0]: https://youtu.be/SIV0uPnz7i4?t=17m34s
-[1]: /support/topics/paas/how/how-does-the-maintenance-page-url-config-setting-work
+[1]: /support/topics/paas/how-does-the-maintenance-page-url-config-setting-work
 [2]: /support/topics/paas/how-to-modify-nginx-config
