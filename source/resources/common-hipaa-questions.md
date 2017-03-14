@@ -85,7 +85,7 @@ Two special notes:
 1. **Encryption:** Encrypting PHI does not change its status as PHI. You and anyone who handles encrypted PHI for you must still comply with the HIPAA rules, including the requirement to have a BAA in place.
 
 # Who will check if we are HIPAA-compliant?
-- **The Office for Civil Rights** of the Department of Health and Human Services is conducting its first round of HIPAA business associate audits in 2016. The audits will be a mix of on-site audits and "desk" audits, where entities submit proof of compliance remotely. HHS publishes a [sample audit protocol](http://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/audit/protocol-current/index.html) that will likely resemble the procotol used for the upcoming audits.
+- **The Office for Civil Rights** of the Department of Health and Human Services is conducting its first round of HIPAA business associate audits in 2016. The audits will be a mix of on-site audits and "desk" audits, where entities submit proof of compliance remotely. HHS publishes a [sample audit protocol](http://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/audit/protocol-current/index.html) that will likely resemble the protocol used for the upcoming audits.
 
 - **Your Customers & Partners** will want to see evidence of your security and compliance practices before they entrust you with sensitive data. Compared to the likelihood of an HHS audit, customer audits are almost guaranteed. Smaller entities may send you a short checklist or schedule a brief meeting to review your security posture.
 
