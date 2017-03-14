@@ -96,6 +96,8 @@
       url: "enclave/memory-management-reference"
     - title: "Upgrading to ALB Endpoints"
       url: "enclave/upgrading-to-alb-endpoints"
+    - title: "How do I setup a managed HTTPS endpoint?"
+      url: "enclave/how-do-i-setup-a-managed-https-endpoint"
     - title: "How do I deploy a private Docker image?"
       url: "enclave/how-to-deploy-from-private-repository"
     - title: "How do I use my domain apex on Aptible?"
