@@ -1,0 +1,15 @@
+- if set.count > PAGE_SIZE
+  .grid-container
+    %nav.nav--pagination
+      .page-links
+        - unless current_page == 1
+          %a.page-link.page-link--prev{ href: page_links.first, class: prev_link_class(current_page) } Prev
+
+        - page_links.each_with_index do |href, index|
+          - if current_page == index + 1
+            %span.page-link.page-link--active= current_page
+          - else
+            %a.page-link.page-link--page{ href: href }= index + 1
+
+        - unless current_page == page_links.length
+          %a.page-link.page-link--next{ href: page_links[current_page], class: next_link_class(current_page, page_links.count) } Next
