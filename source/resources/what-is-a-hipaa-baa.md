@@ -167,7 +167,7 @@ If you have any questions about this post, or you'd like to chat about how to de
 
 [0]: https://www.gpo.gov/fdsys/pkg/FR-2013-01-25/pdf/2013-01073.pdf
 [1]: http://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html
-[2]: http://hipaaqsportal.hhs.gov/community-library/accounts/92/925889/OCR-health-app-developer-scenarios-2-2016.pdf
+[2]: /assets/what-is-a-hipaa-baa/OCR-health-app-developer-scenarios-2-2016.pdf
 [3]: /assets/what-is-a-hipaa-baa/aptible_baa_template.docx
 [4]: /assets/what-is-a-hipaa-baa/aptible_baa_template.pdf
 [5]: /assets/what-is-a-hipaa-baa/aptible_baa_20160317.pdf
