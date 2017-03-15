@@ -26,7 +26,10 @@ no maintenance going forward.
 
 ## Create the CloudFormation Stack
 
-Navigate to [the CloudFormation Dashboard][10], and click "Create Stack".
+Navigate to [the CloudFormation Console][10], and click "Create Stack".
+
+Note that **you must create this stack in the `us-east-1` region**, but your
+redirect will be served globally with minimal latency via AWS CloudFront.
 
 Choose "Specify an Amazon S3 template URL", and use the following template URL:
 `https://s3.amazonaws.com/www.aptible.com/assets/cloudformation-redirect.json`.
@@ -141,4 +144,4 @@ with the following options:
 
 
   [0]: http://docs.aws.amazon.com/acm/latest/userguide/gs-acm-validate.html
-  [10]: https://console.aws.amazon.com/cloudformation/home
+  [10]: https://console.aws.amazon.com/cloudformation/home?region=us-east-1
