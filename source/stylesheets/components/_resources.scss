@@ -30,7 +30,7 @@
   background-image: url(/images/resources/default.png);
   background-size: cover;
   background-position: center center;
-  padding: 150px 20px 10px;
+  padding: 50px 20px 20px;
   width: 100%;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .resource-item__body {
-  padding: 50px 20px;
+  padding: 20px;
 }
 
 .resource-item__tags {
@@ -80,5 +80,66 @@
 .resource-article {
   @media screen and (max-width: $tablet-landscape) {
     padding: 0 20px;
+  }
+}
+
+//
+// DOC Links
+.resource-docs {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px auto;
+  width: 100%;
+}
+.resource-doc {
+  background-color: $lighter-blue;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  display: inline-block;
+  height: 140px;
+  margin-right: 30px;
+  position: relative;
+  transition: background-color .25s ease-in-out;
+  width: 120px;
+  &:hover, &:focus {
+    background-color: $light-blue;
+    outline: none;
+    &::before {
+      color: $dark-blue-steel;
+    }
+    path {
+      fill: $dark-blue-steel;
+    }
+  }
+  &::before {
+    color: $blue-steel;
+    content: attr(data-type);
+    bottom: 40px;
+    font-size: 28px;
+    font-weight: $semibold;
+    height: 12px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  svg {
+    position: absolute;
+    top: 40px;
+    transform: scale(1.5, 1.5);
+    width: 100%;
+    path {
+      transition: fill .25s ease-in-out;
+      fill: $blue-steel;
+    }
+  }
+  &::after {
+    content: attr(title);
+    font-size: 12px;
+    line-height: 1.2;
+    margin: 5px auto 0;
+    max-width: 120px;
+    position: absolute;
+    transform: translateY(155px);
   }
 }

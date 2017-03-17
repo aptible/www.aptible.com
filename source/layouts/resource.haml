@@ -18,5 +18,11 @@
         = find_and_preserve do
           = yield
 
+        - if resource.docs
+          .resource-docs
+            - resource.docs.each_with_index do |doc, index|
+              %a.resource-doc{ href: doc.href, title: doc.title, data: { type: doc.type }, target: '_blank' }
+                = partial '/images/aptible-small-mark.svg'
+
       .grid-aside
         = partial 'resources-aside'
