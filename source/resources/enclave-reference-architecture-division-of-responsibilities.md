@@ -9,6 +9,13 @@ section: Resources
 featured: false
 categories:
 - Aptible Product Reference
+docs:
+- title: The Enclave Reference Architecture
+  type: pdf
+  href: /assets/aptible-enclave-reference-architecture.pdf
+- title: The Enclave Division of Responsibilities
+  type: pdf
+  href: /assets/aptible-enclave-division-of-responsibilities.pdf
 ---
 
 Aptible Enclave is a secure deployment platform for applications that handle regulated data. Each Enclave stack is an isolated, private environment where you can deploy highly available, scalable applications and databases.

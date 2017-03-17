@@ -9,6 +9,10 @@ section: Resources
 featured: false
 categories:
 - Aptible Product Reference
+docs:
+- title: HIPAA Standards & Division of Responsibility
+  type: SHEET
+  href: https://docs.google.com/spreadsheets/d/1121FSOtK2-6Oo4GABm4oAI4xYnsbOksuw1Pxjb2ya5Y
 ---
 
 Aptible Enclave and Gridiron are designed to help cloud-based development teams meet even the strictest security and compliance requirements.
