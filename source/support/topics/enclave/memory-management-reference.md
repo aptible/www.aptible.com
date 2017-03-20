@@ -4,9 +4,6 @@ notify you as a customer before enabling memory limits on your infrastructure).
 
 In the rest of this document, we'll refer to this feature as memory management.
 
-Note: this feature was presented on the Aptible Update Webinar of October 2016.
-[You can view the video presentation online.][0]
-
 
 # How does memory management work?
 
@@ -24,40 +21,16 @@ exceeds its memory allocation, the following happens:
    your container 10 seconds to exit. If your container does not exit within 10
    seconds, Aptible sends a `SIGKILL` and terminates all the processes in your
    container immediately.
-4. Aptible restarts your container in place (by running `docker restart`).
+4. Aptible restarts your container. The container is restored to a pristine
+   state prior to restarting, just like if you had run `aptible restart`.
 
 
 # What should my app do when it receives a `SIGTERM` from Aptible?
 
-For app containers, there are two things you should watch out for:
+Your app should try and exit gracefully within 10 seconds.
 
-+ Your app should exit gracefully within 10 seconds. If your app takes more than
-  10 seconds to exit, it might not be able to clean up after itself.
-+ Your app should clear out any PID files, etc. that it created (most
-  frameworks and programs that create PID files will do so automatically upon
-  exiting), as stale PID files might prevent your app from properly restarting.
-
-For database containers, Aptible's database images are designed to exit cleanly
-when running out of memory (so as to avoid data loss), and restart as fast as
-possible.
-
-
-# How do I test whether my app is restarting properly?
-
-Using the Aptible CLI, you can simulate an OOM (out-of-memory) restart (i.e.
-simulate exactly what happens when your app is restarted because it exceeded
-its memory limit).
-
-**Make sure that you only use this feature with staging apps where downtime is
-acceptable,** in case your app doesn't come back up after an OOM restart.
-
-To simulate an OOM restart:
-
-- Run `aptible restart --app "$APP_HANDLE" --simulate-oom` (you might need to
-  update the Aptible CLI first) to restart the app.
-- After the restart has completed, test your app (e.g. navigate to your app and
-  click around) and check your logs (via `aptible logs` or a Log Drain) to make
-  sure it restarted properly.
+If your app is processing background work, you should ideally try and push it
+back to whatever queue it came from.
 
 
 # How do I know the memory limit for a container?
