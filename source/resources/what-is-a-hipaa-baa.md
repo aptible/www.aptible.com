@@ -24,11 +24,11 @@ One caveat, as always: This post is for informational purposes only. Aptible is 
     - [Do employees need to sign a BAA?](#do-employees-need-to-sign-a-baa)
     - [Do contractors need to sign a BAA?](#do-contractors-need-to-sign-a-baa)
 3. [When is a BAA required?](#when-is-a-baa-required)
-4. [What does the BAA requirement mean for choosing our stack?](#what-does-the-baa-requirement-mean-for-choosing-our-stack-)
-5. [What if a vendor signs a BAA, but I don't think they're really compliant?](#what-if-a-vendor-signs-a-baa-but-i-don-t-think-they-re-really-compliant-)
-6. [What needs to be in a BAA?](#what-needs-to-be-in-a-baa-)
-7. [What are other common terms to find in a BAA?](#what-are-other-common-terms-to-find-in-a-baa-)
-8. [What shouldn't be in a BAA?](#what-shouldn-t-be-in-a-baa-)
+4. [What does the BAA requirement mean for choosing our stack?](#what-does-the-baa-requirement-mean-for-choosing-our-stack)
+5. [What if a vendor signs a BAA, but I don't think they're really compliant?](#what-if-a-vendor-signs-a-baa-but-i-dont-think-theyre-really-compliant)
+6. [What needs to be in a BAA?](#what-needs-to-be-in-a-baa)
+7. [What are other common terms to find in a BAA?](#what-are-other-common-terms-to-find-in-a-baa)
+8. [What shouldn't be in a BAA?](#what-shouldnt-be-in-a-baa)
 9. [Example BAAs](#example-baas)
 
 # What is a BAA?
