@@ -16,6 +16,8 @@
       url: "enclave/how-to-set-up-circle-ci"
     - title: "How do I set up Codeship to deploy to Enclave?"
       url: "enclave/how-to-set-up-codeship"
+    - title: "How do I set up Jenkins to deploy to Enclave?"
+      url: "enclave/how-to-set-up-jenkins"
     - title: "How do I scale my app?"
       url: "enclave/how-to-scale-app"
     - title: 'What is a "container" on Enclave?'
