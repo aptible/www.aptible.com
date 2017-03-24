@@ -1,6 +1,6 @@
 By design (for better or worse), Docker doesn't allow setting any environment variables during the Docker build process, only afterwards on running containers instantiated from the built images. The idea is that images should be fully portable and not tied to any specific environment. This means that your Aptible `ENV` variables, set via `aptible config:set`, are not available to commands executed during your Dockerfile build.
 
-As a workaround for this, Aptible uses the values you set (with `aptible config:set`) to write a special `.aptible.env` file to your app's repo immediately before building the app from its Dockerfile. The `.aptible.env` file will contain your current configuration key and value pairs in a format that can be sourced into your shell. For example, your `.aptible.env` file might look like:
+As a workaround for this, Aptible uses the values you set (with `aptible config:set`) to write a special `.aptible.env` file to a temporary local checkout of your app, immediately before building the app from its Dockerfile. The `.aptible.env` file will contain your current configuration key and value pairs in a format that can be sourced into your shell. For example, your `.aptible.env` file might look like:
 
 ```
 KEY1=value1
