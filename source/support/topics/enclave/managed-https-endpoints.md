@@ -21,7 +21,7 @@ Aptible offers three types of endpoints:
   3. A **custom endpoint** where you provide both the domain and the certificate.
   You'll also be responsible for certificate renewals and updates.
 
-Get started by selecting **"Use a custom domain with Managed HTTPS"**.
+Get started by selecting the Managed HTTPS option for your Endpoint Type.
 
 <p class="text-center">
   <img class="img-responsive" src="/images/support/topics/enclave/create-new-endpoint.png">
@@ -32,7 +32,7 @@ You will need to provide the domain name you intend to use with your app
 certificate via Let’s Encrypt.
 
 <p class="doc-note doc-note--warn">
-  Aptible recommends you supply a subdomain for managed HTTPS endpoints. Refer to
+  Aptible requires you to supply a subdomain for managed HTTPS endpoints. Refer to
   <a href="https://www.aptible.com/support/topics/enclave/how-do-i-use-my-domain-apex-on-aptible/">How
     do I use my domain apex on Aptible?</a> for more information.
 </p>
@@ -49,25 +49,21 @@ files in your certificate bundle and the private key.
   <img class="img-responsive" src="/images/support/topics/enclave/transitional-cert.png">
 </p>
 
-You have the option to filter traffic here with an **IP Whitelist**.
+Without a transitional certificate, there is a window where requests to your
+domain, _healthcare-on-rails.example.com_, would resolve to your app on Aptible
+_app-XX.on-aptible.com_, but would be served with Aptible's cert for *\*.on-aptible.com*
+and result in a browser security warning and error.
 
-Leave **ALB** selected as the **Endpoint Platform** and click the
-**Save Endpoint** button.
-
+If Aptible has your cert for this transition period we will serve yours instead
+of Aptible's until the Let's Encrypt certificate has been generated.
 
 
 ### DNS Setup
 
-Your endpoint will take a few minutes to provision.
+Once Aptible has completed provisioning your new endpoint, you'll receive
+instructions asking you to set up two `CNAME`s through your DNS service.
 <p class="text-center">
-  <img class="img-responsive" src="/images/support/topics/enclave/provisioning-endpoint.png">
-</p>
-
-Once provisioned, you will be give instructions on what `CNAME` records to create.
-One for the app itself with a `CNAME` pointing to an Aptible domain (`app-XX.on-aptible.com`)
-and one for the acme challenge Let's Encrypt uses to verify you own the domain.
-<p class="text-center">
-  <img class="img-responsive" src="/images/support/topics/enclave/provisioning-endpoint.png">
+  <img class="img-responsive" src="/images/support/topics/enclave/provisioned-endpoint.png">
 </p>
 
 <p class="doc-note">
@@ -78,26 +74,35 @@ and one for the acme challenge Let's Encrypt uses to verify you own the domain.
     Amazon Route 53 as Your DNS Service</a>
 </p>
 
-Once you set up the required `CNAME` records, click the **I created the records** button.
-This will use Let's Encrypt to create the certificate.
+**Why two subdomains?**
 
-During this process, your app will receive requests and those results can vary
-while the certificate is generated and DNS changes are propagating.
+We use two different methods to verify control of a domain with Let's Encrypt:
+HTTP and DNS challenges.
 
-  * You've tried visiting your endpoint (*health-on-rails.example.com*) and get
-    the cert for *\*.aptible.in*.
-    If generating the certificate for your domain has not completed, but your
-    `CNAME` is working to direct requests to your `app-XX.on-aptible.com` domain,
-    you'll receive a `NET::ERR_CERT_COMMON_NAME_INVALID` error in your browser
-    saying the connection is not private because the browser will be receiving the
-    `on-aptible.com` certificate. Specifying a transitional cert will address
-    this problem.
+You may have used an [HTTP challenge](https://tools.ietf.org/html/draft-ietf-acme-acme-01#section-7.2)
+to verify you own your domain with other services. This involves creating a
+file or configuring a response to a challenge request. For Aptible endpoints,
+Let's Encrypt's challenge is handled transparently for you! Unless&hellip;
 
-  * If this is an *external endpoint*, you'll want to ensure that all traffic is
-    routed to HTTPS to avoid insecure content warnings.
+When your endpoint is IP filtered or an internal endpoint that cannot receive
+requests from the outside world, we need an alternative to the HTTP challenge.
+The [DNS challenge](https://tools.ietf.org/html/draft-ietf-acme-acme-01#section-7.5)
+validation requires setting up a `CNAME` that is expected to serve the challenge
+response token as a TXT record in DNS.
 
-You can read more about how Let's Encrypt works and applying the managed benefits
-to internal endpoints on the Aptible blog:
+You can read more about these challenges in our blog post announcing the
+release of [managed HTTPS internal endpoints](/blog/managed-https-endpoints-now-support-internal-endpoints/).
 
-  * [Managed HTTPS Endpoints](http://localhost:4567/blog/managed-https/)
-  * [Managed HTTPS Internal Endpoints](http://localhost:4567/blog/managed-https-endpoints-now-support-internal-endpoints/)
+It's worth noting again that with managed HTTPS endpoints, your ability to serve
+over HTTPS is protected and monitored by Aptible for you. Assuming no changes,
+Aptible will auto renew your Let's Encrypt certs tranparently for you. If
+anything were to change&mdhash;someon in your organization updates your DNS and
+breaks the DNS challenge for example, Aptible monitoring generates an alert and
+you will be contacted by Aptible support to get everything resolved.
+
+
+Related blog posts and support articles:
+
+  * [Managed HTTPS Endpoints](/blog/managed-https/)
+  * [Managed HTTPS Internal Endpoints](/blog/managed-https-endpoints-now-support-internal-endpoints/)
+  * [IP Filtering](/support/topics/enclave/how-do-i-filter-traffic-to-my-app/)
