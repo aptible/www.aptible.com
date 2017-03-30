@@ -64,3 +64,24 @@ th {
     }
   }
 }
+
+.checkmark-table {
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 90%;
+  td, th {
+    padding: 5px;
+    text-align: center;
+  }
+  tbody td:first-of-type,
+  thead th:first-of-type {
+    text-align: left;
+  }
+  thead th {
+    border-bottom: 1px solid $base-border-color;
+  }
+  tbody tr:nth-child(even) {
+    background-color: $lighter-blue;
+  }
+}

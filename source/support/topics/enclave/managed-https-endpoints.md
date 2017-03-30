@@ -1,108 +1,148 @@
 Aptible provides free managed HTTPS for both internal and external endpoints through
 [Let's Encrypt](https://letsencrypt.org/).
-Managed HTTPS Endpoints offer the following benefits:
+Managed HTTPS endpoints offer the following benefits:
 
   * Automated certificate provisioning
   * Automated certificate renewals
   * Monitoring to detect problems with renewals and send alert notifications
 
-All you need to take advantage of these benefits is your own domain and
-the ability to create `CNAME` records for that domain.
+All you need to take advantage of these benefits is your own domain and the
+ability to create CNAME records for that domain through your DNS provider.
 
-Managed HTTPS starts with creating an Endpoint. From the Aptible dashboard,
-select your environment followed by the app needing an endpoint.
+In order to understand how Aptible manages your endpoints' HTTPS certificates,
+let's walk through a scenario that will address the different solutions
+required and how they work. We'll use our fictional friends at
+_Example Corporation_ who want to set up the following endpoints on their
+domain, _example.com_:
 
-Aptible offers three types of endpoints:
+  * `app.example.com`<br>
+    an _external_ endpoint that currently serves Example Corp's app to web
+    browsers over HTTP and HTTPS on another PaaS at
+    `unique-identifier.other-paas.com`
 
-  1. An Aptible **default endpoint**, where Aptible provides the domain and managed
-  HTTPS certificate at a domain in the form of `app-XX.on-aptible.com`.
-  2. A **managed HTTPS endpoint**. Here you provide the domain and Aptible provides
-  a managed HTTPS certificate through Let's Encrypt.
-  3. A **custom endpoint** where you provide both the domain and the certificate.
-  You'll also be responsible for certificate renewals and updates.
+  * `services.example.com`<br>
+    an _internal_ endpoint that Example Corp's app uses to schedule
+    processing of the data it collects from users
 
-Get started by selecting the Managed HTTPS option for your Endpoint Type.
+Aptible requests a certificate for each of these endpoints from Let's Encrypt
+through the following process:
 
-<p class="text-center">
-  <img class="img-responsive" src="/images/support/topics/enclave/create-new-endpoint.png">
-</p>
+  1. We notify Let's Encrypt that we'd like to provision a new certificate or
+     renew a current certificate for your domain
+  2. Let's Encrypt provides us with a set of challenges to try and prove we
+     control the domain
+  3. If we fulfill one of the challenges, we get the certificate
 
-You will need to provide the domain name you intend to use with your app
-(e.g. health-on-rails.example.com). Aptible will use that name to provision a
-certificate via Let’s Encrypt.
+Let's start with the managed HTTPS endpoint for `app.example.com`, which will
+require a CNAME record created to send `app.example.com` requests to an
+Aptible domain in the form `unique-identifier.aptible.in`. Once this record is
+set up with Example Corp's DNS provider, the change will take time to propagate.
+Until that propagation is complete, some requests will continue to go to
+`unique-identifier.other-paas.com`.
 
-<p class="doc-note doc-note--warn">
-  Aptible requires you to supply a subdomain for managed HTTPS endpoints. Refer to
-  <a href="https://www.aptible.com/support/topics/enclave/how-do-i-use-my-domain-apex-on-aptible/">How
-    do I use my domain apex on Aptible?</a> for more information.
-</p>
+Now let's address what is happening in the Let's Encrypt process. For an
+external domain with no IP filtering, Let's Encrypt can use an HTTP
+challenge. Let's Encrypt provides Aptible with an arbitrary token and a URL
+hosted by `app.example.com` in the following form:
 
-### Transitional Certificate
+    http://app.example.com/.well-known/acme-challenge/$SOME_RANDOM_STRING
 
-If you currently have a production application serving HTTPS requests to the
-domain you are setting up for this endpoint, check the box labeled **Use a
-transitional certificate** and select from the certificates available, or
-click the **Add New Certificate** link to paste in (or drag and drop) all of the
-files in your certificate bundle and the private key.
+When this URL is requested, Aptible will serve the arbitrary
+token&mdash;`app.example.com` has fulfilled a challenge and verified the domain.
+A cert is generated and delivered. Aptible will automatically renew this
+certificate before it expires until the endpoint is deprovisioned.
+
+If `app.example.com` was not currently serving requests, we'd be done.
+However, like the DNS propagation, this series of exchanges to verify the domain
+and generate the cert takes time. During this gap, HTTPS requests to
+`app.example.com` could be served by `unique-identifier.other-paas.com` with
+Example Corp's existing certificate or `unique-identifier.aptible.in`, where
+the Let's Encrypt challenge process could still be underway. Aptible has a cert
+for `*.aptible.in` and will serve it, but HTTPS requests to `app.example.com`
+served with a cert for `*.aptible.in` will result in an error and security warning
+due to the mismatch.
+
+To solve this, Example Corp must specify a **transitional certificate** using
+the certificate in their current setup with `other-paas.com`.
 
 <p class="text-center">
   <img class="img-responsive" src="/images/support/topics/enclave/transitional-cert.png">
 </p>
 
-Without a transitional certificate, there is a window where requests to your
-domain, _healthcare-on-rails.example.com_, would resolve to your app on Aptible
-_app-XX.on-aptible.com_, but would be served with Aptible's cert for *\*.on-aptible.com*
-and result in a browser security warning and error.
+With their existing certificate used by Aptible during the DNS propagation,
+Let's Encrypt verification process, and certificate setup&mdash;Example Corp
+can move to a FREE managed HTTPS endpoint with zero downtime.
 
-If Aptible has your cert for this transition period we will serve yours instead
-of Aptible's until the Let's Encrypt certificate has been generated.
+Now let's look at this challenge process in the case of Example Corp's internal
+`services.example.com` endpoint. Everything from the `app.example.com` scenario
+above applies _except_ the HTTP challenge. Let's Encrypt cannot make a request
+to an internal endpoint. Note that from Let's Encrypt's perspective, sending an
+HTTP challenge request to an external domain with IP Filtering enabled
+(whitelist) provides the same result.
 
+In these cases, we can verify domain ownership by creating another DNS CNAME
+record. Like the HTTP challenge, Let’s Encrypt provides an arbitrary token, but
+this time we're expected to serve that token as a TXT record in DNS:
 
-### DNS Setup
+`_acme-challenge.services.example.com` serves the token TXT record via
+`acme.another-identifier.aptible.in`
 
-Once Aptible has completed provisioning your new endpoint, you'll receive
-instructions asking you to set up two `CNAME`s through your DNS service.
-<p class="text-center">
-  <img class="img-responsive" src="/images/support/topics/enclave/provisioned-endpoint.png">
-</p>
-
-<p class="doc-note">
-  If you run in to trouble setting up the required <code>CNAME</code>s for your
-  domain, you may need to switch your DNS provider. We recommend Amazon Web
-  Services' Route 53.
-  <a href="http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/creating-migrating.html">Configuring
-    Amazon Route 53 as Your DNS Service</a>
-</p>
-
-**Why two subdomains?**
-
-We use two different methods to verify control of a domain with Let's Encrypt:
-HTTP and DNS challenges.
-
-You may have used an [HTTP challenge](https://tools.ietf.org/html/draft-ietf-acme-acme-01#section-7.2)
-to verify you own your domain with other services. This involves creating a
-file or configuring a response to a challenge request. For Aptible endpoints,
-Let's Encrypt's challenge is handled transparently for you! Unless&hellip;
-
-When your endpoint is IP filtered or an internal endpoint that cannot receive
-requests from the outside world, we need an alternative to the HTTP challenge.
-The [DNS challenge](https://tools.ietf.org/html/draft-ietf-acme-acme-01#section-7.5)
-validation requires setting up a `CNAME` that is expected to serve the challenge
-response token as a TXT record in DNS.
-
-You can read more about these challenges in our blog post announcing the
-release of [managed HTTPS internal endpoints](/blog/managed-https-endpoints-now-support-internal-endpoints/).
-
-It's worth noting again that with managed HTTPS endpoints, your ability to serve
-over HTTPS is protected and monitored by Aptible for you. Assuming no changes,
-Aptible will auto renew your Let's Encrypt certs tranparently for you. If
-anything were to change&mdhash;someon in your organization updates your DNS and
-breaks the DNS challenge for example, Aptible monitoring generates an alert and
-you will be contacted by Aptible support to get everything resolved.
+The dashboard will give you the correct record to create. Here, the request was
+even
 
 
-Related blog posts and support articles:
+### Available Verification Challenges For All Endpoint Combinations
+
+<table class="checkmark-table">
+  <thead>
+    <tr>
+      <th>Endpoint Type</th>
+      <th>HTTP Challenge</th>
+      <th>DNS Challenge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Internal</td>
+      <td></td>
+      <td><img src="/images/icons/checklist-item.svg"></td>
+    </tr>
+    <tr>
+      <td>Internal - IP Filter Enabled</td>
+      <td></td>
+      <td><img src="/images/icons/checklist-item.svg"></td>
+    </tr>
+    <tr>
+      <td>External</td>
+      <td><img src="/images/icons/checklist-item.svg"></td>
+      <td><img src="/images/icons/checklist-item.svg"></td>
+    </tr>
+    <tr>
+      <td>External - IP Filter Enabled</td>
+      <td></td>
+      <td><img src="/images/icons/checklist-item.svg"></td>
+    </tr>
+  </tbody>
+</table>
+
+### Automatic Certificate Renewals
+
+As long as you control the DNS for your domain and your endpoint remains
+provisioned on Aptible, your managed HTTPS endpoint should continue to operate
+with a valid certificate indefinitely. Several days before your Let's Encrypt
+certificate is about to expire, Aptible will ensure that CNAME records are working
+as expected and alert the support team if anything would block a renewal.
+
+The certificate renewal process is very similar to the certificate generation.
+With the required CNAME records in place, certificates are renewed automatically
+and in complete transparency from Aptible users.
+
+One less thing to worry about.
+
+### Related Topics
 
   * [Managed HTTPS Endpoints](/blog/managed-https/)
   * [Managed HTTPS Internal Endpoints](/blog/managed-https-endpoints-now-support-internal-endpoints/)
   * [IP Filtering](/support/topics/enclave/how-do-i-filter-traffic-to-my-app/)
+  * [Automatic Certificate Management Environment (ACME)](https://ietf-wg-acme.github.io/acme/)
+  * [Automatic Certificate Management Environment (ACME)](https://ietf-wg-acme.github.io/acme/)
