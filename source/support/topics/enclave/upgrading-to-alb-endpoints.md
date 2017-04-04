@@ -56,29 +56,14 @@ upgrading.
 
 ## HTTPS Protocols and Ciphers
 
-The default HTTPS configuration for ELB Endpoints is quite permissive, supports
-SSLv3 and all versions of TLS, and can be customized using the environment
-variables `DISABLE_WEAK_CIPHER_SUITES`, `SSL_CIPHERS_OVERRIDE` and
-`SSL_PROTOCOLS_OVERRIDE`.
+The main difference between ELB and ALB Endpoints is that SSLv3 is supported
+(and enabled by default) on ELB Endpoints, whereas it is not available on ALB
+Endpoints. For an overwhelming majority of apps, not supporting SSLv3 is
+desirable.
 
-ALB Endpoints have different configurations and **cannot be modified**. For
-most customers, the default HTTPS configuration for ALB Endpoints is an ideal
-balance between security and compatibility. The default ALB Endpoint
-configuration supports TLS 1.0, TLS 1.1, and TLS 1.2, but not SSLv3. This is
-roughly equivalent to the ELB Endpoint configuration that results when you set
-`DISABLE_WEAK_CIPHER_SUITES=true`.
-
-If you require SSLv3 support, or conversely need to further restrict the
-protocols available on your endpoint (e.g. to remove TLS 1.0), you should use
-an ELB Endpoint.
-
-Note: If you would like more detail as to exactly which ciphers are available
-in the default ALB Endpoint HTTPS policy, you can use the AWS CLI to retrieve
-the policy:
-
-```
-aws elbv2 describe-ssl-policies --names ELBSecurityPolicy-2015-05
-```
+For more information, review [How can I modify the way my app handles SSL?][2],
+specifically the sections regarding `SSL_PROTOCOLS_OVERRIDE`,
+`SSL_CIPHERS_OVERRIDE`, and `DISABLE_WEAK_CIPHER_SUITES`.
 
 
 ## X-Forwarded-For Header
@@ -125,4 +110,4 @@ specific endpoint will appear.
 
 [0]: https://youtu.be/SIV0uPnz7i4?t=17m34s
 [1]: /support/topics/paas/how-does-the-maintenance-page-url-config-setting-work
-[2]: /support/topics/paas/how-to-modify-nginx-config
+[2]: /support/topics/enclave/how-to-modify-nginx-config
