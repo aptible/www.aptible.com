@@ -1,6 +1,6 @@
 To set an ENV variable for your app, use `aptible config:set`, like so:
 
-    aptible config:set VAR=value --app $APP_HANDLE
+    aptible config:set --app $APP_HANDLE VAR=value
 
 To view the existing set of ENV variables and their values, run:
 
@@ -11,6 +11,6 @@ If you need environment variables during a build, [you can specify them](/suppor
 To set multiple variables, use the syntax:
 
 ```bash
-aptible config:set VAR1=value1 VAR2=value2 ...
+aptible config:set --app $APP_HANDLE VAR1=value1 VAR2=value2 ...
 ```
 
