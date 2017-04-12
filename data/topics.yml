@@ -58,6 +58,8 @@
       url: "enclave/zero-downtime-deploys"
     - title: "How can I modify the way my app handles SSL?"
       url: "enclave/how-to-modify-nginx-config"
+    - title: "How can I modify Endpoint timeouts?"
+      url: "enclave/endpoint-timeouts"
     - title: "I'm seeing an SSL error ('ERR_CERT_COMMON_NAME_INVALID') in my browser. What should I do?"
       url: "enclave/how-to-cname-default-endpoints"
     - title: "I'm seeing an SSL error ('ERR_CERT_AUTHORITY_INVALID') in my browser. What should I do?"
