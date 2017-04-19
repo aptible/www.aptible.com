@@ -24,19 +24,13 @@ We hosted our second Update Webinar on January 25. In it, we covered:
 - The [Enclave CLI for Windows](https://www.aptible.com/blog/windows-cli/)
 - Continual efforts to strengthen Enclave security
 
-The next Aptible Update Webinar will be on April 18, 2017, at 11am PST/2pm EST.
+### Slides
 
-<p class="text-center">
-  <a class="btn" href="https://zoom.us/webinar/register/a9e02bd11c01969ec5b9141539e44ee6">Register Now</a>
-</p>
+[View](https://speakerdeck.com/aptible/aptible-update-webinar-series-january-2017)
 
-Webinars are recorded and made available for viewing if you cannot attend the live session.
+### Transcript
+Transcript coming soon.
 
 ## Previous Webinars
-__January 2017__<br>
-Video: [https://youtu.be/jjlpRuY35VM](https://youtu.be/jjlpRuY35VM)<br>
-Slides: [https://speakerdeck.com/aptible/aptible-update-webinar-series-january-2017](https://speakerdeck.com/aptible/aptible-update-webinar-series-january-2017)
 
-__October 2016__<br>
-Video: [https://www.youtube.com/watch?v=SIV0uPnz7i4](https://www.youtube.com/watch?v=SIV0uPnz7i4)<br>
-Slides: [https://speakerdeck.com/aptible/aptible-update-webinar-series-october-2016](https://speakerdeck.com/aptible/aptible-update-webinar-series-october-2016)
+- [__October 2016__](/blog/update-webinar-oct-2016/)
