@@ -1,4 +1,4 @@
-When we deploy your app, we use a Procfile to determine what services should be run from your app code. The Procfile format is described [in detail here](http://ddollar.github.io/foreman/), and Heroku has a [very helpful article](https://devcenter.heroku.com/articles/procfile) as well.
+When we deploy your app, we use a Procfile to determine what services should be run from your app code. The Procfile format is described in detail in this [very helpful article](https://devcenter.heroku.com/articles/procfile) from Heroku.
 
 The Procfile should list process types and the commands associated with them. For example, if you're running a Rails app with one Sidekiq worker process, you might have the following Procfile:
 
