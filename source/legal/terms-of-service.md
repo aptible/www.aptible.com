@@ -159,8 +159,8 @@ If you believe that your copyrighted work has been copied in a way that constitu
 Submit the above information to:<br/>
 Aptible, Inc.<br/>
 Attn: DMCA Notices<br/>
-1644 Platte St<br/>
-Denver, CO 80202<br/>
+220 8th Ave NW<br/>
+Portland, OR 97209<br/>
 
 Aptible will promptly terminate without notice the accounts of users that are determined by Aptible to be “repeat infringers." A repeat infringer is a user who has been notified of infringing activity or has had Content removed from the Service at least twice.
 
@@ -237,11 +237,11 @@ This Agreement is governed by the laws of the State of New York without regard t
 
 **C.  Arbitrator.** Any arbitration between you and Aptible will be governed by the Commercial Dispute Resolution Procedures and the Supplementary Procedures for Consumer Related Disputes (collectively, "**AAA Rules**") of the American Arbitration Association ("**AAA**"), as modified by this Agreement, and will be administered by the AAA. The AAA Rules and filing forms are available online at www.adr.org, by calling the AAA at 1-800-778-7879, or by contacting Aptible.
 
-**D.  Notice; Process.** A party who intends to seek arbitration must first send a written notice of the dispute to the other, by certified mail or Federal Express (signature required), or if we do not have a physical address on file for you, by electronic mail ("**Notice**"). Aptible’s address for Notice is:  
+**D.  Notice; Process.** A party who intends to seek arbitration must first send a written notice of the dispute to the other, by certified mail or Federal Express (signature required), or if we do not have a physical address on file for you, by electronic mail ("**Notice**"). Aptible's address for Notice is:  
 
 Aptible, Inc.<br/>
-1644 Platte St<br/>
-Denver, CO 80202<br/>
+220 8th Ave NW<br/>
+Portland, OR 97209<br/>
 
 The Notice must: (a) describe the nature and basis of the claim or dispute; and (b) set forth the specific relief sought ("**Demand**"). We agree to use good faith efforts to resolve the claim directly, but if we do not reach an agreement to do so within 30 days after the Notice is received, you or Aptible may commence an arbitration proceeding. During the arbitration, the amount of any settlement offer made by you or Aptible must not be disclosed to the arbitrator until after the arbitrator makes a final decision and award, if any.  If our dispute is finally resolved through arbitration in your favor, Aptible will pay you the highest of the following: (i) the amount awarded by the arbitrator, if any; (ii) the last written settlement amount offered by Aptible in settlement of the dispute prior to the arbitrator’s award; or (iii) $1,000.
 
