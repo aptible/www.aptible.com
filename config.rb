@@ -50,6 +50,7 @@ activate :contentful do |f|
     },
     employees: 'employee',
     customers: 'customer',
+    resource_pages: 'resourcePage',
     customer_stories: 'customerStories'
   }
   puts ''
@@ -109,10 +110,24 @@ if data.respond_to?('aptible') && !data.aptible.blog_posts.nil?
 end
 
 #
-# resources
+# contentful resources
 #
-page '/resources/*', layout: 'resource.haml'
 page '/resources/index.html', layout: 'layout.haml'
+
+if data.respond_to?('aptible') && !data.aptible.resource_pages.nil?
+  data.aptible.resource_pages.values.each do |resource|
+    path = "/#{resource.slug}/index.html"
+    path = "/#{resource.subfolder}#{path}" if resource.subfolder.present?
+
+    proxy path,
+          '/resources/resource.html',
+          locals: {
+            resource: resource,
+            path: path
+          },
+          ignore: true
+  end
+end
 
 #
 # Legal

@@ -1,11 +1,5 @@
-- featured_class = resource.data.featured ? ' resource-item--featured' : ''
-%a{ class: "resource-item#{featured_class}", href: resource.url }
-  %header.resource-item__header{ style: resource_header_style(resource.data) }
-    %h2.resource-item__title= resource.data.title
+%a{ class: "resource-item", href: resource_url(resource) }
+  %header.resource-item__header{ style: resource_header_style(resource) }
+    %h2.resource-item__title= resource.title
   .resource-item__body
-    .resource-item__tags
-      - resource.data.categories.each do |category|
-        .resource-item__tag= category
-    .resource-item__excerpt= resource.data.excerpt
-    .resource-item__author-date
-      = "#{resource.data.author_name} - #{post_date(resource.data.posted)}"
+    .resource-item__excerpt= resource.snippet

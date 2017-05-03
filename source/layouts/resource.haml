@@ -1,4 +1,3 @@
-- resource = current_page.data
 - content_for :header do
   %header.aptible-header.aptible-header--with-breadcrumbs.hero-gradient--angled
     = partial 'partials/main-nav', locals: {      |
@@ -15,14 +14,9 @@
   .content
     .grid-container.grid-container--no-padding
       .grid-document.markdown-content.resource-article
+
         = find_and_preserve do
           = yield
-
-        - if resource.docs
-          .resource-docs
-            - resource.docs.each_with_index do |doc, index|
-              %a.resource-doc{ href: doc.href, title: doc.title, data: { type: doc.type }, target: '_blank' }
-                = partial '/images/aptible-small-mark.svg'
 
       .grid-aside
         = partial 'resources-aside'

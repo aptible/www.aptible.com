@@ -62,25 +62,39 @@ module AptibleHelpers
 
   # Preserve the order of the supplied titles for the results
   def resources_by_title(titles)
+    cms_data = data.aptible.resource_pages.values
     resources = []
     titles.each do |title|
-      resources << sitemap.resources
-                          .select { |p| p.data['title'] == title }.first
+      resources << cms_data.select { |r| r.title == title }.first
     end
     resources
   end
 
-  def resource_subtitle(resource)
-    subtitle = resource.data['categories'] || 'Blog'
-    subtitle.is_a?(Array) ? subtitle.first : subtitle
+  def previous_webinars(resource)
+    cms_data = data.aptible.resource_pages.values
+    cms_data.select { |r| r.type == 'webinar' && r.slug != resource.slug }
+            .sort_by { |r| -r.date.to_time.to_i }
   end
 
   def resource_header_style(resource)
-    if resource.header_image
-      "background-image: url(#{resource.header_image});"
+    if resource.coverImage.present?
+      "background-image: url(#{resource.coverImage.url});"
     else
       ''
     end
+  end
+
+  def resources_for_index
+    data.aptible.resource_pages.values
+        .select(&:includedOnIndex)
+        .sort_by { |r| -r.date.to_time.to_i }
+  end
+
+  def resource_url(resource)
+    return unless resource.present?
+    url = "/#{resource.slug}/index.html"
+    url = "/#{resource.subfolder}#{url}" if resource.subfolder.present?
+    url
   end
 
   def legal_sections
@@ -97,16 +111,6 @@ module AptibleHelpers
                    p.url != '/legal/'
                end
     l.sort_by { |p| p.data['order'] }
-  end
-
-  def resources_oldest_first
-    sitemap.resources
-           .select { |r| r.data['section'] == 'Resources' }
-           .sort_by { |r| r.data['posted'] }
-  end
-
-  def resources_newest_first
-    resources_oldest_first.reverse!
   end
 
   def dashboard_href

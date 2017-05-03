@@ -107,7 +107,9 @@
 - loc: /blog/aws_webinar_06_2015.html
   url: /blog/aws-webinar-06-2015
 - loc: /blog/common_HIPAA_questions.html
-  url: /resources/common-hipaa-questions
+  url: /learn/hipaa-compliance-for-developers-getting-started
+- loc: /resources/common_HIPAA_questions/index.html
+  url: /learn/hipaa-compliance-for-developers-getting-started
 - loc: /blog/coreos_2015.html
   url: /blog/coreos-2015
 - loc: /blog/deploy_private_images.html
