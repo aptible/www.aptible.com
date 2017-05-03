@@ -27,7 +27,7 @@ title: Resources
       -#   %a.filter-option.filter-option--selected{ href: '' } All
 
       .resources-list
-        - resources_newest_first.each do |resource|
+        - resources_for_index.each do |resource|
           = partial 'resource-item',  locals: { resource: resource }
 
         -# One-off for AWS vs Aptible
