@@ -1,6 +1,8 @@
 ---
 layout: resource.haml
 ---
+- @title = resource.title
+- @description = resource.metaDescription || resource.snippet
 - if resource.webinarVideoLink
   %p.text-center
     %iframe{ width: '560', height: '315', src: resource.webinarVideoLink, frameborder: '0', allowfullscreen: 'allowfullscreen' }
