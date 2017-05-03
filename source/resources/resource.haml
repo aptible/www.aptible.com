@@ -17,7 +17,8 @@ layout: resource.haml
 - if resource.type == 'webinar'
   %h3#transcript Transcript
   - if resource.webinarTranscript
-    = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(config[:markdown])).render resource.webinarTranscript
+    - md = resource.webinarTranscript + (resource.webinarTranscript2 || '')
+    = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(config[:markdown])).render md
   - else
     %em Coming Soon
 
