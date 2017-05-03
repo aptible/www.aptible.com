@@ -123,7 +123,7 @@ if data.respond_to?('aptible') && !data.aptible.resource_pages.nil?
           '/resources/resource.html',
           locals: {
             resource: resource,
-            path: path,
+            path: path
           },
           ignore: true
   end

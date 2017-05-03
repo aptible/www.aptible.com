@@ -86,8 +86,8 @@ module AptibleHelpers
 
   def resources_for_index
     data.aptible.resource_pages.values
-                               .select { |r| r.includedOnIndex }
-                               .sort_by { |r| -r.date.to_time.to_i }
+        .select(&:includedOnIndex)
+        .sort_by { |r| -r.date.to_time.to_i }
   end
 
   def resource_url(resource)
