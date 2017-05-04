@@ -27,7 +27,7 @@ layout: resource.haml
     %ul
       - prev_webinars.each do |r|
         %li
-          %a{ href: resource_url(r) }
+          %a{ href: resource_path(r) }
             %strong= post_date(r.date)
 
 
