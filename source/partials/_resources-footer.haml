@@ -10,7 +10,7 @@
   .grid-container
     .grid--3up-flex
       - resources_by_title(titles).each do |r|
-        %a.grid-item.card.card--on-dark{ href: resource_url(r) }
+        %a.grid-item.card.card--on-dark{ href: resource_path(r) }
           .card__header
             .card__subtitle.card__subitle--on-dark= r.category
             %h3.card__title.card__title--on-dark= r.title

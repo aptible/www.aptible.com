@@ -90,11 +90,11 @@ module AptibleHelpers
         .sort_by { |r| -r.date.to_time.to_i }
   end
 
-  def resource_url(resource)
+  def resource_path(resource)
     return unless resource.present?
-    url = "/#{resource.slug}/index.html"
-    url = "/#{resource.subfolder}#{url}" if resource.subfolder.present?
-    url
+    path = "/#{resource.slug}/"
+    path = "/#{resource.subfolder}#{path}" if resource.subfolder.present?
+    path
   end
 
   def legal_sections
