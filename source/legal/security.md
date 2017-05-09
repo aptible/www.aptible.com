@@ -2,12 +2,12 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's security policy"
-posted: 2017-02-27
+posted: 2017-05-09
 section: Legal
 sub_section: Policies
 ---
 
-Version 3.5 - February 2017
+Version 3.5 - May 2017
 
 This policy outlines: 1) Aptible's security practices and resources, and 2)  your security obligations. This policy is incorporated by reference into the Aptible Terms of Service.
 
@@ -81,7 +81,7 @@ p. 13 - ["Amazon Web Services: Overview of Security Processes - August 2015"](ht
 You may choose to run a host-based intrusion detection or prevention system that can be managed externally, such as Threat Stack, as an add-on. Aptible will ensure the host agents run and can connect to your external management service. You are responsible for procuring a license and operating the system.
 
 ##### **2.G - Network and Host Vulnerability Scanning**
-Aptible scans both the Internet-facing network and private network of each customer VPC and its hosts monthly. Aptible is responsible for network and host security, and remediates adverse findings without customer intervention.
+Aptible scans both the Internet-facing network and private network of a master reference stack each month. Aptible is responsible for network and host security, and remediates adverse findings without customer intervention, however you may request a scan of your dedicated VPC and its hosts as needed for your own security assessments and audits. 
 
 ##### **2.H - Host Hardening**
 Enclave host operating systems are hardened based on the Center for Internet Security's Security Configuration Benchmark for the OS and version in use. For all operating systems:
