@@ -16,4 +16,4 @@ aptible config:set --app $APP_HANDLE VAR1=value1 VAR2=value2 ...
 
 To properly escape the value of an ENV variable that contains special characters such as spaces or newlines, you can read the variable directly from a file:
 
-    aptible config --app $APP_HANDLE CONFIG_FILE="$(cat appconfig.json)" CERTIFICATE="$(cat mysite.pem)"
+    aptible config:set --app $APP_HANDLE CONFIG_FILE="$(cat appconfig.json)" CERTIFICATE="$(cat mysite.pem)"
