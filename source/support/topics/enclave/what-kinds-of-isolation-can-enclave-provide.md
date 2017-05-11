@@ -1,6 +1,6 @@
 Multitenancy is a key property of most cloud computing service models, which makes isolation a critical component of most cloud computing security models. Aptible customers often need to explain to their own customers what kinds of isolation they provide, and what kinds of isolation are possible on the Aptible platform.
 
-The [Reference Architecture Diagram](https://www.aptible.com/pages/assets/aptible-reference-architecture.pdf) helps illustrate some of the following concepts.
+The [Reference Architecture Diagram](https://www.aptible.com/resources/enclave-reference-architecture-and-division-of-responsibilities/) helps illustrate some of the following concepts.
 
 ## Infrastructure
 All Aptible resources are deployed using Amazon Web Services. AWS operates and secures the physical data centers that produce the underlying compute, storage, and networking functionality needed to run your apps and databases. 
