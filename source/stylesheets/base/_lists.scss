@@ -18,6 +18,15 @@ ul {
   }
 }
 
+li > ul {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+li > p:last-of-type {
+  margin-bottom: 0;
+}
+
 ul.checklist {
   list-style-image: image-url('icons/checklist-item.svg');
   margin-left: 20px;
