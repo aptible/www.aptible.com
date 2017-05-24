@@ -53,6 +53,12 @@ a {
   }
 }
 
+// Warning / Info paragraphs
+.doc-note {
+  background-color: $lighter-blue;
+  padding: 20px;
+}
+
 .document-title {
   font-size: 50px;
   margin-bottom: 0.5em;
