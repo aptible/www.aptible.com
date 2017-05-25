@@ -207,10 +207,11 @@
   }
 }
 .home__enclave-terminal {
-  @include grid-column(7);
-  @include grid-push(1);
+  @include grid-column(8);
+  left: $grid-gutter;
   margin-bottom: 0;
   padding-bottom: 0;
+  position: relative;
   table {
     margin-bottom: 10px;
   }

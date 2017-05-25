@@ -95,11 +95,7 @@
   font-size: 50px;
   font-weight: $semibold;
   margin-bottom: 40px;
-  &::after {
-    background-color: $dark-gray;
-    margin-top: 30px;
-    width: 30px;
-  }
+  @extend .with-hr
 }
 
 .heading__title--centered {

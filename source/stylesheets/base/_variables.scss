@@ -1,16 +1,17 @@
 //
 // Grid
 //
-$grid-gutter: 20px;
+$grid-gutter: 40px;
 $neat-grid: (
   columns: 12,
-  gutter: $grid-gutter
+  gutter: $grid-gutter,
+  column-width: 60px
 );
 
 //
 // Breakpoints
 //
-$max-viewport: 1200px;
+$max-viewport: 1140px;
 $tablet-landscape: 1024px;
 $nav-break: 1050px;
 $tablet-portrait: 768px;
@@ -34,7 +35,7 @@ $regular: 400;
 $semibold: 600;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 16px;
 
 // Line height
 $base-line-height: 1.5;

@@ -1,8 +1,5 @@
 %footer.aptible-footer
   .grid-container
-    %a.aptible-footer__logo{:href => "/"}
-      = partial 'partials/aptible-mark', locals: { class_modifiers: 'aptible-mark--dark-bg' }
-
     .footer-nav__container
       %nav.aptible-footer__nav
         %ul.footer-nav__list
@@ -11,8 +8,21 @@
             %a{href: '/enclave/'} Enclave
           %li
             %a{href: '/gridiron/'} Gridiron
-          %li.footer-nav__subsection
+          %li
             %a{href: '/pricing/'} Pricing
+
+        %ul.footer-nav__list
+          %li.footer-nav__section-title Developers
+          %li
+            %a{href: '/support/'} Documentation
+          %li
+            %a{href: '/resources/'} Resources
+          %li
+            %a{href: '/support/quickstart/'} Quickstart Guides
+          %li
+            %a{href: contact_href} Open a Ticket
+          %li
+            %a{href: status_href} Status
 
         %ul.footer-nav__list
           %li.footer-nav__section-title Company
@@ -30,28 +40,20 @@
             %a{href: '/blog/'} Blog
 
         %ul.footer-nav__list
-          %li.footer-nav__section-title Developers
-          %li
-            %a{href: '/support/'} Documentation
-          %li
-            %a{href: '/resources/'} Resources
-          %li
-            %a{href: '/support/quickstart/'} Quickstart Guides
+          %li.footer-nav__section-title Community
           %li
             %a{href: community_href} Aptible Community
           %li
-            %a{href: contact_href} Open a Ticket
+            %a.social-link{href: 'http://github.com/aptible', rel: 'noopener noreferrer', target: '_blank' } Github
           %li
-            %a{href: status_href} Status
+            %a.social-link{href: 'http://twitter.com/aptible', rel: 'noopener noreferrer', target: '_blank' } Twitter
 
-      %nav.aptible-footer__nav
-        %ul.footer-nav__list.footer-nav__list--adjacent
-          %li
-            %a.social-link{href: 'http://twitter.com/aptible', target: '_blank' }= partial 'partials/social/twitter'
-          %li
-            %a.social-link{href: 'http://github.com/aptible', target: '_blank' }= partial 'partials/social/github'
 
-    %p.aptible-footer__copyright
-      © 2017 Aptible<br>
-      220 NW 8th Ave, Portland, OR 97209, United States<br>
-      +1 (866) 296-5003
+        .aptible-footer__copyright
+          %a.aptible-footer__logo{:href => "/"}
+            = partial 'partials/aptible-mark', locals: { class_modifiers: 'aptible-mark--dark-bg' }
+
+          %p.aptible-footer__copy
+            © 2017 Aptible<br><br>
+            220 NW 8th Ave<br>Portland, OR 97209, United States<br>
+            +1 (866) 296-5003

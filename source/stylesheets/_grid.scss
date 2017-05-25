@@ -25,6 +25,7 @@ body {
 // Grid Container
 //
 .grid-container {
+  // @include grid-visual;
   @include grid-container;
   max-width: 1180px;
   margin-left: auto;
@@ -32,6 +33,9 @@ body {
   padding: 10px 0;
   @media screen and (max-width: $max-viewport) {
     padding: 0 20px;
+  }
+  > .grid-container {
+    @include grid-collapse;
   }
 }
 

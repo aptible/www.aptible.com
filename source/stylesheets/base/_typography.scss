@@ -6,6 +6,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-smoothing: antialiased;
+  font-weight: $light;
   line-height: $base-line-height;
 }
 
@@ -18,14 +19,31 @@ h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
   margin: 0 0 30px;
-  &::after {
-    background-color: $light-blue;
-    content: '';
-    display: block;
-    height: 8px;
-    margin-top: 20px;
-    width: 25px;
-  }
+}
+
+.heading-1 {
+  font-size: 75px;
+  font-weight: $semibold;
+}
+.heading-2 {
+  font-size: 50px;
+  font-weight: semibold;
+}
+.heading-3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+.heading-4 {
+  font-size: 24px;
+  font-weight: $light;
+}
+.heading-5 {
+  font-size: 19px;
+  font-weight: $regular;
+}
+.heading-6 {
+  font-size: 16px;
+  font-weight: $semibold;
 }
 
 .subdued {
@@ -37,8 +55,17 @@ h6 {
   display: none;
 }
 
+.with-hr::after {
+  background-color: rgba(255,255,255,.25);
+  content: '';
+  display: block;
+  height: 8px;
+  margin-top: 20px;
+  width: 25px;
+}
+
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 ($small-spacing * 2);
 }
 
 a {
@@ -73,6 +100,14 @@ hr {
 // Specifics for generated markup
 .markdown-content {
   font-size: 20px;
+
+  h1 { @extend .heading-1; }
+  h2 { @extend .heading-2; }
+  h3 { @extend .heading-3; }
+  h4 { @extend .heading-4; }
+  h5 { @extend .heading-5; }
+  h6 { @extend .heading-6; }
+
   h2 {
     margin: 3em 0 2em;
     &:first-of-type{
