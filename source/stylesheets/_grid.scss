@@ -336,11 +336,9 @@ body {
 
 .logo-grid--4up {
   .logo-grid__item {
+    border-right: 1px solid $light-blue;
     width: 25%;
-    &:nth-child(2n+1) {
-      border-right: 1px solid $light-blue;
-    }
-    &:nth-child(4n+1) {
+    &:nth-child(4n) {
       border-right: none;
     }
     &:nth-child(3), &:nth-child(4) {
@@ -348,6 +346,12 @@ body {
     }
     @media screen and (max-width: $tablet-portrait) {
       width: 50%;
+      &:nth-child(2n) {
+        border-right: none;
+      }
+      &:nth-child(3), &:nth-child(4) {
+        border-top: 1px solid $light-blue;
+      }
     }
   }
 }

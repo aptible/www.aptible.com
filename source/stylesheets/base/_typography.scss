@@ -82,7 +82,7 @@ a {
 
 .document-title {
   font-size: 50px;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
 .document-summary {
@@ -109,14 +109,14 @@ hr {
   h6 { @extend .heading-6; }
 
   h2 {
-    margin: 3em 0 2em;
+    margin: 1.5em 0 1em;
     &:first-of-type{
       margin-top: 0;
     }
   }
   p {
     font-weight: $light;
-    margin-bottom: 1.75em;
+    margin-bottom: 1em;
   }
 
   strong {
