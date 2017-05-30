@@ -212,6 +212,8 @@
   url: /support/topics/enclave/how-to-access-environment-variables-inside-dockerfile
 - loc: /support/topics/paas/what-is-difference-between-dockerfile-cmd-and-procfile
   url: /support/topics/enclave/what-is-difference-between-dockerfile-cmd-and-procfile
+- loc: /support/topics/enclave/what-is-difference-between-dockerfile-cmd-and-procfile
+  url: /support/topics/enclave/about-services
 - loc: /support/topics/paas/what-is-difference-between-internal-external-domain
   url: /support/topics/enclave/what-is-difference-between-internal-external-endpoints
 - loc: /support/topics/paas/what-is-difference-between-internal-external-endpoints
@@ -274,6 +276,8 @@
   url: /support/topics/enclave/upgrading-to-alb-endpoints
 - loc: /support/topics/paas/how-to-deploy-from-private-repository
   url: /support/topics/enclave/how-to-deploy-from-private-repository
+- loc: /support/topics/enclave/how-to-deploy-from-private-repository
+  url: /support/topics/enclave/direct-docker-image-deploy
 - loc: /blog/what-is-a-hipaa-baa
   url: /resources/what-is-a-hipaa-baa
 - loc: /blog/common-hipaa-questions
