@@ -27,4 +27,4 @@ using the following sequence of operations:
 - Launch the new containers.
 
 
-  [about-services]: ./about-services
+  [about-services]: /support/topics/enclave/about-services/

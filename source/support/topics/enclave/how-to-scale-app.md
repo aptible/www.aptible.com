@@ -9,4 +9,4 @@ adjust the "Memory" slider. When you are ready, select "Scale." The Aptible
 platform will scale your app service to your new specifications. You can use
 the same process to scale your app down.
 
-  [about-services]: ./about-services
+  [about-services]: /support/topics/enclave/about-services/

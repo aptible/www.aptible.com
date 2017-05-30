@@ -44,6 +44,6 @@ Enclave instead.
 
 For more detail, see [About Services][about-services].
 
-  [dockerfile-build-deploy]: ./dockerfile-build-deploy
-  [direct-docker-image-deploy]: ./direct-docker-image-deploy
-  [about-services]: ./about-services
+  [dockerfile-build-deploy]: /support/topics/enclave/dockerfile-build-deploy/
+  [direct-docker-image-deploy]: /support/topics/enclave/direct-docker-image-deploy/
+  [about-services]: /support/topics/enclave/about-services/

@@ -104,5 +104,5 @@ aptible deploy \
 ```
 
 
-  [dockerfile-build-deploy]: ./dockerfile-build-deploy
-  [direct-docker-image-deploy]: ./direct-docker-image-deploy
+  [dockerfile-build-deploy]: /support/topics/enclave/dockerfile-build-deploy/
+  [direct-docker-image-deploy]: /support/topics/enclave/direct-docker-image-deploy/

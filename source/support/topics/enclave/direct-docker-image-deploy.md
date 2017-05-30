@@ -170,8 +170,8 @@ updated files to. In the `git push` example above, that's
 `update-the-Procfile`.
 
 
-  [aptible-toolbelt]: ../../toolbelt
-  [dockerfile-build-deploy]: ./dockerfile-build-deploy
-  [about-services]: ./about-services
-  [about-aptible-yml]: ./about-aptible-yml
-  [private-registry-authentication]: ./private-registry-authentication
+  [aptible-toolbelt]: /support/toolbelt/
+  [dockerfile-build-deploy]: /support/topics/enclave/dockerfile-build-deploy/
+  [about-services]: /support/topics/enclave/about-services/
+  [about-aptible-yml]: /support/topics/enclave/about-aptible-yml/
+  [private-registry-authentication]: /support/topics/enclave/private-registry-authentication/
