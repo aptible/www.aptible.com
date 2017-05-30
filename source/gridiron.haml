@@ -60,6 +60,30 @@ description: Aptible Gridiron helps engineering teams set up and run robust
     .grid-container.grid--single-center
       %h2.heading-1 Why Gridiron?
 
+    .carousel
+      .carousel__cards
+        .carousel__card
+          %figure
+            %img{ src: "/images/gridiron/award.svg" }
+            %figcaption
+              Answer straightforward questions about your tech stack
+        .carousel__card
+          %figure
+            %img{ src: "/images/gridiron/award.svg" }
+            %figcaption
+              Gridiron creates tailored Risk Assessment, Policies and
+              Procedures and Security and Compliance Training
+        .carousel__card
+          %figure
+            %img{ src: "/images/gridiron/award.svg" }
+            %figcaption
+              You've achieved security and compliance
+      .carousel__positions
+        .carousel__position-dot{ data: { state: 'current' } }
+        .carousel__position-dot
+        .carousel__position-dot
+
+
 .content
   = partial 'developers-first'
 
