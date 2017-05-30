@@ -23,4 +23,4 @@ restart`, etc.
 For usage examples, see [How do I automate database migrations for my
 app?][database-migrations].
 
-  [database-migrations]: ./how-to-automate-database-migrations
+  [database-migrations]: /support/topics/enclave/how-to-automate-database-migrations/

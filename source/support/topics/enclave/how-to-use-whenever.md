@@ -56,4 +56,4 @@ then your image is missing `cron.` To install `cron`, you'll need to add `cron`
 as an apt dependency in your`Dockerfile`: `RUN apt-get update && apt-get -y
 install cron`.
 
-  [about-services]: ./about-services
+  [about-services]: /support/topics/enclave/about-services/

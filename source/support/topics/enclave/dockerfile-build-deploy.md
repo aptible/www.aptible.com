@@ -108,7 +108,7 @@ aptible deploy --app "$APP_HANDLE" --docker-image ""
 ```
 
   [docker-get-started]: https://docs.docker.com/get-started/
-  [quickstart-guides]: ../../quickstart
+  [quickstart-guides]: /support/quickstart/
   [aptible-support]: http://contact.aptible.com
-  [direct-docker-image-deploy]: ./direct-docker-image-deploy
-  [private-registry-authentication]: ./private-registry-authentication
+  [direct-docker-image-deploy]: /support/topics/enclave/direct-docker-image-deploy/
+  [private-registry-authentication]: /support/topics/enclave/private-registry-authentication/

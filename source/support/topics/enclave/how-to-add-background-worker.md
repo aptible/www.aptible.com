@@ -6,4 +6,4 @@ following line:
 
     worker: bundle exec sidekiq
 
-  [about-services]: ./about-services
+  [about-services]: /support/topics/enclave/about-services/

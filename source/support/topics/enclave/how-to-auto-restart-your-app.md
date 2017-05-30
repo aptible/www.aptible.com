@@ -43,4 +43,4 @@ automatically restart an app after it crashes.
   web: forever app.js
   ```
 
-  [about-services]: ./about-services
+  [about-services]: /support/topics/enclave/about-services/
