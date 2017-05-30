@@ -17,6 +17,10 @@ Install necessary dependencies:
 
     bundle install
 
+Load some blog posts, the site won't work otherwise:
+
+    bundle exec middleman contentful
+
 Start the server. You can access it at http://localhost:4567/
 
     bundle exec middleman server
