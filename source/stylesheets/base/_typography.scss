@@ -149,8 +149,10 @@ hr {
 
 .summary--single-center {
   color: $light-blue-gray;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: $light;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
   &:last-of-type {
     margin-bottom: 50px;

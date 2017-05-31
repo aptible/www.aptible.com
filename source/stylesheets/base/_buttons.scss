@@ -65,6 +65,10 @@
   border-color: $white;
 }
 
+.btn--logo-grid {
+  margin-top: 40px;
+}
+
 .arrow-link--left, .arrow-link--right {
   color: $blue;
   display: inline-block;
@@ -90,7 +94,16 @@
     transition: transform 0.25s ease-in-out;
     transform: translate(-4px, 1px);
   }
+}
+
+.dbl-arrow-link--right {
+  &::after {
+    content: '»';
+    padding-left: 0;
+    font-size: 28px;
+    transform: translate(16px, -12px);
+  }
   &:hover::after, &:focus::after {
-    transform: translate(0px, 1px);
+    transform: translate(20px, -12px);
   }
 }

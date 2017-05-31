@@ -141,61 +141,8 @@ body.enclave header {
   }
 }
 
-.about-aptible-hero {
-  background-image: linear-gradient(-52deg, #7f16ab 0%, #6E1999 35%, #47206d 100%);
-  color: $white;
-}
-
-.about-aptible-hero__pattern {
-  background-image: url(/images/about-aptible-hero-bg.png);
-  background-size: 30%;
-  padding: 150px 0 100px 0;
-}
-
-.about-aptible-hero__item {
-  a.btn {
-    text-align: center;
-    width: 260px;
-  }
-  &:nth-child(2) {
-    @include grid-column(4);
-    @include grid-push(1);
-    margin-bottom: 40px;
-  }
-  &:first-of-type {
-    @include grid-column(12);
-    @include grid-push(1);
-  }
-  &:last-of-type {
-    @include grid-column(4);
-    @include grid-push(2);
-  }
-  @media screen and (max-width: $tablet-landscape) {
-    &:nth-child(2), &:first-of-type, &:last-of-type {
-      @include grid-column(12);
-      @include grid-push(0);
-    }
-  }
-}
-
 .actions {
   @media screen and (max-width: $tablet-landscape) {
     text-align: right;
   }
-}
-
-.about-aptible-hero__title,
-.about-aptible-hero__subtitle {
-  color: $white;
-  &::after { display: none; }
-}
-.about-aptible-hero__title {
-  font-size: 50px;
-}
-.about-aptible-hero__subtitle {
-  font-size: 26px;
-}
-.about-aptible-hero__item p {
-  font-size: 20px;
-  line-height: 1.2;
 }

@@ -1,11 +1,11 @@
 .carousel {
-  border: 2px solid yellow;
+  width: 400px;
 }
 
 .carousel__cards {
   position: relative;
   margin: 0 auto;
-  height: 350px;
+  height: 410px;
 }
 
 .carousel__card {
@@ -37,10 +37,10 @@
 
 .carousel__positions {
   align-items: center;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  transform: translateX(-40px);
 }
 
 .carousel__position-dot {
