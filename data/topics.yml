@@ -46,6 +46,8 @@
       url: "enclave/how-to-use-whenever"
     - title: "How do I access environment variables inside a Dockerfile?"
       url: "enclave/how-to-access-environment-variables-inside-dockerfile"
+    - title: "Synchronize deploys and config changes"
+      url: "enclave/synchronize-deploys-and-config-changes"
     - title: "What is the difference between internal and external endpoints?"
       url: "enclave/what-is-difference-between-internal-external-endpoints"
     - title: "How do I set up caching for Bundler?"
