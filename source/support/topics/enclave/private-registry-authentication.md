@@ -59,36 +59,16 @@ The first and recommended approach is to deploy in two steps: push your code to
 Aptible without deploying it, then deploy it while setting the new
 configuration.
 
-To do so, start by pushing your code to a new deploy branch on Aptible. You can
-call this branch anything, but we recommend giving it a random-ish name as in
-the example below:
+Review [Synchronize deploys and config changes][synchronize-config] for more
+information and usage examples on this approach.
 
-```
-BRANCH="deploy-$(date "+%s")"
-git push aptible "master:$BRANCH"
-```
+The alternative approach is to first update the variables using [aptible
+config:set][config-set], then deploy using `git push aptible master`.
 
-Since we're not pushing to `master` (instead, we're pushing to a branch called
-`deploy-...`), this will *not* trigger a deploy on Aptible. Instead, it'll make
-the code available for future deploys.
+However, this alternative approach will require restarting your app once to
+apply the configuration change before the deploy can start, so it'll be slower
+than the recommended approach.
 
-Once that's done, deploy this branch along with the new configuration
-variables, using the Aptible CLI:
-
-```
-aptible deploy \
-  --app "$APP_HANDLE" \
-  --git-commitish "$BRANCH" \
-  --private-registry-username "$USERNAME" \
-  --private-registry-password "$PASSWORD"
-```
-
-The other approach is to first update the variables using `config:set`, then
-deploy using `git push aptible master`.
-
-However, this will require restarting your app once to apply the configuration
-change before the deploy can start, so it'll be slower than the recommended
-approach above.
 
 ### Direct Docker Image deploy
 
@@ -103,6 +83,7 @@ aptible deploy \
   --private-registry-password "$PASSWORD"
 ```
 
-
   [dockerfile-build-deploy]: /support/topics/enclave/dockerfile-build-deploy/
   [direct-docker-image-deploy]: /support/topics/enclave/direct-docker-image-deploy/
+  [synchronize-config]: /support/topics/enclave/synchronize-deploys-and-config-changes
+  [config-set]: /support/topics/cli/how-to-set-environment-variables
