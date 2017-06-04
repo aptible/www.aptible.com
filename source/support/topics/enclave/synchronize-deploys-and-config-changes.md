@@ -61,7 +61,7 @@ If you are deploying from a Docker image, you should already be using `aptible
 deploy` to deploy your app (if not, [read the instructions
 here][direct-docker-image-deploy]).
 
-In this case, simply append whatever ed environment variables you need to the
+In this case, simply append whatever environment variables you need to the
 `aptible deploy` command:
 
 ```

@@ -42,7 +42,7 @@ Enclave will use your Docker Image's `CMD` to run app containers by default.
 You can however provide a Procfile to specify arbitrary commands to be used by
 Enclave instead.
 
-For more detail, see [About Services][about-services].
+For more detail, see [About services][about-services].
 
   [dockerfile-build-deploy]: /support/topics/enclave/dockerfile-build-deploy/
   [direct-docker-image-deploy]: /support/topics/enclave/direct-docker-image-deploy/

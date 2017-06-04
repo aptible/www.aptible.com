@@ -6,16 +6,16 @@ background job processor.
 
 Services run in separate containers, and can be scaled independently.
 
-## Defining Services
+## Defining services
 
 Services for an app must be defined in one of two ways:
 
 - If your app has a git repository and contains a file named `Procfile` in the
   root of the repository , the Procfile will be used to define services.
-- Otherwise, if your app has a `CMD`, the `CMD` will be used to define a single
+- Otherwise, if your app has a `CMD` in its Docker image (or Dockerfile), the `CMD` will be used to define a single
   service.
 
-I your app has no Procfile nor `CMD`, Enclave will not be able to deploy it.
+If your app has no Procfile nor `CMD`, Enclave will not be able to deploy it.
 
 ### Procfile syntax
 
@@ -52,7 +52,7 @@ For more information about the Procfile format, check out the [official
 reference](http://http://ddollar.github.io/foreman/#PROCFILE) or [this guide
 from Heroku](https://devcenter.heroku.com/articles/procfile).
 
-## Multiple Services vs. Multiple apps
+## Multiple services vs. multiple apps
 
 When you use multiple services, they will all share the following:
 

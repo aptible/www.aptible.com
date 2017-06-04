@@ -17,10 +17,10 @@ To summarize the GitHub example:
    log the output of all cron jobs.
 
 If your app doesn't currently have a Procfile, or if you'd like more detail
-about the Procfiles, see [About Services][about-services].
+about the Procfiles, see [About services][about-services].
 
 Another option for running scheduled tasks on Aptible is to use the Whenever
-gem. More on that approach [over here][whenever]
+gem. More on that approach [over here][whenever].
 
   [about-services]: /support/topics/enclave/about-services/
   [docker-cron-example]: https://github.com/aptible/docker-cron-example
