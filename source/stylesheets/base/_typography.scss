@@ -102,21 +102,24 @@ hr {
   font-size: 20px;
 
   h1 { @extend .heading-1; }
-  h2 { @extend .heading-2; }
-  h3 { @extend .heading-3; }
-  h4 { @extend .heading-4; }
-  h5 { @extend .heading-5; }
+  h2 { @extend .heading-3; }
+  h3 { @extend .heading-4; }
+  h4 { @extend .heading-5; }
+  h5 { @extend .heading-6; }
   h6 { @extend .heading-6; }
 
   h2 {
-    margin: 1.5em 0 1em;
-    &:first-of-type{
-      margin-top: 0;
-    }
+    margin: 0 0 1em 0;
+  }
+  p + h2 {
+    margin-top: 1.5em;
   }
   p {
     font-weight: $light;
     margin-bottom: 1em;
+    &:last-of-type {
+      margin-bottom: 1.5em;
+    }
   }
 
   strong {

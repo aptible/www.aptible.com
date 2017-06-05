@@ -1,3 +1,64 @@
+.hero-gradient--gridiron {
+  overflow: hidden;
+  min-height: 800px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+  .gridiron-hero, .home-hero__quotes {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+h1.home__heading__title--gridiron {
+  font-size: 75px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  @media screen and (max-width: $nav-break) {
+    font-size: 60px;
+    margin-top: 0;
+  }
+}
+
+.heading__summary--gridiron {
+  color: #d99efe;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 100px;
+}
+
+.gridiron-hero__screenshot {
+  position: absolute;
+  z-index: 0;
+  padding-top: 0;
+  width: 105%;
+  img {
+    margin-top: 40px;
+    display: inline-block;
+    max-width: 50%;
+    vertical-align: bottom;
+  }
+  @media screen and (max-width: 1200px) {
+    img {
+      max-width: 70%;
+      width: 200%;
+    }
+  }
+  @media screen and (max-width: $nav-break) {
+    img {
+      max-width: none;
+      width: 765px;
+    }
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    position: relative;
+    img {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}
+
 .gridiron__workforce-training {
   background: $lighter-blue url(/images/angle-cap-top.svg) no-repeat top left;
   background-size: cover;
@@ -10,7 +71,9 @@
 }
 
 .gridiron-hero__why {
-  padding: 100px 0 150px 0;
+  margin-bottom: 50px;
+  overflow: hidden;
+  padding: 60px 0;
   .heading--single-center {
     color: white;
     font-size: 50px;
@@ -20,11 +83,14 @@
     max-width: 900px;
     margin-bottom: 40px;
   }
+  @media screen and (max-width: $tablet-landscape) {
+    padding-bottom: 30px;
+  }
 }
 
 .why-gridiron {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   @media screen and (max-width: $tablet-landscape) {
     display: block;
     .why-gridiron__carousel {
@@ -36,8 +102,9 @@
   align-items: stretch;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
   max-width: 560px;
+  min-height: 450px;
+  margin-bottom: 20px;
   h3, p {
     color: white;
   }

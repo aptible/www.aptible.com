@@ -21,7 +21,9 @@
     %script{:src => "https://use.typekit.net/pqi8lpw.js"}
     :javascript
       // TypeKit
-      try { Typekit.load({ async: true }); } catch(e) {}
+      // Not doing async blocks, but avoids FOUT.
+      // With our CDN and caching this is a much better experience
+      try { Typekit.load({ async: false }); } catch(e) {}
 
       // No analytics locally
       if (window.location.hostname !== 'localhost') {

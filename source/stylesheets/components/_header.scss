@@ -2,7 +2,7 @@
   background-color: $dark-blue;
   color: $light-blue;
   margin-bottom: 50px;
-  padding-top: 34px;
+  padding-top: 18px;
 }
 
 .aptible-header--single-grid,
@@ -143,7 +143,7 @@
 .heading__summary {
   color: $sky-blue;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: $light;
   line-height: 1.2;
   margin-bottom: 0;
   &::after { display: none; }
