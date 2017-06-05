@@ -114,7 +114,7 @@
       url: "enclave/how-do-i-setup-an-apex-redirect-using-aws"
     - title: "How do I filter traffic to my app?"
       url: "enclave/how-do-i-filter-traffic-to-my-app"
-    - title: "About Services"
+    - title: "About services"
       url: "enclave/about-services"
     - title: "About .aptible.yml"
       url: "enclave/about-aptible-yml"

@@ -15,7 +15,7 @@ provide once to Aptible.
 
 The easiest approach when you need to provide credentials for a [Dockerfile
 deploy][dockerfile-build-deploy] is to set them using the CLI's `aptible
-config:set` before updating your `FROM` declaration to dependent on a private
+config:set` before updating your `FROM` declaration to depend on a private
 image:
 
 ```
@@ -44,7 +44,7 @@ aptible deploy \
 
 However, some registries only provide short-term credentials, notably AWS
 Elastic Container Registry (ECR). In this case, you'll likely need to update
-your registry credentials when deploying
+your registry credentials when deploying.
 
 
 ### Dockerfile deploy

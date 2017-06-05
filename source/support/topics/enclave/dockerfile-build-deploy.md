@@ -20,7 +20,7 @@ Here are a few resources to write your `Dockerfile`:
   your app framework + Dockerfile: this will usually yield useful results.
 - If you're stuck, reach out to [Aptible support][aptible-support]: we have
   accumulated substantial experience helping customers get started with a
-  `Dockerfile` and we'll happy to help you get yours off the ground.
+  `Dockerfile` and we're happy to help you get yours off the ground.
 
 Once you have your Dockerfile, commit it to your repository, and use `git push
 aptible master` to deploy to Enclave. Enclave will automatically build your

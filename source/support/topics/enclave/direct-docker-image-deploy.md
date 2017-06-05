@@ -1,6 +1,6 @@
 If you need absolute control over your Docker image's build, Enclave lets you
 deploy directly from a Docker image. To do so, you'll use the [Aptible
-toolbelt][aptible-toolbelt].
+Toolbelt][aptible-toolbelt].
 
 In the example below, `$DOCKER_IMAGE` is the name of the image you'd like to
 deploy, including its repository and tag. In other words, it should be the same
@@ -51,7 +51,7 @@ Authentication][private-registry-authentication].
 If you are currently [using a Dockerfile deploy][dockerfile-build-deploy] and
 would like to migrate to a Direct Docker Image deploy, just use `aptible
 deploy` as documented above. If your app repository contains a `Dockerfile`, it
-will ignored.
+will be ignored.
 
 However, note that the following files will **not** be ignored:
 
@@ -110,7 +110,7 @@ git push aptible master
 When you do this, Enclave will use your Docker Image, but with the services
 defined in the Procfile.
 
-For more details regarding Procfiles, see [About Services][about-services].
+For more details regarding Procfiles, see [About services][about-services].
 
 
 ### Using .aptible.yml
