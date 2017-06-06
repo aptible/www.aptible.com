@@ -1,17 +1,60 @@
-.gridiron__threat-model {
-  background: url(/images/gridiron-graph.svg) no-repeat center -100px;
-  background-size: 100% auto;
+.hero-gradient--gridiron {
+  overflow: hidden;
+  min-height: 800px;
+  padding-bottom: 0;
   position: relative;
-  min-height: 600px;
-  @media screen and (max-width: $tablet-landscape) {
-    background-image: none;
-    margin-bottom: 50px;
-    min-height: 0;
-    .grid-item {
-      padding: 0 20px;
+  z-index: 1;
+  .gridiron-hero, .home-hero__quotes {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+h1.home__heading__title--gridiron {
+  font-size: 75px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  @media screen and (max-width: $nav-break) {
+    font-size: 60px;
+    margin-top: 0;
+  }
+}
+
+.heading__summary--gridiron {
+  color: #d99efe;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 100px;
+}
+
+.gridiron-hero__screenshot {
+  position: absolute;
+  z-index: 0;
+  padding-top: 0;
+  width: 105%;
+  img {
+    margin-top: 40px;
+    display: inline-block;
+    max-width: 50%;
+    vertical-align: bottom;
+  }
+  @media screen and (max-width: 1200px) {
+    img {
+      max-width: 70%;
+      width: 200%;
     }
-    .angle-cap--bottom {
-      display: none;
+  }
+  @media screen and (max-width: $nav-break) {
+    img {
+      max-width: none;
+      width: 765px;
+    }
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    position: relative;
+    img {
+      max-width: none;
+      width: 100%;
     }
   }
 }
@@ -25,4 +68,60 @@
   @media screen and (max-width: $tablet-landscape) {
     padding: 100px 0;
   }
+}
+
+.gridiron-hero__why {
+  margin-bottom: 50px;
+  overflow: hidden;
+  padding: 60px 0;
+  .heading--single-center {
+    color: white;
+    font-size: 50px;
+  }
+  .summary--single-center {
+    color: white;
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: $tablet-landscape) {
+    padding-bottom: 30px;
+  }
+}
+
+.why-gridiron {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $tablet-landscape) {
+    display: block;
+    .why-gridiron__carousel {
+      margin: 0 auto;
+    }
+  }
+}
+.why-gridiron__copy {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+  min-height: 450px;
+  margin-bottom: 20px;
+  h3, p {
+    color: white;
+  }
+  h3 {
+    font-size: 19px;
+    font-weight: $regular;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: $light;
+    margin-bottom: 30px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+.why-gridiron--grow {
+  flex-grow: 1;
 }

@@ -35,7 +35,7 @@
   }
 
   &:hover, &:focus {
-    background-color: $purple;
+    background-color: $blue-prime;
     color: $white;
     outline: none;
   }
@@ -57,12 +57,16 @@
   transition-timing-function: $base-timing;
   &:focus, &:hover {
     background-color: transparent;
-    border-color: $purple;
+    border-color: $blue-prime;
   }
 }
 
 .btn--outline--white {
   border-color: $white;
+}
+
+.btn--logo-grid {
+  margin-top: 40px;
 }
 
 .arrow-link--left, .arrow-link--right {
@@ -90,7 +94,16 @@
     transition: transform 0.25s ease-in-out;
     transform: translate(-4px, 1px);
   }
+}
+
+.dbl-arrow-link--right {
+  &::after {
+    content: '»';
+    padding-left: 0;
+    font-size: 28px;
+    transform: translate(16px, -12px);
+  }
   &:hover::after, &:focus::after {
-    transform: translate(0px, 1px);
+    transform: translate(20px, -12px);
   }
 }

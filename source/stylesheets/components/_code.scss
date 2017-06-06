@@ -32,7 +32,7 @@ pre {
 
 .highlight--stacked,
 .markdown-content .highlight {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 
@@ -53,7 +53,18 @@ pre {
   line-height: 1.25;
   margin: 0;
   margin-bottom: -20px;
+}
 
+.faux-window {
+  background-image: none;
+  background-color: $dusk;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+
+.faux-window, .rouge-table {
   // Faux window bar for code blocks
   &::before {
     background-image: image-url('icons/code-pseudo-actions.svg');
@@ -66,6 +77,7 @@ pre {
     width: 100px;
   }
 }
+
 .rouge-table--full-width {
   overflow: auto;
   .rouge-code--terminal {

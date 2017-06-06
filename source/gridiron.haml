@@ -1,106 +1,149 @@
 ---
 # These variables are used in the page title and meta tags
-title: Gridiron - Manage Security & Compliance
+title: "Gridiron: HIPAA Compliance and Security Management"
 description: Aptible Gridiron helps engineering teams set up and run robust
              security and compliance programs.
 ---
+
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled.aptible-header--double-grid
+  %header.aptible-header.hero-gradient--gridiron
     = partial 'partials/main-nav'
 
-    .grid-container.grid--2up.aptible-header__bottom-grid__riser
-      .grid-item.product-page__hero-header
-        %h2.heading__subtitle Manage Security & Compliance
-        %h1.heading__title Gridiron
-        %p.heading__summary--light-blue
-          Aptible Gridiron helps engineering teams set up and run robust
-          security and compliance programs.
+    .gridiron-hero.grid-container.aptible-header__bottom
+      .home-hero.grid-collapse
+        .home-hero__copy
+          %h1.home__heading__title.home__heading__title--gridiron
+            Gridiron
+          %p.home__heading__summary.heading__summary--gridiron.heaing__summary.heading__summary--sibling
+            Complete security management for developers. Powerful tools for
+            engineering teams to self-audit, prepare for certifications, and
+            build trust with customers and partners.
 
-        %p.heading__summary--light-blue
-          %a.btn{ href: open_account_href } Open a Development Account
-          %a.btn.btn--outline{ href: '/pricing/' } See Pricing
+          = partial 'partials/demo-cta', locals: {       |
+                cta_label: 'Request A Demo',             |
+                cta_placeholder: 'Enter your work email' |
+              }                                          |
+          %ul.signup-cta__incentives
+            %li.signup-cta__incentive Start your Risk Analysis
+            %li.signup-cta__incentive Prepare to pass audits and security reviews
 
-      .grid-item.product-page__gridiron
-        = partial '/images/gridiron.svg'
+        .home-hero__quotes
+          .home__customer-quotes
+            .card.card--dark
+              %img.customer-quote__logo--adjacent{ src: '/images/customers/mdsave.png' }
+              .customer-quote__wrapper
+                .customer-quote
+                  “Aptible's unique combination of infrastructure and compliance
+                  management tools allow us to easily adopt and document security
+                  best-practices.”
+                  %span.customer-quote__author Ryan Aipperspach - CTO
+
+          .gridiron-hero__screenshot.faux-window
+            %img.gridiron-screenshot{                                        |
+                src: '/images/gridiron/gridiron-risk-assessment.png',        |
+                data: { src: '/images/gridiron/gridiron-hipaa-control.png' } |
+              }                                                              |
 
 .content
   .grid-container.grid--single-center
-    .grid-item
-      %h2.heading--single-center
-        &ldquo;We take security seriously&rdquo; is bullsh*t.
-      %p.summary--single-center
-        Easy to say, hard to do. Good security takes attention to detail, and running a great security management program is difficult: complicated, time-consuming, repetitive, and boring – even more so when you add HIPAA, SOC, ISO, and other compliance requirements.
-      %p.summary--single-center
-        Small software engineering teams struggle to understand security requirements and translate rules into action. Growing teams struggle to track and consistently execute security activities.
-      %p.summary--adjacent.summary--single-center
-        Until now.
-
-  -# = partial 'images/gridiron-graph.svg'
-.content.content--capped.gridiron__threat-model
-  .grid-container.grid--2up
-    .grid-item
-      -# .heading__subtitle Model and Manage Threats
-      %h2.heading__title.heading__title--dark Meet Gridiron
-      %p.heading__summary.heading__summary--light-blue-gray
-        Aptible Gridiron is a modern security management platform for cloud-based software engineering teams.
-  %img.angle-cap--bottom{ src: '/images/angle-cap-bottom.svg' }
-
-.content.content--capped.gridiron__policies-procedures
-  .grid-container.grid--2up-flex
-    .grid-item
-      -# .heading__subtitle Powerful Tools
-      %h2.heading__title.heading__title--dark Solve for Compliance
-      %p.heading__summary.heading__summary--light-blue-gray
-        Gridiron makes it easy to:
-        %ul
-          %li Analyze and quantify risk
-          %li Select and implement security controls
-          %li Generate sane, relevant security and compliance policies
-          %li Train your workforce in security and secure coding practices
-          %li Respond to security and privacy incidents
-          %li Manage risk from your vendors and supply chain
-          %li Conduct internal audits and compliance status checks
-          %li Prepare for external audits and certifications
-
-    .grid-item.grid-item--image
-      = partial 'images/gridiron-features/policies-procedures.svg'
-
-.content.content--capped.gridiron__workforce-training
-  .grid-container.grid--2up-flex
-    .grid-item
-      -# .heading__subtitle Easy Management
-      %h2.heading__title.heading__title--dark You look like an all-star
-      %p.heading__summary.heading__summary--light-blue-gray
-        %ul
-          %li Get your team HIPAA-compliant or ready for SOC, ISO, PCI certification in days, not months
-          %li Get your product to market with live data fast
-          %li Assure your customers their data is safe with you
-          %li Unlock enterprise markets and big sales contracts
-
-    .grid-item.grid-item--image
-      = partial 'images/gridiron-features/workforce-training.svg'
-  %img.angle-cap--bottom{ src: '/images/angle-cap-bottom.svg' }
-
-.content.content--capped
-  .grid-container.grid--single-center
     .grid-item.grid-item--adjacent
-      %h2.heading--single-center
-        Our customers work with the best health systems in the world.
       %p.summary--single-center
-        Major health systems trust Aptible to secure data and cloud
-        architecture for their technology partners.
-    .grid-item.healthcare-systems__logos
-      .logo-grid.logo-grid--3up
-        .logo-grid__item
-          = partial '/images/healthcare-systems/va.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/uhc.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/stanfordmed.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/kaiserpermanente.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/johnshopkinsmed.svg'
-        .logo-grid__item
-          = partial '/images/healthcare-systems/mayoclinic.svg'
-= partial 'partials/resources-footer'
+        Aptible helps the developers at companies like these to build strong
+        security programs and meet the requirements for HIPAA, SOC 2,
+        ISO 270001, and more
+  .grid-container.grid--single-center
+    .grid-item
+      = partial 'customer-logo-grid'
+      %a.btn.btn--logo-grid{ href: '/customers/' } Learn how these companies use Aptible
+
+.content.gridiron-hero__why.hero-gradient--angled.aptible-header--bottom-grid
+  .grid-container.grid--single-center
+    -# TODO: Use design and copy is coming, discuss images
+    -# Try Invision for copy discussions
+    .grid-item.grid-item--adjacent
+      %h2.heading--single-center Why Gridiron?
+      %p.summary--single-center
+        Gridiron provides you with the developer-focused tools, training, and
+        expert guidance your company needs to comply with regulatory
+        requirements and pass security reviews.
+
+  .grid-container--flex.why-gridiron
+    .why-gridiron__copy
+      %h3 Understand Risks
+      %p
+        Gridiron develops comprehensive risk and threat models through a
+        comprehensive understanding of your business's tech stack and operations.
+
+      %h3 Develop Policies and Procedures
+      %p
+        Based on a thorough understanding of your business, Gridiron selects
+        reasonable and appropriate administrative controls that meet legal,
+        regulatory, and security requirements, and composes the documentation
+        that you can provide to customers and auditors.
+
+      %h3 Automate Training
+      %p.why-gridiron--grow
+        Based on your risk and threat models, as well as your policies and
+        procedures, Gridiron creates bespoke training and administers it to
+        workforce members, tailored to specific roles.
+
+      -# %p
+      -#   %a.btn{ href: '/aws-vs-aptible/' } Compare to DIY Compliance/Security
+
+    .why-gridiron__carousel.carousel
+      .carousel__cards
+        .carousel__card
+          %figure
+            %img{ src: "/images/gridiron/compliance-achieved.svg" }
+            %figcaption
+              After you’ve achieved security and compliance, Gridiron updates
+              in realtime as your organization and tech stack changes and grows.
+        .carousel__card
+          %figure
+            %img{ src: "/images/gridiron/living-docs.svg" }
+            %figcaption
+              Gridiron creates and distributes tailored Risk Assessment,
+              Policies, Procedures and Security Training to your workforce.
+        .carousel__card
+          %figure
+            %img{ src: "/images/gridiron/security-controls.svg" }
+            %figcaption
+              Answer straightforward questions about your organization
+              and tech stack.
+      .carousel__positions
+        .carousel__position-dot.carousel__position-dot--current
+        .carousel__position-dot
+        .carousel__position-dot
+
+
+= partial 'partials/about-aptible'
+
+.content
+  .home-quotes
+    .home-quote
+      .home-quote__bubble
+        .home-quote__body
+          “When evaluating a vendor, our priorities were trust, transparency,
+          and reliability. Aptible hits them all, allowing us to focus on what
+          we do without worrying about all the layers of legal and technical ops
+          hurdles.”
+        .home-quote__author
+          Dan Levenson - CTO
+      .home-quote__logo
+        = partial 'images/customers/healthify.svg'
+
+-# TODO: Customer quotes - customer model in Contentful
+
+.content.hero-gradient--angled.aptible-header--bottom-grid
+  .footer__signup.grid-container.grid--single-center
+    .footer__signup__hgroup
+      %h2.footer__signup-title
+        Get your team HIPAA-compliant in days, not months
+    .footer__signup-form
+      = partial 'partials/demo-cta', locals: {        |
+            cta_label: 'Request A Demo',              |
+            cta_placeholder: 'Enter your work email'  |
+          }                                           |
+      %ul.signup-cta__incentives
+        %li.signup-cta__incentive Start your Risk Analysis
+        %li.signup-cta__incentive Prepare to pass audits and security reviews

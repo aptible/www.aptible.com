@@ -25,7 +25,18 @@ body {
 // Grid Container
 //
 .grid-container {
+  // @include grid-visual;
   @include grid-container;
+  @extend .grid-container--flex;
+  @media screen and (max-width: 1200px) {
+    padding: 0 20px;
+  }
+  > .grid-container {
+    @include grid-collapse;
+  }
+}
+
+.grid-container--flex {
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
@@ -332,11 +343,9 @@ body {
 
 .logo-grid--4up {
   .logo-grid__item {
+    border-right: 1px solid $light-blue;
     width: 25%;
-    &:nth-child(2n+1) {
-      border-right: 1px solid $light-blue;
-    }
-    &:nth-child(4n+1) {
+    &:nth-child(4n) {
       border-right: none;
     }
     &:nth-child(3), &:nth-child(4) {
@@ -344,6 +353,12 @@ body {
     }
     @media screen and (max-width: $tablet-portrait) {
       width: 50%;
+      &:nth-child(2n) {
+        border-right: none;
+      }
+      &:nth-child(3), &:nth-child(4) {
+        border-top: 1px solid $light-blue;
+      }
     }
   }
 }

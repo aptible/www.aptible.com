@@ -2,7 +2,7 @@
   background-color: $dark-blue;
   color: $light-blue;
   margin-bottom: 50px;
-  padding-top: 34px;
+  padding-top: 18px;
 }
 
 .aptible-header--single-grid,
@@ -95,11 +95,7 @@
   font-size: 50px;
   font-weight: $semibold;
   margin-bottom: 40px;
-  &::after {
-    background-color: $dark-gray;
-    margin-top: 30px;
-    width: 30px;
-  }
+  @extend .with-hr
 }
 
 .heading__title--centered {
@@ -147,7 +143,7 @@
 .heading__summary {
   color: $sky-blue;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: $light;
   line-height: 1.2;
   margin-bottom: 0;
   &::after { display: none; }
