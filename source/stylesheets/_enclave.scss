@@ -133,11 +133,11 @@ body.enclave header {
   }
 }
 
-.developers-first--over-bottom {
+.developers-first--no-overlap {
   .guides-intro {
     margin-bottom: 50px;
-    margin-top: -50px;
-    transform: translateY(100px);
+    margin-top: 50px;
+    transform: translateY(0);
   }
 }
 

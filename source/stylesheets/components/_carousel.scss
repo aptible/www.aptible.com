@@ -31,7 +31,7 @@
   text-align: center;
   height: 455px;
   opacity: 1;
-  padding: 20px;
+  padding: 40px 50px;
   position: absolute;
   width: 375px;
   transform-origin: 175% 50%;
@@ -39,21 +39,20 @@
   transition-duration: $base-duration;
   transition-timing-function: $base-timing;
   figure {
+    color: $blue-steel;
     display: flex;
+    font-size: 20px;
+    font-weight: $regular;
     flex-direction: column;
     height: 100%;
+    line-height: 1.2;
     justify-content: space-between;
+    justify-content: space-around;
   }
   @media screen and (max-width: 500px) {
     width: calc(100% - 40px);
     transform-origin: 50% 50%;
   }
-}
-.c2 {
-  transform: rotate(120deg);
-}
-.c3 {
-  transform: rotate(240deg);
 }
 .carousel__card:nth-of-type(2) {
   transform: scale(.85);

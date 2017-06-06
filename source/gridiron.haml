@@ -1,6 +1,6 @@
 ---
 # These variables are used in the page title and meta tags
-title: "Gridiron: HIPAA Compliance and Security Management | Aptible"
+title: "Gridiron: HIPAA Compliance and Security Management"
 description: Aptible Gridiron helps engineering teams set up and run robust
              security and compliance programs.
 ---
@@ -9,7 +9,7 @@ description: Aptible Gridiron helps engineering teams set up and run robust
   %header.aptible-header.hero-gradient--gridiron
     = partial 'partials/main-nav'
 
-    .gridiron-hero.grid-container.grid--2up.aptible-header__bottom
+    .gridiron-hero.grid-container.aptible-header__bottom
       .home-hero.grid-collapse
         .home-hero__copy
           %h1.home__heading__title.home__heading__title--gridiron
@@ -19,15 +19,13 @@ description: Aptible Gridiron helps engineering teams set up and run robust
             engineering teams to self-audit, prepare for certifications, and
             build trust with customers and partners.
 
-          = partial 'partials/signup-cta', locals: {     |
-                cta_label: 'Secure Your Org Now',        |
+          = partial 'partials/demo-cta', locals: {       |
+                cta_label: 'Request A Demo',             |
                 cta_placeholder: 'Enter your work email' |
               }                                          |
           %ul.signup-cta__incentives
             %li.signup-cta__incentive Start your Risk Analysis
             %li.signup-cta__incentive Prepare to pass audits and security reviews
-            %li.signup-cta__incentive Free to get started
-            %li.signup-cta__incentive or <a class="" href="mailto:sales@aptible.com">Request a Demo</a>
 
         .home-hero__quotes
           .home__customer-quotes
@@ -41,7 +39,10 @@ description: Aptible Gridiron helps engineering teams set up and run robust
                   %span.customer-quote__author Ryan Aipperspach - CTO
 
           .gridiron-hero__screenshot.faux-window
-            %img{ src: '/images/gridiron/screenshot.png' }
+            %img.gridiron-screenshot{                                        |
+                src: '/images/gridiron/gridiron-risk-assessment.png',        |
+                data: { src: '/images/gridiron/gridiron-hipaa-control.png' } |
+              }                                                              |
 
 .content
   .grid-container.grid--single-center
@@ -93,20 +94,22 @@ description: Aptible Gridiron helps engineering teams set up and run robust
       .carousel__cards
         .carousel__card
           %figure
-            %img.c3{ src: "/images/gridiron/award.svg" }
+            %img{ src: "/images/gridiron/compliance-achieved.svg" }
             %figcaption
-              Answer straightforward questions about your tech stack
+              After you’ve achieved security and compliance, Gridiron updates
+              in realtime as your organization and tech stack changes and grows.
         .carousel__card
           %figure
-            %img.c2{ src: "/images/gridiron/award.svg" }
+            %img{ src: "/images/gridiron/living-docs.svg" }
             %figcaption
-              Gridiron creates tailored Risk Assessment, Policies and
-              Procedures and Security and Compliance Training
+              Gridiron creates and distributes tailored Risk Assessment,
+              Policies, Procedures and Security Training to your workforce.
         .carousel__card
           %figure
-            %img{ src: "/images/gridiron/award.svg" }
+            %img{ src: "/images/gridiron/security-controls.svg" }
             %figcaption
-              You've achieved security and compliance
+              Answer straightforward questions about your organization
+              and tech stack.
       .carousel__positions
         .carousel__position-dot.carousel__position-dot--current
         .carousel__position-dot
@@ -137,11 +140,10 @@ description: Aptible Gridiron helps engineering teams set up and run robust
       %h2.footer__signup-title
         Get your team HIPAA-compliant in days, not months
     .footer__signup-form
-      = partial 'partials/signup-cta', locals: {      |
-            cta_label: 'Get Secure & Compliant Now',  |
+      = partial 'partials/demo-cta', locals: {        |
+            cta_label: 'Request A Demo',              |
             cta_placeholder: 'Enter your work email'  |
           }                                           |
       %ul.signup-cta__incentives
         %li.signup-cta__incentive Start your Risk Analysis
         %li.signup-cta__incentive Prepare to pass audits and security reviews
-        %li.signup-cta__incentive Free to get started

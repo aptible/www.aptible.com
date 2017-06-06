@@ -35,7 +35,7 @@
   }
 
   &:hover, &:focus {
-    background-color: $purple;
+    background-color: $blue-prime;
     color: $white;
     outline: none;
   }
@@ -57,7 +57,7 @@
   transition-timing-function: $base-timing;
   &:focus, &:hover {
     background-color: transparent;
-    border-color: $purple;
+    border-color: $blue-prime;
   }
 }
 

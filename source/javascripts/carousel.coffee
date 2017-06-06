@@ -1,5 +1,9 @@
 $ ->
   $carousel = $('.carousel')
+
+  # page has carousel?
+  return if $carousel.length is 0
+
   $dots = $carousel.find('.carousel__position-dot')
   $cards = $carousel.find('.carousel__cards')
   autoPlayDuration = 5000
