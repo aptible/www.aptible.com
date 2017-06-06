@@ -16,3 +16,9 @@ To source your app's current configuration for a command — say, `bundle exec r
 
 RUN set -a && . /app/.aptible.env && bundle exec rake assets:precompile
 ```
+
+Note: **do not use the `.aptible.env` file outside of Dockerfile
+instructions**. Indeed, this file is only injected when your image is built, so
+changes to your configuration will not be reflected in the `.aptible.env` file
+unless you deploy again or rebuild. To access configuration variables in a
+container, fetch them from the environment directly.
