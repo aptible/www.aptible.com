@@ -22,10 +22,8 @@ module AptibleHelpers
   end
 
   def page_description
-    description = current_page.data.description || @description ||
-                  current_page.data.header_subtitle ||
-                  current_page.data.excerpt || ''
-    CGI.escapeHTML(description)
+    current_page.data.description || @description ||
+      current_page.data.header_subtitle || current_page.data.excerpt || ''
   end
 
   def page_image
