@@ -28,25 +28,22 @@ it to crash, then redeploy.
 
 ## The port is incorrect
 
-Enclave automatically picks a port to try and connect to your app based on the
-ports exposed by your container.  The port Enclave picks is the lowest port
-exposed by your image (via an `EXPOSE` directive in your `Dockerfile`), using
-lexicographical ordering.
+There are two possible scenarios here:
 
-For example, if you expose ports `123` and `80`, then `123` will be picked  (if
-you're unsure which port was picked, review your deployment logs: that port
-will be reported).
+- Your image does not expose the port your app is listening on.
+- Your image exposes multiple ports, but your Endpoint and your app are using
+  different ports.
 
-There are two cases where the port Enclave picks may not be the port your app
-is listening on, which would cause the health check to fail:
+In either case, to solve this problem, you should make sure that:
 
-1. Your Docker image exposes multiple ports, but the one Enclave picks is not
-   the one your app is listening on. In this case, you need to update your
-   `EXPOSE` directives or change the port your app is listening to ensure your
-   app and Enclave are using the same port.
-1. Your Docker image does not expose the port your app is listening on at all,
-   so Enclave cannot find it. In this case, you need to add an `EXPOSE`
-   directive to your `Dockerfile` for the port your app is listening on.
+- The port your app is listening on is exposed by your image. For example, if
+  your app listens on port `8000`, you `Dockerfile` *must* include the following
+  directive: `EXPOSE 8000`.
+- Your Endpoint is using the same port as your app. By default, Enclave
+  Endpoints automatically select the lexicographically lowest port exposed by
+  your image (e.g. if your image exposes port `443` and `80`, then the default
+  is `443`), but you can select the port Enclave should use when creating the
+  Endpoint, and modify it at any time.
 
 
 ## The app is unreachable
