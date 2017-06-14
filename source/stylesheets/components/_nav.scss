@@ -178,8 +178,7 @@
   }
 }
 
-.aptible-header--single-grid,
-.aptible-header--double-grid {
+.aptible-header--single-grid {
   @media screen and (max-width: $nav-break) {
     .nav-list--right {
       // Absolute childrens' top: 0 is the nearest relative parent

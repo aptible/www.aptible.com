@@ -1,11 +1,4 @@
-require 'redcarpet'
-require 'rouge'
-require 'rouge/plugins/redcarpet'
 module BlogHelpers
-  class HTML < Redcarpet::Render::HTML
-    include Rouge::Plugins::Redcarpet
-  end
-
   def blog_post_author_href(post)
     "/blog/authors/#{post.data.author_id}"
   end
@@ -16,10 +9,7 @@ module BlogHelpers
     else
       body = post.body
     end
-    if body.length > 500
-      # body = body.sli
-    end
-    summary = body.slice(0..500) + "&hellip;"
+    summary = body #.slice(0..500) + "&hellip;"
     Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(config[:markdown])).render(summary)
   end
 
@@ -37,7 +27,7 @@ module BlogHelpers
       strikethrough: true,
       with_toc_data: true
     }
-    renderer = HTML.new(render_options)
+    renderer = Redcarpet::Render::HTML.new(render_options)
     Redcarpet::Markdown.new(renderer, extensions).render(post.body).html_safe
   end
 
