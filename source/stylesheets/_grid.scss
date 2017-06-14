@@ -255,15 +255,11 @@ body {
 .grid--5up {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  &::after { display: none; }
 
   .grid-item {
-    width: ($max-viewport / 5) - $grid-gutter;
-    margin-right: $grid-gutter;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
+    width: ($max-viewport / 5) - ($grid-gutter / 2);
   }
 }
 
@@ -343,6 +339,7 @@ body {
 
 .logo-grid--4up {
   .logo-grid__item {
+    border-left: none;
     border-right: 1px solid $light-blue;
     width: 25%;
     &:nth-child(4n) {

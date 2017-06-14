@@ -27,6 +27,11 @@
     padding: 0 $grid-gutter;
     width: auto;
   }
+  @media screen and (max-width: $tablet-portrait) {
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+  }
 }
 
 .about-aptible-hero__title {

@@ -24,9 +24,9 @@ Capitalized words and phrases have the meaning specified in the Terms.
 
 **"Breach"** has the meaning specified in 45 CFR § 164.402.
 
-**"Covered Breach"** means, except for Excluded Breaches, a Breach of Unsecured Protected Health Information from your Aptible Containerized Services that results directly from a failure by Aptible to properly configure or maintain the components of the Aptible Services under Aptible’s exclusive control.
+**"Covered Breach"** means, except for Excluded Breaches, a Breach of Unsecured Protected Health Information from your Aptible Containerized Services that results directly from a failure by Aptible to properly configure or maintain the components of the Aptible Services under Aptible's exclusive control.
 
-**"Covered Expenses"** means (a) all damages, costs, and attorneys’ fees finally awarded against you in any Covered Claim; and (b) all out-of-pocket costs (including reasonable attorneys’ fees) that you reasonably incurred in connection with the defense of a Covered Claim (other than attorneys’ fees and costs incurred without Aptible’s consent after Aptible has accepted defense of the Covered Claim).
+**"Covered Expenses"** means (a) all damages, costs, and attorneys’ fees finally awarded against you in any Covered Claim; and (b) all out-of-pocket costs (including reasonable attorneys’ fees) that you reasonably incurred in connection with the defense of a Covered Claim (other than attorneys’ fees and costs incurred without Aptible's consent after Aptible has accepted defense of the Covered Claim).
 
 **"Excluded Breach"** means any Breach of PHI that in any way results from: (a) a failure to properly configure your Aptible Containerized Services to protect PHI; (b) a failure to properly configure or enforce user access policies and permissions in your Aptible Containerized Services or Aptible account to protect PHI; (c&#41; any other vulnerability introduced by your Aptible Containerized Service itself (and not the infrastructure or Aptible platform on which it is hosted); or (d) your breach of the Aptible Terms of Service, your BAA, or this BIA.
 

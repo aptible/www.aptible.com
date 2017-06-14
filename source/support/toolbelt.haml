@@ -10,7 +10,7 @@ layout: layout
   = partial 'partials/headers/support-index'
 
 .content
-  .grid-container.grid--5up.toolbelt-platforms
+  .grid-container.grid-container--flex.toolbelt-platforms.grid--5up
     %a.active.grid-item.card.toolbelt-platform{ href: '#macos', class: 'macos' }
       .card__header.toolbelt-platform--logo
         = partial "images/icons/osx.svg"
@@ -61,7 +61,7 @@ layout: layout
   .grid-container.grid--single-center.download-panels
     -# OSX Panel
     .grid-item.download-panel.split-panel.active#macos
-      %h3.no-hr Download Aptible Toolbelt for macOS
+      %h3 Download Aptible Toolbelt for macOS
       %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.osx }
         = partial '/images/icons/icon-download.svg'
         Download #{data.toolbelt.version} for macOS
@@ -155,7 +155,7 @@ layout: layout
 
     -# Windows Panel
     .grid-item.download-panel.split-panel#windows
-      %h3.no-hr Download Aptible Toolbelt for Windows
+      %h3 Download Aptible Toolbelt for Windows
       %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.windows }
         = partial '/images/icons/icon-download.svg'
         Download #{data.toolbelt.version} for Windows

@@ -3,6 +3,39 @@ module BlogHelpers
     "/blog/authors/#{post.data.author_id}"
   end
 
+  def blog_summary(post)
+    body = if post.source_file
+             File.open(post.source_file, 'r').read.split('---').last
+           else
+             post.body
+           end
+    render_markdown(body)
+  end
+
+  # TODO: Figure out Rouge syntax fenced code blocks
+  def render_markdown(markdown)
+    render_options = {
+      filter_html: true,
+      hard_wrap: true,
+      link_attributes: { rel: 'nofollow' },
+      prettify: true
+    }
+    extensions = {
+      smarypants: true,
+      fenced_code_blocks: true,
+      trables: true,
+      strikethrough: true,
+      with_toc_data: true
+    }
+    renderer = Redcarpet::Render::HTML.new(render_options)
+    Redcarpet::Markdown.new(renderer, extensions).render(markdown).html_safe
+  end
+
+  def author_gravatar(post)
+    hash = Digest::MD5.hexdigest(post.data.author_email)
+    "https://www.gravatar.com/avatar/#{hash}"
+  end
+
   def blog_post_href(post)
     # Contentful posts are a Thor Hash, others are Middleman Sitemap Resources
     return "/blog/#{post.slug}/" if post.is_a?(Hash)

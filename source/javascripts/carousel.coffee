@@ -16,7 +16,7 @@ $ ->
     $clone = $last.clone()
 
     $last.addClass('carousel__card--swap')
-    setTimeout (-> $last.remove()), 350
+    setTimeout (-> $last.remove()), 770
     $current = $carousel.find('.carousel__position-dot--current')
 
     $next = $current.next()

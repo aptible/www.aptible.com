@@ -6,25 +6,18 @@ layout: blog_posts.haml
 ---
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
-    = partial 'partials/main-nav', locals: {   |
-        section_title: 'Blog',                 |
-        section_url: '/blog'                   |
-      }                                        |
+    = partial 'partials/main-nav'
 
-    .grid-container
-      .blog-post__heading
-        .blog-posts__post
-          %a.blog-posts__link{ href: blog_post_href(latest_blog_post) }
-            - latest = latest_blog_post.data
-            %h2.heading__subtitle= "#{latest.author_name} - #{post_date(latest.posted)}"
-            %h1.heading__title= latest.title
-            .heading__summary= latest.excerpt
+= partial 'partials/headers/blog-header'
 
 - posts = posts || []
 - posts.each do |post|
   .blog-posts__post
-    %a.blog-posts__link{ href: blog_post_href(post) }
-      = partial 'partials/blog-list-item', locals: { post: post }
+    %img.blog-posts__post-avatar{ src: "#{author_gravatar(post)}?s=128" }
+    = partial 'partials/blog-list-item', locals: { post: post }
+    %a.arrow-link--right.dbl-arrow-link--right{ href: blog_post_href(post) } Read more
+
+= partial 'partials/newsletter-signup--blog'
 
 - if posts.any?
   = partial 'partials/page-links', locals: {  |

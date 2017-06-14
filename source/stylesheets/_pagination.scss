@@ -2,72 +2,50 @@
 // Pagination Links
 //
 .nav--pagination {
-  float: right;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
+  max-width: 850px;
   @media screen and (max-width: $tablet-portrait) {
     .page-link--prev, .page-link--next {
       display: none;
     }
   }
+  a.page-link--prev, a.page-link--next {
+    color: $blue;
+  }
 }
 .page-links {
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .page-link {
+  border-radius: 14px;
+  color: $light-gray;
   display: inline-block;
-  font-weight: $light;
-  line-height: 1.5;
+  font-size: 12px;
+  height: 25px;
+  line-height: 2.1;
   margin: 0 10px;
-  padding: 0 10px;
+  text-align: center;
+  width: 25px;
   &:focus {
     outline: none;
   }
 }
-.page-link--prev::before,
-.page-link--next::after {
-  border-color: $blue;
-  border-radius: 2px;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  content: '';
-  display: inline-block;
-  height: 8px;
-  position: relative;
-  top: -1px;
-  transform: rotate(135deg);
-  transition: left $base-duration $base-timing;
-  width: 8px;
-}
-.page-link--prev {
-  &::before {
-    left: -5px;
-  }
-  &:focus::before, &:hover::before {
-    left: -10px;
-  }
-}
-.page-link--next {
-  &::after {
-    transition: right $base-duration $base-timing;
-    right: -5px;
-    transform: rotate(-45deg);
-  }
-  &:focus::after, &:hover::after {
-    right: -10px;
-  }
-}
 .page-link--active {
-  color: $blue;
-  font-weight: $semibold;
+  background-color: $blue;
+  color: white;
+  font-weight: $regular;
 }
 .page-link--page {
-  border: 2px solid transparent;
-  border-radius: 2px;
-  transition: border $base-duration $base-timing;
+  transition: background $base-duration $base-timing;
   &:hover, &:focus {
-    border-color: $light-blue;
+    background-color: $light-blue;
   }
 }
 .page-link--invisible {
   visibility: hidden;
+}
+.page-link--prev, .page-link--next {
+  font-size: 12px;
+  font-weight: $semibold;
 }

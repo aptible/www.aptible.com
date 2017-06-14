@@ -27,7 +27,7 @@ h6 {
 }
 .heading-2 {
   font-size: 50px;
-  font-weight: semibold;
+  font-weight: $semibold;
 }
 .heading-3 {
   font-size: 26px;
@@ -49,10 +49,6 @@ h6 {
 .subdued {
   color: $light-blue-gray;
   font-size: 12px;
-}
-
-.no-hr::after {
-  display: none;
 }
 
 .with-hr::after {
@@ -83,12 +79,14 @@ a {
 .document-title {
   font-size: 50px;
   margin-bottom: .5em;
+  &.with-hr::after {
+    background-color: $light-blue;
+  }
 }
 
 .document-summary {
   font-size: 30px;
   font-weight: $light;
-  &::after { display: none; }
 }
 
 hr {
@@ -99,26 +97,26 @@ hr {
 
 // Specifics for generated markup
 .markdown-content {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: $light;
 
-  h1 { @extend .heading-2; }
-  h2 { @extend .heading-3; }
-  h3 { @extend .heading-4; }
-  h4 { @extend .heading-5; }
-  h5 { @extend .heading-6; }
-  h6 { @extend .heading-6; }
+  h1, h2, h3, h4, h5, h6 {
+    @extend .heading-5;
+    line-height: 2;
+    margin: 0 0 10px 0;
+  }
 
-  h2 {
-    margin: 0 0 1em 0;
-  }
-  p + h2 {
-    margin-top: 1.5em;
-  }
   p {
     font-weight: $light;
     margin-bottom: 1em;
     &:last-of-type {
-      margin-bottom: 1.5em;
+      margin-bottom: 0;
+    }
+    & + h1, & + h2, & + h3, & + h4, & + h5, & + h6 {
+      margin-top: 50px;
+    }
+    img {
+      margin: 50px 0 34px 0;
     }
   }
 
@@ -145,9 +143,6 @@ hr {
   margin-left: auto;
   margin-right: auto;
   max-width: 85%;
-  &::after {
-    display: none;
-  }
 }
 
 .summary--single-center {
@@ -173,7 +168,6 @@ hr {
   font-size: 16px;
   font-weight: $semibold;
   margin-bottom: 10px;
-  &::after { display: none; }
 }
 .post-excerpt {
   color: $light-blue-gray;
