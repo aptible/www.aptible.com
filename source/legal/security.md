@@ -54,7 +54,7 @@ AWS data center environmental controls include:
 p. 8 - ["Amazon Web Services: Overview of Security Processes - August 2015"](https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf)
 
 #### **2. Network Security**
-Please see our [Reference Architecture Diagram](/pages/assets/aptible-reference-architecture.pdf) and [FAQ](/faq) for an explanation of the terms in this section.
+Please see our [Reference Architecture Diagram](/resources/enclave-reference-architecture-and-division-of-responsibilities) and [FAQ](/faq) for an explanation of the terms in this section.
 
 ##### **2.A - Secure Architecture**
 Aptible Enclave stacks run in separate AWS Virtual Private Clouds. Each stack is an isolated network. Most services run in a private subnet. Only SSL/TLS endpoints and a bastion host are exposed to the Internet. Backend users connect to the stack through the bastion host, which restricts access to stack components and logs activity for security review.

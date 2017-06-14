@@ -288,3 +288,5 @@
   url: /learn/hipaa-compliance-for-developers-getting-started
 - loc: /resources/common-hipaa-questions/index.html
   url: /learn/hipaa-compliance-for-developers-getting-started
+- loc: /assets/aptible-reference-architecture.pdf
+  url: /resources/enclave-reference-architecture-and-division-of-responsibilities
