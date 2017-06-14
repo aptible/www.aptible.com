@@ -24,6 +24,8 @@ No.
 
 There are two main reasons for this:
 
+READMORE
+
 *__The application process itself is valuable.__*  
 Preparing the application requires you to think carefully about your idea, your company, your market, your team, and the obstacles in your way. Forcing yourself to reflect honestly is painful, but extremely beneficial. Seize the opportunity to do it now.  
 

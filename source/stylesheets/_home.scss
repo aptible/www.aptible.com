@@ -366,7 +366,7 @@
   align-items: stretch;
   display: flex;
   margin-bottom: 50px;
-  margin-top: 50px;
+  padding-top: 50px;
   overflow: hidden;
 }
 .home-quote {
@@ -377,7 +377,7 @@
 .home-quote__bubble {
   align-self: stretch;
   background: $white;
-  box-shadow: 0 2px 7px 0 rgba(0,0,0,.14);
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.12);
   border-radius: 5px;
   margin: 0 20px;
   padding: 50px 80px;

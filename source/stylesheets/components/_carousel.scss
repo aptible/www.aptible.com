@@ -31,13 +31,15 @@
   text-align: center;
   height: 455px;
   opacity: 1;
-  padding: 40px 50px;
+  padding: 60px 70px;
   position: absolute;
   width: 375px;
   transform-origin: 175% 50%;
   transition-property: all;
-  transition-duration: $base-duration;
-  transition-timing-function: $base-timing;
+  transition-duration: .75s;
+  transition-timing-function: cubic-bezier(.75, -.1, .55, .55);
+  // transition-timing-function: cubic-bezier(.550, .0, .340, 1.170);
+  // cubic-bezier(0.680, -0.550, 0.265, 1.550);
   figure {
     color: $blue-steel;
     display: flex;
@@ -63,7 +65,8 @@
 .carousel__card--swap {
   opacity: 0;
   transform: scale(1.2);
-  transition-duration: .35s;
+  transition-duration: .7s;
+  // transition-timing-function: $linear;
   // transform-origin: 100% 50%;
 }
 

@@ -78,7 +78,7 @@
       url: "enclave/how-to-serve-s3-media-files"
     - title: "How do I update the SSL/TLS certificate for an Enclave endpoint?"
       url: "enclave/how-to-update-ssl-certificate"
-    - title: "How can I use Aptible’s OSS Docker images?"
+    - title: "How can I use Aptible's OSS Docker images?"
       url: "enclave/aptible-docker-images"
     - title: "How can I set up New Relic on Aptible?"
       url: "enclave/how-to-setup-application-and-server-monitoring"

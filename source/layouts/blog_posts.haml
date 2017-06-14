@@ -1,8 +1,6 @@
 = wrap_layout :layout do
   .content
-    .grid-container
-      .blog-posts
+    .grid-container--flex
+      .blog-posts.grid-item
         = find_and_preserve do
           = yield
-
-  = partial 'partials/resources-footer'

@@ -1,0 +1,7 @@
+.newsletter-signup--blog
+  %span.newsletter-signup--blog__intro
+    Sign up for our newsletter and never miss an update.
+  %form.newsletter-signup--blog__form.signup-cta--small
+    %input{ type: 'hidden', name: 'event', value: 'subscribed' }
+    %input.single-line__input{ required: true, name: 'newsletter-form__email', type: 'email', placeholder: 'Enter your email' }
+    %button.single-line__submit{ type: 'submit'} Sign up
