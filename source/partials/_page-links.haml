@@ -5,7 +5,7 @@
         - if current_page == 1
           .page-link.page-link--prev Prev
         - else
-          %a.page-link.page-link--prev{ href: page_links.first, class: prev_link_class(current_page) } Prev
+          %a.page-link.page-link--prev{ href: page_links[current_page-2], class: prev_link_class(current_page) } Prev
 
         .page-link__numbers
           - page_links.each_with_index do |href, index|

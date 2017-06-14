@@ -4,16 +4,16 @@ module BlogHelpers
   end
 
   def blog_summary(post)
-    if post.source_file
-      body = File.open(post.source_file, 'r').read.split('---').last
-    else
-      body = post.body
-    end
-    summary = body #.slice(0..500) + "&hellip;"
-    Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(config[:markdown])).render(summary)
+    body = if post.source_file
+             File.open(post.source_file, 'r').read.split('---').last
+           else
+             post.body
+           end
+    render_markdown(body)
   end
 
-  def render_cms_markdown(post)
+  # TODO: Figure out Rouge syntax fenced code blocks
+  def render_markdown(markdown)
     render_options = {
       filter_html: true,
       hard_wrap: true,
@@ -28,7 +28,7 @@ module BlogHelpers
       with_toc_data: true
     }
     renderer = Redcarpet::Render::HTML.new(render_options)
-    Redcarpet::Markdown.new(renderer, extensions).render(post.body).html_safe
+    Redcarpet::Markdown.new(renderer, extensions).render(markdown).html_safe
   end
 
   def author_gravatar(post)
