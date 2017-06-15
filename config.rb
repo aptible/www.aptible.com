@@ -203,7 +203,7 @@ ready do
     # Create subsets and a proxy page for each
     subsets = paginated_subsets(all_posts)
     page_links = page_links(subsets, '/blog/')
-    subsets.each_with_index do |subset, index|
+    subsets.each_with_index do |_subset, index|
       if index == 0
         proxy '/blog/index.html', '/blog/posts.html',
               locals: {
