@@ -203,15 +203,14 @@ ready do
     # Create subsets and a proxy page for each
     subsets = paginated_subsets(all_posts)
     page_links = page_links(subsets, '/blog/')
-    subsets.each_with_index do |subset, index|
+    subsets.each_with_index do |_subset, index|
       if index == 0
-        subset = subset[1..PaginationHelpers::PAGE_SIZE]
         proxy '/blog/index.html', '/blog/posts.html',
               locals: {
                 all_posts: all_posts,
                 current_page: 1,
                 page_links: page_links,
-                posts: subset
+                posts: all_posts
               }
       else
         current_page = index + 1
@@ -221,7 +220,7 @@ ready do
                 all_posts: all_posts,
                 current_page: current_page,
                 page_links: page_links,
-                posts: subset
+                posts: all_posts
               }
       end
     end
