@@ -4,10 +4,6 @@ module AptibleHelpers
   # Determine what the page title should be
   def page_title
     pg_title = @title || current_page.data.title
-    if current_page.metadata[:locals] &&
-       current_page.metadata[:locals][:cms_post]
-      pg_title = current_page.metadata[:locals][:cms_post][:title]
-    end
 
     case pg_title
     when ['Aptible Blog', 'Aptible', 'Aptible Support'].include?(pg_title)
@@ -22,13 +18,8 @@ module AptibleHelpers
   end
 
   def page_description
-    if current_page.metadata[:locals] &&
-       current_page.metadata[:locals][:cms_post]
-      desc = current_page.metadata[:locals][:cms_post][:excerpt]
-    end
     current_page.data.description || @description ||
-      current_page.data.header_subtitle || current_page.data.excerpt ||
-      desc || ''
+      current_page.data.header_subtitle || current_page.data.excerpt || ''
   end
 
   def page_image

@@ -1,4 +1,5 @@
 require 'rspec/core/rake_task'
+require 'yaml'
 
 def system!(cmd)
   success = !!system(cmd)
@@ -60,6 +61,34 @@ namespace :deploy do
     # rubocop:enable LineLength
     ENV['CONTENTFUL_ENV'] = 'production'
     Rake::Task[:deploy].invoke('www.aptible.com')
+  end
+end
+
+namespace :contentful do
+  desc 'Convert contentful yaml files to markdown with expected frontmatter'
+  task :yml2md do
+    system!('bundle exec middleman contentful')
+    # blog posts
+    #
+    Dir.glob('data/aptible/blog_posts/*.yaml') do |yml_file|
+      # do work on files ending in .rb in the desired directory
+      yml = YAML.load File.read(yml_file)
+      File.open("source/blog/#{yml[:slug]}.md", 'w') do |blog_post|
+        # Frontmatter
+        blog_post << "---\n"
+        blog_post << "title: \"#{yml[:title]}\"\n"
+        blog_post << "excerpt: \"#{yml[:excerpt]}\"\n"
+        blog_post << "author_name: #{yml[:author][:name]}\n"
+        blog_post << "author_email: #{yml[:author][:email]}\n"
+        blog_post << "author_id: #{yml[:author][:slug]}\n"
+        blog_post << "posted: #{yml[:posted]}\n"
+        blog_post << "section: Blog\n"
+        blog_post << "posts: true\n"
+        blog_post << "---\n"
+        # Markdown
+        blog_post << yml[:body]
+      end
+    end
   end
 end
 

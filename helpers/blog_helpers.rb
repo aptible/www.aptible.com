@@ -3,15 +3,6 @@ module BlogHelpers
     "/blog/authors/#{post.data.author_id}"
   end
 
-  def blog_summary(post)
-    body = if post.source_file
-             File.open(post.source_file, 'r').read.split('---').last
-           else
-             post.body
-           end
-    render_markdown(body)
-  end
-
   # TODO: Figure out Rouge syntax fenced code blocks
   def render_markdown(markdown)
     render_options = {
@@ -37,15 +28,12 @@ module BlogHelpers
   end
 
   def blog_post_href(post)
-    # Contentful posts are a Thor Hash, others are Middleman Sitemap Resources
-    return "/blog/#{post.slug}/" if post.is_a?(Hash)
     post.url
   end
 
   def blog_posts_oldest_first
-    mm_posts = sitemap.resources.select { |p| p.data['section'] == 'Blog' }
-    cms_posts = data.aptible.blog_posts.values
-    (mm_posts + cms_posts).sort_by { |p| p.data['posted'] }
+    posts = sitemap.resources.select { |p| p.data['section'] == 'Blog' }
+    posts.sort_by { |p| p.data['posted'] }
   end
 
   def blog_posts_newest_first

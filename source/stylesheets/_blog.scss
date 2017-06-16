@@ -94,6 +94,9 @@
 .blog-posts__post-summary {
   max-height: 500px;
   overflow: hidden;
+  .faux-window, .rouge-table {
+    &::before { display: none; }
+  }
 }
 
 .blog-posts__post-summary-fade {
