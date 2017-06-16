@@ -27,7 +27,8 @@ module AptibleHelpers
       desc = current_page.metadata[:locals][:cms_post][:excerpt]
     end
     current_page.data.description || @description ||
-      current_page.data.header_subtitle || current_page.data.excerpt || desc || ''
+      current_page.data.header_subtitle || current_page.data.excerpt ||
+      desc || ''
   end
 
   def page_image
