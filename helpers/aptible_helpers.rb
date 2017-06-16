@@ -22,8 +22,12 @@ module AptibleHelpers
   end
 
   def page_description
+    if current_page.metadata[:locals] &&
+       current_page.metadata[:locals][:cms_post]
+      desc = current_page.metadata[:locals][:cms_post][:excerpt]
+    end
     current_page.data.description || @description ||
-      current_page.data.header_subtitle || current_page.data.excerpt || ''
+      current_page.data.header_subtitle || current_page.data.excerpt || desc || ''
   end
 
   def page_image

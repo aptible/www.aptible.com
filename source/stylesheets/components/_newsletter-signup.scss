@@ -76,10 +76,19 @@
   justify-content: center;
   padding: 30px;
   text-align: center;
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .newsletter-signup--blog__intro {
   line-height: 1.5;
+  text-align: left;
+  @media screen and (max-width: 750px) {
+    margin-bottom: 20px;
+  }
 }
 
 .newsletter-signup--blog__form {
@@ -95,5 +104,10 @@
   &.signup-cta--small .single-line__submit {
     right: 0;
     padding: 12px 15px 9px;
+  }
+  @media screen and (max-width: 750px) {
+    &.signup-cta--small {
+      margin-left: 0;
+    }
   }
 }

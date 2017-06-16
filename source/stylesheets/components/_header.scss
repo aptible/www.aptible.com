@@ -8,7 +8,6 @@
 .aptible-header--bottom-grid {
   position: relative;
   &::after {
-    background-size: cover;
     background-color: transparent;
     background-image: url(/images/header-bottom-grid.svg);
     background-position: bottom center;
@@ -96,7 +95,7 @@
   text-align: center;
   &::after { display: none; }
   &:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 
