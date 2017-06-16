@@ -34,6 +34,12 @@ body {
   > .grid-container {
     @include grid-collapse;
   }
+  @media screen and (max-width: $tablet-portrait) {
+    &.quickstart {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 .grid-container--flex {
@@ -185,6 +191,9 @@ body {
   @media screen and (max-width: $tablet-portrait) {
     @include grid-column(12);
     float: none;
+    &[data-quickstart="true"] {
+      order: 2
+    }
   }
 }
 

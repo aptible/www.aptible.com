@@ -9,10 +9,11 @@
         = partial 'partials/headers/blog-header'
 
         .blog-posts__post
-          %img.blog-posts__post-avatar{ src: "#{author_gravatar(cms_post)}?s=128" }
+          %a{ href: blog_post_author_href(cms_post) }
+            %img.blog-posts__post-avatar{ src: "#{author_gravatar(cms_post)}?s=128" }
           %header.blog-posts__post-header
-            %h2.post__title= cms_post.data.title
-            %h3.post__subtitle
+            %h1.post__title= cms_post.data.title
+            .post__subtitle
               %a{ href: blog_post_author_href(cms_post) }= cms_post.data.author_name
               on
               %span= post_date(cms_post.data.posted)

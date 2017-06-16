@@ -36,11 +36,15 @@
   font-weight: $semibold;
   line-height: 1.5;
   margin: 0;
+  a {
+    color: $dark-blue-steel;
+  }
 }
 
 .post__subtitle {
-  font-size: 16px;
   color: $light-gray;
+  font-size: 16px;
+  font-weight: $semibold;
   margin: 0;
 }
 
@@ -73,7 +77,8 @@
 
 .blog-posts__post-avatar {
   border-radius: 32px;
-  box-shadow: 0 9px 26px 0 rgba(0,0,0,.1);
+  // box-shadow: 0 9px 26px 0 rgba(0,0,0,.1);
+  box-shadow: 0 4.5px 13px 0 rgba(0,0,0,.1);
   display: block;
   height: 64px;
   position: absolute;
