@@ -2,28 +2,31 @@
 title: Aptible Blog
 description: Posts detailing feature updates, compliance resources, and
              information useful to users of Aptible's security and DevOps tools.
-layout: blog_posts.haml
+layout: 'layout'
 ---
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
     = partial 'partials/main-nav'
 
-= partial 'partials/headers/blog-header'
+.content
+  .grid-container--flex
+    .blog-posts.grid-item
+      = partial 'partials/headers/blog-header'
 
-- posts = posts || []
-- posts.each do |post|
-  .blog-posts__post
-    %a{ href: blog_post_author_href(post) }
-      %img.blog-posts__post-avatar{ src: "#{author_gravatar(post)}?s=128" }
-    = partial 'partials/blog-list-item', locals: { post: post }
-    %a.arrow-link--right.dbl-arrow-link--right{ href: blog_post_href(post) } Read more
+      - posts = posts || []
+      - posts.each do |post|
+        .blog-posts__post
+          %a{ href: blog_post_author_href(post) }
+            %img.blog-posts__post-avatar{ src: "#{author_gravatar(post)}?s=128" }
+          = partial 'partials/blog-list-item', locals: { post: post }
+          %a.arrow-link--right.dbl-arrow-link--right{ href: blog_post_href(post) } Read more
 
-= partial 'partials/newsletter-signup--blog'
+      = partial 'partials/newsletter-signup--blog'
 
-- if posts.any?
-  = partial 'partials/page-links', locals: {  |
-      current_page: current_page,             |
-      page_links: page_links,                 |
-      set: all_posts,                         |
-      subset: posts                           |
-    }                                         |
+      - if posts.any?
+        = partial 'partials/page-links', locals: {  |
+            current_page: current_page,             |
+            page_links: page_links,                 |
+            set: all_posts,                         |
+            subset: posts                           |
+          }                                         |

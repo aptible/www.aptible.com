@@ -13,5 +13,4 @@
 .DS_Store
 source/bower_components
 .env
-data/aptible
 .aptible-space-hash

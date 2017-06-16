@@ -1,0 +1,74 @@
+---
+:id: 2ywFutGTWAomAimEo0cCEC
+:type: blog post
+:title: 'Recap: Aptible April 2017 Quarterly Product Update'
+:slug: recap-aptible-april-2017-quarterly-product-update
+:excerpt: Quick recap of Aptible's April quarterly product update and all that's new
+  with Enclave and Gridiron.
+:posted: '2017-04-19T10:30:00-04:00'
+:body: "Over the last quarter, we released a number of new features and updates for
+  the **Enclave** deployment platform. We also began helping customers deployed on
+  AWS to manage their organization’s security and compliance using **Gridiron**.\n\nYesterday,
+  on a brief webinar, our team reviewed the updates to the Enclave platform and showed
+  how Gridiron helps software developers build and maintain strong security management
+  programs.\n\nIn case you missed it, you can download the slide deck and get the
+  transcript in [our resources section](https://www.aptible.com/resources/update-webinar-april-2017/),
+  or watch the full event below. We also provide a quick recap in this blog post.\n\n\n<iframe
+  width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UjHf9UPevi4\" frameborder=\"0\"
+  allowfullscreen></iframe>\n\n\n<br>\n\n\n### New for Enclave\n\nWe intend for Enclave
+  to be the best platform for developers to deploy regulated and sensitive software
+  products. This quarter, we focused on improving Enclave in three ways: **security
+  and compliance**, **database self-service**, and **general usability improvements.**\n\n####
+  Security and Compliance\n\nWe launched new ways to secure apps and meet compliance
+  goals while improving the security of Enclave itself.\n\nWe’ve previously detailed
+  these improvements on our blog. Here’s the list:\n\n  * [IP Filtering][0]\n\n  *
+  [Managed HTTPS for Internal Endpoints][1]\n\n  * [Customizable HTTPS Protocols for
+  ALB Endpoints][2]\n\n  * [Default AES-256 Database Disk Encryption][3]\n\n  * [U2F
+  Authentication][4]\n\n#### Database Self-Service\n\nSelf-serve database scaling
+  is coming soon. The [Aptible CLI][5] now supports `aptible db:reload`, [disk resizes
+  are a lot faster][6], and we will launch self-service database scaling soon.\n\n####
+  Usability Improvements\n\nWe launched a few small improvements that should make
+  developers’ lives easier when deploying with Enclave:\n\n  * We now protect against
+  runaway SSH sessions when your session gets disconnected\n\n  * Memory management
+  restarts apps in pristine containers when they exceed memory limits\n\n  * Enclave
+  Log Drains [now integrate with Sumo Logic and Logentries][7] as an alternative to
+  rolling your own ELK stacks\n\n### Gridiron\n\nGridiron is our suite of tools that
+  helps developers build and maintain strong security management programs. Gridiron
+  makes the administrative side of protecting data easy and helps to prepare you for
+  regulatory audits as well as customer security reviews.\n\nIn the webinar, we gave
+  a short talk-through of how Gridiron approaches security management. This starts
+  with the **Gridiron Data Model**: an API that integrates data from your business,
+  our experience working with hundreds of customers in securing sensitive data, and
+  industry-wide security standards provided through NIST Guidance, vulnerability and
+  attack databases and shared intel.\n\n![The Gridiron Data Model integrates information
+  about your business, everything Aptible has learned about protecting sensitive data
+  across hundreds of customers, and industry-wide security best practices.](//images.contentful.com/8djp5jlzqrnc/2RtvTrzrEc24Yycu8Oq4Cm/748ac8804b908de03afc3215b0e0edce/Gridiron_Data_Model.png)\n\nGridiron
+  ingests data about your business through a series of straightforward and relevant
+  questions that are easy to answer but have important implications for your internal
+  security program.\n\n![Gridiron asks simple, straightforward questions that have
+  important ramifications for your security program.](//images.contentful.com/8djp5jlzqrnc/S6J2nhUA00cU2saq0oOSm/cc8bbb421c14393862a1291ef10a753f/Security_Control_Questions.png)\n\nGridiron
+  uses that data to create deliverables that help you show security and compliance
+  as well as improve your business operations.\n\n![Gridiron provides complete documentation
+  and reporting to help you show security and compliance.](//images.contentful.com/8djp5jlzqrnc/51R9sqIF6oqI0QEWkEUQK8/de0caefc0d5cbef57a0828d85dff2f26/HIPAA_Documentation.png)\n\n####
+  Getting started with Gridiron\n\nIf you’d like to improve your organization’s security
+  and compliance and simplify the process for working through customer security reviews
+  and regulatory audits, please [get in touch][11]. For a limited time we’re offering
+  early access pricing for customers who have deployed on AWS.\n\n### Register Now
+  for July 2017 Aptible Product Update Webinar\n\nOur next product update webinar
+  will be hosted on July 25, 2017 at 11am Pacific / 2pm Eastern.\n\nPlease [register
+  now][12]. \n\nAll registrants will receive a webinar recap and the recording shortly
+  after the conclusion of the webinar.\n\n  [0]: https://www.aptible.com/blog/ip-filtering-made-easy-with-enclave-endpoints/\n
+  \ [1]: https://www.aptible.com/blog/managed-https-endpoints-now-support-internal-endpoints/\n
+  \ [2]: https://www.aptible.com/blog/alb-endpoints-now-support-ssl_protocols_override/\n
+  \ [3]: https://www.aptible.com/blog/database-encryption-now-defaults-to-aes-256/\n
+  \ [4]: https://www.aptible.com/blog/aptible-2-factor-authentication-now-supports-fido-u2f-security-keys/\n
+  \ [5]: https://www.aptible.com/support/toolbelt/\n  [6]: https://www.aptible.com/blog/faster-enclave-database-resizing/\n
+  \ [7]: https://www.aptible.com/blog/logentries-and-sumo-logic-setup-now-a-breeze/\n
+  \ [11]: http://contact.aptible.com\n  [12]: https://zoom.us/webinar/register/e5ffa6545dd197d7dc2040ba88984b7b
+  \   "
+:author:
+  :id: 1I5xM5LI3Kyy0WS8I0iwWI
+  :name: Henry Hund
+  :slug: henry
+  :email: henry@aptible.com
+  :gravatar: https://s.gravatar.com/avatar/b891e9f2df71920de4445fc356c42a97

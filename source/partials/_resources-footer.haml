@@ -1,4 +1,3 @@
-- titles = ["HIPAA Compliance for Developers: Getting Started", "What is a HIPAA BAA?", "Gridiron Reference Documents"]
 .resources-footer
   .grid-container
     %header.resources-footer__header
@@ -9,9 +8,9 @@
 
   .grid-container
     .grid--3up-flex
-      - resources_by_title(titles).each do |r|
+      - resources_for_footer.each do |r|
         %a.grid-item.card.card--on-dark{ href: resource_path(r) }
           .card__header
-            .card__subtitle.card__subitle--on-dark= r.category
-            %h3.card__title.card__title--on-dark= r.title
-          %p.card__body.card__body--on-dark= r.snippet
+            .card__subtitle.card__subitle--on-dark= r.data.category
+            %h3.card__title.card__title--on-dark= r.data.title
+          %p.card__body.card__body--on-dark= r.data.excerpt

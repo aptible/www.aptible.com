@@ -8,7 +8,7 @@ xml.feed xmlns: 'http://www.w3.org/2005/Atom' do
   xml.link href: 'https://www.aptible.com/feed.xml', rel: 'self'
   xml.updated latest_blog_post.data.posted.to_time.iso8601
   xml.author { xml.name 'Aptible Blog RSS' }
-  blog_posts_newest_first[0..10].each do |post|
+  blog_posts[0..10].each do |post|
     if post.is_a?(Hash)
       body = post.body
     else

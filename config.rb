@@ -1,5 +1,4 @@
 require 'fog'
-require 'custom_mappers'
 
 #
 # Global Settings
@@ -31,31 +30,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-end
-
-# Contentful
-activate :contentful do |f|
-  f.space = { aptible: '8djp5jlzqrnc' }
-  # rubocop:disable LineLength
-  f.access_token = ENV['CONTENTFUL_KEY'] || 'b66d39f51cfcc747ca3af1b7731bd00cf877b659d69514845ba837ddae473605'
-  # rubocop:enable LineLength
-  # Use preview (draft) content everywhere EXCEPT production
-  f.use_preview_api = ENV['CONTENTFUL_ENV'] != 'production'
-  f.all_entries = true
-  f.cda_query = { include: 3 }
-  f.content_types = {
-    blog_posts: {
-      id: 'blogPost',
-      mapper: CustomMappers::BlogPostMapper
-    },
-    employees: 'employee',
-    customers: 'customer',
-    resource_pages: 'resourcePage',
-    customer_stories: 'customerStories'
-  }
-  puts ''
-  puts "Activating Contentful Access Token with preview? #{f.use_preview_api}"
-  puts ''
 end
 
 # Note: S3 Redirect does not work with Middleman v4
@@ -94,18 +68,22 @@ page '/blog/*', layout: 'blog_post.haml'
 # See /source/feed.xml.builder
 page '/feed.xml', layout: false
 
-#
-# contentful blog posts
-#
-if data.respond_to?('aptible') && !data.aptible.blog_posts.nil?
-  data.aptible.blog_posts.values.each do |post|
-    proxy "/blog/#{post.slug}/index.html",
-          '/blog/post.html',
-          locals: {
-            cms_post: post,
-            path: "/blog/#{post.slug}/index.html"
-          },
-          ignore: true
+# Authors
+# Requires the site to be "ready" to read from the sitemap resources
+ready do
+  # Create dynamic pages for each blog post author
+  by_author = sitemap.resources
+                     .select { |p| p.data['section'] == 'Blog' }
+                     .group_by { |p| p.data['author_id'] }
+  by_author.each do |author|
+    author_id = author[0]
+    # lists their posts by date
+    posts = author[1]
+            .select { |p| p.data['author_id'] == author_id }
+            .sort_by { |p| p.data['posted'] }.reverse!
+    page "/blog/authors/#{author[0]}.html"
+    proxy "/blog/authors/#{author[0]}.html", '/blog/author.html',
+          locals: { author_id: author[0], posts: posts }
   end
 end
 
@@ -113,21 +91,7 @@ end
 # contentful resources
 #
 page '/resources/index.html', layout: 'layout.haml'
-
-if data.respond_to?('aptible') && !data.aptible.resource_pages.nil?
-  data.aptible.resource_pages.values.each do |resource|
-    path = "/#{resource.slug}/index.html"
-    path = "/#{resource.subfolder}#{path}" if resource.subfolder.present?
-
-    proxy path,
-          '/resources/resource.html',
-          locals: {
-            resource: resource,
-            path: path
-          },
-          ignore: true
-  end
-end
+page '/resources/*', layout: 'resource.haml'
 
 #
 # Legal
@@ -188,63 +152,28 @@ data.quickstart.each do |language_name, language_data|
   end
 end
 
+#
+# Pagination
+#
+# Why we can't use the middleman-pagination gem
+# - doesn't paginate middleman resources (files in a directory), only data files
+# - doesn't do page links, only prev, next, first, last... not 1,2,3,4
+# - limited path configuration, ends up needing proxy config
 ready do
-  begin
-    #
-    # Pagination
-    #
-    # Proxy pages for paginated resources
-    #
-    # Blog posts
-    mm_posts = sitemap.resources.select { |p| p.data['section'] == 'Blog' }
-    cms_posts = data.aptible.blog_posts.values
-    all_posts = (mm_posts + cms_posts).sort_by { |p| p.data['posted'] }
-    all_posts.reverse!
-    # Create subsets and a proxy page for each
-    subsets = paginated_subsets(all_posts)
-    page_links = page_links(subsets, '/blog/')
-    subsets.each_with_index do |subset, index|
-      if index == 0
-        proxy '/blog/index.html', '/blog/posts.html',
-              locals: {
-                all_posts: all_posts,
-                current_page: 1,
-                page_links: page_links,
-                posts: subset
-              }
-      else
-        current_page = index + 1
-        proxy "/blog/page/#{current_page}/index.html",
-              '/blog/posts.html',
-              locals: {
-                all_posts: all_posts,
-                current_page: current_page,
-                page_links: page_links,
-                posts: subset
-              }
-      end
-    end
+  posts_per_page = 10
+  all_posts = blog_posts
+  subsets = paginated_subsets(all_posts, posts_per_page)
+  number_of_pages = total_pages(all_posts.count, posts_per_page)
+  page_links = page_links(number_of_pages, '/blog')
 
-    # Authors
-    # Requires the site to be "ready" to read from the sitemap resources
-    # Create dynamic pages for each blog post author
-    by_author = sitemap.resources
-    by_author.concat(data.aptible.blog_posts.values)
-    by_author = by_author.select { |p| p.data['section'] == 'Blog' }
-                         .group_by { |p| p.data['author_id'] }
-    by_author.each do |author|
-      author_id = author[0]
-      # lists their posts by date
-      posts = author[1]
-              .select { |p| p.data['author_id'] == author_id }
-              .sort_by { |p| p.data['posted'] }.reverse!
-      # page "/blog/authors/#{author[0]}/index.html", layout: 'blog_posts.haml'
-      proxy "/blog/authors/#{author[0]}/index.html", '/blog/author.html',
-            locals: { author_id: author[0], posts: posts }
-    end
-  rescue
-    # This should not happen on a published post which requires an author, but
-    # draft posts can be saved without one
-    puts 'Contentful Data Error: Ensure all draft blog posts have an author'
+  subsets.each_with_index do |subset, index|
+    current_page = index + 1
+    proxy "#{page_links[index]}index.html", '/blog/posts.html',
+          locals: {
+            all_posts: all_posts,
+            current_page: current_page,
+            page_links: page_links,
+            posts: subset
+          }
   end
 end

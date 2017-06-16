@@ -3,77 +3,21 @@ module BlogHelpers
     "/blog/authors/#{post.data.author_id}"
   end
 
-  def blog_summary(post)
-    body = if post.source_file
-             File.open(post.source_file, 'r').read.split('---').last
-           else
-             post.body
-           end
-    render_markdown(body)
-  end
-
-  # TODO: Figure out Rouge syntax fenced code blocks
-  def render_markdown(markdown)
-    render_options = {
-      filter_html: true,
-      hard_wrap: true,
-      link_attributes: { rel: 'nofollow' },
-      prettify: true
-    }
-    extensions = {
-      smarypants: true,
-      fenced_code_blocks: true,
-      trables: true,
-      strikethrough: true,
-      with_toc_data: true
-    }
-    renderer = Redcarpet::Render::HTML.new(render_options)
-    Redcarpet::Markdown.new(renderer, extensions).render(markdown).html_safe
-  end
-
   def author_gravatar(post)
     hash = Digest::MD5.hexdigest(post.data.author_email)
     "https://www.gravatar.com/avatar/#{hash}"
   end
 
   def blog_post_href(post)
-    # Contentful posts are a Thor Hash, others are Middleman Sitemap Resources
-    return "/blog/#{post.slug}/" if post.is_a?(Hash)
     post.url
   end
 
-  def blog_posts_oldest_first
-    mm_posts = sitemap.resources.select { |p| p.data['section'] == 'Blog' }
-    cms_posts = data.aptible.blog_posts.values
-    (mm_posts + cms_posts).sort_by { |p| p.data['posted'] }
-  end
-
-  def blog_posts_newest_first
-    blog_posts_oldest_first.reverse!
+  def blog_posts
+    section_pages('Blog')
+      .sort_by { |p| -p.data['posted'].to_time.to_i }
   end
 
   def latest_blog_post
-    blog_posts_newest_first.first
-  end
-
-  def index_of_post(post)
-    blog_posts_oldest_first.index do |p|
-      blog_post_href(p) == blog_post_href(post)
-    end
-  end
-
-  def prev_post(current_post)
-    if index_of_post(current_post).positive?
-      return blog_posts_oldest_first.at(index_of_post(current_post) - 1)
-    end
-    nil
-  end
-
-  def next_post(current_post)
-    blog_posts_oldest_first.at index_of_post(current_post) + 1
-  end
-
-  def post_date(string_date)
-    string_date.strftime('%B %e, %Y')
+    blog_posts.first
   end
 end

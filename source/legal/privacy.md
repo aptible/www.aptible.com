@@ -13,16 +13,16 @@ Your privacy is important to us at Aptible. We want to be clear how we use your 
 
 Our Privacy Policy explains:
 
-- What information we collect and why we collect it.  
-- How we use that information and when we disclose it.  
-- How to access and update your information.  
-- The steps we take to protect your information.  
+- What information we collect and why we collect it.
+- How we use that information and when we disclose it.
+- How to access and update your information.
+- The steps we take to protect your information.
 
 This Privacy Policy applies to the information that we obtain through your use of Aptible services, including our website ([https://www.aptible.com](https://www.aptible.com)), platforms, and web-based tools (collectively the “Services”).  Please familiarize yourself with our policies, and if you have any questions contact us at [legal@aptible.com](mailto:legal@aptible.com). This policy is incorporated into and is subject to the [Terms of Service Agreement](https://www.aptible.com/legal/terms-of-service).
 
 ### Information We Collect
 #### 1. Information you provide to us
-We collect the following information:  
+We collect the following information:
 
 **Account and Profile Information:** We collect information about you and your company when you register for an account, create or modify your profile, and make purchases through our Services.  Information we collect includes your name, username, address, email address, phone number, and payment card details. You may provide this information directly through our Services or in some cases another user (such as an administrator or HIPAA Security Officer) creating an account on your behalf may provide it.  If you provide information (including personal information) about someone else, you confirm that you have the authority to act for them and to consent to the collection and use of their personal information as described in this Privacy Policy.
 
@@ -36,16 +36,16 @@ We collect the following information:
 **Cookies and Other Tracking Technologies:** We use various technologies to collect information, including cookies that we save to your computer or mobile device.  Cookies are small data files stored on your hard drive or in device memory. We use cookies to improve and customize our Services and your experience; to allow you to access and use the Services without re-entering your username or password; and to count visits and understand which areas and features of the Services are most popular.  We may also associate the information we store in cookies with personal information you submit while on our Services.  You can instruct your browser, by changing its options, to stop accepting cookies or to prompt you before accepting a cookie from websites you visit. If you do not accept cookies, however, you may not be able to use all aspects of our Services.
 
 #### 3. Information we collect from other sources
-**Information from third party services:** We may obtain information, including personal information, from third parties such as our partners and service providers, and combine it with other information we collect from you.   
+**Information from third party services:** We may obtain information, including personal information, from third parties such as our partners and service providers, and combine it with other information we collect from you.
 ### How We Use Information We Collect
 We may use the information we collect for a variety of purposes, including to:
 
-- Provide, operate, maintain, improve, personalize, and promote our Services;  
-- Develop new products, services, features, and functionality;  
-- Enable you to access and use our Services;  
-- Process and complete transactions, and send you related information, including purchase confirmations and invoices;  
-- Communicate with you, including responding to your comments, questions, and requests; providing customer service and support; providing you with information about services, including technical notices, updates, security alerts, administrative messages, or advertising or marketing messages; and providing other news or information about us and our select partners;  
-- Monitor and analyze trends, usage, and activities in connection with our Services; and  
+- Provide, operate, maintain, improve, personalize, and promote our Services;
+- Develop new products, services, features, and functionality;
+- Enable you to access and use our Services;
+- Process and complete transactions, and send you related information, including purchase confirmations and invoices;
+- Communicate with you, including responding to your comments, questions, and requests; providing customer service and support; providing you with information about services, including technical notices, updates, security alerts, administrative messages, or advertising or marketing messages; and providing other news or information about us and our select partners;
+- Monitor and analyze trends, usage, and activities in connection with our Services; and
 - Investigate and prevent fraudulent transactions, unauthorized access to our Services, and other illegal activities.
 
 We may also use the information we collect for other purposes about which we notify you.
@@ -57,7 +57,7 @@ We may share your information in the following ways:
 
 **Your use:** When you use our Services, certain features allow you to make some of your content accessible to the public or other users of the Services. We urge you to consider the sensitivity of any information prior to sharing it publicly or with other users.
 
-**Access by your Aptible administrator:** Your Aptible account owner or HIPAA Security Officer may be able to:  
+**Access by your Aptible administrator:** Your Aptible account owner or HIPAA Security Officer may be able to:
 
 - Access information in and about your Aptible account;
 - Disclose, restrict, or access information that you have provided or that is made available to you when using your Aptible account, including your content; and
@@ -67,16 +67,16 @@ We may share your information in the following ways:
 
 **Compliance with Laws and Law Enforcement Requests; Protection of Our Rights:** We may disclose your information (including your personal information) to a third party if:
 
-- We believe that disclosure is reasonably necessary to comply with any  applicable law, regulation, legal process or governmental request;  
-- To enforce our agreements, policies and terms of service;  
-- To protect the security or integrity of Aptible's products and services;  
-- To protect the property, rights, and safety of Aptible, our customers or the public from harm or illegal activities;  
-- To respond to an emergency which we believe in the good faith requires us to  disclose information to assist in preventing the death or serious bodily injury of any person; or  
+- We believe that disclosure is reasonably necessary to comply with any  applicable law, regulation, legal process or governmental request;
+- To enforce our agreements, policies and terms of service;
+- To protect the security or integrity of Aptible's products and services;
+- To protect the property, rights, and safety of Aptible, our customers or the public from harm or illegal activities;
+- To respond to an emergency which we believe in the good faith requires us to  disclose information to assist in preventing the death or serious bodily injury of any person; or
 - To investigate and defend ourselves against any third-party claims or  allegations.
 
 **Business Transfers:** We may share or transfer your information (including your personal information) in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.  We will notify you of such a change in ownership or transfer of assets by posting a notice on our website.
 
-**Aggregate or Non-identifying Data:** We may share aggregate or other non-personal information that does not directly identify you with third parties in order to improve the overall experience of our Services.  
+**Aggregate or Non-identifying Data:** We may share aggregate or other non-personal information that does not directly identify you with third parties in order to improve the overall experience of our Services.
 
 ### The Choices You Have With Your Information
 You may decline to share certain personal information with us, in which case we may not be able to provide to you some of the features and functionality of our Services.  You may update or correct your personal information at any time by accessing the account settings page on the website or within our platform.
@@ -88,7 +88,7 @@ Our Services are not directed to individuals under 13. We do not knowingly colle
 ### International Users
 Our Services are hosted in the United States and intended for users located within the United States. If you choose to use the Services from the European Union or other regions of the world with laws governing data collection and use that may differ from U.S. law, then please note that you are transferring your information outside of those regions to the United States for storage and processing. By providing your information, you consent to any transfer and processing in accordance with this Policy.
 
-### EU-U.S. Privacy Shield and U.S.-Swiss Safe Harbor Compliance   
+### EU-U.S. Privacy Shield and U.S.-Swiss Safe Harbor Compliance
 Aptible, Inc. is a participant in the U.S. Department of Commerce's EU-U.S. Privacy Shield and Swiss Safe Harbor programs, and has certified that we adhere to the EU-U.S. Privacy Shield and U.S.-Swiss Safe Harbor Privacy Principles. Aptible is subject to the investigatory and enforcement powers of the Federal Trade Commission.
 
 For more information about the EU-U.S. Privacy Shield Framework, visit the [U.S. Department of Commerce's Privacy Shield website](https://www.privacyshield.gov).
