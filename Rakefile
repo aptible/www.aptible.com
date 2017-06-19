@@ -68,25 +68,61 @@ namespace :contentful do
   desc 'Convert contentful yaml files to markdown with expected frontmatter'
   task :yml2md do
     system!('bundle exec middleman contentful')
-    # blog posts
-    #
-    Dir.glob('data/aptible/blog_posts/*.yaml') do |yml_file|
-      # do work on files ending in .rb in the desired directory
-      yml = YAML.load File.read(yml_file)
-      File.open("source/blog/#{yml[:slug]}.md", 'w') do |blog_post|
-        # Frontmatter
-        blog_post << "---\n"
-        blog_post << "title: \"#{yml[:title]}\"\n"
-        blog_post << "excerpt: \"#{yml[:excerpt]}\"\n"
-        blog_post << "author_name: #{yml[:author][:name]}\n"
-        blog_post << "author_email: #{yml[:author][:email]}\n"
-        blog_post << "author_id: #{yml[:author][:slug]}\n"
-        blog_post << "posted: #{yml[:posted]}\n"
-        blog_post << "section: Blog\n"
-        blog_post << "posts: true\n"
-        blog_post << "---\n"
-        # Markdown
-        blog_post << yml[:body]
+
+    contentful_processors = {}
+    contentful_processors['blog_posts'] = lambda do |yml|
+      {
+        markdown_path: 'source/blog',
+        markdown_key: :body,
+        frontmatter: {
+          'title' => yml[:title],
+          'excerpt' => yml[:excerpt],
+          'author_name' => yml[:author][:name],
+          'author_email' => yml[:author][:email],
+          'author_id' => yml[:author][:slug],
+          'posted' => yml[:posted].to_date,
+          'section' => 'Blog',
+          'posts' => true
+        }
+      }
+    end
+
+    contentful_processors['resource_pages'] = lambda do |yml|
+      require 'pry'; binding.pry
+      {
+        markdown_path: 'source/resources',
+        markdown_key: :content,
+        frontmatter: {
+          'attachments' => yml[:attachments],
+          'category' => yml[:category],
+          'cover_image' => yml[:coverImage],
+          'description' => yml[:metaDescription] || yml[:snippet],
+          'excerpt' => yml[:snippet],
+          'featured' => yml[:featured],
+          'included_on_index' => yml[:includedOnIndex],
+          'subfolder' => yml[:subfolder],
+          'title' => yml[:title],
+          'type' => yml[:type],
+          'webinar_slides_link' => yml[:webninarSlidesLink],
+          'webinar_transcript' => yml[:webninarTranscript],
+          'webinar_transcript2' => yml[:webninarTranscript2]
+        }
+      }
+    end
+
+    contentful_processors.each do |dir, processor|
+      contentful_ymls = File.join(File.dirname(__FILE__),
+                                  "data/aptible/#{dir}/*.yaml")
+      Dir.glob(contentful_ymls).each do |yml_file|
+        yml = YAML.load File.read(yml_file)
+        md_file = File.join(File.dirname(__FILE__),
+                            processor.call(yml)[:markdown_path],
+                            "#{yml[:slug]}.md")
+        File.open(md_file, 'w') do |md|
+          md << processor.call(yml)[:frontmatter].to_yaml
+          md << "---\n\n"
+          md << yml[processor.call(yml)[:markdown_key]]
+        end
       end
     end
   end
