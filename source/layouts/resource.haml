@@ -15,21 +15,24 @@
   .content
     .grid-container.grid-container--no-padding
       .grid-document.markdown-content.resource-article
+        = find_and_preserve do
+          = yield
 
-- @title = resource.title
-- @description = resource.description || resource.snippet
+        - if resource.type == 'webinar'
+          %h3#transcript Transcript
+          - if resource.webinar_transcript_partial
+            = partial(resource.webinar_transcript_partial)
+          - else
+            %em Coming Soon
 
-= find_and_preserve do
-  = yield
-
-- if resource.type == 'webinar'
-  - if (prev_webinars = previous_webinars(resource)).count > 0
-    %h3 Previous Webinars
-    %ul
-      - prev_webinars.each do |r|
-        %li
-          %a{ href: resource_path(r) }
-            %strong= post_date(r.date)
+        - if resource.type == 'webinar'
+          - if (prev_webinars = previous_webinars(resource)).count > 0
+            %h3 Previous Webinars
+            %ul
+              - prev_webinars.each do |r|
+                %li
+                  %a{ href: resource_path(r) }
+                    %strong= post_date(r.date)
 
 
 
@@ -38,9 +41,6 @@
     - resource.attachments.each do |doc|
       %a.resource-doc{ href: doc.url, title: doc.title, data: { type: doc.type }, target: '_blank' }
         = partial '/images/aptible-small-mark.svg'
-
-        = find_and_preserve do
-          = yield
 
       .grid-aside
         = partial 'resources-aside'

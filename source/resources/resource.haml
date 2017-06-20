@@ -2,23 +2,22 @@
 layout: resource.haml
 ---
 - @title = resource.title
-- @description = resource.metaDescription || resource.snippet
-- if resource.webinarVideoLink
+- @description = resource.description || resource.excerpt
+- if resource.webinar_video_link
   %p.text-center
-    %iframe{ width: '560', height: '315', src: resource.webinarVideoLink, frameborder: '0', allowfullscreen: 'allowfullscreen' }
+    %iframe{ width: '560', height: '315', src: resource.webinar_video_link, frameborder: '0', allowfullscreen: 'allowfullscreen' }
 
-= Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(config[:markdown])).render resource.content
+= yield
 
-- if resource.webinarSlidesLink
+- if resource.webinar_slides_link
   %h3 Slides
   %p
-    %a{ href: resource.webinarSlidesLink } View
+    %a{ href: resource.webinar_slides_link } View
 
 - if resource.type == 'webinar'
   %h3#transcript Transcript
-  - if resource.webinarTranscript
-    - md = resource.webinarTranscript + (resource.webinarTranscript2 || '')
-    = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(config[:markdown])).render md
+  - if resource.webinar_transcript_partial
+    = partial(resource.webinar_transcript_partial)
   - else
     %em Coming Soon
 
@@ -29,8 +28,6 @@ layout: resource.haml
         %li
           %a{ href: resource_path(r) }
             %strong= post_date(r.date)
-
-
 
 - if resource.attachments
   .resource-docs

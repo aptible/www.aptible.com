@@ -636,7 +636,7 @@ Orozco:** Yeah, that's internal tool we use to troubleshoot performance issues
 and operations [00:36:13] adaptable. That's actually telemetry data, I was mentioning
 earlier. We use, when we review an operation we push that data to F3, essentially
 a data block that describes the operation, how long each of these steps took. Then
-we have a visualization of this one, which uses [00:36:32] [00:36:30] Gould's graphing
+we have a visualization of this one, which uses [00:36:32] [00:36:30] Google's graphing
 library. Therefore, it's just a [00:36:35] gam shot, using that library. Which I
 think is called [00:36:41] gruel visualization toolkit, if I'm not mistaken.
 

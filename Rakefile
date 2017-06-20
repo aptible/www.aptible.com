@@ -73,7 +73,7 @@ namespace :contentful do
     contentful_processors['blog_posts'] = lambda do |yml|
       {
         markdown_path: 'source/blog',
-        markdown_key: :body,
+        markdown: yml[:body],
         frontmatter: {
           'title' => yml[:title],
           'excerpt' => yml[:excerpt],
@@ -89,29 +89,34 @@ namespace :contentful do
 
     contentful_processors['resource_pages'] = lambda do |yml|
       {
-        markdown_path: 'source/resources',
-        markdown_key: :content,
+        markdown_path: "source/#{yml[:subfolder]}",
+        markdown: yml[:content],
         frontmatter: {
-'attachments' => yml[:attachments],
-'category' => yml[:category],     # "Webinars" | "HIPAA Compliance" | "Aptible Product Reference"
-'cover_image' => yml[:coverImage],
-'created_at' => yml[:date],
-'description' => yml[:metaDescription] || yml[:snippet],
-'excerpt' => yml[:snippet],
-'featured' => yml[:featured],
-'hackernews_link' => yml[:hackernewsLink], # not in use
-'included_on_index' => yml[:includedOnIndex],
-'parent_page' => yml[:parentPage], # Remove from contentful, not in use
-'pdf' => yml[:pdf],                # Remove from contentful, not in use
-'slug' => yml[:slug],
-'subfolder' => yml[:subfolder],    # "/resources" | "/learn"
-'title' => yml[:title],
-'type' => yml[:type],              # "webinar" | "pdf/file download" | "text"
-'webinar_slides_link' => yml[:webninarSlidesLink],
-'webinar_transcript' => yml[:webninarTranscript],
-'webinar_transcript2' => yml[:webninarTranscript2],
-'webinar_video_link' => yml[:webninarVideoLink]
-        }
+          'attachments' => yml[:attachments],
+          'category' => yml[:category],     # "Webinars" | "HIPAA Compliance" | "Aptible Product Reference"
+          'cover_image' => yml[:coverImage],
+          'created_at' => yml[:date],
+          'description' => yml[:metaDescription] || yml[:snippet],
+          'excerpt' => yml[:snippet],
+          'featured' => yml[:featured],
+          'hackernews_link' => yml[:hackernewsLink], # not in use
+          'included_on_index' => yml[:includedOnIndex],
+          'parent_page' => yml[:parentPage], # Remove from contentful, not in use
+          'pdf' => yml[:pdf],                # Remove from contentful, not in use
+          'slug' => yml[:slug],
+          'subfolder' => yml[:subfolder],    # "/resources" | "/learn"
+          'title' => yml[:title],
+          'type' => yml[:type],              # "webinar" | "pdf/file download" | "text"
+          'webinar_slides_link' => yml[:webinarSlidesLink],
+          'webinar_video_link' => yml[:webinarVideoLink],
+          'webinar_transcript_partial' => "#{yml[:subfolder]}/#{yml[:slug]}-transcript"
+        },
+        partials: [
+          {
+            markdown_path: "source/#{yml[:subfolder]}/_#{yml[:slug]}-transcript.md",
+            markdown: "#{yml[:webinarTranscript]}\n#{yml[:webinarTranscript2]}"
+          }
+        ]
       }
     end
 
@@ -120,13 +125,22 @@ namespace :contentful do
                                   "data/aptible/#{dir}/*.yaml")
       Dir.glob(contentful_ymls).each do |yml_file|
         yml = YAML.load File.read(yml_file)
+        processed = processor.call(yml)
         md_file = File.join(File.dirname(__FILE__),
-                            processor.call(yml)[:markdown_path],
+                            processed[:markdown_path],
                             "#{yml[:slug]}.md")
         File.open(md_file, 'w') do |md|
-          md << processor.call(yml)[:frontmatter].to_yaml
+          md << processed[:frontmatter].to_yaml
           md << "---\n\n"
-          md << yml[processor.call(yml)[:markdown_key]]
+          md << processed[:markdown]
+        end
+
+        if processed[:partials]
+          processed[:partials].each do |hash|
+            File.open(hash[:markdown_path], 'w') do |md|
+              md << hash[:markdown]
+            end
+          end
         end
       end
     end
