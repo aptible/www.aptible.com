@@ -113,26 +113,27 @@ end
 # contentful resources
 #
 page '/resources/index.html', layout: 'layout.haml'
+page '/resources/*', layout: 'resource.haml'
 
-if data.respond_to?('aptible') && !data.aptible.resource_pages.nil?
-  data.aptible.resource_pages.values.each do |resource|
-    path = "/#{resource.slug}/index.html"
-    path = "/#{resource.subfolder}#{path}" if resource.subfolder.present?
-
-    proxy path,
-          '/resources/resource.html',
-          locals: {
-            resource: resource,
-            path: path
-          },
-          ignore: true
-  end
-end
+# if data.respond_to?('aptible') && !data.aptible.resource_pages.nil?
+#   data.aptible.resource_pages.values.each do |resource|
+#     path = "/#{resource.slug}/index.html"
+#     path = "/#{resource.subfolder}#{path}" if resource.subfolder.present?
+#
+#     proxy path,
+#           '/resources/resource.html',
+#           locals: {
+#             resource: resource,
+#             path: path
+#           },
+#           ignore: true
+#   end
+# end
 
 #
 # Legal
 #
-# Proxy /legal/index to Terms of Service
+  # Proxy /legal/index to Terms of Service
 page '/legal/*', layout: 'legal.haml'
 proxy '/legal/index.html', '/legal/terms-of-service.html'
 

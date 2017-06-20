@@ -88,24 +88,29 @@ namespace :contentful do
     end
 
     contentful_processors['resource_pages'] = lambda do |yml|
-      require 'pry'; binding.pry
       {
         markdown_path: 'source/resources',
         markdown_key: :content,
         frontmatter: {
-          'attachments' => yml[:attachments],
-          'category' => yml[:category],
-          'cover_image' => yml[:coverImage],
-          'description' => yml[:metaDescription] || yml[:snippet],
-          'excerpt' => yml[:snippet],
-          'featured' => yml[:featured],
-          'included_on_index' => yml[:includedOnIndex],
-          'subfolder' => yml[:subfolder],
-          'title' => yml[:title],
-          'type' => yml[:type],
-          'webinar_slides_link' => yml[:webninarSlidesLink],
-          'webinar_transcript' => yml[:webninarTranscript],
-          'webinar_transcript2' => yml[:webninarTranscript2]
+'attachments' => yml[:attachments],
+'category' => yml[:category],     # "Webinars" | "HIPAA Compliance" | "Aptible Product Reference"
+'cover_image' => yml[:coverImage],
+'created_at' => yml[:date],
+'description' => yml[:metaDescription] || yml[:snippet],
+'excerpt' => yml[:snippet],
+'featured' => yml[:featured],
+'hackernews_link' => yml[:hackernewsLink], # not in use
+'included_on_index' => yml[:includedOnIndex],
+'parent_page' => yml[:parentPage], # Remove from contentful, not in use
+'pdf' => yml[:pdf],                # Remove from contentful, not in use
+'slug' => yml[:slug],
+'subfolder' => yml[:subfolder],    # "/resources" | "/learn"
+'title' => yml[:title],
+'type' => yml[:type],              # "webinar" | "pdf/file download" | "text"
+'webinar_slides_link' => yml[:webninarSlidesLink],
+'webinar_transcript' => yml[:webninarTranscript],
+'webinar_transcript2' => yml[:webninarTranscript2],
+'webinar_video_link' => yml[:webninarVideoLink]
         }
       }
     end
