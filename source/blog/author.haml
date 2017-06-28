@@ -1,6 +1,7 @@
 - posts = posts || []
-- @title = posts.count > 0 ? posts.first.data.author_name : ''
-- @description = posts.count > 0 ? "Aptible posts written by #{posts.first.data.author_name}" : ''
+- author_name = posts.first.data.author_name
+- @title = posts.count > 0 ? author_name : ''
+- @description = posts.count > 0 ? "Aptible posts written by #{author_name}" : ''
 
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
@@ -9,10 +10,13 @@
 .content
   .grid-container--flex
     .blog-posts.grid-item
-      = partial 'partials/headers/blog-header'
+      %header.blog-header
+        %h1.blog-header__title= "#{author_name}'s Posts"
+        = partial 'partials/follow-aptible-twitter-link'
 
       - posts.each do |post|
-        .blog-posts__post
+        - changelog_class = changelog_post?(post) ? 'blog-posts__post--changelog' : ''
+        .blog-posts__post{ class: changelog_class }
           %a{ href: blog_post_author_href(post) }
             %img.blog-posts__post-avatar{ src: "#{author_gravatar(post)}?s=128" }
           = partial 'partials/blog-list-item', locals: { post: post }

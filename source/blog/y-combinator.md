@@ -4,6 +4,7 @@ excerpt: "Can you get into Y Combinator? Absolutely. Here's why and how."
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
+hn_url: https://www.aptible.com/blog/y_combinator.html
 posted: 2014-09-18
 section: Blog
 type: blog post

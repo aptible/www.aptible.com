@@ -1,3 +1,5 @@
+require 'digest'
+
 xml.instruct!
 xml.feed xmlns: 'http://www.w3.org/2005/Atom' do
   xml.title 'Aptible Blog'
@@ -9,13 +11,8 @@ xml.feed xmlns: 'http://www.w3.org/2005/Atom' do
   xml.updated latest_blog_post.data.posted.to_time.iso8601
   xml.author { xml.name 'Aptible Blog RSS' }
   blog_posts[0..10].each do |post|
-    if post.is_a?(Hash)
-      body = post.body
-    else
-      file = File.open(post.source_file, 'r')
-      body = file.read
-    end
-    content = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new()).render body
+    file = File.open(post.source_file, 'r')
+    content = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new()).render file.read
     xml.entry do
       xml.title post.data.title
       xml.link 'rel' => 'alternate', 'href' => blog_post_href(post)

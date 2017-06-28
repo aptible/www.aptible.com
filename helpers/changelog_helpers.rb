@@ -7,13 +7,17 @@ module ChangelogHelpers
     post.url
   end
 
+  def changelog_post?(post)
+    CHANGELOG_TYPES.include?(post.data['type'])
+  end
+
   def changelog_group_date(date)
     date.strftime('%B %Y')
   end
 
   def changelog_posts
     section_pages('Blog')
-      .select { |p| CHANGELOG_TYPES.include?(p.data['type']) }
+      .select { |p| changelog_post?(p) }
       .sort_by { |p| -p.data['posted'].to_time.to_i }
   end
 
