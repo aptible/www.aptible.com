@@ -87,14 +87,20 @@ Please [see this support article](https://www.aptible.com/support/topics/paas/wh
 
 **Container**
 
-A container is a lightweight virtual machine. Aptible uses Docker to build and run Linux containers. Standard containers are allocated 1 GB of RAM. Higher RAM configurations are available upon request.
+A container is a lightweight virtual machine. Aptible uses Docker to build and
+run Linux containers. Containers are allocated 1 GB of RAM by default, and can
+be resized at any time via the Dashboard and CLI.
 
 --------
 
 
 **Disk**
 
-Disk storage refers to the underlying volumes used for database storage. Disk storage is encrypted at the filesystem level with 192-bit AES encryption. Aptible manages the encryption keys for you. Disk pricing includes nightly backups for 90 days and monthly backups for 6 years. Backups are stored in a geographic region separate from where your database runs.
+Disk storage refers to the underlying volumes used for database storage. Disk
+storage is encrypted at the filesystem level with 256-bit AES encryption.
+Aptible manages the encryption keys for you. Disk pricing includes nightly
+backups for 90 days and monthly backups for 6 years. Backups are replicated in
+a geographic region separate from where your database runs.
 
 --------
 
