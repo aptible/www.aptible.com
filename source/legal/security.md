@@ -2,12 +2,12 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's security policy"
-posted: 2017-05-09
+posted: 2017-07-07
 section: Legal
 sub_section: Policies
 ---
 
-Version 3.5 - May 2017
+Version 3.6 - July 2017
 
 This policy outlines: 1) Aptible's security practices and resources, and 2)  your security obligations. This policy is incorporated by reference into the Aptible Terms of Service.
 
@@ -60,7 +60,7 @@ Please see our [Reference Architecture Diagram](/pages/assets/aptible-reference-
 Aptible Enclave stacks run in separate AWS Virtual Private Clouds. Each stack is an isolated network. Most services run in a private subnet. Only SSL/TLS endpoints and a bastion host are exposed to the Internet. Backend users connect to the stack through the bastion host, which restricts access to stack components and logs activity for security review.
 
 ##### **2.B - Firewalls**
-All stack hosts run mandatory inbound firewalls configured in deny-all mode. HTTP, HTTPS, and SSH ports are opened as necessary.
+All public-facing EC2 instances use inbound Security Group rules configured in deny-all mode. Ports are opened as necessary for: administrative SSH access, Enclave SSH Portal Access, and Redis. Public-facing Enclave Endpoints (which consist in part of an AWS load balancer) are configured to allow traffic on all ports, but only listen on the specific ports required for functionality (e.g., 80 and 443 for an HTTPS Endpoint).
 
 ##### **2.C - DDoS Protection and Mitigation**
 Enclave's VPC-based approach means that most stack components are not accessible from the Internet, and cannot be targeted directly by a DDoS attack.
@@ -103,7 +103,7 @@ For app services that have an SSL/TLS endpoint attached, Enclave performs a heal
 For any deploy, you can roll back to a previous codebase by pushing a different ref to your app's Git endpoint.
 
 ##### **3.B - Isolation**
-Dedicated, PHI-ready environments are deployed on stacks isolated at the customer level. The VPC, network, underlying instances, and AWS virtual infrastructure are not shared with any other tenant.
+Dedicated Enclave environments are deployed on stacks isolated at the customer level. The VPC, network, underlying instances, and AWS virtual infrastructure are not shared with any other tenant.
 
 ##### **3.C - Access Management and Restrictions**
 Aptible workforce members are only granted administrative privileges on customer stacks on an as-needed, least-privilege basis. Access reviews are performed on a regular basis.
@@ -122,7 +122,7 @@ You are responsible for app-level security of the apps you deploy to Aptible.
 SSH public key authentication is used to limit access to your authorized backend users during git-based deploys. Following a successful push to an Aptible git endpoint, code is copied down to your stack's build layer. The resulting images are pushed to a private stack registry, backed by AWS S3, which provides redundant, access-controlled storage.
 
 ##### **3.G - Databases**
-Databases run in the database layer of your stack, on a private subnet accessible only from app or bastion layer. SSL/TLS is required if the database protocol supports it. Disk volumes backing databases are encrypted at the filesystem level using Aptible-managed AES encryption. You can check whether your database uses AES-192 or AES-256 in the Enclave dashboard.
+Databases run in the database layer of your stack, on a private subnet accessible only from app or bastion layer. SSL/TLS is required if the database protocol supports it. Disk volumes backing databases are encrypted at the filesystem level using Aptible-managed AES encryption. You can check whether your database uses AES-192 or AES-256 in the Enclave dashboard. You can rekey the database by dumping/restoring it at any time.
 
 #### **4. Contingency Planning**
 ##### **4.A - Backups**
@@ -145,7 +145,7 @@ AWS data centers are clustered into regions, and sub-clustered into availability
 - Fed via different grids from independent utilities, and
 - Redundantly connected to multiple tier-1 transit providers
 
-For PHI-ready environments, Aptible automatically distributes app containers across availability zones when a service is scaled to more than one container.
+For dedicated environments, Enclave automatically distributes app containers across availability zones when a service is scaled to more than one container.
 
 ##### **4.C - High Availability**
 Enclave allows you to set up high-availability clustering for databases that support it.
