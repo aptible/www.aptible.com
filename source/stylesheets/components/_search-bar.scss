@@ -95,7 +95,7 @@
   svg {
     cursor: pointer;
     display: inline-block;
-    display: none;
+    opacity: 0;
     position: relative;
     transform: translate(-17px, 3px);
     z-index: 0;
@@ -116,6 +116,7 @@
   background-position: right center;
   background-repeat: no-repeat;
   color: transparent;
+  cursor: pointer;
   display: inline-block;
   font-size: 15px;
   font-weight: $regular;
@@ -137,6 +138,7 @@
     box-shadow: none;
     & + svg {
       display: inline-block;
+      opacity: 1;
       path {
         fill: $blue-steel;
       }
@@ -145,7 +147,7 @@
 }
 
 .search-nav__input--with-transition {
-  transition: width $base-duration * 2 $base-timing;
+  transition: width ($base-duration * .8) $base-timing;
 }
 
 //

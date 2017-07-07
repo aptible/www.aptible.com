@@ -205,7 +205,6 @@ ready do
     page_links = page_links(subsets, '/blog/')
     subsets.each_with_index do |subset, index|
       if index == 0
-        subset = subset[1..PaginationHelpers::PAGE_SIZE]
         proxy '/blog/index.html', '/blog/posts.html',
               locals: {
                 all_posts: all_posts,

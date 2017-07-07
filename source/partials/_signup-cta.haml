@@ -2,5 +2,5 @@
 - cta_placeholder ||= 'Work Email'
 - class_name ||= ''
 %form.signup-cta.single-line{ action: open_account_href, method: 'get', class: class_name }
-  %input.single-line__input{ type: 'email', name: 'email', placeholder: cta_placeholder }
+  %input.single-line__input{ type: 'email', name: 'email', placeholder: cta_placeholder, required: true }
   %button.single-line__submit{ type: 'submit' }= cta_label

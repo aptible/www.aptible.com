@@ -1,4 +1,9 @@
 .aptible-toolbelt {
+  align-items: center;
+  justify-content: space-between;
+  .card {
+    display: inline-block;
+  }
   .heading__subtitle {
     color: $blue-steel;
     font-size: 16px;
@@ -83,6 +88,7 @@
 .toolbelt-platform {
   background-color: $white;
   border-color: $lighter-blue;
+  display: inline-block;
   margin-bottom: 20px;
   padding: 40px 20px 20px;
   transition-property: background-color, border-color;

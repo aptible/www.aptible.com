@@ -2,52 +2,12 @@
   background-color: $dark-blue;
   color: $light-blue;
   margin-bottom: 50px;
-  padding-top: 34px;
 }
 
 .aptible-header--single-grid,
-.aptible-header--double-grid {
-  position: relative;
-  .grid-container {
-    position: relative;
-  }
-  &::before {
-    background-color: transparent;
-    background-image: url(/images/header-top-grid.svg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: '';
-    display: block;
-    height: 45%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-  }
-}
-.aptible-header__top-grid {
-  height: 33.33%;
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  width: 100%;
-  svg {
-    height: 100%;
-    width: 100%;
-  }
-}
-.aptible-header--single-grid {
-  &::before {
-    background-position: 0 -100px;
-    height: 100%;
-  }
-}
-.aptible-header--double-grid,
 .aptible-header--bottom-grid {
   position: relative;
   &::after {
-    background-size: cover;
     background-color: transparent;
     background-image: url(/images/header-bottom-grid.svg);
     background-position: bottom center;
@@ -61,12 +21,18 @@
     width: 100%;
     z-index: 0;
   }
+  .grid-container {
+    position: relative;
+    z-index: 1;
+  }
+  .nav--header {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 @media screen and (max-width: $tablet-portrait) {
   .aptible-header--single-grid::before,
-  .aptible-header--double-grid::before,
-  .aptible-header--double-grid::after,
   .aptible-header--bottom-grid::after {
     display: none;
   }
@@ -95,11 +61,7 @@
   font-size: 50px;
   font-weight: $semibold;
   margin-bottom: 40px;
-  &::after {
-    background-color: $dark-gray;
-    margin-top: 30px;
-    width: 30px;
-  }
+  @extend .with-hr
 }
 
 .heading__title--centered {
@@ -133,7 +95,7 @@
   text-align: center;
   &::after { display: none; }
   &:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 
@@ -147,7 +109,7 @@
 .heading__summary {
   color: $sky-blue;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: $light;
   line-height: 1.2;
   margin-bottom: 0;
   &::after { display: none; }

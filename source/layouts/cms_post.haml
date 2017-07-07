@@ -1,52 +1,25 @@
 - content_for :header do
-  = partial 'headers/blog-post', locals: { |
-      page_subtitle: "#{cms_post.author.name} - |
-                        #{post_date(cms_post.posted)}", |
-      page_title: "#{cms_post.title}", |
-      page_summary: "#{cms_post.excerpt}" |
-    } |
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
 
-- prev_post = prev_post(cms_post)
-- next_post = next_post(cms_post)
 = wrap_layout :layout do
   .content
-    .grid-container
-      .blog-post__author
-        %h4.blog-post__author-subtitle by
-        %h3.blog-post__author-name
-          %a{ href: "/blog/authors/#{cms_post.author.slug}" }
-            = cms_post.author.name
+    .grid-container--flex
+      .blog-posts.grid-item
+        = partial 'partials/headers/blog-header'
 
-      .blog-post.markdown-content
-        = find_and_preserve do
-          = yield
+        .blog-posts__post
+          %a{ href: blog_post_author_href(cms_post) }
+            %img.blog-posts__post-avatar{ src: "#{author_gravatar(cms_post)}?s=128" }
+          %header.blog-posts__post-header
+            %h1.post__title= cms_post.data.title
+            .post__subtitle
+              %a{ href: blog_post_author_href(cms_post) }= cms_post.data.author_name
+              on
+              %span= post_date(cms_post.data.posted)
 
-    .grid-container
-      %nav.blog-posts__nav
-        .blog-posts__link--footer
-          %a.blog-posts__link--all{ href: '/blog/' }
-            %span.post__title All Posts
-        - if prev_post
-          %a.blog-posts__link--footer.blog-posts__link--prev{ href: blog_post_href(prev_post) }
-            %div
-              %span.post__subtitle= "#{prev_post.data.author_name} - #{post_date(prev_post.data.posted)}"
-              %span.post__title= prev_post.data.title
-        - else
-          .blog-posts__link--footer
-        - if next_post
-          %a.blog-posts__link--footer.blog-posts__link--next{ href: blog_post_href(next_post) }
-            %div
-              %span.post__subtitle= "#{next_post.data.author_name} - #{post_date(next_post.data.posted)}"
-              %span.post__title= next_post.data.title
-        - else
-          .blog-posts__link--footer
+          .blog-post.markdown-content
+            = find_and_preserve do
+              = yield
 
-  = partial 'partials/resources-footer'
-  
-  .content.hero-gradient--angled.aptible-header--bottom-grid
-    .footer__signup.grid-container.grid--single-center
-      .grid-item
-        %h2.footer__signup-title
-          Sign up to get the best in security and compliance delivered monthly.
-        .footer__signup-form
-          = partial 'partials/newsletter-signup'
+        = partial 'partials/newsletter-signup--blog'

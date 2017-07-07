@@ -1,0 +1,10 @@
+.newsletter-signup--blog
+  %span.newsletter-signup--blog__intro
+    %strong Defense in Brief
+    %br
+    Subscribe to get the best in security, compliance and DevOps delivered monthly.
+
+  %form.newsletter-signup--blog__form.signup-cta--small
+    %input{ type: 'hidden', name: 'event', value: 'subscribed' }
+    %input.single-line__input{ required: true, name: 'newsletter-form__email', type: 'email', placeholder: 'Enter your email' }
+    %button.single-line__submit{ type: 'submit'} Sign up

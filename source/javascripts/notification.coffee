@@ -29,3 +29,8 @@ $ ->
     message = "Thank you for subscribing to our monthly security and compliance digest."
     $(document).trigger('notify', [message])
     window.history?.replaceState { }, '', loc.href.replace(loc.search, '')
+
+  if loc.search.indexOf('event=gridiron-demo-request') > -1
+    message = "We've received your request for a demo. We'll get back to you as quickly as possible."
+    $(document).trigger('notify', [message])
+    window.history?.replaceState { }, '', loc.href.replace(loc.search, '')

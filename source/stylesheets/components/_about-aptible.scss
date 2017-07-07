@@ -1,0 +1,47 @@
+.about-aptible-hero {
+  margin-bottom: 50px;
+}
+.about-aptible-hero__items {
+  display: flex;
+  padding: 0 $grid-gutter;
+  justify-content: space-between;
+  width: 100%;
+  @media screen and (max-width: $tablet-landscape) {
+    display: block;
+  }
+}
+.about-aptible-hero__item {
+  display: flex;
+
+  flex-direction: column;
+  width: calc(33% - 40px);
+  a.btn {
+    text-align: center;
+  }
+  p:first-of-type {
+    flex-grow: 1;
+  }
+  @media screen and (max-width: $tablet-landscape) {
+    display: block;
+    margin-bottom: 40px;
+    padding: 0 $grid-gutter;
+    width: auto;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+.about-aptible-hero__title {
+  font-size: 50px;
+  text-align: center;
+}
+.about-aptible-hero__subtitle {
+  font-size: 26px;
+}
+.about-aptible-hero__item p {
+  font-size: 16px;
+  line-height: 1.5;
+}

@@ -21,11 +21,11 @@
 
 .content
   .grid-container
-    .blog-posts
+    .articles
       - (category.articles || []).each do |article|
         - next if article.hidden
-        .blog-posts__post
-          %a.blog-posts__link{ href: "/support/topics/#{article.url}" }
-            %p= article.title
+        .articles__item
+          %a.articles__link{ href: "/support/topics/#{article.url}" }
+            %h2= article.title
 
   = partial 'partials/resources-footer'

@@ -10,7 +10,7 @@ layout: layout
   = partial 'partials/headers/support-index'
 
 .content
-  .grid-container.grid--5up.toolbelt-platforms
+  .grid-container.grid-container--flex.toolbelt-platforms.grid--5up
     %a.active.grid-item.card.toolbelt-platform{ href: '#macos', class: 'macos' }
       .card__header.toolbelt-platform--logo
         = partial "images/icons/osx.svg"
@@ -61,7 +61,7 @@ layout: layout
   .grid-container.grid--single-center.download-panels
     -# OSX Panel
     .grid-item.download-panel.split-panel.active#macos
-      %h3.no-hr Download Aptible Toolbelt for macOS
+      %h3 Download Aptible Toolbelt for macOS
       %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.osx }
         = partial '/images/icons/icon-download.svg'
         Download #{data.toolbelt.version} for macOS
@@ -155,7 +155,7 @@ layout: layout
 
     -# Windows Panel
     .grid-item.download-panel.split-panel#windows
-      %h3.no-hr Download Aptible Toolbelt for Windows
+      %h3 Download Aptible Toolbelt for Windows
       %a.btn.btn-primary.btn-lg.download-button{ href: data.toolbelt.os.windows }
         = partial '/images/icons/icon-download.svg'
         Download #{data.toolbelt.version} for Windows
@@ -213,12 +213,13 @@ layout: layout
                 %td.rouge-code.rouge-code--no-num.rouge-code--terminal
                   .terminal $ aptible help
                   .terminal Commands:
+                  -# BEGIN USAGE COMMANDS
                   .terminal &nbsp; aptible apps
                   .terminal &nbsp; aptible apps:create HANDLE
                   .terminal &nbsp; aptible apps:deprovision
-                  .terminal &nbsp; aptible apps:scale TYPE NUMBER
+                  .terminal &nbsp; aptible apps:scale SERVICE [--container-count COUNT] [--container-size SIZE_MB]
                   .terminal &nbsp; aptible backup:list DB_HANDLE
-                  .terminal &nbsp; aptible backup:restore [--handle HANDLE] [--size SIZE_GB]
+                  .terminal &nbsp; aptible backup:restore BACKUP_ID [--handle HANDLE] [--container-size SIZE_MB] [--size SIZE_GB]
                   .terminal &nbsp; aptible config
                   .terminal &nbsp; aptible config:add
                   .terminal &nbsp; aptible config:rm
@@ -226,28 +227,34 @@ layout: layout
                   .terminal &nbsp; aptible config:unset
                   .terminal &nbsp; aptible db:backup HANDLE
                   .terminal &nbsp; aptible db:clone SOURCE DEST
-                  .terminal &nbsp; aptible db:create HANDLE
+                  .terminal &nbsp; aptible db:create HANDLE[--type TYPE] [--container-size SIZE_MB] [--size SIZE_GB]
                   .terminal &nbsp; aptible db:deprovision HANDLE
                   .terminal &nbsp; aptible db:dump HANDLE
                   .terminal &nbsp; aptible db:execute HANDLE SQL_FILE
                   .terminal &nbsp; aptible db:list
+                  .terminal &nbsp; aptible db:reload HANDLE
+                  .terminal &nbsp; aptible db:restart HANDLE [--container-size SIZE_MB] [--size SIZE_GB]
                   .terminal &nbsp; aptible db:tunnel HANDLE
+                  .terminal &nbsp; aptible deploy [OPTIONS] [VAR1=VAL1] [VAR=VAL2] ...
                   .terminal &nbsp; aptible domains
                   .terminal &nbsp; aptible help [COMMAND]
                   .terminal &nbsp; aptible login
                   .terminal &nbsp; aptible logs
+                  .terminal &nbsp; aptible operation:cancel OPERATION_ID
                   .terminal &nbsp; aptible ps
                   .terminal &nbsp; aptible rebuild
                   .terminal &nbsp; aptible restart
                   .terminal &nbsp; aptible ssh [COMMAND]
                   .terminal &nbsp; aptible version
+                  -# END USAGE COMMANDS
                 %td.rouge-code.rouge-code--no-num.rouge-code--terminal
                   .terminal-interactive &nbsp;
                   .terminal-interactive &nbsp;
+                  -# BEGIN USAGE DESCRIPTIONS
                   .terminal-interactive # List all applications
                   .terminal-interactive # Create a new application
                   .terminal-interactive # Deprovision an app
-                  .terminal-interactive # Scale app to NUMBER of instances
+                  .terminal-interactive # Scale a service
                   .terminal-interactive # List backups for a database
                   .terminal-interactive # Restore a backup
                   .terminal-interactive # Print an app's current configuration
@@ -262,16 +269,21 @@ layout: layout
                   .terminal-interactive # Dump a remote database to file
                   .terminal-interactive # Executes sql against a database
                   .terminal-interactive # List all databases
+                  .terminal-interactive # Reload a database
+                  .terminal-interactive # Restart a database
                   .terminal-interactive # Create a local tunnel to a database
+                  .terminal-interactive # Deploy an app
                   .terminal-interactive # Print an app's current virtual domains
                   .terminal-interactive # Describe available commands or one specific command
                   .terminal-interactive # Log in to Aptible
-                  .terminal-interactive # Follows logs from a running app
+                  .terminal-interactive # Follows logs from a running app or database
+                  .terminal-interactive # Cancel a running operation
                   .terminal-interactive # Display running processes for an app - DEPRECATED
                   .terminal-interactive # Rebuild an app, and restart its services
                   .terminal-interactive # Restart all services associated with an app
                   .terminal-interactive # Run a command against an app
                   .terminal-interactive # Print Aptible CLI version
+                  -# END USAGE DESCRIPTIONS
 
     .grid-container.grid--2up
       .grid-item

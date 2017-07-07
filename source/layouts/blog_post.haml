@@ -1,52 +1,25 @@
 - content_for :header do
-  = partial 'headers/blog-post', locals: { |
-      page_subtitle: "#{current_page.data.author_name} - |
-                        #{post_date(current_page.data.posted)}", |
-      page_title: "#{current_page.data.title}", |
-      page_summary: "#{current_page.data.excerpt}" |
-    } |
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
 
-- prev_post = prev_post(current_page)
-- next_post = next_post(current_page)
 = wrap_layout :layout do
   .content
-    .grid-container
-      .blog-post__author
-        %h4.blog-post__author-subtitle by
-        %h3.blog-post__author-name
+    .grid-container--flex
+      .blog-posts.grid-item
+        = partial 'partials/headers/blog-header'
+
+        .blog-posts__post
           %a{ href: blog_post_author_href(current_page) }
-            = current_page.data.author_name
+            %img.blog-posts__post-avatar{ src: "#{author_gravatar(current_page)}?s=128" }
+          %header.blog-posts__post-header
+            %h1.post__title= current_page.data.title
+            .post__subtitle
+              %a{ href: blog_post_author_href(current_page) }= current_page.data.author_name
+              on
+              %span= post_date(current_page.data.posted)
 
-      .blog-post.markdown-content
-        = find_and_preserve do
-          = yield
+          .blog-post.markdown-content
+            = find_and_preserve do
+              = yield
 
-    .grid-container
-      %nav.blog-posts__nav
-        .blog-posts__link--footer
-          %a.blog-posts__link--all{ href: '/blog/' }
-            %span.post__title All Posts
-        - if prev_post
-          %a.blog-posts__link--footer.blog-posts__link--prev{ href: prev_post.url }
-            %div
-              %span.post__subtitle= "#{prev_post.data.author_name} - #{post_date(prev_post.data.posted)}"
-              %span.post__title= prev_post.data.title
-        - else
-          .blog-posts__link--footer
-        - if next_post
-          %a.blog-posts__link--footer.blog-posts__link--next{ href: next_post.url }
-            %div
-              %span.post__subtitle= "#{next_post.data.author_name} - #{post_date(next_post.data.posted)}"
-              %span.post__title= next_post.data.title
-        - else
-          .blog-posts__link--footer
-
-  = partial 'partials/resources-footer'
-
-  .content.hero-gradient--angled.aptible-header--bottom-grid
-    .footer__signup.grid-container.grid--single-center
-      .grid-item
-        %h2.footer__signup-title
-          Sign up to get the best in security and compliance delivered monthly.
-        .footer__signup-form
-          = partial 'partials/newsletter-signup'
+        = partial 'partials/newsletter-signup--blog'

@@ -6,7 +6,7 @@ description: "Aptible plans and pricing"
 ---
 
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled.aptible-header--adjacent.aptible-header--double-grid
+  %header.aptible-header.hero-gradient--angled.aptible-header--adjacent.aptible-header--bottom-grid
     = partial 'partials/main-nav'
 
     .grid-container.pricing-page-header
@@ -24,7 +24,7 @@ description: "Aptible plans and pricing"
         .pricing-tier__title Development
       %ul.pricing-tier__checklist.checklist.checklist--blue
         %li.pricing-tier__checklist-item Aptible Enclave deployment platform
-        %li.pricing-tier__checklist-item No contracts, no commitments
+        %li.pricing-tier__checklist-item No contracts, no commitment
         %li.pricing-tier__checklist-item $500 credit towards usage for new accounts
         %li.pricing-tier__checklist-item Shared tenancy
         %li.pricing-tier__checklist-item Ideal for development or staging
@@ -36,7 +36,7 @@ description: "Aptible plans and pricing"
           = partial 'images/enclave.svg'
         .pricing-tier__subtitle
           %span.pricing-tier__price 999
-          \/ month base, annual contract
+          %span.pricing-tier__extend &nbsp; / month base, annual contract
         .pricing-tier__title Platform
       %ul.pricing-tier__checklist.checklist.checklist--blue
         %li.pricing-tier__checklist-item Aptible Enclave deployment platform
@@ -52,8 +52,8 @@ description: "Aptible plans and pricing"
           .pricing-tier__plus
           = partial 'images/gridiron.svg'
         .pricing-tier__subtitle
-          %span.pricing-tier__price 1,999
-          \/ month base, annual contract
+          %span.pricing-tier__price 3,499
+          %span.pricing-tier__extend &nbsp; / month base, annual contract
         .pricing-tier__title Pilot
       %ul.pricing-tier__checklist.checklist.checklist--blue
         %li.pricing-tier__checklist-item Aptible Enclave + Aptible Gridiron

@@ -25,7 +25,24 @@ body {
 // Grid Container
 //
 .grid-container {
+  // @include grid-visual;
   @include grid-container;
+  @extend .grid-container--flex;
+  @media screen and (max-width: 1200px) {
+    padding: 0 20px;
+  }
+  > .grid-container {
+    @include grid-collapse;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    &.quickstart {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.grid-container--flex {
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
@@ -174,6 +191,9 @@ body {
   @media screen and (max-width: $tablet-portrait) {
     @include grid-column(12);
     float: none;
+    &[data-quickstart="true"] {
+      order: 2
+    }
   }
 }
 
@@ -244,15 +264,11 @@ body {
 .grid--5up {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  &::after { display: none; }
 
   .grid-item {
-    width: ($max-viewport / 5) - $grid-gutter;
-    margin-right: $grid-gutter;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
+    width: ($max-viewport / 5) - ($grid-gutter / 2);
   }
 }
 
@@ -332,11 +348,10 @@ body {
 
 .logo-grid--4up {
   .logo-grid__item {
+    border-left: none;
+    border-right: 1px solid $light-blue;
     width: 25%;
-    &:nth-child(2n+1) {
-      border-right: 1px solid $light-blue;
-    }
-    &:nth-child(4n+1) {
+    &:nth-child(4n) {
       border-right: none;
     }
     &:nth-child(3), &:nth-child(4) {
@@ -344,6 +359,12 @@ body {
     }
     @media screen and (max-width: $tablet-portrait) {
       width: 50%;
+      &:nth-child(2n) {
+        border-right: none;
+      }
+      &:nth-child(3), &:nth-child(4) {
+        border-top: 1px solid $light-blue;
+      }
     }
   }
 }

@@ -10,12 +10,21 @@ ol {
 
 ul {
   list-style-type: disc;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding-left: 2.5em;
   li {
     font-weight: $light;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
   }
+}
+
+li > ul {
+  margin-top: .5em;
+  margin-bottom: 0;
+}
+
+li > p:last-of-type {
+  margin-bottom: 0;
 }
 
 ul.checklist {
@@ -28,7 +37,7 @@ ul.checklist {
   }
   li {
     line-height: 1.25;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -40,12 +49,12 @@ ul.checklist--blue {
 
 ol {
   list-style-type: decimal;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding-left: 2.5em;
   li {
     font-weight: $light;
-    margin-bottom: 1em;
-    padding-left: 0.5em;
+    margin-bottom: .5em;
+    padding-left: .5em;
 
   }
 }

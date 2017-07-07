@@ -1,3 +1,12 @@
-%h2.post__subtitle= "#{post.data.author_name} - #{post_date(post.data.posted)}"
-%h1.post__title= post.data.title
-.post__summary= post.data.excerpt
+%header.blog-posts__post-header
+  %h2.post__title
+    %a{ href: blog_post_href(post) }= post.data.title
+  .post__subtitle
+    %a{ href: blog_post_author_href(post) }= post.data.author_name
+    on
+    %span= post_date(post.data.posted)
+
+.blog-posts__post-summary.markdown-content
+  = blog_summary(post)
+
+.blog-posts__post-summary-fade

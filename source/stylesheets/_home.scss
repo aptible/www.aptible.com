@@ -1,6 +1,11 @@
 .home-hero__copy {
   @include grid-column(6.5);
   margin-bottom: 50px;
+  @media screen and (max-width: $tablet-portrait) {
+    // padding-left:
+    // padding-right:
+    width: 100%;
+  }
 }
 .home-hero__quotes {
   @include grid-column(5.5);
@@ -82,15 +87,27 @@
   color: $white;
   font-weight: $semibold;
   font-size: 14px;
-  margin-bottom: 20px;
   text-align: left;
 }
 .customer-quote__author {
   font-size: 11px;
   font-weight: $semibold;
-  color: $blue-steel;
+  color: $sky-blue;
+  display: inline;
   margin-bottom: 0;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.customer-quote__logo--adjacent {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  width: 80px;
+}
+.customer-quote__wrapper {
+  display: inline-block;
+  width: calc(100% - 100px);
 }
 
 .home__customers-logos {
@@ -207,10 +224,11 @@
   }
 }
 .home__enclave-terminal {
-  @include grid-column(7);
-  @include grid-push(1);
+  @include grid-column(8);
+  left: $grid-gutter;
   margin-bottom: 0;
   padding-bottom: 0;
+  position: relative;
   table {
     margin-bottom: 10px;
   }
@@ -348,7 +366,7 @@
   align-items: stretch;
   display: flex;
   margin-bottom: 50px;
-  margin-top: 50px;
+  padding-top: 50px;
   overflow: hidden;
 }
 .home-quote {
@@ -359,7 +377,7 @@
 .home-quote__bubble {
   align-self: stretch;
   background: $white;
-  box-shadow: 0 2px 7px 0 rgba(0,0,0,.14);
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.12);
   border-radius: 5px;
   margin: 0 20px;
   padding: 50px 80px;

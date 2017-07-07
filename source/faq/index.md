@@ -36,7 +36,7 @@ Any PaaS should do three things:
 For new projects, setting up a secure deployment environment that can handle sensitive data (PII, PHI, credit card numbers, SSNs, financial data, etc.) takes a lot of work: initial decision-making, initial implementation, and continued upkeep. Enclave is a flexible DevOps and security automation platform that reduces the time, cost, and risk of securing data so that customers can spend time on focusing on whatever they are good at.
 
 | Compared to: | Enclave Advantage |
-| ------------ | ----------------- | 
+| ------------ | ----------------- |
 | AWS | Cheaper for most customers, highly automated |
 | PaaS Competitors | Highly mature platform, SLA + insurance included, best technical support in the industry |
 
@@ -87,14 +87,20 @@ Please [see this support article](https://www.aptible.com/support/topics/paas/wh
 
 **Container**
 
-A container is a lightweight virtual machine. Aptible uses Docker to build and run Linux containers. Standard containers are allocated 1 GB of RAM. Higher RAM configurations are available upon request.
+A container is a lightweight virtual machine. Aptible uses Docker to build and
+run Linux containers. Containers are allocated 1 GB of RAM by default, and can
+be resized at any time via the Dashboard and CLI.
 
 --------
 
 
 **Disk**
 
-Disk storage refers to the underlying volumes used for database storage. Disk storage is encrypted at the filesystem level with 192-bit AES encryption. Aptible manages the encryption keys for you. Disk pricing includes nightly backups for 90 days and monthly backups for 6 years. Backups are stored in a geographic region separate from where your database runs.
+Disk storage refers to the underlying volumes used for database storage. Disk
+storage is encrypted at the filesystem level with 256-bit AES encryption.
+Aptible manages the encryption keys for you. Disk pricing includes nightly
+backups for 90 days and monthly backups for 6 years. Backups are replicated in
+a geographic region separate from where your database runs.
 
 --------
 
@@ -107,7 +113,7 @@ An endpoint is a networking resource that exposes an app or database service. An
 
 **Service**
 
-A service is one or more containers running the same process. By adding containers to a service, you can easily and quickly scale. Services run in your stack's app layer (see our [Reference Architecture Diagram](/pages/assets/aptible-reference-architecture.pdf)).
+A service is one or more containers running the same process. By adding containers to a service, you can easily and quickly scale. Services run in your stack's app layer (see our [Reference Architecture Diagram](/resources/enclave-reference-architecture-and-division-of-responsibilities)).
 
 --------
 
@@ -157,7 +163,7 @@ Production Enclave environments run on dedicated stacks, which means we must run
 
 **Do you have a "startup" plan? Can I get a discount?**
 
-Our pricing reflects a balance between optimizing for growth and long-term stability. We try to make our entry point as accessible as possible while preserving extremely high standards for product quality, stability, and technical support. 
+Our pricing reflects a balance between optimizing for growth and long-term stability. We try to make our entry point as accessible as possible while preserving extremely high standards for product quality, stability, and technical support.
 
 We do offer discounts for up-front payments. If that is something you'd like to explore, please [let us know](http://contact.aptible.com).
 

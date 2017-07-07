@@ -1,7 +1,7 @@
 ---
 title: Terms of Service
 tracked_title: Terms of Service
-description: "Aptible's terms of service"
+description: "Aptible Terms of Service"
 posted: 2016-10-16
 section: Legal
 sub_section: Agreements
@@ -31,7 +31,7 @@ See Section 22 for defined terms.
 You acknowledge and agree that, as provided in greater detail in this Agreement:  
 
 - The Services are licensed, not sold to you, and that you may use the Services only as set forth in this Agreement;  
-- The Services are provided "as is" without warranties of any kind, and Aptible’s liability to you is limited;  
+- The Services are provided "as is" without warranties of any kind, and Aptible's liability to you is limited;  
 - You are solely responsible for protecting the privacy and legal rights of your End Users, except as provided for in a Business Associate Agreement or Data Use Agreement between you and Aptible;  
 - You are solely responsible for exporting Your Content and your Applications from the Services prior to closing your Aptible account; and  
 - Disputes arising hereunder will be resolved by binding arbitration, and **BY ACCEPTING THIS AGREEMENT, YOU AND APTIBLE ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION.** YOU AGREE TO GIVE UP YOUR RIGHT TO GO TO COURT to assert or defend your rights under this contract (except for matters that may be taken to small claims court). Your rights will be determined by a NEUTRAL ARBITRATOR and NOT a judge or jury and your claims cannot be brought as a class action. Please review the Arbitration Agreement in Section 19 below for the details regarding your agreement to arbitrate any disputes with Aptible.
@@ -249,7 +249,7 @@ The Notice must: (a) describe the nature and basis of the claim or dispute; and 
 
 **F.  No Class Actions.** YOU AND APTIBLE AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. Further, unless both you and Aptible agree otherwise, the arbitrator may not consolidate more than one person’s claims, and may not otherwise preside over any form of a representative or class proceeding.
 
-**G.  Modifications.** If Aptible makes any future change to this arbitration provision (other than a change to Aptible’s address for Notice), you may reject the change by sending us written notice within 30 days of the change to Aptible’s address for Notice, in which case your account with Aptible will be immediately terminated and this arbitration provision, as in effect immediately prior to the amendments you reject, will survive.
+**G.  Modifications.** If Aptible makes any future change to this arbitration provision (other than a change to Aptible's address for Notice), you may reject the change by sending us written notice within 30 days of the change to Aptible's address for Notice, in which case your account with Aptible will be immediately terminated and this arbitration provision, as in effect immediately prior to the amendments you reject, will survive.
 
 **H.  Enforceability.** If Section 19(F) is found to be unenforceable or if the entirety of this Section 19 is found to be unenforceable, then the entirety of this Section 19 will be null and void and, in that case, the parties agree that the exclusive jurisdiction and venue described in Section 18 will govern any action arising out of or related to this Agreement.
 
