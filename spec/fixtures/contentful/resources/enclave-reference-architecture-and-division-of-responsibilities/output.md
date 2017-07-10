@@ -19,6 +19,7 @@ featured: true
 included_on_index: true
 included_in_footer:
 footer_position:
+layout: resource
 section: Resources
 slug: enclave-reference-architecture-and-division-of-responsibilities
 subfolder: resources

@@ -33,6 +33,7 @@ module ContentfulHelpers
           'included_on_index' => yml[:included_on_index],
           'included_in_footer' => yml[:included_in_footer],
           'footer_position' => yml[:footer_position],
+          'layout' => 'resource',
           'section' => 'Resources',
           'slug' => yml[:slug],
           'subfolder' => yml[:subfolder],

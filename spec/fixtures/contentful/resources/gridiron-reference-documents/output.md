@@ -17,6 +17,7 @@ featured: false
 included_on_index: true
 included_in_footer: true
 footer_position: 3
+layout: resource
 section: Resources
 slug: gridiron-reference-documents
 subfolder: resources

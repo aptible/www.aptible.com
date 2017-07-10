@@ -12,6 +12,7 @@ featured: false
 included_on_index: true
 included_in_footer: true
 footer_position: 2
+layout: resource
 section: Resources
 slug: what-is-a-hipaa-baa
 subfolder: resources

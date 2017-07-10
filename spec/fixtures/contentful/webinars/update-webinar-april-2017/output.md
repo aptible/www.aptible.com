@@ -9,6 +9,7 @@ featured: false
 included_on_index: true
 included_in_footer:
 footer_position:
+layout: resource
 section: Resources
 slug: update-webinar-april-2017
 subfolder: resources

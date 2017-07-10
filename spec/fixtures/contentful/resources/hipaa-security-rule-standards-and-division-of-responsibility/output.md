@@ -11,6 +11,7 @@ featured: false
 included_on_index: true
 included_in_footer:
 footer_position:
+layout: resource
 section: Resources
 slug: hipaa-security-rule-standards-and-division-of-responsibility
 subfolder: resources

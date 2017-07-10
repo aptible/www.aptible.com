@@ -13,6 +13,7 @@ featured: true
 included_on_index: true
 included_in_footer: true
 footer_position: 1
+layout: resource
 section: Resources
 slug: hipaa-compliance-for-developers-getting-started
 subfolder: learn
