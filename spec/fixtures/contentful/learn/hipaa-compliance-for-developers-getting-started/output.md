@@ -11,6 +11,8 @@ description: Many developers are working with health data for the first time. Th
 excerpt: Basic information on becoming secure and compliant under HIPAA regulations.
 featured: true
 included_on_index: true
+included_in_footer: true
+footer_position: 1
 section: Resources
 slug: hipaa-compliance-for-developers-getting-started
 subfolder: learn

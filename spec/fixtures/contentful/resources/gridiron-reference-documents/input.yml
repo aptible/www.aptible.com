@@ -27,3 +27,5 @@
   :path: "/assets/gridiron-risk-model.pdf"
 - :title: Gridiron Compliance Model
   :path: "/assets/gridiron-compliance-model.pdf"
+:included_in_footer: true
+:footer_position: 3

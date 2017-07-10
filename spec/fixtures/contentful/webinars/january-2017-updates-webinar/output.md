@@ -7,6 +7,8 @@ description: The second in our quarterly Update Webinar Series.
 excerpt: The second in our quarterly Update Webinar Series.
 featured: false
 included_on_index: true
+included_in_footer:
+footer_position:
 section: Resources
 slug: january-2017-updates-webinar
 subfolder: resources

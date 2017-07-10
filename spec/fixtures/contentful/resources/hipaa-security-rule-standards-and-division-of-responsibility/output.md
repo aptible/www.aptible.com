@@ -9,6 +9,8 @@ excerpt: A reference document describing how Aptible works with customers to ens
   compliance with HIPAA Security Standards.
 featured: false
 included_on_index: true
+included_in_footer:
+footer_position:
 section: Resources
 slug: hipaa-security-rule-standards-and-division-of-responsibility
 subfolder: resources

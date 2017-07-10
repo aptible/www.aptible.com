@@ -17,6 +17,8 @@ excerpt: These reference documents describe how Enclave enables you to deploy se
   so you can focus on building great products.
 featured: true
 included_on_index: true
+included_in_footer:
+footer_position:
 section: Resources
 slug: enclave-reference-architecture-and-division-of-responsibilities
 subfolder: resources

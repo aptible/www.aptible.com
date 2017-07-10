@@ -263,3 +263,5 @@
   :title: 'Resource: HIPAA Compliance for Developers'
   :description: HIPAA Compliance for Developers
   :url: "//images.contentful.com/8djp5jlzqrnc/4dr8wL6iDYKA2GYQg8yWii/5a34d90eea7d145c84f42a9da4c7fb34/common-hipaa-questions.jpg"
+:included_in_footer: true
+:footer_position: 1

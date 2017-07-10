@@ -7,6 +7,8 @@ description: Our April Quarterly Update Webinar.
 excerpt: Our April Quarterly Update Webinar.
 featured: false
 included_on_index: true
+included_in_footer:
+footer_position:
 section: Resources
 slug: update-webinar-april-2017
 subfolder: resources

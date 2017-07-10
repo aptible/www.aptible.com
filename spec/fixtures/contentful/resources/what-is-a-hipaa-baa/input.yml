@@ -178,3 +178,5 @@
   :title: 'Resource: What is HIPAA BAA'
   :description: What is HIPAA BAA?
   :url: "//images.contentful.com/8djp5jlzqrnc/ZID8bl4zSgIc8UkMAyYc8/8b5abc621b19e6efbdece8682073c08e/what-is-a-baa.jpg"
+:included_in_footer: true
+:footer_position: 2

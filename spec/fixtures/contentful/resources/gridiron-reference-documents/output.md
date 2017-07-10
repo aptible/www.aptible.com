@@ -15,6 +15,8 @@ excerpt: The Gridiron Compliance and Risk Models describe how Gridiron transform
   complex security and compliance tasks into manageable and repeatable business processes.
 featured: false
 included_on_index: true
+included_in_footer: true
+footer_position: 3
 section: Resources
 slug: gridiron-reference-documents
 subfolder: resources

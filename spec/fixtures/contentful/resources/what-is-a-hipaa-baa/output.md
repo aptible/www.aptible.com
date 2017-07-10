@@ -10,6 +10,8 @@ description: What do software developers need to know about Business Associate A
 excerpt: What do software developers need to know about Business Associate Agreements?
 featured: false
 included_on_index: true
+included_in_footer: true
+footer_position: 2
 section: Resources
 slug: what-is-a-hipaa-baa
 subfolder: resources
