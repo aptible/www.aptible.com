@@ -1,9 +1,8 @@
 ---
-:id: 5MVXbZ24YokE6eEucGQIGU
 :title: Enclave Reference Architecture & Division of Responsibilities
 :snippet: These reference documents describe how Enclave enables you to deploy securely
   so you can focus on building great products.
-:date: '2017-03-01T23:00:00-05:00'
+:date: 2017-03-02T00:00-04:00
 :subfolder: resources
 :slug: enclave-reference-architecture-and-division-of-responsibilities
 :content: |-
@@ -27,4 +26,12 @@
   :description: The Enclave Division of Responsibilities describes how Enclave helps
     development teams meet even the strictest security and compliance requirements.
   :url: "//assets.contentful.com/8djp5jlzqrnc/5jSsWVflW84wYS68OKyaM4/011b128fa30a359edd7ae6efdcb8d5a9/Enclave_-_Division_of_Responsibilities.pdf"
-- :id: 2AcTJxok7Oaui82QQUIiMk
+:documents:
+- :title: Enclave Reference Architecture
+  :description: The Enclave Reference Architecture describes how you can deploy containers
+    securely using Enclave.
+  :path: "/assets/aptible-enclave-reference-architecture.pdf"
+- :title: Enclave Division of Responsibilities
+  :description: The Enclave Division of Responsibilities describes how Enclave helps
+    development teams meet even the strictest security and compliance requirements.
+  :path: "/assets/aptible-enclave-division-of-responsibilities.pdf"

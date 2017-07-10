@@ -1,9 +1,8 @@
 ---
-:id: 1AA9XzRCPeeSqU8eUSQCiq
 :title: Gridiron Reference Documents
 :snippet: The Gridiron Compliance and Risk Models describe how Gridiron transforms
   complex security and compliance tasks into manageable and repeatable business processes.
-:date: '2017-01-22T23:00:00-05:00'
+:date: 2017-01-23T00:00-04:00
 :subfolder: resources
 :slug: gridiron-reference-documents
 :content: |-
@@ -23,3 +22,8 @@
 - :title: Gridiron Compliance Model
   :description:
   :url: "//assets.contentful.com/8djp5jlzqrnc/53Vni1qr4sWOG2ei6q4YM8/54d12b3aefb85b505de5be988df721a8/gridiron-compliance-model.pdf"
+:documents:
+- :title: Gridiron Risk Model
+  :path: "/assets/gridiron-risk-model.pdf"
+- :title: Gridiron Compliance Model
+  :path: "/assets/gridiron-compliance-model.pdf"

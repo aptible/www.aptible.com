@@ -1,10 +1,9 @@
 ---
-:id: 48it6eXjPyAqEem8i2OO6C
 :title: 'HIPAA Compliance for Developers: Getting Started'
 :snippet: Basic information on becoming secure and compliant under HIPAA regulations.
 :meta_description: Many developers are working with health data for the first time.
   This guide is for those who need to get familiar with the basics of HIPAA Compliance.
-:date: '2016-01-04T23:00:00-05:00'
+:date: 2016-01-05T00:00-04:00
 :subfolder: learn
 :slug: hipaa-compliance-for-developers-getting-started
 :content: |
@@ -259,7 +258,7 @@
 :type: text
 :included_on_index: true
 :category: HIPAA Compliance
-:hackernewsLink: https://news.ycombinator.com/item?id=11377862
+:hackernews_link: https://news.ycombinator.com/item?id=11377862
 :cover_image:
   :title: 'Resource: HIPAA Compliance for Developers'
   :description: HIPAA Compliance for Developers

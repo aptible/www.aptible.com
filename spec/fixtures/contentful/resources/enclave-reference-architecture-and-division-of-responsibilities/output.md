@@ -8,10 +8,9 @@ attachments:
   :description: The Enclave Division of Responsibilities describes how Enclave helps
     development teams meet even the strictest security and compliance requirements.
   :url: "//assets.contentful.com/8djp5jlzqrnc/5jSsWVflW84wYS68OKyaM4/011b128fa30a359edd7ae6efdcb8d5a9/Enclave_-_Division_of_Responsibilities.pdf"
-- :id: 2AcTJxok7Oaui82QQUIiMk
 category: Aptible Product Reference
 cover_image:
-created_at: !ruby/object:DateTime 2017-03-01 23:00:00.000000000 -05:00
+created_at: !ruby/object:DateTime 2017-03-02 00:00:00.000000000 -04:00
 description: These reference documents describe how Enclave enables you to deploy
   securely so you can focus on building great products.
 excerpt: These reference documents describe how Enclave enables you to deploy securely

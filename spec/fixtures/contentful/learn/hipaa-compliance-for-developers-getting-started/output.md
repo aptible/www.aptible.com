@@ -5,7 +5,7 @@ cover_image:
   :title: 'Resource: HIPAA Compliance for Developers'
   :description: HIPAA Compliance for Developers
   :url: "//images.contentful.com/8djp5jlzqrnc/4dr8wL6iDYKA2GYQg8yWii/5a34d90eea7d145c84f42a9da4c7fb34/common-hipaa-questions.jpg"
-created_at: !ruby/object:DateTime 2016-01-04 23:00:00.000000000 -05:00
+created_at: !ruby/object:DateTime 2016-01-05 00:00:00.000000000 -04:00
 description: Many developers are working with health data for the first time. This
   guide is for those who need to get familiar with the basics of HIPAA Compliance.
 excerpt: Basic information on becoming secure and compliant under HIPAA regulations.

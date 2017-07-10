@@ -1,12 +1,11 @@
 ---
-:id: 2JXa9Mfy3CAao8Yieuo2Aw
 :type: changelog post
 :product: enclave
 :title: Introducing Direct Docker Image Deploy
 :slug: introducing-direct-docker-image-deploy
 :excerpt: You can now deploy apps on Enclave directly from a Docker image in addition
   to Enclave’s traditional git-based deployment process.
-:posted: '2017-06-13T16:00:00-04:00'
+:posted: 2017-06-13T16:00-04:00
 :body: "We’re proud to announce that you can now deploy apps on Enclave directly from
   a Docker image, bypassing Enclave’s traditional git-based deployment process.\n\nWith
   this feature, you can easily use the same images for deployment on Enclave and test
@@ -50,7 +49,6 @@
   \ [3]: https://www.aptible.com/support/topics/enclave/direct-docker-image-deploy/\n
   \ [4]: https://www.aptible.com/blog/deploy-private-images/    "
 :author:
-  :id: 4UYE1iXyjKSWKqMeQcGO0C
   :name: Thomas Orozco
   :slug: thomas
   :email: thomas@aptible.com

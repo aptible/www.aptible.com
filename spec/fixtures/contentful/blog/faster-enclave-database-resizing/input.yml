@@ -1,11 +1,8 @@
 ---
-:id: 6lfvkFYPmwGg6AOM0uI2YU
-:type: changelog post
-:product: enclave
 :title: Faster Enclave Database Resizing
 :slug: faster-enclave-database-resizing
 :excerpt: Enclave now leverages AWS "Elastic Volumes" to resize database storage.
-:posted: '2017-03-23T12:55:00-04:00'
+:posted: 2017-03-23T12:55-04:00
 :body: "We’re happy to announce that Enclave now leverages AWS \"Elastic Volumes\"
   to resize database storage. This feature was <a href=\"https://aws.amazon.com/blogs/aws/amazon-ebs-update-new-elastic-volumes-change-everything/\"
   target=\"_blank\" rel=\"noopener\">released a little over a month ago by AWS</a>,
@@ -24,7 +21,6 @@
   sometime down the road, as well.\n\nAs usual, [let us know if you have any questions
   or feedback][1]!\n\n  [1]: http://contact.aptible.com    "
 :author:
-  :id: 4UYE1iXyjKSWKqMeQcGO0C
   :name: Thomas Orozco
   :slug: thomas
   :email: thomas@aptible.com

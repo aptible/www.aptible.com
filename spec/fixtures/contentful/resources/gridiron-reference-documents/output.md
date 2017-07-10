@@ -8,7 +8,7 @@ attachments:
   :url: "//assets.contentful.com/8djp5jlzqrnc/53Vni1qr4sWOG2ei6q4YM8/54d12b3aefb85b505de5be988df721a8/gridiron-compliance-model.pdf"
 category: Aptible Product Reference
 cover_image:
-created_at: !ruby/object:DateTime 2017-01-22 23:00:00.000000000 -05:00
+created_at: !ruby/object:DateTime 2017-01-23 00:00:00.000000000 -04:00
 description: The Gridiron Compliance and Risk Models describe how Gridiron transforms
   complex security and compliance tasks into manageable and repeatable business processes.
 excerpt: The Gridiron Compliance and Risk Models describe how Gridiron transforms

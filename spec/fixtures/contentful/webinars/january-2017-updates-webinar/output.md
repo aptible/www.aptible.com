@@ -2,7 +2,7 @@
 attachments:
 category: Webinars
 cover_image:
-created_at: !ruby/object:DateTime 2017-01-24 23:00:00.000000000 -05:00
+created_at: !ruby/object:DateTime 2017-01-25 00:00:00.000000000 -04:00
 description: The second in our quarterly Update Webinar Series.
 excerpt: The second in our quarterly Update Webinar Series.
 featured: false

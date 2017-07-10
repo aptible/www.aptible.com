@@ -1,11 +1,8 @@
 ---
-:id: 5PrXWpBfG0ssGogWGYKW0Y
-:type: changelog post
-:product: enclave
 :title: Database Encryption now defaults to AES-256
 :slug: database-encryption-now-defaults-to-aes-256
 :excerpt: Aptible databases (and their backups) now default to AES-256 disk encryption.
-:posted: '2017-02-14T17:20:00-05:00'
+:posted: 2017-02-14T17:20-05:00
 :body: |-
   Until recently, Aptible has used AES-192 for disk encryption, but as of last week, Aptible databases (and their backups) now default to AES-256 instead.
 
@@ -13,7 +10,6 @@
 
   If you’re curious to know which encryption algorithm is used for a given database, you can find that information on the Dashboard page for the database in question (along with the disk size and database credentials).
 :author:
-  :id: 4UYE1iXyjKSWKqMeQcGO0C
   :name: Thomas Orozco
   :slug: thomas
   :email: thomas@aptible.com

@@ -1,12 +1,9 @@
 ---
-:id: 6uvxX3uqDCa4K0Ew4S64Wq
-:type: changelog post
-:product: enclave
 :title: Logentries and Sumo Logic setup now a breeze
 :slug: logentries-and-sumo-logic-setup-now-a-breeze
 :excerpt: Aptible Log Drains now provide more flexible configuration, making it much
   easier to forward your Aptible logs to Logentries and Sumo Logic
-:posted: '2017-02-14T17:30:00-05:00'
+:posted: 2017-02-14T17:30-05:00
 :body: |
   We’re happy to announce that Aptible Log Drains now provide more flexible configuration, making it much easier to forward your Aptible logs to two logging providers that are becoming increasingly popular with Aptible customers (in large part because they sign BAAs):
 
@@ -25,7 +22,6 @@
 
   Enjoy! As usual, if you have any questions or feedback, feel free to contact us.
 :author:
-  :id: 4UYE1iXyjKSWKqMeQcGO0C
   :name: Thomas Orozco
   :slug: thomas
   :email: thomas@aptible.com

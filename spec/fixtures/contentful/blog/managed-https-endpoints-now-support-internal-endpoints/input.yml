@@ -1,11 +1,8 @@
 ---
-:id: 3k1jXYmtLasKGa4Cg4WO48
-:type: changelog post
-:product: enclave
 :title: Managed HTTPS Endpoints now support Internal Endpoints
 :slug: managed-https-endpoints-now-support-internal-endpoints
 :excerpt: Internal-facing apps can now enjoy the benefits of Managed HTTPS Endpoints.
-:posted: '2017-03-14T10:10:00-04:00'
+:posted: 2017-03-14T10:10-04:00
 :body: "We’re happy to announce that [Managed HTTPS](https://www.aptible.com/blog/managed-https/)
   is now available on Enclave for Internal Endpoints (in addition to External Endpoints,
   which were supported from day 1).\n\nThis means your internal-facing apps can now
@@ -57,7 +54,6 @@
   for External Endpoints).\n\n\nAs usual, let us know if you have any questions or
   feedback!"
 :author:
-  :id: 4UYE1iXyjKSWKqMeQcGO0C
   :name: Thomas Orozco
   :slug: thomas
   :email: thomas@aptible.com

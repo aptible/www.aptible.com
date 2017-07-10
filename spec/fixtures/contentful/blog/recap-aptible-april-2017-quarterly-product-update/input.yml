@@ -1,11 +1,9 @@
 ---
-:id: 2ywFutGTWAomAimEo0cCEC
-:type: blog post
 :title: 'Recap: Aptible April 2017 Quarterly Product Update'
 :slug: recap-aptible-april-2017-quarterly-product-update
 :excerpt: Quick recap of Aptible's April quarterly product update and all that's new
   with Enclave and Gridiron.
-:posted: '2017-04-19T10:30:00-04:00'
+:posted: 2017-04-19T10:30-04:00
 :body: "Over the last quarter, we released a number of new features and updates for
   the **Enclave** deployment platform. We also began helping customers deployed on
   AWS to manage their organization’s security and compliance using **Gridiron**.\n\nYesterday,
@@ -67,7 +65,6 @@
   \ [11]: http://contact.aptible.com\n  [12]: https://zoom.us/webinar/register/e5ffa6545dd197d7dc2040ba88984b7b
   \   "
 :author:
-  :id: 1I5xM5LI3Kyy0WS8I0iwWI
   :name: Henry Hund
   :slug: henry
   :email: henry@aptible.com

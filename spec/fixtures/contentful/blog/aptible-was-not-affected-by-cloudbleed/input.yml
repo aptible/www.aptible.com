@@ -1,11 +1,9 @@
 ---
-:id: 5E9S2gnJluKiu4C46MQOKk
-:type: blog post
 :title: Aptible was not affected by Cloudbleed
 :slug: aptible-was-not-affected-by-cloudbleed
 :excerpt: Aptible services and customer environments are not affected by Cloudbleed.
   If you used Cloudflare in addition to Aptible, you may need to take action.
-:posted: '2017-02-24T18:00:00-05:00'
+:posted: 2017-02-24T18:00-05:00
 :body: "__Are Aptible customers affected by Cloudbleed?__\n\nNo, not by virtue of
   using Aptible. Aptible does not use Cloudflare, and as such, our services and customer
   environments were not affected by the Cloudbleed vulnerability disclosed yesterday.
@@ -38,7 +36,6 @@
   You can find one security researcher’s list of Cloudflare DNS customers (which is
   likely overinclusive) [here](https://github.com/pirate/sites-using-cloudflare/blob/master/README.md)."
 :author:
-  :id: rIKmiZoIlEKqUWi0KmSEG
   :name: Chas Ballew
   :slug: chas
   :email: chas@aptible.com

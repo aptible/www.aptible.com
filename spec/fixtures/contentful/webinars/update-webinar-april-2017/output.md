@@ -2,7 +2,7 @@
 attachments:
 category: Webinars
 cover_image:
-created_at: !ruby/object:DateTime 2017-04-19 03:00:00.000000000 -04:00
+created_at: !ruby/object:DateTime 2017-04-19 00:00:00.000000000 -07:00
 description: Our April Quarterly Update Webinar.
 excerpt: Our April Quarterly Update Webinar.
 featured: false

@@ -1,11 +1,8 @@
 ---
-:id: 471opBXFvagyekoyQo0ku
-:type: changelog post
-:product: enclave
 :title: IP Filtering Made Easy With Enclave Endpoints
 :slug: ip-filtering-made-easy-with-enclave-endpoints
 :excerpt: Lock down network access to your apps in a handful of clicks.
-:posted: '2017-02-22T12:30:00-05:00'
+:posted: 2017-02-22T12:30-05:00
 :body: |
   We’re proud to announce that as of this week, Enclave Endpoints support IP filtering. Using this new feature, you can restrict access to apps hosted on Enclave to a set of whitelisted IP addresses or networks and block other incoming incoming traffic.
 
@@ -33,7 +30,6 @@
 
   Enjoy! As usual, [let us know](http://contact.aptible.com) if you have any feedback or questions!
 :author:
-  :id: 4UYE1iXyjKSWKqMeQcGO0C
   :name: Thomas Orozco
   :slug: thomas
   :email: thomas@aptible.com

@@ -76,16 +76,27 @@ module ContentfulHelpers
         next unless item.respond_to?(:content_type) && item.content_type
         next unless MARKDOWN_PROCESSORS.keys.include?(item.content_type.id)
 
-        hash = item.fields.dup
-        hash.each do |k, v|
-          hash[k] = v.fields if v.respond_to?(:fields)
-        end
+        hash = hashify_contentful_entry(item)
         yaml_file = File.join(tempdir, item.content_type.id, "#{item.id}.yml")
         FileUtils.mkdir_p(File.dirname(yaml_file))
         File.open(yaml_file, 'w') do |file|
           file << hash.to_yaml
         end
       end
+    end
+  end
+
+  def self.hashify_contentful_entry(item)
+    if item.is_a?(Contentful::Asset)
+      { title: item.title, description: item.description, url: item.url }
+    elsif item.respond_to?(:fields)
+      hashify_contentful_entry(item.fields.dup)
+    elsif item.is_a?(Array)
+      item.map { |i| hashify_contentful_entry(i) }
+    elsif item.is_a?(Hash)
+      item.each { |k, v| item[k] = hashify_contentful_entry(v) }
+    else
+      item
     end
   end
 

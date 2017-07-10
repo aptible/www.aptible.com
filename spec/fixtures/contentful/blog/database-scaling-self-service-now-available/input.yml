@@ -1,12 +1,9 @@
 ---
-:id: 4W6Y7pTxGMIqy2Wgkow4ak
-:type: changelog post
-:product: enclave
 :title: Self-Service Database Scaling is now available on Enclave
 :slug: database-scaling-self-service-now-available
 :excerpt: You can now resize both the container and disk footprints of your Enclave
   databases from the Dashboard or CLI.
-:posted: '2017-05-23T17:00:00-04:00'
+:posted: 2017-05-23T17:00-04:00
 :body: "We’re proud to announce that you can now resize both the container and disk
   footprints of your Enclave databases from the Dashboard or CLI. For new databases,
   you can also configure the container size from day 1, whereas it previously defaulted
@@ -36,7 +33,6 @@
   \ [2]: https://www.aptible.com/support/toolbelt/\n  [3]: https://www.aptible.com/blog/faster-enclave-database-resizing/\n
   \ [4]: mailto:support@aptible.com    "
 :author:
-  :id: 4UYE1iXyjKSWKqMeQcGO0C
   :name: Thomas Orozco
   :slug: thomas
   :email: thomas@aptible.com

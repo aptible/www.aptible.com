@@ -2,7 +2,7 @@
 attachments:
 category: Aptible Product Reference
 cover_image:
-created_at: !ruby/object:DateTime 2017-03-01 23:00:00.000000000 -05:00
+created_at: !ruby/object:DateTime 2017-03-02 00:00:00.000000000 -04:00
 description: A reference document describing how Aptible works with customers to ensure
   compliance with HIPAA Security Standards.
 excerpt: A reference document describing how Aptible works with customers to ensure
