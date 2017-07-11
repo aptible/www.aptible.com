@@ -17,9 +17,9 @@ Install necessary dependencies:
 
     bundle install
 
-Load some blog posts, the site won't work otherwise:
+(Optionally) pull dynamic Resource and Blog content from Contentful:
 
-    bundle exec middleman contentful
+    bundle exec rake contentful:pull
 
 Start the server. You can access it at http://localhost:4567/
 

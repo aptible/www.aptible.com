@@ -16,7 +16,7 @@
             .post__subtitle
               %a{ href: blog_post_author_href(current_page) }= current_page.data.author_name
               on
-              %span= post_date(current_page.data.posted)
+              %span= display_date(current_page.data.posted)
 
           .blog-post.markdown-content
             = find_and_preserve do

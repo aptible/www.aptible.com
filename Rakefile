@@ -1,4 +1,7 @@
 require 'rspec/core/rake_task'
+require 'yaml'
+
+require_relative 'helpers/contentful_helpers'
 
 def system!(cmd)
   success = !!system(cmd)
@@ -7,11 +10,8 @@ def system!(cmd)
 end
 
 desc 'Tag current HEAD and push to release branch'
-task :deploy, [:bucket] => :redirect do |_t, args|
+task :deploy, [:bucket] => [:redirect, 'contentful:pull'] do |_t, args|
   raise 'No bucket specified' unless args[:bucket]
-
-  # Update Contentful data
-  system!('bundle exec middleman contentful')
 
   # Build site
   system!('bundle exec middleman build')
@@ -42,10 +42,6 @@ namespace :deploy do
     ENV['SEGMENTIO_WRITEKEY'] = 'K24Jna8XS0PRiQiISYZ563qC3SfHF241'
     ENV['SWIFTYPE_KEY'] = '6oJmuDaosp-WnxZNZcxQ'
     ENV['SWIFTYPE_ENGINE'] = 'omxnF9kXa-PmS4uNyRSC'
-    # rubocop:disable LineLength
-    ENV['CONTENTFUL_KEY'] = 'b66d39f51cfcc747ca3af1b7731bd00cf877b659d69514845ba837ddae473605'
-    # rubocop:enable LineLength
-    ENV['CONTENTFUL_ENV'] = 'staging'
     Rake::Task[:deploy].invoke('www.aptible-staging.com')
   end
 
@@ -55,11 +51,14 @@ namespace :deploy do
     ENV['SEGMENTIO_WRITEKEY'] = 'rkt88i7k3w'
     ENV['SWIFTYPE_KEY'] = 'dsMEc1fYviE2ShXAjYMW'
     ENV['SWIFTYPE_ENGINE'] = 'axuhZ5Lt1ZUziN-DqxnR'
-    # rubocop:disable LineLength
-    ENV['CONTENTFUL_KEY'] = '9f900421de36456577e619e3fbf7f0870954b64ad8f0ead9f3d80f55ceaf4bee'
-    # rubocop:enable LineLength
-    ENV['CONTENTFUL_ENV'] = 'production'
     Rake::Task[:deploy].invoke('www.aptible.com')
+  end
+end
+
+namespace :contentful do
+  desc 'Populate Markdown files from Contentful data'
+  task :pull do
+    ContentfulHelpers.populate!
   end
 end
 

@@ -4,9 +4,10 @@
   .post__subtitle
     %a{ href: blog_post_author_href(post) }= post.data.author_name
     on
-    %span= post_date(post.data.posted)
+    %span= display_date(post.data.posted)
 
 .blog-posts__post-summary.markdown-content
-  = blog_summary(post)
+  = find_and_preserve do
+    = post.render({ layout: false })
 
 .blog-posts__post-summary-fade

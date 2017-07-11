@@ -1,7 +1,3 @@
----
-layout: blog_posts.haml
----
-
 - posts = posts || []
 - @title = posts.count > 0 ? posts.first.data.author_name : ''
 - @description = posts.count > 0 ? "Aptible posts written by #{posts.first.data.author_name}" : ''
@@ -10,11 +6,14 @@ layout: blog_posts.haml
   %header.aptible-header.hero-gradient--angled
     = partial 'partials/main-nav'
 
-= partial 'partials/headers/blog-header'
+.content
+  .grid-container--flex
+    .blog-posts.grid-item
+      = partial 'partials/headers/blog-header'
 
-- posts.each do |post|
-  .blog-posts__post
-    %a{ href: blog_post_author_href(post) }
-      %img.blog-posts__post-avatar{ src: "#{author_gravatar(post)}?s=128" }
-    = partial 'partials/blog-list-item', locals: { post: post }
-    %a.arrow-link--right.dbl-arrow-link--right{ href: blog_post_href(post) } Read more
+      - posts.each do |post|
+        .blog-posts__post
+          %a{ href: blog_post_author_href(post) }
+            %img.blog-posts__post-avatar{ src: "#{author_gravatar(post)}?s=128" }
+          = partial 'partials/blog-list-item', locals: { post: post }
+          %a.arrow-link--right.dbl-arrow-link--right{ href: blog_post_href(post) } Read more

@@ -1,0 +1,36 @@
+---
+:id: 2XIXALxOwgWEg4gi8KeuW4
+:type: blog post
+:title: Contentful Post
+:slug: contentful-post
+:excerpt: This is a contentful test post.
+:posted: '2017-06-16T04:00:00-04:00'
+:body: |-
+  This is a contentful test post.
+
+  Goals:
+    - lives alongside existing posts in middleman
+    - can be updated without a git PR / merge
+
+  ![Celebrate](//images.contentful.com/8djp5jlzqrnc/gvmhOPH5zU6AW4e822GWQ/56e09c677111e0f31c8e76a159cd61e7/celebrate.gif)
+
+  If this text appears, it's cause for more celebration, since it means Contentful-Travis integration is working!
+
+  Hello. Another update from contentful.
+
+
+  ```
+  %a.nav-toggle
+      .nav-toggle__expand
+        %span.nav-toggle__icon-bar
+        %span.nav-toggle__icon-bar
+        %span.nav-toggle__icon-bar
+  ```
+
+  hello
+:author:
+  :id: 28qF7vUDnyY0cW8Seo48q0
+  :name: Gib Reimschüssel
+  :slug: gib
+  :email: gib@aptible.com
+  :gravatar: https://s.gravatar.com/avatar/566f0093e212d9b808c0cece8a32480e

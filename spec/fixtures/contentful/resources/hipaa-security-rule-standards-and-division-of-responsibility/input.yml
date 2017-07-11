@@ -1,0 +1,15 @@
+---
+:title: HIPAA Security Rule - Standards & Division of Responsibility
+:snippet: A reference document describing how Aptible works with customers to ensure
+  compliance with HIPAA Security Standards.
+:date: 2017-03-02T00:00-04:00
+:subfolder: resources
+:slug: hipaa-security-rule-standards-and-division-of-responsibility
+:content: |-
+  Aptible Enclave and Gridiron are designed to help cloud-based development teams meet even the strictest security and compliance requirements.
+
+  The HIPAA Security Rule: Standards & Division of Responsibility <a href="https://docs.google.com/spreadsheets/d/1121FSOtK2-6Oo4GABm4oAI4xYnsbOksuw1Pxjb2ya5Y" target="_blank">spreadsheet</a> details each of the standards within the HIPAA Security Rule and how Aptible works with customers to ensure compliance.
+:featured: false
+:type: text
+:included_on_index: true
+:category: Aptible Product Reference

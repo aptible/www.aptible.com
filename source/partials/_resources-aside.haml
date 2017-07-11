@@ -6,7 +6,7 @@
     Sign up to get the best in security and compliance delivered monthly.
   = partial 'newsletter-signup'
 
-- blog_posts_newest_first.take(3).each_with_index do |post, index|
+- blog_posts.take(3).each_with_index do |post, index|
   .grid-aside__block.grid-aside__block--segment
     - if index == 0
       %h3 From the Blog
