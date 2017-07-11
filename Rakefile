@@ -42,7 +42,6 @@ namespace :deploy do
     ENV['SEGMENTIO_WRITEKEY'] = 'K24Jna8XS0PRiQiISYZ563qC3SfHF241'
     ENV['SWIFTYPE_KEY'] = '6oJmuDaosp-WnxZNZcxQ'
     ENV['SWIFTYPE_ENGINE'] = 'omxnF9kXa-PmS4uNyRSC'
-    ENV['CONTENTFUL_ENV'] = 'staging'
     Rake::Task[:deploy].invoke('www.aptible-staging.com')
   end
 
@@ -52,7 +51,6 @@ namespace :deploy do
     ENV['SEGMENTIO_WRITEKEY'] = 'rkt88i7k3w'
     ENV['SWIFTYPE_KEY'] = 'dsMEc1fYviE2ShXAjYMW'
     ENV['SWIFTYPE_ENGINE'] = 'axuhZ5Lt1ZUziN-DqxnR'
-    ENV['CONTENTFUL_ENV'] = 'production'
     Rake::Task[:deploy].invoke('www.aptible.com')
   end
 end

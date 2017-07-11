@@ -81,7 +81,8 @@ ready do
             .sort_by { |p| p.data['posted'] }.reverse!
     page "/blog/authors/#{author[0]}.html"
     proxy "/blog/authors/#{author[0]}.html", '/blog/author.html',
-          locals: { author_id: author[0], posts: posts }
+          locals: { author_id: author[0], posts: posts },
+          ignore: true
   end
 end
 
