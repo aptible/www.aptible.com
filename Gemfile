@@ -21,7 +21,7 @@ gem 'middleman', '~> 3.4'
 gem 'middleman-jquery'
 gem 'middleman-s3_redirect'
 gem 'middleman-syntax'
-gem 'middleman-livereload', :group => :development
+gem 'middleman-livereload'
 
 # Pin Thor to an earlier version to avoid warnings:
 # https://github.com/middleman/middleman/issues/2017

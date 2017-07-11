@@ -49,10 +49,8 @@ data.redirects.each do |item|
   redirect(match[1], item['url']) if match
 end
 
-# In development, reload the browser when files change
-configure :development do
-  activate :livereload, host: 'localhost'
-end
+# If ENV flag is set, reload the browser when files change
+activate :livereload, host: 'localhost' if ENV['ENABLE_LIVERELOAD']
 
 #
 # Page options, layouts, aliases and proxies
