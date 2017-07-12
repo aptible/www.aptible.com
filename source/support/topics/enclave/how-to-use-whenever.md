@@ -1,3 +1,8 @@
+_Note: for an alternative, recommended, and more generic approach to running
+cron jobs on Enclave, [review this other article][how-to-run-scheduled-tasks]._
+
+---
+
 One option for running scheduled tasks (cron jobs) on Aptible is to use the
 [Whenever gem](https://github.com/javan/whenever). Whenever helps manage the
 following problems, which can be challenging when managing crontab files
@@ -57,3 +62,4 @@ as an apt dependency in your`Dockerfile`: `RUN apt-get update && apt-get -y
 install cron`.
 
   [about-services]: /support/topics/enclave/about-services/
+  [how-to-run-scheduled-tasks]: /support/topics/enclave/how-to-run-scheduled-tasks
