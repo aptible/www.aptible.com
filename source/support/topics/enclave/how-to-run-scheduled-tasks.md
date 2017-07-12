@@ -1,27 +1,42 @@
-On Aptible, cron jobs can run as another service associated with your app,
-defined in your app's [Procfile][about-services], or in a separate app
+On Enclave, cron jobs are typically run as another service associated with your
+app, defined in your app's [Procfile][about-services], or in a separate app
 altogether.
 
-To illustrate, we've set up [a GitHub repo][docker-cron-example] with an
-example of how to add cron jobs to your app.
+To run cron jobs on Enclave (or any containerized environment), we recommend
+using [Supercronic][supercronic], which is a cron implementation we created
+specifically to be used with containers.
 
-To summarize the GitHub example:
+Here's how you'd get started running cron jobs for your app with Supercronic:
 
-1. Add a `crontab` file to your repo, and install it at `/etc/crontab` in your
-   Docker image, by adding the following directive to your Dockerfile:
+- First, add a `crontab` to your repository, then make sure it's installed in
+  your Docker image, with a directive such as: `ADD crontab /app/crontab` (this
+  grabs a file named `crontab` found at the root of your repository, and
+  installs it under `/app` in your image).
 
-        ADD files/etc/crontab /etc/crontab
+- Second, [install Supercronic][supercronic-install] in your Docker image.
 
-1. Then, add a new `cron` process to your Procfile, which just runs `cron -f`.
-   In the GitHub example, we run a special script, `start-cron.sh`, in order to
-   log the output of all cron jobs.
+- Finally, add a new service (if your app already has a Procfile), or deploy a
+  new app altogether to start Supercronic and run your cron jobs:
+  - If you are adding a service, use this `Procfile` declaration: `cron: exec
+    supercronic /app/crontab`
+  - If you are adding a new app, you can use the same `Procfile` declaration,
+    or add a `CMD` declaration to your `Dockerfile`: `CMD ["supercronic",
+    "/app/crontab"]`.
 
-If your app doesn't currently have a Procfile, or if you'd like more detail
-about the Procfiles, see [About services][about-services].
+Here is an example `crontab` you might want to adapt or reuse:
 
-Another option for running scheduled tasks on Aptible is to use the Whenever
-gem. More on that approach [over here][whenever].
+```
+# Run every minute
+*/1 * * * * bundle exec rake some:task
+
+# Run once every hour
+@hourly curl -sf example.com >/dev/null && echo 'got example.com!'
+```
+
+For a complete crontab reference, [review this documentation from the library
+Supercronic uses to parse crontabs][cronexpr-syntax].
 
   [about-services]: /support/topics/enclave/about-services/
-  [docker-cron-example]: https://github.com/aptible/docker-cron-example
-  [whenever]: /support/topics/enclave/how-to-use-whenever/
+  [supercronic]: https://github.com/aptible/supercronic
+  [supercronic-install]: https://github.com/aptible/supercronic#installation
+  [cronexpr-syntax]: https://github.com/gorhill/cronexpr#implementation
