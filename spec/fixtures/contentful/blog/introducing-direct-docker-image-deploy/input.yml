@@ -47,7 +47,7 @@
   with `aptible deploy`.\n\n  [0]: https://www.aptible.com/support/toolbelt/\n  [2]:
   https://www.aptible.com/support/topics/enclave/how-to-access-environment-variables-inside-dockerfile/\n
   \ [3]: https://www.aptible.com/support/topics/enclave/direct-docker-image-deploy/\n
-  \ [4]: https://www.aptible.com/blog/deploy-private-images/    "
+  \ [4]: https://www.aptible.com/blog/deploy-private-images/"
 :author:
   :name: Thomas Orozco
   :slug: thomas

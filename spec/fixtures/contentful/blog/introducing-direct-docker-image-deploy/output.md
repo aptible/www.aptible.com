@@ -60,4 +60,4 @@ Note: Astute readers will note that [you’ve been able to deploy apps on Enclav
   [0]: https://www.aptible.com/support/toolbelt/
   [2]: https://www.aptible.com/support/topics/enclave/how-to-access-environment-variables-inside-dockerfile/
   [3]: https://www.aptible.com/support/topics/enclave/direct-docker-image-deploy/
-  [4]: https://www.aptible.com/blog/deploy-private-images/    
+  [4]: https://www.aptible.com/blog/deploy-private-images/
