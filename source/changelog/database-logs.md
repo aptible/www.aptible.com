@@ -7,7 +7,7 @@ author_id: thomas
 posted: 2016-11-30
 product: enclave
 section: Blog
-type: blog post
+type: changelog post
 ---
 We’re proud to announce that as of this week, you can now route database logs to a Log Drain, just like you’d do with app logs! This option is available when you create a new Log Drain; you can opt to send either app or database logs, or both:
 

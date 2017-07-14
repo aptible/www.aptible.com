@@ -3,6 +3,8 @@
 :slug: managed-https-endpoints-now-support-internal-endpoints
 :excerpt: Internal-facing apps can now enjoy the benefits of Managed HTTPS Endpoints.
 :posted: 2017-03-14T10:10-04:00
+:type: changelog post
+:product: enclave
 :body: "We’re happy to announce that [Managed HTTPS](https://www.aptible.com/blog/managed-https/)
   is now available on Enclave for Internal Endpoints (in addition to External Endpoints,
   which were supported from day 1).\n\nThis means your internal-facing apps can now
@@ -28,7 +30,7 @@
   supported in Let’s Encrypt, and we now use 2 of them:\n\n#### HTTP Challenges\nFor
   HTTP challenges, Let’s Encrypt provides us with an arbitrary token and a URL under
   the domain we’re attempting to verify, and expects us to serve the token when it
-  makes a request to that URL. \n\nThe token is a random string of data, and the URL
+  makes a request to that URL.\n\nThe token is a random string of data, and the URL
   looks like this:\n\n`http://$YOUR_DOMAIN/.well-known/acme-challenge/$SOME_RANDOM_STRING`\n\nWe’ve
   supported HTTP challenges since day one: when Let’s Encrypt makes its request to
   your app hosted on Enclave (i.e. assuming you created a `CNAME` from `$YOUR_DOMAIN`
@@ -51,8 +53,7 @@
   with IP Filtering!\n\nNote that DNS challenges work for both External and Internal
   Endpoints, which is why the Dashboard will always prompt you to create the corresponding
   record (whereas it’ll only prompt you to create the record required for HTTP verification
-  for External Endpoints).\n\n\nAs usual, let us know if you have any questions or
-  feedback!"
+  for External Endpoints).\n\n\nAs usual, let us know if you have any questions or feedback!"
 :author:
   :name: Thomas Orozco
   :slug: thomas

@@ -6,7 +6,6 @@ author_email: chas@aptible.com
 author_id: chas
 posted: 2014-11-21
 section: Blog
-posts: true
 type: blog post
 ---
 <iframe width="640" height="390" src="//www.youtube.com/embed/c_06psX2obI?start=2065" frameborder="0" allowfullscreen></iframe>

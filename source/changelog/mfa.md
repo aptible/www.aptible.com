@@ -6,8 +6,8 @@ author_email: thomas@aptible.com
 author_id: thomas
 posted: 2016-05-19
 section: Blog
-posts: true
-type: blog post
+product: enclave
+type: changelog post
 ---
 We're happy to announce that two-factor authentication (2FA) is available for all users and account types in the Aptible dashboard and CLI! Multifactor authentication is a best practice that adds an additional layer of security on top of the normal username and password you use to verify your identity. You can enable it in your [Aptible user settings](https://dashboard.aptible.com/settings/protected/admin).
 

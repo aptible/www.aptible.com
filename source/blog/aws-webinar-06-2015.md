@@ -6,7 +6,6 @@ author_email: sam@aptible.com
 author_id: sam
 posted: 2015-06-24
 section: Blog
-posts: true
 type: blog post
 ---
 This week we teamed up with AWS and TelePharm to talk about architecting for HIPAA compliance in the cloud:

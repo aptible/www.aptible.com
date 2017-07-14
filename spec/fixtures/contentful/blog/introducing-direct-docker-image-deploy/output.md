@@ -6,8 +6,9 @@ author_name: Thomas Orozco
 author_email: thomas@aptible.com
 author_id: thomas
 posted: 2017-06-13
+product: enclave
 section: Blog
-posts: true
+type: blog post
 ---
 
 We’re proud to announce that you can now deploy apps on Enclave directly from a Docker image, bypassing Enclave’s traditional git-based deployment process.

@@ -17,6 +17,17 @@ describe ContentfulHelpers do
       end
     end
 
+    it 'correctly translates Changelog resources to Markdown' do
+      Dir.glob(File.join(fixtures_root, 'changelog', '*')).each do |fixture|
+        yaml = File.read(File.join(fixture, 'input.yml'))
+        expected_markdown = File.read(File.join(fixture, 'output.md'))
+        markdown_map = described_class.markdown_map('blogPost', yaml)
+
+        markdown_path = "source/changelog/#{File.basename(fixture)}.md"
+        expect(markdown_map[markdown_path].chomp).to eq expected_markdown.chomp
+      end
+    end
+
     it 'correctly translates Learn resources to Markdown' do
       Dir.glob(File.join(fixtures_root, 'learn', '*')).each do |fixture|
         yaml = File.read(File.join(fixture, 'input.yml'))

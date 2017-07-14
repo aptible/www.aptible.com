@@ -6,7 +6,6 @@ author_email: chas@aptible.com
 author_id: chas
 posted: 2014-09-18
 section: Blog
-posts: true
 type: blog post
 ---
 Having just come through Y Combinator, we frequently get asked whether it was worth it. The answer is absolutely yes, no hesitation. While the experience is still fresh, I want to encourage you to [apply for the next cycle](http://www.ycombinator.com/apply/) and give some advice for getting in.

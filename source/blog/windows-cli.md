@@ -6,7 +6,6 @@ author_email: thomas@aptible.com
 author_id: thomas
 posted: 2017-01-09
 section: Blog
-posts: true
 product: enclave
 type: changelog post
 ---

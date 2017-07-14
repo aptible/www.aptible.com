@@ -6,8 +6,8 @@ author_email: thomas@aptible.com
 author_id: thomas
 posted: 2016-08-04
 section: Blog
-posts: true
-type: blog post
+product: enclave
+type: changelog post
 ---
 Earlier this week, we released Managed HTTPS Endpoints. These endpoints have a few key benefits:
 

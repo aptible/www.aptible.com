@@ -5,8 +5,9 @@ author_name: Thomas Orozco
 author_email: thomas@aptible.com
 author_id: thomas
 posted: 2017-03-14
+product: enclave
 section: Blog
-posts: true
+type: changelog post
 ---
 
 We’re happy to announce that [Managed HTTPS](https://www.aptible.com/blog/managed-https/) is now available on Enclave for Internal Endpoints (in addition to External Endpoints, which were supported from day 1).
@@ -40,7 +41,7 @@ Fundamentally, Managed HTTPS relies on <a href="https://letsencrypt.org?utm_camp
 There’s a total of 3 types of challenges supported in Let’s Encrypt, and we now use 2 of them:
 
 #### HTTP Challenges
-For HTTP challenges, Let’s Encrypt provides us with an arbitrary token and a URL under the domain we’re attempting to verify, and expects us to serve the token when it makes a request to that URL. 
+For HTTP challenges, Let’s Encrypt provides us with an arbitrary token and a URL under the domain we’re attempting to verify, and expects us to serve the token when it makes a request to that URL.
 
 The token is a random string of data, and the URL looks like this:
 

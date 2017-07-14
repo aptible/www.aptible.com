@@ -6,7 +6,6 @@ author_email: sam@aptible.com
 author_id: sam
 posted: 2015-10-27
 section: Blog
-posts: true
 type: blog post
 ---
 *This is the second in a series of blog posts exploring the state of the digital health landscape from a technical perspective.  Our first post on [popular languages](https://www.aptible.com/blog/most_popular_languages_in_digital_health.html) has already proven to be one of our most read blog posts.  If there are other analysis you would like to see on the state of digital health, please get [in touch](https://www.aptible.com/company/contact/)*

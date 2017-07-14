@@ -7,7 +7,6 @@ author_id: thomas
 posted: 2016-12-13
 product: enclave
 section: Blog
-posts: true
 type: changelog post
 ---
 

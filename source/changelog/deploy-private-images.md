@@ -6,8 +6,8 @@ author_email: blake@aptible.com
 author_id: blake
 posted: 2016-07-31
 section: Blog
-posts: true
-type: blog post
+product: enclave
+type: changelog post
 ---
 Aptible customers have always been able to streamline deployment by building from base images hosted in public Docker registries. For example, the [Aptible Ruby on Rails Quickstart](/support/quickstart/ruby/rails/) uses `FROM quay.io/aptible/ruby:2.3`, eliminating the need to install Ruby during each Aptible build.
 
