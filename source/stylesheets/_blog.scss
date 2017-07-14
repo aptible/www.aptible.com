@@ -8,6 +8,7 @@
     margin-bottom: 80px;
   }
 }
+
 .blog-header__title {
   font-size: 19px;
   font-weight: $regular;
@@ -16,6 +17,7 @@
     color: $dark-blue-steel;
   }
 }
+
 .follow-invite {
   color: $dark-blue-steel;
   display: block;
@@ -71,13 +73,44 @@
   }
 }
 
+.post__changelog-entry {
+  display: flex;
+}
+.changelog-entry__product {
+  content: '';
+  font-size: 12px;
+  font-weight: $semibold;
+  margin-right: 20px;
+  text-transform: uppercase;
+  &::after {
+    border: 1px solid $blue;
+    border-radius: 3px;
+    padding: 8px 10px;
+    color: $blue;
+    content: "enclave";
+  }
+}
+
+.changelog-entry__product--gridiron::after {
+  border-color: $purple;
+  color: $purple;
+  content: "gridiron";
+}
+
+.changelog-entry__summary {
+
+}
+
+.blog-posts__post--changelog {
+  border-color: rgba(247,152,57,.2);
+}
+
 .blog-posts__post-header {
   margin-bottom: 60px;
 }
 
 .blog-posts__post-avatar {
   border-radius: 32px;
-  // box-shadow: 0 9px 26px 0 rgba(0,0,0,.1);
   box-shadow: 0 4.5px 13px 0 rgba(0,0,0,.1);
   display: block;
   height: 64px;
@@ -88,6 +121,17 @@
     margin: 0 auto -32px;
     position: static;
     transform: translate(0, -64px);
+  }
+}
+
+.blog-posts__post-avatar--changelog {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    height: 40px;
+    width: 40px;
   }
 }
 

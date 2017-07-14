@@ -6,8 +6,9 @@ author_name: Thomas Orozco
 author_email: thomas@aptible.com
 author_id: thomas
 posted: 2017-06-13
+product: enclave
 section: Blog
-posts: true
+type: blog post
 ---
 
 We’re proud to announce that you can now deploy apps on Enclave directly from a Docker image, bypassing Enclave’s traditional git-based deployment process.
@@ -60,4 +61,4 @@ Note: Astute readers will note that [you’ve been able to deploy apps on Enclav
   [0]: https://www.aptible.com/support/toolbelt/
   [2]: https://www.aptible.com/support/topics/enclave/how-to-access-environment-variables-inside-dockerfile/
   [3]: https://www.aptible.com/support/topics/enclave/direct-docker-image-deploy/
-  [4]: https://www.aptible.com/blog/deploy-private-images/    
+  [4]: https://www.aptible.com/blog/deploy-private-images/

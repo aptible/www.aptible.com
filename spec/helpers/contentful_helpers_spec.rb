@@ -13,7 +13,18 @@ describe ContentfulHelpers do
         markdown_map = described_class.markdown_map('blogPost', yaml)
 
         markdown_path = "source/blog/#{File.basename(fixture)}.md"
-        expect(markdown_map[markdown_path]).to eq expected_markdown
+        expect(markdown_map[markdown_path].chomp).to eq expected_markdown.chomp
+      end
+    end
+
+    it 'correctly translates Changelog resources to Markdown' do
+      Dir.glob(File.join(fixtures_root, 'changelog', '*')).each do |fixture|
+        yaml = File.read(File.join(fixture, 'input.yml'))
+        expected_markdown = File.read(File.join(fixture, 'output.md'))
+        markdown_map = described_class.markdown_map('blogPost', yaml)
+
+        markdown_path = "source/changelog/#{File.basename(fixture)}.md"
+        expect(markdown_map[markdown_path].chomp).to eq expected_markdown.chomp
       end
     end
 
@@ -24,7 +35,7 @@ describe ContentfulHelpers do
         markdown_map = described_class.markdown_map('resourcePage', yaml)
 
         markdown_path = "source/learn/#{File.basename(fixture)}.md"
-        expect(markdown_map[markdown_path]).to eq expected_markdown
+        expect(markdown_map[markdown_path].chomp).to eq expected_markdown.chomp
       end
     end
 
@@ -40,8 +51,9 @@ describe ContentfulHelpers do
         markdown_path = "source/resources/#{basename}.md"
         transcript_path = "source/resources/_#{basename}-transcript.md"
 
-        expect(markdown_map[markdown_path]).to eq expected_markdown
-        expect(markdown_map[transcript_path]).to eq expected_transcript
+        expect(markdown_map[markdown_path].chomp).to eq expected_markdown.chomp
+        expect(markdown_map[transcript_path].chomp).to eq \
+          expected_transcript.chomp
       end
     end
 
@@ -52,7 +64,7 @@ describe ContentfulHelpers do
         markdown_map = described_class.markdown_map('resourcePage', yaml)
 
         markdown_path = "source/resources/#{File.basename(fixture)}.md"
-        expect(markdown_map[markdown_path]).to eq expected_markdown
+        expect(markdown_map[markdown_path].chomp).to eq expected_markdown.chomp
       end
     end
   end

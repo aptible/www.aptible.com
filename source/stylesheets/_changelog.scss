@@ -1,0 +1,45 @@
+.changelog-entries {
+  margin-bottom: 50px;
+}
+
+.changelog-entry {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 50px;
+  @media screen and (max-width: 650px) {
+    display: block;
+  }
+}
+
+.blog-posts__post--changelog .changelog-entry:last-of-type {
+  margin-bottom: 0;
+}
+
+
+.changelog-entry__product {
+  display: inline-block;
+  line-height: 3;
+}
+
+.changelog-entry__info {
+  flex-grow: 1;
+}
+
+.changelog-entry__date {
+  color: $light-gray;
+  margin-right: 10px;
+}
+
+.changelog-entry__title {
+  color: $dark-blue-steel;
+  font-weight: $regular;
+  @media screen and (max-width: 650px) {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.changelog-entry__summary {
+  color: $dark-blue-steel;
+  display: block;
+}

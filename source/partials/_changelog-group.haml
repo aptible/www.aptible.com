@@ -1,0 +1,10 @@
+.blog-posts__post.blog-posts__post--changelog
+  %a{ href: '/changelog/' }
+    .blog-posts__post-avatar.blog-posts__post-avatar--changelog
+      = partial '/images/aptible-logo-color.svg'
+  %header.blog-posts__post-header
+    %h2.post__title
+      %a{ href: '/changelog/' } Changelog
+    .post__subtitle= changelog_group_date(posts.first.data.posted)
+  - posts.each do |post|
+    = partial 'changelog-list-item', locals: { post: post }

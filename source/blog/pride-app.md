@@ -6,7 +6,7 @@ author_email: sam@aptible.com
 author_id: sam
 posted: 2015-07-08
 section: Blog
-posts: true
+type: blog post
 ---
 
 

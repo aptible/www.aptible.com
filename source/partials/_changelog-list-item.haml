@@ -1,0 +1,6 @@
+%a.changelog-entry{ href: blog_post_href(post) }
+  %span.changelog-entry__product
+  %span.changelog-entry__info
+    %span.changelog-entry__date= display_date(post.data.posted)
+    %span.changelog-entry__title= post.data.title
+    %span.changelog-entry__summary= post.data.excerpt
