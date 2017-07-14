@@ -7,15 +7,17 @@ author_id: thomas
 posted: 2017-01-09
 section: Blog
 posts: true
+product: enclave
+type: changelog post
 ---
 We’re proud to announce that the Aptible CLI is now supported on Windows!
 
 ## More than a CLI: a Toolbelt!
 
-We distribute the Aptible CLI as a package called the "Aptible Toolbelt." The Toolbelt is available for several platforms, including macOS, Ubuntu, Debian, and CentOS. On Windows, it is available as an MSI installer. 
+We distribute the Aptible CLI as a package called the "Aptible Toolbelt." The Toolbelt is available for several platforms, including macOS, Ubuntu, Debian, and CentOS. On Windows, it is available as an MSI installer.
 
 On all platforms, the toolbelt includes:
-  
+
   * The Aptible CLI itself, in the form of [the aptible-cli Ruby gem][0]; and
 
   * System dependencies the CLI needs to function properly. This includes Ruby (which the CLI is written in) and dependencies like OpenSSH (which the CLI uses for functionality like database tunnels).

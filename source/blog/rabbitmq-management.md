@@ -7,6 +7,8 @@ author_id: thomas
 posted: 2017-01-20
 section: Blog
 posts: true
+product: enclave
+type: changelog post
 ---
 We’re happy to announce that the [RabbitMQ management interface][0] is now available for RabbitMQ databases deployed on Aptible Enclave. Until now, only the AMQP port was exposed, so you could push messages to queues, but managing queues was more difficult.
 

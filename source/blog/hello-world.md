@@ -7,6 +7,7 @@ author_id: chas
 posted: 2014-08-04
 section: Blog
 posts: true
+type: blog post
 ---
 
 YES! Finally! The Aptible team and I are very happy to announce our public launch.

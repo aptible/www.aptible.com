@@ -364,7 +364,6 @@ DEPENDENCIES
   rake
   redcarpet
   rspec
-  thor (< 0.19.2)
   tzinfo-data
   wdm (~> 0.1.0)
 

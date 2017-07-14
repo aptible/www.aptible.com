@@ -7,6 +7,7 @@ author_id: thomas
 posted: 2016-04-07
 section: Blog
 posts: true
+type: blog post
 ---
 
 Aptible customers have been asking how they could view performance metrics such as RAM and CPU usage for their containers. We’re happy to announce that the wait is coming to an end!

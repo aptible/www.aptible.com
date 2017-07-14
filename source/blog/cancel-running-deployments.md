@@ -5,8 +5,10 @@ author_name: Thomas Orozco
 author_email: thomas@aptible.com
 author_id: thomas
 posted: 2016-12-13
+product: enclave
 section: Blog
 posts: true
+type: changelog post
 ---
 
 We're happy to announce that as of this week, you can now cancel running

@@ -8,6 +8,7 @@ author_id: gib
 posted: 2015-10-28
 section: Blog
 posts: true
+type: blog post
 ---
 
 We addressed a small UX issue in our dashboard application this week. A

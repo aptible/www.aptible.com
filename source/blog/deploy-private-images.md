@@ -7,6 +7,7 @@ author_id: blake
 posted: 2016-07-31
 section: Blog
 posts: true
+type: blog post
 ---
 Aptible customers have always been able to streamline deployment by building from base images hosted in public Docker registries. For example, the [Aptible Ruby on Rails Quickstart](/support/quickstart/ruby/rails/) uses `FROM quay.io/aptible/ruby:2.3`, eliminating the need to install Ruby during each Aptible build.
 
@@ -17,7 +18,7 @@ To start from scratch, first create an app on Aptible. You will still need to us
 
 Next, use the Aptible CLI's `aptible config:set` command to set a few environment variables:
 
-  * `APTIBLE_DOCKER_IMAGE` - The name of the image to pull, in the format `registry_host/repo/image_name:tag`. Repo and image name are required. Tag is optional and will default to `latest`. 
+  * `APTIBLE_DOCKER_IMAGE` - The name of the image to pull, in the format `registry_host/repo/image_name:tag`. Repo and image name are required. Tag is optional and will default to `latest`.
   If you are not using Docker Hub (if for example you're using quay.io) then the registry host name is also required.  
   * `APTIBLE_PRIVATE_REGISTRY_HOST` - The private registry host to pull from. Required when pulling from a private registry. Defaults to `docker.io`
   * `APTIBLE_PRIVATE_REGISTRY_USERNAME` - The username to use when pulling the image. Required when pulling from a private registry.

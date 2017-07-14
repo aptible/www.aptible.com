@@ -7,6 +7,7 @@ author_id: thomas
 posted: 2016-06-21
 section: Blog
 posts: true
+type: blog post
 ---
 Contingency planning and disaster recovery are critical parts of any developer’s HIPAA compliance program. The Aptible platform automates many aspects of secure data management, including long-term retention, encryption at rest, taking automatic daily backups of your databases, and distributing those backups across geographically separate regions. These benefits require no setup and no maintenance on your part: Aptible simply takes care of them.
 

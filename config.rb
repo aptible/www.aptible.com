@@ -66,6 +66,11 @@ page '/blog/*', layout: 'blog_post.haml'
 # See /source/feed.xml.builder
 page '/feed.xml', layout: false
 
+#
+# Changelog
+#
+page '/changelog/*', layout: 'changelog_post.haml'
+
 # Authors
 # Requires the site to be "ready" to read from the sitemap resources
 ready do
@@ -160,7 +165,7 @@ end
 # - limited path configuration, ends up needing proxy config
 ready do
   posts_per_page = 10
-  all_posts = blog_posts
+  all_posts = blog_and_grouped_changelog_posts
   subsets = paginated_subsets(all_posts, posts_per_page)
   number_of_pages = total_pages(all_posts.count, posts_per_page)
   page_links = page_links(number_of_pages, '/blog')

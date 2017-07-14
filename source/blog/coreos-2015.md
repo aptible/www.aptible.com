@@ -7,6 +7,7 @@ author_id: sam
 posted: 2015-05-06
 section: Blog
 posts: true
+type: blog post
 ---
 
 

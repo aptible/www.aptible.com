@@ -7,6 +7,8 @@ author_id: thomas
 posted: 2017-01-20
 section: Blog
 posts: true
+type: changelog post
+product: enclave
 ---
 We’re proud to announce that as of today, new Redis databases provisioned on Aptible Enclave support SSL/TLS in addition to the regular Redis protocol. Because both AWS and Aptible require that you encrypt HIPAA Protected Health Information in transit, even within a private, dedicated Enclave stack, starting today you can now use Redis to store and process PHI on Enclave.
 

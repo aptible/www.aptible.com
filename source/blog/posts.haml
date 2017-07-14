@@ -14,12 +14,15 @@ layout: 'layout'
       = partial 'partials/headers/blog-header'
 
       - posts = posts || []
-      - posts.each do |post|
-        .blog-posts__post
-          %a{ href: blog_post_author_href(post) }
-            %img.blog-posts__post-avatar{ src: "#{author_gravatar(post)}?s=128" }
-          = partial 'partials/blog-list-item', locals: { post: post }
-          %a.arrow-link--right.dbl-arrow-link--right{ href: blog_post_href(post) } Read more
+      - posts.each do |entry|
+        - if entry.is_a?(Array)
+          = partial 'partials/changelog-group', locals: { posts: entry }
+        - else
+          .blog-posts__post
+            %a{ href: blog_post_author_href(entry) }
+              %img.blog-posts__post-avatar{ src: "#{author_gravatar(entry)}?s=128" }
+            = partial 'partials/blog-list-item', locals: { post: entry }
+            %a.arrow-link--right.dbl-arrow-link--right{ href: blog_post_href(entry) } Read more
 
       = partial 'partials/newsletter-signup--blog'
 

@@ -7,6 +7,7 @@ author_id: thomas
 posted: 2016-05-16
 section: Blog
 posts: true
+type: blog post
 ---
 If you are on an Aptible "v2" stack, which automatically scales your app containers across AWS Availability Zones, you have probably noticed that the `aptible logs` CLI command has been deprecated. As an alternative, you’ve been able to use [Log Drains][0] to collect app logs.
 

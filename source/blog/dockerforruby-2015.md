@@ -7,6 +7,7 @@ author_id: sam
 posted: 2015-08-13
 section: Blog
 posts: true
+type: blog post
 ---
 Our CTO Frank recently spoke at [NYC.rb](http://www.meetup.com/NYC-rb/), to give Ruby devs an introduction to Docker, simplifying service-oriented architecture, wrapping databases in a uniform API, and achieving the Holy Grail of dev/prod parity.  
 

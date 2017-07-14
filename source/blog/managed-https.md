@@ -7,6 +7,7 @@ author_id: thomas
 posted: 2016-08-04
 section: Blog
 posts: true
+type: blog post
 ---
 Earlier this week, we released Managed HTTPS Endpoints. These endpoints have a few key benefits:
 

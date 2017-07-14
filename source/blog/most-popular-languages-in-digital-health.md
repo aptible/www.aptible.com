@@ -7,6 +7,7 @@ author_id: sam
 posted: 2015-10-06
 section: Blog
 posts: true
+type: blog post
 ---
 *This is the first in a series of blog posts exploring the state of the digital health landscape from a technical perspective.*
 

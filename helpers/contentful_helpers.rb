@@ -4,7 +4,7 @@ module ContentfulHelpers
   MARKDOWN_PROCESSORS = {
     'blogPost' => lambda do |yml|
       [{
-        markdown_path: "source/blog/#{yml[:slug]}.md",
+        markdown_path: "source/#{blog_post_dir(yml)}/#{yml[:slug]}.md",
         markdown: yml[:body],
         frontmatter: {
           'title' => yml[:title],
@@ -13,7 +13,9 @@ module ContentfulHelpers
           'author_email' => yml[:author][:email],
           'author_id' => yml[:author][:slug],
           'posted' => Time.parse(yml[:posted]).to_date,
+          'product' => yml[:product],
           'section' => 'Blog',
+          'type' => yml[:type],
           'posts' => true
         }
       }]
@@ -139,5 +141,11 @@ module ContentfulHelpers
                            space: space_id,
                            api_url: api_host,
                            default_locale: 'en-US')
+  end
+
+  def self.blog_post_dir(yml)
+    changelog_types = ['changelog post', 'upcoming feature']
+    return 'changelog' if changelog_types.include?(yml[:type])
+    'blog'
   end
 end

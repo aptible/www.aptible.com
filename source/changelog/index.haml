@@ -1,0 +1,20 @@
+---
+title: Changelog
+description: Posts detailing feature updates, compliance resources, and
+             information useful to users of Aptible's security and DevOps tools.
+layout: 'layout'
+---
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
+
+.content
+  .grid-container--flex
+    .blog-posts.grid-item
+      = partial 'partials/headers/changelog-header'
+
+      .changelog-entries
+        - changelog_posts.each do |post|
+          = partial 'partials/changelog-list-item', locals: { post: post }
+
+      = partial 'partials/newsletter-signup--blog'
