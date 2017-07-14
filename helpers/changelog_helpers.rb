@@ -19,6 +19,6 @@ module ChangelogHelpers
 
   # Changelog posts grouped by year and month
   def changelog_posts_grouped
-    changelog_posts.group_by { |post| post.data.posted.strftime("%Y-%m") }
+    changelog_posts.group_by { |post| post.data.posted.strftime('%Y-%m') }
   end
 end
