@@ -2,12 +2,47 @@ body.enclave header {
   overflow: hidden;
 }
 .enclave-hero {
-  position: relative;
-  padding-bottom: 150px;
+  margin-top: 50px;
+  padding-bottom: 50px;
   @media screen and (max-width: $tablet-portrait) {
     padding-bottom: 0;
   }
 }
+
+.enclave-hero__copy {
+  max-width: 500px;
+}
+
+.enclave-hero__subtitle {
+  color: $sky-blue;
+  font-size: 16px;
+  font-weight: $semibold;
+  margin-bottom: 20px;
+}
+
+.enclave-hero__title {
+  color: $white;
+  font-size: 44px;
+  font-weight: $semibold;
+  @media screen and (max-width: $tablet-portrait) {
+    font-size: 8vw;
+  }
+}
+
+.enclave-hero__summary {
+  color: $sky-blue;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
+}
+
+.enclave-hero .home-hero__quotes {
+  margin-top: 20px;
+}
+
 .enclave-hero__terminal {
   position: absolute;
   left: calc(50% + 60px);
@@ -17,7 +52,7 @@ body.enclave header {
   pre {
     height: 300px;
   }
-  @media screen and (max-width: $tablet-portrait) {
+  @media screen and (max-width: $nav-break) {
     display: none;
   }
 }
