@@ -12,15 +12,17 @@ description: Aptible Enclave is a container platform that simplifies secure
     .enclave-hero.grid-container.grid--2up.aptible-header__bottom
       .home-hero.grid-collapse
         .home-hero__copy
-          %h1.home__heading__title
-            Enclave
-          %p.home__heading__summary.heading__summary.heading__summary--sibling
-            A secure container deployment platform. Deploy apps, databases, and
-            secure network architecture with Enclave's flexible command line
-            interface.
+          .enclave-hero__copy
+            %h2.enclave-hero__subtitle Enclave
+            %h1.enclave-hero__title
+              Container orchestration for regulated industries
+            %p.enclave-hero__summary
+              Deploy and scale apps using a developer workflow you'll love.
+            %p.enclave-hero__summary
+              Enclave automatically implements the security controls you need to
+              achieve regulatory compliance and pass customer audits.
 
           = partial 'partials/signup-cta', locals: {     |
-                cta_label: 'Get Started',                |
                 cta_placeholder: 'Enter your work email' |
               }                                          |
           = partial 'partials/signup-demo-request'

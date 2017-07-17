@@ -118,6 +118,9 @@ hr {
     img {
       margin: 50px 0 34px 0;
     }
+    & + pre {
+      margin-top: 10px;
+    }
   }
 
   b, strong {
