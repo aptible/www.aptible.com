@@ -37,6 +37,15 @@ module AptibleHelpers
     sitemap.resources.select { |p| p.data['section'] == section }
   end
 
+  def twitter_follow_url
+    escaped_url = URI.escape("https://www.aptible.com/#{current_page.path}")
+
+    'https://twitter.com/intent/follow?' \
+      "original_referer=#{escaped_url}&" \
+      'ref_src=twsrc%5Etfw&region=follow_link&' \
+      'screen_name=aptible&tw_p=followbutton'
+  end
+
   def quickstart?(url)
     url.include? 'support/quickstart'
   end

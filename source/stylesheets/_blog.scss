@@ -65,6 +65,7 @@
 
 .blog-posts__post {
   border: 1px solid $light-blue;
+  border-radius: 4px;
   margin-bottom: 120px;
   padding: 60px;
   @media screen and (max-width: 650px) {
@@ -164,244 +165,67 @@
   }
 }
 
-/*
-.blog-post__heading {
-  @include grid-shift(2);
-  @include grid-column(8);
-  margin-bottom: 50px;
-
-  .blog-posts__post {
-    border-bottom: none;
-    &::after {
-      border-color: $blue-steel;
+.blog-post__share-links {
+  position: absolute;
+  transform: translateX(-72px);
+  @media screen and (max-width: 650px) {
+    position: static;
+    transform: translate(0, -50px);
+    .blog-post__share-link {
+      display: inline-flex;
+      margin: 0 10px 0 0;
     }
   }
-
-  @media screen and (max-width: $tablet-portrait) {
-    @include grid-shift(1);
-    @include grid-column(10);
-  }
 }
-
-.blog-post__author {
-  @include grid-column(2);
-  @media screen and (max-width: $tablet-landscape) {
-    @include grid-shift(2);
-    @include grid-column(8);
-  }
-  @media screen and (max-width: $tablet-portrait) {
-    @include grid-shift(1);
-    @include grid-column(10);
-  }
-}
-
-.blog-post {
-  @include grid-column(8);
-  margin-bottom: 50px;
-
-  @media screen and (max-width: $tablet-landscape) {
-    @include grid-shift(2);
-  }
-  @media screen and (max-width: $tablet-portrait) {
-    @include grid-shift(1);
-    @include grid-column(10);
-  }
-}
-
-.blog-posts__post {
+.blog-post__share-link {
   align-items: center;
+  background-color: #dadde2;
+  border-radius: 12px;
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid $light-blue;
-  margin-bottom: 30px;
-  width: 100%;
-  &::after {
-    border-color: $blue;
-    border-radius: 2px;
-    border-style: solid;
-    border-width: 5px 5px 0 0;
-    content: '';
-    display: inline-block;
-    height: 14px;
-    position: relative;
-    right: 0;
-    top: -15px;
-    transform: rotate(45deg);
-    transition: right $base-duration $base-timing;
-    width: 14px;
-  }
-  &:hover::after {
-    right: -10px;
-  }
-}
-
-.blog-posts__link {
-  flex-grow: 1;
-  max-width: calc(100% - 30px);
-}
-
-.post__subtitle {
-  color: $sky-blue;
-  display: block;
-  font-size: 16px;
+  height: 24px;
+  justify-content: center;
   margin-bottom: 10px;
-  &::after { display: none; }
-}
-.post__title {
-  color: $dark-blue-steel;
-  display: block;
-  font-size: 30px;
-  font-weight: $semibold;
-  margin-bottom: 20px;
-  &::after { display: none; }
-}
-.post__summary {
-  color: $light-blue-gray;
-  font-size: 24px;
-  font-weight: $light;
-  margin-bottom: 30px;
-  width: 75%;
-}
-
-.blog-post__author-subtitle {
-  font-size: 14px;
-  font-weight: $light;
-  color: $blue-steel;
-  letter-spacing: 0px;
-  margin-bottom: 10px;
-  &::after { display: none; }
-}
-
-.blog-post__author-name {
-  font-weight: $semibold;
-  font-size: 20px;
-  color: $dark-blue-steel;
-  letter-spacing: 0px;
-  &::after { display: none; }
-  a {
-    color: $action-color;
-  }
-}
-
-
-//
-// Block Post - Prev / All / Next Footer links
-//
-.blog-posts__nav {
-  align-items: stretch;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto 50px;
-  width: 80%;
-  @media screen and (max-width: $tablet-portrait) {
-    display: block;
-    // flex-direction: column;
-    // justify-content: space-around;
-  }
-}
-.blog-posts__link--footer {
-  display: flex;
-  flex-direction: row;
-  line-height: 1.25;
-  max-width: 250px;
-  order: 2;
-  .post__subtitle {
-    margin-bottom: 0;
-  }
-  .post__title {
-    font-size: 18px;
-  }
-  @media screen and (max-width: $tablet-portrait) {
-    align-self: center;
-    border-bottom: 1px solid $light-blue;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    max-width: 100%;
-    width: 100%;
-    a, .post__subtitle, .post__title {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-}
-.blog-posts__link--prev {
-  margin-right: 20px;
-  order: 1;
-  text-align: right;
-  width: 100%;
-  &::before {
-    border-color: $blue;
-    border-radius: 2px;
-    border-style: solid;
-    border-width: 0 0 5px 5px;
-    content: '	 ';
-    display: block;
-    height: 15px;
-    left: -15px;
-    position: relative;
-    top: 15px;
-    transform: rotate(45deg);
-    transition: left $base-duration $base-timing;
-    width: 15px;
-  }
-  &:hover::before {
-    left: -20px;
-  }
-  @media screen and (max-width: $tablet-portrait) {
-    float: left;
-    margin-right: 0;
-  }
-}
-.blog-posts__link--all {
-  align-self: vertical-align;
   text-align: center;
-  width: 100%;
-  .post__title {
-    margin-top: 5px;
+  transition: background-color $base-duration $base-timing;
+  width: 24px;
+  path, polygon {
+    fill: white;
   }
-  &::before {
-    border-color: $blue;
-    border-radius: 2px;
-    border-style: solid;
-    border-width: 5px 0 0 5px;
-    content: '';
-    display: block;
-    height: 15px;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    transform: rotate(45deg);
-    transition: top $base-duration $base-timing;
-    width: 15px;
+  svg {
+    display: inline-block;
+    max-height: 14px;
+    max-width: 14px;
   }
-  &:hover::before {
-    top: -5px;
+  &:focus {
+    outline: none;
   }
 }
-.blog-posts__link--next {
-  margin-left: 20px;
-  order: 3;
-  &::after {
-    border-color: $blue;
-    border-radius: 2px;
-    border-style: solid;
-    border-width: 5px 5px 0 0;
-    content: '	 ';
-    display: block;
-    height: 15px;
-    position: relative;
-    right: -15px;
-    top: 15px;
-    transform: rotate(45deg);
-    transition: right $base-duration $base-timing;
-    width: 15px;
-  }
-  &:hover::after {
-    right: -20px;
-  }
-  @media screen and (max-width: $tablet-portrait) {
-    float: right;
-    margin-left: 0;
+.blog-post__share-link--twitter {
+  &:focus, &:hover {
+    background-color: #00aaec;
   }
 }
-*/
+.blog-post__share-link--facebook {
+  &:focus, &:hover {
+    background-color: #3b5998;
+  }
+}
+.blog-post__share-link--linkedin {
+  &:focus, &:hover {
+    background-color: #0071A1;
+  }
+  svg {
+    max-height: 12px;
+    max-width: 12px;
+  }
+}
+.blog-post__share-link--hackernews {
+  &:focus, &:hover {
+    background-color: #f60;
+  }
+}
+.blog-post__share-link--email {
+  &:focus, &:hover {
+    background-color: $blue;
+  }
+}

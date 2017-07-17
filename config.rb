@@ -62,14 +62,14 @@ page '/*.txt', layout: false
 #
 # Blog
 #
-page '/blog/*', layout: 'blog_post.haml'
+page '/blog/*', layout: 'post.haml'
 # See /source/feed.xml.builder
 page '/feed.xml', layout: false
 
 #
 # Changelog
 #
-page '/changelog/*', layout: 'changelog_post.haml'
+page '/changelog/*', layout: 'post.haml'
 
 # Authors
 # Requires the site to be "ready" to read from the sitemap resources
