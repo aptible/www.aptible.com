@@ -1,5 +1,4 @@
 ---
-attachments:
 category: HIPAA Compliance
 cover_image:
   :title: 'Resource: HIPAA Compliance for Developers'
@@ -8,6 +7,7 @@ cover_image:
 created_at: !ruby/object:DateTime 2016-01-05 00:00:00.000000000 -04:00
 description: Many developers are working with health data for the first time. This
   guide is for those who need to get familiar with the basics of HIPAA Compliance.
+documents:
 excerpt: Basic information on becoming secure and compliant under HIPAA regulations.
 featured: true
 included_on_index: true

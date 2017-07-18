@@ -32,4 +32,8 @@ module ResourceHelpers
     path = "/#{data.subfolder}#{path}" if data.subfolder.present?
     path
   end
+
+  def document_file_extension(path)
+    File.extname(path).delete('.')
+  end
 end

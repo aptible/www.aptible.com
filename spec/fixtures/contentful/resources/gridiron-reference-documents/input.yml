@@ -15,13 +15,6 @@
 :type: pdf/file download
 :included_on_index: true
 :category: Aptible Product Reference
-:attachments:
-- :title: Gridiron Risk Model
-  :description:
-  :url: "//assets.contentful.com/8djp5jlzqrnc/3vMpV4OWW4cGmq8oEeKmi8/563a04a84e07ea032d955724eb6947be/gridiron-risk-model.pdf"
-- :title: Gridiron Compliance Model
-  :description:
-  :url: "//assets.contentful.com/8djp5jlzqrnc/53Vni1qr4sWOG2ei6q4YM8/54d12b3aefb85b505de5be988df721a8/gridiron-compliance-model.pdf"
 :documents:
 - :title: Gridiron Risk Model
   :path: "/assets/gridiron-risk-model.pdf"
