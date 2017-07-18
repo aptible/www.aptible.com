@@ -52,7 +52,7 @@
         - if resource.documents
           .resource-docs
             - resource.documents.each do |doc|
-              %a.resource-doc{ href: doc.path, title: doc.title, data: { type: 'PDF' }, target: '_blank', rel: 'noopener noreferrer' }
+              %a.resource-doc{ href: doc.path, title: doc.title, "data-type" => document_file_extension(doc.path), target: '_blank', rel: 'noopener noreferrer' }
                 = partial '/images/aptible-small-mark.svg'
 
       .grid-aside
