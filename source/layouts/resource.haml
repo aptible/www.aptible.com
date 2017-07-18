@@ -27,13 +27,10 @@
         = find_and_preserve do
           = yield
 
-        - if resource.webinar_slides_id
+        - if resource.webinar_slides_link
           %h3 Slides
           %p
-            %script.speakerdeck-embed{ async: 'async',  |
-              src: '//speakerdeck.com/assets/embed.js', |
-              data: { id: resource.webinar_slides_id,   |
-                      ratio: '1.77777777777778' }}      |
+            %a{ href: resource.webinar_slides_link } View
 
         - if resource.type == 'webinar'
           %h3#transcript Transcript
@@ -52,10 +49,10 @@
                   %a{ href: resource_path(w) }
                     %strong= display_date(w.data.created_at)
 
-        - if resource.attachments
+        - if resource.documents
           .resource-docs
-            - resource.attachments.each do |doc|
-              %a.resource-doc{ href: doc.url, title: doc.title, data: { type: doc.type }, target: '_blank', rel: 'noopener noreferrer' }
+            - resource.documents.each do |doc|
+              %a.resource-doc{ href: doc.path, title: doc.title, data: { type: 'PDF' }, target: '_blank', rel: 'noopener noreferrer' }
                 = partial '/images/aptible-small-mark.svg'
 
       .grid-aside

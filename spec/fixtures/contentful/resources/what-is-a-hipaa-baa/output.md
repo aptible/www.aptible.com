@@ -1,5 +1,4 @@
 ---
-attachments:
 category: HIPAA Compliance
 cover_image:
   :title: 'Resource: What is HIPAA BAA'
@@ -7,6 +6,7 @@ cover_image:
   :url: "//images.contentful.com/8djp5jlzqrnc/ZID8bl4zSgIc8UkMAyYc8/8b5abc621b19e6efbdece8682073c08e/what-is-a-baa.jpg"
 created_at: !ruby/object:DateTime 2016-03-28 00:00:00.000000000 -04:00
 description: What do software developers need to know about Business Associate Agreements?
+documents:
 excerpt: What do software developers need to know about Business Associate Agreements?
 featured: false
 included_on_index: true
