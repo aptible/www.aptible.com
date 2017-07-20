@@ -4,7 +4,7 @@ excerpt: "Can you get into Y Combinator? Absolutely. Here's why and how."
 author_name: Chas Ballew
 author_email: chas@aptible.com
 author_id: chas
-hn_url: https://www.aptible.com/blog/y_combinator.html
+hackernews_link: https://news.ycombinator.com/item?id=8334957
 posted: 2014-09-18
 section: Blog
 type: blog post
@@ -25,10 +25,10 @@ No.
 
 There are two main reasons for this:
 
-*__The application process itself is valuable.__*  
-Preparing the application requires you to think carefully about your idea, your company, your market, your team, and the obstacles in your way. Forcing yourself to reflect honestly is painful, but extremely beneficial. Seize the opportunity to do it now.  
+*__The application process itself is valuable.__*
+Preparing the application requires you to think carefully about your idea, your company, your market, your team, and the obstacles in your way. Forcing yourself to reflect honestly is painful, but extremely beneficial. Seize the opportunity to do it now.
 
-*__You have a better chance than you think.__*  
+*__You have a better chance than you think.__*
 The traits YC looks for in companies and founders are well-known and addressable. By "well-known," I mean go read PG and Sam's essays. By "addressable," I mean you can improve your chances with focused work and practice. If your company doesn't have the ideal characteristics, you can acquire the important ones. If you have the right ingredients, you can learn to convey that clearly and concisely.
 
 That's why you should [apply now](http://www.ycombinator.com/apply/).
@@ -66,9 +66,9 @@ Some tips:
 
 ## Step 2: Interview
 
-The application questions are a subset of the questions you may be asked at an interview.  
+The application questions are a subset of the questions you may be asked at an interview.
 
-Before our interview, Frank and I:  
+Before our interview, Frank and I:
 
 - Collected all of the known Y Combinator interview questions we could find
 - Wrote out 1-2 sentence answers
@@ -87,7 +87,7 @@ Below are the questions we used to prepare. I don't remember where we found each
 
 *Remember:* One or two sentences each. If you prepare longer answers, you'll be flustered when the YC partners cut you off to ask another question. James Cunningham and Colin Hayhurst (GoScale, S12) built a [fun app with a timer](http://ipaulgraham.herokuapp.com/) to help you practice concise answers.
 
-### **Critical questions**  
+### **Critical questions**
 
 These are the most important questions. They are all different ways of determining if you make something people want. You need to have a good answer, or an excellent reason for not having an answer. Many of these are in the application itself.
 

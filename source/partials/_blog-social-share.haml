@@ -10,13 +10,13 @@
   %a.blog-post__share-link.blog-post__share-link--linkedin{ href: linkedin_share_href(post), rel: 'noopener noreferrer', target: '_blank' }
     = partial "images/icons/social/linkedin.svg"
 
-  %a.blog-post__share-link.blog-post__share-link--hackernews{ |
-      "data-url" => post.data.hn_url ? post.data.hn_url : '', |
-      "data-title" => post.data.title,                        |
-      href: hackernews_share_href(post),                      |
-      rel: 'noopener noreferrer',                             |
-      target: '_blank'                                        |
-    }                                                         |
+  %a.blog-post__share-link.blog-post__share-link--hackernews{         |
+      "data-override" => post.data.hackernews_link,                   |
+      "data-title" => post.data.title,                                |
+      href: post.data.hackernews_link || hackernews_share_href(post), |
+      rel: 'noopener noreferrer',                                     |
+      target: '_blank'                                                |
+    }                                                                 |
     = partial "images/icons/social/hackernews.svg"
 
   %a.blog-post__share-link.blog-post__share-link--email{ href: mailto_share_href(post) }

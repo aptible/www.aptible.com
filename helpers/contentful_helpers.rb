@@ -15,7 +15,8 @@ module ContentfulHelpers
           'posted' => Time.parse(yml[:posted]).to_date,
           'product' => yml[:product],
           'section' => 'Blog',
-          'type' => yml[:type]
+          'type' => yml[:type],
+          'hackernews_link' => yml[:hackernews_link]
         }
       }]
     end,

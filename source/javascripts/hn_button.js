@@ -1,11 +1,14 @@
 $.fn.hnButton = function() {
   // this is the button to be upgraded
   var linkbutton = this;
+
+  // bypass Algolia if we know the Hacker News discussion URL
+  if (linkbutton.data('override')) {
+    return linkbutton;
+  }
+
   var title = document.title;
   var thisUrl = window.location.href;
-  if (linkbutton.data('url')) {
-    thisUrl = linkbutton.data('url');
-  }
   if (linkbutton.data('title')) {
     title = linkbutton.data('title');
   }
@@ -29,7 +32,6 @@ $.fn.hnButton = function() {
       if (data.nbHits > 0) {
         $.each(data.hits, function(index, item){
           if (item.url === thisUrl) {
-            debugger;
             // this is our item!
             var hnPostLink = hnUrlPrefix + item.objectID;
             linkbutton.unbind('click');
