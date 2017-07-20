@@ -3,43 +3,34 @@ title: Resources
 layout: 'layout'
 ---
 - content_for :header do
-  -# NOTE: Add .aptible-header--with-breadcrumbs when restoring filters
   %header.aptible-header.hero-gradient--angled
-    = partial 'partials/main-nav', locals: {      |
-        section_title: 'Resources',               |
-        section_url: '/resources/'                |
-      }                                           |
-
--# TODO: Add filtering when we have more resources
--# .filter-state
--#   .grid-container
--#     %span.filter-state__subject Resources
--#     %span.filter-state__tag All
+    = partial 'partials/main-nav'
 
 .content
-  .grid-container.grid-container--no-padding
+  .grid-container
+    %header.blog-header
+      %h1.blog-header__title
+        %a{ href: '/resources/' } Resources
+      = partial 'follow-aptible-twitter-link'
     .grid-document
-      -# TODO: Add filtering when we have more resources
-      -# .filter
-      -#   .filter-label Resource Categories:
-      -#   %a.filter-option{ href: '' } Compliance
-      -#   %a.filter-option{ href: '' } Developer
-      -#   %a.filter-option{ href: '' } Other
-      -#   %a.filter-option.filter-option--selected{ href: '' } All
-
       .resources-list
-        - resources_for_index.each do |resource|
-          = partial 'resource-item',  locals: { resource: resource }
+        .resources-list__column
+          - resources_for_index.each_with_index do |resource, index|
+            - if index.odd?
+              = partial 'resource-item',  locals: { resource: resource }
 
-        -# One-off for AWS vs Aptible
-        %a{ class: "resource-item", href: '/aws-vs-aptible/' }
-          %header.resource-item__header
-            %h2.resource-item__title HIPAA Compliant Deployment: AWS vs Aptible
-          .resource-item__body
-            .resource-item__tags
-            .resource-item__excerpt
-              Enjoy the scalability and security of the AWS cloud without needing
-              an entire DevOps team to manage it.
+          -# One-off for AWS vs Aptible
+          %a.resource-item{ href: '/aws-vs-aptible/' }
+            .resource-item__body
+              %h2.resource-item__title HIPAA Compliant Deployment: AWS vs Aptible
+              .resource-item__excerpt
+                Enjoy the scalability and security of the AWS cloud without needing
+                an entire DevOps team to manage it.
+
+        .resources-list__column
+          - resources_for_index.each_with_index do |resource, index|
+            - if index.even?
+              = partial 'resource-item',  locals: { resource: resource }
 
     .grid-aside
       = partial 'resources-aside'

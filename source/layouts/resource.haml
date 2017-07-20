@@ -3,29 +3,36 @@
 - @description = resource.meta_description || resource.snippet
 
 - content_for :header do
-  %header.aptible-header.aptible-header--with-breadcrumbs.hero-gradient--angled
-    = partial 'partials/main-nav', locals: {      |
-        section_title: 'Resources',               |
-        section_url: '/resources/'                |
-      }                                           |
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
 
 = wrap_layout :layout do
-  .content.resource__header
-    .grid-container.grid-container--no-padding.resource__header-wrap{ style: resource_header_style(current_page) }
-      %h1.heading__title= resource.title
-      .heading__summary= resource.excerpt
-
   .content
-    .grid-container.grid-container--no-padding
-      .grid-document.markdown-content.resource-article
+    .grid-container
+      %header.blog-header
+        %h2.blog-header__title
+          %a{ href: '/resources/' } Resources
+        = partial 'follow-aptible-twitter-link'
+
+      .grid-document.resource-article
+        %header.blog-posts__post-header
+          %h1.resource-article__title= resource.title
+          .resource-article__subtitle= resource.excerpt
+
+        = partial 'partials/blog-social-share'
+
+        - if resource.cover_image
+          .resource-article__cover-image{ style: "background-image: url(#{resource.cover_image.url})" }
+            %img{ src: resource.cover_image.url }
+
         - if resource.webinar_video_link
           %p.text-center
             %iframe{ width: '560', height: '315',                        |
                      src: resource.webinar_video_link, frameborder: '0', |
                      allowfullscreen: 'allowfullscreen' }                |
-
-        = find_and_preserve do
-          = yield
+        .markdown-content
+          = find_and_preserve do
+            = yield
 
         - if resource.webinar_slides_link
           %h3 Slides

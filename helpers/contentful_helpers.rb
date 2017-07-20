@@ -32,6 +32,7 @@ module ContentfulHelpers
           'documents' => yml[:documents],
           'excerpt' => yml[:snippet],
           'featured' => yml[:featured],
+          'hackernews_link' => yml[:hackernews_link],
           'included_on_index' => yml[:included_on_index],
           'included_in_footer' => yml[:included_in_footer],
           'footer_position' => yml[:footer_position],
