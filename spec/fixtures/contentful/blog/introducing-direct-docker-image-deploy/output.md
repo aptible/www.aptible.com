@@ -9,6 +9,7 @@ posted: 2017-06-13
 product: enclave
 section: Blog
 type: blog post
+hackernews_link: https://news.ycombinator.com/item?id=13759706
 ---
 
 We’re proud to announce that you can now deploy apps on Enclave directly from a Docker image, bypassing Enclave’s traditional git-based deployment process.
