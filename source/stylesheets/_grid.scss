@@ -28,17 +28,11 @@ body {
   // @include grid-visual;
   @include grid-container;
   @extend .grid-container--flex;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $max-viewport) {
     padding: 0 20px;
   }
   > .grid-container {
     @include grid-collapse;
-  }
-  @media screen and (max-width: $tablet-portrait) {
-    &.quickstart {
-      display: flex;
-      flex-direction: column;
-    }
   }
 }
 
@@ -185,15 +179,13 @@ body {
 }
 
 .grid-document {
-  @include grid-column(8);
+  @include grid-column(9);
   float: left;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  margin-left: 0;
   @media screen and (max-width: $tablet-portrait) {
-    @include grid-column(12);
     float: none;
-    &[data-quickstart="true"] {
-      order: 2
-    }
+    width: 100%;
   }
 }
 
@@ -201,9 +193,12 @@ body {
   @include grid-column(4);
   float: right;
   margin-bottom: 50px;
+  margin-left: 0;
 
   @media screen and (max-width: $tablet-portrait) {
-    @include grid-column(12);
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
     float: none;
   }
 }
@@ -211,23 +206,59 @@ body {
 .grid-aside--left {
   .grid-aside {
     float: left;
+    max-width: 350px;
   }
   .grid-document {
     float: right;
   }
 }
 
+.grid-aside__title {
+  color: $dark-blue-steel;
+  font-size: 26px;
+  font-weight: $semibold;
+  margin-bottom: 20px;
+}
+
 .grid-aside__block {
   background-color: $lighter-blue;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 30px;
+  .post-title {
+    line-height: 1.7;
+  }
+  .post-subtitle {
+    color: $light-gray;
+    font-size: 12px;
+    font-weight: $semibold;
+    margin-bottom: 20px;
+  }
+  .post-excerpt {
+    font-size: 14px;
+    font-weight: $light;
+    line-height: 1.7;
+  }
+  .arrow-link--right {
+    display: block;
+  }
+}
+
+.grid-aside__block--cloud {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.10);
 }
 
 .grid-aside__block--segment {
-  border-bottom: 1px solid $light-blue;
+  border-radius: 0;
   margin-bottom: 0;
+  &:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
   &:last-of-type {
-    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     margin-bottom: 30px;
   }
 }

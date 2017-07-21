@@ -1,0 +1,10 @@
+- featured = featured_resource
+- bg_img = featured.data.cover_image.present? ? featured.data.cover_image.url : ''
+%header.featured-resource.aptible-header.hero-gradient--angled{ "data-bg2" => bg_img }
+  .featured-resource__cover-image{ style: "background-image: url(#{bg_img})"}
+  = partial 'partials/main-nav'
+  .featured-resource__heading.grid-container
+    .featured-resource__tag
+    %h1.featured-resource__title= featured.data.title
+    .featured-resource__summary= featured.data.excerpt
+    %a.arrow-link--right.dbl-arrow-link--right{ href: featured.url } Read more

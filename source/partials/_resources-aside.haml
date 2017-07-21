@@ -1,16 +1,20 @@
 -# %input.filter-search{ type: 'search', placeholder: 'Search Resources' }
 
-.grid-aside__block
-  %h3 Defense in Brief
+.grid-aside__block.grid-aside__block--cloud
+  %h3.grid-aside__title Defense in Brief
   %p
     Sign up to get the best in security and compliance delivered monthly.
   = partial 'newsletter-signup'
 
 - blog_posts.take(3).each_with_index do |post, index|
-  .grid-aside__block.grid-aside__block--segment
+  .grid-aside__block.grid-aside__block--segment.grid-aside__block--cloud
     - if index == 0
-      %h3 From the Blog
+      %h3.grid-aside__title From the Blog
     %h3.post-title= post.data.title
+    .post-subtitle
+      %a{ href: blog_post_author_href(post) }= post.data.author_name
+      on
+      %span= display_date(post.data.posted)
     %p.post-excerpt
       = post.data.excerpt
-      %a.arrow-link--right{ href: blog_post_href(post) } Keep reading
+    %a.arrow-link--right.dbl-arrow-link--right{ href: blog_post_href(post) } Read more

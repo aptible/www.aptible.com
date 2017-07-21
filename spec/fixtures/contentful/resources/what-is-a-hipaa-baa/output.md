@@ -9,6 +9,7 @@ description: What do software developers need to know about Business Associate A
 documents:
 excerpt: What do software developers need to know about Business Associate Agreements?
 featured: false
+hackernews_link:
 included_on_index: true
 included_in_footer: true
 footer_position: 2

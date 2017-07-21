@@ -10,6 +10,7 @@ description: Many developers are working with health data for the first time. Th
 documents:
 excerpt: Basic information on becoming secure and compliant under HIPAA regulations.
 featured: true
+hackernews_link: https://news.ycombinator.com/item?id=11377862
 included_on_index: true
 included_in_footer: true
 footer_position: 1
