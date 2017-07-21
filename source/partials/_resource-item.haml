@@ -1,6 +1,7 @@
 %a.resource-item{ href: resource_path(resource) }
   - if resource.data.cover_image.present?
     %header.resource-item__header{ style: resource_header_style(resource) }
+      .resource-item__header__msg
   .resource-item__body
     %h2.resource-item__title= resource.data.title
     .resource-item__excerpt= resource.data.excerpt

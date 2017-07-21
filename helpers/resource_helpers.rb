@@ -5,6 +5,11 @@ module ResourceHelpers
       .sort_by { |r| -r.data.created_at.to_time.to_i }
   end
 
+  def featured_resource
+    section_pages('Resources')
+      .select { |r| r.data.featured }.first
+  end
+
   def resource_header_style(resource)
     if resource.data.cover_image.present?
       "background-image: url(#{resource.data.cover_image.url});"

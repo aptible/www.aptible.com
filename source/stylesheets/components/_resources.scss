@@ -1,6 +1,67 @@
 //
 // Listed resources at /resources
 //
+.featured-resource {
+  min-height: 400px;
+  margin-bottom: 30px;
+  position: relative;
+  .grid-container {
+    position: relative;
+  }
+}
+
+.featured-resource__cover-image {
+  background-size: cover;
+  height: 100%;
+  min-height: 400px;
+  opacity: .2;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.featured-resource__heading {
+  bottom: 0;
+  margin-top: 60px;
+  padding-top: 0;
+  padding-bottom: 50px;
+  a {
+    color: $white;
+  }
+  @media screen and (max-width: $nav-break) {
+    margin-top: 0;
+  }
+}
+
+.featured-resource__tag {
+  background-color: $blue;
+  border-radius: 3px;
+  color: $white;
+  display: inline-block;
+  font-weight: $semibold;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  &::after {
+    content: 'Featured';
+  }
+}
+.featured-resource__title {
+  font-size: 50px;
+  font-weight: $semibold;
+  color: $white;
+}
+
+.featured-resource__summary {
+  color: $white;
+  font-size: 24px;
+  font-weight: $light;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
 .resources-list {
   display: flex;
   @media screen and (max-width: $tablet-landscape) {
@@ -52,6 +113,9 @@
     box-shadow: 0 20px 60px 0 rgba(0,0,0,0.10);
     outline: none;
     transform: scale(1.04);
+    .resource-item__header__msg {
+      opacity: 1;
+    }
   }
   @media screen and (max-width: $tablet-landscape) {
     max-width: 100%;
@@ -74,8 +138,29 @@
   background-repeat: no-repeat;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  padding: 50px 20px 20px;
   height: 150px;
+}
+
+.resource-item__header__msg {
+  align-items: center;
+  background-color: rgba(48,122,209,.7);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity $base-duration $base-timing;
+  &::after {
+    background-color: $white;
+    border-radius: 3px;
+    color: $blue;
+    content: 'Read Now';
+    font-size: 12px;
+    font-weight: $semibold;
+    padding: 15px 30px;
+    text-transform: uppercase;
+  }
 }
 
 .resource-item__title {
