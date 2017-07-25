@@ -1,4 +1,5 @@
 ---
+contentful: true
 category: Aptible Product Reference
 cover_image:
 created_at: !ruby/object:DateTime 2017-01-23 00:00:00.000000000 -04:00

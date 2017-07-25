@@ -1,4 +1,5 @@
 ---
+contentful: true
 category: HIPAA Compliance
 cover_image:
   :title: 'Resource: What is HIPAA BAA'

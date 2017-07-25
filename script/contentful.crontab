@@ -1,0 +1,1 @@
+* * * * *  cd /opt/www.aptible.com && bundle exec rake contentful:pull
