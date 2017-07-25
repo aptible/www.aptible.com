@@ -242,7 +242,7 @@
 - loc: "/support/quickstart/python/django/"
   url: "/documentation/enclave/tutorials/quickstart-guides/python/django.html"
 - loc: "/support/quickstart/python/flask/"
-  url: "/documentation/enclave/tutorials/quickstart-guides/python/flask.html"
+  url: "/documentation/enclave/tutorials/quickstart-guides/python.html"
 - loc: "/support/quickstart/ruby/rails/"
   url: "/documentation/enclave/tutorials/quickstart-guides/ruby/rails.html"
 - loc: "/support/quickstart/scala/play/"
