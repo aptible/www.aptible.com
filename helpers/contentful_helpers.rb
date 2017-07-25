@@ -1,5 +1,8 @@
 require 'contentful'
 
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
+
 module ContentfulHelpers
   MARKDOWN_PROCESSORS = {
     'blogPost' => lambda do |yml|
