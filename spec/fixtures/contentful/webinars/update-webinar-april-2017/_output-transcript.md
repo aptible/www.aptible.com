@@ -1,3 +1,7 @@
+---
+contentful: true
+---
+
 **Chas Ballew:**	Okay, let's get started. Thank you everybody for joining. This is the ... Oh boy, can I go backwards? This is the April 2017 Aptible Update Webinar. This is part our quarterly webinar series. We're giving one of these every quarter, in order to give everybody updates and insight into what we've been working on over the last quarter. The agenda for today will be like most of these. [00:00:30] First our enclave team lead Thomas Orozco will go through the enclave features and updates that we've shipped over the last quarter since January. Then Skylar Anderson our grid iron lead will cover grid iron updates and availability for that. Then we'll have time for open questions at the end.
 
 As we go along, if you have questions that come up, go ahead and use the Q&A feature in zoom here, to just put those [00:01:00] in. Then Frank Macreery our CTO will moderate and make sure that all of those get answered. We're going to be recording this as we go. Afterwards we'll post the recording and a transcript and a link to register for the July update webinar on our blog, or on our resources page rather. So, aptible.com/resources. We'll also tweet a link out to that. With that, [00:01:30] I'm going to turn it over to Thomas, thank you.

@@ -1,4 +1,5 @@
 ---
+contentful: true
 title: Introducing Direct Docker Image Deploy
 excerpt: You can now deploy apps on Enclave directly from a Docker image in addition
   to Enclave’s traditional git-based deployment process.

@@ -1,4 +1,5 @@
 ---
+contentful: true
 title: Managed HTTPS Endpoints now support Internal Endpoints
 excerpt: Internal-facing apps can now enjoy the benefits of Managed HTTPS Endpoints.
 author_name: Thomas Orozco

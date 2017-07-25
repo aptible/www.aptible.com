@@ -1,4 +1,5 @@
 ---
+contentful: true
 category: Webinars
 cover_image:
 created_at: !ruby/object:DateTime 2017-04-19 00:00:00.000000000 -07:00

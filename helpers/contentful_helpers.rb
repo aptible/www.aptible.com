@@ -1,5 +1,8 @@
 require 'contentful'
 
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
+
 module ContentfulHelpers
   MARKDOWN_PROCESSORS = {
     'blogPost' => lambda do |yml|
@@ -62,18 +65,45 @@ module ContentfulHelpers
   }.freeze
 
   def self.populate!
+    filelist = []
     Dir.mktmpdir do |dir|
       fetch_yaml_files!(dir)
       MARKDOWN_PROCESSORS.keys.each do |type|
         Dir.glob(File.join(dir, "#{type}/*.yml")).each do |yaml_file|
           yaml = File.read(yaml_file)
-          markdown_map(type, yaml).each do |path, markdown|
-            dest = File.join(File.dirname(__FILE__), '..', path)
+
+          begin
+            map = markdown_map(type, yaml)
+          rescue => e
+            puts "WARN: Failed to parse #{File.basename(yaml_file)}"
+            puts "WARN:   #{e.message}"
+            next
+          end
+
+          map.each do |path, markdown|
+            dest = File.expand_path("../#{path}", File.dirname(__FILE__))
+            filelist << dest
+            next if File.exist?(dest) && markdown == File.read(dest)
+            puts "INFO: Updating #{dest}"
             File.open(dest, 'w') { |file| file << markdown }
           end
         end
       end
     end
+
+    # If ENV['CONTENTFUL_PRUNE_ON_POPULATE'] is set, prune local Markdown
+    # files previously pulled from Contentful with no matching resource
+    return unless prune_on_populate?
+    (local_contentful_filenames - filelist).each do |dest|
+      puts "INFO: Pruning #{dest}"
+      FileUtils.rm(dest)
+    end
+  end
+
+  def self.local_contentful_filenames
+    pattern = '../source/**/*.md'
+    all = Dir.glob(File.expand_path(pattern, File.dirname(__FILE__)))
+    all.select { |f| File.read(f).lines.grep(/^contentful: true$/).any? }
   end
 
   def self.fetch_yaml_files!(tempdir)
@@ -110,10 +140,10 @@ module ContentfulHelpers
   def self.markdown_map(type, yaml_string)
     Hash[MARKDOWN_PROCESSORS[type].call(YAML.load(yaml_string)).map do |hash|
       markdown = ''
-      if hash[:frontmatter]
-        markdown << hash[:frontmatter].to_yaml.gsub(/ *$/, '')
-        markdown << "---\n\n"
-      end
+      frontmatter = { 'contentful' => true }
+      frontmatter.merge!(hash[:frontmatter] || {})
+      markdown << frontmatter.to_yaml.gsub(/ *$/, '')
+      markdown << "---\n\n"
       markdown << hash[:markdown]
 
       [hash[:markdown_path], markdown]
@@ -135,6 +165,10 @@ module ContentfulHelpers
 
   def self.space_id
     ENV['CONTENTFUL_SPACE_ID'] || '8djp5jlzqrnc'
+  end
+
+  def self.prune_on_populate?
+    !!ENV['CONTENTFUL_PRUNE_ON_POPULATE']
   end
 
   def self.client
