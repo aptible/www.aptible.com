@@ -1,1 +1,0 @@
-If your app is processing requests slowly, it's possible that it is receiving more requests that it can efficiently handle at its current scale. You can scale up by adding additional containers. See ["How do I scale my app?"](/support/topics/paas/how-to-scale-app) for more details.
