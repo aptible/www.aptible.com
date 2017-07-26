@@ -104,59 +104,6 @@ page '/resources/*', layout: 'resource.haml'
 page '/legal/*', layout: 'legal.haml'
 proxy '/legal/index.html', '/legal/terms-of-service.html'
 
-# Topics (Support)
-data.topics.each do |title, category|
-  category_url = "/support/topics/#{category.slug}"
-  page "#{category_url}/index.html", layout: 'layout.haml'
-  proxy "#{category_url}/index.html",
-        'support/topics/category.html',
-        locals: { category: category, title: title },
-        ignore: true do
-    @title = title
-    @category = category
-    @description = category.header
-  end
-
-  category.articles.each do |article|
-    page "support/topics/#{article.url}.html",
-         layout: 'support-document.haml', hidden: article.hidden do
-      @category_url = category_url
-      @category_title = title
-      @title = article.title
-      @description = 'Aptible support guides and answers'
-      @og_type = 'article'
-    end
-  end
-end
-
-# Quickstart Guides
-# Middleman Data Files: https://middlemanapp.com/advanced/data_files/
-data.quickstart.each do |language_name, language_data|
-  language_data[:name] = language_name
-  language_url = "/support/quickstart/#{language_data.slug}"
-  proxy "#{language_url}/index.html",
-        'support/quickstart/category.html',
-        locals: { language: language_data },
-        ignore: true do
-    @title = "#{language_data.name} Quickstart Guides"
-    @description = "Guides for getting started with #{language_data.name} "\
-                   'on Aptible'
-  end
-
-  language_data.articles.each do |article|
-    page "support/quickstart/#{article.url}.html",
-         layout: 'support-document.haml' do
-      @framework = article.framework
-      @language = language_data
-      @title = "#{@framework} Quickstart"
-      @description = 'Step-by-step instructions for getting started '\
-                     "with #{@framework} on Aptible"
-      @og_type = 'article'
-    end
-  end
-end
-
-#
 # Pagination
 #
 # Why we can't use the middleman-pagination gem

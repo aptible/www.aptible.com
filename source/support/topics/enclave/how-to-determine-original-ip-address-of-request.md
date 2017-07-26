@@ -1,1 +1,0 @@
-Containers in your app and database layers run on private subnets. To expose your app to the Internet, you can provision an Aptible endpoint. When you do so, the IP address of incoming requests will appear to be that of the endpoint, not the original IP address of the requester. You can determine the original IP address of the requester using the `X-Forwarded-For` header.

@@ -7,10 +7,6 @@
       slug: "django"
       svg: "django.svg"
       url: "python/django"
-    - framework: "Flask"
-      slug: "flask"
-      svg: "flask.svg"
-      url: "python/flask"
 
 "Node":
   slug: node
@@ -45,37 +41,3 @@
       slug: "laravel"
       svg: "laravel.svg"
       url: "php/laravel"
-    - framework: "Slim"
-      slug: "slim"
-      svg: "php.svg"
-      url: "php/slim"
-
-"Java":
-  slug: java
-  svg: java.svg
-  url: "java/jersey"
-  articles:
-    - framework: "Jersey"
-      slug: "jersey"
-      svg: "java.svg"
-      url: "java/jersey"
-
-"Scala":
-  slug: scala
-  svg: scala.svg
-  url: "scala/play"
-  articles:
-    - framework: "Scala Play"
-      slug: "play"
-      svg: "play.svg"
-      url: "scala/play"
-
-"Go":
-  slug: go
-  svg: go.svg
-  url: "go/gorilla"
-  articles:
-    - framework: "Gorilla"
-      slug: "gorilla"
-      svg: "go.svg"
-      url: "go/gorilla"

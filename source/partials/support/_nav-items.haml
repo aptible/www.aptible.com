@@ -1,8 +1,3 @@
 %a.nav-item{ class: active_nav_item('quickstart'), href: '/support/quickstart/' } Quickstart Guides
 %a.nav-item{ class: active_nav_item('toolbelt'), href: '/support/toolbelt/' } Toolbelt
 %a.nav-item{ class: active_nav_item('topics'), href: '/support/topics/' } Topics
-- unless current_page.data.header_search
-  .nav-item.nav-item--search
-    %form#search-form.search-nav__form{ action: '/support/search/', method: 'GET' }
-      %input.st-default-search-input.search-nav__input{ type: 'search', name: 'search' }
-      = partial 'images/icons/search-loop.svg'

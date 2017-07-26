@@ -1,1 +1,0 @@
-If you need to perform a task that may take a long time to complete, consider using an `aptible ssh`  session instead of running your task on deploy via an `.aptible.yml` file. Aptible imposes a build timeout of 30 minutes which can prevent some `.aptible.yml` migrations from completing.
