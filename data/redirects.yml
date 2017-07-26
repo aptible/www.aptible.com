@@ -364,7 +364,7 @@
 - loc: "/support/topics/enclave/how-to-download-database-backup/"
   url: "/documentation/enclave/tutorials/faq/download-backup.html"
 - loc: "/support/topics/enclave/how-to-format-certs/"
-  url: "/documentationenclave/reference/apps/endpoints/custom-certificate.html"
+  url: "/documentation/enclave/reference/apps/endpoints/custom-certificate.html"
 - loc: "/support/topics/enclave/how-to-install-private-dependencies/"
   url: "/documentation/enclave/tutorials/faq/private-dependencies.html"
 - loc: "/support/topics/enclave/how-to-install-specific-os-package/"
