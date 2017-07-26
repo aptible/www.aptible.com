@@ -115,8 +115,6 @@
   url: "/gridiron/"
 - loc: "/docs/"
   url: "/documentation/index.html"
-- loc: "/documentation/"
-  url: "/documentation/index.html"
 - loc: "/legal/acceptable_use.html"
   url: "/legal/acceptable-use/"
 - loc: "/legal/breach_indemnification_agreement.html"
