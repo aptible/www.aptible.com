@@ -24,6 +24,11 @@ Start the server. You can access it at http://localhost:4567/
 
     bundle exec middleman server
 
+If you are running [Aptible's documentation](https://github.com/aptible/docs) site
+locally, set the `BASE_DOC_URL` environment variable:
+
+    BASE_DOC_URL=http://localhost:8888 bundle exec middleman server
+
 ## Deploying
 
 First, some prerequisites:

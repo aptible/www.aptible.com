@@ -39,6 +39,7 @@ namespace :deploy do
   desc 'Build and deploy site to www.aptible-staging.com'
   task :staging do
     ENV['BASE_URL'] = 'https://www.aptible-staging.com'
+    ENV['BASE_DOC_URL'] = 'https://www.aptible-staging.com'
     ENV['SEGMENTIO_WRITEKEY'] = 'K24Jna8XS0PRiQiISYZ563qC3SfHF241'
     Rake::Task[:deploy].invoke('www.aptible-staging.com')
   end
@@ -46,6 +47,7 @@ namespace :deploy do
   desc 'Build and deploy site to www.aptible.com'
   task :production do
     ENV['BASE_URL'] = 'https://www.aptible.com'
+    ENV['BASE_DOC_URL'] = 'https://www.aptible.com'
     ENV['SEGMENTIO_WRITEKEY'] = 'rkt88i7k3w'
     Rake::Task[:deploy].invoke('www.aptible.com')
   end
