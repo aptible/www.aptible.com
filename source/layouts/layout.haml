@@ -3,7 +3,6 @@
   %head
     %title= page_title
     %link{ rel: 'canonical', href: page_url }
-    %meta.swiftype{ name: "title", "data-type" => "string", content: page_title }/
     %meta{ property: "og:title", content: page_title }/
     %meta{ property: "og:description", content: page_description }/
     %meta{ name: "description", content: page_description }/
@@ -35,16 +34,9 @@
         (function(o){var b="https://api.autopilothq.com/anywhere/",t="1267246580184c38b76d8ec048b700a4c2e30c3bd56f45f2ac4a383868d29a98",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};if(!o.noaa){z(b+"aa/"+t+'?'+p,false)};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});
       }
 
-      // Swiftype
-      (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-      })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-      _st('install','#{swiftype_key}', '2.0.0');
-
     = stylesheet_link_tag :all
 
-  %body.aptible-www{ class: page_classes, "data-swiftype-index" => "false" }
+  %body.aptible-www{ class: page_classes }
     = yield_content :header
 
     = yield

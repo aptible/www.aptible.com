@@ -4,14 +4,13 @@ module AptibleHelpers
   # Determine what the page title should be
   def page_title
     pg_title = @title || current_page.data.title
+    pass_throughs = ['Aptible Blog', 'Aptible', 'Aptible Command-Line Toolbelt']
 
     case pg_title
-    when ['Aptible Blog', 'Aptible', 'Aptible Support'].include?(pg_title)
+    when pass_throughs.include?(pg_title)
       return pg_title
     when current_page.url.include?('/blog')
       return "#{pg_title} | Aptible Blog"
-    when current_page.url.include?('/support')
-      return "#{pg_title} | Aptible Support"
     end
 
     "#{pg_title} | Aptible"
@@ -46,25 +45,9 @@ module AptibleHelpers
       'screen_name=aptible&tw_p=followbutton'
   end
 
-  def quickstart?(url)
-    url.include? 'support/quickstart'
-  end
-
-  def support_topic?(url)
-    url.include? 'support/topics'
-  end
-
   def active_nav_item(path)
     match = current_page.url.include?(path) || current_page.url == path
     match ? 'nav-item--active' : ''
-  end
-
-  def quickstart_index_href(language)
-    if (language.articles && language.articles.count == 1) || !language.articles
-      "/support/quickstart/#{language.url}/"
-    else
-      "/support/quickstart/#{language.slug}/"
-    end
   end
 
   def legal_sections

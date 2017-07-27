@@ -6,7 +6,16 @@
       %p.guides-intro__subtitle
         Aptible helps secure the internet by giving developers the tools and
         expertise to protect sensitive data.
+
     .guides-intro__languages
-      - data.quickstart.each do |title, language|
-        %a.guides-intro__language{ href: quickstart_index_href(language), class: language.slug }
-          = partial "images/icons/#{language.svg}"
+      %a.guides-intro__language.python{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/python.html" }
+        = partial 'images/icons/python.svg'
+
+      %a.guides-intro__language.node{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/node-js.html" }
+        = partial 'images/icons/node.svg'
+
+      %a.guides-intro__language.ruby{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/ruby.html" }
+        = partial 'images/icons/ruby.svg'
+
+      %a.guides-intro__language.php{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/php.html" }
+        = partial 'images/icons/php.svg'
