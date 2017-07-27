@@ -1,13 +1,14 @@
 ---
 title: Aptible Command-Line Toolbelt
-header_title: Aptible Toolbelt
-header_subtitle: A command-line interface for your Aptible services
-header_search: false
 layout: layout
 ---
 
 - content_for :header do
-  = partial 'partials/headers/support-index'
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
+    .grid-container
+      %h1.heading__title--centered Aptible Toolbelt
+      %h2.heading__subtitle--centered A command-line interface for your Aptible services
 
 .content
   .grid-container.grid-container--flex.toolbelt-platforms.grid--5up
@@ -289,9 +290,10 @@ layout: layout
       .grid-item
         %h2.heading__title Toolbelt Support
         %p
-          Additional documentation for using the Toolbelt is available on the
-          <br>
-          <a href='/support/topics/cli/'>Aptible Toolbelt Documentation</a>.
+          Additional documentation
+        %ul
+          %li
+            %a{ href: "#{base_documentation_url}/documentation/enclave/cli.html" }= "#{base_documentation_url}/documentation/enclave/cli.html"
 
       .grid-item
         %h2.heading__title Aptible Toolbelt on GitHub

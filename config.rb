@@ -14,9 +14,8 @@ set :haml, ugly: true, format: :html5
 
 # (Semi-) secrets
 set :segmentio_writekey, ENV['SEGMENTIO_WRITEKEY'] || 'cn8oifbk6o'
-set :swiftype_key, ENV['SWIFTYPE_KEY'] || 'dsMEc1fYviE2ShXAjYMW'
-set :swiftype_engine, ENV['SWIFTYPE_ENGINE'] || 'axuhZ5Lt1ZUziN-DqxnR'
 set :base_url, ENV['BASE_URL'] || 'https://www.aptible.com'
+set :base_documentation_url, ENV['BASE_DOCUMENTATION_URL'] || 'https://www.aptible.com'
 
 #
 # Extensions

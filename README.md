@@ -3,8 +3,7 @@
 [![Build Status](https://travis-ci.org/aptible/www.aptible.com.png?branch=rebrand)](https://travis-ci.org/aptible/www.aptible.com)
 
 ## www.aptible.com
-Aptible's public web site: marketing, blog, support, and documentation. Built
-with [Middleman](https://middlemanapp.com/).
+Aptible's public web site is built with [Middleman](https://middlemanapp.com/).
 
 #### Running Locally
 
@@ -32,7 +31,7 @@ First, some prerequisites:
 * [AWS CLI](http://aws.amazon.com/cli/), installed locally
 * A valid `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` in your environment
 
-In [production](https://support.aptible.com) and [staging](https://support.aptible-staging.com), the support site is deployed as an S3 website (fronted by CloudFront).
+In [production](https://www.aptible.com) and [staging](https://www.aptible-staging.com), the site is deployed as an S3 website (fronted by CloudFront).
 
 To manually deploy to production, using [Omnivault](https://github.com/aptible/omnivault):
 
@@ -54,7 +53,7 @@ be stored in the .travis.yml configuration file.
 
 To update these credentials at any time, run:
 
-    travis encrypt -r aptible/support --add env AWS_ACCESS_KEY_ID=... AWS_SECRET_ACCESS_KEY=...
+    travis encrypt -r aptible/www --add env AWS_ACCESS_KEY_ID=... AWS_SECRET_ACCESS_KEY=...
 
 ## Contributing
 

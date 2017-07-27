@@ -21,7 +21,10 @@
     font-weight: $light;
   }
   .grid-item > pre {
-    transform: translateY(50px);
+    margin-top: 120px;
+    @media screen and (max-width: $tablet-portrait) {
+      margin-top: 0;
+    }
   }
 }
 
