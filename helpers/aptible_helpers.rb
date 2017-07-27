@@ -4,9 +4,10 @@ module AptibleHelpers
   # Determine what the page title should be
   def page_title
     pg_title = @title || current_page.data.title
+    pass_throughs = ['Aptible Blog', 'Aptible', 'Aptible Command-Line Toolbelt']
 
     case pg_title
-    when ['Aptible Blog', 'Aptible', 'Aptible Command-Line Toolbelt'].include?(pg_title)
+    when pass_throughs.include?(pg_title)
       return pg_title
     when current_page.url.include?('/blog')
       return "#{pg_title} | Aptible Blog"
