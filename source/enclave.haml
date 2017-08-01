@@ -22,9 +22,9 @@ description: Aptible Enclave is a container platform that simplifies secure
               Enclave automatically implements the security controls you need to
               achieve regulatory compliance and pass customer audits.
 
-          = partial 'partials/signup-cta', locals: {     |
-                cta_placeholder: 'Enter your work email' |
-              }                                          |
+          = partial 'partials/ctas/signup-cta', locals: { |
+                cta_placeholder: 'Enter your work email'  |
+              }                                           |
           = partial 'partials/signup-demo-request'
 
         .home-hero__quotes
@@ -126,16 +126,4 @@ description: Aptible Enclave is a container platform that simplifies secure
 
 = partial 'partials/about-aptible'
 
-.content.hero-gradient--angled.aptible-header--bottom-grid
-  .footer__signup.grid-container.grid--single-center
-    .footer__signup__hgroup
-      %h2.footer__signup-title
-        Get your app deployed in minutes.
-      .footer__signup-subtitle
-        Security as easy as <code>git push</code>
-    .footer__signup-form
-      = partial 'partials/signup-cta', locals: {      |
-            cta_label: 'Get Started',                 |
-            cta_placeholder: 'Enter your work email'  |
-          }                                           |
-      = partial 'partials/signup-demo-request'
+= partial 'partials/ctas/easy-as-git-push'

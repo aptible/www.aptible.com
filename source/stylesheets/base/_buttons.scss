@@ -45,6 +45,11 @@
   margin-left: $small-spacing * 2;
 }
 
+.btn--full {
+  text-align: center;
+  width: 100%;
+}
+
 .btn--outline {
   border: 1px solid $action-color;
   background-color: transparent;

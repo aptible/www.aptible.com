@@ -1,0 +1,222 @@
+---
+title: Pricing for Enclave container orchestration platform
+description: Transparent pricing details for Enclave, Aptible's Docker container
+             orchestration platform
+tooltip_containers: '1 GB RAM Docker containers. Instantly scalable. Estimate 1
+                    container per Linux process. Custom container sizes
+                    available.'
+tooltip_disks: 'Encrypted database storage. Includes backups: daily for 90 days,
+               monthly for 6 years.'
+tooltip_endpoints: 'TLS/SSL endpoints attach to your container service. May be
+                   used for internal services.'
+---
+
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled.aptible-header--adjacent.aptible-header--bottom-grid
+    = partial 'partials/main-nav'
+
+    .grid-container.pricing-page-header
+      .centered-header.centered-header--wide
+        %h1.heading__title Enclave Pricing
+        %h2.heading__subtitle Enclave pricing scales as you provision more resources.
+
+      .price-credit-cta
+        .price-credit-cta__header
+          .price-credit-cta__title
+            Free Enclave Development Stack plus $500 usage credit on all new
+            accounts!
+          .price-credit-cta__subtitle
+            Deploy to a free Development Stack now. Just pay for usage charged
+            after your $500 credit.
+        .price-credit-cta__credit $500 Free Credit
+        = partial 'partials/ctas/signup-cta', locals: {           |
+            cta_label: 'Sign Up',                                 |
+            cta_placeholder: 'Enter your work email',             |
+            class_name: 'signup-cta--small signup-cta--no-border' |
+          }                                                       |
+
+
+.content
+  .pricing-summaries.grid-container
+    -# Enclave
+    .pricing-summary.pricing-summary--enclave
+      .pricing-summary__header
+        .pricing-summary__product-icon= partial 'images/enclave.svg'
+        .pricing-summary__title Production Enclave Stack
+        .pricing-summary__subtitle
+          $999/mo per stack &plus; usage
+        .pricing-summary__call-out
+          Free to get started with $500 credit
+      .pricing-summary__body
+        .pricing-summary__label.pricing-summary__label--indent Includes
+        %ul.checklist.checklist--blue.product-checklist
+          %li.pricing-summary__checklist-item
+            Enclave container orchestration platform
+          %li.pricing-summary__checklist-item
+            Deploy within your own private VPC
+          %li.pricing-summary__checklist-item
+            Dedicated, isolated stack, designed to protect sensitive data and
+            meet regulatory compliance and customer audit requirements
+          %li.pricing-summary__checklist-item
+            Horizontally and vertically scalable
+          %li.pricing-summary__checklist-item
+            Premium Support Available
+          %li.pricing-summary__checklist-item
+            SLA Included
+          %li.pricing-summary__checklist-item
+            Includes Business Associate Agreement
+          %li.pricing-summary__checklist-item
+            Includes Breach Idemnification
+
+    -# Calculator
+    .pricing-summary.price-calc
+      .pricing-calculator__header
+        .pricing-calculator__title
+          Horizontal and vertical scalability 
+        .pricing-calculator__subtitle
+          Provisioning new resources or adjusting existing is as simple as
+          dragging a slider in the dashboard or running a command in the
+          Aptible CLI.
+        .pricing-calculator__fine-print
+          Prices shown require an annual commitment. On demand resource pricing
+          is also available.
+
+      .pricing-summary__body
+        .price-calc__unit.price-calc__unit--containers
+          .price-calc__unit__header
+            %h4.price-calc__unit__title
+              %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_containers }
+                App &amp; Database Containers
+                %span.price-calc__help-tip ?
+            .price-calc__unit__price $0.08/GB/hour
+
+          .price-calc__unit__estimate
+            .price-calc__unit__slider
+              .price-calc__range
+                %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "containers" }
+              %ul.price-calc__range-keys{ "data-type" => "containers" }
+                %li.price-calc__range-key 0
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 5
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 10
+                %li.price-calc__range-key{ "data-value" => "+" } &plus;
+              .price-calc__included
+            .price-calc__unit__value
+              %span $
+              %span.price-calc__item-price--containers 0
+              %span /month
+
+        .price-calc__unit.price-calc__unit--disks
+          .price-calc__unit__header
+            %h4.price-calc__unit__title
+              %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_disks }
+                Encrypted Disk
+                %span.price-calc__help-tip ?
+            .price-calc__unit__price $0.37/GB/month
+
+          .price-calc__unit__estimate
+            .price-calc__unit__slider
+              .price-calc__range
+                %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "disks" }
+              %ul.price-calc__range-keys{"data-type" => "disks"}
+                %li.price-calc__range-key{"data-value" => "0"} 0
+                %li.price-calc__range-key{"data-value" => "10GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "20GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "50GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "100GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "250GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "500GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "750GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "1TB"} 1TB
+                %li.price-calc__range-key{"data-value" => "1.5TB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "2TB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "+"} &plus;
+              .price-calc__included
+            .price-calc__unit__value
+              %span $
+              %span.price-calc__item-price--disks 0
+              %span /month
+
+        .price-calc__unit.price-calc__unit--endpoints
+          .price-calc__unit__header
+            %h4.price-calc__unit__title
+              %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_endpoints }
+                TLS/SSL Endpoints
+                %span.price-calc__help-tip ?
+            .price-calc__unit__price $0.05/hour/month
+
+          .price-calc__unit__estimate
+            .price-calc__unit__slider
+              .price-calc__range
+                %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "endpoints" }
+              %ul.price-calc__range-keys{"data-type" => "endpoints"}
+                %li.price-calc__range-key 0
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 5
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 10
+                %li.price-calc__range-key{ "data-value" => "+" } &plus;
+              .price-calc__included
+            .price-calc__unit__value
+              %span $
+              %span.price-calc__item-price--endpoints 0
+              %span /month
+
+        .price-calc__unit.price-calc__unit--vpn-connections
+          .price-calc__unit__header
+            %h4.price-calc__unit__title VPN Connections
+            .price-calc__unit__price $99.00/connection/month
+
+          .price-calc__unit__estimate
+            .price-calc__unit__slider
+              .price-calc__range
+                %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "vpn-connections" }
+              %ul.price-calc__range-keys{"data-type" => "vpn-connections"}
+                %li.price-calc__range-key 0
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 5
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 10
+                %li.price-calc__range-key{ "data-value" => "+" } &plus;
+            .price-calc__unit__value
+              %span $
+              %span.price-calc__item-price--vpn-connections 0
+              %span /month
+
+      .price-calc__totals
+        %a.btn{ href: open_account_href } Sign Up Now
+
+        .price-calc__one-time-credit
+          .price-calc__totals__title Included Free Credit
+          .price-calc__totals__subtitle Use toward resource usage
+          .price-calc__totals__value $500
+
+        .price-calc__estimate-total
+          .price-calc__totals__title Estimated Monthly Total
+          .price-calc__totals__subtitle Includes Stack + Usage
+          .price-calc__totals__value
+            %span $
+            %span.price-calc__monthly-total
+
+= partial 'partials/about-aptible'
+
+= partial 'partials/ctas/easy-as-git-push'

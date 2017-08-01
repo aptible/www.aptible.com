@@ -16,10 +16,10 @@ description: Powerful security and DevOps tools for engineering teams.
             Aptible protects your most important assets when the stakes matter
             most. Thousands of developers use Aptible to secure data and build
             strong compliance programs.
-          = partial 'partials/signup-cta', locals: {     |
-                cta_label: 'Get Started',                |
-                cta_placeholder: 'Enter your work email' |
-              }                                          |
+          = partial 'partials/ctas/signup-cta', locals: { |
+                cta_label: 'Get Started',                 |
+                cta_placeholder: 'Enter your work email'  |
+              }                                           |
           = partial 'partials/signup-demo-request'
 
         .home-hero__quotes
@@ -137,7 +137,7 @@ description: Powerful security and DevOps tools for engineering teams.
       %h2.footer__signup-title
         Get secure and compliant this afternoon.
     .footer__signup-form
-      = partial 'partials/signup-cta', locals: {      |
+      = partial 'partials/ctas/signup-cta', locals: { |
             cta_label: 'Get Started',                 |
             cta_placeholder: 'Enter your work email'  |
           }                                           |

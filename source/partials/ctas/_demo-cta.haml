@@ -1,7 +1,7 @@
 - cta_label ||= 'Request A Demo'
 - cta_placeholder ||= 'Enter your work email'
 - class_name ||= ''
-%form.signup-cta.request-demo.single-line
+%form.signup-cta.request-demo.single-line{ class: class_name }
   %input{ type: 'hidden', name: 'event', value: 'gridiron-demo-request' }
   %input.single-line__input{ type: 'email', name: 'gridiron-demo-request-form__email', placeholder: cta_placeholder, required: true }
   %button.single-line__submit{ type: 'submit' }= cta_label
