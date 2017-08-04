@@ -29,7 +29,7 @@ description: Transparent pricing details for Enclave, Aptible's Docker container
 
       .pricing-summary__body
         .product-price
-          .product-price__name Enclave Production Stack
+          .product-price__name Production Stack
           .product-price__exp
             Dedicated stack, ideal for sensitive production data
           .product-price__price
@@ -47,7 +47,7 @@ description: Transparent pricing details for Enclave, Aptible's Docker container
 
       .pricing-summary__body.pricing-summary__body--bordered
         .product-price
-          .product-price__name Enclave Development Stack
+          .product-price__name Development Stack
           .product-price__exp Shared stack, ideal for development or testing
           .product-price__price
             No monthly fee, no annual contract. Pay-as-you-go for containers,
@@ -65,8 +65,9 @@ description: Transparent pricing details for Enclave, Aptible's Docker container
             .pricing-rate__title SSL Endpoints
             .pricing-rate__rate $0.05/hour
 
-        %a.btn.btn--full{ href: open_account_href } Get Started With Enclave
-        %a.arrow-link--right{ href: '/pricing/enclave/' } Customize Enclave Pricing
+        .pricing-summary__actions
+          %a.btn.btn--outline{ href: '/pricing/enclave/' } Enclave Pricing Calculator
+          %a.btn{ href: open_account_href } Get Started With Enclave
 
     -# Gridiron
     .pricing-summary.pricing-summary--gridiron
@@ -79,7 +80,7 @@ description: Transparent pricing details for Enclave, Aptible's Docker container
       .pricing-summary__body
         .product-price
           .product-price__name Gridiron
-          .product-price__price $2,500/month with annual contract
+          .product-price__price Starting at $2,500/month with annual contract
 
         .pricing-summary__checklist.pricing-summary--fill
           .pricing-summary__label Includes
@@ -91,24 +92,70 @@ description: Transparent pricing details for Enclave, Aptible's Docker container
             %li.pricing-summary__checklist-item
               Advanced compliance and security training for up to 10 team members
 
-        .pricing-summary__label
-          Additional training users and compliance protocols available
-        .pricing-rates
-          .pricing-rate
-            .pricing-rate__title Compliance Protocols
-            .pricing-rate__rate $500/month
-          .pricing-rate
-            .pricing-rate__title Basic Training Users
-            .pricing-rate__rate $29/user/month
-          .pricing-rate
-            .pricing-rate__title Advanced Training Users
-            .pricing-rate__rate $49/user/month
+        .pricing-summary--hidden
+          .pricing-summary__label
+            ********
+          .pricing-rates
+            .pricing-rate
+              .pricing-rate__title ********
+              .pricing-rate__rate ********
+            .pricing-rate
+              .pricing-rate__title ********
+              .pricing-rate__rate ********
+            .pricing-rate
+              .pricing-rate__title ********
+              .pricing-rate__rate ********
 
         = partial 'partials/ctas/demo-cta', locals: {             |
             cta_label: 'Request A Demo',                          |
             class_name: 'pricing-demo-request signup-cta--small'  |
           }                                                       |
 
-= partial 'partials/about-aptible'
+  = partial 'pricing/need-more'
 
-= partial 'partials/ctas/easy-as-git-push'
+.content
+  .grid-container
+    .pricing-faq
+      .pricing-faq__products
+        .pricing-faq__product
+          .pricing-faq__product-title Why do customers choose Enclave?
+          .pricing-faq__answer
+            %p
+              For new projects, setting up a secure deployment environment that
+              can handle sensitive data (PII, PHI, credit card numbers, SSNs,
+              financial data, etc.) takes a lot of work: initial
+              decision-making, initial implementation, and continued upkeep.
+            %p
+              Enclave is a developer-friendly container orchestration platform
+              that automatically implements the security controls needed for
+              deploying and scaling Dockerized apps in regulated industries.
+              Enclave reduces the time, cost, and risk related to securing data
+              so that you can focus on building a great app.
+            %p
+              Features like database log streaming, Managed HTTPS,
+              zero-downtime deploys, container metrics, managed VPNs, and
+              seamless Gridiron integration make Enclave the best choice for
+              engineering teams that need to move fast and not break things.
+
+        .pricing-faq__product
+          .pricing-faq__product-title Why do customers choose Gridiron?
+          .pricing-faq__answer
+            %p
+              Meeting the requirements for HIPAA, ISO 27001, or SOC 2 means
+              investing in more than just ensuring your application protects
+              sensitive data.
+            %p
+              Gridiron is the easiest way for developers to build and run a
+              comprehensive security program, covering both the technical and
+              administrative aspects of compliance. Gridiron turns information
+              security requirements into repeatable processes while managing
+              all the documentation required to demonstrate that you're
+              complying with regulatory or customer requirements.
+            %p
+              Gridiron identifies relevant risks, drafts custom policies and
+              procedures featuring appropriate administrative controls, and
+              automates the process of training your team on your security
+              program and the fundamental aspects of data security and
+              compliance. All of this makes Gridiron the best choice for
+              engineering teams who need to ensure company-wide compliance with
+              the requirements of HIPAA, SOC 2, and ISO 27001.
