@@ -2,13 +2,14 @@
 title: Pricing for Enclave container orchestration platform
 description: Transparent pricing details for Enclave, Aptible's Docker container
              orchestration platform
-tooltip_containers: '1 GB RAM Docker containers. Instantly scalable. Estimate 1
-                    container per Linux process. Custom container sizes
-                    available.'
+tooltip_containers: 'Aptible provisions 1 GB RAM Docker containers by default for
+                    app and database services. For higher capacity deployments,
+                    sum the total RAM (in GB) required for all containers.'
 tooltip_disks: 'Encrypted database storage. Includes backups: daily for 90 days,
                monthly for 6 years.'
-tooltip_endpoints: 'TLS/SSL endpoints attach to your container service. May be
-                   used for internal services.'
+tooltip_endpoints: 'Endpoints attach to your containers so that they can be accessed
+                   over the internet, or by other containers. May be HTTPS, TCP, or
+                   TLS Endpoints.'
 tooltip_premium_support: 'Greater of $499 or 10% of monthly Aptible invoice'
 tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice'
 ---
@@ -97,17 +98,17 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
               .price-calc__range
                 %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "containers" }
               %ul.price-calc__range-keys{ "data-type" => "containers" }
-                %li.price-calc__range-key 0
-                %li.price-calc__range-key &centerdot;
-                %li.price-calc__range-key &centerdot;
-                %li.price-calc__range-key &centerdot;
-                %li.price-calc__range-key &centerdot;
-                %li.price-calc__range-key 5
-                %li.price-calc__range-key &centerdot;
-                %li.price-calc__range-key &centerdot;
-                %li.price-calc__range-key &centerdot;
-                %li.price-calc__range-key &centerdot;
-                %li.price-calc__range-key 10
+                %li.price-calc__range-key{"data-value" => "0"} 0
+                %li.price-calc__range-key{"data-value" => "1"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "2"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "4"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "6"} 6
+                %li.price-calc__range-key{"data-value" => "8"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "12"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "16"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "32"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "64"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "128"} 128
                 %li.price-calc__range-key{ "data-value" => "+" } &plus;
               .price-calc__included
             .price-calc__unit__value
@@ -150,7 +151,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
           .price-calc__unit__header
             %h4.price-calc__unit__title
               %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_endpoints }
-                TLS/SSL Endpoints
+                Endpoints
                 %span.price-calc__help-tip ?
             .price-calc__unit__price $0.05/hour/month
 
@@ -225,7 +226,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
         Development and Staging Stacks are free and require no commitment
       .pricing-summary__call-out Just Pay For Usage
       .pay-as-you-go__subtitle
-        Easy to upgrades to Production stack when you're ready go live.
+        Easy to upgrade to Production stack when you're ready go live.
 
   = partial 'pricing/need-more'
 

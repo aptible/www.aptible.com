@@ -1,18 +1,18 @@
 $ ->
   class PriceCalculator
     # Mutable Attributes
-    containers     : 6
+    containers     : 4
     disks          : 8
     endpoints      : 4
     vpnConnections : 0
 
     # Included
-    incContainers  : 6
+    incContainers  : 4
     incDisks       : 8
     incEndpoints   : 4
 
-    containerValues: []
-    containerLabels: []
+    containerValues: [0, 1, 2, 4, 6, 8, 12, 16, 32, 64, 128]
+    containerLabels: [0, 1, 2, 4, 6, 8, 12, 16, 32, 64, 128]
 
     diskValuesGB   : [0, 10, 20, 50, 100, 250, 500, 750, 1000, 1500, 2000]
     diskLabels     : ['0 GB', '10 GB', '20 GB', '50 GB', '100 GB', '250 GB',
@@ -31,8 +31,8 @@ $ ->
     diskSize: -> @diskLabels[@disks]
 
     containersCost: ->
-      includedContainers = @incContainers
-      containers = if @containers > 10 then 10 else @containers
+      includedContainers = @containerValues[@incContainers]
+      containers = @containerValues[if @containers > 10 then 10 else @containers]
       @toCurrency Math.max(((containers - includedContainers) * @perContainer), 0)
 
     disksCost: ->
