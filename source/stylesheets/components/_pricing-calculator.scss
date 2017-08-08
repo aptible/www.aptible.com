@@ -1,3 +1,8 @@
+.price-calc {
+  display: flex;
+  flex-direction: column;
+}
+
 .price-calc__help-tip {
   background-color: $blue;
   border-radius: 6px;
@@ -10,6 +15,11 @@
   text-align: center;
   transform: translate(3px,-1px);
   width: 12px;
+}
+
+.pricing-summary__body.price-calc__units {
+  flex-grow: 1;
+  justify-content: flex-start;
 }
 
 .price-calc__unit {
@@ -348,6 +358,7 @@ $color-dark-gray-bg: #b0b0b0;
   position: relative;
 }
 .price-calc__range-key {
+  align-self: center;
   background-color: rgba(255,255,255,.5);
   counter-increment: range-keys;
   display: inline-block;
@@ -412,16 +423,14 @@ $color-dark-gray-bg: #b0b0b0;
 .price-calc__unit--containers {
   border-top: 0;
   padding-top: 0;
-  .price-calc__included {
-    width: calc(37% - 10px);
-  }
 }
 .price-calc__unit--disks {
   .price-calc__included {
-    width: calc(71.5% - 10px);
+    width: calc(55% - 10px);
   }
 }
-.price-calc__unit--endpoints {
+.price-calc__unit--endpoints,
+.price-calc__unit--containers {
   .price-calc__included {
     width: calc(37% - 10px);
   }
@@ -574,6 +583,7 @@ $color-dark-gray-bg: #b0b0b0;
   font-size: 11px;
   font-weight: $regular;
   padding: 25px 30px;
+  position: relative;
   justify-content: space-between;
   text-align: right;
   @media screen and (max-width: 600px) {
@@ -590,6 +600,28 @@ $color-dark-gray-bg: #b0b0b0;
       width: 100%;
       text-align: center;
     }
+  }
+  &::before, &::after {
+    background-color: $white;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    position: absolute;
+    top: -8px;
+    width: 16px;
+  }
+  &::before {
+    border-top-color: #dee6f0;
+    border-right-color: #dee6f0;
+    transform: rotate(45deg);
+    left: -8px;
+  }
+  &::after {
+    border-top-color: #dee6f0;
+    border-left-color: #dee6f0;
+    transform: rotate(-45deg);
+    right: -8px;
   }
 }
 .price-calc__totals__title {

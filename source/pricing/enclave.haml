@@ -42,34 +42,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
 .content
   .pricing-summaries.grid-container.pricing-summaries--enclave
     -# Enclave
-    .pricing-summary.pricing-summary--enclave
-      .pricing-summary__header
-        .pricing-summary__product-icon= partial 'images/enclave.svg'
-        .pricing-summary__title Production Enclave Stack
-        .pricing-summary__subtitle
-          $999/mo per stack &plus; usage
-        .pricing-summary__call-out
-          Free to get started with $500 credit
-      .pricing-summary__body
-        .pricing-summary__label.pricing-summary__label--indent Includes
-        %ul.checklist.checklist--blue.product-checklist
-          %li.pricing-summary__checklist-item
-            Enclave container orchestration platform
-          %li.pricing-summary__checklist-item
-            Deploy within your own private VPC
-          %li.pricing-summary__checklist-item
-            Dedicated, isolated stack, designed to protect sensitive data and
-            meet regulatory compliance and customer audit requirements
-          %li.pricing-summary__checklist-item
-            Horizontally and vertically scalable
-          %li.pricing-summary__checklist-item
-            Premium Support Available
-          %li.pricing-summary__checklist-item
-            SLA Included
-          %li.pricing-summary__checklist-item
-            Includes Business Associate Agreement
-          %li.pricing-summary__checklist-item
-            Includes Breach Idemnification
+    = partial 'pricing/enclave-summary'
 
     -# Calculator
     .pricing-summary.price-calc
@@ -80,11 +53,8 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
           Provisioning new resources or adjusting existing is as simple as
           dragging a slider in the dashboard or running a command in the
           Aptible CLI.
-        .pricing-calculator__fine-print
-          Prices shown require an annual commitment. On demand resource pricing
-          is also available.
 
-      .pricing-summary__body
+      .pricing-summary__body.price-calc__units
         .price-calc__unit.price-calc__unit--containers
           .price-calc__unit__header
             %h4.price-calc__unit__title
@@ -99,17 +69,17 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
                 %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "containers" }
               %ul.price-calc__range-keys{ "data-type" => "containers" }
                 %li.price-calc__range-key{"data-value" => "0"} 0
-                %li.price-calc__range-key{"data-value" => "1"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "2"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "4"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "6"} 6
-                %li.price-calc__range-key{"data-value" => "8"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "12"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "16"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "32"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "64"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "128"} 128
-                %li.price-calc__range-key{ "data-value" => "+" } &plus;
+                %li.price-calc__range-key{"data-value" => "1GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "2GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "4GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "6GB"} 6GB
+                %li.price-calc__range-key{"data-value" => "8GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "12GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "16GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "32GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "64GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "128GB"} 128GB
+                %li.price-calc__range-key{ "data-value" => "+" } +
               .price-calc__included
             .price-calc__unit__value
               %span $
@@ -131,15 +101,15 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
               %ul.price-calc__range-keys{"data-type" => "disks"}
                 %li.price-calc__range-key{"data-value" => "0"} 0
                 %li.price-calc__range-key{"data-value" => "10GB"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "20GB"} &centerdot;
                 %li.price-calc__range-key{"data-value" => "50GB"} &centerdot;
                 %li.price-calc__range-key{"data-value" => "100GB"} &centerdot;
                 %li.price-calc__range-key{"data-value" => "250GB"} &centerdot;
                 %li.price-calc__range-key{"data-value" => "500GB"} &centerdot;
-                %li.price-calc__range-key{"data-value" => "750GB"} &centerdot;
                 %li.price-calc__range-key{"data-value" => "1TB"} 1TB
                 %li.price-calc__range-key{"data-value" => "1.5TB"} &centerdot;
                 %li.price-calc__range-key{"data-value" => "2TB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "3TB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "4TB"} &centerdot;
                 %li.price-calc__range-key{"data-value" => "+"} &plus;
               .price-calc__included
             .price-calc__unit__value

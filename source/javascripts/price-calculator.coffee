@@ -2,21 +2,17 @@ $ ->
   class PriceCalculator
     # Mutable Attributes
     containers     : 4
-    disks          : 8
+    disks          : 6
     endpoints      : 4
     vpnConnections : 0
 
     # Included
     incContainers  : 4
-    incDisks       : 8
+    incDisks       : 6
     incEndpoints   : 4
 
-    containerValues: [0, 1, 2, 4, 6, 8, 12, 16, 32, 64, 128]
-    containerLabels: [0, 1, 2, 4, 6, 8, 12, 16, 32, 64, 128]
-
-    diskValuesGB   : [0, 10, 20, 50, 100, 250, 500, 750, 1000, 1500, 2000]
-    diskLabels     : ['0 GB', '10 GB', '20 GB', '50 GB', '100 GB', '250 GB',
-                     '500 GB', '750 GB', '1 TB', '1.5 TB', '2 TB']
+    containerValuesGB: [0, 1, 2, 4, 6, 8, 12, 16, 32, 64, 128]
+    diskValuesGB     : [0, 10, 50, 100, 250, 500, 1000, 1500, 2000, 3000, 4000]
 
     # Prices
     # ~730 hours in a month
@@ -28,45 +24,45 @@ $ ->
 
     setValue: (attr, value) -> @[attr] = value
 
-    diskSize: -> @diskLabels[@disks]
+    containersCost: (format = true) ->
+      includedContainers = @containerValuesGB[@incContainers]
+      containers = @containerValuesGB[if @containers > 10 then 10 else @containers]
+      cost = Math.max(((containers - includedContainers) * @perContainer), 0)
+      if format then @toCurrency(cost) else cost
 
-    containersCost: ->
-      includedContainers = @containerValues[@incContainers]
-      containers = @containerValues[if @containers > 10 then 10 else @containers]
-      @toCurrency Math.max(((containers - includedContainers) * @perContainer), 0)
-
-    disksCost: ->
+    disksCost: (format = true) ->
       includedGB = @diskValuesGB[@incDisks]
       diskGB = @diskValuesGB[if @disks > 10 then 10 else @disks]
       gb = Math.max(diskGB - includedGB, 0)
-      @toCurrency parseFloat(@perDisk(gb))
+      cost = parseFloat(@perDisk(gb))
+      if format then @toCurrency(cost) else cost
 
-    endpointsCost: ->
+    endpointsCost: (format = true) ->
       endpoints = if @endpoints > 10 then 10 else @endpoints
-      @toCurrency Math.max(((endpoints - @incEndpoints) * @perEndpoint), 0)
+      cost = Math.max(((endpoints - @incEndpoints) * @perEndpoint), 0)
+      if format then @toCurrency(cost) else cost
 
-    vpnConnectionsCost: ->
+    vpnConnectionsCost: (format = true) ->
       connections = if @vpnConnections > 10 then 10 else @vpnConnections
-      @toCurrency Math.max(connections * @perVpnConnection, 0)
+      cost = Math.max(connections * @perVpnConnection, 0)
+      if format then @toCurrency(cost) else cost
 
-    baseCost: -> @toCurrency(@perMonthBase)
+    baseCost: (format = true) ->
+      if format then @toCurrency(@perMonthBase) else @perMonthBase
 
     price: ->
       @toCurrency(
-        parseFloat(@baseCost()) +
-        parseFloat(@containersCost()) +
-        parseFloat(@disksCost()) +
-        parseFloat(@endpointsCost()) +
-        parseFloat(@vpnConnectionsCost())
+        @baseCost(false) + @containersCost(false) + @disksCost(false) +
+        @endpointsCost(false) + @vpnConnectionsCost(false)
       )
 
-    needsMore: ->
+    scaleMuch: ->
       @containers > 10 || @disks > 10 || @endpoints > 10 || @vpnConnections > 10
 
     # Formats with commas and ~~fixed cents~~ rounding to dollars
     toCurrency: (num) ->
       # num.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,')
-      Math.round(num).toString().replace(/(\d)(?=(\d{3}))/g, '$1,')
+      Math.round(num).toLocaleString();
   # } End PriceCalculator object definition
 
   #
@@ -136,29 +132,29 @@ $ ->
       # Containers
       $containersInput.val(priceCalc.containers).change()
       setSliderKey $rangeKeys.containers, priceCalc.containers
-      unless priceCalc.containers > 10
-        $priceViews.containers.html priceCalc.containersCost()
+      $priceViews.containers.html priceCalc.containersCost()
 
       # Disks
       $disksInput.val(priceCalc.disks).change()
       setSliderKey $rangeKeys.disks, priceCalc.disks
-      unless priceCalc.disks > 10
-        $priceViews.disks.html priceCalc.disksCost()
+      $priceViews.disks.html priceCalc.disksCost()
 
       # Endpoints
       $endpointsInput.val(priceCalc.endpoints).change()
       setSliderKey $rangeKeys.endpoints, priceCalc.endpoints
-      unless priceCalc.endpoints > 10
-        $priceViews.endpoints.html priceCalc.endpointsCost()
+      $priceViews.endpoints.html priceCalc.endpointsCost()
 
       # VPN Connections
       $vpnConnectionsInput.val(priceCalc.vpnConnections).change()
       setSliderKey $rangeKeys.vpnConnections, priceCalc.vpnConnections
-      unless priceCalc.vpnConnections > 10
-        $priceViews.vpnConnections.html priceCalc.vpnConnectionsCost()
+      $priceViews.vpnConnections.html priceCalc.vpnConnectionsCost()
 
       # Total
       $priceViews.total.html priceCalc.price()
+
+      # Scale Much?
+      # if priceCalc.scaleMuch()
+
 
     # Initialize Views
     $doc.trigger 'updateViews', [priceCalc]
