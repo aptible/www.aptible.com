@@ -1,0 +1,51 @@
+.pricing-summary.pricing-summary--enclave
+  .pricing-summary__header
+    .pricing-summary__product-icon= partial 'images/enclave.svg'
+    .pricing-summary__title Enclave
+    .pricing-summary__subtitle
+      Docker container orchestration platform with built-in security
+      controls for deploying in regulated industries
+    .pricing-summary__call-out
+      Free to get started with $500 credit
+  .pricing-summary__body
+    .product-price
+      .product-price__name Production Stack
+      .product-price__exp
+        Dedicated stack, ideal for sensitive production data
+      .product-price__price
+        $999/month per stack + additional resource usage
+
+    .pricing-summary__checklist
+      .pricing-summary__label Includes
+      %ul.checklist.checklist--blue
+        %li.pricing-summary__checklist-item
+          6GB RAM across as many containers as you need
+        %li.pricing-summary__checklist-item
+          1TB encrypted database disk (including backups)
+        %li.pricing-summary__checklist-item
+          4 TLS/SSL Endpoints
+
+  .pricing-summary__body.pricing-summary__body--bordered
+    .product-price
+      .product-price__name Development Stack
+      .product-price__exp Shared stack, ideal for development or testing
+      .product-price__price
+        No monthly fee, no annual contract. Pay-as-you-go for containers,
+        disk, and endpoint usage.
+
+    .pricing-summary__label Enclave Unit Pricing
+    .pricing-rates
+      .pricing-rate
+        .pricing-rate__title App &amp; Database Containers
+        .pricing-rate__rate $0.08/GB/hour
+      .pricing-rate
+        .pricing-rate__title Encrypted Disk
+        .pricing-rate__rate $0.37/GB/month
+      .pricing-rate
+        .pricing-rate__title SSL Endpoints
+        .pricing-rate__rate $0.05/hour
+
+  .pricing-summary__body
+    %a.btn.btn--full{ href: open_account_href } Get Started With Enclave
+    - if current_page.path == 'pricing/index.html'
+      %a.arrow-link--right{ href: '/pricing/enclave/' } Estimate your Enclave pricing

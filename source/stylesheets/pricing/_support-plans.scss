@@ -1,0 +1,110 @@
+.pricing__support-plans {
+  margin-bottom: 80px;
+}
+
+.pricing__support-plans__title {
+  color: $dark-blue-steel;
+  font-size: 50px;
+  font-weight: $semibold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pricing__support-plans__subtitle {
+  color: $light-blue-gray;
+  font-size: 24px;
+  font-weight: $regular;
+  line-height: 1.3;
+  margin: 0 auto 50px auto;
+  max-width: 750px;
+  padding: 0 30px;
+  text-align: center;
+  @media screen and (max-width: 950px) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+.pricing__support-plans__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (max-width: 950px) {
+    justify-content: space-around;
+  }
+}
+
+.pricing__support-plan {
+  background: #f9fcff;
+  border: 1px solid #c2d1e2;
+  box-shadow: 0 5px 12px 0 rgba(0,0,0,.07);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 50px 0;
+  min-width: 285px;
+  text-align: center;
+  width: calc(33.33% - 20px);
+  &:last-of-type {
+    margin-right: 0;
+  }
+  @media screen and (max-width: 950px) {
+    margin-right: 0;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.pricing__support-plan__name {
+  background-image: linear-gradient(0deg, $light-blue, 32%, #F9FAFC 100%);
+  border: 1px solid $light-blue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,.10);
+
+  color: $dark-blue-steel;
+  font-size: 26px;
+  font-weight: $semibold;
+}
+
+.pricing__support-plan__price {
+  color: $sky-blue;
+  display: block;
+  font-size: 16px;
+  font-weight: $regular;
+  &[data-toggle=tooltip]::before {
+    left: 0;
+  }
+}
+
+.pricing__support-plan__name, .pricing__support-plan__wrap {
+  padding: 30px;
+}
+
+.pricing__support-plan__wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+
+  .pricing-summary__label {
+    margin-bottom: 20px;
+  }
+
+  .checklist {
+    flex-grow: 1;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .arrow-link--right {
+    display: block;
+    text-align: right;
+    padding-right: 30px;
+  }
+}
+
+.pricing__support-plans__action {
+  text-align: center;
+}

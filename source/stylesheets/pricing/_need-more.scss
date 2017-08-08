@@ -1,0 +1,41 @@
+.pricing__need-more {
+  transform: translateY(-175px);
+  margin-bottom: -100px;
+  padding-top: 150px;
+  text-align: center;
+}
+.pricing__need-more__title {
+  color: $white;
+  font-size: 26px;
+  font-weight: $semibold;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.pricing__need-more__subtitle {
+  color: $sky-blue;
+  font-size: 16px;
+  font-weight: $regular;
+  max-width: 500px;
+  margin: 0 auto 50px auto;
+}
+
+.pricing__need-more__action {
+  background-color: rgba(23,34,52,.22);
+  text-align: center;
+  padding: 30px;
+  .single-line__input {
+    width: 500px;
+    margin-bottom: 0;
+  }
+  .btn {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  @media screen and (max-width: 650px) {
+    padding: 30px 10px;
+    .single-line__input {
+      width: 350px;
+    }
+  }
+}
