@@ -1,17 +1,21 @@
 ---
-title: Trademark Policy & Guidelines
+title: Trademark Policy
 tracked_title: Trademarks
-description: "Aptible's trademark policy and guidance"
-posted: 2014-06-30
+description: "Aptible's policy for use of Aptible trademarks"
+posted: 2017-08-14
 section: Legal
 sub_section: Policies
 ---
+<!-- Reference Links -->
+[Aptible Terms of Service]:/legal/terms-of-service
 
-Version 2.1 - October 2016
+Version 2.2 - August 2017
 
-This policy grants you limited permission to use the Aptible Marks in connection with your use of the Services. It is incorporated by reference into the Aptible Terms of Service.
+This policy grants you limited permission to use the Aptible Marks in connection with your use of the Services. 
 
 These Aptible Trademark Guidelines (the "**Trademark Guidelines**") form an integral part of the Aptible Terms of Service (the "**Terms of Service**") between Aptible, Inc. ("**Aptible,**" "**we,**"" "**us,**" or "**our**") and you or the entity you represent ("**you**").
+
+Obligations under this policy (both ours and yours) are are incorporated by reference into the [Aptible Terms of Service].
 
 The Aptible Marks are assets of significant value to us and these Trademark Guidelines are intended to preserve that value. These Trademark Guidelines provide you a limited permission to use the Aptible Marks (as defined below), in connection with your use of the Services (as defined in the Terms of Service), or in connection with software products designed to be used with the Services, on the terms set forth herein and in the Terms of Service, until such time as we may terminate such permission, which we may do at any time, in our sole discretion.
 
@@ -39,7 +43,7 @@ Your permission to use the Aptible Marks is a limited permission and you may not
 
 Your use of the Aptible Marks shall comply with:
 
-- The most up-to-date versions of the Terms of Service and these Trademark Guidelines; and
+- The most up-to-date versions of the Terms of Service and this Policy; and
 - Any other terms, conditions or policies that we may issue from time to time to govern use of the Aptible Marks.
 
 Your permission to use the Aptible Marks hereunder shall automatically terminate and you must immediately stop using the Aptible Marks if at any time:
@@ -51,9 +55,9 @@ Your permission to use the Aptible Marks hereunder shall automatically terminate
 ### Modification and Termination
 You understand and agree that, without prior notice to you and at our sole discretion:
 
-- We may modify these Trademark Guidelines at any time;
+- We may modify this Policy at any time;
 - We may modify or terminate your limited permission to use the Aptible Marks, at any time in our sole discretion, for any reason or for no reason at all; and
-- We reserve the right to take any and all actions including, without limitation, legal proceedings, against any use of the Aptible Marks that does not comply with the terms of the Terms of Service or these Trademark Guidelines.
+- We reserve the right to take any and all actions including, without limitation, legal proceedings, against any use of the Aptible Marks that does not comply with the terms of the Terms of Service or this Policy.
 
 ### No Affiliation or Endorsement
 You will not display the Aptible Marks in any manner that implies that you are related to, affiliated with, sponsored or endorsed by us, or in a manner that could reasonably be interpreted to suggest that your content, application, web site, product or service, has been authored or edited by us, or represents our views or opinions.
@@ -72,7 +76,7 @@ You may not display any Aptible Mark as the largest or most prominent trademark 
 
 **Spacing.** The Logo must appear by itself, with reasonable spacing (at least the height of the Logo) between each side of the Logo and other graphic or textual elements.
 
-**Size.** The Logo, as shown in Section 2 of these Trademark Guidelines, indicates the minimum size at which you may display it to ensure that the type and trademark notations are legible. The minimum size for the Logo shall be: Inches: 2.08" x 0.52" Pixels: 150×40, or Millimeters: 53×14.
+**Size.** The Logo, as shown in Section 2 of this Policy, indicates the minimum size at which you may display it to ensure that the type and trademark notations are legible. The minimum size for the Logo shall be: Inches: 2.08" x 0.52" Pixels: 150×40, or Millimeters: 53×14.
 
 **Alt/Title Attribute.** The Alternative Text (alt/title attribute of the image tag) should either be set to the following text or be left blank: "Powered by Aptible".
 
@@ -98,7 +102,7 @@ You shall link each use of the Aptible Marks directly to the following URL, wher
 You may not hyphenate, combine or abbreviate the Aptible Marks. You shall not incorporate the Aptible Marks into the name of your organization, or your services, products, trademark or logos. The foregoing prohibition includes the use of the Aptible Marks in the name of any application, service or product or in a URL to the left of the top-level domain name (e.g., ".com", ".net", ".uk", etc.). For example, URLs such as aptible.mydomain.com", "aptibleplus.com" are expressly prohibited.
 
 ### Attribution
-You must include the following statement in any materials that include the Aptible Marks: "Aptible, the Aptible logo, [and name any other Aptible Marks used in such materials] are trademarks of Aptible, Inc. or its affiliates in the United States and/or other countries." In addition, the Aptible Marks must be designated with the ™/"tm" notice as indicated in Section 2 of these Trademark Guidelines.
+You must include the following statement in any materials that include the Aptible Marks: "Aptible, the Aptible logo, [and name any other Aptible Marks used in such materials] are trademarks of Aptible, Inc. or its affiliates in the United States and/or other countries." In addition, the Aptible Marks must be designated with the ™/"tm" notice as indicated in Section 2 of this Policy.
 
 ### No Misleading Use
 You may not display the Aptible Marks in any manner that is misleading, unfair, defamatory, infringing, libelous, disparaging, obscene or otherwise objectionable as determined by us in our sole discretion.
@@ -110,10 +114,10 @@ You may not imitate the trade dress or "look and feel" of any of our web sites o
 You may not use the Aptible Marks in any manner that violates any United States or foreign, federal, state, provincial, municipal, local or other, law or regulation. Without limiting the foregoing, or any provision in the Terms of Service, you may not display any Aptible Mark on your site if your site contains or displays adult content or promotes illegal activities, gambling, or the sale of tobacco or alcohol to persons under twenty-one (21) years of age.
 
 ### Reservation of Rights
-Except for the limited permission specified in Section 3 above, nothing in the Terms of Service or these Trademark Guidelines shall grant or be deemed to grant you any right, license, title or interest in or to any Aptible Mark or any of our or our affiliates’ other trademarks, service marks, trade names, logos, product names, service names, legends, other designations, or abbreviations of any of the foregoing. You acknowledge and agree that we and our affiliates retain any and all intellectual property and other proprietary rights in and to the Aptible Marks. All use by you of the Aptible Marks including any goodwill associated therewith, shall inure to the benefit of Aptible.
+Except for the limited permission specified in Section 3 above, nothing in the Terms of Service or this Policy shall grant or be deemed to grant you any right, license, title or interest in or to any Aptible Mark or any of our or our affiliates’ other trademarks, service marks, trade names, logos, product names, service names, legends, other designations, or abbreviations of any of the foregoing. You acknowledge and agree that we and our affiliates retain any and all intellectual property and other proprietary rights in and to the Aptible Marks. All use by you of the Aptible Marks including any goodwill associated therewith, shall inure to the benefit of Aptible.
 
 ### No Challenges
 You agree that you will not, at any time, challenge or encourage, assist or otherwise induce third parties to challenge the Aptible Marks (except to the extent such restriction is prohibited by law) or our registration thereof, nor shall you attempt to register any trademarks, service marks, trade names, logos, product names, service names, legends, domain names, other designations, or abbreviations of any of the foregoing, or other distinctive brand features that are confusingly similar in any way (including, but not limited to, sound, appearance and spelling) to the Aptible Marks.
 
 ### Contact Information
-If you have questions regarding your obligations under these Trademark Guidelines or questions about any Aptible Mark, please email us at [legal@aptible.com](mailto:legal@aptible.com).
+If you have questions regarding your obligations under this Policy or questions about any Aptible Mark, please email us at [legal@aptible.com](mailto:legal@aptible.com).
