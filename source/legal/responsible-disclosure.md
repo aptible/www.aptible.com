@@ -6,6 +6,8 @@ posted: 2016-11-26
 section: Legal
 sub_section: Policies
 ---
+<!-- Reference Links -->
+[Terms of Service]:/legal/terms-of-service
 
 Version 2.9 - November 2016
 

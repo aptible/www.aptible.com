@@ -72,11 +72,11 @@ module BlogHelpers
   end
 
   def mailto_share_href(post)
-    body = <<~BODY
-             #{post.data.excerpt}
+    body = <<-BODY
+#{post.data.excerpt}
 
-             #{post_share_href(post)}
-           BODY
+#{post_share_href(post)}
+BODY
     "mailto:?subject=#{URI.escape(post.data.title)}&body=#{URI.escape(body)}"
   end
 end

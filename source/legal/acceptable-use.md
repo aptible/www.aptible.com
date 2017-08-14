@@ -2,16 +2,22 @@
 title: Acceptable Use Policy
 tracked_title: Acceptable Use
 description: "Aptible's acceptable use policy."
-posted: 2016-02-23
+posted: 2017-08-14
 section: Legal
 sub_section: Policies
 ---
+<!-- Reference Links -->
+[Aptible Terms of Service]:/legal/terms-of-service
 
-Version 2.2 - February 2016
+Version 2.3 - August 2017
 
-This policy describes prohibited uses of the Aptible Services and the website located at https://www.aptible.com and any subdomains (the "**Aptible Site**"). It is incorporated by reference into the Aptible Terms of Service. Capitalized terms used but not otherwise defined herein have the meaning ascribed to such terms in the Aptible Terms of Service.
+Aptible needs to be able to make sure our customers use their Aptible superpowers for good, not evil. 
 
-The examples described in this policy are not exhaustive. We may modify this policy at any time by posting a revised version on the Aptible Site. By using the Services or accessing the Aptible Site, you agree to the latest version of this policy. If you violate this policy or authorize or help others to do so, we may suspend or terminate your use of the Services.
+This policy describes prohibited uses of the Aptible Services and Aptible Site. Capitalized terms used but not otherwise defined here are defined in the [Aptible Terms of Service].
+
+By using the Services or the Site, you agree to the latest version of this policy. If you violate this policy or authorize or help others to do so, we may suspend or terminate your use of the Services.
+
+The examples described in this policy are not exhaustive. We may modify this policy at any time by posting a revised version on the Aptible Site. 
 
 **WE RESERVE FULL AND FINAL DISCRETION AS TO WHETHER CERTAIN USES VIOLATE THIS ACCEPTABLE USE POLICY. YOU AGREE THAT OUR DETERMINATION IS FINAL.**
 
@@ -27,7 +33,7 @@ Prohibited activities or content include:
 5. Harmful Content: Content or other computer technology that may damage, interfere with, surreptitiously intercept, or expropriate any system, program, or data, including viruses, Trojan horses, worms, time bombs, or cancelbots.
 
 ### No HIPAA Violations
-You agree not to use the Services to create, receive, maintain, or transmit protected health information, as defined in 45 C.F.R. § 160.103, without a Business Associate Agreement in place between you and Aptible. You agree only to use the Services as permitted by your Business Associate Agreement, including the
+You agree not to use the Services to create, receive, maintain, or transmit protected health information, as defined in 45 C.F.R. § 160.103, without a Business Associate Agreement in place between you and Aptible. You agree only to use the Services as permitted by your Business Associate Agreement.
 
 ### No High Risk Activities
 You agree not to use the Services for High Risk Activities, as defined in the Aptible Terms of Service.
@@ -62,7 +68,7 @@ Prohibited activities include:
 7. Malware: Uploading or otherwise any disseminating viruses, adware, spyware, worms, or other malicious code.
 
 ### Usage and Quotas
-You agree not to exceed the following limits:
+You agree not to exceed the following limits for Enclave:
 
 - 1 TB bandwidth/month for Development Accounts
 - 3 TB bandwidth/month for all other accounts

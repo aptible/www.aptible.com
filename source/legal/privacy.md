@@ -2,12 +2,14 @@
 title: Privacy Policy
 tracked_title: Privacy
 description: "Aptible's privacy policy."
-posted: 2016-08-05
+posted: 2017-08-14
 section: Legal
 sub_section: Policies
 ---
+<!-- Reference Links -->
+[Terms of Service]:/legal/terms-of-service
 
-Version 2.5 - October 2016
+Version 2.6 - August 2017
 
 Your privacy is important to us at Aptible. We want to be clear how we use your information, and the ways in which you can protect your privacy.
 
@@ -18,7 +20,7 @@ Our Privacy Policy explains:
 - How to access and update your information.
 - The steps we take to protect your information.
 
-This Privacy Policy applies to the information that we obtain through your use of Aptible services, including our website ([https://www.aptible.com](https://www.aptible.com)), platforms, and web-based tools (collectively the “Services”).  Please familiarize yourself with our policies, and if you have any questions contact us at [legal@aptible.com](mailto:legal@aptible.com). This policy is incorporated into and is subject to the [Terms of Service Agreement](https://www.aptible.com/legal/terms-of-service).
+This Privacy Policy applies to the information that we obtain through your use of Aptible services, including our website ([https://www.aptible.com](https://www.aptible.com)), platforms, and web-based tools (collectively the “Services”).  Please familiarize yourself with our policies, and if you have any questions contact us at [legal@aptible.com](mailto:legal@aptible.com). 
 
 ### Information We Collect
 #### 1. Information you provide to us
@@ -86,7 +88,7 @@ You may opt out of receiving promotional communications from Aptible by using th
 Our Services are not directed to individuals under 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will take steps to delete such information. If you become aware that a child has provided us with personal information, please contact us at [legal@aptible.com](mailto:legal@aptible.com).
 
 ### International Users
-Our Services are hosted in the United States and intended for users located within the United States. If you choose to use the Services from the European Union or other regions of the world with laws governing data collection and use that may differ from U.S. law, then please note that you are transferring your information outside of those regions to the United States for storage and processing. By providing your information, you consent to any transfer and processing in accordance with this Policy.
+The core Enclave and Gridiron APIs are are hosted in the United States. You may choose to run Enclave stacks in non-U.S. regions, such as the European Union or other regions of the world with laws governing data collection and use that may differ from U.S. law. Please note that when you use the core Enclave and Gridion APIs, you are transferring your information outside of those regions to the United States for storage and processing. By providing your information, you consent to any transfer and processing in accordance with this Policy.
 
 ### EU-U.S. Privacy Shield and U.S.-Swiss Safe Harbor Compliance
 Aptible, Inc. is a participant in the U.S. Department of Commerce's EU-U.S. Privacy Shield and Swiss Safe Harbor programs, and has certified that we adhere to the EU-U.S. Privacy Shield and U.S.-Swiss Safe Harbor Privacy Principles. Aptible is subject to the investigatory and enforcement powers of the Federal Trade Commission.
