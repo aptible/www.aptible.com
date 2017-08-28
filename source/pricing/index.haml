@@ -60,10 +60,11 @@ description: Transparent pricing details for Enclave, Aptible's Docker container
             .pricing-rate__rate $7499/year
 
       .pricing-summary__body
-        = partial 'partials/ctas/demo-cta', locals: {             |
-            cta_label: 'Have Us Call You',                          |
-            class_name: 'pricing-demo-request signup-cta--small'  |
-          }                                                       |
+        %a.btn.btn--full{ href: 'http://contact.aptible.com' } Contact Us
+        / = partial 'partials/ctas/demo-cta', locals: {             |
+        /     cta_label: 'Have Us Call You',                          |
+        /     class_name: 'pricing-demo-request signup-cta--small'  |
+        /   }                                                       |
 
   = partial 'pricing/need-more'
 

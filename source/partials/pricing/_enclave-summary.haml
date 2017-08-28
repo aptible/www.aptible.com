@@ -8,31 +8,20 @@
       $500 Credit Included
   .pricing-summary__body
     .product-price
-      .product-price__name Shared
-      .product-price__exp Development Account
+      .product-price__name Development Account
+      .product-price__exp Shared Instance
       .product-price__price
-        No monthly minimum, no annual contract. Your first $500 is on 
-        us - just pay for what you use after that:
-
-    .pricing-summary__label Enclave Unit Pricing
-    .pricing-rates
-      .pricing-rate
-        .pricing-rate__title App + Database Containers
-        .pricing-rate__rate $0.08/GB/hour
-      .pricing-rate
-        .pricing-rate__title Encrypted Disk
-        .pricing-rate__rate $0.37/GB/month
-      .pricing-rate
-        .pricing-rate__title TLS Endpoints
-        .pricing-rate__rate $0.05/hour
+        $0/month base fee, no commitment. 
+        <br><strong>Your first $500 of resources is on 
+        us.</strong> Just pay for what you use after that.
 
   .pricing-summary__body.pricing-summary__body--bordered
     .product-price
-      .product-price__name Dedicated
+      .product-price__name Production Account
       .product-price__exp
-        Production Account
+        Dedicated Instance
       .product-price__price
-        $999/month base fee w/ annual contract or $1299 month-to-month. 
+        $999/month base fee with annual commitment ($1,299/month with no commitment)<br>
         Just pay for additional usage as you go.
 
     .pricing-summary__checklist
@@ -45,7 +34,25 @@
         %li.pricing-summary__checklist-item
           4 TLS Endpoints
 
+    <br>
+    .pricing-summary__label Enclave Resource Pricing
+    .pricing-rates
+      .pricing-rate
+        .pricing-rate__title App + Database Containers
+        .pricing-rate__rate $0.08/GB/hour
+      .pricing-rate
+        .pricing-rate__title Encrypted Disk
+        .pricing-rate__rate $0.37/GB/month
+      .pricing-rate
+        .pricing-rate__title TLS Endpoints
+        .pricing-rate__rate $0.05/hour
+
   .pricing-summary__body
-    %a.btn.btn--full{ href: open_account_href } Create a Free Dev Account
+    = partial 'partials/ctas/signup-cta', locals: {            |
+                    cta_label: 'Get Started',                             |
+                    cta_placeholder: 'Enter your work email',             |
+                    class_name: 'signup-cta--small signup-cta--no-border' |
+                  }                                                       |
+    / %a.btn.btn--full{ href: open_account_href } Create a Free Dev Account
     - if current_page.path == 'pricing/index.html'
       %a.arrow-link--right{ href: '/pricing/enclave/' } Enclave Pricing Calculator
