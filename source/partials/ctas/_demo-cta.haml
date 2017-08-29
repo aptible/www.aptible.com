@@ -1,7 +1,10 @@
 - cta_label ||= 'Request A Demo'
 - cta_placeholder ||= 'Enter your work email'
 - class_name ||= ''
-%form.signup-cta.request-demo.single-line
+%form.signup-cta.request-demo.single-line{ class: class_name, action: 'https://formkeep.com/f/10e53eea0f42', method: 'post' }
+  %input{ type: 'hidden', name: 'utf8', value: '✓' }
+  %input{ type: 'hidden', name: '_redirect_url', value: page_url }
   %input{ type: 'hidden', name: 'event', value: 'gridiron-demo-request' }
+  %input{ type: 'text', name: 'form-name', value: 'Request A Demo', style: 'display: none;' }
   %input.single-line__input{ type: 'email', name: 'gridiron-demo-request-form__email', placeholder: cta_placeholder, required: true }
   %button.single-line__submit{ type: 'submit' }= cta_label

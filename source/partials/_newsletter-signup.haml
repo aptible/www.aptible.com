@@ -1,4 +1,7 @@
-%form.newsletter-form
+%form.newsletter-form{ action: 'https://formkeep.com/f/6d5e9ddb6e0e', method: 'post' }
   %input{ type: 'hidden', name: 'event', value: 'subscribed' }
+  %input{ type: 'hidden', name: 'utf8', value: '✓' }
+  %input{ type: 'hidden', name: '_redirect_url', value: page_url }
+  %input{ type: 'text', name: 'form-name', value: 'Newsletter Signup', style: 'display: none;' }
   %input#aptible-newsletter-subscription-email.newsletter-form__email{ required: true, name: 'newsletter-form__email', type: 'email', placeholder: 'Email Address' }
   %button.newsletter-form__submit{ type: 'submit', value: ' ' }

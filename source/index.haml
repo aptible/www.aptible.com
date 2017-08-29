@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 title: HIPAA Compliance and ISO 27001 Security Management Platform and Program Management
 description: Powerful security and DevOps tools for engineering teams.
+=======
+title: Security Management and Compliance for Developers
+description: Deploy your app. Design your security management program. Meet the requirements of HIPAA, ISO 27001, SOC 2, PCI, and more.
+>>>>>>> pricing-cleanup
 ---
 
 - content_for :header do
@@ -13,13 +18,12 @@ description: Powerful security and DevOps tools for engineering teams.
           %h1.home__heading__title
             Keep your apps, data, and people secure.
           %p.home__heading__summary.heading__summary.heading__summary--sibling
-            Aptible protects your most important assets when the stakes matter
-            most. Thousands of developers use Aptible to secure data and build
-            strong compliance programs.
-          = partial 'partials/signup-cta', locals: {     |
-                cta_label: 'Get Started',                |
-                cta_placeholder: 'Enter your work email' |
-              }                                          |
+            Thousands of developers use Aptible to secure cloud architecture 
+            and build strong security management programs.
+          = partial 'partials/ctas/signup-cta', locals: { |
+                cta_label: 'Get Started',                 |
+                cta_placeholder: 'Enter your work email'  |
+              }                                           |
           = partial 'partials/signup-demo-request'
 
         .home-hero__quotes
@@ -137,7 +141,7 @@ description: Powerful security and DevOps tools for engineering teams.
       %h2.footer__signup-title
         Get secure and compliant this afternoon.
     .footer__signup-form
-      = partial 'partials/signup-cta', locals: {      |
+      = partial 'partials/ctas/signup-cta', locals: { |
             cta_label: 'Get Started',                 |
             cta_placeholder: 'Enter your work email'  |
           }                                           |
