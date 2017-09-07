@@ -1,5 +1,5 @@
 ---
-title: Simple, flexible, transparent Pricing
+title: Pricing
 description: Transparent pricing details for Enclave, Aptible's Docker container
              orchestration platform, and Gridiron, Aptible's compliance and
              data security management platform built for developers.
@@ -12,7 +12,7 @@ description: Transparent pricing details for Enclave, Aptible's Docker container
     .grid-container.pricing-page-header
       .centered-header.centered-header--wide
         %h1.heading__title Aptible Pricing
-        %h2.heading__subtitle Simple. Flexible. Transparent.
+        %h2.heading__subtitle Simple, transparent, scalable
 
 .content
   .pricing-summaries.grid-container
@@ -25,45 +25,46 @@ description: Transparent pricing details for Enclave, Aptible's Docker container
         .pricing-summary__product-icon= partial 'images/gridiron.svg'
         .pricing-summary__title Gridiron
         .pricing-summary__subtitle
-          Compliance and data security management platform built for developers
+          Security and compliance management for software development teams
 
       .pricing-summary__body
         .product-price
           .product-price__name Gridiron
-          .product-price__price Starting at $2,500/month with annual contract
+          .product-price__price Starting at $2,499/month with annual contract
 
         .pricing-summary__checklist.pricing-summary--fill
           .pricing-summary__label Includes
           %ul.checklist.checklist--blue
             %li.pricing-summary__checklist-item
-              Access to one compliance protocol e.g. HIPAA, SOC 2, or ISO 27001
+              First compliance protocol (HIPAA, SOC 2, or ISO 27001)
             %li.pricing-summary__checklist-item
-              Basic compliance and security training for up to 25 team members
+              2 Admin seats for security leads
             %li.pricing-summary__checklist-item
-              Advanced compliance and security training for up to 10 team members
+              10 Advanced seats for developers, ops team members
             %li.pricing-summary__checklist-item
-              Additional compliance protocols and training users available
+              20 Basic seats for normal workforce members
 
-        -# Keeping this here to avoid CSS spacing work when we add it.
-        -# Currently `visibility: hidden` to keep its placement in the DOM
-        .pricing-summary--hidden
-          .pricing-summary__label ********
-          .pricing-rates
-            .pricing-rate
-              .pricing-rate__title ********
-              .pricing-rate__rate ********
-            .pricing-rate
-              .pricing-rate__title ********
-              .pricing-rate__rate ********
-            .pricing-rate
-              .pricing-rate__title ********
-              .pricing-rate__rate ********
+        .pricing-summary__label Extras
+        .pricing-rates
+          .pricing-rate
+            .pricing-rate__title Basic Seat
+            .pricing-rate__rate $199/year
+          .pricing-rate
+            .pricing-rate__title Advanced Seat
+            .pricing-rate__rate $499/year
+          .pricing-rate
+            .pricing-rate__title Admin Seat
+            .pricing-rate__rate $999/year
+          .pricing-rate
+            .pricing-rate__title Additional Protocol
+            .pricing-rate__rate $7499/year
 
       .pricing-summary__body
-        = partial 'partials/ctas/demo-cta', locals: {             |
-            cta_label: 'Request A Demo',                          |
-            class_name: 'pricing-demo-request signup-cta--small'  |
-          }                                                       |
+        %a.btn.btn--full{ href: 'http://contact.aptible.com' } Contact Us
+        / = partial 'partials/ctas/demo-cta', locals: {             |
+        /     cta_label: 'Have Us Call You',                          |
+        /     class_name: 'pricing-demo-request signup-cta--small'  |
+        /   }                                                       |
 
   = partial 'pricing/need-more'
 

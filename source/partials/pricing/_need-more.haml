@@ -2,14 +2,15 @@
 -# previous element should have `position: relative; z-index: 1;`
 .content.hero-gradient--angled.pricing__need-more
   .grid-container
-    .pricing__need-more__title Need Something More?
+    .pricing__need-more__title Need More?
     .pricing__need-more__subtitle
-      Get custom MSAs, BAAs, SLAs, regulatory and customer audit assistance,
-      custom support plans and/or volume pricing on usage.
+      Deploy Enclave in your own AWS account, custom contracts, 
+      audit assistance, and volume pricing available.
   .pricing__need-more__action
-    = partial 'partials/ctas/demo-cta', locals: {           |
-      cta_label: 'Get in touch about Aptible Managed',      |
-      class_name: 'pricing-demo-request signup-cta--small'  |
-    }                                                       |
+    %a.btn.signup-cta--small{ href: 'http://contact.aptible.com' } Contact Us
+    / = partial 'partials/ctas/demo-cta', locals: {           |
+    /   cta_label: 'Have Us Call You',      |
+    /   class_name: 'pricing-demo-request signup-cta--small'  |
+    / }                                                       |
 -# When our sign up form is ready, link to it and remove the demo cta
 -# %a.btn{ href: '' } Get in touch about Aptible managed

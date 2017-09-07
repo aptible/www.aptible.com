@@ -145,6 +145,9 @@
     font-size: 14px;
     font-weight: $regular;
   }
+  .signup-cta--small {
+    margin-left: 0;
+  }
 }
 
 .pricing-summary__actions {
@@ -178,7 +181,7 @@
 }
 
 .pricing-summary--fill {
-  height: 205px;
+  height: 250px;
 }
 
 .pricing-summary__body--bordered {
