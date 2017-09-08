@@ -76,7 +76,7 @@ module ContentfulHelpers
             map = markdown_map(type, yaml)
           rescue => e
             puts "WARN: Failed to parse #{File.basename(yaml_file)}"
-            puts "WARN:   #{e.message}"
+            ([e.message] + e.backtrace).each { |l| puts "WARN:   #{l}" }
             next
           end
 
