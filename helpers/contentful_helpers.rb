@@ -19,7 +19,8 @@ module ContentfulHelpers
           'product' => yml[:product],
           'section' => 'Blog',
           'type' => yml[:type],
-          'hackernews_link' => yml[:hackernews_link]
+          'hackernews_link' => yml[:hackernews_link],
+          'show_body_in_index' => yml[:show_body_in_index]
         }
       }]
     end,

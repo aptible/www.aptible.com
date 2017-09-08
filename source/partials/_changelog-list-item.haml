@@ -1,6 +1,12 @@
-%a.changelog-entry{ href: blog_post_href(post) }
+.changelog-entry
   %span.changelog-entry__product
   %span.changelog-entry__info
     %span.changelog-entry__date= display_date(post.data.posted)
     %span.changelog-entry__title= post.data.title
-    %span.changelog-entry__summary= post.data.excerpt
+    - if post.data.show_body_in_index
+      %div.changelog-entry__summary
+        = find_and_preserve do
+          = post.render({ layout: false })
+    - else
+      %span.changelog-entry__summary= post.data.excerpt
+    %a.arrow-link--right.dbl-arrow-link--right{ href: blog_post_href(post) } Read more
