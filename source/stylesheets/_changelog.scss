@@ -42,4 +42,8 @@
 .changelog-entry__summary {
   color: $dark-blue-steel;
   display: block;
+
+  p {
+    margin: 0px;
+  }
 }

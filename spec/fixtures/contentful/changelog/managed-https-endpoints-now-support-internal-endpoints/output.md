@@ -10,6 +10,7 @@ product: enclave
 section: Blog
 type: changelog post
 hackernews_link:
+show_body_in_index: true
 ---
 
 We’re happy to announce that [Managed HTTPS](https://www.aptible.com/blog/managed-https/) is now available on Enclave for Internal Endpoints (in addition to External Endpoints, which were supported from day 1).
