@@ -187,7 +187,7 @@ You must have a Business Associate Agreement (BAA) in place with Aptible before 
 --------
 
 
-**What else might I need to comply with HIPAA?**
+**What else might I need to comply with HIPAA or meet other security and compliance requirements?**
 
 If you are deployed on Enclave and using Gridiron for security management, you may also want:
 
@@ -200,4 +200,6 @@ If you are deployed on Enclave and using Gridiron for security management, you m
 
 **Is Aptible audited?**
 
-Yes, Aptible has passed hundreds of security and compliance audits alongside our customers at the largest entities in healthcare. In the past year we have passed audits with Kaiser Permanente, MD Anderson, UnitedHealth Group, Johns Hopkins, Stanford, and many others. We are currently undergoing ISO 27001 and SOC 2 certification.
+Yes, Aptible has passed hundreds of security and compliance audits alongside our customers at the largest entities in healthcare. In the past year we have passed audits with Kaiser Permanente, MD Anderson, UnitedHealth Group, Johns Hopkins, Stanford, and many others. 
+
+We have achieved ISO 27001 certification and we are working towards our SOC 2 certification, as well.
