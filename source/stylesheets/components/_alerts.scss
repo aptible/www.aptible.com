@@ -1,3 +1,17 @@
+.alert {
+  font-size: 18px;
+
+  a {
+    font-weight: 600;
+  }
+}
+
 .alert--blue {
+  @extend .alert;
   @include alert--blue;
+
+  a {
+    color: $dark-blue-steel;
+    border-bottom: 1px dashed $dark-blue-steel;
+  }
 }
