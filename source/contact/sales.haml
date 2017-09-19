@@ -1,0 +1,26 @@
+---
+title: Contact Sales
+---
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled.aptible-header--bottom-grid
+    = partial 'partials/main-nav'
+
+.content
+  .grid-container.grid--single-center
+    .aptible-header-basic
+      %h1 Share your contact info and let us know how we can help
+
+    %form.basic-form
+      %input{:type => "email", :placeholder => "Your Work Email"}
+      %input{:type => "tel", :placeholder => "Your Phone Number"}
+      %input{:type => "text", :placeholder => "First & Last Name"}
+      %input{:type => "text", :placeholder => "Company Name"}
+      %textarea{:placeholder => "How can we help?"}
+      %label
+        %input{:type => "checkbox"} Yes, I would like to schedule a demo of both Enclave & Gridiron
+      %button.btn--lg Contact Aptible
+      %div
+        If you’re looking for sales or tech support then please give us a call at
+        %a{:href => "tel:1-866-296-5003"} (866) 296-5003.
+
+    = partial 'home-quotes'
