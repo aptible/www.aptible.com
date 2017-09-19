@@ -8,5 +8,9 @@
   textarea {
     padding: 1em;
     border-color: $light-sky-blue;
+
+    &:focus {
+      border-color: $blue;
+    }
   }
 }
