@@ -73,6 +73,12 @@ body {
   }
 }
 
+.grid--1up {
+  .grid-item {
+    @include grid-column(12);
+  }
+}
+
 .grid--2up {
   .grid-item {
     @include grid-column(6);
