@@ -140,9 +140,11 @@
 }
 
 .page-header-basic {
+  margin-bottom: 50px;
+
   h1 {
     margin-top: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     font-size: 50px;
     line-height: 1.15;
 
@@ -151,6 +153,11 @@
       font-size: 24px; // fall back for non-supported browsers
       font-size: 11vw;
     }
+  }
+
+  .page-header-basic__sub {
+    font-size: 18px;
+    font-weight: normal;
   }
 }
 

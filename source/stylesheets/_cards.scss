@@ -6,6 +6,15 @@
   padding: 50px 25px;
 }
 
+a.card {
+  transition: all .2s ease;
+
+  &:hover {
+    border-color: $blue;
+    transform: translateY(-5px);
+  }
+}
+
 .card--full {
   width: 100%;
 }
@@ -63,6 +72,11 @@
   font-weight: $semibold;
   margin-bottom: 0;
   &::after { display: none; }
+}
+
+.card__title--centered {
+  float: none;
+  text-align: center;
 }
 
 .card__body {
