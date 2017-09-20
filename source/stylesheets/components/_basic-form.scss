@@ -7,6 +7,7 @@
   input,
   textarea {
     padding: 1em;
+    font-size: 14px;
     border-color: $light-sky-blue;
 
     &:focus,
@@ -17,6 +18,19 @@
     &:focus {
       box-shadow: none;
     }
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $blue;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $blue;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $blue;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $blue;
   }
 }
 

@@ -13,17 +13,42 @@ title: Contact Sales
     %form.basic-form.contact-sales
       .grid-container.grid--2up
         .grid-item
-          %input{:type => "email", :placeholder => "Your Work Email"}
+          .floating-label
+            %label
+              Your Work Email
+            %input.input{:type => "email"}
+            .placeholder
+              Your Work Email
         .grid-item
-          %input{:type => "tel", :placeholder => "Your Phone Number"}
+          .floating-label
+            %label
+              Your Phone Number
+            %input.input{:type => "tel"}
+            .placeholder
+              Your Phone Number
       .grid-container.grid--2up
         .grid-item
-          %input{:type => "text", :placeholder => "First & Last Name"}
+          .floating-label
+            %label
+              First & Last Name
+            %input.input{:type => "text"}
+            .placeholder
+              First & Last Name
         .grid-item
-          %input{:type => "text", :placeholder => "Company Name"}
+          .floating-label
+            %label
+              Company Name
+            %input.input{:type => "text"}
+            .placeholder
+              Company Name
       .grid-container.grid--1up
         .grid-item
-          %textarea{:placeholder => "How can we help?"}
+          .floating-label
+            %label
+              How can we help?
+            %textarea.input
+            .placeholder
+              How can we help?
       .grid-container.grid--2up
         .grid-item
           .form-action
