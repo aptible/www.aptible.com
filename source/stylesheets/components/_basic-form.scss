@@ -9,8 +9,43 @@
     padding: 1em;
     border-color: $light-sky-blue;
 
-    &:focus {
+    &:focus,
+    &:hover {
       border-color: $blue;
     }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.custom-checkbox {
+  position: relative;
+
+  input[type="checkbox"]:focus {
+    outline: none;
+  }
+
+  input[type="checkbox"] + label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 40px;
+    font-weight: normal;
+    background: #fff image-url('icons/checkbox-unchecked.svg') left center no-repeat;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:focus + label {
+    background-image: image-url('icons/checkbox-unchecked-focus.svg');
+  }
+
+  input[type="checkbox"]:checked + label {
+    background-image: image-url('icons/checkbox-checked.svg');
+  }
+
+  input[type="checkbox"]:checked:focus + label {
+    background-image: image-url('icons/checkbox-checked-focus.svg');
   }
 }
