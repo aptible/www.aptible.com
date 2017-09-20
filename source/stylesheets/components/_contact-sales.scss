@@ -5,17 +5,35 @@
     margin-bottom: 0.75em;
   }
 
-  .custom-checkbox {
+  .opt-in-wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
     margin-bottom: 30px;
 
     @media screen and (max-width: $tablet-portrait) {
       margin-bottom: 40px;
     }
 
+    .custom-select__link {
+      padding: 0;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
+  .custom-checkbox {
     label {
-      font-size: 14px;
+      margin-right: 4px;
       line-height: 1.8;
     }
+  }
+
+  .custom-select {
+    line-height: 1.8;
   }
 
   .grid-container .grid-item {

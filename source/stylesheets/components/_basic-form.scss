@@ -37,17 +37,21 @@
 .custom-checkbox {
   position: relative;
 
-  input[type="checkbox"]:focus {
-    outline: none;
-  }
-
-  input[type="checkbox"] + label {
+  input[type="checkbox"] {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="checkbox"] + label {
     padding-left: 40px;
     font-weight: normal;
-    background: #fff image-url('icons/checkbox-unchecked.svg') left center no-repeat;
+    background: #fff image-url('icons/checkbox-unchecked.svg') top left no-repeat;
     cursor: pointer;
   }
 

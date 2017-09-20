@@ -1,0 +1,37 @@
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select__link {
+  color: $dark-blue-steel;
+  font-weight: normal;
+  border-bottom: 1px dashed $dark-blue-steel;
+  cursor: pointer;
+}
+
+.custom-select__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 230px;
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.12);
+
+  &.active {
+    display: block;
+  }
+}
+
+.custom-select__item {
+  cursor: pointer;
+  padding: 4px 18px;
+
+  &:hover {
+    background-color: $light-blue;
+  }
+}

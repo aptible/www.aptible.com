@@ -52,13 +52,23 @@ title: Contact Sales
       .grid-container.grid--2up
         .grid-item
           .form-action
-            .custom-checkbox
-              %input#opt-in{:type => "checkbox"}
-              %label{:for => "opt-in"}
-                Yes, I would like to schedule a demo of both Enclave & Gridiron
-
-            %button.btn--lg.btn--full-tablet
-              Contact Aptible
+            %div.opt-in-wrapper
+              .custom-checkbox
+                %input#opt-in{:type => "checkbox"}
+                %label{:for => "opt-in"}
+                  Yes, I would like to schedule a demo of
+              .custom-select
+                %input.custom-select__link{:type => "text", :readonly => true, :value => "Enclave"}
+                .custom-select__menu
+                  .custom-select__item
+                    Enclave
+                  .custom-select__item
+                    Gridiron
+                  .custom-select__item
+                    Both Enclave & Gridiron
+            %div
+              %button.btn--lg.btn--full-tablet
+                Contact Aptible
         .grid-item
           .alert--blue
             If you’re looking for sales or tech support then please give us a call at
