@@ -1,7 +1,7 @@
 $.fn.extend floatingLabel: (_options) ->
   $(this).each ->
     $this = $(this)
-    $input = $this.find('input')
+    $input = $this.find('.input')
     $label = $this.find('label, .placeholder')
     $input.keyup (e) ->
       hasValue = e.target.value.length
