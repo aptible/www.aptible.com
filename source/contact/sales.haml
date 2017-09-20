@@ -26,13 +26,14 @@ title: Contact Sales
           %textarea{:placeholder => "How can we help?"}
       .grid-container.grid--2up
         .grid-item
-          .custom-checkbox
-            %input#opt-in{:type => "checkbox"}
-            %label{:for => "opt-in"}
-              Yes, I would like to schedule a demo of both Enclave & Gridiron
+          .form-action
+            .custom-checkbox
+              %input#opt-in{:type => "checkbox"}
+              %label{:for => "opt-in"}
+                Yes, I would like to schedule a demo of both Enclave & Gridiron
 
-          %button.btn--lg
-            Contact Aptible
+            %button.btn--lg
+              Contact Aptible
         .grid-item
           .alert--blue
             If you’re looking for sales or tech support then please give us a call at
