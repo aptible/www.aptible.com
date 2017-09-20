@@ -8,9 +8,20 @@
   .custom-checkbox {
     margin-bottom: 30px;
 
+    @media screen and (max-width: $tablet-portrait) {
+      margin-bottom: 40px;
+    }
+
     label {
       font-size: 14px;
       line-height: 1.8;
+    }
+  }
+
+  .grid-container .grid-item {
+    @media screen and (max-width: $tablet-portrait) {
+      margin-left: 0;
+      width: 100%;
     }
   }
 }

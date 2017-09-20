@@ -145,6 +145,12 @@
     margin-bottom: 50px;
     font-size: 50px;
     line-height: 1.15;
+
+    @media screen and (max-width: $tablet-portrait) {
+      margin-top: 0;
+      font-size: 24px; // fall back for non-supported browsers
+      font-size: 11vw;
+    }
   }
 }
 

@@ -95,6 +95,7 @@ body {
   .grid-item--small {
     @media screen and (max-width: $tablet-portrait) {
       @include grid-column(12);
+      margin-left: 0;
     }
   }
   > .card {
