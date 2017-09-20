@@ -1,0 +1,53 @@
+/*Stole this from: https://codepen.io/kittylion/pen/cxwmz*/
+
+.floating-label {
+  position: relative;
+
+  & > label {
+    position: absolute;
+    top: -4px;
+    left: 15px;
+    display: inline-block;
+    margin-bottom: 0;
+    color: $light-sky-blue;
+    font-size: 10px;
+    font-weight: normal;
+    opacity: 0;
+    transition: all .2s ease;
+
+    &.is-visible {
+      z-index: 2;
+      opacity: 1;
+      transform: translate3d(0, 14px, 0);
+    }
+  }
+
+  & > .input {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    transition: all .2s ease;
+
+    &.active {
+      padding-top: 1.4em;
+      padding-bottom: .6em;
+    }
+  }
+
+  & > .placeholder {
+    position: absolute;
+    z-index: 2;
+    left: 16px;
+    top: 14px;
+    display: block;
+    color: $light-sky-blue;
+    opacity: 1;
+    pointer-events: none;
+    transition: all .2s ease;
+
+    &.active {
+      opacity: 0;
+      transform: translate3d(0, 14px, 0);
+    }
+  }
+}
