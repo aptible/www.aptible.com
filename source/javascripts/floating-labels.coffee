@@ -2,13 +2,13 @@ $.fn.extend floatingLabel: (_options) ->
   $(this).each ->
     $this = $(this)
     $input = $this.find('.input')
-    $label = $this.find('label, .placeholder')
+    $label = $this.find('label, .placeholder, .input')
     $input.keyup (e) ->
       hasValue = e.target.value.length
       if hasValue
-        $label.addClass 'is-visible active'
+        $label.addClass 'fl--is-active'
       else
-        $label.removeClass 'is-visible active'
+        $label.removeClass 'fl--is-active'
       return
     return
   return

@@ -15,7 +15,7 @@
     opacity: 0;
     transition: all .2s ease;
 
-    &.is-visible {
+    &.fl--is-active {
       z-index: 2;
       opacity: 1;
       transform: translate3d(0, 14px, 0);
@@ -28,7 +28,7 @@
     width: 100%;
     transition: all .2s ease;
 
-    &.active {
+    &.fl--is-active {
       padding-top: 1.4em;
       padding-bottom: .6em;
     }
@@ -45,7 +45,7 @@
     pointer-events: none;
     transition: all .2s ease;
 
-    &.active {
+    &.fl--is-active {
       opacity: 0;
       transform: translate3d(0, 14px, 0);
     }
