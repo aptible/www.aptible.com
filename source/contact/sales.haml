@@ -58,7 +58,9 @@ title: Contact Sales
                 %label{:for => "opt-in"}
                   Yes, I would like to schedule a demo of
               .custom-select
-                %input.custom-select__link{:type => "text", :readonly => true, :value => "Enclave"}
+                .custom-select__link{:tabindex => "0" }
+                  Enclave
+                %input.custom-select__link{:type => "hidden", :readonly => true, :value => "Enclave"}
                 .custom-select__menu
                   .custom-select__item
                     Enclave
