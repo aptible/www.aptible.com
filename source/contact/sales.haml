@@ -16,14 +16,14 @@ title: Contact Sales
           .floating-label
             %label
               Your Work Email
-            %input.input{:type => "email"}
+            %input.input{:type => "email", :required => true}
             .placeholder
               Your Work Email
         .grid-item
           .floating-label
             %label
               Your Phone Number
-            %input.input{:type => "tel"}
+            %input.input{:type => "tel", :required => true}
             .placeholder
               Your Phone Number
       .grid-container.grid--2up
@@ -31,7 +31,7 @@ title: Contact Sales
           .floating-label
             %label
               First & Last Name
-            %input.input{:type => "text"}
+            %input.input{:type => "text", :required => true}
             .placeholder
               First & Last Name
         .grid-item
