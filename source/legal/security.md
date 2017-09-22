@@ -2,7 +2,7 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's public security policy"
-posted: 2017-08-14
+posted: 2017-09-21
 section: Legal
 sub_section: Policies
 ---
@@ -10,7 +10,7 @@ sub_section: Policies
 [Aptible Terms of Service]:/legal/terms-of-service
 ["Amazon Web Services: Overview of Security Processes - May 2017"]:https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf
 
-Version 3.7 - August 2017
+Version 3.8 - September 2017
 
 This policy outlines: 1) Aptible's security practices and resources, and 2)  your security obligations. 
 
@@ -128,7 +128,7 @@ Aptible automatically backs up several different types of data:
 
 - Customer metadata is stored in the Aptible APIs, backed by the Amazon Relational Database Service. This metadata includes customer account data (passwords, permissions, SSH keys), and Enclave configuration data, such as environmental variables. Backups are taken nightly and retained for one week.
 
-- Enclave customer database disks are automatically backed up nightly and retained daily for 90 days, and monthly for 6 years. No customer action is required. Two backup copies are kept: One in the region where the database runs, to facilitate fast disaster recovery; One in a separate geographic region to protect against loss of the original region. Customers may also take on-demand backups.
+- Enclave customer database disks are automatically backed up nightly and retained daily for 90 days, and monthly for 6 years. No customer action is required. Two backup copies are kept: One in the region where the database runs, to facilitate fast disaster recovery; the other in a separate geographic region to protect against loss of the original region. Customers may also take on-demand backups. Please see the [Enclave database backup](https://www.aptible.com/documentation/enclave/reference/databases/backups.html) documentation for more information.
 
 - For Enclave databases like PostgreSQL that support intermediate backups (e.g., write-ahead logs), Aptible configures these intermediate backups to span at least the time between daily backups, to enable fine-grained, point-in-time disaster recovery.
 
