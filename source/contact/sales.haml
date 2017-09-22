@@ -10,7 +10,10 @@ title: Contact Sales
     .centered-header.page-header-basic
       %h1 Share your contact info and let us know how we can help
 
-    %form.basic-form.contact-sales
+    %form.basic-form.contact-sales{"accept-charset" => "UTF-8", :action => "https://formkeep.com/f/f54ed61d5253", :method => "POST"}
+      %input{ type: 'hidden', name: '_redirect_url', value: base_url }
+      %input{ type: 'hidden', name: 'event', value: 'gridiron-demo-request' }
+      %input{ type: 'text', name: 'form-name', value: 'Contact Sales', style: 'display: none;' }
       .grid-container.grid--2up
         .grid-item
           .floating-label
