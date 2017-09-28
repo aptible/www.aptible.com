@@ -599,3 +599,5 @@
   url: "/resources/enclave-reference-architecture/"
 - loc: "/resources/enclave-reference-architecture-and-division-of-responsibilities/"
   url: "/resources/enclave-reference-architecture/"
+- loc: "/resources/enclave-reference-architecture-division-of-responsibilities/"
+  url: "/resources/enclave-reference-architecture/"
