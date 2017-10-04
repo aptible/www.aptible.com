@@ -2,7 +2,7 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's public security policy"
-posted: 2017-09-21
+posted: 2017-10-04
 section: Legal
 sub_section: Policies
 ---
@@ -10,7 +10,7 @@ sub_section: Policies
 [Aptible Terms of Service]:/legal/terms-of-service
 ["Amazon Web Services: Overview of Security Processes - May 2017"]:https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf
 
-Version 3.8 - September 2017
+Version 3.9 - October 2017
 
 This policy outlines: 1) Aptible's security practices and resources, and 2)  your security obligations. 
 
@@ -51,6 +51,7 @@ p. 5 - ["Amazon Web Services: Overview of Security Processes - May 2017"]
 
 ##### **1.C - Environmental Security**
 AWS data center environmental controls include:
+
 - Fire detection and suppression systems
 - Redundant power systems, backed by Uninterruptible Power Supply units and generators
 - Climate and temperature controls
@@ -157,8 +158,8 @@ Aptible monitors the stability and availability of customer infrastructure and a
 We do not access or use Your Content for any purpose other than for developing and operating the Services and as required by law. As a routine matter, Aptible workforce members do not require access to data processed by your Enclave Containerized Services, such as data stored in your databases. Aptible workforce members are granted least-privilege access to customer environments only when a specific business need arises. Workforce members undergo criminal background screening before hire. In some cases, such as Enclave databases, you may encrypt Your Content using keys you manage.
 
 ##### **5.B - Security Management**
-Aptible manages information security consistent with ISO 27001 and applicable legal and regulatory requirements.
+Aptible manages information security consistent with ISO 27001 and applicable legal and regulatory requirements. Aptible's [ISO 27001 certification for Enclave and Gridron](/compliance/iso-27001-certification/).
 
 Aptible conducts regular security and vulnerability assessments of stack hosts and our applications. Code undergoes automated testing and manual code review prior to being deployed to production. Our security team receives regular notifications of vulnerabilities and patches on a continuous basis.
 
-We also run a [responsible disclosure program](https://www.aptible.com/legal/responsible-disclosure) for security vulnerabilities, with cash bounties.
+We also run a [responsible disclosure program](/legal/responsible-disclosure) for security vulnerabilities, with cash bounties.
