@@ -21,6 +21,28 @@
   line-height: 3;
 }
 
+.changelog-entry__product {
+  content: '';
+  font-size: 12px;
+  font-weight: $semibold;
+  margin-right: 20px;
+  text-transform: uppercase;
+  &::after {
+    border-radius: 3px;
+    border: 1px solid $blue;
+    color: $blue;
+    content: "enclave";
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+  }
+  &[data-product='gridiron']::after {
+    border-color: $purple;
+    color: $purple;
+    content: "gridiron";
+  }
+}
+
 .changelog-entry__info {
   flex-grow: 1;
 }

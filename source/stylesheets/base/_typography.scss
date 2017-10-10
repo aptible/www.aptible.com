@@ -118,7 +118,7 @@ hr {
     img {
       margin: 50px 0 34px 0;
     }
-    & + pre {
+    & + pre, & + ul, & + ol {
       margin-top: 10px;
     }
   }
