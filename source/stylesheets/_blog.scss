@@ -77,26 +77,6 @@
 .post__changelog-entry {
   display: flex;
 }
-.changelog-entry__product {
-  content: '';
-  font-size: 12px;
-  font-weight: $semibold;
-  margin-right: 20px;
-  text-transform: uppercase;
-  &::after {
-    border: 1px solid $blue;
-    border-radius: 3px;
-    padding: 8px 10px;
-    color: $blue;
-    content: "enclave";
-  }
-}
-
-.changelog-entry__product--gridiron::after {
-  border-color: $purple;
-  color: $purple;
-  content: "gridiron";
-}
 
 .changelog-entry__summary {
 

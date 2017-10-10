@@ -1,5 +1,5 @@
 .changelog-entry
-  %span.changelog-entry__product
+  %span.changelog-entry__product{ data: { product: post.data.product } }
   %span.changelog-entry__info
     %span.changelog-entry__date= display_date(post.data.posted)
     %span.changelog-entry__title= post.data.title
