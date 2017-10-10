@@ -239,9 +239,19 @@ layout: layout
                   .terminal &nbsp; aptible db:url HANDLE
                   .terminal &nbsp; aptible deploy [OPTIONS] [VAR1=VAL1] [VAR=VAL2] ...
                   .terminal &nbsp; aptible domains
+                  .terminal &nbsp; aptible endpoints:database:create DATABASE
+                  .terminal &nbsp; aptible endpoints:deprovision [--app APP | --database DATABASE] ENDPOINT_HOSTNAME
+                  .terminal &nbsp; aptible endpoints:https:create [--app APP] SERVICE
+                  .terminal &nbsp; aptible endpoints:https:modify [--app APP] ENDPOINT_HOSTNAME
+                  .terminal &nbsp; aptible endpoints:list [--app APP | --database DATABASE]
+                  .terminal &nbsp; aptible endpoints:renew [--app APP] ENDPOINT_HOSTNAME
+                  .terminal &nbsp; aptible endpoints:tcp:create [--app APP] SERVICE
+                  .terminal &nbsp; aptible endpoints:tcp:modify [--app APP] ENDPOINT_HOSTNAME
+                  .terminal &nbsp; aptible endpoints:tls:create [--app APP] SERVICE
+                  .terminal &nbsp; aptible endpoints:tls:modify [--app APP] ENDPOINT_HOSTNAME
                   .terminal &nbsp; aptible help [COMMAND]
                   .terminal &nbsp; aptible login
-                  .terminal &nbsp; aptible logs
+                  .terminal &nbsp; aptible logs [--app APP | --database DATABASE]
                   .terminal &nbsp; aptible operation:cancel OPERATION_ID
                   .terminal &nbsp; aptible ps
                   .terminal &nbsp; aptible rebuild
@@ -276,7 +286,17 @@ layout: layout
                   .terminal-interactive # Create a local tunnel to a database
                   .terminal-interactive # Display a database URL
                   .terminal-interactive # Deploy an app
-                  .terminal-interactive # Print an app's current virtual domains
+                  .terminal-interactive # Print an app's current virtual domains - DEPRECATED
+                  .terminal-interactive # Create a Database Endpoint
+                  .terminal-interactive # Deprovision an App or Database Endpoint
+                  .terminal-interactive # Create an App HTTPS Endpoint
+                  .terminal-interactive # Modify an App HTTPS Endpoint
+                  .terminal-interactive # List Endpoints for an App or Database
+                  .terminal-interactive # Renew an App Managed TLS Endpoint
+                  .terminal-interactive # Create an App TCP Endpoint
+                  .terminal-interactive # Modify an App TCP Endpoint
+                  .terminal-interactive # Create an App TLS Endpoint
+                  .terminal-interactive # Modify an App TLS Endpoint
                   .terminal-interactive # Describe available commands or one specific command
                   .terminal-interactive # Log in to Aptible
                   .terminal-interactive # Follows logs from a running app or database
