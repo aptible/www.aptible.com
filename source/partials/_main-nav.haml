@@ -1,4 +1,4 @@
-.nav--header.grid-container{ "data-state" => 'open'}
+.nav--header.grid-container{ "data-state" => 'closed'}
   %nav.nav-list.nav-list--left
     %a.nav-logo{ href: '/' }= partial 'partials/aptible-mark'
 
@@ -6,11 +6,14 @@
     = partial 'partials/nav-items'
 
   %nav.nav-list.nav-list--right
+    .nav--mobile
+      %a.btn.btn--outline.btn--outline--white.nav-btn--login{ href: dashboard_href } Login
+      %a.btn.nav-btn--signup{ href: open_account_href } Signup
     #nav-item--signup.nav-item= partial 'partials/ctas/signup-cta', locals: { |
-                  cta_label: 'Get Started',                              |
-                  cta_placeholder: 'Enter your work email',              |
-                  class_name: 'signup-cta--small signup-cta--no-border'  |
-                }                                                        |
+                       cta_label: 'Get Started',                              |
+                       cta_placeholder: 'Enter your work email',              |
+                       class_name: 'signup-cta--small signup-cta--no-border'  |
+                     }                                                        |
 
   %a.nav-toggle
     .nav-toggle__expand
