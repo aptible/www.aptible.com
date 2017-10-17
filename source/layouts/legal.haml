@@ -1,9 +1,6 @@
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
-    = partial 'partials/main-nav', locals: { |
-        section_title: 'Legal',              |
-        section_url: '/legal'                |
-      }                                      |
+    = partial 'partials/main-nav'
 
 = wrap_layout :layout do
   .content

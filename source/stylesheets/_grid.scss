@@ -41,7 +41,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0;
-  @media screen and (max-width: $max-viewport) {
+  @media screen and (max-width: 1200px) {
     padding: 0 20px;
   }
 }

@@ -68,6 +68,11 @@
 
 .btn--outline--white {
   border-color: $white;
+  transition-property: background-color;
+  &:focus, &:hover {
+    background-color: rgba(255,255,255,.05);
+    border-color: $white;
+  }
 }
 
 .btn--logo-grid {

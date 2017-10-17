@@ -1,28 +1,22 @@
-- signup ||= 'cta'
-- nav_items ||= 'partials/nav-items'
-.nav--flex.nav--header.grid-container
-  .nav-list--left
-    %a{ href: '/' }= partial 'partials/aptible-mark'
-    - if defined? section_title
-      %h2.aptible-mark__title
-        %a{ href: section_url }= section_title
+.nav--header.grid-container{ "data-state" => 'closed'}
+  %nav.nav-list.nav-list--left
+    %a.nav-logo{ href: '/' }= partial 'partials/aptible-mark'
+
+  %nav.nav-list.nav-list--center
+    = partial 'partials/nav-items'
+
+  %nav.nav-list.nav-list--right
+    .nav--mobile
+      %a.btn.btn--outline.btn--outline--white.nav-btn--login{ href: dashboard_href } Login
+      %a.btn.nav-btn--signup{ href: open_account_href } Signup
+    #nav-item--signup.nav-item= partial 'partials/ctas/signup-cta', locals: { |
+                       cta_label: 'Get Started',                              |
+                       cta_placeholder: 'Enter your work email',              |
+                       class_name: 'signup-cta--small signup-cta--no-border'  |
+                     }                                                        |
 
   %a.nav-toggle
     .nav-toggle__expand
       %span.nav-toggle__icon-bar
       %span.nav-toggle__icon-bar
       %span.nav-toggle__icon-bar
-
-  %nav.nav-list.nav-list--right
-    = partial nav_items
-
-    %a.nav-item{ href: dashboard_href } Login
-
-    - if signup == 'cta'
-      .nav-item= partial 'partials/ctas/signup-cta', locals: {            |
-                    cta_label: 'Get Started',                             |
-                    cta_placeholder: 'Enter your work email',             |
-                    class_name: 'signup-cta--small signup-cta--no-border' |
-                  }                                                       |
-    - else
-      %a.nav-item{ href: open_account_href } Signup

@@ -14,7 +14,7 @@
         %ul.footer-nav__list
           %li.footer-nav__section-title Developers
           %li
-            %a{href: '/support/'} Documentation
+            %a{href: "#{base_doc_url}/documentation/"} Documentation
           %li
             %a{href: '/resources/'} Resources
           %li
@@ -23,7 +23,9 @@
           %li
             %a{href: contact_href} Open a Ticket
           %li
-            %a{href: status_href} Status
+            %a{ href: status_href }
+              Status
+              %span.system-status
 
         %ul.footer-nav__list
           %li.footer-nav__section-title Company
@@ -47,7 +49,7 @@
         %ul.footer-nav__list
           %li.footer-nav__section-title Community
           %li
-            %a{href: community_href} Aptible Community
+            %a{href: community_href, rel: 'noopener noreferrer', target: '_blank'} Aptible Community
           %li
             %a.social-link{href: 'http://github.com/aptible', rel: 'noopener noreferrer', target: '_blank' } Github
           %li
@@ -60,5 +62,5 @@
         %p.aptible-footer__copy
           © 2017 Aptible
         %p.aptible-footer__copy
-          220 NW 8th Ave<br>Portland, OR 97209, United States<br>
-          +1 (866) 296-5003
+          220 NW 8th Ave<br>Portland, OR 97209<br>United States<br>
+          %a{ href: 'tel:18662965003' } +1 (866) 296-5003

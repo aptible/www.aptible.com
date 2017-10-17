@@ -74,6 +74,15 @@ a {
   &:hover {
     color: shade($blue, 25%);
   }
+  &[href^=tel] {
+    color: currentColor;
+    padding-bottom: .2em;
+    transition: border-bottom $base-duration $base-timing;
+    border-bottom: 1px dashed transparent;
+    &:hover, &:focus {
+      border-bottom: 1px dashed currentColor;
+    }
+  }
 }
 
 .document-title {
@@ -104,6 +113,12 @@ hr {
     font-size: 20px;
     line-height: 2;
     margin: 0 0 10px 0;
+  }
+
+  h4 {
+    color: $light-gray;
+    font-size: 18px;
+    font-weight: $semibold;
   }
 
   p {
