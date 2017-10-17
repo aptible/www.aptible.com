@@ -151,6 +151,13 @@ hr {
   max-width: 85%;
 }
 
+.heading--condensed {
+  max-width: 475px;
+  @media screen and (max-width: $tablet-portrait) {
+    max-width: 90%;
+  }
+}
+
 .summary--single-center {
   color: $light-blue-gray;
   font-size: 24px;
