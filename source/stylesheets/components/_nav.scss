@@ -342,9 +342,10 @@
 .nav-item__icon {
   display: inline-block;
   margin-right: 15px;
-  width: 59px;
+  vertical-align: top;
+  width: 60px;
   + .nav-item__meta {
-    width: calc(100% - 78px);
+    width: calc(100% - 80px);
   }
 }
 
