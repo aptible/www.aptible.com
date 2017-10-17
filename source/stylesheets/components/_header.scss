@@ -62,6 +62,10 @@
   @extend .with-hr
 }
 
+.heading__title--no-hr {
+  &::after { display: none; }
+}
+
 .heading__title--centered {
   color: $white;
   font-size: 40px;

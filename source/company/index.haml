@@ -1,28 +1,35 @@
 ---
-title: About Aptible
+title: About
 ---
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled.aptible-header--bottom-grid
+  %header.aptible-header.hero-gradient--angled
     = partial 'partials/main-nav'
-
-    .grid-container
-      %h3.heading__subtitle Our Mission
-      %h2.heading__title
-        We help our customers work safely with the most meaningful,
-        sensitive data in highly regulated industries.
+    .about-heading.heading--single-center.heading--condensed
+      %h1.heading__title.heading__title--no-hr.heading__title--centered
+        About Us
+      %p.heading__summary--single-center.heading__summary--light-blue-gray
+        Aptible is a distributed company that helps developers secure data and applications online.
 
 .content
-  .grid-container.grid--single-center
+  .grid-container.grid--2up
     .grid-item.grid-item--adjacent
+      %h2.heading Who We Are
+  .grid-container.grid--2up
+    .grid-item
+      %p.summary
+        Aptible was founded in 2013 with the goal of creating a more secure internet by helping developers excel at data security and compliance.
+      %p.summary
+        The Internet is radically transforming massive sectors of the global economy, like healthcare, industry, agriculture, and banking. In the process, more sensitive data is moving online, and, as we are constantly reminded, data security is hard.
+      %p.summary
+        Aptible builds tools that help developers implement data security best practices and enforce compliance requirements.
+      %p.summary
+        Aptible works closely with thousands of developers at hundreds of companies, including many startups. The Aptible team is fully remote and is made up of engineers, lawyers, and security and operations experts. Aptible’s investors include Y Combinator, Rock Health, Maverick, WTI, and GGV Capital.
+    .grid-item
+      %img{ src: '/images/company/aptible-team-portrait.jpg', style: ""}
+
+  .grid-container
+    .grid-item
       %h2.heading--single-center
         Help build the future of privacy and security on the web.
-
-      %p.summary--single-center
-        We are transforming the experience of building private, secure
-        software systems in regulated industries. We started in digital
-        health because the American healthcare system is broken and we want to
-        empower those who can fix it. We're now working with companies of all industries to secure sensitive data. If you want to make a meaningful
-        difference, join our team.
-
-  .openings.grid-container.grid--3up
-    = partial 'loading-indicator'
+      .openings.grid-container.grid--2up
+        = partial 'loading-indicator'
