@@ -61,6 +61,8 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
               %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_containers }
                 App &amp; Database Containers
                 %span.price-calc__help-tip ?
+                <br>
+                %input{ type: 'checkbox', "data-type" => "managed-hids" } with Managed HIDS
             .price-calc__unit__price $0.08/GB/hour
 
           .price-calc__unit__estimate
@@ -151,7 +153,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
         .price-calc__unit.price-calc__unit--vpn-connections
           .price-calc__unit__header
             %h4.price-calc__unit__title VPN Connections
-            .price-calc__unit__price $99.00/connection/month
+            .price-calc__unit__price $99/connection/month
 
           .price-calc__unit__estimate
             .price-calc__unit__slider
