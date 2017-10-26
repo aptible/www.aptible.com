@@ -1,0 +1,87 @@
+---
+title: Contact Sales
+---
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
+
+.content
+  .grid-container
+    .centered-header.page-header-basic
+      %h1 Get in touch
+      %h2.page-header-basic__sub
+        Let us know how to reach you and what we can help with
+
+    %form.basic-form.contact-sales{"accept-charset" => "UTF-8", action: "https://formkeep.com/f/f54ed61d5253", method: "POST"}
+      %input{ type: 'hidden', name: '_redirect_url', value: base_url }
+      %input{ type: 'hidden', name: 'event', value: 'gridiron-demo-request' }
+      %input{ type: 'text', name: 'form-name', value: 'Contact Sales', style: 'display: none;' }
+      .grid-container.grid--2up
+        .grid-item
+          .floating-label
+            %label
+              Your Work Email
+            %input.input{ type: "email", required: true, name: 'email' }
+            .placeholder
+              Your Work Email
+        .grid-item
+          .floating-label
+            %label
+              Your Phone Number
+            %input.input{ type: "tel", required: true, name: 'phone-number' }
+            .placeholder
+              Your Phone Number
+      .grid-container.grid--2up
+        .grid-item
+          .floating-label
+            %label
+              First & Last Name
+            %input.input{ type: "text", required: true, name: 'name' }
+            .placeholder
+              First & Last Name
+        .grid-item
+          .floating-label
+            %label
+              Company Name
+            %input.input{ type: "text", name: 'company-name' }
+            .placeholder
+              Company Name
+      .grid-container.grid--1up
+        .grid-item
+          .floating-label
+            %label
+              How can we help?
+            %textarea.input{ name: 'how-can-we-help' }
+            .placeholder
+              How can we help?
+      .grid-container.grid--2up
+        .grid-item
+          .form-action
+            %div.opt-in-wrapper
+              .custom-checkbox
+                %input#request-demo-of{ type: 'checkbox' }
+                %label{ for: 'request-demo-of' }
+                  = partial '/images/icons/checkbox.svg'
+                  Yes, I would like to schedule a demo of
+              .custom-select
+                .custom-select__link{ tabindex: 0 }
+                  Both Enclave & Gridiron
+                %input.custom-select__input{ type: 'hidden', readonly: true, value: 'Both Enclave & Gridiron' }
+                .custom-select__menu
+                  .custom-select__item{ tabindex: 0 }
+                    Enclave
+                  .custom-select__item{ tabindex: 0 }
+                    Gridiron
+                  .custom-select__item{ tabindex: 0 }
+                    Both Enclave & Gridiron
+            %div
+              %button.btn--lg.btn--full-tablet
+                Contact Aptible
+        .grid-item
+          .card--blue
+            If you'd rather speak with someone on the phone, give us a call at&nbsp;
+            %a{ href: "tel:1-866-296-5003" } (866) 296-5003
+
+  .grid-container.grid--single-center
+    .grid-item
+      = partial 'customer-logo-grid'

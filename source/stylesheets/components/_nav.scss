@@ -257,6 +257,7 @@
   &:hover {
     & + .nav-list__child-nav {
       display: block;
+      z-index: 99;
     }
   }
 }
@@ -270,9 +271,9 @@
   position: absolute;
   transform: translate(-153px,0);
   width: 352px;
-  z-index: 1;
   &:active, &:hover, &:focus {
     display: block;
+    z-index: 99;
   }
 }
 .nav-list__child-nav--developers {

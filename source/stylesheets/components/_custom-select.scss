@@ -1,0 +1,42 @@
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select__link {
+  border-bottom: 1px dashed $dark-blue-steel;
+  color: $dark-blue-steel;
+  cursor: pointer;
+  font-weight: normal;
+  transition: background .25s ease-in-out;
+  &:hover, &:focus {
+    background-color: $light-blue;
+    outline: none;
+  }
+}
+
+.custom-select__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 230px;
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.12);
+
+  &.active {
+    display: block;
+  }
+}
+
+.custom-select__item {
+  cursor: pointer;
+  padding: 4px 18px;
+  &:hover, &:focus {
+    background-color: $light-blue;
+    outline: none;
+  }
+}

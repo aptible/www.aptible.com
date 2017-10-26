@@ -50,6 +50,12 @@
   width: 100%;
 }
 
+.btn--full-tablet {
+  @media screen and (max-width: $tablet-portrait) {
+    width: 100%;
+  }
+}
+
 .btn--outline {
   border: 1px solid $action-color;
   background-color: transparent;
@@ -77,6 +83,12 @@
 
 .btn--logo-grid {
   margin-top: 60px;
+}
+
+.btn--lg {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 14px;
 }
 
 .arrow-link--left, .arrow-link--right {

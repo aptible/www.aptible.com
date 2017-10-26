@@ -73,6 +73,12 @@ body {
   }
 }
 
+.grid--1up {
+  .grid-item {
+    @include grid-column(12);
+  }
+}
+
 .grid--2up {
   .grid-item {
     @include grid-column(6);
@@ -89,6 +95,7 @@ body {
   .grid-item--small {
     @media screen and (max-width: $tablet-portrait) {
       @include grid-column(12);
+      margin-left: 0;
     }
   }
   > .card {

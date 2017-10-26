@@ -1,0 +1,49 @@
+.contact-sales {
+  margin: 0 auto 50px;
+  max-width: 860px;
+
+  .form-action {
+    margin-bottom: 0.75em;
+  }
+
+  .opt-in-wrapper {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    transform: translateY(-6px);
+
+    @media screen and (max-width: $tablet-portrait) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .custom-checkbox {
+    display: inline-block;
+    margin-left: -40px;
+
+    label {
+      margin-right: 4px;
+      line-height: 1.8;
+    }
+  }
+
+  .custom-select {
+    line-height: 1.8;
+  }
+
+  .custom-select__link {
+    padding: 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .grid-container .grid-item {
+    @media screen and (max-width: $tablet-portrait) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}

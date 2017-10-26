@@ -15,6 +15,11 @@ label {
   display: block;
   font-weight: 600;
   margin-bottom: $small-spacing / 2;
+
+  &.checkbox,
+  &.radio {
+    font-weight: normal;
+  }
 }
 
 input,

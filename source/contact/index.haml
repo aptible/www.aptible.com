@@ -1,0 +1,30 @@
+---
+title: Contact Us
+---
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
+
+.content
+  .grid-container
+    .centered-header.page-header-basic
+      %h1 Contact us
+      %h2.page-header-basic__sub
+        We're ready to help.
+        Let us know what questions you have and we'll get back to you ASAP.
+
+    .contact-cards
+      .grid-container.grid--2up
+        %a.grid-item.card.card--animated{ href: '/contact/sales' }
+          .card__title.card__title--centered
+            Contact Sales
+          .card__body.card__body--centered
+            Request a product demo or ask how we can help with your
+            security and compliance requirements.
+
+        %a.grid-item.card.card--animated{ href: contact_href }
+          .card__title.card__title--centered
+            Contact Support
+          .card__body.card__body--centered
+            Talk with our Support Engineering Team for assistance with
+            Enclave or Gridiron.
