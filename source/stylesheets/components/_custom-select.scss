@@ -4,10 +4,14 @@
 }
 
 .custom-select__link {
-  color: $dark-blue-steel;
-  font-weight: normal;
   border-bottom: 1px dashed $dark-blue-steel;
+  color: $dark-blue-steel;
   cursor: pointer;
+  font-weight: normal;
+  &:hover, &:focus {
+    background-color: $light-blue;
+    outline: none;
+  }
 }
 
 .custom-select__menu {
@@ -30,8 +34,8 @@
 .custom-select__item {
   cursor: pointer;
   padding: 4px 18px;
-
-  &:hover {
+  &:hover, &:focus {
     background-color: $light-blue;
+    outline: none;
   }
 }

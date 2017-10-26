@@ -13,12 +13,12 @@
     font-size: 10px;
     font-weight: normal;
     opacity: 0;
-    transition: all .2s ease;
+    transition: all .2s ease-in-out;
 
     &.fl--is-active {
       z-index: 2;
       opacity: 1;
-      transform: translate3d(0, 14px, 0);
+      transform: translate3d(0, 10px, 0);
     }
   }
 
@@ -26,7 +26,7 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    transition: all .2s ease;
+    transition: all .2s ease-in-out;
 
     &.fl--is-active {
       padding-top: 1.4em;
@@ -35,6 +35,7 @@
   }
 
   & > .placeholder {
+    background-color: $white;
     position: absolute;
     z-index: 1;
     left: 16px;
@@ -43,7 +44,7 @@
     color: $light-sky-blue;
     opacity: 1;
     pointer-events: none;
-    transition: all .2s ease;
+    transition: all .2s ease-in-out;
 
     &.fl--is-active {
       opacity: 0;

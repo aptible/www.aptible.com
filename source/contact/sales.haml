@@ -57,25 +57,26 @@ title: Contact Sales
           .form-action
             %div.opt-in-wrapper
               .custom-checkbox
-                %input#opt-in{:type => "checkbox"}
-                %label{:for => "opt-in"}
+                %input#request-demo-of{ type: 'checkbox' }
+                %label{:for => 'request-demo-of'}
+                  = partial '/images/icons/checkbox.svg'
                   Yes, I would like to schedule a demo of
               .custom-select
-                .custom-select__link{:tabindex => "0" }
+                .custom-select__link{ tabindex: 0 }
                   Both Enclave & Gridiron
-                %input.custom-select__link{:type => "hidden", :readonly => true, :value => "Both Enclave & Gridiron"}
+                %input.custom-select__input{ type: 'hidden', readonly: true, value: 'Both Enclave & Gridiron' }
                 .custom-select__menu
-                  .custom-select__item
+                  .custom-select__item{ tabindex: 0 }
                     Enclave
-                  .custom-select__item
+                  .custom-select__item{ tabindex: 0 }
                     Gridiron
-                  .custom-select__item
+                  .custom-select__item{ tabindex: 0 }
                     Both Enclave & Gridiron
             %div
               %button.btn--lg.btn--full-tablet
                 Contact Aptible
         .grid-item
-          .alert--blue
+          .card--blue
             If you’re looking for sales or tech support then please give us a call at
             = succeed "." do
               %a{:href => "tel:1-866-296-5003"} (866) 296-5003

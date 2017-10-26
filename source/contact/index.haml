@@ -9,18 +9,16 @@ title: Contact
   .grid-container
     .centered-header.page-header-basic
       %h1 How can we help you?
-      %h2.page-header-basic__sub
-        Choose a category below to email the support team so we can get back to you as quickly as possible.
 
     .contact-cards
       .grid-container.grid--2up
-        %a.grid-item.card{:href => "/contact/sales"}
+        %a.grid-item.card.card--animated{ href: '/contact/sales' }
           .card__title.card__title--centered
             Contact Sales
           .card__body.card__body--centered
-            Ask about our Business tier products, pricing, or request a demo.
-        %a.grid-item.card{:href => "http://contact.aptible.com"}
+            Request a product demo or ask sales questions.
+        %a.grid-item.card.card--animated{ href: 'http://contact.aptible.com' }
           .card__title.card__title--centered
             Contact Support
           .card__body.card__body--centered
-            Issues with setting up a source or destination.
+            Existing customers can report issues or request support.

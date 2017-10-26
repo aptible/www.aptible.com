@@ -6,7 +6,7 @@
   padding: 50px 25px;
 }
 
-a.card {
+.card--animated {
   transition: all .2s ease;
 
   &:hover {
@@ -142,5 +142,31 @@ a.card {
     display: block;
     margin-top: 15px;
     background-color: $dark-gray;
+  }
+}
+
+.card--blue {
+  background: $lighter-blue;
+  border-radius: 4px;
+  border: 1px solid $light-sky-blue;
+  font-size: 18px;
+  padding: 30px;
+
+  a {
+    border-bottom: 1px dashed $dark-blue-steel;
+    color: $dark-blue-steel;
+    font-weight: $semibold;
+  }
+}
+
+.contact-cards {
+  .grid-item {
+    min-height: auto;
+
+    @media screen and (max-width: $tablet-portrait) {
+      left: auto;
+      margin-left: 0;
+      width: 100%;
+    }
   }
 }

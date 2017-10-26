@@ -6,16 +6,13 @@
 
   input,
   textarea {
-    padding: 1em;
-    font-size: 14px;
     border-color: $light-sky-blue;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 1em;
 
-    &:focus,
-    &:hover {
+    &:focus, &:hover {
       border-color: $blue;
-    }
-
-    &:focus {
       box-shadow: none;
     }
   }
@@ -34,36 +31,47 @@
   }
 }
 
-.custom-checkbox {
-  position: relative;
 
+.checkbox-svg__box {
+  stroke: $light-sky-blue;
+  stroke-width: 1px;
+  transition: stroke .25s ease-in-out;
+}
+.checkbox-svg__check {
+  stroke: $blue;
+  stroke-dasharray: 16;
+  stroke-dashoffset: 16;
+  stroke-width: 2px;
+  transition: stroke-dashoffset .1s ease-out;
+}
+
+.custom-checkbox {
   input[type="checkbox"] {
-    position: absolute;
-    top: 0;
     left: 0;
     opacity: 0;
-
+    position: absolute;
+    top: 0;
     &:focus {
       outline: none;
     }
   }
 
-  input[type="checkbox"] + label {
-    padding-left: 40px;
+  label {
     font-weight: normal;
     background: #fff image-url('icons/checkbox-unchecked.svg') top left no-repeat;
     cursor: pointer;
   }
 
-  input[type="checkbox"]:focus + label {
-    background-image: image-url('icons/checkbox-unchecked-focus.svg');
+  .checkbox-svg {
+    display: inline;
+    margin-right: 5px;
+    transform: translateY(6px);
   }
 
-  input[type="checkbox"]:checked + label {
-    background-image: image-url('icons/checkbox-checked.svg');
+  input:focus + label .checkbox-svg__box {
+    stroke: $blue;
   }
-
-  input[type="checkbox"]:checked:focus + label {
-    background-image: image-url('icons/checkbox-checked-focus.svg');
+  input:checked + label .checkbox-svg__check {
+    stroke-dashoffset: 0;
   }
 }

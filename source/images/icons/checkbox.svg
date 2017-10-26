@@ -1,0 +1,6 @@
+<svg class="checkbox-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd" stroke="#000000">
+    <rect class="checkbox-svg__box" width="22" height="22" x="1" y="1" rx="2"/>
+    <polyline class="checkbox-svg__check" stroke-linecap="round" stroke-linejoin="round" points="7.276 13.358 10.919 16.56 16.174 7.374"/>
+  </g>
+</svg>

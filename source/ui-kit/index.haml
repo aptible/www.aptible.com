@@ -1,0 +1,19 @@
+---
+title:   'UI Kit'
+section: 'ui-kit'
+slug:    'ui-kit'
+---
+
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
+    .about-heading.heading--single-center.heading--condensed
+      %h1.heading__title.heading__title--no-hr.heading__title--centered
+        Aptible Marketing UI Kit
+      %p.heading__summary--single-center.heading__summary--light-blue-gray
+        Components and documentation for building marketing pages
+
+.content
+  .grid-container
+    .grid-item
+      = partial 'images/icons/checkbox.svg'

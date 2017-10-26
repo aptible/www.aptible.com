@@ -7,8 +7,9 @@
 
   .opt-in-wrapper {
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-left: 40px;
+    transform: translateY(-6px);
 
     @media screen and (max-width: $tablet-portrait) {
       margin-bottom: 40px;

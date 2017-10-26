@@ -67,7 +67,7 @@
 }
 
 .newsletter-signup--blog {
-  @include alert--blue;
+  @extend .card--blue;
 
   display: flex;
   margin-bottom: 120px;
@@ -84,6 +84,11 @@
 .newsletter-signup--blog__intro {
   line-height: 1.5;
   text-align: left;
+  margin-right: 40px;
+  p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
   @media screen and (max-width: 750px) {
     margin-bottom: 20px;
   }

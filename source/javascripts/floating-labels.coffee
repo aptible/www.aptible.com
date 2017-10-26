@@ -1,6 +1,6 @@
 $.fn.extend floatingLabel: (_options) ->
-  $(this).each ->
-    $this = $(this)
+  $(@).each ->
+    $this = $(@)
     $input = $this.find('.input')
     $label = $this.find('label, .placeholder, .input')
     $input.keyup (e) ->
@@ -12,4 +12,5 @@ $.fn.extend floatingLabel: (_options) ->
       return
     return
   return
-$('.floating-label').floatingLabel()
+
+$ -> $('.floating-label').floatingLabel()
