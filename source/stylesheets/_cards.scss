@@ -156,6 +156,11 @@
     border-bottom: 1px dashed $dark-blue-steel;
     color: $dark-blue-steel;
     font-weight: $semibold;
+    transition: background .25s ease-in-out;
+    &:focus {
+      background-color: $light-blue;
+      outline: none;
+    }
   }
 }
 

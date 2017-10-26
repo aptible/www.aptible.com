@@ -8,6 +8,7 @@
   color: $dark-blue-steel;
   cursor: pointer;
   font-weight: normal;
+  transition: background .25s ease-in-out;
   &:hover, &:focus {
     background-color: $light-blue;
     outline: none;
