@@ -31,7 +31,7 @@ Databases are built from standardized images and run in private subnets, inacces
 
 The Dockerfiles we use to build database images are open source and [available on GitHub](https://github.com/aptible). If you don't see the one you want, you can [build a custom database using our specification](/support/topics/paas/deploy-custom-database/).
 
-Please see our [Reference Architecture diagram](/resources/enclave-reference-architecture-and-division-of-responsibilities), and [contact us](https://www.aptible.com/company/contact/) if you have questions.
+Please see our [Reference Architecture diagram](/resources/enclave-reference-architecture-and-division-of-responsibilities), and [contact us](/contact/) if you have questions.
 
 **What AWS regions is Aptible available in?**
 
@@ -47,7 +47,7 @@ We only pass encrypted data through load balancers. SSL/TLS is terminated on the
 
 **I work for a national MSP. I'm a certified AWS Cloud Solution Architect. I have a customer in the healthcare vertical that would benefit from moving certain workloads to AWS. Is Aptible willing to partner?**
 
-Yes, we frequently work with technical partners. Please [contact us](https://www.aptible.com/company/contact/).
+Yes, we frequently work with technical partners. Please [contact us](/contact/).
 
 **Will Aptible and AWS sign Business Associate Agreements?**
 

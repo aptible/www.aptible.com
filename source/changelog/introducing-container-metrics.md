@@ -65,4 +65,4 @@ I hope this example gives you an idea of how you can use Container Metrics to ke
   [0]: /images/blog/introducing-container-metrics/memory.png
   [1]: /images/blog/introducing-container-metrics/ui.png
   [2]: /images/blog/introducing-container-metrics/scaling.png
-  [3]: http://contact.aptible.com
+  [3]: /contact/
