@@ -52,4 +52,4 @@ You may want to still build an app from scratch upon deploy, but would like to s
 
 As usual, we would love to hear your feedback! If you have any questions or comments, [please let us know][0]!
 
-[0]: http://contact.aptible.com/
+[0]: /contact/

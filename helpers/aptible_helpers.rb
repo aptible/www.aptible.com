@@ -79,7 +79,6 @@ module AptibleHelpers
   end
 
   def contact_href
-    # 'https://aptible.zendesk.com/hc/en-us/requests/new'
     'http://contact.aptible.com'
   end
 

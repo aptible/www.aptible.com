@@ -8,7 +8,7 @@ posted: 2015-10-27
 section: Blog
 type: blog post
 ---
-*This is the second in a series of blog posts exploring the state of the digital health landscape from a technical perspective.  Our first post on [popular languages](https://www.aptible.com/blog/most_popular_languages_in_digital_health.html) has already proven to be one of our most read blog posts.  If there are other analysis you would like to see on the state of digital health, please get [in touch](https://www.aptible.com/company/contact/)*
+*This is the second in a series of blog posts exploring the state of the digital health landscape from a technical perspective.  Our first post on [popular languages](https://www.aptible.com/blog/most_popular_languages_in_digital_health.html) has already proven to be one of our most read blog posts.  If there are other analysis you would like to see on the state of digital health, please get [in touch](/contact/)*
 
 One of the things we have noticed in working with a variety of digital health companies is that there is much more willingness to explore database technologies when architechting a new application.  While developing in a new language typically takes a serious investment and will greatly slow initial progress, a different database variant may present lots of benefits with a minimal learning curve.  As such, I expect we'll see some interesting trends emerge as we repeat this survey over the coming months and years.
 

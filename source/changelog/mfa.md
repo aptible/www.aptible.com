@@ -24,4 +24,4 @@ When you enable 2FA, you get emergency backup codes, in case your device is lost
 As usual, we'd love to hear your feedback! If you have any questions or comments, [please let us know][1]!
 
   [0]: https://support.google.com/accounts/answer/1066447?hl=en
-  [1]: http://contact.aptible.com/
+  [1]: /contact/

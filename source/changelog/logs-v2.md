@@ -31,4 +31,4 @@ If you have any questions or feedback about this new feature, [please let us kno
   [1]: https://github.com/aptible/aptible-cli
   [2]: /support/topics/cli/how-to-view-app-logs/
   [3]: https://github.com/aptible/aptible-cli#installation
-  [4]: http://contact.aptible.com/
+  [4]: /contact/

@@ -54,4 +54,4 @@ Enjoy! As usual, [let us know if you have any feedback][7].
   [4]: /support/topics/paas/how-to-modify-nginx-config/  
   [5]: https://www.ssllabs.com/ssltest/  
   [6]: /images/blog/managed-https/ssl_labs.png  
-  [7]: http://contact.aptible.com  
+  [7]: /contact/
