@@ -1,6 +1,7 @@
 - resource = current_page.data
 - @title = resource.title
 - @description = resource.meta_description || resource.snippet
+- ref_doc = if resource.documents.length == 1 then resource.documents[0] else nil end
 
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
@@ -23,7 +24,11 @@
 
         - if resource.cover_image
           .resource-article__cover-image{ style: "background-image: url(#{resource.cover_image.url})" }
-            %img{ src: resource.cover_image.url }
+            - if ref_doc
+              %a{ href: ref_doc.path, title: ref_doc.title, target: '_blank', rel: 'noopener noreferrer' }
+                %img{ src: resource.cover_image.url }
+            - else
+              %img{ src: resource.cover_image.url }
 
         - if resource.webinar_video_link
           %p.text-center

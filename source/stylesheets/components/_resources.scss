@@ -229,6 +229,9 @@
   img {
     visibility: hidden;
   }
+  a {
+    display: block;
+  }
 }
 
 //
@@ -269,6 +272,7 @@
     position: absolute;
     text-align: center;
     text-transform: uppercase;
+    transition: color .25s ease-in-out;
     width: 100%;
   }
   svg {
