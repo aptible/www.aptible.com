@@ -1,7 +1,7 @@
 - resource = current_page.data
 - @title = resource.title
 - @description = resource.meta_description || resource.snippet
-- ref_doc = if resource.documents.length == 1 then resource.documents[0] else nil end
+- ref_doc = if resource.documents && resource.documents.length == 1 then resource.documents[0] else nil end
 
 - content_for :header do
   %header.aptible-header.hero-gradient--angled
