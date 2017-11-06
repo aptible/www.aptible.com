@@ -596,7 +596,7 @@
 - loc: "/training/"
   url: "/"
 - loc: "/assets/aptible-enclave-division-of-responsibilities.pdf"
-  url: "/resources/enclave-reference-architecture/"
+  url: "/assets/aptible-enclave-security-division-of-responsibilities.pdf"
 - loc: "/resources/enclave-reference-architecture-and-division-of-responsibilities/"
   url: "/resources/enclave-reference-architecture/"
 - loc: "/resources/enclave-reference-architecture-division-of-responsibilities/"
