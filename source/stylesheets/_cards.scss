@@ -175,3 +175,68 @@
     }
   }
 }
+
+.img-card {
+  min-width: 360px;
+  max-width: 360px;
+  &:nth-of-type(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 1130px) {
+    &:nth-of-type(2) {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    &:nth-of-type(2) {
+      margin-left: 0;
+    }
+  }
+}
+
+.img-card__image {
+  align-items: center;
+  background-image: url(/images/grid-bg-fade.png),
+                    linear-gradient(180deg, #172231 0%, #172231 20%, #421832 100%);
+  background-position: 50% 25%;
+  background-size: 300% 300%, 100%;
+  border-radius: 4px;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 360px;
+}
+
+.img-card__image--free {
+  height: 230px;
+  width: 360px;
+}
+
+.img-card__title {
+  color: $dark-blue-steel;
+  font-size: 18px;
+  font-weight: $light;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.img-card__copy {
+  color: $light-blue-gray;
+  font-size: 14px;
+  font-weight: $light;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.img-card__link {
+  color: $blue;
+  font-size: 16px;
+  font-weight: $regular;
+  text-align: left;
+  .arrow-link--right {
+    display: block;
+  }
+}

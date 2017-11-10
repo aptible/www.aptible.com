@@ -1,0 +1,119 @@
+.comparison-table {
+  background: #273143;
+  background-image: url('/images/dusk-pix.svg');
+  background-position: top center;
+  background-repeat: repeat-y;
+  border-radius: 5px;
+  margin: 0 auto 75px auto;
+  padding: 15px 20px 20px;
+  max-width: 975px;
+
+  @media screen and (max-width: 550px) {
+    .comparison-feature__body {
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 20px 20px;
+    }
+    .comparison-feature__point {
+      padding: 0;
+      width: auto;
+    }
+    .comparison-feature__vs {
+      margin: 5px;
+    }
+  }
+
+  .aws-logo {
+    height: 40px;
+    width: auto;
+  }
+
+  .aws-logo__cubes {
+    path, polygon {
+      fill: #fae000;
+    }
+  }
+
+  .aws-logo__name {
+    path, polygon {
+      fill: $white;
+    }
+  }
+
+  .aptible-mark {
+    height: auto;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    width: 100px;
+  }
+}
+
+.comparison-table__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comparison-option {
+  width: 50%;
+}
+
+.comparison-option__title {
+  color: $white;
+  font-size: 14px;
+  font-weight: $semibold;
+}
+
+.comparison-feature {
+  background: #2b364a;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.05);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.comparison-feature__title {
+  background-color: #222c3e;
+  color: $sky-blue;
+  font-size: 12px;
+  font-weight: $semibold;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.comparison-feature__body {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px 20px;
+}
+
+.comparison-feature__point {
+  color: $blue-steel;
+  flex-grow: 1;
+  font-size: 14px;
+  font-weight: $regular;
+  padding: 0 20px;
+  text-align: center;
+  width: 48%;
+}
+
+.comparison-feature__vs {
+  color: $dark-blue;
+  font-weight: $semibold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 4%;
+}
+
+.comparison-feature__automated {
+  color: $green;
+  font-weight: $semibold;
+}

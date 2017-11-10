@@ -1,125 +1,358 @@
 ---
-title:  Container Orchestration Platform with Built-in Security Controls for Complying with HIPAA, ISO 27001, SOC 2, NIST 800-53, and many others - Aptible Enclave&reg;
+title:  Container Orchestration Platform with Built-in Security Controls for Complying with HIPAA, ISO 27001, SOC 2, NIST 800-53, and many others - Aptible Enclave®
 description: Aptible Enclave is a container orchestration platform built for developers that automates security best practices and controls needed for deploying and scaling Dockerized apps in regulated industries.
-
 ---
+
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled.aptible-header--with-breadcrumbs.aptible-header--bottom-grid
+  %header.aptible-header.enclave-hero
     = partial 'partials/main-nav'
 
-    .enclave-hero.grid-container.grid--2up.aptible-header__bottom
-      .home-hero.grid-collapse
-        .home-hero__copy
-          .enclave-hero__copy
-            %h2.enclave-hero__subtitle Enclave
-            %h1.enclave-hero__title
-              Container orchestration for regulated industries
-            %p.enclave-hero__summary
-              Deploy and scale apps using a developer workflow you'll love.
-            %p.enclave-hero__summary
-              Enclave automatically implements the security controls you need to
-              achieve regulatory compliance and pass customer audits.
+    .grid-container.grid--2up-flex
+      .grid-item
+        .enclave-hero__copy
+          %h2.enclave-hero__subtitle Enclave
+          %h1.enclave-hero__title
+            Container orchestration for regulated industries
+          %p.enclave-hero__summary
+            Deploy and scale apps using a developer workflow you'll love.
+            Enclave automatically implements the security controls you need to
+            achieve regulatory compliance and pass customer audits.
 
-          = partial 'partials/ctas/signup-cta', locals: { |
-                cta_placeholder: 'Enter your work email'  |
-              }                                           |
-          = partial 'partials/signup-demo-request'
+        = partial 'partials/ctas/signup-cta', locals: { |
+              cta_label: 'Sign Up Now',                 |
+              cta_placeholder: 'Enter your work email'  |
+            }                                           |
 
-        .home-hero__quotes
-          .home__customer-quotes
-            .card.card--dark
-              .customer-quote__logo
-                %img{ src: '/images/customers/pager.png' }
-              .customer-quote
-                “Aptible provides us a robust and secure platform to build our
-                technology on. It's alleviated pain points with HIPAA compliance
-                and saved us tons of money and time.”
-              .customer-quote__author Sameer Khanna - VP of Engineering
+        %li.signup-cta__incentive
+          %a{ href: '/documentation/' } Explore the Docs
+          or
+          %a{ href: '/contact/sales/' } Request a Demo
 
-    .enclave-hero__terminal
-      %pre.highlight.plaintext
-        %table.rouge-table
-          %tr
-            %td.rouge-code.rouge-code--no-num.rouge-code--terminal
-              .terminal $ aptible login
-              .terminal-interactive Email: osvaldo@aptible.com
-              .terminal-interactive Password:
-              .terminal-interactive 2FA Token: 555999
-              .terminal-response Success! Token written to $HOME/.aptible/tokens.json
+      .grid-item
+        = partial 'enclave/carousel', locals: { css_class: 'enclave-carousel--compact' }
 
-    .home__customers.aptible-header--angled
-      .grid-container.grid--single-center
-        %h2.home__customers__title
-          Enclave helps these companies to deploy, scale and keep their apps,
-          databases and network architecture secure.
+    .angled-section-divider--left
+      = partial('/images/section-dividers/angle-bg-left.svg')
 
-        .home__customers-logos
-          .home__customers-logo
-            = partial '/images/customers/ucsf.svg'
-          .home__customers-logo.home__customers-logo--spectra
-            = image_tag 'customers/spectra-sky.png'
-          .home__customers-logo
-            = partial '/images/customers/everplans.svg'
-          .home__customers-logo.home__customers-logo--healthify
-            = partial '/images/customers/healthify.svg'
-          .home__customers-logo.home__customers-logo--1bios
-            = partial '/images/customers/1bios.svg'
-        %a.btn{ href: '/customers/' } Learn how these companies use Enclave
+.content.enclave__trusted-by
+  .grid-container.grid--single-center.grid-item--adjacent
+    %h2.title.sky-blue Trusted by those innovating in regulated industries
+    .healthcare-systems
+      .healthare-system.healthare-system--va
+        = partial '/images/healthcare-systems/va.svg'
+      .healthare-system.healthare-system--mayo
+        = partial '/images/healthcare-systems/mayoclinic.svg'
+      .healthare-system.healthare-system--stanford
+        = partial '/images/healthcare-systems/stanfordmed.svg'
+      .healthare-system.healthare-system--johnshopkins
+        = partial '/images/healthcare-systems/johnshopkinsmed.svg'
+      .healthare-system.healthare-system--kaiser
+        = partial '/images/healthcare-systems/kaiserpermanente.svg'
+      .healthare-system.healthare-system--uhc
+        = partial '/images/healthcare-systems/uhc.svg'
 
-.content.hero-dark.enclave-intro.aptible-header--bottom-grid
-  .grid-container.grid--single-center
-    .enclave-demo.grid-item.grid-item--adjacent
-      %h2.heading__title--centered
-        Deploy your apps and databases securely
-
-  .grid-container.meet-enclave
-    .grid-item.grid-item--one-third.meet-enclave__copy
-      %h3.meet-enclave-title
-      .meet-enclave-steps
-        .meet-enclave-step__item
-          Create and configure apps and databases directly from the
-          %a{ href: "/support/toolbelt"} Aptible command line interface
-        .meet-enclave-step__item
-          Deploy with <code>git push</code>
-        .meet-enclave-step__item
-          Your app is running securely with zero-downtime deployment and
-          streaming logs available
-
-      %a.btn{ href: '/aws-vs-aptible/' } Compare to DIY with AWS
-
-    .grid-item.grid-item--two-thirds.meet-enclave__terminal
-      %pre.highlight.plaintext
-        %table.rouge-table.rouge-table--full-width
-          %tr
-            %td.rouge-code.rouge-code--no-num.rouge-code--terminal
-              .terminal $ aptible apps:create healthco-on-rails
-              .terminal-interactive <span class="terminal-response">INFO: Authorizing...</span>
-              .terminal-interactive <span class="terminal-response">INFO: healthco-on-rails created successfully.</span>
-              .terminal &nbsp;
-              .terminal &nbsp;
-              .terminal $ git remote add aptible git@beta.aptible.com:healthco-on-rails.git
-              .terminal $ git push aptible master
-              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Authorizing...</span>
-              .terminal-interactive remote: <span class="terminal-response">(8ミ | INFO: Deploy succeeded.</span>
-              .terminal &nbsp;
-              .terminal &nbsp;
-              .terminal $ aptible logs --app healthco-on-rails
-              .terminal-interactive Connected to logs from log-tail-feelsgoodman
-              .terminal-response 2016-10-01T16:39:17.720Z [healthco-on-rails-web] => Booting WEBrick
-              .terminal-response 2016-10-01T16:39:17.722Z [healthco-on-rails-web] => Rails 4.2.7.1 application starting in production on http://0.0.0.0:3000
-              .terminal-response 2016-10-01T16:39:18.364Z [healthco-on-rails-web] => Run `rails server -h` for more startup options
-              .terminal-response 2016-10-01T16:39:19.761Z [healthco-on-rails-web] => Ctrl-C to shutdown server
+    .enclave__trusted-by__actions.btn-callout
+      Learn how Enclave automates security controls for&nbsp;
+      %a{ href: '/compliance/iso-27001-certification/' }> HIPAA
+      &nbsp;and&nbsp;
+      %a{ href: '/learn/hipaa-compliance-for-developers-getting-started/' }> ISO 27001
+      &nbsp;→
+      -# %a{ href: '' }> SOC 2
+      -# ,&nbsp;
+      -# %a{ href: '' }> PCI
+      -# , and&nbsp;
+      -# %a{ href: '' }> more
+      -# &nbsp;→
 
 .content
-  .grid-container.grid--single-center
-    .grid-item.grid-item--adjacent
-      %h2.heading--single-center Enclave Features
+  .security-and-compliance.grid-container.grid--single-center
+    .grid-item
+      .text-center.hero--dark
+        %h2.title Don't sacrifice usability for security and compliance
+        %h3.subtitle
+          Compliance tools often artificially limit developer access to resources
+          and tools in the name of “security.” Enclave is designed to provide you
+          with the access and DevOps tools you need while still automatically
+          implementing security controls.
 
-  = partial 'partials/enclave-features'
+      .grid--3up-flex
+        .grid-item.img-card
+          .img-card__image
+            = partial '/images/12-factors.svg'
+          .img-card__title
+            Twelve-Factor App Deployment
+          .img-card__copy
+            Enclave is a mature, twelve-factor app deployment platform, with
+            security and compliance features built-in. It will fit right in with
+            your existing developer workflow.
+          -# .img-card__link
+          -#   %a.arrow-link--right.dbl-arrow-link--right{ href: '#' }
+          -#     What's a Twelve-Factor App?
 
-.content.developers-first--no-overlap
-  = partial 'developers-first'
+        .grid-item.img-card
+          .img-card__image
+            = partial '/images/enclave-docker.svg'
+          .img-card__title
+            Platform as a Service for Dockerized Apps
+          .img-card__copy
+            Enclave provisions a VPC on your behalf and hosts your Docker
+            containers and databases within it. You can run any code on Enclave
+            that runs inside a Docker container, the standard and most widely-used
+            software container platform.
+          -# .img-card__link
+          -#   %a.arrow-link--right.dbl-arrow-link--right{ href: '#' }
+          -#     Get Started with Docker for Regulated Industries
 
-= partial 'partials/about-aptible'
+        .grid-item.img-card
+          .img-card__image
+            = partial '/images/compliance.svg'
+          .img-card__title
+            Automated Regulatory Compliance and Customer Audits
+          .img-card__copy
+            Deploying in regulated industries means your entire security and
+            compliance program should be in place from day 1. Enclave
+            automatically implements security controls including data encryption,
+            backup and restore procedures, audit logging, and more, so you can pass
+            regulatory and customer audits while you focus on building your app.
+          -# .img-card__link
+          -#   %a.arrow-link--right.dbl-arrow-link--right{ href: '#' }
+          -#     See all of Enclave’s Security Controls
 
-= partial 'partials/ctas/easy-as-git-push'
+.enclave-orchestration.content.hero-gradient-with-dividers--dark
+  .grid-container
+    .deploy-now.grid-item.text-center
+      %h3.subtitle--caps
+        Enclave automates security controls
+      %h2.title.title--white
+        Deploy Your First App Now
+      %h3.subtitle.light-blue-gray
+        Enclave empowers you to deploy and scale Dockerized apps and
+        databases--all without speaking to sales or support
+
+      = partial 'partials/ctas/signup-cta', locals: { |
+            class_name: 'signup-cta--centered',       |
+            cta_label: 'Sign Up',                     |
+            cta_placeholder: 'Enter your work email'  |
+          }                                           |
+
+      = partial 'partials/signup-demo-request'
+
+      .deploy-now__terminal
+        %pre.highlight.plaintext
+          %table.rouge-table.rouge-table--full-width
+            %tr
+              %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+                .terminal <span class="terminal-prompt">$</span> aptible apps:create healthco-on-rails
+                .terminal-response <span class="terminal-interactive">INFO -- :</span> Deploying with git commit: 809ab9581cf04f6080ada3d7d7ab133f275dc36a
+                .terminal-response <span class="terminal-interactive">INFO -- :</span> Building app image from Dockerfile...
+                .terminal-response <span class="terminal-interactive">INFO -- :</span> Step 0 : FROM quay.io/aptible/ruby:ruby-2.2
+                .terminal-response <span class="terminal-interactive">INFO -- :</span> Pulling from quay.io/aptible/ruby
+                .terminal-response <span class="terminal-interactive">INFO -- :</span> Step 1 : RUN apt-get update && apt-get -y install libpq-dev libcurl3-dev
+
+
+.content.enclave__container-orchestration-devops-automation
+  .grid-container
+    .grid-item.hero.text-center
+      %h2.title.title--white
+        Container Orchestration and DevOps Automation
+      %h3.subtitle.light-blue-gray
+        Enclave helps you automate your DevOps work as it implements the
+        security controls you need to deploy in regulated industries
+
+    .grid--3up-flex
+      .grid-item.img-card.img-card--app-deployment
+        .img-card__image--free
+          = partial '/images/enclave/apps.svg'
+        .img-card__title.white
+          App Deployment
+        .img-card__copy.light-blue
+          Deploy apps according to industry best practices:
+          zero-downtime deployments, distribution across multiple availability
+          zones, and horizontal and vertical scaling.
+
+      .grid-item.img-card.img-card--database-management
+        .img-card__image--free
+          = partial '/images/enclave/databases.svg'
+        .img-card__title.white
+          Database Management
+        .img-card__copy.light-blue
+          Launch, scale, and deprovision any database. Enclave supports 6
+          database technologies: PostgreSQL, MySQL, MongoDB, Redis,
+          Elasticsearch, and RabbitMQ.
+
+      .grid-item.img-card.img-card--automated-backups
+        .img-card__image--free
+          = partial '/images/enclave/backups.svg'
+        .img-card__title.white
+          Automated, Distributed Backups
+        .img-card__copy.light-blue
+          Your data is automatically backed up across multiple geographic
+          locations, every 24 hours and whenever you trigger a manual backup.
+          Restoring from backup is a simple button press.
+
+.content.enclave__aws-comparison.hero-gradient-with-dividers--dark
+  .grid-container
+    .hero.text-center
+      %h2.title.title--white
+        Don't Reinvent Application Security Controls
+      %h3.subtitle.light-blue-gray
+        You wouldn’t build HTTPS from scratch. Why build your own security controls?
+        Use Enclave and get back to building your app.
+
+    .comparison-table
+      .comparison-table__header
+        .comparison-option
+          = partial '/images/aws-logo.svg'
+          .comparison-option__title Deploy with AWS
+        .comparison-option
+          = partial '/partials/aptible-mark'
+          .comparison-option__title Deploy with Enclave
+
+      .comparison-feature
+        .comparison-feature__title Access Controls
+        .comparison-feature__body
+          .comparison-feature__point Select, implement, and maintain IAM Roles
+          .comparison-feature__vs vs
+          .comparison-feature__point
+            %span.comparison-feature__automated Included
+            clear, easy to maintain role-based access controls
+
+      .comparison-feature
+        .comparison-feature__title Network Security & Load Balancing
+        .comparison-feature__body
+          .comparison-feature__point
+            Configure and maintain instance and database security groups, provision
+            SSL termination and orchestrate load balancing
+          .comparison-feature__vs vs
+          .comparison-feature__point
+            %span.comparison-feature__automated Included
+            Fault Tolerant Container Distribution with load balancing and
+            Managed TLS Endpoints with IP Filtering
+
+      .comparison-feature
+        .comparison-feature__title Logging
+        .comparison-feature__body
+          .comparison-feature__point
+            Set up each instance to collect and backup logs
+          .comparison-feature__vs vs
+          .comparison-feature__point
+            %span.comparison-feature__automated Included
+            Container Log Drains
+
+      .comparison-feature
+        .comparison-feature__title Monitoring
+        .comparison-feature__body
+          .comparison-feature__point
+            Set up instance and database monitoring
+          .comparison-feature__vs vs
+          .comparison-feature__point
+            %span.comparison-feature__automated Included
+            SRE Team Monitoring and Response
+
+      .comparison-feature
+        .comparison-feature__title Encryption
+        .comparison-feature__body
+          .comparison-feature__point
+            Ensure database and app containers are encrypted<br>at rest and in transit
+          .comparison-feature__vs vs
+          .comparison-feature__point
+            %span.comparison-feature__automated Included
+            End-to-End Encryption in Transit and Database Disk Encryption at Rest
+
+      .comparison-feature
+        .comparison-feature__title Audit Logging
+        .comparison-feature__body
+          .comparison-feature__point
+            Collect audit logs for all operations within AWS
+          .comparison-feature__vs vs
+          .comparison-feature__point
+            %span.comparison-feature__automated Included
+            API Audit Logs and SSH Session Audit Logs
+
+      .comparison-feature
+        .comparison-feature__title Deployment Pipeline
+        .comparison-feature__body
+          .comparison-feature__point
+            Optionally implement and maintain container orchestration tool
+            (e.g. Kubernetes)
+          .comparison-feature__vs vs
+          .comparison-feature__point
+            %span.comparison-feature__automated Included
+            Deployment Pipeline via Direct Deploy from Docker Image or
+            Dockerfile Deploy via <code class="code--dark">git</code>
+
+      .comparison-feature
+        .comparison-feature__title Security Testing
+        .comparison-feature__body
+          .comparison-feature__point
+            Schedule vulnerability scanning and penetration testing
+          .comparison-feature__vs vs
+          .comparison-feature__point
+            %span.comparison-feature__automated Included
+            Network and Host Vulnerability Scanning, App Docker Image Security
+            Scans, and Managed Host-level Intrusion Detection
+
+      .comparison-feature
+        .comparison-feature__title Deployment
+        .comparison-feature__body
+          .comparison-feature__point
+            Manual deploy using <code class="code--dark">git clone</code> or<br>
+            using container orchestration tool
+          .comparison-feature__vs vs
+          .comparison-feature__point
+            %span.comparison-feature__automated Automated
+            zero-downtime deployment with<br>
+            <code class="code--dark">git push</code> or
+            directly from a Docker image
+
+
+    .enclave__aws-comparison__actions.btn-callout
+      Learn more about all of Enclave's security and audit-readiness features in the
+      %a{ href: '/assets/aptible-enclave-division-of-responsibilities.pdf' } Enclave Security Division of Responsibilities
+      &nbsp;→
+
+= partial 'enclave/security-controls'
+
+.content.enclave-carousel-hero
+  .grid-container.grid--single-center.grid-item--adjacent
+    .grid-item
+      = partial 'enclave/carousel'
+
+.content.enclave__demo-app
+  .grid-container.grid--2up-flex
+    .grid-item
+      %p.title.title--paragraph
+        Deploy a demo “hello world” app and<br>
+        database on Enclave in 15 minutes or less
+      %p
+        %a.btn{ href: "#{base_doc_url}/documentation/enclave/tutorials/enclave-demo-app.html" } Learn More
+
+= partial 'partials/developers-first'
+
+.content.enclave__support
+  .grid-container.grid--2up-flex
+    .grid-item
+      %h2.title
+        The Aptible 24/7 Ops Team
+      %h3.subtitle
+        The Enclave platform is monitored by an around-the-clock team of DevOps
+        engineers and security experts to ensure your containers continue to run smoothly.
+
+      %h3.subsection-title
+        Best-in-class support
+      %h3.subtitle
+        24/7 support options including 15-minute response times are available.
+      %p
+        %a.arrow-link--right.dbl-arrow-link--right{ href: '/support-plans/' } Learn more about support options
+
+    .grid-item
+      %h2.title
+        Security and Compliance Expertise
+      .subtitle
+        Aptible has experience helping hundreds of customers with achieving
+        HIPAA compliance and with implementing other security and compliance frameworks.
+
+= partial 'partials/ctas/easy-as-git-push', locals: {                   |
+    title: 'Get your infrastructure audit-ready in hours, not months.', |
+    cta_label: 'Sign Up Now'                                            |
+  }                                                                     |

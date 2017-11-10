@@ -1,0 +1,79 @@
+.developer-tools {
+  background-color: #f8f9fa;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.developer-tools__languages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.developer-tools__language {
+  align-items: center;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 130px;
+  justify-content: center;
+  margin: 5px;
+  width: 130px;
+  svg {
+    max-width: 45px;
+    max-height: 45px;
+  }
+  @media (max-width: $tablet-portrait) {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    svg {
+      max-width: 25px;
+      max-height: 25px;
+    }
+  }
+  .php {
+    transform: scale(1.5);
+  }
+  .java {
+    transform: scale(1.2);
+  }
+  &:hover, &:focus {
+    .python-blue-snake {
+      fill: #4181ae;
+    }
+    .python-yellow-snake {
+      fill: #ffdb47;
+    }
+    .node-js {
+      fill: #8aca41;
+    }
+    .ruby-svg {
+      fill: #EF6060;
+    }
+    .php-svg {
+      fill: #4F5B93;
+    }
+    .go-svg-ear,
+    .go-svg-torso {
+      fill: #65d7e6;
+    }
+    .go-svg-nose {
+      fill: #f7d39f;
+    }
+    .scala-svg,
+    .java-svg-steam {
+      fill: #ec1f25;
+    }
+    .java-svg-cup {
+      fill: #306fc3;
+    }
+  }
+}
+
+.python-blue-snake, .python-yellow-snake, .ruby-svg, .php-svg, .go-svg-torso,
+.go-svg-ear, .scala-svg, .java-svg-steam, .java-svg-cup, .node-js, .go-svg-nose {
+  transition-duration: $base-duration;
+  transition-property: fill;
+  transition-timing-function: $base-timing;
+}

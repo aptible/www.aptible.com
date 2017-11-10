@@ -1,16 +1,19 @@
 body.enclave header {
   overflow: hidden;
 }
-.enclave-hero {
-  margin-top: 50px;
-  padding-bottom: 50px;
-  @media screen and (max-width: $tablet-portrait) {
-    padding-bottom: 0;
-  }
-}
 
-.enclave-hero__copy {
-  max-width: 500px;
+.enclave-hero {
+  background-image: url(/images/grid-bg-fade.png),
+                    linear-gradient(180deg, #172231 0%, #172231 20%, #421832 100%);
+  background-position: 180% center, center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  @media screen and (max-width: 900px) {
+    background-position: center bottom, center center;
+    .grid--2up-flex {
+      display: block;
+    }
+  }
 }
 
 .enclave-hero__subtitle {
@@ -57,11 +60,6 @@ body.enclave header {
   }
 }
 
-.enclave-intro {
-  background-color: $dark-blue;
-  margin-bottom: 50px;
-}
-
 .meet-enclave-title {
   color: $light-blue;
   font-size: 26px;
@@ -71,49 +69,27 @@ body.enclave header {
 
 .meet-enclave {
   padding: 0;
+  position: relative;
 }
-.meet-enclave__terminal {
+
+.deploy-now {
   margin-bottom: 0;
-  .highlight {
-    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.07);
-    padding-bottom: 50px;
+  padding-bottom: 0;
+  padding-top: 100px;
+  .subtitle {
+    margin-bottom: 60px;
+  }
+  .signup-cta__incentives {
+    margin-bottom: 70px;
   }
 }
+
 .meet-enclave__copy {
   float: right;
   width: calc(33% - 25px);
   @media screen and (max-width: $tablet-landscape) {
     margin: 30px;
     width: calc(100% - 60px);
-  }
-}
-.meet-enclave-steps {
-  counter-reset: step;
-  margin-bottom: 20px;
-}
-.meet-enclave-step__item {
-  color: $sky-blue;
-  counter-increment: step;
-  display: block;
-  font-size: 16px;
-  padding-left: 25px;
-  margin-bottom: 1em;
-  &::before {
-    border: 1px solid $blue;
-    border-radius: 8px;
-    content: counter(step);
-    display: inline-block;
-    font-size: 10px;
-    font-weight: $semibold;
-    padding-bottom: 0;
-    position: absolute;
-    transform: translate(-25px, 3px);
-    text-align: center;
-    width: 16px;
-  }
-  code {
-    background-color: $dusk;
-    color: $white;
   }
 }
 
@@ -180,4 +156,168 @@ body.enclave header {
   @media screen and (max-width: $tablet-landscape) {
     text-align: right;
   }
+}
+
+.enclave__demo-app {
+  background-image: url(/images/enclave-dashboard.png);
+  background-repeat: no-repeat;
+  background-position: 80% center;
+  background-size: contain;
+  margin: 50px 0 50px 30px;
+  padding: 100px 0;
+  @media screen and (max-width: 1200px) {
+    .grid-container {
+      padding-right: 0;
+    }
+  }
+  @media screen and (max-width: $tablet-landscape) {
+    background-image: none;
+    margin-left: 0;
+    .grid-container {
+      padding: 0 20px;
+    }
+    .grid-item {
+      background-image: none;
+      text-align: center;
+      margin-left: 0;
+      padding-right: 20px;
+    }
+  }
+}
+
+.security-and-compliance {
+  padding-top: 140px;
+  .subtitle {
+    margin-bottom: 65px;
+  }
+  .grid-item {
+    margin-bottom: 50px;
+    padding-bottom: 0;
+  }
+}
+.deploy-now {
+  .subtitle {
+    margin-bottom: 65px;
+  }
+}
+
+.deploy-now__terminal {
+  margin: 0 auto;
+  max-width: 780px;
+  .highlight {
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.07);
+    padding-bottom: 50px;
+    height: 300px;
+  }
+}
+
+.enclave-orchestration {
+
+}
+
+.enclave-security-controls {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .ssh-bastion {
+    margin-bottom: 30px;
+  }
+  .subtitle {
+    max-width: 500px;
+    margin-bottom: 60px;
+  }
+}
+
+.enclave__container-orchestration-devops-automation {
+  background-image: linear-gradient(45deg, #63183D 0%, #63183D 0%, #63183D 1%, #29384F 42%, #1B283C 86%, #307AD1 100%);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.10);
+  padding-top: 100px;
+
+  .img-card--app-deployment {
+    .apps__traffic {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    .img-card--app-deployment {
+      width: 100%;
+      max-width: none;
+      > div {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet-portrait) {
+    .backups__db-lines { display: none; }
+  }
+}
+
+.img-card__image--free svg {
+  position: absolute;
+}
+
+.img-card--app-deployment svg {
+  transform: translate(-130px, -90px);
+}
+
+.img-card--database-management svg {
+  transform: translateX(30px);
+  z-index: 1;
+}
+
+.img-card--automated-backups svg {
+  transform: translate(-300px, -50px);
+}
+
+.enclave-carousel-hero {
+  background-image: url(/images/grid-bg-fade.png),
+                    linear-gradient(180deg, #172231 0%, #172231 20%, #421832 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-top: 100px;
+  .grid-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.enclave__support {
+  padding-bottom: 50px;
+  padding-top: 100px;
+  .grid--2up-flex {
+    align-items: flex-start;
+  }
+}
+
+.enclave__trusted-by {
+  background-color: transparent;
+  background-image: url(/images/angled-gradient-bg.svg);
+  background-position: center top;
+  background-size: cover;
+  margin-top: -300px;
+  padding-top: 300px;
+  position: relative;
+  z-index: 1;
+  @media screen and (min-width: 1500px) {
+    margin-top: -17vw;
+  }
+}
+
+.enclave__trusted-by__actions {
+  transform: translateY(34px);
+}
+
+.enclave__aws-comparison {
+  padding-top: 100px;
+  .grid-container {
+    text-align: center;
+  }
+}
+.enclave__aws-comparison__actions {
+  margin: 0 auto;
+  transform: translateY(32px);
 }

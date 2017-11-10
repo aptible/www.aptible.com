@@ -4,6 +4,7 @@
   border: 0;
   background-color: $blue;
   border-radius: $base-border-radius;
+  box-shadow: 0px 0px 4px 0px rgba(77,159,255,0.35);
   color: $white;
   cursor: pointer;
   display: inline-block;
@@ -57,27 +58,28 @@
 }
 
 .btn--outline {
-  border: 1px solid $action-color;
+  border: 1px solid $blue;
   background-color: transparent;
-  box-shadow: 0px 0px 4px 0px rgba(77,159,255,0.35);
   border-radius: $base-border-radius;
-  color: $white;
+  color: $blue;
   line-height: 0.9;
-  transition-property: border-color, box-shadow;
-  transition-duration: $base-duration;
-  transition-timing-function: $base-timing;
   &:focus, &:hover {
-    background-color: transparent;
+    background-color: rgba(58,102,159,.1);
+    $blue: #307AD1;
+
     border-color: $blue-prime;
+    color: $blue;
   }
 }
 
 .btn--outline--white {
   border-color: $white;
+  color: $white;
   transition-property: background-color;
   &:focus, &:hover {
     background-color: rgba(255,255,255,.05);
     border-color: $white;
+    color: $white;
   }
 }
 
@@ -93,6 +95,7 @@
 
 .arrow-link--left, .arrow-link--right {
   color: $blue;
+  font-weight: $regular;
   display: inline-block;
 }
 .arrow-link--left {
@@ -139,5 +142,21 @@
   }
   &:hover::before, &:focus::before {
     transform: translate(-24px, 1px);
+  }
+}
+
+.btn-callout {
+  background-color: $blue;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.23);
+  color: $white;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: $regular;
+  margin: 0 auto;
+  padding: 20px 30px;
+  a {
+    color: #9ecbff;
+    font-weight: $semibold;
   }
 }

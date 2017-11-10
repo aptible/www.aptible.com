@@ -1,5 +1,4 @@
 .signup-cta {
-  margin-right: 40px;
   .single-line__input {
     border-radius: 8px;
     font-size: 18px;
@@ -84,7 +83,12 @@
   a {
     color: $white;
     display: inline-block;
-    border-bottom: 1px dashed $blue-steel;
+    border-bottom: 1px dashed $light-blue;
     margin-left: 2px;
   }
+}
+
+.signup-cta--centered {
+  max-width: 555px;
+  margin: 0 auto;
 }

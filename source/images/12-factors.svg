@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="207" height="156" viewBox="0 0 207 156">
+  <defs>
+    <linearGradient id="12-factors-c" x1="114.739%" x2="-17.206%" y1="-12.127%" y2="114.658%">
+      <stop offset="0%" stop-color="#1D7CEB"/>
+      <stop offset="100%" stop-color="#307AD1" stop-opacity=".238"/>
+    </linearGradient>
+    <path id="12-factors-b" d="M153.715332,100.099427 L187.715332,100.099427 C189.372186,100.099427 190.715332,101.442573 190.715332,103.099427 L190.715332,137.099427 C190.715332,138.756281 189.372186,140.099427 187.715332,140.099427 L153.715332,140.099427 C152.058478,140.099427 150.715332,138.756281 150.715332,137.099427 L150.715332,103.099427 C150.715332,101.442573 152.058478,100.099427 153.715332,100.099427 Z M3.71533214,0.0994271789 L37.7153321,0.0994271789 C39.3721864,0.0994271789 40.7153321,1.44257293 40.7153321,3.09942718 L40.7153321,37.0994272 C40.7153321,38.7562814 39.3721864,40.0994272 37.7153321,40.0994272 L3.71533214,40.0994272 L3.71533214,40.0994272 C2.0584779,40.0994272 0.715332145,38.7562814 0.715332145,37.0994272 L0.715332145,3.09942718 L0.715332145,3.09942718 C0.715332145,1.44257293 2.0584779,0.0994271789 3.71533214,0.0994271789 L3.71533214,0.0994271789 Z M53.7153321,0.0994271789 L87.7153321,0.0994271789 C89.3721864,0.0994271789 90.7153321,1.44257293 90.7153321,3.09942718 L90.7153321,37.0994272 C90.7153321,38.7562814 89.3721864,40.0994272 87.7153321,40.0994272 L53.7153321,40.0994272 L53.7153321,40.0994272 C52.0584779,40.0994272 50.7153321,38.7562814 50.7153321,37.0994272 L50.7153321,3.09942718 L50.7153321,3.09942718 C50.7153321,1.44257293 52.0584779,0.0994271789 53.7153321,0.0994271789 Z M103.715332,0.0994271789 L137.715332,0.0994271789 C139.372186,0.0994271789 140.715332,1.44257293 140.715332,3.09942718 L140.715332,37.0994272 C140.715332,38.7562814 139.372186,40.0994272 137.715332,40.0994272 L103.715332,40.0994272 L103.715332,40.0994272 C102.058478,40.0994272 100.715332,38.7562814 100.715332,37.0994272 L100.715332,3.09942718 L100.715332,3.09942718 C100.715332,1.44257293 102.058478,0.0994271789 103.715332,0.0994271789 Z M153.715332,0.0994271789 L187.715332,0.0994271789 C189.372186,0.0994271789 190.715332,1.44257293 190.715332,3.09942718 L190.715332,37.0994272 C190.715332,38.7562814 189.372186,40.0994272 187.715332,40.0994272 L153.715332,40.0994272 L153.715332,40.0994272 C152.058478,40.0994272 150.715332,38.7562814 150.715332,37.0994272 L150.715332,3.09942718 L150.715332,3.09942718 C150.715332,1.44257293 152.058478,0.0994271789 153.715332,0.0994271789 Z M3.71533214,50.0994272 L37.7153321,50.0994272 C39.3721864,50.0994272 40.7153321,51.4425729 40.7153321,53.0994272 L40.7153321,87.0994272 C40.7153321,88.7562814 39.3721864,90.0994272 37.7153321,90.0994272 L3.71533214,90.0994272 C2.0584779,90.0994272 0.715332145,88.7562814 0.715332145,87.0994272 L0.715332145,53.0994272 C0.715332145,51.4425729 2.0584779,50.0994272 3.71533214,50.0994272 L3.71533214,50.0994272 Z M53.7153321,50.0994272 L87.7153321,50.0994272 C89.3721864,50.0994272 90.7153321,51.4425729 90.7153321,53.0994272 L90.7153321,87.0994272 C90.7153321,88.7562814 89.3721864,90.0994272 87.7153321,90.0994272 L53.7153321,90.0994272 L53.7153321,90.0994272 C52.0584779,90.0994272 50.7153321,88.7562814 50.7153321,87.0994272 L50.7153321,53.0994272 C50.7153321,51.4425729 52.0584779,50.0994272 53.7153321,50.0994272 Z M103.715332,50.0994272 L137.715332,50.0994272 C139.372186,50.0994272 140.715332,51.4425729 140.715332,53.0994272 L140.715332,87.0994272 C140.715332,88.7562814 139.372186,90.0994272 137.715332,90.0994272 L103.715332,90.0994272 L103.715332,90.0994272 C102.058478,90.0994272 100.715332,88.7562814 100.715332,87.0994272 L100.715332,53.0994272 C100.715332,51.4425729 102.058478,50.0994272 103.715332,50.0994272 Z M153.715332,50.0994272 L187.715332,50.0994272 C189.372186,50.0994272 190.715332,51.4425729 190.715332,53.0994272 L190.715332,87.0994272 C190.715332,88.7562814 189.372186,90.0994272 187.715332,90.0994272 L153.715332,90.0994272 L153.715332,90.0994272 C152.058478,90.0994272 150.715332,88.7562814 150.715332,87.0994272 L150.715332,53.0994272 C150.715332,51.4425729 152.058478,50.0994272 153.715332,50.0994272 Z M3.71533214,100.099427 L37.7153321,100.099427 C39.3721864,100.099427 40.7153321,101.442573 40.7153321,103.099427 L40.7153321,137.099427 C40.7153321,138.756281 39.3721864,140.099427 37.7153321,140.099427 L3.71533214,140.099427 C2.0584779,140.099427 0.715332145,138.756281 0.715332145,137.099427 L0.715332145,103.099427 C0.715332145,101.442573 2.0584779,100.099427 3.71533214,100.099427 L3.71533214,100.099427 Z M53.7153321,100.099427 L87.7153321,100.099427 C89.3721864,100.099427 90.7153321,101.442573 90.7153321,103.099427 L90.7153321,137.099427 C90.7153321,138.756281 89.3721864,140.099427 87.7153321,140.099427 L53.7153321,140.099427 C52.0584779,140.099427 50.7153321,138.756281 50.7153321,137.099427 L50.7153321,103.099427 C50.7153321,101.442573 52.0584779,100.099427 53.7153321,100.099427 Z M103.715332,100.099427 L137.715332,100.099427 C139.372186,100.099427 140.715332,101.442573 140.715332,103.099427 L140.715332,137.099427 C140.715332,138.756281 139.372186,140.099427 137.715332,140.099427 L103.715332,140.099427 C102.058478,140.099427 100.715332,138.756281 100.715332,137.099427 L100.715332,103.099427 C100.715332,101.442573 102.058478,100.099427 103.715332,100.099427 Z"/>
+    <filter id="12-factors-a" width="113.7%" height="118.6%" x="-6.8%" y="-7.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0528759058 0"/>
+    </filter>
+    <text id="12-factors-e" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="1.49" y="14">1</tspan>
+    </text>
+    <filter id="12-factors-d" width="150%" height="123.5%" x="-25%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-g" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="50.305" y="14">2</tspan>
+    </text>
+    <filter id="12-factors-f" width="140%" height="123.5%" x="-20%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-i" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="100.305" y="14">3</tspan>
+    </text>
+    <filter id="12-factors-h" width="140%" height="123.5%" x="-20%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-k" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="150.305" y="14">4</tspan>
+    </text>
+    <filter id="12-factors-j" width="140%" height="123.5%" x="-20%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-m" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x=".305" y="64">5</tspan>
+    </text>
+    <filter id="12-factors-l" width="140%" height="123.5%" x="-20%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-o" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="50.305" y="64">6</tspan>
+    </text>
+    <filter id="12-factors-n" width="140%" height="123.5%" x="-20%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-q" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="100.305" y="64">7</tspan>
+    </text>
+    <filter id="12-factors-p" width="140%" height="123.5%" x="-20%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-s" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="150.305" y="64">8</tspan>
+    </text>
+    <filter id="12-factors-r" width="140%" height="123.5%" x="-20%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-u" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x=".305" y="114">9</tspan>
+    </text>
+    <filter id="12-factors-t" width="140%" height="123.5%" x="-20%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-w" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="46.795" y="114">10</tspan>
+    </text>
+    <filter id="12-factors-v" width="123.5%" height="123.5%" x="-11.8%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-y" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="97.98" y="114">11</tspan>
+    </text>
+    <filter id="12-factors-x" width="126.7%" height="123.5%" x="-13.3%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+    <text id="12-factors-A" fill="#72A6E2" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+      <tspan x="146.795" y="114">12</tspan>
+    </text>
+    <filter id="12-factors-z" width="123.5%" height="123.5%" x="-11.8%" y="-5.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.166157156 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(8 6)">
+    <use fill="black" filter="url(#12-factors-a)" xlink:href="#12-factors-b"/>
+    <use fill="url(#12-factors-c)" xlink:href="#12-factors-b"/>
+    <g fill="#72A6E2" transform="translate(15 12)">
+      <use filter="url(#12-factors-d)" xlink:href="#12-factors-e"/>
+      <use xlink:href="#12-factors-e"/>
+      <use filter="url(#12-factors-f)" xlink:href="#12-factors-g"/>
+      <use xlink:href="#12-factors-g"/>
+      <use filter="url(#12-factors-h)" xlink:href="#12-factors-i"/>
+      <use xlink:href="#12-factors-i"/>
+      <use filter="url(#12-factors-j)" xlink:href="#12-factors-k"/>
+      <use xlink:href="#12-factors-k"/>
+      <use filter="url(#12-factors-l)" xlink:href="#12-factors-m"/>
+      <use xlink:href="#12-factors-m"/>
+      <use filter="url(#12-factors-n)" xlink:href="#12-factors-o"/>
+      <use xlink:href="#12-factors-o"/>
+      <g>
+        <use filter="url(#12-factors-p)" xlink:href="#12-factors-q"/>
+        <use xlink:href="#12-factors-q"/>
+      </g>
+      <g>
+        <use filter="url(#12-factors-r)" xlink:href="#12-factors-s"/>
+        <use xlink:href="#12-factors-s"/>
+      </g>
+      <g>
+        <use filter="url(#12-factors-t)" xlink:href="#12-factors-u"/>
+        <use xlink:href="#12-factors-u"/>
+      </g>
+      <g>
+        <use filter="url(#12-factors-v)" xlink:href="#12-factors-w"/>
+        <use xlink:href="#12-factors-w"/>
+      </g>
+      <g>
+        <use filter="url(#12-factors-x)" xlink:href="#12-factors-y"/>
+        <use xlink:href="#12-factors-y"/>
+      </g>
+      <g>
+        <use filter="url(#12-factors-z)" xlink:href="#12-factors-A"/>
+        <use xlink:href="#12-factors-A"/>
+      </g>
+    </g>
+  </g>
+</svg>

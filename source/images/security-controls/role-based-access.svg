@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200">
+  <defs>
+    <filter id="role-based-access-a" width="135.4%" height="159.7%" x="-17.7%" y="-29.9%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.27063519 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" filter="url(#role-based-access-a)" transform="translate(11 12)">
+    <rect width="338.225" height="191" fill="#222C3E" rx="5"/>
+    <circle cx="11" cy="13" r="3" fill="#172234"/>
+    <circle cx="21" cy="13" r="3" fill="#172234"/>
+    <circle cx="31" cy="13" r="3" fill="#172234"/>
+    <rect width="338.225" height="176" y="25" fill="#273143"/>
+    <text fill="#45546E" font-family="Gibson-SemiBold, Gibson" font-size="10" font-weight="500">
+      <tspan x="125.16" y="16">HEALTHCO USERS</tspan>
+    </text>
+    <g transform="translate(20 60)">
+      <rect width="85" height="85" fill="#3A475E" rx="5"/>
+      <g transform="translate(20 58)">
+        <rect width="46" height="3" y="1" fill="#45546E" rx="1.5"/>
+        <rect width="46" height="3" y="7" fill="#45546E" rx="1.5"/>
+        <rect width="46" height="3" y="13" fill="#45546E" rx="1.5"/>
+        <rect width="26" height="3" y="1" fill="#2ECC71" rx="1.5"/>
+        <rect width="10" height="3" y="7" fill="#2ECC71" rx="1.5"/>
+        <rect width="40" height="3" y="13" fill="#2ECC71" rx="1.5"/>
+        <rect width="1" height="5" x="25" fill="#2ECC71"/>
+        <rect width="1" height="5" x="9" y="6" fill="#2ECC71"/>
+        <rect width="1" height="5" x="39" y="12" fill="#2ECC71"/>
+      </g>
+      <g fill-rule="nonzero" transform="translate(21 26)">
+        <path fill="#627699" d="M41,22 L34,22 L34,20 L41,20 C41.297,20 42,19.224 42,18 L42,16.535 L36.445,12.832 L37.554,11.168 L44,15.465 L44,18 C44,20.168 42.626,22 41,22 Z"/>
+        <path fill="#627699" d="M35,13 C32.243,13 30,10.757 30,8 C30,5.243 32.243,3 35,3 C37.757,3 40,5.243 40,8 C40,10.757 37.757,13 35,13 Z M35,5 C33.346,5 32,6.346 32,8 C32,9.654 33.346,11 35,11 C36.654,11 38,9.654 38,8 C38,6.346 36.654,5 35,5 Z"/>
+        <path fill="#93B0D2" d="M22,14 C18.58,14 16,10.776 16,6.5 C16,3.474 16.682,0 22,0 C27.318,0 28,3.474 28,6.5 C28,10.776 25.42,14 22,14 Z M22,2 C18.972,2 18,3.093 18,6.5 C18,9.167 19.402,12 22,12 C24.598,12 26,9.167 26,6.5 C26,3.093 25.028,2 22,2 Z"/>
+        <path fill="#93B0D2" d="M29,22 L15,22 C13.374,22 12,20.168 12,18 L12,15.465 L18.445,11.168 L19.554,12.832 L14,16.535 L14,18 C14,19.224 14.703,20 15,20 L29,20 C29.297,20 30,19.224 30,18 L30,16.535 L24.445,12.832 L25.554,11.168 L32,15.465 L32,18 C32,20.168 30.626,22 29,22 Z"/>
+        <path fill="#627699" d="M10,22 L3,22 C1.374,22 0,20.168 0,18 L0,15.465 L6.445,11.168 L7.554,12.832 L2,16.535 L2,18 C2,19.224 2.703,20 3,20 L10,20 L10,22 Z"/>
+        <path fill="#627699" d="M9,13 C6.243,13 4,10.757 4,8 C4,5.243 6.243,3 9,3 C11.757,3 14,5.243 14,8 C14,10.757 11.757,13 9,13 Z M9,5 C7.346,5 6,6.346 6,8 C6,9.654 7.346,11 9,11 C10.654,11 12,9.654 12,8 C12,6.346 10.654,5 9,5 Z"/>
+      </g>
+      <text fill="#93B0D2" font-family="Gibson-SemiBold, Gibson" font-size="10" font-weight="500">
+        <tspan x="21.96" y="18">OWNERS</tspan>
+      </text>
+      <g transform="translate(106)">
+        <rect width="85" height="85" fill="#3A475E" rx="5"/>
+        <g transform="translate(20 58)">
+          <rect width="46" height="3" y="1" fill="#45546E" rx="1.5"/>
+          <rect width="46" height="3" y="7" fill="#45546E" rx="1.5"/>
+          <rect width="46" height="3" y="13" fill="#45546E" rx="1.5"/>
+          <rect width="26" height="3" y="1" fill="#2ECC71" rx="1.5"/>
+          <rect width="10" height="3" y="7" fill="#2ECC71" rx="1.5"/>
+          <rect width="40" height="3" y="13" fill="#2ECC71" rx="1.5"/>
+          <rect width="1" height="5" x="25" fill="#2ECC71"/>
+          <rect width="1" height="5" x="9" y="6" fill="#2ECC71"/>
+          <rect width="1" height="5" x="39" y="12" fill="#2ECC71"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(21 26)">
+          <path fill="#627699" d="M41,22 L34,22 L34,20 L41,20 C41.297,20 42,19.224 42,18 L42,16.535 L36.445,12.832 L37.554,11.168 L44,15.465 L44,18 C44,20.168 42.626,22 41,22 Z"/>
+          <path fill="#627699" d="M35,13 C32.243,13 30,10.757 30,8 C30,5.243 32.243,3 35,3 C37.757,3 40,5.243 40,8 C40,10.757 37.757,13 35,13 Z M35,5 C33.346,5 32,6.346 32,8 C32,9.654 33.346,11 35,11 C36.654,11 38,9.654 38,8 C38,6.346 36.654,5 35,5 Z"/>
+          <path fill="#93B0D2" d="M22,14 C18.58,14 16,10.776 16,6.5 C16,3.474 16.682,0 22,0 C27.318,0 28,3.474 28,6.5 C28,10.776 25.42,14 22,14 Z M22,2 C18.972,2 18,3.093 18,6.5 C18,9.167 19.402,12 22,12 C24.598,12 26,9.167 26,6.5 C26,3.093 25.028,2 22,2 Z"/>
+          <path fill="#93B0D2" d="M29,22 L15,22 C13.374,22 12,20.168 12,18 L12,15.465 L18.445,11.168 L19.554,12.832 L14,16.535 L14,18 C14,19.224 14.703,20 15,20 L29,20 C29.297,20 30,19.224 30,18 L30,16.535 L24.445,12.832 L25.554,11.168 L32,15.465 L32,18 C32,20.168 30.626,22 29,22 Z"/>
+          <path fill="#627699" d="M10,22 L3,22 C1.374,22 0,20.168 0,18 L0,15.465 L6.445,11.168 L7.554,12.832 L2,16.535 L2,18 C2,19.224 2.703,20 3,20 L10,20 L10,22 Z"/>
+          <path fill="#627699" d="M9,13 C6.243,13 4,10.757 4,8 C4,5.243 6.243,3 9,3 C11.757,3 14,5.243 14,8 C14,10.757 11.757,13 9,13 Z M9,5 C7.346,5 6,6.346 6,8 C6,9.654 7.346,11 9,11 C10.654,11 12,9.654 12,8 C12,6.346 10.654,5 9,5 Z"/>
+        </g>
+        <text fill="#93B0D2" font-family="Gibson-SemiBold, Gibson" font-size="10" font-weight="500">
+          <tspan x="13.1" y="18">DEVELOPERS</tspan>
+        </text>
+      </g>
+      <g transform="translate(212)">
+        <rect width="85" height="85" fill="#3A475E" rx="5"/>
+        <g transform="translate(20 58)">
+          <rect width="46" height="3" y="1" fill="#45546E" rx="1.5"/>
+          <rect width="46" height="3" y="7" fill="#45546E" rx="1.5"/>
+          <rect width="46" height="3" y="13" fill="#45546E" rx="1.5"/>
+          <rect width="26" height="3" y="1" fill="#2ECC71" rx="1.5"/>
+          <rect width="10" height="3" y="7" fill="#2ECC71" rx="1.5"/>
+          <rect width="40" height="3" y="13" fill="#2ECC71" rx="1.5"/>
+          <rect width="1" height="5" x="25" fill="#2ECC71"/>
+          <rect width="1" height="5" x="9" y="6" fill="#2ECC71"/>
+          <rect width="1" height="5" x="39" y="12" fill="#2ECC71"/>
+        </g>
+        <g fill-rule="nonzero" transform="translate(21 26)">
+          <path fill="#627699" d="M41,22 L34,22 L34,20 L41,20 C41.297,20 42,19.224 42,18 L42,16.535 L36.445,12.832 L37.554,11.168 L44,15.465 L44,18 C44,20.168 42.626,22 41,22 Z"/>
+          <path fill="#627699" d="M35,13 C32.243,13 30,10.757 30,8 C30,5.243 32.243,3 35,3 C37.757,3 40,5.243 40,8 C40,10.757 37.757,13 35,13 Z M35,5 C33.346,5 32,6.346 32,8 C32,9.654 33.346,11 35,11 C36.654,11 38,9.654 38,8 C38,6.346 36.654,5 35,5 Z"/>
+          <path fill="#93B0D2" d="M22,14 C18.58,14 16,10.776 16,6.5 C16,3.474 16.682,0 22,0 C27.318,0 28,3.474 28,6.5 C28,10.776 25.42,14 22,14 Z M22,2 C18.972,2 18,3.093 18,6.5 C18,9.167 19.402,12 22,12 C24.598,12 26,9.167 26,6.5 C26,3.093 25.028,2 22,2 Z"/>
+          <path fill="#93B0D2" d="M29,22 L15,22 C13.374,22 12,20.168 12,18 L12,15.465 L18.445,11.168 L19.554,12.832 L14,16.535 L14,18 C14,19.224 14.703,20 15,20 L29,20 C29.297,20 30,19.224 30,18 L30,16.535 L24.445,12.832 L25.554,11.168 L32,15.465 L32,18 C32,20.168 30.626,22 29,22 Z"/>
+          <path fill="#627699" d="M10,22 L3,22 C1.374,22 0,20.168 0,18 L0,15.465 L6.445,11.168 L7.554,12.832 L2,16.535 L2,18 C2,19.224 2.703,20 3,20 L10,20 L10,22 Z"/>
+          <path fill="#627699" d="M9,13 C6.243,13 4,10.757 4,8 C4,5.243 6.243,3 9,3 C11.757,3 14,5.243 14,8 C14,10.757 11.757,13 9,13 Z M9,5 C7.346,5 6,6.346 6,8 C6,9.654 7.346,11 9,11 C10.654,11 12,9.654 12,8 C12,6.346 10.654,5 9,5 Z"/>
+        </g>
+        <text fill="#93B0D2" font-family="Gibson-SemiBold, Gibson" font-size="10" font-weight="500">
+          <tspan x="29.01" y="18">SALES</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

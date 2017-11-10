@@ -1,21 +1,34 @@
-.guides-intro.grid-container.grid--single-center
-  .grid-item
-    .guides-intro__hgroup
-      %h2.guides-intro__title
-        Developers First
-      %p.guides-intro__subtitle
-        Aptible helps secure the internet by giving developers the tools and
-        expertise to protect sensitive data.
+.content.developer-tools
+  .grid-container.grid--single-center
+    .grid-item
+      .developer-tools__heading
+        %h2.title
+          Work with tools you already use and love
+        %h3.subtitle
+          Aptible helps secure the internet by giving developers the tools and<br>
+          expertise to protect sensitive data
 
-    .guides-intro__languages
-      %a.guides-intro__language.python{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/python.html" }
-        = partial 'images/icons/python.svg'
+      .developer-tools__languages
+        .developer-tools__language.python
+          = partial 'images/icons/python.svg'
 
-      %a.guides-intro__language.node{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/node-js.html" }
-        = partial 'images/icons/node.svg'
+        .developer-tools__language.node
+          = partial 'images/icons/node.svg'
 
-      %a.guides-intro__language.ruby{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/ruby.html" }
-        = partial 'images/icons/ruby.svg'
+        .developer-tools__language.ruby
+          = partial 'images/icons/ruby.svg'
 
-      %a.guides-intro__language.php{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/php.html" }
-        = partial 'images/icons/php.svg'
+        .developer-tools__language.php
+          = partial 'images/icons/php.svg'
+
+        .developer-tools__language.java
+          = partial 'images/icons/java.svg'
+
+        .developer-tools__language.scala
+          = partial 'images/icons/scala.svg'
+
+        .developer-tools__language.go
+          = partial 'images/icons/go.svg'
+
+      .developer-tools__link
+        %a.arrow-link--right.dbl-arrow-link--right{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides.html" } Learn More

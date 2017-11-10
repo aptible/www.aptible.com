@@ -1,0 +1,55 @@
+.angled-section-divider__mask {
+  // background-image: linear-gradient(-35deg,
+  //                                   $dark-magenta 0%,
+  //                                   $twilight 42%,
+  //                                   $midnight-blue 78%,
+  //                                   $blue 130%),
+  //                   url(/images/section-dividers/angle-bg-right-mask.svg);
+  background-image: url(/images/header-bottom-grid.svg),
+                    linear-gradient(-35deg,
+                                    $dark-magenta 0%,
+                                    $twilight 42%,
+                                    $midnight-blue 78%,
+                                    $blue 130%);
+  background-repeat: no-repeat;
+  background-position: bottom center, center center;
+  // mask: url(#angle-bg-right-mask);
+  // mask: url(#angle-bg-right-mask);
+
+  // successful, not in
+  clip-path: polygon(0px 100%, 100% 100%, 100% 0px, 0px 150px);
+
+  // This works...
+  // -webkit-mask-image: linear-gradient(-5deg, black 80%, transparent 80%);
+  // -webkit-mask-repeat: space;
+
+  // background-repeat: no-repeat;
+  // background-color: yellow;
+
+  padding-top: 180px;
+  position: relative;
+  transform: translateY(-150px);
+  z-index: 2;
+}
+
+.angled-section-divider--left,
+.angled-section-divider--right {
+  position: relative;
+  z-index: 1;
+  svg {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.angled-section-divider--left {
+  transform: translateY(7px);
+}
+
+.angled-section-divider--right {
+  position: relative;
+  z-index: 10;
+  // background-color: transparent;
+  // background-size: 100% auto;
+  // transform: translateY(-40px);
+}
