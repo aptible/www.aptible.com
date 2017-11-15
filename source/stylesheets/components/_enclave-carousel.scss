@@ -2,13 +2,21 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: $tablet-portrait) {
+    svg {
+      height: auto;
+      margin-top: 30px;
+      width: 95%
+    }
+  }
 }
 
 .enclave-carousel__nav {
   margin-bottom: 50px;
   min-width: 600px;
   @media screen and (max-width: $tablet-portrait) {
-    width: 80%;
+    min-width: 0;
+    width: 100%
   }
 }
 
@@ -280,7 +288,7 @@
   margin-top: 30px;
   position: relative;
   .enclave-carousel__nav {
-    min-width: 450px;
+    min-width: 500px;
     @media screen and (max-width: $tablet-portrait) {
       min-width: 0;
       width: 100%;
@@ -290,7 +298,7 @@
     transform: translateX(-80px);
     @media screen and (max-width: $tablet-portrait) {
       // transform: translateX(-80px), scale(.8);
-      transform: scale(.8), translateX(-80px);;
+      transform: translateX(-40px);;
     }
   }
   .terminal-response,
@@ -302,9 +310,16 @@
   .enclave-carousel__terminals {
     position: absolute;
     transform: translateY(350px);
-    width: 460px;
+    width: 500px;
     .highlight {
-      height: 150px;
+      height: 170px;
+    }
+    @media screen and (max-width: $tablet-portrait) {
+      min-width: 0;
+      width: 100%;
+    }
+    @media screen and (max-width: 450px) {
+      transform: translateY(275px);
     }
   }
 }
