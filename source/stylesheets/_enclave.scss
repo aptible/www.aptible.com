@@ -13,6 +13,9 @@ body.enclave header {
     .grid--2up-flex {
       display: block;
     }
+    .grid-item {
+      padding: 0;
+    }
   }
 }
 
@@ -161,11 +164,12 @@ body.enclave header {
 .enclave__demo-app {
   background-image: url(/images/enclave-dashboard.png);
   background-repeat: no-repeat;
-  background-position: 80% center;
+  background-position: right center;
   background-size: contain;
   margin: 50px 0 50px 30px;
   padding: 100px 0;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1500px) {
+    background-position: 50vw center;
     .grid-container {
       padding-right: 0;
     }
@@ -261,6 +265,12 @@ body.enclave header {
 
 .img-card--app-deployment svg {
   transform: translate(-130px, -90px);
+  @media screen and (max-width: $tablet-portrait) {
+    transform: translate(-130px, -20px);
+  }
+  @media screen and (max-width: 500px) {
+    transform: translate(-130px, 0);
+  }
 }
 
 .img-card--database-management svg {
@@ -304,6 +314,12 @@ body.enclave header {
   z-index: 1;
   @media screen and (min-width: 1500px) {
     margin-top: -17vw;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    margin-top: -300px;
+    .title {
+      padding-top: 50px;
+    }
   }
 }
 
