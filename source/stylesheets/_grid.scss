@@ -40,7 +40,6 @@ body {
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 0;
   @media screen and (max-width: 1200px) {
     padding: 0 20px;
   }
@@ -149,14 +148,19 @@ body {
 .grid--3up-flex {
   align-items: stretch;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   .grid-item {
     width: 32%;
   }
+  @media screen and (max-width: 1142px) {
+    justify-content: center;
+  }
   @media screen and (max-width: $tablet-portrait) {
+    align-items: center;
     flex-direction: column;
     .grid-item {
-      width: 100%;
+      // width: 100%;
     }
   }
 }

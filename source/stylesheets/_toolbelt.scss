@@ -19,9 +19,15 @@
     color: $light-blue-gray;
     font-size: 20px;
     font-weight: $light;
+    code {
+      font-size: 14px;
+    }
   }
   .grid-item > pre {
     margin-top: 120px;
+    &.highlight--full-width {
+      margin-top: 0;
+    }
     @media screen and (max-width: $tablet-portrait) {
       margin-top: 0;
     }

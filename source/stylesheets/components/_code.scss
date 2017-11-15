@@ -1,11 +1,17 @@
 // Inline code: <code>displayed in monospace</code>
 code, .code {
   background-color: $light-blue;
-  border-radius: 4px;
+  border-radius: 2px;
   color: $dark-blue-steel;
-  font-size: 14px;
   padding: 4px 5px;
   white-space: nowrap;
+}
+
+.code--dark {
+  background-color: #222c3e;
+  padding: 2px 4px;
+  color: currentColor;
+  line-height: 1.2;
 }
 
 pre {
@@ -16,10 +22,10 @@ pre {
   // Mimics the banded outline of a window bar for overflowing code contaniers
   background-image: linear-gradient(
                       to bottom,
-                      $dark-blue-steel,
-                      $dark-blue-steel 40px,
-                      $dusk calc(40px - 100%),
-                      $dusk);
+                      $dusk-alt,
+                      $dusk-alt 40px,
+                      #273143 calc(40px - 100%),
+                      #273143);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: 0;
@@ -37,7 +43,7 @@ pre {
 
 
 .code__body {
-  background-color: $dusk;
+  background-color: #273143;
   font-family: $monospace-font-family;
   margin-top: 0;
   padding-top: 20px;
@@ -57,11 +63,27 @@ pre {
 
 .faux-window {
   background-image: none;
-  background-color: $dusk;
+  background-color: #273143;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding-bottom: 0;
   padding-top: 20px;
+}
+
+.terminal__title {
+  background-color: #222c3e;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #45546e;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: -40px;
+  min-width: 350px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  // transform: translateY(40px);
+  line-height: 3.1;
 }
 
 .faux-window, .rouge-table {
@@ -120,16 +142,20 @@ pre {
   white-space: normal;
 }
 .terminal {
-  color: $white;
+  color: #c2d1e2;
 }
 .terminal-interactive {
-  color: #b9e4f0;
+  color: $blue-steel;
 }
 .terminal-response {
-  color: $grass-green;
+  color: $sky-blue;
 }
 
 // Comments
 .c, .c1 {
   color: $sky-blue;
+}
+
+.terminal-prompt {
+  color: $dark-blue-steel;
 }

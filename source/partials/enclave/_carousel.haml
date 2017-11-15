@@ -1,0 +1,102 @@
+- css_class ||= ''
+.enclave-carousel{ "data-scene" => "deploy", class: css_class }
+  %nav.enclave-carousel__nav
+    .enclave-carousel__nav-items
+      %a.enclave-carousel__nav-item{ href: '#enclave-carousel--deploy' }
+        Deploy
+        %span.enclave-carousel__nav-dot
+      %a.enclave-carousel__nav-item{ href: '#enclave-carousel--database' }
+        Database
+        %span.enclave-carousel__nav-dot
+      %a.enclave-carousel__nav-item{ href: '#enclave-carousel--configure' }
+        Configure
+        %span.enclave-carousel__nav-dot
+      %a.enclave-carousel__nav-item{ href: '#enclave-carousel--expose' }
+        Expose
+        %span.enclave-carousel__nav-dot
+      %a.enclave-carousel__nav-item{ href: '#enclave-carousel--logging' }
+        Logging
+        %span.enclave-carousel__nav-dot
+    .enclave-carousel__nav-track
+      .enclave-carousel__nav-track-progress
+
+  .enclave-carousel__headings
+    .enclave-carousel__heading.enclave-carousel--deploy
+      %h2.title Deploy your app / push your code
+      %h3.subtitle
+        If you've used Docker to build and host your own images, simply point
+        Enclave at an existing Docker image to deploy containers on Enclave.
+        Alternatively, let Enclave build Docker images for you: prepare a
+        Dockerfile, then <code class="code--dark">git push</code>
+        your app source code to Enclave to deploy.
+    .enclave-carousel__heading.enclave-carousel--database
+      %h2.title Provision a Database
+      %h3.subtitle
+        Deploying a database on Enclave is fast and easy: pick a database type
+        and a footprint, and Enclave will deploy a database container for you
+        and return the credentials you need to access it. As you grow, you can
+        resize the container and disk at any time.
+    .enclave-carousel__heading.enclave-carousel--configure
+      %h2.title Configure your App
+      %h3.subtitle
+        Enclave natively supports 12-factor apps: provide Enclave with a list of
+        environment variables your app needs and Enclave will securely store
+        them and make sure they're available when your containers start.
+    .enclave-carousel__heading.enclave-carousel--expose
+      %h2.title Expose your App
+      %h3.subtitle
+        To expose a web app on the Internet, add an Endpoint and Enclave will
+        provision and configure a load balancer, including SSL termination. You
+        get a hostname back. Use it to create a CNAME or send your traffic there
+        directly.
+    .enclave-carousel__heading.enclave-carousel--logging
+      %h2.title Access your Logs
+      %h3.subtitle
+        Access your logs in real-time via the CLI. For long-term storage or more
+        advanced use cases, configure a Log Drain to deliver yoru logs via
+        Syslog or HTTPS.
+
+  .enclave-carousel__diagram
+    = partial('/images/enclave/carousel.svg')
+
+  .enclave-carousel__terminals
+    .terminal__title Your Healthco Terminal
+    %pre.highlight.plaintext
+      %table.rouge-table.rouge-table--with-title
+        %tr.enclave-carousel--deploy
+          %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+            .terminal <span class="terminal-prompt">$</span> aptible apps:create healthco-api-nodejs --environment healthco-production
+            .terminal-response App healthco-api-nodejs created!
+            .terminal <span class="terminal-prompt">$</span> aptible deploy --app healthco-api-nodejs --docker-image healthco/nodejs-api
+            .terminal-response INFO -- : Deploying with git commit: 809ab948298cf038f5080ada37d364dc36a
+            .terminal-response INFO -- : Building app image from Dockerfile...
+
+        %tr.enclave-carousel--database
+          %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+            .terminal <span class="terminal-prompt">$</span> aptible db:create healthco-postgres --environment healthco-production --size 1000
+            .terminal-response INFO -- : Provisioning postgresql database...
+            .terminal-response INFO -- : Database provision successful.
+            .terminal-response INFO -- : Connection URL: postgresql://aptible:JhsudksjfkLijfkje83A94fvh@db-production-99.aptible.in:27542/db
+
+        %tr.enclave-carousel--configure
+          %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+            .terminal <span class="terminal-prompt">$</span> aptible config:set DATABASE_URL=postgresql://aptible:JhsudksjfkLijfkje83...
+            .terminal-response INFO -- : Updating configuration and restarting app...
+            .terminal-response INFO -- : COMPLETED (after 0.13s): Configure SSL Policy for endpoint
+            .terminal-response INFO -- : WAITING FOR: Start app containers for service web
+            .terminal-response INFO -- : App configure successful
+
+        %tr.enclave-carousel--expose
+          %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+            .terminal <span class="terminal-prompt">$</span> aptible endpoints:tls:create --managed-tls --app healthco-api-nodejs cmd
+            .terminal-response INFO -- :
+            .terminal-response INFO -- : COMPLETED (after 0.13s): Configure SSL Policy for endpoint
+            .terminal-response INFO -- : WAITING FOR: Start app containers for service web
+            .terminal-response INFO -- : App configure successful
+
+        %tr.enclave-carousel--logging
+          %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+            .terminal <span class="terminal-prompt">$</span> aptible logs --app healthco-api-nodejs
+            .terminal-response 2017-11-13 [healthco-api-nodejs] "GET /healthcheck HTTP/1.0" 301 - 0.0021
+            .terminal-response 2017-11.13 [healthco-api-nodejs] Started GET "/healthcos" for 10.0.0.150 at 2017-11-13 22:59:41 +0000
+            .terminal-response 2017-11.13 [healthco-api-nodejs] Completed 200 OK in 113ms

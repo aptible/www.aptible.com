@@ -25,22 +25,27 @@ h6 {
   font-size: 75px;
   font-weight: $semibold;
 }
+
 .heading-2 {
   font-size: 50px;
   font-weight: $semibold;
 }
+
 .heading-3 {
   font-size: 26px;
   font-weight: bold;
 }
+
 .heading-4 {
   font-size: 24px;
   font-weight: $light;
 }
+
 .heading-5 {
   font-size: 19px;
   font-weight: $regular;
 }
+
 .heading-6 {
   font-size: 16px;
   font-weight: $semibold;
@@ -204,4 +209,57 @@ hr {
   .arrow-link--right {
     padding-left: 5px;
   }
+}
+
+//
+// Hero
+//
+.hero {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.title {
+  color: $dark-blue-steel;
+  font-size: 32px;
+  font-weight: $light;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+
+.title--paragraph {
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.title--white {
+  color: $white;
+}
+
+.subtitle {
+  color: $sky-blue;
+  color: $dark-blue-steel;
+  font-size: 18px;
+  font-weight: $light;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+}
+
+.subtitle--caps {
+  color: $white;
+  font-size: 14px;
+  font-weight: $regular;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.subsection-title {
+  color: $light-blue-gray;
+  font-size: 19px;
+  font-weight: $regular;
+  margin-bottom: 20px;
 }

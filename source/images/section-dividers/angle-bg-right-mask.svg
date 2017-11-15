@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="215" viewBox="0 0 1440 215">
+  <defs>
+    <!-- maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox"> -->
+    <mask id="angle-bg-right-mask">
+      <polygon fill="#000000" fill-rule="evenodd" points="0 215 1440 0 0 0" />
+    </mask>
+  </defs>
+</svg>

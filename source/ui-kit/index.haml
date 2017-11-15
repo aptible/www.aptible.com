@@ -16,4 +16,139 @@ slug:    'ui-kit'
 .content
   .grid-container
     .grid-item
-      = partial 'images/icons/checkbox.svg'
+      %h3 Checbox
+
+      .custom-checkbox
+        %input#request-demo-of{ type: 'checkbox' }
+        %label{ for: 'request-demo-of' }
+          = partial '/images/icons/checkbox.svg'
+          I would like to schedule a demo.
+
+  .grid-container
+    .grid-item
+      %h3 Enclave Carousel
+      = partial 'enclave/carousel'
+
+  .grid-container
+    .grid-item
+      %h3 Terminal
+      .terminal__title Your Healthco Terminal
+      %pre.highlight.plaintext
+        %table.rouge-table.rouge-table--with-title
+          %tr
+            %td.rouge-code.rouge-code--no-num.rouge-code--terminal
+              .terminal $ aptible login
+              .terminal-interactive Email: osvaldo@aptible.com
+              .terminal-interactive Password:
+              .terminal-interactive 2FA Token: 555999
+              .terminal-response Success! Token written to $HOME/.aptible/tokens.json
+
+
+.content.aptible-header--bottom-grid.angled-section-divider__mask
+  .grid-container
+    .grid-item
+      %h3 Angled Divider
+
+.content.hero-gradient-with-dividers--dark
+  .grid-container
+    .grid-item.hero.text-center
+      %h3.subtitle--caps
+        Enclave automates security controls
+      %h2.title.title--white
+        Container Orchestration and DevOps Automation
+      %h3.subtitle
+        Enclave helps you automate your DevOps work as it implements the
+        security controls you need to deploy in regulated industries
+
+.content
+  .grid-container
+    .grid-item.hero.text-center.hero--dark
+      %h2.title
+        Container Orchestration and DevOps Automation
+      %h2.subtitle
+        Enclave helps you automate your DevOps work as it implements the
+        security controls you need to deploy in regulated industries
+
+  .grid-container
+    .grid-item
+      %h2.title Buttons
+      %a.btn{:href => ""} Link Button
+      %button Button
+      %input{:type => "submit", :value => "Submit Button"}/
+      %input.btn--outline{:type => "submit", :value => "Submit Button"}/
+
+.content
+  .grid-container
+    .text-center.hero--dark
+      %h2.title Image Cards
+
+    .grid--3up-flex
+      .grid-item.img-card
+        .img-card__image
+          = partial '/images/12-factors.svg'
+        .img-card__title
+          Twelve-Factor App Deployment
+        .img-card__copy
+          Enclave is a mature, twelve-factor app deployment platform, with
+          security and compliance features built-in. It will fit right in with
+          your existing developer workflow.
+        .img-card__link
+          %a.arrow-link--right.dbl-arrow-link--right{ href: '#' }
+            What's a Twelve-Factor App?
+
+      .grid-item.img-card
+        .img-card__image
+          = partial '/images/enclave-docker.svg'
+        .img-card__title
+          Platform as a Service for Dockerized Apps
+        .img-card__copy
+          Enclave provisions a VPC on your behalf and hosts your Docker
+          containers and databases within it. You can run any code on Enclave
+          that runs inside a Docker container, the standard and most widely-used
+          software container platform.
+        .img-card__link
+          %a.arrow-link--right.dbl-arrow-link--right{ href: '#' }
+            Get Started with Docker for Regulated Industries
+
+      .grid-item.img-card
+        .img-card__image
+          = partial '/images/compliance.svg'
+        .img-card__title
+          Automated Regulatory Compliance and Customer Audits
+        .img-card__copy
+          Deploying in regulated industries means your entire security and
+          compliance program should be in place from day 1. Enclave
+          automatically implements security controls including data encryption,
+          backup and restore procedures, audit logging, and more, so you canpass
+          regulatory and customer audits while you focus on building your app.
+        .img-card__link
+          %a.arrow-link--right.dbl-arrow-link--right{ href: '#' }
+            See all of Enclave’s Security Controls
+
+.comparison-table
+  .comparison-table__header
+    .comparison-option
+      = partial '/images/aws-logo.svg'
+      .comparison-option__title Deploy with AWS
+    .comparison-option
+      = partial '/partials/aptible-mark'
+      .comparison-option__title Deploy with Enclave
+
+  .comparison-feature
+    .comparison-feature__title Access Controls
+    .comparison-feature__body
+      .comparison-feature__point Select, implement, and maintain IAM Roles
+      .comparison-feature__vs vs
+      .comparison-feature__point Clear, maintainable role-based access controls
+
+  .comparison-feature
+    .comparison-feature__title Network Security & Load Balancing
+    .comparison-feature__body
+      .comparison-feature__point
+        Configure and maintain instance and database security groups, provision
+        SSL termination and orchestrate load balancing
+      .comparison-feature__vs vs
+      .comparison-feature__point
+        %span.comparison-feature__automated Automated
+        configuration and maintenance<br>(including SSL termination and load
+        balancing)

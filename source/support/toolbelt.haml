@@ -177,7 +177,7 @@ layout: layout
           %table.rouge-table
             %tr
               %td.rouge-code.rouge-code--no-num.rouge-code--terminal
-                .terminal $ aptible login
+                .terminal <span class="terminal-prompt">$</span> aptible login
                 .terminal-interactive Email: skylar@aptible.com
                 .terminal-interactive Password:
                 .terminal-interactive 2FA Token: 555999
@@ -198,7 +198,7 @@ layout: layout
           %table.rouge-table
             %tr
               %td.rouge-code.rouge-code--no-num.rouge-code--terminal
-                .terminal $ aptible apps:create healthco-on-rails
+                .terminal <span class="terminal-prompt">$</span> aptible apps:create healthco-on-rails
                 .terminal-interactive healthco-on-rails created successfully!
                 .terminal-interactive git remote:
                 .terminal-response git@beta.aptible.com:healthco-on-rails.git
@@ -207,12 +207,12 @@ layout: layout
       .grid-item
         %h2.heading__title.heading__title--centered Full CLI Command Reference
 
-        %pre.highlight.plaintext
+        %pre.highlight.plaintext.highlight--full-width
           %table.rouge-table.rouge-table--full-width
             %tbody
               %tr
                 %td.rouge-code.rouge-code--no-num.rouge-code--terminal
-                  .terminal $ aptible help
+                  .terminal <span class="terminal-prompt">$</span> aptible help
                   .terminal Commands:
                   -# BEGIN USAGE COMMANDS
                   .terminal &nbsp; aptible apps

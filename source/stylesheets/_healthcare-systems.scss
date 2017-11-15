@@ -1,39 +1,42 @@
 .healthcare-systems {
-  .grid-item {
-    @media screen and (max-width: $tablet-portrait) {
-      text-align: center;
-    }
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.healthare-system {
+  display: block;
+  margin: 40px 40px 40px 0;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+  svg {
+    width: auto;
   }
 
-  .heading__title {
-    color: $dark-blue-steel;
-    font-size: 30px;
-    max-width: 400px;
-    &::after {
-      background-color: $light-blue;
-      margin-top: 1em;
-    }
-    @media screen and (max-width: $tablet-portrait) {
-      max-width: auto;
-      &::after {
-        display: none;
-      }
-    }
+  path, polyline {
+    fill: #c2d1e2;
   }
 
-  .heading__summary {
-    color: $light-blue-gray;
-    font-size: 20px;
-    font-weight: $light;
-    max-width: 480px;
-    @media screen and (max-width: $tablet-portrait) {
-      max-width: auto;
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    margin: 20px;
+    width: calc(33.333% - 40px);
+    &:last-of-type {
+      margin-right: 20px;
     }
+  }
+  @media screen and (max-width: 530px) {
+    width: calc(50% - 40px);
   }
 }
 
-.healthcare-systems__logos {
-  path {
-    fill: $dark-blue-steel;
-  }
-}
+.healthare-system.healthare-system--va svg { height: 28px; }
+.healthare-system.healthare-system--uhc svg { height: 22px; }
+.healthare-system.healthare-system--stanford svg { height: 30px; }
+.healthare-system.healthare-system--mayo svg { height: 46px; }
+.healthare-system.healthare-system--johnshopkins svg { height: 63px; }
+.healthare-system.healthare-system--kaiser svg { height: 43px; }

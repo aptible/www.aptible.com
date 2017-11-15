@@ -7,7 +7,7 @@
 .aptible-header--single-grid,
 .aptible-header--bottom-grid {
   position: relative;
-  &::after {
+  &::before {
     background-color: transparent;
     background-image: url(/images/header-bottom-grid.svg);
     background-position: bottom center;
@@ -19,7 +19,6 @@
     height: 15vw;
     position: absolute;
     width: 100%;
-    z-index: 0;
   }
   .grid-container {
     z-index: 1;
@@ -236,4 +235,27 @@
   display: none;
   position: absolute;
   transform: translate(-346px, -225px);
+}
+
+.hero-gradient--dark {
+  background-image: linear-gradient(43deg, #172231 0%, #172231 20%, #421832 100%);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.10);
+}
+
+.hero-gradient-with-dividers--dark {
+  background-image: url(/images/section-dividers/angle-bg-left.svg),
+                    url(/images/section-dividers/angle-bg-left.svg),
+                    url(/images/header-bottom-grid.svg),
+                    linear-gradient(43deg, #172231 0%, #172231 20%, #421832 100%);
+  background-repeat: no-repeat;
+  background-position: 0px 130%, 0px 110%, bottom center, center center;
+  background-size: 130%, 100%, contain, 100%;
+}
+
+.hero-dark {
+  background-image: linear-gradient(4deg, #63183D 0%, #0C1E3A 90%);
+}
+
+.aptible-header--no-margin {
+  margin: 0;
 }
