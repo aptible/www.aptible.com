@@ -160,3 +160,32 @@
     font-weight: $semibold;
   }
 }
+
+.icon-link {
+  align-items: center;
+  display: inline-flex;
+}
+
+.icon-link__icon {
+  margin-right: 12px;
+  svg {
+    display: block;
+    max-height: 36px;
+    max-width: 36px;
+  }
+}
+
+.icon-link__anchor {
+  color: #9ecbff;
+  display: inline-block;
+  font-weight: $semibold;
+  font-size: 12px;
+  line-height: 1.2;
+  max-width: 300px;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.50);
+  &:hover, &:focus {
+    color: $sky-blue;
+    outline: none;
+  }
+}

@@ -1,0 +1,38 @@
+.hero-billboard {
+  align-items: flex-start;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.06);
+  display: flex;
+  padding: 80px 100px;
+  position: relative;
+  transform: translateY(-120px);
+  width: 100%;
+  z-index: 2;
+
+  .grid-item {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 1220px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+  }
+
+  @media screen and (max-width: $tablet-portrait) {
+    padding: 40px;
+    .hero-billboard__image {
+      display: none;
+    }
+  }
+}
+
+.hero-billboard__copy,
+.hero-billboard__image {
+  display: inline;
+}
+
+.hero-billboard__copy {
+  flex-grow: 1;
+}

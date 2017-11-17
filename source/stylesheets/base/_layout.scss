@@ -1,5 +1,14 @@
 html {
+  // Fixed width overflow bg color
+  background-color: #0d1f38;
   box-sizing: border-box;
+}
+
+body {
+  // Fixed width
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.27);
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 *,

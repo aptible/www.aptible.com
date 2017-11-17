@@ -47,6 +47,26 @@ ul.checklist--blue {
   list-style-image: image-url('icons/checklist-item--blue.svg');
 }
 
+ul.checklist--shield {
+  list-style-type: none;
+  list-style-image: none;
+  margin-left: 0;
+  padding-left: 0;
+  li {
+    background-image: image-url('icons/green-shield.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 38px;
+    color: $light-blue-gray;
+    font-size: 16px;
+    font-weight: $light;
+    letter-spacing: .5px;
+    line-height: 1.9;
+    padding-left: 36px;
+    transform: translateX(-10px);
+  }
+}
+
 ol {
   list-style-type: decimal;
   margin-bottom: 1em;

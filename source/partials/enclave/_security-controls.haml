@@ -1,72 +1,71 @@
-.content.enclave-security-controls
-  .grid-container
-    .text-center.hero--dark
-      = partial '/images/ssh-bastion.svg'
-      %h2.title Enclave Security Controls
-      %h3.subtitle
-        Meet regulatory compliance and customer audit
-        requirements—automatically—as you deploy and scale
+.grid-container
+  .text-center.hero--dark
+    = partial '/images/ssh-bastion.svg'
+    %h2.title Enclave Security Controls
+    %h3.subtitle
+      Meet regulatory compliance and customer audit
+      requirements—automatically—as you deploy and scale
 
-    .grid--3up-flex
-      .grid-item.img-card
-        .img-card__image
-          = partial '/images/security-controls/data-encryption.svg'
-        .img-card__title
-          Data Encryption
-        .img-card__copy
-          Enclave provides everything you need to meet encryption requirements.
-          Databases are encrypted at rest using AES-256 and eCryptfs.
-          App and database traffic is encrypted in transit using SSL/TLS.
-        .img-card__copy
-          Enclave handles SSL/TLS termination on your behalf and, optionally,
-          provisions and renews certificates using Let’s Encrypt.
+  .grid--3up-flex
+    .grid-item.img-card
+      .img-card__image
+        = partial '/images/security-controls/data-encryption.svg'
+      .img-card__title
+        Data Encryption
+      .img-card__copy
+        Enclave provides everything you need to meet encryption requirements.
+        Databases are encrypted at rest using AES-256 and eCryptfs.
+        App and database traffic is encrypted in transit using SSL/TLS.
+      .img-card__copy
+        Enclave handles SSL/TLS termination on your behalf and, optionally,
+        provisions and renews certificates using Let’s Encrypt.
 
-      .grid-item.img-card
-        .img-card__image
-          = partial '/images/security-controls/bcp-backups.svg'
-        .img-card__title
-          Business Continuity Procedures
-        .img-card__copy
-          Your data is backed up automatically every 24 hours and whenever you
-          trigger a manual backup. Restoring your data from a backup is simple.
+    .grid-item.img-card
+      .img-card__image
+        = partial '/images/security-controls/bcp-backups.svg'
+      .img-card__title
+        Business Continuity Procedures
+      .img-card__copy
+        Your data is backed up automatically every 24 hours and whenever you
+        trigger a manual backup. Restoring your data from a backup is simple.
 
-      .grid-item.img-card
-        .img-card__image
-          = partial '/images/security-controls/role-based-access.svg'
-        .img-card__title
-          Role-based Access Controls
-        .img-card__copy
-          Define as many roles as needed to ensure logical separation of apps,
-          databases, and environments across functions and teams. Additional
-          roles and environments are free.
+    .grid-item.img-card
+      .img-card__image
+        = partial '/images/security-controls/role-based-access.svg'
+      .img-card__title
+        Role-based Access Controls
+      .img-card__copy
+        Define as many roles as needed to ensure logical separation of apps,
+        databases, and environments across functions and teams. Additional
+        roles and environments are free.
 
-    .grid--3up-flex
-      .grid-item.img-card
-        .img-card__image
-          = partial '/images/security-controls/audit-reports.svg'
-        .img-card__title
-          Audit Reports for Every Operation and Resource
-        .img-card__copy
-          Every deploy, config change, database tunnel, and console operation
-          and session can be traced back to an individual user.
+  .grid--3up-flex
+    .grid-item.img-card
+      .img-card__image
+        = partial '/images/security-controls/audit-reports.svg'
+      .img-card__title
+        Audit Reports for Every Operation and Resource
+      .img-card__copy
+        Every deploy, config change, database tunnel, and console operation
+        and session can be traced back to an individual user.
 
-      .grid-item.img-card
-        .img-card__image
-          = partial '/images/security-controls/logging-backup.svg'
-        .img-card__title
-          Log Collection and Backup
-        .img-card__copy
-          Route your logs in one click. Deliver logs to integration partners
-          including Papertrail and Logentries, or send them to a self-hosted
-          ELK stack. If things go wrong, Enclave has your back with an archived
-          cold copy of your logs.
+    .grid-item.img-card
+      .img-card__image
+        = partial '/images/security-controls/logging-backup.svg'
+      .img-card__title
+        Log Collection and Backup
+      .img-card__copy
+        Route your logs in one click. Deliver logs to integration partners
+        including Papertrail and Logentries, or send them to a self-hosted
+        ELK stack. If things go wrong, Enclave has your back with an archived
+        cold copy of your logs.
 
-      .grid-item.img-card
-        .img-card__image
-          = partial '/images/security-controls/vuln-scanning.svg'
-        .img-card__title
-          Vulnerability Scanning
-        .img-card__copy
-          Vulnerability scanning is enabled by default on all your containers,
-          with automated scanning and real-time notifications via integration
-          with Appcanary.
+    .grid-item.img-card
+      .img-card__image
+        = partial '/images/security-controls/vuln-scanning.svg'
+      .img-card__title
+        Vulnerability Scanning
+      .img-card__copy
+        Vulnerability scanning is enabled by default on all your containers,
+        with automated scanning and real-time notifications via integration
+        with Appcanary.
