@@ -228,7 +228,7 @@ layout: layout
                   .terminal &nbsp; aptible config:unset
                   .terminal &nbsp; aptible db:backup HANDLE
                   .terminal &nbsp; aptible db:clone SOURCE DEST
-                  .terminal &nbsp; aptible db:create HANDLE[--type TYPE] [--container-size SIZE_MB] [--size SIZE_GB]
+                  .terminal &nbsp; aptible db:create HANDLE [--type TYPE] [--version VERSION] [--container-size SIZE_MB] [--size SIZE_GB]
                   .terminal &nbsp; aptible db:deprovision HANDLE
                   .terminal &nbsp; aptible db:dump HANDLE
                   .terminal &nbsp; aptible db:execute HANDLE SQL_FILE
@@ -237,6 +237,7 @@ layout: layout
                   .terminal &nbsp; aptible db:restart HANDLE [--container-size SIZE_MB] [--size SIZE_GB]
                   .terminal &nbsp; aptible db:tunnel HANDLE
                   .terminal &nbsp; aptible db:url HANDLE
+                  .terminal &nbsp; aptible db:versions
                   .terminal &nbsp; aptible deploy [OPTIONS] [VAR1=VAL1] [VAR=VAL2] ...
                   .terminal &nbsp; aptible domains
                   .terminal &nbsp; aptible endpoints:database:create DATABASE
@@ -286,6 +287,7 @@ layout: layout
                   .terminal-interactive # Restart a database
                   .terminal-interactive # Create a local tunnel to a database
                   .terminal-interactive # Display a database URL
+                  .terminal-interactive # List available database versions
                   .terminal-interactive # Deploy an app
                   .terminal-interactive # Print an app's current virtual domains - DEPRECATED
                   .terminal-interactive # Create a Database Endpoint
