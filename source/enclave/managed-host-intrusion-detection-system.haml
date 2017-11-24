@@ -1,0 +1,146 @@
+---
+title: Managed Host-based Intrusion Detection System (HIDS) with Aptible Enclave®
+description: Security events such as file integrity changes are collected via
+             OSSEC, analyzed for anomalous activity, and ultimately trigger
+             Aptible incident response.
+---
+
+- content_for :header do
+  %header.aptible-header.enclave-hids-hero
+    = partial 'partials/main-nav'
+
+    .grid-container.grid--single-center
+      .grid-item.text-center
+        .enclave-hero__copy
+          %h2.subtitle--caps.blue Enclave Features
+          %h1.title.white
+            Host-based Intrusion Detection (HIDS) and Incident Response
+          %p.subtitle.light-blue-gray
+            Your cloud infrastructure is protected at the host level with both
+            intrusion detection monitoring and incident response. The Aptible
+            Security Team investigates, responds to, and resolves any security
+            incidents that are discovered via the HIDS.
+
+        .enclave__text How Enclave Host-based Intrusion Detection Works
+        .enclave__hids-diagram
+          = partial 'images/hids/diagram.svg'
+
+        .grid--3up-flex.hids-diagram
+          .grid-item.img-card.img-card--diagram.hids-diagram--detect
+            .img-card__image
+              %img{ src: '/images/hids/diagram-detect.svg' }
+            .img-card__title
+              Event Collection & Monitoring
+            .img-card__copy
+              Security events are collected using OSSEC, a leading open source
+              intrusion detection system. The Aptible Security Team monitors
+              these events.
+
+          .grid-item.img-card.img-card--diagram.hids-diagram--investigate
+            .img-card__image
+              %img{ src: '/images/hids/diagram-investigate.svg' }
+            .img-card__title
+              ISO 27001 Certified Investigation & Response Process
+            .img-card__copy
+              The Aptible Security Team actively reviews each security event
+              using our ISO 27001 certified security review process. The
+              Security Team classifies each as either legitimate or indicative
+              of potential attack.
+
+          .grid-item.img-card.img-card--diagram.hids-diagram--resolve
+            .img-card__image
+              %img{ src: '/images/hids/diagram-resolve.svg' }
+            .img-card__title
+              Enclave Security Team Resolution
+            .img-card__copy
+              The Aptible Security Team immediately resolves any underlying
+              issues related to detected anomalous activity on your behalf and
+              notifies you of the actions taken.
+
+        .icon-link
+          .icon-link__icon
+            = partial 'images/compliance/iso-27001.svg'
+          %a.icon-link__anchor
+            Learn more about Aptible’s ISO 27001 certified Incident Response Process
+
+.angled-section-dividers
+
+.content
+  .grid-container.hero-billboard
+    .hero-billboard__copy.grid-item
+      .title The Enclave HIDS Compliance Report
+      %p.subtitle
+        Provide your customers and auditors with evidence that your host-based
+        intrusion detection system is monitoring activity and potential threats
+        are resolved.
+      %p.subtitle
+        Subscribe to the available Enclave HIDS Compliance Report, containing a
+        digest of security events and Aptible Security Team review and remediation
+        activities. This report satisfies compliance requirements related to HIDS.
+      %a.btn{ href: '/assets/Enclave-Intrusion-Detection-Report_shared-us-west-1_2017-11-06.pdf' } Download Sample Report
+    .hero-billboard__image.grid-item
+      %img{ src: '/images/hids/sample-report.svg' }
+
+.content.enclave-hids__security-team.angled-section-divider--left
+  .grid-container.grid--single-center
+    .text-center
+      %h2.title
+        The Aptible Security Team Monitors, Investigates,
+        Responds to, and Resolves Security Events
+      %h3.subtitle
+        Your host-based intrusion detection system (HIDS) is an important tool to
+        manage your stack’s security.
+
+    .grid--2up-flex
+      .grid-item.enclave-hids__security-team__copy
+        %p
+          Your infrastructure generates a constant stream of events relevant to the
+          security of your data.  Aptible Enclave® HIDS is installed on each host that
+          runs your containers by default and will detect potential intrusions and other
+          anomalous activities.
+        %p
+          The Aptible Security Team monitors and investigates each event to determine
+          the legitimacy of all activity. Crucially, the Aptible Security Team
+          immediately responds to and resolves any issues that are discovered through
+          investigation of anomalous activity and will notify you of any remediation
+          steps taken.
+        %p
+          You can optionally subscribe to the Enclave HIDS Compliance Report to provide
+          your customers and auditors evidence that you are using HIDS to monitor,
+          analyze, and remediate security events.
+
+      .grid-item.enclave-hids__security-team__list
+        %h3.checklist__title
+          List of Security Events Collected
+        %ul.checklist--shield
+          %li File integrity change
+          %li Rootkit check
+          %li Malware scanning
+          %li System integrity check
+          %li Privilege escalation
+          %li SSH login
+          %li User or group modification
+
+.content.angled-section-gradient--with-grid.enclave-hids__cta
+  .grid-container
+    .deploy-now.grid-item.text-center
+      %h3.subtitle--caps
+        Enclave automates security controls
+      %h2.title.title--white
+        Deploy Your First App Now
+      %h3.subtitle.light-blue-gray
+        Enclave empowers you to deploy and scale Dockerized apps and
+        databases--all without speaking to sales or support
+
+      = partial 'partials/ctas/signup-cta', locals: { |
+            class_name: 'signup-cta--centered',       |
+            cta_label: 'Sign Up',                     |
+            cta_placeholder: 'Enter your work email'  |
+          }                                           |
+
+      = partial 'partials/signup-demo-request'
+
+.angled-section-dividers
+
+.content.enclave-security-controls
+  = partial 'enclave/security-controls'

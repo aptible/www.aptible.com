@@ -3,11 +3,14 @@ body.enclave header {
 }
 
 .enclave-hero {
-  background-image: url(/images/grid-bg-fade.png),
+  background-image: url(/images/section-dividers/angle-bg-left.svg),
+                    url(/images/grid-bg-fade.png),
                     linear-gradient(180deg, #172231 0%, #172231 20%, #421832 100%);
-  background-position: 180% center, center center;
+  background-position: -5px bottom, 180% center, center center;
   background-repeat: no-repeat;
+  background-size: contain, auto, auto;
   margin: 0;
+  padding-bottom: 150px;
   @media screen and (max-width: 900px) {
     background-position: center bottom, center center;
     .grid--2up-flex {
@@ -15,6 +18,14 @@ body.enclave header {
     }
     .grid-item {
       padding: 0;
+    }
+  }
+  .signup-cta__incentive {
+    position: relative;
+    z-index: 3;
+    a {
+      cursor: pointer;
+      line-height: 1.5;
     }
   }
 }
@@ -164,12 +175,14 @@ body.enclave header {
 .enclave__demo-app {
   background-image: url(/images/enclave-dashboard.png);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: 55vw center;
   background-size: contain;
   margin: 50px 0 50px 30px;
   padding: 100px 0;
+  @media screen and (min-width: 1440px) {
+    background-position: 900px center;
+  }
   @media screen and (max-width: 1500px) {
-    background-position: 50vw center;
     .grid-container {
       padding-right: 0;
     }
@@ -304,19 +317,10 @@ body.enclave header {
 }
 
 .enclave__trusted-by {
-  background-color: transparent;
-  background-image: url(/images/angled-gradient-bg.svg);
-  background-position: center top;
-  background-size: cover;
-  margin-top: -300px;
-  padding-top: 300px;
-  position: relative;
-  z-index: 1;
-  @media screen and (min-width: 1500px) {
-    margin-top: -17vw;
+  .grid-item--adjacent {
+    padding-top: 80px;
   }
   @media screen and (max-width: $tablet-portrait) {
-    margin-top: -300px;
     .title {
       padding-top: 50px;
     }

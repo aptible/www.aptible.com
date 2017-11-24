@@ -1,0 +1,509 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="444" height="372" viewBox="0 0 444 372">
+  <defs>
+    <rect id="a" width="211.25" height="281.25"/>
+    <filter id="b" width="143.6%" height="132.7%" x="-21.8%" y="-11.7%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+      <feOffset dy="13" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0692368659 0"/>
+    </filter>
+    <linearGradient id="d" x1="123.193%" x2="36.706%" y1="-85.944%" y2="170.859%">
+      <stop offset="0%" stop-color="#00D09A"/>
+      <stop offset="100%" stop-color="#007DD0"/>
+    </linearGradient>
+    <rect id="e" width="35.938" height="10.625" rx="1.563"/>
+    <text id="h" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="3.481" y="7.875">HIGH</tspan>
+    </text>
+    <filter id="g" width="118.8%" height="142.9%" x="-9.4%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="j" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="26.794" y="7.875">4</tspan>
+    </text>
+    <filter id="i" width="175%" height="142.9%" x="-37.5%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="k" width="35.938" height="10.625" rx="1.563"/>
+    <text id="n" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="4.584" y="7.875">MED</tspan>
+    </text>
+    <filter id="m" width="121.4%" height="142.9%" x="-10.7%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="p" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="25.331" y="7.875">10</tspan>
+    </text>
+    <filter id="o" width="142.9%" height="142.9%" x="-21.4%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="q" width="35.938" height="10.625" rx="1.563"/>
+    <text id="t" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="4.241" y="7.875">LOW</tspan>
+    </text>
+    <filter id="s" height="142.9%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="v" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="25.331" y="7.875">16</tspan>
+    </text>
+    <filter id="u" width="142.9%" height="142.9%" x="-21.4%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="w" width="35.938" height="10.625" rx="1.563"/>
+    <text id="z" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="3.913" y="7.875">INFO</tspan>
+    </text>
+    <filter id="y" height="142.9%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="B" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="23.869" y="7.875">112</tspan>
+    </text>
+    <filter id="A" width="130%" height="142.9%" x="-15%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="C" width="35.938" height="10.625" rx="1.563"/>
+    <text id="F" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="3.913" y="7.875">INFO</tspan>
+    </text>
+    <filter id="E" height="142.9%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="H" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="24.837" y="7.875">45</tspan>
+    </text>
+    <filter id="G" width="137.5%" height="142.9%" x="-18.8%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="I" width="35.938" height="10.625" rx="1.563"/>
+    <text id="L" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="3.913" y="7.875">INFO</tspan>
+    </text>
+    <filter id="K" height="142.9%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="N" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="25.825" y="7.875">11</tspan>
+    </text>
+    <filter id="M" width="150%" height="142.9%" x="-25%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="O" width="211.25" height="281.25"/>
+    <filter id="P" width="143.6%" height="132.7%" x="-21.8%" y="-11.7%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+      <feOffset dy="13" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0576879529 0"/>
+    </filter>
+    <rect id="R" width="35.938" height="10.625" rx="1.563"/>
+    <text id="U" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="3.481" y="7.875">HIGH</tspan>
+    </text>
+    <filter id="T" width="118.8%" height="142.9%" x="-9.4%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="W" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="26.794" y="7.875">4</tspan>
+    </text>
+    <filter id="V" width="175%" height="142.9%" x="-37.5%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="X" width="35.938" height="10.625" rx="1.563"/>
+    <text id="aa" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="4.584" y="7.875">MED</tspan>
+    </text>
+    <filter id="Z" width="121.4%" height="142.9%" x="-10.7%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="ac" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="25.331" y="7.875">10</tspan>
+    </text>
+    <filter id="ab" width="142.9%" height="142.9%" x="-21.4%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="ad" width="35.938" height="10.625" rx="1.563"/>
+    <text id="ag" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="4.241" y="7.875">LOW</tspan>
+    </text>
+    <filter id="af" height="142.9%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="ai" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="25.331" y="7.875">16</tspan>
+    </text>
+    <filter id="ah" width="142.9%" height="142.9%" x="-21.4%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="aj" width="35.938" height="10.625" rx="1.563"/>
+    <text id="am" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="3.913" y="7.875">INFO</tspan>
+    </text>
+    <filter id="al" height="142.9%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="ao" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="23.869" y="7.875">112</tspan>
+    </text>
+    <filter id="an" width="130%" height="142.9%" x="-15%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="ap" width="35.938" height="10.625" rx="1.563"/>
+    <text id="as" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="3.913" y="7.875">INFO</tspan>
+    </text>
+    <filter id="ar" height="142.9%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="au" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="24.837" y="7.875">45</tspan>
+    </text>
+    <filter id="at" width="137.5%" height="142.9%" x="-18.8%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <rect id="av" width="35.938" height="10.625" rx="1.563"/>
+    <text id="ay" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="3.913" y="7.875">INFO</tspan>
+    </text>
+    <filter id="ax" height="142.9%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <text id="aA" fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500">
+      <tspan x="25.825" y="7.875">11</tspan>
+    </text>
+    <filter id="az" width="150%" height="142.9%" x="-25%" y="-21.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.144984149 0"/>
+    </filter>
+    <linearGradient id="aD" x1="123.53%" x2="-6.837%" y1="141.797%" y2="-2.318%">
+      <stop offset="0%" stop-color="#63183D"/>
+      <stop offset="100%" stop-color="#0C1E3A"/>
+    </linearGradient>
+    <rect id="aC" width="211.25" height="281.25"/>
+    <filter id="aB" width="143.6%" height="132.7%" x="-21.8%" y="-11.7%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+      <feOffset dy="13" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.125877491 0"/>
+    </filter>
+    <rect id="aF" width="64" height="64" rx="3"/>
+    <filter id="aE" width="209.4%" height="209.4%" x="-54.7%" y="-39.1%" filterUnits="objectBoundingBox">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0922497736 0"/>
+    </filter>
+    <path id="aH" d="M16.188567,47.2174269 C16.3007254,47.2747523 16.3555584,47.3295853 16.4128838,47.3295853 L17.1406674,47.7208936 C17.4198172,47.8903774 17.698967,47.9452104 18.0354423,47.9452104 C19.8798252,47.9452104 22.3971586,45.2035601 25.5874426,39.777585 C29.1117094,38.5463348 33.1967683,37.6515599 37.8401269,37.1480932 C39.1262101,37.8758767 40.4671263,38.3793434 41.8678603,38.8254847 C43.266102,39.2167929 44.4973522,39.4411098 45.5042855,39.4411098 C46.8452018,39.4411098 47.5729853,39.0498015 47.6851437,38.2098596 C47.7399767,38.2098596 47.7399767,38.1550265 47.7399767,38.1550265 L47.7973021,38.1001935 C48.076452,37.4845684 48.076452,36.9237763 47.7399767,36.4776351 C47.1243516,35.4707017 45.2799687,34.967235 42.2018432,34.967235 C40.970593,34.967235 39.7418352,35.022068 38.510585,35.1890594 C37.5036516,34.5734343 36.6088766,33.9603016 35.9359261,33.456835 C34.0342178,31.8891095 32.5238177,29.4266091 31.349893,26.0145007 C31.6290428,24.5614261 31.7412012,22.5475593 31.7960342,20.0302259 L31.7960342,19.0781255 C31.7960342,18.9659671 31.7960342,18.9111341 31.7412012,18.7989757 C31.7960342,18.7989757 31.8533596,18.6868173 31.9081926,18.5746588 C32.0776765,17.6225585 31.9655181,16.8972674 31.6290428,16.4486337 C31.349893,16.1694838 31.0134177,16 30.509951,16 L29.8394929,16 C29.1690348,16 28.7204011,16.3938007 28.4960843,17.2312502 C28.2169344,18.295509 28.159609,19.6364252 28.3290928,21.2041507 C28.4412513,22.8267092 28.7752341,24.5041006 29.2787008,26.1839845 C28.4960843,28.8134764 27.4343179,31.5526342 26.0335838,34.3516099 C24.8596591,36.6994595 23.7405673,38.7133262 22.6788009,40.5053685 C22.6788009,40.4480431 22.6788009,40.4480431 22.6214755,40.3932101 C22.3971586,40.0567349 22.1753342,40.0019019 21.8961844,40.1688933 C20.104142,41.1209937 18.7632258,42.127927 17.7538,43.1896934 C16.8041921,44.3087852 16.188567,45.2608856 16.0215756,46.0435021 C15.9642501,46.6018018 16.0215756,46.99311 16.188567,47.2174269 L16.188567,47.2174269 Z M19.4885169,43.9174769 C20.2163005,43.022702 21.1684008,42.127927 22.2301672,41.3428181 C20.4406173,44.0844683 18.9850503,45.7643522 17.9232839,46.2678189 C18.2024337,45.6521938 18.7059004,44.8670849 19.4885169,43.9174769 L19.4885169,43.9174769 Z M27.8804592,35.5803677 C29.0568764,33.2873511 29.8943259,31.2186514 30.455118,29.4266091 C31.5168844,31.7221181 32.860293,33.511668 34.4828515,34.9099096 C34.5376845,35.022068 34.7071683,35.1890594 34.9863182,35.3585433 C35.210635,35.5255347 35.3227934,35.6376931 35.3776264,35.6376931 C32.2446679,36.1959928 29.2787008,37.0359348 26.4822175,38.1550265 C26.8186928,37.5942345 27.2648341,36.6994595 27.8804592,35.5803677 L27.8804592,35.5803677 Z M30.3429596,17.5677255 L30.3429596,17.5104001 L30.3977926,17.455567 C30.6221094,17.7347169 30.7891009,18.0711922 30.7891009,18.5198258 L30.7891009,18.5746588 L30.8464263,18.6294918 L30.8464263,18.6868173 C30.7891009,18.7989757 30.7342678,18.8538087 30.7342678,18.9659671 C30.5672764,19.805909 30.509951,20.2520503 30.509951,20.3093757 C30.3977926,21.0371593 30.2856342,21.5406259 30.2856342,21.650292 C30.0064843,19.805909 30.0638097,18.4076674 30.3429596,17.5677255 L30.3429596,17.5677255 Z M46.6782103,37.6515599 L46.7330433,37.7063929 C46.6208849,37.7637183 46.4538935,37.7637183 46.1747437,37.7637183 C45.1678103,37.7637183 43.8817271,37.4845684 42.2591686,36.9237763 C44.7191766,36.9237763 46.1747437,37.1480932 46.6782103,37.6515599 L46.6782103,37.6515599 Z"/>
+    <filter id="aG" width="131.2%" height="137.6%" x="-15.6%" y="-9.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0797101449 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(22 10)">
+    <g transform="rotate(15 98.896 751.193)">
+      <mask id="c" fill="white">
+        <use xlink:href="#a"/>
+      </mask>
+      <use fill="black" filter="url(#b)" xlink:href="#a"/>
+      <use fill="#FFFFFF" xlink:href="#a"/>
+      <rect width="213.25" height="283.25" x="-1" y="-1" stroke="#FFFFFF" stroke-width="2"/>
+      <rect width="341.25" height="215" x="-30" y="-97.5" fill="#EFF5FF" mask="url(#c)"/>
+      <g fill="url(#d)" mask="url(#c)">
+        <path d="M155.032051,0 L164.858974,0 L164.858974,99.5260664 L155.032051,99.5260664 L155.032051,0 Z M0.608974359,47.3933649 L10.4358974,47.3933649 L10.4358974,99.5260664 L0.608974359,99.5260664 L0.608974359,47.3933649 Z M14.6474359,61.6113744 L24.474359,61.6113744 L24.474359,99.5260664 L14.6474359,99.5260664 L14.6474359,61.6113744 Z M28.6858974,18.957346 L38.5128205,18.957346 L38.5128205,99.5260664 L28.6858974,99.5260664 L28.6858974,18.957346 Z M42.724359,80.5687204 L52.5512821,80.5687204 L52.5512821,99.5260664 L42.724359,99.5260664 L42.724359,80.5687204 Z M56.7628205,61.6113744 L66.5897436,61.6113744 L66.5897436,99.5260664 L56.7628205,99.5260664 L56.7628205,61.6113744 Z M70.8012821,71.0900474 L80.6282051,71.0900474 L80.6282051,99.5260664 L70.8012821,99.5260664 L70.8012821,71.0900474 Z M84.8397436,56.8720379 L94.6666667,56.8720379 L94.6666667,99.5260664 L84.8397436,99.5260664 L84.8397436,56.8720379 Z M98.8782051,71.0900474 L108.705128,71.0900474 L108.705128,99.5260664 L98.8782051,99.5260664 L98.8782051,71.0900474 Z M112.916667,90.0473934 L122.74359,90.0473934 L122.74359,99.5260664 L112.916667,99.5260664 L112.916667,90.0473934 Z M126.955128,33.1753555 L136.782051,33.1753555 L136.782051,99.5260664 L126.955128,99.5260664 L126.955128,33.1753555 Z M140.99359,9.47867299 L150.820513,9.47867299 L150.820513,99.5260664 L140.99359,99.5260664 L140.99359,9.47867299 Z" transform="translate(23.75 17.5)"/>
+      </g>
+      <g mask="url(#c)">
+        <g transform="translate(23.75 148.75)">
+          <text font-family="Gibson-Regular, Gibson" font-size="6.25">
+            <tspan x="0" y="6" fill="#62759A">SSH login</tspan> <tspan x="0" y="24.75" fill="#62759A">Privilege escalation</tspan> <tspan x="0" y="43.5" fill="#62759A">File integrity change</tspan> <tspan x="0" y="62.25" fill="#62759A">System integrity check</tspan> <tspan x="0" y="81" fill="#62759A">Other informational event</tspan> <tspan x="0" y="99.75" fill="#62759A">Rootkit check</tspan>
+          </text>
+          <g transform="translate(129.688 3.75)">
+            <mask id="f" fill="white">
+              <use xlink:href="#e"/>
+            </mask>
+            <use fill="#EA4747" xlink:href="#e"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".048" mask="url(#f)"/>
+            <g fill="#FFFFFF" mask="url(#f)">
+              <use filter="url(#g)" xlink:href="#h"/>
+              <use xlink:href="#h"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#f)">
+              <use filter="url(#i)" xlink:href="#j"/>
+              <use xlink:href="#j"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 22.5)">
+            <mask id="l" fill="white">
+              <use xlink:href="#k"/>
+            </mask>
+            <use fill="#FEB612" xlink:href="#k"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".053" mask="url(#l)"/>
+            <g fill="#FFFFFF" mask="url(#l)">
+              <use filter="url(#m)" xlink:href="#n"/>
+              <use xlink:href="#n"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#l)">
+              <use filter="url(#o)" xlink:href="#p"/>
+              <use xlink:href="#p"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 41.25)">
+            <mask id="r" fill="white">
+              <use xlink:href="#q"/>
+            </mask>
+            <use fill="#2ECC71" xlink:href="#q"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".047" mask="url(#r)"/>
+            <g fill="#FFFFFF" mask="url(#r)">
+              <use filter="url(#s)" xlink:href="#t"/>
+              <use xlink:href="#t"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#r)">
+              <use filter="url(#u)" xlink:href="#v"/>
+              <use xlink:href="#v"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 60)">
+            <mask id="x" fill="white">
+              <use xlink:href="#w"/>
+            </mask>
+            <use fill="#96ACAF" xlink:href="#w"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".106" mask="url(#x)"/>
+            <g fill="#FFFFFF" mask="url(#x)">
+              <use filter="url(#y)" xlink:href="#z"/>
+              <use xlink:href="#z"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#x)">
+              <use filter="url(#A)" xlink:href="#B"/>
+              <use xlink:href="#B"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 78.75)">
+            <mask id="D" fill="white">
+              <use xlink:href="#C"/>
+            </mask>
+            <use fill="#96ACAF" xlink:href="#C"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".106" mask="url(#D)"/>
+            <g fill="#FFFFFF" mask="url(#D)">
+              <use filter="url(#E)" xlink:href="#F"/>
+              <use xlink:href="#F"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#D)">
+              <use filter="url(#G)" xlink:href="#H"/>
+              <use xlink:href="#H"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 97.5)">
+            <mask id="J" fill="white">
+              <use xlink:href="#I"/>
+            </mask>
+            <use fill="#96ACAF" xlink:href="#I"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".106" mask="url(#J)"/>
+            <g fill="#FFFFFF" mask="url(#J)">
+              <use filter="url(#K)" xlink:href="#L"/>
+              <use xlink:href="#L"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#J)">
+              <use filter="url(#M)" xlink:href="#N"/>
+              <use xlink:href="#N"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <text fill="#62759A" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500" mask="url(#c)">
+        <tspan x="82.5" y="17.25">EVENTS BY DAY</tspan>
+      </text>
+      <text fill="#62759A" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500" mask="url(#c)">
+        <tspan x="73.75" y="139.75">EVENTS BY CATEGORY</tspan>
+      </text>
+    </g>
+    <g transform="translate(66.043 15.832)">
+      <mask id="Q" fill="white">
+        <use xlink:href="#O"/>
+      </mask>
+      <use fill="black" filter="url(#P)" xlink:href="#O"/>
+      <use fill="#FFFFFF" xlink:href="#O"/>
+      <rect width="213.25" height="283.25" x="-1" y="-1" stroke="#FFFFFF" stroke-width="2"/>
+      <rect width="341.25" height="215" x="-30" y="-97.5" fill="#EFF5FF" mask="url(#Q)"/>
+      <g fill="url(#d)" mask="url(#Q)">
+        <path d="M155.032051,0 L164.858974,0 L164.858974,99.5260664 L155.032051,99.5260664 L155.032051,0 Z M0.608974359,47.3933649 L10.4358974,47.3933649 L10.4358974,99.5260664 L0.608974359,99.5260664 L0.608974359,47.3933649 Z M14.6474359,61.6113744 L24.474359,61.6113744 L24.474359,99.5260664 L14.6474359,99.5260664 L14.6474359,61.6113744 Z M28.6858974,18.957346 L38.5128205,18.957346 L38.5128205,99.5260664 L28.6858974,99.5260664 L28.6858974,18.957346 Z M42.724359,80.5687204 L52.5512821,80.5687204 L52.5512821,99.5260664 L42.724359,99.5260664 L42.724359,80.5687204 Z M56.7628205,61.6113744 L66.5897436,61.6113744 L66.5897436,99.5260664 L56.7628205,99.5260664 L56.7628205,61.6113744 Z M70.8012821,71.0900474 L80.6282051,71.0900474 L80.6282051,99.5260664 L70.8012821,99.5260664 L70.8012821,71.0900474 Z M84.8397436,56.8720379 L94.6666667,56.8720379 L94.6666667,99.5260664 L84.8397436,99.5260664 L84.8397436,56.8720379 Z M98.8782051,71.0900474 L108.705128,71.0900474 L108.705128,99.5260664 L98.8782051,99.5260664 L98.8782051,71.0900474 Z M112.916667,90.0473934 L122.74359,90.0473934 L122.74359,99.5260664 L112.916667,99.5260664 L112.916667,90.0473934 Z M126.955128,33.1753555 L136.782051,33.1753555 L136.782051,99.5260664 L126.955128,99.5260664 L126.955128,33.1753555 Z M140.99359,9.47867299 L150.820513,9.47867299 L150.820513,99.5260664 L140.99359,99.5260664 L140.99359,9.47867299 Z" transform="matrix(-1 0 0 1 189.218 17.5)"/>
+      </g>
+      <g mask="url(#Q)">
+        <g transform="translate(23.75 148.75)">
+          <text font-family="Gibson-Regular, Gibson" font-size="6.25">
+            <tspan x="0" y="6" fill="#62759A">SSH login</tspan> <tspan x="0" y="24.75" fill="#62759A">Privilege escalation</tspan> <tspan x="0" y="43.5" fill="#62759A">File integrity change</tspan> <tspan x="0" y="62.25" fill="#62759A">System integrity check</tspan> <tspan x="0" y="81" fill="#62759A">Other informational event</tspan> <tspan x="0" y="99.75" fill="#62759A">Rootkit check</tspan>
+          </text>
+          <g transform="translate(129.688 3.75)">
+            <mask id="S" fill="white">
+              <use xlink:href="#R"/>
+            </mask>
+            <use fill="#EA4747" xlink:href="#R"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".048" mask="url(#S)"/>
+            <g fill="#FFFFFF" mask="url(#S)">
+              <use filter="url(#T)" xlink:href="#U"/>
+              <use xlink:href="#U"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#S)">
+              <use filter="url(#V)" xlink:href="#W"/>
+              <use xlink:href="#W"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 22.5)">
+            <mask id="Y" fill="white">
+              <use xlink:href="#X"/>
+            </mask>
+            <use fill="#FEB612" xlink:href="#X"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".053" mask="url(#Y)"/>
+            <g fill="#FFFFFF" mask="url(#Y)">
+              <use filter="url(#Z)" xlink:href="#aa"/>
+              <use xlink:href="#aa"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#Y)">
+              <use filter="url(#ab)" xlink:href="#ac"/>
+              <use xlink:href="#ac"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 41.25)">
+            <mask id="ae" fill="white">
+              <use xlink:href="#ad"/>
+            </mask>
+            <use fill="#2ECC71" xlink:href="#ad"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".047" mask="url(#ae)"/>
+            <g fill="#FFFFFF" mask="url(#ae)">
+              <use filter="url(#af)" xlink:href="#ag"/>
+              <use xlink:href="#ag"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#ae)">
+              <use filter="url(#ah)" xlink:href="#ai"/>
+              <use xlink:href="#ai"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 60)">
+            <mask id="ak" fill="white">
+              <use xlink:href="#aj"/>
+            </mask>
+            <use fill="#96ACAF" xlink:href="#aj"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".106" mask="url(#ak)"/>
+            <g fill="#FFFFFF" mask="url(#ak)">
+              <use filter="url(#al)" xlink:href="#am"/>
+              <use xlink:href="#am"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#ak)">
+              <use filter="url(#an)" xlink:href="#ao"/>
+              <use xlink:href="#ao"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 78.75)">
+            <mask id="aq" fill="white">
+              <use xlink:href="#ap"/>
+            </mask>
+            <use fill="#96ACAF" xlink:href="#ap"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".106" mask="url(#aq)"/>
+            <g fill="#FFFFFF" mask="url(#aq)">
+              <use filter="url(#ar)" xlink:href="#as"/>
+              <use xlink:href="#as"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#aq)">
+              <use filter="url(#at)" xlink:href="#au"/>
+              <use xlink:href="#au"/>
+            </g>
+          </g>
+          <g transform="translate(129.688 97.5)">
+            <mask id="aw" fill="white">
+              <use xlink:href="#av"/>
+            </mask>
+            <use fill="#96ACAF" xlink:href="#av"/>
+            <rect width="22.5" height="14.375" y="-2.188" fill="#000000" fill-opacity=".106" mask="url(#aw)"/>
+            <g fill="#FFFFFF" mask="url(#aw)">
+              <use filter="url(#ax)" xlink:href="#ay"/>
+              <use xlink:href="#ay"/>
+            </g>
+            <g fill="#FFFFFF" mask="url(#aw)">
+              <use filter="url(#az)" xlink:href="#aA"/>
+              <use xlink:href="#aA"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <text fill="#62759A" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500" mask="url(#Q)">
+        <tspan x="82.5" y="17.25">EVENTS BY DAY</tspan>
+      </text>
+      <text fill="#62759A" font-family="Gibson-SemiBold, Gibson" font-size="6.25" font-weight="500" mask="url(#Q)">
+        <tspan x="73.75" y="139.75">EVENTS BY CATEGORY</tspan>
+      </text>
+    </g>
+    <g transform="rotate(-8 275.882 17.806)">
+      <use fill="black" filter="url(#aB)" xlink:href="#aC"/>
+      <use fill="url(#aD)" xlink:href="#aC"/>
+      <rect width="213.25" height="283.25" x="-1" y="-1" stroke="#FFFFFF" stroke-width="2"/>
+      <g transform="translate(25 107.5)">
+        <text fill="#FFFFFF" font-family="Gibson-SemiBold, Gibson" font-size="15" font-weight="500">
+          <tspan x="0" y="14">healthco-production</tspan>
+        </text>
+        <text fill="#FFFFFF" font-family="Gibson-Light, Gibson" font-size="10" font-weight="300">
+          <tspan x="0" y="51.5">Enclave Intrusion Detection Report</tspan>
+        </text>
+        <path stroke="#307AD1" stroke-linecap="square" stroke-width="3.75" d="M1.5625,29.375 L13.5031082,29.375"/>
+        <text fill="#9CC9FF" font-family="Gibson-Light, Gibson" font-size="7.5" font-weight="300">
+          <tspan x="0" y="63.25">October 2017</tspan>
+        </text>
+      </g>
+    </g>
+    <g transform="translate(162 251)">
+      <use fill="black" filter="url(#aE)" xlink:href="#aF"/>
+      <use fill="#FFFFFF" xlink:href="#aF"/>
+      <g>
+        <use fill="black" filter="url(#aG)" xlink:href="#aH"/>
+        <use fill="#EA4747" xlink:href="#aH"/>
+      </g>
+    </g>
+  </g>
+</svg>

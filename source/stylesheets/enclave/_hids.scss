@@ -1,0 +1,116 @@
+.enclave-hids-hero {
+  background-image: url(/images/grid-bg-fade.png),
+                    linear-gradient(180deg, #172231 0%, #172231 20%, #421832 100%);
+  background-position: 50% 80%, center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-bottom: 50px;
+
+  .grid-item {
+    padding-bottom: 100px;
+    > svg {
+      margin-bottom: 30px;
+    }
+  }
+  .grid--3up-flex {
+    margin-bottom: 20px;
+    .grid-item {
+      padding-bottom: 0;
+    }
+  }
+
+  .img-card__image {
+    background: none;
+    display: none;
+  }
+
+  .img-card__copy {
+    padding: 0 20px;
+  }
+
+  .icon-link {
+    position: relative;
+    z-index: 9;
+  }
+
+  @media screen and (max-width: 1139px) {
+    background-position: center center;
+    padding-bottom: 0;
+    .enclave__hids-diagram {
+      display: none;
+    }
+    .img-card__image {
+      display: block;
+      height: auto;
+    }
+  }
+}
+
+.hids-diagram__detect-lines--portrait,
+.hids-diagram__report-lines--portrait {
+  display: none;
+}
+
+.enclave__text {
+  color: $white;
+  font-size: 16px;
+  font-weight: $regular;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.50);
+}
+
+.enclave-hids__security-team {
+  @media screen and (max-width: $max-viewport) {
+    padding-bottom: 200px;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    padding-bottom: 100px;
+  }
+
+  .text-center {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .subtitle {
+    color: #7383a0;
+  }
+  .grid--2up-flex {
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1000px;
+    @media screen and (max-width: $tablet-portrait) {
+      justify-content: center;
+    }
+  }
+  .grid-item {
+    color: $light-blue-gray;
+    padding: 0;
+    text-align: left;
+  }
+  .checklist__title {
+    color: $light-blue-gray;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+.grid-item.enclave-hids__security-team__copy {
+  max-width: 645px;
+  margin-right: 40px;
+  @media screen and (max-width: $tablet-portrait) {
+    margin-right: 0;
+  }
+}
+.grid-item.enclave-hids__security-team__list {
+  max-width: 270px;
+  @media screen and (max-width: $tablet-portrait) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.enclave-hids__cta {
+  padding-bottom: 200px;
+  @media screen and (max-width: $tablet-portrait) {
+    padding-bottom: 100px;
+  }
+}

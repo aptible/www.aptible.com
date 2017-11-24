@@ -24,7 +24,7 @@ description: Aptible Enclave is a container orchestration platform built for dev
               cta_placeholder: 'Enter your work email'  |
             }                                           |
 
-        %li.signup-cta__incentive
+        .signup-cta__incentive
           %a{ href: '/documentation/' } Explore the Docs
           or
           %a{ href: '/contact/sales/' } Request a Demo
@@ -32,10 +32,7 @@ description: Aptible Enclave is a container orchestration platform built for dev
       .grid-item
         = partial 'enclave/carousel', locals: { css_class: 'enclave-carousel--compact' }
 
-    .angled-section-divider--left
-      = partial('/images/section-dividers/angle-bg-left.svg')
-
-.content.enclave__trusted-by
+.content.angled-section-gradient.enclave__trusted-by
   .grid-container.grid--single-center.grid-item--adjacent
     %h2.title.sky-blue Trusted by those innovating in regulated industries
     .healthcare-systems
@@ -80,9 +77,6 @@ description: Aptible Enclave is a container orchestration platform built for dev
             Enclave is a mature, twelve-factor app deployment platform, with
             security and compliance features built-in. It will fit right in with
             your existing developer workflow.
-          -# .img-card__link
-          -#   %a.arrow-link--right.dbl-arrow-link--right{ href: '#' }
-          -#     What's a Twelve-Factor App?
 
         .grid-item.img-card
           .img-card__image
@@ -94,9 +88,6 @@ description: Aptible Enclave is a container orchestration platform built for dev
             containers and databases within it. You can run any code on Enclave
             that runs inside a Docker container, the standard and most widely-used
             software container platform.
-          -# .img-card__link
-          -#   %a.arrow-link--right.dbl-arrow-link--right{ href: '#' }
-          -#     Get Started with Docker for Regulated Industries
 
         .grid-item.img-card
           .img-card__image
@@ -109,9 +100,6 @@ description: Aptible Enclave is a container orchestration platform built for dev
             automatically implements security controls including data encryption,
             backup and restore procedures, audit logging, and more, so you can pass
             regulatory and customer audits while you focus on building your app.
-          -# .img-card__link
-          -#   %a.arrow-link--right.dbl-arrow-link--right{ href: '#' }
-          -#     See all of Enclave’s Security Controls
 
 .enclave-orchestration.content.hero-gradient-with-dividers--dark
   .grid-container
@@ -284,15 +272,18 @@ description: Aptible Enclave is a container orchestration platform built for dev
           .comparison-feature__vs vs
           .comparison-feature__point
             %span.comparison-feature__automated Included
-            Network and Host Vulnerability Scanning, App Docker Image Security
-            Scans, and Managed Host-level Intrusion Detection
+            Network and Host Vulnerability Scanning,
+            App Docker Image Security Scans, and
+            %a{ href: '/enclave/managed-host-intrusion-detection-system/' }
+              Managed Host-level Intrusion Detection
 
     .enclave__aws-comparison__actions.btn-callout
       Learn more about all of Enclave's security and audit-readiness features in the
       %a{ href: '/assets/aptible-enclave-division-of-responsibilities.pdf' } Enclave Security Division of Responsibilities
       &nbsp;→
 
-= partial 'enclave/security-controls'
+.content.enclave-security-controls
+  = partial 'enclave/security-controls'
 
 .content.enclave-carousel-hero
   .grid-container.grid--single-center.grid-item--adjacent

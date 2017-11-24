@@ -55,11 +55,11 @@
       </g>
     </g>
     <g stroke-linecap="round">
-      <use fill="black" filter="url(#audit-reports-d)" xlink:href="#audit-reports-e"/>
+      <use stroke="black" filter="url(#audit-reports-d)" xlink:href="#audit-reports-e"/>
       <use stroke="#2ECC71" xlink:href="#audit-reports-e"/>
     </g>
     <g stroke-linecap="round">
-      <use fill="black" filter="url(#audit-reports-f)" xlink:href="#audit-reports-g"/>
+      <use stroke="black" filter="url(#audit-reports-f)" xlink:href="#audit-reports-g"/>
       <use stroke="#2ECC71" xlink:href="#audit-reports-g"/>
     </g>
     <g transform="translate(166 54)">

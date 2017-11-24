@@ -483,13 +483,13 @@
           <path fill="#176655" d="M19.5143424,22.4361873 C21.0744409,22.7754676 22.151692,21.8369629 22.151692,20.134578 C22.151692,18.4708921 21.1673303,16.4389136 19.6814545,14.9898639 L14.666757,16.7190815 L15.6882744,19.3410834 L19.5143424,22.4361873 Z"/>
         </g>
       </g>
-      <use fill="black" filter="url(#logging-backup-aE)" xlink:href="#logging-backup-aF"/>
+      <use stroke="black" filter="url(#logging-backup-aE)" xlink:href="#logging-backup-aF"/>
       <use stroke="#2ECC71" xlink:href="#logging-backup-aF"/>
       <use fill="black" filter="url(#logging-backup-aG)" xlink:href="#logging-backup-aH"/>
       <use fill="#2ECC71" xlink:href="#logging-backup-aH"/>
       <use fill="black" filter="url(#logging-backup-aI)" xlink:href="#logging-backup-aJ"/>
       <use fill="#2ECC71" xlink:href="#logging-backup-aJ"/>
-      <use fill="black" filter="url(#logging-backup-aK)" xlink:href="#logging-backup-aL"/>
+      <use stroke="black" filter="url(#logging-backup-aK)" xlink:href="#logging-backup-aL"/>
       <use stroke="#2ECC71" xlink:href="#logging-backup-aL"/>
       <g>
         <use fill="black" filter="url(#logging-backup-aM)" xlink:href="#logging-backup-aN"/>
@@ -500,7 +500,7 @@
         <use fill="#2ECC71" xlink:href="#logging-backup-aP"/>
       </g>
       <g stroke-dasharray="2 1">
-        <use fill="black" filter="url(#logging-backup-aQ)" xlink:href="#logging-backup-aR"/>
+        <use stroke="black" filter="url(#logging-backup-aQ)" xlink:href="#logging-backup-aR"/>
         <use stroke="#2ECC71" xlink:href="#logging-backup-aR"/>
       </g>
     </g>

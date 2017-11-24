@@ -1,55 +1,81 @@
-.angled-section-divider__mask {
-  // background-image: linear-gradient(-35deg,
-  //                                   $dark-magenta 0%,
-  //                                   $twilight 42%,
-  //                                   $midnight-blue 78%,
-  //                                   $blue 130%),
-  //                   url(/images/section-dividers/angle-bg-right-mask.svg);
-  background-image: url(/images/header-bottom-grid.svg),
-                    linear-gradient(-35deg,
-                                    $dark-magenta 0%,
-                                    $twilight 42%,
-                                    $midnight-blue 78%,
-                                    $blue 130%);
+.angled-section-divider--left {
+  background-image: url('/images/section-dividers/angle-bg-left.svg');
+  background-position: -5px bottom;
   background-repeat: no-repeat;
-  background-position: bottom center, center center;
-  // mask: url(#angle-bg-right-mask);
-  // mask: url(#angle-bg-right-mask);
-
-  // successful, not in
-  clip-path: polygon(0px 100%, 100% 100%, 100% 0px, 0px 150px);
-
-  // This works...
-  // -webkit-mask-image: linear-gradient(-5deg, black 80%, transparent 80%);
-  // -webkit-mask-repeat: space;
-
-  // background-repeat: no-repeat;
-  // background-color: yellow;
-
-  padding-top: 180px;
-  position: relative;
-  transform: translateY(-150px);
-  z-index: 2;
+  background-size: contain;
+  padding-bottom: 300px;
 }
 
-.angled-section-divider--left,
-.angled-section-divider--right {
+.angled-section-divider--left--with-gradient {
+  background-image: url('/images/section-dividers/angle-bg-left.svg'),
+                    linear-gradient(0deg,
+                                    #381c3b,
+                                    #381c3b 300px,
+                                    rgba(0,0,0,0) 300px,
+                                    rgba(0,0,0,0));
+  background-position: bottom left, center;
+  background-repeat: no-repeat;
+  background-size: contain, auto;
+  padding-bottom: 300px;
+}
+
+.angled-section-divider--left-with-grid {
+  background-image: url('/images/section-dividers/angle-bg-left.svg'),
+                    url('/images/section-dividers/angle-bg-left.svg');
+  background-position: bottom left, center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 300px;
+}
+
+.angled-section-dividers {
+  background-image: url('/images/section-dividers/angle-solid-bg.svg'),
+                    url('/images/section-dividers/angle-bg-left.svg');
+  background-position: bottom right, bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 252px;
+  margin-bottom: -252px;
   position: relative;
-  z-index: 1;
-  svg {
-    height: auto;
-    width: 100%;
+  transform: translateY(-252px);
+  z-index: 2;
+
+  & + .content {
+    padding-top: 50px;
   }
 }
 
-.angled-section-divider--left {
-  transform: translateY(7px);
+.angled-section-gradient,
+.angled-section-gradient--with-grid {
+  background-color: transparent;
+  background-image: url(/images/section-dividers/angle-gradient-bg.svg),
+                    linear-gradient(0deg,
+                                    #381c3b,
+                                    #381c3b 300px,
+                                    rgba(0,0,0,0) 300px,
+                                    rgba(0,0,0,0));
+  background-position: center top;
+  background-size: cover;
+  margin-top: -18vw;
+  padding-top: 16vw;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: $fixed-width) {
+    margin-top: -250px;
+    padding-top: 200px;
+  }
 }
 
-.angled-section-divider--right {
-  position: relative;
-  z-index: 10;
-  // background-color: transparent;
-  // background-size: 100% auto;
-  // transform: translateY(-40px);
+.angled-section-gradient--with-grid {
+  background-image: url(/images/grid-bg-fade.png),
+                    url(/images/section-dividers/angle-gradient-bg.svg),
+                    linear-gradient(0deg,
+                                    #381c3b,
+                                    #381c3b 300px,
+                                    rgba(0,0,0,0) 300px,
+                                    rgba(0,0,0,0));
+  background-position: center center, center top;
+  background-repeat: no-repeat;
+  background-size: auto, cover, auto;
 }

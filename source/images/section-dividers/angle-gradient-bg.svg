@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="3050" viewBox="0 0 1440 3050">
+  <defs>
+    <linearGradient id="angle-gradient-bg-a" x1="50.142%" x2="50.12%" y1="185.872%" y2="9.856%">
+      <stop offset="0%" stop-color="#63183D"/>
+      <stop offset="100%" stop-color="#0C1E3A"/>
+    </linearGradient>
+    <linearGradient id="angle-gradient-bg-b" x1="50.047%" x2="49.953%" y1="1.608%" y2="57.484%">
+      <stop offset="0%" stop-color="#307AD1" stop-opacity=".382"/>
+      <stop offset="100%" stop-color="#307AD1"/>
+    </linearGradient>
+    <linearGradient id="angle-gradient-bg-c" x1="50.029%" x2="49.967%" y1="5.003%" y2="57.484%">
+      <stop offset="0%" stop-color="#307AD1" stop-opacity=".382"/>
+      <stop offset="100%" stop-color="#307AD1"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="1440" height="2500" y="550" fill="#3A1C3C"/>
+    <path fill="url(#angle-gradient-bg-a)" fill-rule="nonzero" d="M0,252 C261.164489,213.487693 481.747291,180.983425 661.748406,154.487197 C931.750077,114.742854 1146.24143,83.1935555 1440,40 L1440,591.492187 L3.06411221e-14,591.48999 L0,252 Z"/>
+    <polygon fill="url(#angle-gradient-bg-b)" fill-rule="nonzero" points="0 252 1440 .535 1440 40"/>
+    <polygon fill="url(#angle-gradient-bg-c)" fill-rule="nonzero" points="0 244 1440 22.824 1440 40 0 252"/>
+  </g>
+</svg>
