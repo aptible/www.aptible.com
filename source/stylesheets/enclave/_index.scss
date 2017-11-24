@@ -3,8 +3,8 @@ body.enclave header {
 }
 
 .enclave-hero {
-  background-image: url(/images/section-dividers/angle-bg-left.svg),
-                    url(/images/grid-bg-fade.png),
+  background-image: image-url('section-dividers/angle-bg-left.svg'),
+                    url('grid-bg-fade.png'),
                     linear-gradient(180deg, #172231 0%, #172231 20%, #421832 100%);
   background-position: -5px bottom, 180% center, center center;
   background-repeat: no-repeat;
@@ -173,7 +173,7 @@ body.enclave header {
 }
 
 .enclave__demo-app {
-  background-image: url(/images/enclave-dashboard.png);
+  background-image: image-url('enclave-dashboard.png');
   background-repeat: no-repeat;
   background-position: 55vw center;
   background-size: contain;
@@ -296,7 +296,7 @@ body.enclave header {
 }
 
 .enclave-carousel-hero {
-  background-image: url(/images/grid-bg-fade.png),
+  background-image: image-url('grid-bg-fade.png'),
                     linear-gradient(180deg, #172231 0%, #172231 20%, #421832 100%);
   background-position: center center;
   background-repeat: no-repeat;

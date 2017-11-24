@@ -263,7 +263,7 @@
 }
 
 .home__gridiron-graph {
-  background-image: url(/images/home/gridiron-graph-with-mask.png);
+  background-image: image-url('home/gridiron-graph-with-mask.png');
   background-position: top center;
   background-repeat: no-repeat;
   height: 760px;
@@ -405,7 +405,7 @@
 }
 
 .home-quote__logo {
-  background-image: url(/images/home/quote-bubble-point.svg);
+  background-image: image-url('home/quote-bubble-point.svg');
   background-position: center -23px;
   height: 100px;
   margin: 0px auto 0 auto;
