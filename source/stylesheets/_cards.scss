@@ -198,7 +198,7 @@
 
 .img-card__image {
   align-items: center;
-  background-image: url(/images/grid-bg-fade.png),
+  background-image: image-url('grid-bg-fade.png'),
                     linear-gradient(180deg, #172231 0%, #172231 20%, #421832 100%);
   background-position: 50% 25%;
   background-size: 300% 300%, 100%;

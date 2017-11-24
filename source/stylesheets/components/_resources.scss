@@ -192,7 +192,7 @@
 }
 .resource__header-wrap {
   background-color: black;
-  background-image: url(/images/resources/default.png);
+  background-image: image-url('resources/default.png');
   background-size: cover;
   padding: 65px 30px;
 }

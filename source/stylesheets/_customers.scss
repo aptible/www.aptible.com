@@ -25,7 +25,7 @@
 
 .case-study--thread {
   background-color: #eb3927;
-  background-image: url(/images/customers/thread-bg.png);
+  background-image: image-url('customers/thread-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -38,7 +38,7 @@
 
 .case-study--telepharm {
   background-color: #3aa9e0;
-  background-image: url(/images/customers/telepharm-bg.png);
+  background-image: image-url('customers/telepharm-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -55,7 +55,7 @@
 //
 .pride-study__hero {
   background-color: #ee6624;
-  background-image: url(/images/customers/stories/pride-study-bg.png);
+  background-image: image-url('customers/stories/pride-study-bg.png');
   background-position: center 20%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,7 +143,7 @@
 }
 .pride-study__thread {
   background-color: #2f323a;
-  background-image: url(/images/customers/stories/diamond-bg.png);
+  background-image: image-url('customers/stories/diamond-bg.png');
   background-repeat: repeat;
   padding: 75px 0;
 }
@@ -173,7 +173,7 @@
   }
 }
 .researchkit {
-  background-image: url(/images/customers/stories/researchkit_2x.png);
+  background-image: image-url('customers/stories/researchkit_2x.png');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@
 .telepharm__header {
   padding: 25px;
   background-color: #3aa9e0;
-  background-image: url(/images/customers/stories/tp-hero-bg.png);
+  background-image: image-url('customers/stories/tp-hero-bg.png');
   background-position: 55% 10%;
   background-repeat: no-repeat;
   color: $white;

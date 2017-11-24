@@ -1,5 +1,5 @@
 .angled-section-divider--left {
-  background-image: url('/images/section-dividers/angle-bg-left.svg');
+  background-image: image-url('section-dividers/angle-bg-left.svg');
   background-position: -5px bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -7,7 +7,7 @@
 }
 
 .angled-section-divider--left--with-gradient {
-  background-image: url('/images/section-dividers/angle-bg-left.svg'),
+  background-image: image-url('section-dividers/angle-bg-left.svg'),
                     linear-gradient(0deg,
                                     #381c3b,
                                     #381c3b 300px,
@@ -20,8 +20,8 @@
 }
 
 .angled-section-divider--left-with-grid {
-  background-image: url('/images/section-dividers/angle-bg-left.svg'),
-                    url('/images/section-dividers/angle-bg-left.svg');
+  background-image: image-url('section-dividers/angle-bg-left.svg'),
+                    image-url('section-dividers/angle-bg-left.svg');
   background-position: bottom left, center bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,8 +29,8 @@
 }
 
 .angled-section-dividers {
-  background-image: url('/images/section-dividers/angle-solid-bg.svg'),
-                    url('/images/section-dividers/angle-bg-left.svg');
+  background-image: image-url('section-dividers/angle-solid-bg.svg'),
+                    image-url('section-dividers/angle-bg-left.svg');
   background-position: bottom right, bottom left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -48,7 +48,7 @@
 .angled-section-gradient,
 .angled-section-gradient--with-grid {
   background-color: transparent;
-  background-image: url(/images/section-dividers/angle-gradient-bg.svg),
+  background-image: image-url('section-dividers/angle-gradient-bg.svg'),
                     linear-gradient(0deg,
                                     #381c3b,
                                     #381c3b 300px,
@@ -68,8 +68,8 @@
 }
 
 .angled-section-gradient--with-grid {
-  background-image: url(/images/grid-bg-fade.png),
-                    url(/images/section-dividers/angle-gradient-bg.svg),
+  background-image: image-url('grid-bg-fade.png'),
+                    image-url('section-dividers/angle-gradient-bg.svg'),
                     linear-gradient(0deg,
                                     #381c3b,
                                     #381c3b 300px,
