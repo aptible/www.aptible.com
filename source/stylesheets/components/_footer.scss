@@ -28,7 +28,7 @@
 .footer-nav__container {
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: $tablet-portrait) {
+  @media screen and (max-width: $nav-break) {
     display: block;
     .footer-nav__list {
       min-width: auto;
@@ -42,10 +42,10 @@
   justify-content: space-between;
   margin-bottom: 30px;
   width: 75%;
-  @media screen and (max-width: $tablet-portrait) {
+  @media screen and (max-width: $nav-break) {
     width: auto;
   }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 850px) {
     flex-wrap: wrap;
     .footer-nav__list {
       width: calc(50% - 30px);
@@ -59,7 +59,7 @@
   margin-right: 30px;
   min-width: 20%;
   padding: 0;
-  @media screen and (max-width: $tablet-portrait) {
+  @media screen and (max-width: $nav-break) {
     min-width: auto;
     width: 100%;
   }
