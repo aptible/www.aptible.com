@@ -1,0 +1,60 @@
+.company .grid-container {
+  align-items: flex-start;
+}
+.grid--2up-flex {
+  .company__intro {
+    width: 650px;
+    @media screen and (max-width: $max-viewport) {
+      width: 70%;
+    }
+    @media screen and (max-width: $tablet-portrait) {
+      width: 100%;
+    }
+  }
+  .company__image {
+    flex-grow: 0;
+    img {
+      max-width: 650px;
+    }
+    @media screen and (max-width: $max-viewport) {
+      flex-grow: 1;
+      width: 75%;
+      img {
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: $tablet-portrait) {
+      width: 100%;
+    }
+  }
+}
+
+.openings {
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .grid-item {
+    height: auto;
+    padding: 50px;
+    width: calc(50% - 40px);
+    &:nth-of-type(2n+1) {
+      margin-right: 40px;
+    }
+  }
+  .card__title {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card__body {
+    max-width: 100%;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    padding: 0;
+    .grid-item {
+      &:nth-of-type(2n+1) {
+        margin-right: 0;
+      }
+      width: 100%;
+    }
+  }
+}
