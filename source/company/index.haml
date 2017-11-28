@@ -10,12 +10,10 @@ title: About
       %p.heading__summary--single-center.heading__summary--light-blue-gray
         Aptible is a distributed company that helps developers secure data and applications online.
 
-.content
-  .grid-container.grid--2up
-    .grid-item.grid-item--adjacent
+.company.content
+  .grid-container.grid--2up-flex
+    .grid-item.company__intro
       %h2.heading Who We Are
-  .grid-container.grid--2up
-    .grid-item
       %p.summary
         Aptible was founded in 2013 with the goal of creating a more secure internet by helping developers excel at data security and compliance.
       %p.summary
@@ -24,12 +22,12 @@ title: About
         Aptible builds tools that help developers implement data security best practices and enforce compliance requirements.
       %p.summary
         Aptible works closely with thousands of developers at hundreds of companies, including many startups. The Aptible team is fully remote and is made up of engineers, lawyers, and security and operations experts. Aptible’s investors include Y Combinator, Rock Health, Maverick, WTI, and GGV Capital.
-    .grid-item
+    .grid-item.company__image
       %img{ src: '/images/company/aptible-team-portrait.jpg', style: ""}
 
   .grid-container
     .grid-item
       %h2.heading--single-center
         Help build the future of privacy and security on the web.
-      .openings.grid-container.grid--2up
+      .openings.grid-container.grid--2up-flex
         = partial 'loading-indicator'
