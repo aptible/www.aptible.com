@@ -78,7 +78,8 @@ module ContentfulHelpers
           rescue => e
             puts "WARN: Failed to parse #{File.basename(yaml_file)}"
             ([e.message] + e.backtrace).each { |l| puts "WARN:   #{l}" }
-            next
+            # Raises last error
+            raise
           end
 
           map.each do |path, markdown|
@@ -126,6 +127,8 @@ module ContentfulHelpers
   def self.hashify_contentful_entry(item)
     if item.is_a?(Contentful::Asset)
       { title: item.title, description: item.description, url: item.url }
+    elsif item.is_a?(Contentful::Link)
+      hashify_contentful_entry(item.resolve(client))
     elsif item.respond_to?(:fields)
       hashify_contentful_entry(item.fields.dup)
     elsif item.is_a?(Array)
