@@ -1,10 +1,19 @@
 ---
 contentful: true
 category: HIPAA Compliance
-cover_image:
-  :title: Moleskine.
-  :description: Notebook.
-  :url: "//images.contentful.com/8djp5jlzqrnc/2eRvDod6tyOKcM2UMykS22/cc0e7cafc1d0d85e6cd6312d1c599b71/moleskine.jpg"
+cover_image: !ruby/object:Contentful::Link
+  raw:
+    sys:
+      type: Link
+      linkType: Asset
+      id: ZID8bl4zSgIc8UkMAyYc8
+  default_locale:
+  depth: 0
+  sys:
+    :type: Link
+    :link_type: Asset
+    :id: ZID8bl4zSgIc8UkMAyYc8
+  configuration: {}
 created_at: !ruby/object:DateTime 2016-03-28 00:00:00.000000000 -04:00
 description: What do software developers need to know about Business Associate Agreements?
 documents:

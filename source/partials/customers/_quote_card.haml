@@ -1,0 +1,11 @@
+.card-page__card.card--customer-quote
+  - if image.present?
+    %img.customer-quote__logo{ src: image }
+  .customer-quote__statement= quote
+  .customer-quote__author
+    .customer-quote__attribution
+      - if author_image.present?
+        %img.customer-quote__author__image{ src: author_image }
+      .customer-quote__author
+        .customer-quote__author__name= author
+        .customer-quote__author__position= author_position

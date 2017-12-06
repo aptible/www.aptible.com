@@ -1,0 +1,6 @@
+.card-page__card.card--case-study
+  - if image.present?
+    %img.case-study__card-image{ src: image }
+  .case-study__title= title
+  .case-study__summary= summary
+  %a.case-study__link.btn.btn-primary{ href: path } Read the Case Study

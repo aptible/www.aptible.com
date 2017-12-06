@@ -5,6 +5,57 @@ Encoding.default_internal = Encoding::UTF_8
 
 module ContentfulHelpers
   MARKDOWN_PROCESSORS = {
+    'customer' => lambda do |yml|
+      quotes = []
+      case_study = {}
+
+      if yml.has_key? :quotes
+        yml[:quotes].each do |quote|
+          q = {
+            'title' => quote[:title],
+            'quote' => quote[:quote],
+            'type' => 'quote',
+            'approved' => quote[:approved],
+            'author' => quote[:author],
+            'position' => quote[:position]
+          }
+          if yml.has_key? :logo
+            q['card_image'] = yml[:logo][:url]
+          end
+          if quote.has_key? :image
+            q['author_image'] = quote[:image][:url]
+          end
+          quotes << q
+        end
+      end
+
+      if yml.has_key? :case_study
+        case_study = {
+          'title' => yml[:case_study][:title],
+          'summary' => yml[:case_study][:summary],
+          'type' => 'case_study',
+          'approved' => yml[:case_study][:approved],
+          'path' => yml[:case_study][:path]
+        }
+        if yml[:case_study].has_key? :card_image
+          binding.pry
+          case_study['card_image'] = yml[:case_study][:card_image][:url]
+        end
+      end
+
+      customer = {
+        'name' => yml[:name],
+        'slug' => yml[:slug],
+        'include_in_logo_bar' => yml[:include_in_logo_bar],
+        'quotes' => quotes,
+        'case_study' => case_study
+      }
+      if yml.has_key? :logo
+        customer['logo'] = yml[:logo][:url]
+      end
+
+      [customer]
+    end,
     'blogPost' => lambda do |yml|
       [{
         markdown_path: "source/#{blog_post_dir(yml)}/#{yml[:slug]}.md",
@@ -69,6 +120,7 @@ module ContentfulHelpers
     filelist = []
     Dir.mktmpdir do |dir|
       fetch_yaml_files!(dir)
+      failures = 0
       MARKDOWN_PROCESSORS.keys.each do |type|
         Dir.glob(File.join(dir, "#{type}/*.yml")).each do |yaml_file|
           yaml = File.read(yaml_file)
@@ -78,6 +130,7 @@ module ContentfulHelpers
           rescue => e
             puts "WARN: Failed to parse #{File.basename(yaml_file)}"
             ([e.message] + e.backtrace).each { |l| puts "WARN:   #{l}" }
+            failures += 1
             next
           end
 
@@ -90,6 +143,7 @@ module ContentfulHelpers
           end
         end
       end
+      raise "Failed on #{failures} files" if failures > 0
     end
 
     # If ENV['CONTENTFUL_PRUNE_ON_POPULATE'] is set, prune local Markdown
@@ -126,6 +180,8 @@ module ContentfulHelpers
   def self.hashify_contentful_entry(item)
     if item.is_a?(Contentful::Asset)
       { title: item.title, description: item.description, url: item.url }
+    elsif item.is_a?(Contentful::Link)
+      hashify_contentful_entry(item.resolve(client))
     elsif item.respond_to?(:fields)
       hashify_contentful_entry(item.fields.dup)
     elsif item.is_a?(Array)
@@ -149,6 +205,29 @@ module ContentfulHelpers
 
       [hash[:markdown_path], markdown]
     end]
+  end
+
+  def self.generate_customer_data_file(dir)
+    customers_data = {
+      'contentful' => true,
+      'customers' => []
+    }
+    # Each contentful customer
+    Dir.glob(File.join(dir, "customer/*.yml")).each do |yaml_file|
+      yaml = File.read(yaml_file)
+      begin
+        Hash[MARKDOWN_PROCESSORS['customer'].call(YAML.load(yaml)).map do |hash|
+          customers_data['customers'] << hash
+        end]
+      rescue => e
+        puts "WARN: Failed to parse #{File.basename(yaml_file)}"
+        ([e.message] + e.backtrace).each { |l| puts "WARN:   #{l}" }
+        next
+      end
+    end
+    File.open('data/customers.yml', 'w') do |file|
+      file << customers_data.to_yaml.gsub(/ *$/, '')
+    end
   end
 
   def self.access_token

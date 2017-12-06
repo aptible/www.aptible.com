@@ -2,91 +2,44 @@
 title: Aptible Customers
 ---
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled.aptible-header--bottom-grid
+  %header.aptible-header.customers-hero
     = partial 'partials/main-nav'
 
-    .grid-container
-      .centered-header
-        %h1.heading__title
-          We help our customers protect sensitive data, when the stakes matter.
+    .grid-container.grid--single-center
+      .grid-item.text-center
+        %h2.subtitle--caps.blue Our Customers
+        %h1.title.white
+          You're in great company
+        %p.subtitle.light-blue-gray
+          We help hundreds of the most innovative companies to protect
+          sensitive data when the stakes matter most.
+        = partial 'partials/ctas/signup-cta', locals: { |
+              class_name: 'signup-cta--centered',       |
+              cta_label: 'Get Started',                 |
+              cta_placeholder: 'Enter your work email'  |
+            }                                           |
 
-.content
-  .grid-container.grid--single-center
-    .grid-item.grid-item--adjacent
-      %h2.heading--single-center Case Studies
-      %p.summary--single-center
-        The best engineering teams in digital health use Aptible to protect
-        their data while moving fast. Learn how Aptible can help you focus on
-        the most important parts of your business.
+    .grid-container.grid--single-center.customer-page__logo-bar
+      .grid-item
+        .logo-bar
+          - customers_for_logo_bar.each do |customer|
+            .logo-bar__customer{ class: "logo-bar__customer--#{customer.slug}" }
+              = partial "/images/customers/#{customer.slug}.svg"
 
-  .grid-container.grid--2up.customers.grid-container--ruled
-    .grid-item.case-study.case-study--thread
-      %img.case-study--thread__iphone{ src: '/images/customers/thread-iphone.png'}
-      %h1.heading__title
-        The Engineers at THREAD Research Turned to Aptible
-      %p.heading__description
-        Built on Amazon Web Services, Aptible's secure, compliant cloud
-        platform allowed UCSF to launch The Pride Study in less than 6 weeks,
-        for 90% less than the cost of a traditional IT solution.
-      %a.btn.btn--outline.btn--outline--white{ href: '/customers/ucsf-pride-study/', data: { turbolinks: "false" }}
-        Read the full story
+.angled-section-dividers
 
-    .grid-item.case-study.case-study--telepharm
-      %h1.heading__title
-        Aptible Helps TelePharm Bring Full- service Pharmacies to
-        Rural Communities
-      %p.heading__description
-        "Working with Aptible has effectively extended our dev team. We now
-        have a group of world-class DevOps ensuring the reliability and
-        scalability of our app."
-      %a.btn.btn--outline.btn--outline--white{ href: '/customers/telepharm/', data: { turbolinks: "false" }}
-        Read the full story
+.customer-page__cards.content
+  .card-page
+    - customer_cards_grouped_3col.each do |column|
+      .card-page__column
+        - column.each do |card|
+          - if card[:type] == 'case_study'
+            = partial 'partials/customers/case_study_card', locals: card
+          - else
+            = partial 'partials/customers/quote_card', locals: card
 
-  .grid-container.grid--single-center
-    .grid-item.grid-item--adjacent
-      %h2.heading--single-center Customer Stories
-      %p.summary--single-center
-        Aptible helps hundreds of digital health companies get to market fast
-        and safely, with less risk.
-        -# Learn why our customers love us.
 
-  .grid-container.grid--single.not-ready
-    .grid-item.customer-banner.customer-banner--horizontal
-      .customer-banner__title-svg Pager
-      .customer-banner__quote
-        "Aptible provides us a robust and secure platform to build our
-        technology on. It's alleviated pain points with HIPAA compliance and
-        saved us tons of money and time."
-      .customer-banner__cutsomer SAMEER KHANNA, VP of  ENGINEERING, PAGER
-
-  .grid-container.grid--3up.not-ready
-    .grid-item.customer-banner.customer-banner--vertical
-      .customer-banner__title-svg aidin
-      .customer-banner__quote
-        "Aptible provides infrastructure software we’ve come to rely on every
-        day. They’ve played a significant role in our appeal and ability to
-        take on new clients--both in our sales process and technical
-        integration process."
-      .customer-banner__cutsomer JAMES DEMPSEY, LEAD DEVELOPER, AIDIN
-
-    .grid-item.customer-banner.customer-banner--vertical
-      .customer-banner__title-svg policygenius
-      .customer-banner__quote
-        "Aptible takes the pain out of HIPAA compliance. We saved a huge
-        amount of time and money, and avoided risk by partnering with them."
-      .customer-banner__cutsomer IAN YAMEY, CTO, POLICYGENIUS
-
-    .grid-item.customer-banner.customer-banner--vertical
-      .customer-banner__title-svg healthify
-      .customer-banner__quote
-        "When evaluating a vendor, our priorities were trust, transparency,
-        and reliability.  Aptible hits them all, allowing us to focus on what
-        we do without worrying about all the layers of legal and technical
-        ops hurdles."
-      .customer-banner__cutsomer DAN LEVENSON, CTO, HEALTHIFY
-
-  .grid-container.grid--single-center
-    .grid-item
-      = partial 'customer-logo-grid'
-
-= partial 'partials/resources-footer'
+= partial 'partials/ctas/easy-as-git-push', locals: {                   |
+    title: 'Get your infrastructure audit-ready in hours, not months.', |
+    cta_label: 'Sign Up Now'                                            |
+  }                                                                     |
