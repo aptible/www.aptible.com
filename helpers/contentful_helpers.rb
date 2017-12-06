@@ -69,6 +69,7 @@ module ContentfulHelpers
     filelist = []
     Dir.mktmpdir do |dir|
       fetch_yaml_files!(dir)
+      failures = 0
       MARKDOWN_PROCESSORS.keys.each do |type|
         Dir.glob(File.join(dir, "#{type}/*.yml")).each do |yaml_file|
           yaml = File.read(yaml_file)
@@ -78,8 +79,8 @@ module ContentfulHelpers
           rescue => e
             puts "WARN: Failed to parse #{File.basename(yaml_file)}"
             ([e.message] + e.backtrace).each { |l| puts "WARN:   #{l}" }
-            # Raises last error
-            raise
+            failures += 1
+            next
           end
 
           map.each do |path, markdown|
@@ -91,6 +92,7 @@ module ContentfulHelpers
           end
         end
       end
+      raise "Failed on #{failures} files" if failures > 0
     end
 
     # If ENV['CONTENTFUL_PRUNE_ON_POPULATE'] is set, prune local Markdown
