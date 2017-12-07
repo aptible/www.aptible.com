@@ -37,10 +37,14 @@ code, kdb, pre, samp {
 }
 
 .highlight--stacked,
-.markdown-content .highlight {
-  margin-bottom: 50px;
+.markdown-content {
+  .highlight {
+    margin-bottom: 50px;
+  }
+  code, kdb, pre, samp {
+    font-size: .95em;
+  }
 }
-
 
 .code__body {
   background-color: #273143;

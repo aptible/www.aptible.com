@@ -1,6 +1,13 @@
-.not-ready {
-  display: none;
+.customers-hero {
+  background-image: image-url('header-bottom-grid.svg'),
+                    linear-gradient(180deg, #0c1e3a 0%, #0c1e3a 20%, #3d1b3b 100%);
+  background-position: bottom center, center center;
+  background-repeat: no-repeat;
+  background-size: 100%, auto;
+  margin: 0;
+  padding-bottom: 100px;
 }
+
 .case-study {
   min-height: 768px;
   padding: 200px 40px 40px;
@@ -386,4 +393,130 @@
     max-width: 100%;
     margin-bottom: 40px;
   }
+}
+
+.case-study__summary,
+.customer-quote__statement {
+  color: $light-gray;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.customer-quote__statement {
+  &:before {
+    content: '“';
+  }
+  &:after {
+    content: '”';
+  }
+}
+.customer-quote__logo,
+.case-study__card-image {
+  margin: 0 30px 20px 30px;
+  max-height: 75px;
+  max-width: 150px;
+}
+
+.card-page {
+  .customer-quote__author {
+    flex-grow: 1;
+    text-transform: none;
+  }
+  .customer-quote__logo {
+    margin-bottom: 20px;
+  }
+}
+
+.customer-quote__attribution {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.customer-quote__author__image {
+  border-radius: 32px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.26);
+  height: 64px;
+  margin-right: 20px;
+  width: 64px;
+  margin-left: -40px;
+}
+.customer-quote__author__name {
+  color: $dark-blue-steel;
+  font-size: 14px;
+  font-weight: $regular;
+}
+.customer-quote__author__position {
+  color: $light-gray;
+  font-size: 11px;
+  font-weight: $regular;
+}
+
+
+.card--case-study,
+.card--customer-quote {
+  text-align: center;
+}
+.case-study__card-image {
+  max-height: 200px;
+  max-width: 200px;
+}
+.case-study__title {
+  color: $blue;
+  font-size: 30px;
+  font-weight: $light;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.case-study__title,
+.case-study__summary {
+  text-align: left;
+}
+
+.customer-page__logo-bar {
+  margin-bottom: 275px;
+}
+.logo-bar {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+
+  path, polygon, circle, ellipse, rect {
+    fill: rgba(158, 203, 255, .4);
+  }
+  svg, img {
+    max-height: 70px;
+    max-width: 150px;
+  }
+}
+
+.logo-bar__customer {
+  margin: 0 30px 30px 30px;
+  @media screen and (max-width: $tablet-portrait) {
+    margin: 0 10px;
+    transform: scale(.8,.8);
+  }
+}
+.logo-bar__customer--mdsave svg {
+  max-width: 75px;
+}
+.logo-bar__customer--everplans svg {
+  max-width: 200px;
+}
+.logo-bar__customer--healthify svg {
+  transform: translateY(10px);
+}
+.logo-bar__customer--1bios svg {
+  max-height: 40px;
+}
+
+.customer-page__cards {
+  margin-top: -420px;
+  position: relative;
+  z-index: 2;
 }
