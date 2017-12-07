@@ -9,27 +9,22 @@ module ContentfulHelpers
       quotes = []
       case_study = {}
 
-      if yml.has_key? :quotes
+      if yml.key? :quotes
         yml[:quotes].each do |quote|
           q = {
-            'title' => quote[:title],
             'quote' => quote[:quote],
             'type' => 'quote',
             'approved' => quote[:approved],
             'author' => quote[:author],
             'position' => quote[:position]
           }
-          if yml.has_key? :logo
-            q['card_image'] = yml[:logo][:url]
-          end
-          if quote.has_key? :image
-            q['author_image'] = quote[:image][:url]
-          end
+          q['card_image'] = yml[:logo][:url] if yml.key? :logo
+          q['author_image'] = quote[:image][:url] if quote.key? :image
           quotes << q
         end
       end
 
-      if yml.has_key? :case_study
+      if yml.key? :case_study
         case_study = {
           'title' => yml[:case_study][:title],
           'summary' => yml[:case_study][:summary],
@@ -37,8 +32,7 @@ module ContentfulHelpers
           'approved' => yml[:case_study][:approved],
           'path' => yml[:case_study][:path]
         }
-        if yml[:case_study].has_key? :card_image
-          binding.pry
+        if yml[:case_study].key? :card_image
           case_study['card_image'] = yml[:case_study][:card_image][:url]
         end
       end
@@ -50,9 +44,7 @@ module ContentfulHelpers
         'quotes' => quotes,
         'case_study' => case_study
       }
-      if yml.has_key? :logo
-        customer['logo'] = yml[:logo][:url]
-      end
+      customer['logo'] = yml[:logo][:url] if yml.key? :logo
 
       [customer]
     end,
@@ -122,24 +114,28 @@ module ContentfulHelpers
       fetch_yaml_files!(dir)
       failures = 0
       MARKDOWN_PROCESSORS.keys.each do |type|
-        Dir.glob(File.join(dir, "#{type}/*.yml")).each do |yaml_file|
-          yaml = File.read(yaml_file)
+        if type == 'customer'
+          failures += generate_customer_data_file(dir, failures)
+        else
+          Dir.glob(File.join(dir, "#{type}/*.yml")).each do |yaml_file|
+            yaml = File.read(yaml_file)
 
-          begin
-            map = markdown_map(type, yaml)
-          rescue => e
-            puts "WARN: Failed to parse #{File.basename(yaml_file)}"
-            ([e.message] + e.backtrace).each { |l| puts "WARN:   #{l}" }
-            failures += 1
-            next
-          end
+            begin
+              map = markdown_map(type, yaml)
+            rescue => e
+              puts "WARN: Failed to parse #{File.basename(yaml_file)}"
+              ([e.message] + e.backtrace).each { |l| puts "WARN:   #{l}" }
+              failures += 1
+              next
+            end
 
-          map.each do |path, markdown|
-            dest = File.expand_path("../#{path}", File.dirname(__FILE__))
-            filelist << dest
-            next if File.exist?(dest) && markdown == File.read(dest)
-            puts "INFO: Updating #{dest}"
-            File.open(dest, 'w') { |file| file << markdown }
+            map.each do |path, markdown|
+              dest = File.expand_path("../#{path}", File.dirname(__FILE__))
+              filelist << dest
+              next if File.exist?(dest) && markdown == File.read(dest)
+              puts "INFO: Updating #{dest}"
+              File.open(dest, 'w') { |file| file << markdown }
+            end
           end
         end
       end
@@ -207,27 +203,30 @@ module ContentfulHelpers
     end]
   end
 
-  def self.generate_customer_data_file(dir)
+  def self.generate_customer_data_file(dir, failures)
     customers_data = {
       'contentful' => true,
       'customers' => []
     }
     # Each contentful customer
-    Dir.glob(File.join(dir, "customer/*.yml")).each do |yaml_file|
+    Dir.glob(File.join(dir, 'customer/*.yml')).each do |yaml_file|
       yaml = File.read(yaml_file)
       begin
-        Hash[MARKDOWN_PROCESSORS['customer'].call(YAML.load(yaml)).map do |hash|
+        MARKDOWN_PROCESSORS['customer'].call(YAML.load(yaml)).map do |hash|
           customers_data['customers'] << hash
-        end]
+        end
       rescue => e
         puts "WARN: Failed to parse #{File.basename(yaml_file)}"
         ([e.message] + e.backtrace).each { |l| puts "WARN:   #{l}" }
+        failures += 1
         next
       end
     end
     File.open('data/customers.yml', 'w') do |file|
+      puts 'INFO: Updating data/customers.yml'
       file << customers_data.to_yaml.gsub(/ *$/, '')
     end
+    failures
   end
 
   def self.access_token
