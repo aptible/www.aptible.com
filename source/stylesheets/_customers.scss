@@ -415,7 +415,7 @@
 .customer-quote__logo,
 .case-study__card-image {
   margin: 0 30px 20px 30px;
-  max-height: 125px;
+  max-height: 75px;
   max-width: 150px;
 }
 
@@ -460,6 +460,10 @@
 .card--customer-quote {
   text-align: center;
 }
+.case-study__card-image {
+  max-height: 200px;
+  max-width: 200px;
+}
 .case-study__title {
   color: $blue;
   font-size: 30px;
@@ -492,21 +496,21 @@
 }
 
 .logo-bar__customer {
-  margin: 0 20px;
+  margin: 0 30px 30px 30px;
   @media screen and (max-width: $tablet-portrait) {
     margin: 0 10px;
     transform: scale(.8,.8);
   }
 }
-
-.logo-bar__customer--spectra img {
-  transform: translateY(-10px);
+.logo-bar__customer--mdsave svg {
+  max-width: 75px;
 }
-
+.logo-bar__customer--everplans svg {
+  max-width: 200px;
+}
 .logo-bar__customer--healthify svg {
   transform: translateY(10px);
 }
-
 .logo-bar__customer--1bios svg {
   max-height: 40px;
 }

@@ -20,6 +20,7 @@ module ContentfulHelpers
           }
           q['card_image'] = yml[:logo][:url] if yml.key? :logo
           q['author_image'] = quote[:image][:url] if quote.key? :image
+
           quotes << q
         end
       end
@@ -115,7 +116,7 @@ module ContentfulHelpers
       failures = 0
       MARKDOWN_PROCESSORS.keys.each do |type|
         if type == 'customer'
-          failures += generate_customer_data_file(dir, failures)
+          failures += generate_customer_data_file(dir)
         else
           Dir.glob(File.join(dir, "#{type}/*.yml")).each do |yaml_file|
             yaml = File.read(yaml_file)
@@ -203,7 +204,8 @@ module ContentfulHelpers
     end]
   end
 
-  def self.generate_customer_data_file(dir, failures)
+  def self.generate_customer_data_file(dir)
+    failures = 0
     customers_data = {
       'contentful' => true,
       'customers' => []
