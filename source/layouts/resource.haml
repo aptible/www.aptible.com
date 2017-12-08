@@ -15,57 +15,61 @@
           %a{ href: '/resources/' } Resources
         = partial 'follow-aptible-twitter-link'
 
-      .grid-document.resource-article
-        %header.blog-posts__post-header
-          %h1.resource-article__title= resource.title
-          .resource-article__subtitle= resource.excerpt
+      .grid-document
+        .resource-article
+          %header.blog-posts__post-header
+            %h1.resource-article__title= resource.title
+            .resource-article__subtitle= resource.excerpt
 
-        = partial 'partials/blog-social-share'
+          = partial 'partials/blog-social-share'
 
-        - if resource.cover_image
-          .resource-article__cover-image{ style: "background-image: url(#{resource.cover_image.url})" }
-            - if ref_doc
-              %a{ href: ref_doc.path, title: ref_doc.title, target: '_blank', rel: 'noopener noreferrer' }
+          - if resource.cover_image
+            .resource-article__cover-image{ style: "background-image: url(#{resource.cover_image.url})" }
+              - if ref_doc
+                %a{ href: ref_doc.path, title: ref_doc.title, target: '_blank', rel: 'noopener noreferrer' }
+                  %img{ src: resource.cover_image.url }
+              - else
                 %img{ src: resource.cover_image.url }
+
+          - if resource.webinar_video_link
+            %p.text-center
+              %iframe{ width: '560', height: '315',                        |
+                       src: resource.webinar_video_link, frameborder: '0', |
+                       allowfullscreen: 'allowfullscreen' }                |
+          .markdown-content
+            = find_and_preserve do
+              = yield
+
+          - if resource.webinar_slides_link
+            %h3 Slides
+            %p
+              %a{ href: resource.webinar_slides_link } View
+
+          - if resource.type == 'webinar'
+            %h3#transcript Transcript
+            - if resource.webinar_transcript_partial
+              = partial(resource.webinar_transcript_partial)
             - else
-              %img{ src: resource.cover_image.url }
+              %em Coming Soon
 
-        - if resource.webinar_video_link
-          %p.text-center
-            %iframe{ width: '560', height: '315',                        |
-                     src: resource.webinar_video_link, frameborder: '0', |
-                     allowfullscreen: 'allowfullscreen' }                |
-        .markdown-content
-          = find_and_preserve do
-            = yield
+          - if resource.type == 'webinar'
+            - webinars = webinars(resource.slug)
+            - if webinars.count > 0
+              %h3 Other Webinars
+              %ul
+                - webinars.each do |w|
+                  %li
+                    %a{ href: resource_path(w) }
+                      %strong= display_date(w.data.created_at)
 
-        - if resource.webinar_slides_link
-          %h3 Slides
-          %p
-            %a{ href: resource.webinar_slides_link } View
-
-        - if resource.type == 'webinar'
-          %h3#transcript Transcript
-          - if resource.webinar_transcript_partial
-            = partial(resource.webinar_transcript_partial)
-          - else
-            %em Coming Soon
-
-        - if resource.type == 'webinar'
-          - webinars = webinars(resource.slug)
-          - if webinars.count > 0
-            %h3 Other Webinars
-            %ul
-              - webinars.each do |w|
-                %li
-                  %a{ href: resource_path(w) }
-                    %strong= display_date(w.data.created_at)
-
-        - if resource.documents
-          .resource-docs
-            - resource.documents.each do |doc|
-              %a.resource-doc{ href: doc.path, title: doc.title, "data-type" => document_file_extension(doc.path), target: '_blank', rel: 'noopener noreferrer' }
-                = partial '/images/aptible-small-mark.svg'
+          - if resource.documents
+            .resource-docs
+              - resource.documents.each do |doc|
+                %a.resource-doc{ href: doc.path, title: doc.title, "data-type" => document_file_extension(doc.path), target: '_blank', rel: 'noopener noreferrer' }
+                  = partial '/images/aptible-small-mark.svg'
 
       .grid-aside
         = partial 'resources-aside'
+
+    .grid-container
+      = partial 'partials/newsletter-signup--blog'
