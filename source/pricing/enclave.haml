@@ -56,14 +56,20 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
 
       .pricing-summary__body.price-calc__units
         .price-calc__unit.price-calc__unit--containers
-          .price-calc__unit__header
+          .price-calc__unit__header.price-calc__unit__header--adjacent
             %h4.price-calc__unit__title
               %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_containers }
                 App &amp; Database Containers
                 %span.price-calc__help-tip ?
-                <br>
-                %input{ type: 'checkbox', "data-type" => "managed-hids" } with Managed HIDS
             .price-calc__unit__price $0.08/GB/hour
+
+          .price-calc__unit__header
+            %h4.price-calc__unit__title
+              .custom-checkbox
+                %input#price-calc-mhids{ type: 'checkbox', "data-type" => "managed-hids" }
+                %label{ for: 'price-calc-mhids' }
+                  = partial '/images/icons/checkbox.svg'
+                  %span with Managed HIDS
 
           .price-calc__unit__estimate
             .price-calc__unit__slider
