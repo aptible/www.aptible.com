@@ -29,7 +29,6 @@ layout: 'layout'
               .resource-item__excerpt
                 Enjoy the scalability and security of the AWS cloud without needing
                 an entire DevOps team to manage it.
-
         .resources-list__column
           - resources_for_index.each_with_index do |resource, index|
             - if index.even?
@@ -37,3 +36,6 @@ layout: 'layout'
 
     .grid-aside
       = partial 'resources-aside'
+      
+  .grid-container
+    = partial 'partials/newsletter-signup--blog'
