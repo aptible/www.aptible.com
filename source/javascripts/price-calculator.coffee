@@ -21,6 +21,9 @@ $ ->
     perEndpoint      : (0.05 * 730).toFixed 2
     perVpnConnection : 99
     perMonthBase     : 999
+    perHIDSContainer : (0.02 * 730).toFixed 2
+
+    managedHIDSEnabled: false
 
     setValue: (attr, value) -> @[attr] = value
 
@@ -28,6 +31,9 @@ $ ->
       includedContainers = @containerValuesGB[@incContainers]
       containers = @containerValuesGB[if @containers > 10 then 10 else @containers]
       cost = Math.max(((containers - includedContainers) * @perContainer), 0)
+      if @managedHIDSEnabled
+        hidsCost = containers * @perHIDSContainer
+        cost += hidsCost
       if format then @toCurrency(cost) else cost
 
     disksCost: (format = true) ->
@@ -83,6 +89,9 @@ $ ->
     $disksInput          = $ 'input[data-type="disks"]'
     $endpointsInput      = $ 'input[data-type="endpoints"]'
     $vpnConnectionsInput = $ 'input[data-type="vpn-connections"]'
+    $managedHIDSInput    = $ 'input[data-type="managed-hids"]'
+    $containerUnitPrice =  $ '.price-calc__unit.price-calc__unit--containers
+                              .price-calc__unit__price'
 
     $rangeKeys = {
       containers     : $ '.price-calc__range-keys[data-type="containers"]'
@@ -124,6 +133,16 @@ $ ->
         priceCalc.setValue(item, value)
         # Trigger updates
         $doc.trigger 'updateViews', [priceCalc]
+
+    $managedHIDSInput.on 'change', (event) ->
+      if $(event.target).prop('checked')
+        priceCalc.setValue 'managedHIDSEnabled', true
+        $containerUnitPrice.html('$0.10/GB/hour')
+      else
+        priceCalc.setValue 'managedHIDSEnabled', false
+        $containerUnitPrice.html('$0.08/GB/hour')
+      $doc.trigger 'updateViews', [priceCalc]
+
 
     #
     # DOM / View Event Handlers

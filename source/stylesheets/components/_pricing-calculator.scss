@@ -35,6 +35,35 @@
 
 .price-calc__unit__title {
   margin-bottom: 20px;
+  @media screen and (max-width: 420px) {
+    max-width: 200px;
+  }
+  dfn::after {
+    font-weight: $regular;
+  }
+  .custom-checkbox {
+    svg {
+      display: inline-block;
+      transform: scale(.75);
+    }
+    label {
+      font-size: 12px;
+      font-weight: $semibold;
+      height: 18px;
+      letter-spacing: .05em;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      span {
+        display: inline-block;
+        transform: translateY(-7px);
+      }
+    }
+  }
+}
+.price-calc__unit__header--adjacent {
+  .price-calc__unit__title {
+    margin-bottom: 5px;
+  }
 }
 
 .price-calc__unit__price {
