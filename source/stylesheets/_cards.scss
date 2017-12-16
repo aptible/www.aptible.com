@@ -202,6 +202,11 @@
 .img-card__image--free {
   height: 230px;
   width: 360px;
+  justify-content: center;
+}
+
+.img-card__image--managed-hids-mini {
+  transform: translateX(30px);
 }
 
 .img-card__title {

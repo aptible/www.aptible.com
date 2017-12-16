@@ -13,29 +13,47 @@ title: HIPAA Compliant Hosting with Aptible Enclave®
           %h1.title.white
             HIPAA Compliant Hosting
           %p.subtitle.light-blue-gray
-            The Health Insurance Portability and Accountability Act of 1996
-            (HIPAA) defines requirements for companies that create, receive,
-            maintain, or transmit electronic protected health information
-            (ePHI, or PHI).
-          %p.subtitle.light-blue-gray
-            The HIPAA Security Rule states that companies must implement
-            “reasonable and appropriate safeguards” over PHI, but identifying
-            and implementing can be overwhelming when launching a new product
-            or entering a new market.
-          %p.subtitle.light-blue-gray
-            Aptible Enclave® is a HIPAA-compliant hosting platform that protects
-            your customers’ PHI with industry-standard safeguards. Enclave helps
-            you quickly and easily satisfy HIPAA requirements, and succeed in
-            audits and vendor assessments.
+            Aptible Enclave® implements a large number of the safeguards
+            required by the HIPAA Security Rule. By deploying your apps and
+            databases on Enclave, you can go to market faster and with greater
+            confidence.
 
 .angled-section-dividers
 
 .content
-  .grid-container.grid--single-center{style: 'padding-bottom: 200px'}
+  .grid-container.hero-billboard.hero-billboard--full-title
+    .hero-billboard__title
+      .title The Health Insurance Portability and Accountability Act of 1996 (HIPAA)
+    .hero-billboard__content
+      .hero-billboard__copy
+        %p
+          HIPAA defines requirements for companies that create, receive, maintain,
+          or transmit electronic protected health information (ePHI, or PHI).
+
+        %p
+          The HIPAA Security Rule states that companies must implement “reasonable
+          and appropriate safeguards” over PHI, but identifying and implementing
+          can be overwhelming when launching a new product or entering a new market.
+
+        %p
+          Aptible Enclave® is a HIPAA-compliant hosting platform that protects
+          your customers’ PHI with industry-standard safeguards. Enclave helps you
+          quickly and easily satisfy HIPAA requirements, and succeed in audits and
+          vendor assessments.
+      .hero-billboard__image
+        %img{ src: '/images/us-hhs-logo.svg' }
+
+.content.hipaa-hosting__3-steps.angled-section--bottom-left
+  .grid-container.grid--single-center
+    .grid-item--adjacent
+      .text-center.hero--dark
+        %h2.title HIPAA Compliant Hosting on Enclave
+        %h3.subtitle.light-blue-gray How it works in 3 easy steps
+
     .grid--3up-flex
       .grid-item.img-card
         .img-card__image
-          = partial '/images/enclave-docker.svg'
+          = partial '/images/app-terminal-patient-rb.svg'
         .img-card__title
           Build your app
         .img-card__copy
@@ -48,7 +66,7 @@ title: HIPAA Compliant Hosting with Aptible Enclave®
 
       .grid-item.img-card
         .img-card__image
-          = partial '/images/security-controls/data-encryption.svg'
+          = partial '/images/deploy-terminal-and-illustration.svg'
         .img-card__title
           Deploy it on Enclave
         .img-card__copy
@@ -62,20 +80,17 @@ title: HIPAA Compliant Hosting with Aptible Enclave®
 
       .grid-item.img-card
         .img-card__image
-          = partial '/images/security-controls/audit-reports.svg'
+          = partial '/images/compliance.svg'
         .img-card__title
           Pass audits
         .img-card__copy
           %p
-            As soon as your app is ready, upgrade to a production plan.
-          %p
-            For HIPAA hosting, we’ll sign a Business-Associate Agreement (BAA)
-            together.
-          %p
-            Signing a BAA with us is a legal requirement required for hosting
-            PHI on Enclave.
+            As soon as your app is ready, upgrade to a production plan. For
+            HIPAA hosting, we’ll sign a Business-Associate Agreement (BAA)
+            together. Signing a BAA with us is a legal requirement required for
+            hosting PHI on Enclave.
 
-.content.angled-section-gradient--with-grid.enclave-hids__cta
+.content.angled-section-gradient--with-grid-and-blue.enclave-hids__cta
   .grid-container
     .deploy-now.grid-item.text-center
       %h2.title.title--white
@@ -93,140 +108,189 @@ title: HIPAA Compliant Hosting with Aptible Enclave®
 
       = partial 'partials/signup-demo-request'
 
-.angled-section-dividers
+-# .content.hipaa-hosting__tech-safeguards
+-#   .grid-container.grid--single-center
+-#     .grid-item.text-center
+-#       .enclave-hero__copy
+-#         %h1.title
+-#           Technical Safeguards
+-#         %p.subtitle.light-blue-gray
+-#           In the context of HIPAA, Technical Safeguards are technical features
+-#           of your infrastructure that contribute to protecting PHI. Enclave
+-#           fully implements a large number of Technical Safeguards for you,
+-#           and makes it trivial to meet most others:
+-#
+-#   .grid-container.grid--2up-flex
+-#     .grid-item.img-card
+-#       .img-card__title Access Controls
+-#       .img-card__copy
+-#         Enclave® implements role-based access control for all access to the
+-#         platform. You’ll still need to implement access controls in your app
+-#         itself, but with Enclave, you’re all set with regard to controlling
+-#         backend access (e.g. code deployments, SSH sessions, database tunnels).
+-#
+-#     .grid-item.img-card
+-#       .img-card__title Integrity Controls
+-#       .img-card__copy
+-#         Enclave® backs up your
+-#         databases on a daily basis and on-demand. Enclave databases (e.g.
+-#         PostgreSQL,MySQL, MongoDB) are configured conservatively to protect
+-#         data integrity.
+-#
+-#   .grid-container.grid--2up-flex
+-#     .grid-item.img-card
+-#       .img-card__title Audit Controls
+-#       .img-card__copy
+-#         Enclave® captures all logs
+-#         generated by your apps, databases, and even SSH sessions, and routes
+-#         them to the logging destination or SIEM of your choice. All you need
+-#         to do is remember to add logging statements in your app!
+-#     .grid-item.img-card
+-#       .img-card__title Transmission Security
+-#       .img-card__copy
+-#         Enclave® Managed HTTPS
+-#         Endpoints let you deliver your app over HTTPS with the click of a
+-#         button. Your access to backend systems (e.g. database tunnels, SSH
+-#         sessions) is authenticated and encrypted. Finally, Enclave®
+-#         databases require TLS for all connections.
 
-.content.enclave__support
-  .grid-container.grid--single-center
-    .grid-item.text-center
-      .enclave-hero__copy
-        %h1.title
-          HIPAA-Compliant Hosting in Detail
-        %p.subtitle.light-blue-gray
-          Aptible Enclave® implements a large number of the safeguards required
-          by the HIPAA Security Rule. By deploying your apps and databases on
-          Enclave®, you can go to market faster and with greater confidence.
-        %p.subtitle.light-blue-gray
-          Here are a few of the most salient examples of what Enclave does for you:
+.content.hipaa-hosting__tech-safeguards.angled-section-gradient--with-bottom-grid
+  .grid-container
+    .hero.text-center
+      %h2.title.title--white Technical Safeguards
+      %h3.subtitle.light-blue-gray
+        In the context of HIPAA, Technical Safeguards are technical features of
+        your infrastructure that contribute to protecting PHI. Enclave fully
+        implements a large number of Technical Safeguards for you, and makes it
+        trivial to meet most others.
 
-    .grid-item
-      .leaf-page-content.markdown-content
-        %h2.title
-          Technical Safeguards
-
-        %p.subtitle
-          In the context of HIPAA, Technical Safeguards are technical features
-          of your infrastructure that contribute to protecting PHI.
-
-        %p.subtitle
-          Enclave fully implements a large number of Technical Safeguards for
-          you, and makes it trivial to meet most others:
-
-        %ul.checklist
-          %li
-            <strong>Access Controls:</strong> Enclave® implements role-based
+    .comparison-table
+      .comparison-table__header
+        .comparison-option
+          = partial '/images/us-hhs-logo.svg'
+          .comparison-option__title
+            HIPAA Requirements
+        .comparison-option
+          = partial '/partials/aptible-mark'
+          .comparison-option__title
+            Enclave® Safeguards
+      .comparison-feature
+        .comparison-feature__title Technical Safeguards
+        .comparison-feature__body
+          .comparison-feature__point Access Controls
+          .comparison-feature__point
+            Enclave® implements role-based
             access control for all access to the platform. You’ll still need to
             implement access controls in your app itself, but with Enclave,
             you’re all set with regard to controlling backend access (e.g. code
             deployments, SSH sessions, database tunnels).
-          %li
-            <strong>Audit Controls:</strong> Enclave® captures all logs
-            generated by your apps, databases, and even SSH sessions, and routes
-            them to the logging destination or SIEM of your choice. All you need
-            to do is remember to add logging statements in your app!
-          %li
-            <strong>Integrity Controls:</strong> Enclave® backs up your
-            databases on a daily basis and on-demand. Enclave databases (e.g.
-            PostgreSQL,MySQL, MongoDB) are configured conservatively to protect
-            data integrity.
-          %li
-            <strong>Transmission Security:</strong> Enclave® Managed HTTPS
-            Endpoints let you deliver your app over HTTPS with the click of a
-            button. Your access to backend systems (e.g. database tunnels, SSH
-            sessions) is authenticated and encrypted. Finally, Enclave®
-            databases require TLS for all connections.
+        .comparison-feature__body
+          .comparison-feature__point Audit Controls
+          .comparison-feature__point
+            Enclave® captures all logs generated by your apps, databases, and even
+            SSH sessions, and routes them to the logging destination or SIEM of
+            your choice. All you need to do is remember to add logging statements
+            in your app!
+        .comparison-feature__body
+          .comparison-feature__point Integrity Controls
+          .comparison-feature__point
+            Enclave® backs up your databases on a daily basis and on-demand.
+            Enclave databases (e.g. PostgreSQL,MySQL, MongoDB) are configured
+            conservatively to protect data integrity.
+        .comparison-feature__body
+          .comparison-feature__point Transmission Security
+          .comparison-feature__point
+            Enclave® Managed HTTPS Endpoints let you deliver your app over HTTPS
+            with the click of a button. Your access to backend systems (e.g.
+            database tunnels, SSH sessions) is authenticated and encrypted.
+            Enclave® databases require TLS for all connections.
 
-        %h2.title
-          Physical Safeguards
-        %p.subtitle
-          HIPAA requires you to concern yourself with Physical Safeguards to
-          protect the systems hosting your PHI from natural and environmental
-          hazards or unauthorized intrusion.
-        %p.subtitle
-          When deploying in a cloud environment, most of these is handled by
-          your provider, but it’s still your responsibility to ensure business
-          continuity in the event of e.g. a disaster compromising the data
-          center(s) you’re deployed in.
-        %p.subtitle
-          Enclave is built on AWS, so we inherit their safeguards in terms of
-          intrusion prevention, and so do you. But, Enclave also ensures your
-          database backups are distributed across multiple geographical regions,
-          so your business can survive even major disasters.
+  .grid-container.grid--single-center
+    .enclave__aws-comparison__actions.btn-callout
+      Learn more about all of Enclave's security and audit-readiness features in the
+      %a{ href: '/assets/aptible-enclave-division-of-responsibilities.pdf' } Enclave Security Division of Responsibilities
+      &nbsp;→
 
-        %h2.title
-          Administrative Safeguards
-        %p.subtitle
-          Finally, HIPAA requires you to implement a security management program.
-          Among other things, you must prepare contingency and incident response
-          plans, train your workforce, and periodically assess your performance.
-        %p.subtitle
-          Aptible Enclave makes it easier to implement a security management
-          program by taking responsibility for many of your organization’s
-          requirements, thus minimizing the scope of your security management
-          program.
-        %p.subtitle
-          That said, Enclave does not help you think through your security
-          management program, if you’d like a self-service platform for managing
-          this administrative aspect of compliance, consider Aptible Gridiron,
-          which integrates with Aptible Enclave.
+.content.hipaa-hosting__safeguards-group
+  .grid-container.grid--2up-flex
+    .grid-item
+      %h2.title
+        Physical Safeguards
+      %h3.subtitle.subtitle--with-hr
+        HIPAA requires you to concern yourself with Physical Safeguards to
+        protect the systems hosting your PHI from natural and environmental
+        hazards or unauthorized intrusion.
+      %p
+        When deploying in a cloud environment, most of these is handled by
+        your provider, but it’s still your responsibility to ensure business
+        continuity in the event of e.g. a disaster compromising the data
+        center(s) you’re deployed in.
+      %p
+        Enclave is built on AWS, so we inherit their safeguards in terms of
+        intrusion prevention, and so do you. But, Enclave also ensures your
+        database backups are distributed across multiple geographical regions,
+        so your business can survive even major disasters.
 
-        %h2.title
-          Beyond HIPAA: Vendor Assessments
-        %p.subtitle
-          Meeting HIPAA requirements is only the baseline you must comply with
-          when deploying applications processing PHI.
-        %p.subtitle
-          However, potential partners and customers such as hospitals and
-          insurance networks will often impose much more stringent and specific
-          requirements upon you as part of their vendor assessments.
-        %p.subtitle
-          Here again, Enclave supports you by implementing industry standards
-          controls commonly found in vendor assessments, with features such as:
-        %ul.checklist
-          %li Managed Host Intrusion Detection
-          %li Docker Image Vulnerability Scanning
-          %li Activity Reports
-        %p
-          %br
-          %a.dbl-arrow-link--right{ href: '/assets/aptible-enclave-division-of-responsibilities.pdf' }
-            See the HIPAA Division of Responsibilities
+    .grid-item
+      %h2.title
+        Administrative Safeguards
+      %h3.subtitle.subtitle--with-hr
+        HIPAA requires you to implement a security management program.
+        Among other things, you must prepare contingency and incident response
+        plans, train your workforce, and periodically assess your performance.
+      %p
+        Aptible Enclave makes it easier to implement a security management
+        program by taking responsibility for many of your organization’s
+        requirements, thus minimizing the scope of your security management
+        program.
+      %p
+        That said, Enclave does not help you think through your security
+        management program, if you’d like a self-service platform for managing
+        this administrative aspect of compliance, consider Aptible Gridiron,
+        which integrates with Aptible Enclave.
 
-.content
-  .comparison-table
-    .comparison-table__header
-      .comparison-option
-        = partial '/images/aws-logo.svg'
-        .comparison-option__title Deploy with AWS
-      .comparison-option
-        = partial '/partials/aptible-mark'
-        .comparison-option__title Deploy with Enclave
 
-    .comparison-feature
-      .comparison-feature__title Access Controls
-      .comparison-feature__body
-        .comparison-feature__point Select, implement, and maintain IAM Roles
-        .comparison-feature__vs vs
-        .comparison-feature__point
-          %span.comparison-feature__automated Included
-          clear, easy to maintain role-based access controls
+.content.angled-section-gradient.hipaa-hosting__beyond-hippa
+  .grid-container
+    .grid-item.hero.text-center
+      %h2.title.title--white
+        Beyond HIPAA: Vendor Assessments
+      %h3.subtitle.light-blue-gray
+        Meeting HIPAA requirements is only the baseline you must comply with
+        when deploying applications processing PHI.
+      %h3.subtitle.light-blue-gray
+        However, potential partners and customers such as hospitals and
+        insurance networks will often impose much more stringent and specific
+        requirements upon you as part of their vendor assessments.
 
-    .comparison-feature
-      .comparison-feature__title Network Security & Load Balancing
-      .comparison-feature__body
-        .comparison-feature__point
-          Configure and maintain instance and database security groups, provision
-          SSL termination and orchestrate load balancing
-        .comparison-feature__vs vs
-        .comparison-feature__point
-          %span.comparison-feature__automated Included
-          Fault Tolerant Container Distribution with load balancing and
-          Managed TLS Endpoints with IP Filtering
+    .grid--3up-flex
+      .grid-item.img-card
+        .img-card__image--free.img-card__image--managed-hids-mini
+          = partial '/images/managed-hids-mini.svg'
+        .img-card__title.white
+          Managed Host Intrusion Detection
+        .img-card__copy.sky-blue
+          Your cloud infrastructure is protected at the host level with both
+          intrusion detection monitoring and incident response. The Aptible
+          Security Team investigates, responds to, and resolves any security
+          incidents that are discovered via the HIDS.
+
+      .grid-item.img-card
+        .img-card__image--free
+          = partial '/images/security-controls/vuln-scanning.svg'
+        .img-card__title.white
+          Docker Image Vulnerability Scanning
+        .img-card__copy.sky-blue
+          Vulnerability scanning is enabled by default on all your containers,
+          with automated scanning and real-time notifications via integration
+          with Appcanary.
+
+      .grid-item.img-card
+        .img-card__image--free
+          = partial '/images/security-controls/audit-reports.svg'
+        .img-card__title.white
+          Activity Reports
+        .img-card__copy.sky-blue
+          Activity Reports are CSV documents listing all operations that took
+          place in a given Environment; they are posted on a weekly basis in the
+          Aptible Dashboard.

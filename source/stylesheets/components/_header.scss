@@ -244,8 +244,7 @@
 
 .hero-gradient-with-dividers--dark {
   background-image: image-url('section-dividers/angle-bg-left.svg'),
-                    url('section-dividers/angle-bg-left.svg'),
-                    url('header-bottom-grid.svg'),
+                    image-url('header-bottom-grid.svg'),
                     linear-gradient(43deg, #172231 0%, #172231 20%, #421832 100%);
   background-repeat: no-repeat;
   background-position: 0px 130%, 0px 110%, bottom center, center center;
