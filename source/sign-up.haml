@@ -1,0 +1,27 @@
+---
+title: Sign Up
+---
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
+
+.content
+  .grid-container
+    .centered-header.page-header-basic
+      %h1 Get secure and<br>compliant this afternoon.
+
+      %h2.page-header-basic__sub
+        Deploy your apps, databases and network infrastructure
+        with a $500 free credit.
+
+  .grid-container.grid--single-center
+    .grid-item
+      = partial 'partials/ctas/signup-cta', locals: { |
+            class_name: 'signup-cta--centered',       |
+            cta_label: 'Get Started',                 |
+            cta_placeholder: 'Enter your work email'  |
+          }                                           |
+
+  .grid-container.grid--single-center
+    .grid-item
+      = partial 'customer-logo-grid'

@@ -35,10 +35,18 @@ title: Contact Sales
         .grid-item
           .floating-label
             %label
-              First & Last Name
-            %input.input{ type: "text", required: true, name: 'name' }
+              First Name
+            %input.input{ type: "text", required: true, name: 'first_name' }
             .placeholder
-              First & Last Name
+              First Name
+        .grid-item
+          .floating-label
+            %label
+              Last Name
+            %input.input{ type: "text", required: true, name: 'last_name' }
+            .placeholder
+              Last Name
+      .grid-container.grid--1up
         .grid-item
           .floating-label
             %label
@@ -62,7 +70,7 @@ title: Contact Sales
                 %input#request-demo-of{ type: 'checkbox' }
                 %label{ for: 'request-demo-of' }
                   = partial '/images/icons/checkbox.svg'
-                  Yes, I would like to schedule a demo of
+                  I would like to schedule a demo of
               .custom-select
                 .custom-select__link{ tabindex: 0 }
                   Both Enclave & Gridiron
