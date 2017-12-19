@@ -2,24 +2,24 @@
 title: Responsible Disclosure Policy
 tracked_title: Responsible Disclosure
 description: "Aptible's policy on responsible disclosure of security vulnerabilities."
-posted: 2016-11-26
+posted: 2017-12-19
 section: Legal
 sub_section: Policies
 ---
 <!-- Reference Links -->
 [Terms of Service]:/legal/terms-of-service
 
-Version 2.9 - November 2016
+Version 2.10 - December 2017
 
 ### Responsible Disclosure
-We are dedicated to maintaining the security and privacy of the Aptible platform. We welcome security researchers from the community who want to help us improve our services.
+We are dedicated to maintaining the security and privacy of the Aptible services and customer data. We welcome security researchers from the community who want to help us improve our products and services.
 
 If you discover a security vulnerability, please give us the chance to fix it by emailing us at [security@aptible.com](mailto:security@aptible.com). Publicly disclosing a security vulnerability without informing us first puts the rest of the community at risk. When you notify us of a potential problem, we will work with you to make sure we understand the scope and cause of the issue.
 
 Thank you for your work and interest in making the community safer and more secure!
 
 ### Bounty Program
-Aptible rewards security researchers for reporting vulnerabilities. Please email [security@aptible.com](mailto:security@aptible.com) to report an issue.
+Aptible awards security researchers cash and prizes for reporting vulnerabilities. Please email [security@aptible.com](mailto:security@aptible.com) to report an issue.
 
 If you would like to be eligible for a bounty, please read this carefully.
 
@@ -30,29 +30,34 @@ If you would like to be eligible for a bounty, please read this carefully.
 4. Test only on in-scope domains, listed below.  
 5. Do not use fuzzers, scanners, or other automated tools to find vulnerabilities.  
 
-Doing any of the above will render you ineligible for cash bounties.
+Doing any of the above will render you ineligible for cash bounties and prizes.
 
-#### Scope  
+#### In-Scope Services
+
 Only the following services are in-scope:  
 
 - api.aptible.com  
 - auth.aptible.com  
-- dashboard.aptible.com  
-- gridiron.aptible.com  
-- compliance.aptible.com  
 - billing.aptible.com  
+- dashboard.aptible.com  
+- gridiron.aptible.com 
+
+Please do not test or report issues with services not listed here.
+
+#### Out-of-Scope Issues
 
 **The following types of reports/attacks are out of scope. Do not attempt them:**  
 
+- Reports about any service not listed under "In-Scope Services," above
 - DOS attacks  
-- Brute forcing login/account management pages  
+- Brute force attacks
 - Physical vulnerabilities  
-- Social engineering attacks (e.g. phishing)  
-
-**The following types of bugs do not qualify for bounties:**  
-
+- Social engineering attacks, including but not limited to:
+	- phishing
+	- email auth (SPF, DKIM, etc.)
+	- hyperlink injection in emails
 - CSRF on forms that are available to anonymous users (e.g., signup, login, contact, Intercom)  
-- Self-XSS and issues exploitable only through Self-XSS  
+- Self-XSS and issues exploitable only through self-XSS  
 - Clickjacking and issues only exploitable through clickjacking  
 - Functional, UI and UX bugs and spelling mistakes  
 - Descriptive error messages (e.g. stack traces, application or server errors)  
@@ -60,10 +65,11 @@ Only the following services are in-scope:
 - Banner disclosure on common/public services  
 - Disclosure of known public files or directories, (e.g. robots.txt)  
 - Presence of application or web browser "autocomplete" or "save password" permission  
-- Email auth (SPF records, etc)  
 - User enumeration on login  
 
 ### Top Researchers
+Researchers are listed here based on adherence to these program guidelines, professionalism, and significance or novelty of the issue(s) reported:
+
 - Frans Rosen
 - Adam Enger
 - Mohammed Shameem Shahnawaz
@@ -71,6 +77,7 @@ Only the following services are in-scope:
 - Jubaer Al Nazi, ServerGhosts, Bangladesh
 - Ali Hassan Ghori
 - Nessim Jerbi
+- Praseudo
 
 ### PGP
 If you choose to email us, encrypting your email is not required. Should you deem it necessary, our public key for support@aptible.com is below:
