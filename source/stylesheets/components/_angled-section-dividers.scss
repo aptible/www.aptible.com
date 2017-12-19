@@ -46,16 +46,20 @@
 }
 
 .angled-section-gradient,
-.angled-section-gradient--with-grid {
+.angled-section-gradient--with-grid,
+.angled-section-gradient--with-bottom-grid,
+.angled-section-gradient--with-grid-and-blue {
   background-color: transparent;
   background-image: image-url('section-dividers/angle-gradient-bg.svg'),
+                    image-url('header-bottom-grid.svg'),
                     linear-gradient(0deg,
                                     #381c3b,
                                     #381c3b 300px,
                                     rgba(0,0,0,0) 300px,
                                     rgba(0,0,0,0));
-  background-position: center top;
-  background-size: cover;
+  background-position: center top, center bottom, center top;
+  background-repeat: no-repeat;
+  background-size: cover, auto, cover;
   margin-top: -18vw;
   padding-top: 16vw;
   position: relative;
@@ -78,4 +82,38 @@
   background-position: center center, center top;
   background-repeat: no-repeat;
   background-size: auto, cover, auto;
+}
+
+.angled-section-gradient--with-grid-and-blue {
+  background-image: image-url('section-dividers/angle-bg-left.svg'),
+                    image-url('grid-bg-fade.png'),
+                    image-url('section-dividers/angle-gradient-bg.svg'),
+                    linear-gradient(0deg,
+                                    #381c3b,
+                                    #381c3b 300px,
+                                    rgba(0,0,0,0) 300px,
+                                    rgba(0,0,0,0));
+  background-position: left bottom, center center, center top;
+  background-repeat: no-repeat;
+  background-size: contain, cover, auto;
+}
+
+.angled-section-gradient--with-bottom-grid {
+  background-image: image-url('header-bottom-grid.svg'),
+                    image-url('section-dividers/angle-gradient-bg.svg'),
+                    linear-gradient(0deg,
+                                    #381c3b,
+                                    #381c3b 300px,
+                                    rgba(0,0,0,0) 300px,
+                                    rgba(0,0,0,0));
+  background-position: center bottom, center top;
+  background-repeat: no-repeat;
+  background-size: contain, cover, auto;
+}
+
+.angled-section--bottom-left {
+  background-image: image-url('section-dividers/angle-bg-left.svg');
+  background-position: -5px 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

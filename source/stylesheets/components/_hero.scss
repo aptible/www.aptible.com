@@ -22,17 +22,33 @@
 
   @media screen and (max-width: $tablet-portrait) {
     padding: 40px;
+    .hero-billboard__copy {
+      margin-right: 0;
+      max-width: none;
+    }
     .hero-billboard__image {
       display: none;
     }
   }
 }
 
-.hero-billboard__copy,
-.hero-billboard__image {
-  display: inline;
+.hero-billboard--full-title {
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-
+.hero-billboard__title {
+  margin-bottom: 20px;
+}
+.hero-billboard__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .hero-billboard__copy {
+  color: $light-blue-gray;
   flex-grow: 1;
+  font-size: 18px;
+  font-weight: $light;
+  margin-right: 30px;
+  max-width: 66%;
 }
