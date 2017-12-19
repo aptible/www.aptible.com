@@ -73,12 +73,15 @@
     }
   }
   li {
-    margin-bottom: 0;
+    line-height: 1;
+    margin-bottom: 8px;
   }
 }
 .footer-nav__section-title {
   color: $light-gray;
   font-weight: $semibold;
+  line-height: 1;
+  margin-bottom: 0;
   padding-bottom: 10px;
 }
 
