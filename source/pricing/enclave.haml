@@ -66,7 +66,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
           .price-calc__unit__header
             %h4.price-calc__unit__title
               .custom-checkbox
-                %input#price-calc-mhids{ type: 'checkbox', "data-type" => "managed-hids" }
+                %input#price-calc-mhids{ type: 'checkbox', name: 'hids', "data-type" => "managed-hids" }
                 %label{ for: 'price-calc-mhids' }
                   = partial '/images/icons/checkbox.svg'
                   %span with Managed HIDS
@@ -74,7 +74,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
           .price-calc__unit__estimate
             .price-calc__unit__slider
               .price-calc__range
-                %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "containers" }
+                %input{ type: 'range', name: 'containers', min: '0', max: '11', step: '1', value: '0', "data-type" => "containers" }
               %ul.price-calc__range-keys{ "data-type" => "containers" }
                 %li.price-calc__range-key{"data-value" => "0"} 0
                 %li.price-calc__range-key{"data-value" => "1GB"} &centerdot;
@@ -105,7 +105,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
           .price-calc__unit__estimate
             .price-calc__unit__slider
               .price-calc__range
-                %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "disks" }
+                %input{ type: 'range', name: 'disks', min: '0', max: '11', step: '1', value: '0', "data-type" => "disks" }
               %ul.price-calc__range-keys{"data-type" => "disks"}
                 %li.price-calc__range-key{"data-value" => "0"} 0
                 %li.price-calc__range-key{"data-value" => "10GB"} &centerdot;
@@ -136,7 +136,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
           .price-calc__unit__estimate
             .price-calc__unit__slider
               .price-calc__range
-                %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "endpoints" }
+                %input{ type: 'range', name: 'endpoints', min: '0', max: '11', step: '1', value: '0', "data-type" => "endpoints" }
               %ul.price-calc__range-keys{"data-type" => "endpoints"}
                 %li.price-calc__range-key 0
                 %li.price-calc__range-key &centerdot;
@@ -164,7 +164,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
           .price-calc__unit__estimate
             .price-calc__unit__slider
               .price-calc__range
-                %input{ type: 'range', min: '0', max: '11', step: '1', value: '0', "data-type" => "vpn-connections" }
+                %input{ type: 'range', name: 'vpn-connections', min: '0', max: '11', step: '1', value: '0', "data-type" => "vpn-connections" }
               %ul.price-calc__range-keys{"data-type" => "vpn-connections"}
                 %li.price-calc__range-key 0
                 %li.price-calc__range-key &centerdot;
