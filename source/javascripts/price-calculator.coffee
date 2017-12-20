@@ -62,9 +62,6 @@ $ ->
         @endpointsCost(false) + @vpnConnectionsCost(false)
       )
 
-    scaleMuch: ->
-      @containers > 10 || @disks > 10 || @endpoints > 10 || @vpnConnections > 10
-
     # Formats with commas and ~~fixed cents~~ rounding to dollars
     toCurrency: (num) ->
       # num.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,')
@@ -135,14 +132,37 @@ $ ->
         $doc.trigger 'updateViews', [priceCalc]
 
     $managedHIDSInput.on 'change', (event) ->
-      if $(event.target).prop('checked')
-        priceCalc.setValue 'managedHIDSEnabled', true
-        $containerUnitPrice.html('$0.10/GB/hour')
-      else
-        priceCalc.setValue 'managedHIDSEnabled', false
-        $containerUnitPrice.html('$0.08/GB/hour')
+      priceCalc.managedHIDSEnabled = $(event.target).prop('checked')
       $doc.trigger 'updateViews', [priceCalc]
 
+    urlToPriceCalc = (priceCalc) ->
+      # remove ?, split on &, and iterate
+      location.search.substring(1).split('&').forEach (param) ->
+        keyVal = param.split('=')
+        switch keyVal[0]
+          when 'hids'
+            priceCalc.managedHIDSEnabled = !!parseInt(keyVal[1])
+          when 'containers'
+            priceCalc.containers = keyVal[1]
+          when 'disks'
+            priceCalc.disks = keyVal[1]
+          when 'endpoints'
+            priceCalc.endpoints = keyVal[1]
+          when 'vpn-connections'
+            priceCalc.vpnConnections = keyVal[1]
+
+    priceCalcToUrl = (priceCalc) ->
+      params = []
+      hidsVal = if priceCalc.managedHIDSEnabled then '1' else '0'
+      params.push "hids=#{hidsVal}"
+      params.push "containers=#{priceCalc.containers}"
+      params.push "disks=#{priceCalc.disks}"
+      params.push "endpoints=#{priceCalc.endpoints}"
+      params.push "vpn-connections=#{priceCalc.vpnConnections}"
+      searchString = "?#{params.join('&')}"
+      if searchString isnt location.search and history.replaceState
+        url = location.href.replace(location.search, '') + searchString
+        window.history.replaceState({ path: url }, '', url);
 
     #
     # DOM / View Event Handlers
@@ -168,12 +188,22 @@ $ ->
       setSliderKey $rangeKeys.vpnConnections, priceCalc.vpnConnections
       $priceViews.vpnConnections.html priceCalc.vpnConnectionsCost()
 
+      # Managed HIDS
+      if priceCalc.managedHIDSEnabled
+        $containerUnitPrice.html('$0.10/GB/hour')
+        unless $managedHIDSInput.is(':checked')
+          $managedHIDSInput.attr('checked', 'checked').change()
+      else
+        $containerUnitPrice.html('$0.08/GB/hour')
+        if $managedHIDSInput.is(':checked')
+          $managedHIDSInput.removeAttr('checked').change()
+
       # Total
       $priceViews.total.html priceCalc.price()
 
-      # Scale Much?
-      # if priceCalc.scaleMuch()
-
+      # Update URL
+      priceCalcToUrl(priceCalc)
 
     # Initialize Views
+    urlToPriceCalc(priceCalc) if location.search isnt ''
     $doc.trigger 'updateViews', [priceCalc]
