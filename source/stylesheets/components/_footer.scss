@@ -91,6 +91,9 @@
   font-weight: $light;
   margin-bottom: 0;
   text-align: right;
+  @media screen and (max-width: $tablet-landscape) {
+    text-align: left;
+  }
 }
 .aptible-footer__copy {
   margin-bottom: 10px;

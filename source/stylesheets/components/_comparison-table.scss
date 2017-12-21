@@ -92,6 +92,11 @@
   text-transform: uppercase;
 }
 
+.comparison-feature__subtitle {
+  color: $white;
+  font-weight: $semibold;
+}
+
 .comparison-feature__body {
   display: flex;
   justify-content: space-around;
