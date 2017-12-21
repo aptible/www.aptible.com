@@ -1,3 +1,20 @@
+.hipaa-hosting__header {
+  background-image: linear-gradient(180deg, #172231 0%, #172231 20%, #421832 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-bottom: 50px;
+  .subtitle {
+    margin-bottom: 50px;
+  }
+  .grid-item {
+    padding-bottom: 120px;
+    padding-top: 50px;
+    @media screen and (max-width: 650px) {
+      padding-bottom: 50px;
+    }
+  }
+}
 .hipaa-hosting__hero {
   .hero-billboard__image {
     min-height: 255px;
@@ -7,6 +24,9 @@
 .hipaa-hosting__3-steps {
   .grid-container {
     padding-bottom: 200px;
+    @media screen and (max-width: 1160px) {
+      padding-bottom: 100px;
+    }
   }
   .grid-item--adjacent {
     margin-bottom: 80px;
@@ -17,14 +37,22 @@
   }
 }
 
+.hipaa-hosting__cta {
+  margin-top: -250px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @media screen and (max-width: 1160px) {
+    margin-top: -220px;
+  }
+  @media screen and (max-width: $tablet-portrait) {
+    margin-top: -200px;
+  }
+}
+
 .hipaa-hosting__tech-safeguards {
   padding-top: 300px;
-  .img-card__title,
-  .img-card__copy {
-    font-size: 16px;
-  }
-  .img-card__title {
-    font-weight: $regular;
+  .subtitle {
+    max-width: 600px;
   }
 
   .comparison-table {
@@ -43,7 +71,13 @@
       color: $sky-blue;
     }
   }
+  @media screen and (max-width: 1160px) {
+    padding-top: 22vw;
+    margin-top: -18vw;
+  }
   @media screen and (max-width: 650px) {
+    padding-top: 40vw;
+    margin-top: -25vw;
     .comparison-feature__body {
       flex-direction: column;
 
@@ -62,6 +96,9 @@
   margin: 120px auto 50px;
   max-width: 1100px;
   padding-bottom: 200px;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 50px;
+  }
   .title {
     font-size: 32px;
     margin-bottom: 50px;
@@ -80,6 +117,7 @@
     }
   }
   .grid--2up-flex {
+    align-items: flex-start;
     justify-content: space-between;
   }
   .grid-item {
@@ -100,6 +138,6 @@
 
 .hipaa-hosting__beyond-hipaa {
   .grid-container {
-    margin-top: 50px;
+    margin-top: 100px;
   }
 }
