@@ -13,8 +13,8 @@ title: Contact Sales
         Let us know how to reach you and what we can help with
 
     %form.basic-form.contact-sales{"accept-charset" => "UTF-8", action: "https://formkeep.com/f/f54ed61d5253", method: "POST"}
-      %input{ type: 'hidden', name: '_redirect_url', value: base_url }
-      %input{ type: 'hidden', name: 'event', value: 'gridiron-demo-request' }
+      %input{ type: 'hidden', name: '_redirect_url', value: page_url }
+      %input{ type: 'hidden', name: 'event', value: 'contact-sales' }
       %input{ type: 'text', name: 'form-name', value: 'Contact Sales', style: 'display: none;' }
       .grid-container.grid--2up
         .grid-item
@@ -67,14 +67,14 @@ title: Contact Sales
           .form-action
             %div.opt-in-wrapper
               .custom-checkbox
-                %input#request-demo-of{ type: 'checkbox' }
-                %label{ for: 'request-demo-of' }
+                %input#request-demo{ type: 'checkbox', name: 'request-demo' }
+                %label{ for: 'request-demo' }
                   = partial '/images/icons/checkbox.svg'
                   I would like to schedule a demo of
               .custom-select
                 .custom-select__link{ tabindex: 0 }
                   Both Enclave & Gridiron
-                %input.custom-select__input{ type: 'hidden', readonly: true, value: 'Both Enclave & Gridiron' }
+                %input.custom-select__input{ name: 'request-demo-of', type: 'hidden', readonly: true, value: 'Both Enclave & Gridiron' }
                 .custom-select__menu
                   .custom-select__item{ tabindex: 0 }
                     Enclave
