@@ -34,3 +34,8 @@ $ ->
     message = "We've received your request for a demo. We'll get back to you as quickly as possible."
     $(document).trigger('notify', [message])
     window.history?.replaceState { }, '', loc.href.replace(loc.search, '')
+
+  if loc.search.indexOf('event=contact-sales') > -1
+    message = "Thank you for contacting the Aptible sales team. We'll get back to you as quickly as possible."
+    $(document).trigger('notify', [message])
+    window.history?.replaceState { }, '', loc.href.replace(loc.search, '')
