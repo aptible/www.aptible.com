@@ -3,30 +3,36 @@ section: 'ui-kit'
 slug:    'colors'
 title:   'Colors'
 colors:
-  - white,#fff;
-  - lighter-blue,#f5f8fd;
-  - light-blue,#e9f1fd;
-  - sky-blue,#93b0d2;
-  - blue,#307AD1;
-  - light-sky-blue,#afcced;
-  - blue-steel,#627699;
-  - dark-blue-steel,#45546e;
-  - dark-blue,#172234;
-  - light-blue-gray,#7383A0;
-  - green,#9bd037;
-  - grass-green,#9bd037;
-  - dusk,#212f45;
-  - dusk-alt,#222c3e;
-  - light-med-gray,#c9d1db;
-  - light-gray,#8b97a6;
-  - medium-gray,#999;
-  - dark-gray,#36455b;
-  - purple,#9b59b6;
-  - light-dusk,#2d3c54;
+  - white,#fff,dark;
+  - lighter-blue,#f5f8fd;,dark
+  - light-blue,#e9f1fd;,dark
+  - light-sky-blue,#afcced;,dark
+  - sky-blue,#93b0d2;,dark
+  - blue,#307AD1;,light
+  - blue-steel,#627699;,light
+  - dark-blue-steel,#45546e;,light
+  - dark-blue,#172234;,light
+  - light-blue-gray,#7383A0;,light
+  - green,#9bd037;,dark
+  - grass-green,#9bd037;,dark
+  - dusk,#212f45;,light
+  - dusk-alt,#222c3e;,light
+  - light-med-gray,#c9d1db;,dark
+  - light-gray,#8b97a6;,dark
+  - medium-gray,#999;,dark
+  - dark-gray,#36455b;,light
+  - purple,#9b59b6;,light
+  - light-dusk,#2d3c54;,light
 ---
 
 - content_for :header do
-  = partial 'partials/ui-kit-header'
+  %header.aptible-header.hero-gradient--angled
+    = partial 'partials/main-nav'
+    .about-heading.heading--single-center.heading--condensed
+      %h1.heading__title.heading__title--no-hr.heading__title--centered
+        Aptible Marketing UI Kit
+      %p.heading__summary--single-center.heading__summary--light-blue-gray
+        Named color variables
 
 .content
   .grid-container.grid--4up
@@ -34,17 +40,18 @@ colors:
       - current_page.data.colors.each do |c|
         - color = c.split(',')[0]
         - hex = c.split(',')[1]
-        %div{:class => "grid-item card #{"#{color}-bg"}"}
-          %heading
-            = color.gsub('-', ' ').capitalize
-            %span.color-hex= hex
+        - shade = c.split(',')[2]
+        %div{:class => "grid-item card #{"#{color}-bg"} #{"color-card-text--#{shade}"}"}
+          = color.gsub('-', ' ').capitalize
+          = "$#{color}"
+          %span.color-hex= hex
   .grid-container
     %h1.headline--xxl Gradients
   .grid-container.grid--2up
     .grid-collapse
-      .grid-item.card.hero-gradient
+      .grid-item.card.hero-gradient.color-card-text--light
         %heading
           Hero Gradient
-      .grid-item.card.hero-gradient--angled
+      .grid-item.card.hero-gradient--angled.color-card-text--light
         %heading
           Hero Gradient Angled
