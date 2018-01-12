@@ -4,7 +4,7 @@
 
 = wrap_layout :layout do
   .content
-    .grid-container--flex
+    .blog-posts__container.grid-container--flex
       .blog-posts.grid-item
         - if changelog_post?(current_page)
           = partial 'partials/headers/changelog-header'
