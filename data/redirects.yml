@@ -601,3 +601,5 @@
   url: "/resources/enclave-reference-architecture/"
 - loc: "/resources/enclave-reference-architecture-division-of-responsibilities/"
   url: "/resources/enclave-reference-architecture/"
+- loc: "/assets/aptible-reference-architecture.pdf"
+  url: "/assets/aptible-enclave-reference-architecture.pdf"
