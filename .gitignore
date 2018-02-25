@@ -15,3 +15,10 @@ source/bower_components
 .env
 .aptible-space-hash
 data/customers.yml
+
+# Ignore Contentful
+source/blog/*
+source/changelog/*
+source/compliance/*
+source/learn/*
+source/resources/*
