@@ -30,6 +30,26 @@ module ResourceHelpers
       .sort_by { |p| -p.data['created_at'].to_time.to_i }
   end
 
+  def resources_by_category(category)
+    resources_for_index.select { |p| p.data.category == category }
+  end
+
+  def enclave_resources
+    resources_by_category 'Enclave'
+  end
+
+  def gridiron_resources
+    resources_by_category 'Gridiron'
+  end
+
+  def hipaa_resources
+    resources_by_category 'HIPAA'
+  end
+
+  def aptible_update_resources
+    resources_by_category 'Aptible Updates'
+  end
+
   def resource_path(resource)
     return if resource.nil?
     data = resource.data

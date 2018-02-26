@@ -67,6 +67,4 @@ request or open an issue. We send t-shirts and swag to contributors.
 
 ## Copyright
 
-Copyright (c) 2017 [Aptible](https://www.aptible.com). All rights reserved.
-
-[<img src="https://secure.gravatar.com/avatar/566f0093e212d9b808c0cece8a32480e?s=60" style="border-radius: 50%;" alt="@gib" />](https://github.com/gib)
+Copyright (c) 2018 [Aptible](https://www.aptible.com). All rights reserved.
