@@ -30,40 +30,24 @@ module ResourceHelpers
       .sort_by { |p| -p.data['created_at'].to_time.to_i }
   end
 
+  def resources_by_category(category)
+    resources_for_index.select { |p| p.data.category == category }
+  end
+
   def enclave_resources
-    section_pages('Resources')
-      .select { |p| 
-        p.data['included_on_index'] && 
-        p.data.category == 'Enclave'
-      }
-      .sort_by { |p| -p.data['created_at'].to_time.to_i }
+    resources_by_category 'Enclave'
   end
 
   def gridiron_resources
-    section_pages('Resources')
-      .select { |p| 
-        p.data['included_on_index'] && 
-        p.data.category == 'Gridiron'
-      }
-      .sort_by { |p| -p.data['created_at'].to_time.to_i }
+    resources_by_category 'Gridiron'
   end
 
   def hipaa_resources
-    section_pages('Resources')
-      .select { |p| 
-        p.data['included_on_index'] && 
-        p.data.category == 'HIPAA'
-      }
-      .sort_by { |p| -p.data['created_at'].to_time.to_i }
+    resources_by_category 'HIPAA'
   end
 
   def aptible_update_resources
-    section_pages('Resources')
-      .select { |p| 
-        p.data['included_on_index'] && 
-        p.data.category == 'Aptible Updates'
-      }
-      .sort_by { |p| -p.data['created_at'].to_time.to_i }
+    resources_by_category 'Aptible Updates'
   end
 
   def resource_path(resource)
