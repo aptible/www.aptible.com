@@ -41,7 +41,8 @@ namespace :deploy do
     ENV['BASE_URL'] = 'https://www.aptible-staging.com'
     ENV['BASE_DOC_URL'] = 'https://www.aptible-staging.com'
     ENV['SEGMENTIO_WRITEKEY'] = 'K24Jna8XS0PRiQiISYZ563qC3SfHF241'
-    ENV['CONTENTFUL_TOKEN'] = 'b66d39f51cfcc747ca3af1b7731bd00cf877b659d69514845ba837ddae473605'
+    ENV['CONTENTFUL_TOKEN'] = 'b66d39f51cfcc747ca3af1b7731bd00c' \
+                              'f877b659d69514845ba837ddae473605'
     ENV['CONTENTFUL_PREVIEW_MODE'] = 'true'
     Rake::Task[:deploy].invoke('www.aptible-staging.com')
   end
