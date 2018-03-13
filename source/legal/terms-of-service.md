@@ -2,7 +2,7 @@
 title: Terms of Service
 tracked_title: Terms of Service
 description: "Aptible Terms of Service"
-posted: 2017-08-14
+posted: 2018-03-13
 section: Legal
 sub_section: Agreements
 order: 0
@@ -18,7 +18,7 @@ order: 0
 [Support Policy]:/legal/support
 [Trademark Policy]:/legal/trademark
 
-Version 2.11 - August 2017
+Version 2.12 - March 2018
 
 Welcome, and thank you for your interest in Aptible! 
 
@@ -91,6 +91,8 @@ You may terminate your account and this Agreement at any time in accordance with
 6. You will abide by the [Acceptable Use Policy].  
 7. You will abide by the restrictions in our [Support Policy] and [Security Policy] on how the Services may be implemented.  
 8. You will remit payment timely for the Services, as specified in the [Billing Policy] and any purchase order you may execute.
+9. If you are using the Services to process HIPAA PHI, you must have a valid, signed Business Associate Agreement with Aptible and have applied the required security configurations and controls as specified in that agreement. 
+10. If you are using the Services to process GDPR personal data, you must have a valid, signed Privacy Shield Addendum with Aptible and have applied the required security configurations and controls as specified in that agreement.
 
 **B. Unauthorized uses.** You will not violate, and will not allow third parties under your control to violate, our [Acceptable Use Policy] or other policies.
 
@@ -323,7 +325,7 @@ This Agreement supersedes all other agreements between the parties relating to i
 
 **"Content"** means software, data, text, audio, video, images or other content.
 
-**"Dedicated Environment"** means as Enclave environment running on a dedicated stack, where the network and hosts are not shared with any other Aptible customer. If you are using Enclave to process HIPAA PHI, you must have a valid, signed Business Associate Agreement with Aptible and have applied the required security configurations and controls as specified in that agreement. 
+**"Dedicated Environment"** means an Enclave environment running on a dedicated stack, where the network and hosts are not shared with any other Aptible customer. 
 
 **"Enclave Containerized Service(s)"** means your Enclave app and database containers.
 
@@ -335,6 +337,11 @@ This Agreement supersedes all other agreements between the parties relating to i
 The term **"End User"** does not include individuals or entities when they are accessing or using the Services or any Content under their own Aptible account, rather than your account.
 
 **"High Risk Activity"** means any activity where the failure of a supporting computer system could lead to death, personal injury, or severe physical or environmental damage, such as the operation of nuclear facilities, aircraft navigation, or direct life support systems.
+
+**"HIPAA PHI"** means "protected health information" as defined in Title 45, Code of Federal
+Regulations, § 160.103.
+
+**"GDPR Personal Data"** means personally identifiable information as defined in Article 4 of the European Union's General Data Protection Regulation.
 
 **"Privacy Policy"** means the policy currently available at https://www.aptible.com/legal/privacy, as it may be updated by us from time to time.
 
