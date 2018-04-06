@@ -1,33 +1,60 @@
 ---
 title: About
 ---
+
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled
+  %header.aptible-header.hipaa-hosting__header
     = partial 'partials/main-nav'
-    .about-heading.heading--single-center.heading--condensed
-      %h1.heading__title.heading__title--no-hr.heading__title--centered
-        About Us
-      %p.heading__summary--single-center.heading__summary--light-blue-gray
-        Aptible is a distributed company that helps developers secure data and applications online.
+
+    .grid-container.grid--single-center
+      .grid-item.text-center
+        %h2.subtitle--caps.blue Who We Are
+        %h1.title.white.heading--single-center
+          Aptible is a distributed company that helps developers secure data
+          and applications online.
+        %p.subtitle.light-blue-gray
+          Aptible works closely with thousands of developers at hundreds of
+          companies, including many startups. The Aptible team is fully remote
+          and is made up of engineers, lawyers, and security operations experts.
+        
+        .company-map
+          .company-map__map
+            %img{ src: '/images/company/map.png' }
+          .company-map__cta
+            %a.btn{ href: 'https://jobs.lever.co/aptible' } We're Hiring. View Openings &rarr;
+
+.angled-section-dividers
+
 
 .company.content
-  .grid-container.grid--2up-flex
-    .grid-item.company__intro
-      %h2.heading Who We Are
-      %p.summary
-        Aptible was founded in 2013 with the goal of creating a more secure internet by helping developers excel at data security and compliance.
-      %p.summary
-        The Internet is radically transforming massive sectors of the global economy, like healthcare, industry, agriculture, and banking. In the process, more sensitive data is moving online, and, as we are constantly reminded, data security is hard.
-      %p.summary
-        Aptible builds tools that help developers implement data security best practices and enforce compliance requirements.
-      %p.summary
-        Aptible works closely with thousands of developers at hundreds of companies, including many startups. The Aptible team is fully remote and is made up of engineers, lawyers, and security and operations experts. Aptible’s investors include Y Combinator, Rock Health, Maverick, WTI, and GGV Capital.
-    .grid-item.company__image
-      %img{ src: '/images/company/aptible-team-portrait.jpg', style: ""}
+  .grid-container.grid--single-center
+    .our-team.text-center
+      %h2.title Our Team
+      %h3.subtitle
+        Aptible was founded in 2013 with the goal of creating a more secure
+        internet by helping developers excel at data security and compliance.
+  
+  .grid-container.grid--4up
+    .grid-collapse
+      - data.team.each do |member|
+        .grid-item.team-member
+          .team-member__photo
+            .main-photo{ style: "background-image: url('#{member.main_photo}')" }
+            .fun-photo{ style: "background-image: url('#{member.fun_photo}')" }
+          .team_member__name= member.name
+          .team-member__job-title= member.title
+          .team-member__bio= member.bio
 
-  .grid-container
-    .grid-item
-      %h2.heading--single-center
+
+.content.angled-section-divider--left
+.content.angled-section-gradient
+  .grid-container.join-aptible
+    .grid-item.text-center
+      %h2.subtitle--caps.blue Join Aptible
+      %h1.title.white.heading--single-center
         Help build the future of privacy and security on the web.
-      .openings.grid-container.grid--2up-flex
-        = partial 'loading-indicator'
+      %p.subtitle.light-blue-gray
+        Aptible builds tools that help developers implement data security best
+        practices and enforce compliance requirements.
+      
+      %a.btn{ href: 'https://jobs.lever.co/aptible' } View Openings &rarr;

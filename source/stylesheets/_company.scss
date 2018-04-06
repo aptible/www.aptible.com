@@ -1,60 +1,78 @@
-.company .grid-container {
-  align-items: stretch;
+.company .our-team {
+  padding-bottom: 40px;
 }
-.grid--2up-flex {
-  .company__intro {
-    width: 650px;
-    @media screen and (max-width: $max-viewport) {
-      width: 70%;
-    }
-    @media screen and (max-width: $tablet-portrait) {
-      width: 100%;
-    }
+
+
+.company-map {
+  position: relative;
+}
+
+.company-map__cta {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  z-index: 100;
+
+  a {
+    box-shadow: 0 4.5px 13px 0 rgba(0,0,0,.1);
   }
-  .company__image {
-    flex-grow: 0;
-    img {
-      max-width: 650px;
-    }
-    @media screen and (max-width: $max-viewport) {
-      flex-grow: 1;
-      width: 75%;
-      img {
-        max-width: 100%;
-      }
-    }
-    @media screen and (max-width: $tablet-portrait) {
-      width: 100%;
+}
+
+.join-aptible {
+  padding: 50px 0 70px;
+}
+
+
+.team-member {
+  padding: 30px;
+  border: 1px solid $light-blue;
+  border-radius: 4px;
+  min-height: 465px;
+
+  &:hover {
+    .team-member__photo {
+      .main-photo { display: none; }
+      .fun-photo { display: block; }
     }
   }
 }
 
-.openings {
-  align-items: stretch;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  .grid-item {
-    height: auto;
-    padding: 50px;
-    width: calc(50% - 40px);
-    &:nth-of-type(2n+1) {
-      margin-right: 40px;
-    }
+.team_member__name {
+  font-size: 16px;
+  font-weight: 400;
+  color: $dark-blue-steel;
+}
+
+.team-member__job-title {
+  font-size: 12px;
+  font-weight: 400;
+  color: $sky-blue;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.team-member__bio {
+  font-size: 15px;
+  color: $blue-steel;
+}
+
+.team-member__photo {
+  $size: 128px;
+
+  width: $size;
+  height: $size;
+  margin: 0 auto 20px auto;
+
+  .main-photo,
+  .fun-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 200px;
+    background-size: cover;
+    background-position: center;
   }
-  .card__title {
-    display: block;
-    margin-bottom: 20px;
-  }
-  .card__body {
-    max-width: 100%;
-  }
-  @media screen and (max-width: $tablet-portrait) {
-    padding: 0;
-    .grid-item {
-      &:nth-of-type(2n+1) {
-        margin-right: 0;
-      }
-      width: 100%;
-    }
+
+  .fun-photo {
+    display: none;
   }
 }

@@ -1,0 +1,103 @@
+- name: Chas Ballew
+  title: Janitor, $$$ Engineer, CEO
+  bio:
+    Before Aptible, I served on active duty in the Army for 4 years as a 
+    lawyer at the Pentagon, which is where I first learned regulatory law. 
+    Prior to that, I ran two small dev shops for beer money in high school 
+    and college. My dog's name is Dilla.
+  main_photo: /images/company/team/chas.jpg
+  fun_photo: /images/company/team/chas-fun.jpg
+- name: Frank Macreery
+  title: Co-Founder
+  bio:
+    Prior to Aptible, Frank led engineering teams at Give Real, XGraph 
+    (acquired by Clearspring / AddThis), and Artsy. He holds a B.S.E. in Computer 
+    Science from Princeton University.
+  main_photo: /images/company/team/frank.jpg
+  fun_photo: /images/company/team/frank-fun.jpg
+- name: Alex Kubacki
+  title: Lead Support Engineer
+  bio:
+    Alex has been taking things apart for fun since elementary school, and has 
+    never ejected a USB device before unplugging it. He has a degree in 
+    Electrical Engineering Technology from Purdue, and prefers working for 
+    companies the size of his Dachshund.
+  main_photo: /images/company/team/alex.jpg
+  fun_photo: /images/company/team/alex-fun.gif
+- name: Anna Edwards
+  title: Account Executive
+  bio:
+    Anna started in fine art sales in NY after graduating from Queen's 
+    University. She pivoted to tech and joined RJMetrics in their growth 
+    pursuit. She's now in sales at Aptible and recently became a board member 
+    for Philadelphia Animal Welfare Society.
+  main_photo: /images/company/team/anna.jpg
+  fun_photo: /images/company/team/anna-fun.jpg
+- name: Ben Ramsey
+  title: VP Sales
+  bio:
+    I am deeply passionate about building teams and developing people. I love 
+    to solve problems with data-driven solutions. Above all, I want to win and 
+    I believe that focus and simplicity pave the road to achievement.
+  main_photo: /images/company/team/ben.jpg
+  fun_photo: /images/company/team/ben-fun.jpg
+- name: David Wen
+  title: Senior Software Engineer
+  bio:
+    David is a management consultant turned software dev. He founded the 
+    non-profit Time Auction, which allows people to bid volunteer hours for 
+    rewards money can’t buy. He enjoys reading what Bill Gates reads and 
+    playing sports where height matters.
+  main_photo: /images/company/team/david.jpg
+  fun_photo: /images/company/team/david-fun.jpg
+- name: Henry Hund
+  title: VP Growth
+  bio:
+    Henry left big finance to help grow RJMetrics and launch Stitch (Data). He 
+    now leads Aptible's growth efforts, but also tries to do a good job as a 
+    husband and father. Henry earned his MBA from Wharton and his BS from 
+    Penn State.
+  main_photo: /images/company/team/henry.jpg
+  fun_photo: /images/company/team/henry-fun.jpg
+- name: Mia Lopez
+  title: Growth Operations Manager
+  bio:
+    Mia worked in Sales Ops at RJMetrics and Customer Success at roundCorner 
+    before coming to Aptible to work in Growth Ops. She graduated from Santa 
+    Clara University. In her free time, Mia loves being by the ocean and 
+    hiking with her husband and pup.
+  main_photo: /images/company/team/mia.jpg
+  fun_photo: /images/company/team/mia-fun.jpg
+- name: Michael Peterson
+  title: Growth Engineer
+  bio:
+    Michael has over a decade of experience in marketing & technology for 
+    high-growth startups. He has a degree in Psychology and researched the 
+    effects of ADHD medications on the developing brain.
+  main_photo: /images/company/team/michael.jpg
+  fun_photo: /images/company/team/michael-fun.jpg
+- name: Shah Kader
+  title: Account Executive
+  bio:
+    Raised in Queens, NY,  graduated from Temple University with a BA in 2008, 
+    and New York Law School‘s Evening Division with a Juris Doctor in 2017. 
+    I’ve been in sales for early stage companies for over 9 years (the last 
+    2.5 at Aptible).
+  main_photo: /images/company/team/shah.jpg
+  fun_photo: /images/company/team/shah-fun.jpg
+- name: Skylar Anderson
+  title: Designer & Lead Software Engineer
+  bio:
+    Skylar is a designer and lead software engineer for Gridiron.  Prior to 
+    Aptible, Skylar worked as an independent consultant and helped ship 
+    products for Salesforce, Intuit, Eli Lilly, Oracle, and Facebook. 
+  main_photo: /images/company/team/skylar.jpg
+  fun_photo: /images/company/team/skylar-fun.jpg
+- name: Thomas Orozco
+  title: Enclave Team Lead
+  bio:
+    Thomas is a self-taught engineer and former product manager. He now leads 
+    the Enclave product at Aptible. Outside of work, he enjoys cooking. Thomas 
+    earned his MSc in Management from HEC Paris.
+  main_photo: /images/company/team/thomas.jpg
+  fun_photo: /images/company/team/thomas-fun.jpg
