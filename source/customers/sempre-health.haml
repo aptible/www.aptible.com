@@ -1,0 +1,224 @@
+---
+published: false
+title: Aptible + Sempre Health
+layout: case_study
+headline:
+  How Sempre Health is bringing Behavior-Based, Dynamic Pricing to Prescription
+  Drugs, using Microservices with Enclave
+description:
+  Sempre Health uses Aptible to easily fulfill compliance requirements and 
+  maintain security so its team can stay focused on delivering a personalized 
+  experience to its patients.
+images:
+  - /images/customers/case-studies/sempre-logo.jpg
+  - /images/customers/case-studies/sempre-photo.jpg
+bullet_points:
+  - Location:
+    - San Francisco, CA
+  - Industry:
+    - Healthcare
+  - Size:
+    - 0 Employees 
+  - Founded:
+    - 20??
+  - Tech Stack:
+    - Python Flask
+    - Node.js
+    - RabbitMQ
+    - Redis
+    - MySQL
+products_used:
+  - enclave
+  - gridiron
+highlights:
+  - Running on Enclave in a day
+  - Microservices provide fault-tolerant, modular environment
+  - Exceeds HIPAA requirements
+use_cases:
+  - HIPAA Compliance
+  - Getting up and running on Enclave and microservices quickly and easily. 
+  - Reducing DevOps investment needed to get microservices up and running while implementing compliance and security best practices.
+---
+
+
+- content_for :top_body_text do
+  %p
+    The high cost of healthcare has dominated the news for years. Healthcare 
+    costs in America have become burdensome, even for people with health 
+    insurance. According to Harvard Medical School and the CDC2, millions of 
+    Americans skip taking prescribed medications because the costs are too high. 
+    At the height of the 2018 flu season, a 38 year old schoolteacher in Texas 
+    died in a hospital ICU after rejecting a prescription for Tamiflu. Tamiflu 
+    can reduce the severity of flu, saving lives in some cases, but can be 
+    expensive. The schoolteacher would have had to pay $116 for her 
+    prescription. In addition to creating health issues for the patients, 
+    medication nonadherence (not taking one’s prescriptions) accounts for as 
+    much as $290B in excess hospitalization expenditures in America each year.
+  
+  %p
+    Sempre Health is tackling this urgent problem of cost-related nonadherence. 
+    Patients who take their medications regularly cost the health system 
+    significantly less. Sempre shares these savings with patients by allowing 
+    them to pay less when they do the right things for their health. Patients 
+    receive texts like, “If you fill your prescription on time, you’ll pay $10. 
+    If you wait until next week, you’ll pay your $15.” There is no shortage of 
+    discount coupon programs for prescription drugs. Sempre is different from 
+    these programs, because it works closely with health plans and patients to 
+    design incentives around only the most clinically-effective medications and 
+    behaviors. With SMS-based communication to patients, Sempre is always in 
+    patients’ pockets.
+
+
+- content_for :top_quote do
+  .case-study__quote-image
+    %img{ src: '/images/customers/case-studies/sempre-swaraj.jpg' }
+  .case-study__quote-text
+    %h3
+      Aptible’s combined Enclave & Gridiron products are an all-in-one 
+      ‘starter-kit’ for young health tech startups. It was a relief to be able 
+      to spin up endpoints, provision managed databases, and bootstrap our 
+      security policies all in one place.
+    %hr.short
+    .case-study__quote-author-name Swaraj Banerjee, CTO
+
+
+- content_for :bottom_copy do
+  .column
+    %h2 The Challenge: Launching HIPAA Compliant Architecture Quickly with a Small Team
+
+    %p.teaser
+      In 2016, Sempre Health completed a successful pilot study with advisors 
+      from the University of Michigan. Once it received its seed funding and began 
+      building partnerships with other players such as pharmaceutical companies, 
+      payors, and employers, it was ready to replace its early MVP with a more 
+      robust, automated system.
+    
+    %hr.short
+    
+    %blockquote.case-study__quote-text
+      %h3 It’s pretty straightforward. Just push the repository to Enclave and it works.
+      .case-study__quote-author-name Jesse Butterfield, DevOps Engineer
+    
+    %p
+      The team was small, but it had a clear vision of the product that it wanted 
+      to build. That vision didn’t include deciphering the complicated and esoteric 
+      regulations arising out of HIPAA or investing time building DevOps 
+      infrastructure. HIPAA compliance is critical, however, given that providing 
+      individualized drug discounting requires collection and processing of PHI.
+
+    %p
+      So Sempre Health turned to Aptible Enclave® to get its microservices 
+      architecture up and running quickly. Enclave automates much of HIPAA 
+      compliance and security best practices, while providing best-in-class DevOps 
+      and support. Sempre Health built its current production product from scratch 
+      on Aptible’s Enclave platform. Sempre Health’s product schedules text 
+      messages to patients, delivers custom pricing info to pharmacies, and allows 
+      Sempre teammates to see how live programs are performing. Sempre Health 
+      uses most of Enclave’s features, including running several docker containers 
+      in a microservice architecture, utilizing Enclave’s managed HTTPs endpoints, 
+      and using Enclave’s managed databases.  
+
+    %p
+      It was easy for Sempre Health to set up Enclave because the Engineering 
+      team was already using Docker containers. Each of their microservices is a 
+      repository with a Docker file in it. Sempre Health was able to have a 
+      production environment up and running right away. Sempre Health CTO Swaraj 
+      Banerjee said, “We had a production environment that mimicked our dev 
+      environment within several hours.” 
+
+  .case-study__image-container
+    %img{ src: '/images/customers/case-studies/sempre-1.jpg' }
+    
+  .column
+    %h2 Using Microservices on Enclave
+    %hr.short
+    
+    %blockquote.case-study__quote-text
+      %h3
+        Enclave has more essential features for modern microservice development 
+        than nearly all its competitors. I’d run our apps on Enclave, even if I 
+        had a non-healthcare project.
+      .case-study__quote-author-name Swaraj Banerjee, CTO
+    
+    %p
+      Sempre uses microservices for things like email, text messaging and editing 
+      patient data.  The services communicate by pushing work to one another 
+      using RabbitMQ message queues rather than requesting information over http. 
+      This way the engineering team can just take one microservice down and the 
+      work that it’s supposed to be doing builds up in a queue. 
+
+    %p
+      Sempre Health uses microservices because it makes their system more fault 
+      tolerant, and it’s easier to fix things on the fly. An issue in one part of 
+      the system (like text messaging or email) doesn’t impact the rest of the 
+      system. And the modular nature of microservices reduces the need for 
+      coordination. An engineer can work on one piece of code without worrying 
+      about how that update will impact the rest of the system. 
+
+  .case-study__image-container
+    .half-width
+      %img{ src: '/images/customers/case-studies/sempre-2.jpg' }
+    .half-width
+      %img{ src: '/images/customers/case-studies/sempre-3.jpg' }
+
+  .column
+    %h2
+      Leveraging Enclave&mdash;and Aptible Support&mdash;to Deliver a Personalized 
+      Experience for Patients
+
+    %hr.short
+    
+    %blockquote.case-study__quote-text
+      %h3
+        It’s great to not have to worry about whether we have the settings set 
+        to the right things for the compliance levels; knowing that the databases 
+        are properly encrypted at rest. Just one less thing to worry about.
+      .case-study__quote-author-name Jesse Butterfield, DevOps Engineer
+
+    %p
+      Sempre’s priority is to ensure its customers have a personalized, high-touch 
+      experience, and so the tech team focuses its resources on building tools to 
+      accomplish this. When patients fill a prescription, the data is sent to 
+      Sempre Health where it triggers updates for the next refill date, pricing, 
+      and other details. Sempre Health has also built a sophisticated SMS management 
+      product. This includes extensive personalization data about each patient,  
+      including best times to text, language to use, etc. 
+
+    %p
+      The small tech team is able to focus resources on its core mission because 
+      it has been able to rely on Aptible, both Enclave and the Aptible Support 
+      Team. DevOps Engineer Jesse Butterfield said, <strong>“Even when our questions 
+      aren’t strictly about the product but are about security or how to meet a 
+      compliance requirement...Aptible Support has been so helpful.”</strong>  Even more 
+      valuable to Jesse and the Sempre Health team is the community:  “We’re 
+      tapping into a network of broader knowledge of people doing similar things.” 
+      After working with hundreds of companies that need to achieve compliance 
+      and security within their own tech stacks, Aptible Support is able to 
+      confidently recommend approaches that make sense for a particular client.
+
+
+  .column
+    %h2 Automatic HIPAA Compliance and Data Security, and Peace of Mind
+    %hr.short
+
+    %p 
+      Even now that Sempre Health is up and running, it’s still useful to have 
+      HIPAA compliance and database security handled automatically. Sempre Health 
+      uses Enclave for intrusion detection, keeping the hardware up to date, 
+      and operating system hardening. 
+  
+  .column
+    .grid-item.case-study__quote
+      .case-study__quote-image
+        %img{ src: '/images/customers/case-studies/sempre-jesse.jpg' }
+      .case-study__quote-text
+        %h3
+          Having somebody with lots of security experience looking after what’s 
+          running on the machines, and running security protocols on top of that, 
+          makes a huge difference to us. It allows us to focus on our core area, 
+          which is healthcare for our patients. It’s great to not have to worry 
+          about whether we have the settings set to the right things for the 
+          compliance levels; knowing that the databases are properly encrypted at 
+          rest. Just one less thing to worry about.
+        %hr.short
+        .case-study__quote-author-name Jesse Butterfield, DevOps Engineer
