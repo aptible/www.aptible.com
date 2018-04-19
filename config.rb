@@ -33,10 +33,10 @@ configure :build do
 
   #
   # Ignore pages with `published: false` frontmatter
-  # 
+  #
   unless ENV['CONTENTFUL_PREVIEW_MODE']
     ready do
-      unpublished = sitemap.resources.select do |item| 
+      unpublished = sitemap.resources.select do |item|
         !item.metadata[:page].fetch('published', true)
       end
 
