@@ -36,6 +36,14 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
+.hero-billboard--case-study {
+  transform: translateY(-450px);
+  padding: 0;
+
+  @media screen and (max-width: $tablet-landscape) {
+    transform: translateY(0);
+  }
+}
 .hero-billboard__title {
   margin-bottom: 20px;
 }

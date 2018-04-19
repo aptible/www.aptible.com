@@ -1,0 +1,283 @@
+---
+published: false
+title: Aptible + Virta Health
+layout: case_study
+headline:
+  "Virta Health: Leveraging Amazon Redshift with Aptible Enclave to Scale Its 
+  Medical Clinic to Serve 100M+ Users"
+description:
+  Virta uses Aptible to easily fulfill compliance requirements and maintain 
+  security so its team can stay focused on delivering a personalized clinic 
+  experience for its diabetes patients.
+images:
+  - /images/customers/case-studies/virta-hero.jpg
+bullet_points:
+  - Location:
+    - San Francisco, CA
+  - Industry:
+    - Healthcare
+  - Size:
+    - 0 Employees 
+  - Compliance:
+    - HIPAA
+    - SOC 2 Type II
+  - Tech Stack:
+    - Python
+    - Flask
+    - PostgreSQL
+    - Celery
+    - AWS Redshift
+    - AWS CloudWatch
+    - AWS CloudTrail
+    - AWS DynamoDB
+    - Credstash
+products_used:
+  - enclave
+highlights:
+  - Leverages VPC Peering to securely connect Aptible Enclave® with Amazon Redshift, which empowers Virta to run its complex engineering and analytics infrastructure.
+  - Combining Amazon Redshift with Aptible Enclave empowers Virta to run machine learning processes on large data sets while maintaining HIPAA compliance.
+  - Meets HIPAA requirements and in process of completing SOC 2 Type II report
+use_cases:
+  - HIPAA Compliance
+  - Reducing DevOps investment needed to support the growing health clinic while implementing compliance and security best practices.
+---
+
+
+- content_for :top_body_text do
+  %p
+    Virta is a technology enabled medical clinic using continuous remote 
+    monitoring and intensive coaching to help their patients reverse Type 2 
+    Diabetes. Virta does this by using a team of clinical professionals who 
+    advise patients on how to follow the Virta diet. Patients go from living on 
+    carbohydrates to living on fats, which changes their metabolism in a way 
+    that reverses the symptoms of diabetes.
+
+  %p
+    Virta has already had meaningful success. In one study, done in collaboration 
+    with Indiana University Health Arnett Hospital, 60% of patients reversed 
+    their diabetes and 94% were able to reduce or eliminate the use of insulin. 
+    Patients also saw a reduction in their HbA1c values (one of the markers of 
+    diabetes.) Virta calls this “diabetes reversal.” It’s called a reversal 
+    and not a cure, because patients need to maintain their dietary changes in 
+    order to maintain results. 
+
+  %p
+    Dr. Robert Ratner, the former Chief Medical Officer of the American Diabetes 
+    Association, is one of Virta’s biggest champions. He’s said: "If we can get 
+    this treatment to more and more Americans, we can have a huge impact on their 
+    lives and reduce one of the most significant drivers of healthcare cost growth." 
+
+
+
+- content_for :top_quote do
+  .case-study__quote-image
+    %img{ src: '/images/customers/case-studies/virta-justin.jpg' }
+  .case-study__quote-text
+    %h3
+      Being able to launch and scale (just by toggling options in the admin panel) 
+      is really exciting. Using Enclave is a huge peace of mind for us. It’s not 
+      just that it frees me up from working on security and compliance. It frees 
+      me up from worrying about them.
+    %hr.short
+    .case-study__quote-author-name Justin Ryan, DevOps Engineer
+
+
+- content_for :bottom_copy do
+  .column
+    %h2 The Challenge: Scaling from Thousands to Millions of Patients
+    
+    %p.teaser
+      Virta is an ambitious company, aiming to reverse diabetes in 100 million 
+      people by 2025. To get there, Virta is focused on building personalized 
+      support&mdashat scale. Patients on Virta are supported by continuous remote 
+      monitoring, a mobile application, and concierge level service from 
+      specialized coaches and medical doctors. This helps patients adjust to their 
+      new dietary changes and lifestyle. Virta’s coaches are highly trained, with 
+      specialized degrees in fields like Medical Communication. This reliance on 
+      specialized coaches and medical doctors is difficult to scale out. Said 
+      Justin Ryan, “Our biggest challenge is how to we get from thousands of 
+      patients to millions. We cannot scale our human interactions to 1 million 
+      patients or even 100,000 patients because of the amount of health coaches 
+      we would need.” said Justin Ryan, DevOps Engineer at Virta. 
+    
+    %hr.short
+
+    %p
+      That’s why Virta is developing machine learning techniques to give patients 
+      the answers that they need inside the Virta app, without relying on as many 
+      human touchpoints. For example, Virta is working on prompts in the mobile 
+      app to automate more of the patient interactions. Everyone’s body is different, 
+      so these prompts are personalized for every patient. 
+
+    %p
+      For example, after eating a certain food, one person might experience a blood 
+      sugar spike while another person won’t. Virta sends its patients tools to 
+      measure their glucose and ketones levels, and all of this patient data is 
+      collected. Virta uses machine learning processes on this data to better 
+      predict the needs of its patients, based on their individual health metrics. 
+      This allows the coaches at Virta to anticipate patient questions before they 
+      arise. Virta is also experimenting with automating answers to commonly asked 
+      questions, like which salad dressing is the best choice on the Virta diet. 
+      This enables Virta to automate support, and to be efficient with the use of 
+      medical staff and coaches. In some cases, like commonly asked questions, 
+      this could improve support by helping patients get answers to questions 
+      faster. (Coaches take some time to respond to patient questions, whereas 
+      automation is instantaneous.) By shifting from human touchpoints to automated, 
+      personalized prompts, Virta will be able to scale to serve millions of patients.
+  
+  
+  .case-study__image-container
+    .half-width
+      %img{ src: '/images/customers/case-studies/virta-1.jpg' }
+    .half-width
+      %img{ src: '/images/customers/case-studies/virta-2.jpg' }
+
+
+  .column
+    %h2 Combining Enclave with AWS 
+    
+    %p.teaser
+      Virta has machine learning use cases, like analyzing patient data at scale, 
+      which work best on AWS Redshift. However, they also need for web frontends 
+      to talk to their apps in way that is a secure and HIPAA compliant. For those 
+      use cases, developer agility is important - so Virta uses Enclave. 
+    
+    %hr.short
+
+    %blockquote.case-study__quote-text
+      %h3
+        Amazon has hundreds of different specialized web services. As we continue 
+        to grow, if we want to use Elastic MapReduce or other AWS services that 
+        are HIPAA compliant, we want it to talk to Enclave.
+      .case-study__quote-author-name Justin Ryan, DevOps Engineer
+    
+    %p
+      How does Virta reconcile the need to have the same data in both AWS and 
+      Enclave, with secure communication between the two? Fortunately, Enclave 
+      provides a number of secure integration points, such as VPN Tunnels and VPC 
+      Peering connections. Since Virta is hosting their machine learning use cases 
+      on AWS, and VPC is easy to set up with Aptible Enclave, VPC Peering was the 
+      best choice. 
+
+    %p
+      When using AWS, an organization can peer an existing VPC with the organization’s 
+      Enclave Dedicated Stack’s VPC. This enables routing traffic between them 
+      privately. Instances in either VPC can communicate with each other as if 
+      they are within the same network. VPC peering is a way to to facilitate the 
+      secure, HIPAA compliant, transfer of data between Enclave and other AWS 
+      instances.
+  
+  
+  .column
+    .grid-item.case-study__quote
+      .case-study__quote-image
+        %img{ src: '/images/customers/case-studies/virta-justin.jpg' }
+      .case-study__quote-text
+        %h3
+          With VPC we just post a little number on in our forms on each end and 
+          boom - our networks are connected.
+        %hr.short
+        .case-study__quote-author-name Justin Ryan, DevOps Engineer
+
+  .case-study__image-container
+    %img{ src: '/images/customers/case-studies/virta-3.jpg' }
+
+  .column
+    %h2 Focusing on the Patients
+    
+    %p.teaser
+      When Virta hired its first engineer in the spring of 2015, the company already 
+      had a clinical trial scheduled with a fixed start date. The engineering team 
+      had to build the mobile app and spin up HIPAA compliant server infrastructure, 
+      all before an August deadline. The engineering team had experience in 
+      building web and mobile applications, but not in DevOps infrastructure. 
+    
+    %hr.short
+    
+    %blockquote.case-study__quote-text
+      %h3
+        I knew enough ops to be dangerous but it’s not my specialty. When I asked 
+        around about how to build a HIPAA compliant stack, Aptible was 
+        recommended. I looked into it and said this is gonna work, lets do it.
+      .case-study__quote-author-name Justin Ryan, DevOps Engineer
+    
+    %p
+      How does Virta reconcile the need to have the same data in both AWS and 
+      Enclave, with secure communication between the two? Fortunately, Enclave 
+      provides a number of secure integration points, such as VPN Tunnels and VPC 
+      Peering connections. Since Virta is hosting their machine learning use cases 
+      on AWS, and VPC is easy to set up with Aptible Enclave, VPC Peering was the 
+      best choice. 
+
+    %p
+      When using AWS, an organization can peer an existing VPC with the 
+      organization’s Enclave Dedicated Stack’s VPC. This enables routing traffic 
+      between them privately. Instances in either VPC can communicate with each 
+      other as if they are within the same network. VPC peering is a way to to 
+      facilitate the secure, HIPAA compliant, transfer of data between Enclave 
+      and other AWS instances.
+
+  .case-study__image-container
+    %img{ src: '/images/customers/case-studies/virta-4.jpg' }
+
+  .column
+    %h2 The Future: Scaling to 100M+ Patients
+    
+    %p.teaser
+      Every week, Virta holds an all-hands meeting which features stories from real 
+      life patients whose lives have been changed by the Virta diet. Living with 
+      diabetes can feel like a burden. Insulin injections are expensive, and the 
+      symptoms of diabetes include fatigue and weight gain. With Virta, diabetes 
+      patients begin to reverse their symptoms. And making lifestyle changes with 
+      diet and coaching - rather than a bottle of pills or a syringe - is 
+      empowering. 
+    
+    %hr.short
+    
+    %blockquote.case-study__quote-text
+      %h3
+        Being able to launch and scale (just by toggling options in the admin 
+        panel) is really exciting. Using Enclave is a huge peace of mind for 
+        us. It’s not just that it frees me up from working on security and 
+        compliance. It frees me up from worrying about them.
+      .case-study__quote-author-name Justin Ryan, DevOps Engineer
+
+    %p
+      The founders and employees at Virta are driven by the improvements they see 
+      in their patients. Today Virta has hundreds of containers and is serving 
+      thousands of active patients on Aptible Enclave. The company aims to scale 
+      the Virta program significantly, to reverse diabetes and pre-diabetes in 
+      100 million people by 2025. 
+
+    %p
+      Virta just completed a research study, documenting that their program (of 
+      metabolic changes through diet, combined with continuous remote care) can 
+      support adults with Type 2 Diabetes to improve their HbA1c markers and weight 
+      while reducing the use of diabetes medication. Virta plans to continue 
+      applying clinical intervention and nutritional ketosis to diabetes patients 
+      and measuring the impact, with the aim of expanding their program and making 
+      improvements in diabetes care at scale.
+
+    %p
+      Going from serving thousands of active patients to serving millions will 
+      require shifting from frequent human touchpoints to more automated support. 
+      Scaling out the clinic’s personalized functions will be challenging. 
+      Fortunately, Virta can focus its engineering resources on this task without 
+      worrying about scaling issues around its server infrastructure or security 
+      program. Virta’s setup with Enclave frees up engineering resources, and is 
+      designed to scale. Leveraging VPC peering to use both Amazon Redshift 
+      (for machine learning) and Aptible Enclave for HIPAA compliance and security, 
+      Virta is well on its way to achieving its goals.
+  
+  .column
+    .grid-item.case-study__quote
+      .case-study__quote-image
+        %img{ src: '/images/customers/case-studies/virta-justin.jpg' }
+      .case-study__quote-text
+        %h3
+          I’m fairly confident that as we struggle to scale people in the 
+          organization, we have a long way that we could go with Aptible just by 
+          moving sliders. We can just increase the number of containers with 
+          minimal work. There’s a lot of security in that.
+        %hr.short
+        .case-study__quote-author-name Justin Ryan, DevOps Engineer

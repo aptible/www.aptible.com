@@ -30,6 +30,23 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
+
+  #
+  # Ignore pages with `published: false` frontmatter
+  #
+  unless ENV['CONTENTFUL_PREVIEW_MODE']
+    ready do
+      unpublished = sitemap.resources.select do |item|
+        !item.metadata[:page].fetch('published', true)
+      end
+
+      if unpublished
+        unpublished.each do |ignored_page|
+          ignore ignored_page.path
+        end
+      end
+    end
+  end
 end
 
 # Note: S3 Redirect does not work with Middleman v4
