@@ -34,14 +34,16 @@ configure :build do
   #
   # Ignore pages with `published: false` frontmatter
   # 
-  ready do
-    unpublished = sitemap.resources.select do |item| 
-      !item.metadata[:page].fetch('published', true)
-    end
+  unless ENV['CONTENTFUL_PREVIEW_MODE']
+    ready do
+      unpublished = sitemap.resources.select do |item| 
+        !item.metadata[:page].fetch('published', true)
+      end
 
-    if unpublished
-      unpublished.each do |ignored_page|
-        ignore ignored_page.path
+      if unpublished
+        unpublished.each do |ignored_page|
+          ignore ignored_page.path
+        end
       end
     end
   end
