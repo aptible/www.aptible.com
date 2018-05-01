@@ -33,6 +33,14 @@
     flips houses.
   main_photo: /images/company/team/anna.jpg
   fun_photo: /images/company/team/anna-fun.jpg
+- name: Ashley Mathew
+  title: Support Engineer
+  bio:
+    Ashley spent 5 years as a Software Engineer before joining Aptible. Before 
+    that she was working on her BS in Computer Science from Purdue University. 
+    When she's not doing support, Ashley enjoys kayaking with her dog.
+  main_photo: /images/company/team/ashley.jpg
+  fun_photo: /images/company/team/ashley-fun.jpg
 - name: Ben Ramsey
   title: VP Sales
   bio:
