@@ -29,7 +29,7 @@ locally, set the `BASE_DOC_URL` environment variable:
 
     BASE_DOC_URL=http://localhost:8888 bundle exec middleman server
 
-## Deploying
+## Deploying Code Changes
 
 First, some prerequisites:
 
@@ -40,15 +40,25 @@ In [production](https://www.aptible.com) and [staging](https://www.aptible-stagi
 
 To manually deploy to production, using [Omnivault](https://github.com/aptible/omnivault):
 
-    eval $(aws-creds env default) && bundle exec rake deploy:production
+    omnivault exec bundle exec rake deploy:production
 
 Staging:
 
-    eval $(aws-creds env default) && bundle exec rake deploy:staging
+    omnivault exec bundle exec rake deploy:staging
 
 An arbitrary S3 bucket:
 
-    eval $(aws-creds env default) && bundle exec rake deploy[bucket]
+    omnivault exec bundle exec rake deploy[bucket]
+
+## Deploying Content Changes
+
+To deploy content-only changes, make sure your changes are set to published in 
+Contentful and then deploy manually from Travis:
+
+* Login to [https://travis-ci.org/aptible/www.aptible.com](https://travis-ci.org/aptible/www.aptible.com).
+* Go to `More Options` > `Trigger build`
+* Select the `release` branch
+* Click `Trigger custom build`
 
 ### Continuous Deployment
 
