@@ -12,7 +12,7 @@ order: 1
 
 Version 1.5 - August 2017
 
-This Aptible Service Level Agreement (**"SLA"**) between Aptible, Inc. (**"Aptible"**, **"us"** or **"we"**) and users of the Aptible Services (**"you"**) governs the use of the Enclave Containerized Services under the provisions of the [Aptible Terms of Service] (the **"Terms"**).
+This Aptible Service Level Agreement (**"SLA"**) between Aptible, Inc. (**"Aptible"**, **"us"** or **"we"**) and users of the Aptible Services (**"you"**) governs the use of the Enclave Containerized Services under the provisions of the [Aptible Terms of Service] hereafter referred to as the **"Terms"**.
 
 Unless otherwise provided herein, this SLA is subject to the provisions of the Terms.
 
