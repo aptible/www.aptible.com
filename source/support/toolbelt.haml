@@ -222,10 +222,10 @@ layout: layout
                   .terminal &nbsp; aptible backup:list DB_HANDLE
                   .terminal &nbsp; aptible backup:restore BACKUP_ID [--environment ENVIRONMENT_HANDLE] [--handle HANDLE] [--container-size SIZE_MB] [--size SIZE_GB]
                   .terminal &nbsp; aptible config
-                  .terminal &nbsp; aptible config:add
-                  .terminal &nbsp; aptible config:rm
-                  .terminal &nbsp; aptible config:set
-                  .terminal &nbsp; aptible config:unset
+                  .terminal &nbsp; aptible config:add [VAR1=VAL1] [VAR2=VAL2] [...]
+                  .terminal &nbsp; aptible config:rm [VAR1] [VAR2] [...]
+                  .terminal &nbsp; aptible config:set [VAR1=VAL1] [VAR2=VAL2] [...]
+                  .terminal &nbsp; aptible config:unset [VAR1] [VAR2] [...]
                   .terminal &nbsp; aptible db:backup HANDLE
                   .terminal &nbsp; aptible db:clone SOURCE DEST
                   .terminal &nbsp; aptible db:create HANDLE [--type TYPE] [--version VERSION] [--container-size SIZE_MB] [--size SIZE_GB]
@@ -238,7 +238,7 @@ layout: layout
                   .terminal &nbsp; aptible db:tunnel HANDLE
                   .terminal &nbsp; aptible db:url HANDLE
                   .terminal &nbsp; aptible db:versions
-                  .terminal &nbsp; aptible deploy [OPTIONS] [VAR1=VAL1] [VAR=VAL2] ...
+                  .terminal &nbsp; aptible deploy [OPTIONS] [VAR1=VAL1] [VAR2=VAL2] [...]
                   .terminal &nbsp; aptible domains
                   .terminal &nbsp; aptible endpoints:database:create DATABASE
                   .terminal &nbsp; aptible endpoints:deprovision [--app APP | --database DATABASE] ENDPOINT_HOSTNAME
@@ -274,8 +274,8 @@ layout: layout
                   .terminal-interactive # Print an app's current configuration
                   .terminal-interactive # Add an ENV variable to an app
                   .terminal-interactive # Remove an ENV variable from an app
-                  .terminal-interactive # Alias for config:add
-                  .terminal-interactive # Alias for config:rm
+                  .terminal-interactive # Add an ENV variable to an app
+                  .terminal-interactive # Remove an ENV variable from an app
                   .terminal-interactive # Backup a database
                   .terminal-interactive # Clone a database to create a new one
                   .terminal-interactive # Create a new database
