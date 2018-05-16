@@ -8,7 +8,7 @@ function all() {
       continue;
     }
 
-    cookies[pieces[0]] = pieces[1];
+    cookies[pieces[0].trim()] = pieces[1].trim();
   }
 
   return cookies;
