@@ -69,6 +69,18 @@ layout: 'layout'
           - aptible_update_resources.each_with_index do |resource, index|
             - if index.odd?
               = partial 'resource-item',  locals: { resource: resource }        
+      
+      - if webinar_resources.any?
+        %h1 Webinars
+        .resources-list
+          .resources-list__column
+            - webinar_resources.each_with_index do |resource, index|
+              - if index.even?
+                = partial 'resource-item',  locals: { resource: resource }
+          .resources-list__column
+            - webinar_resources.each_with_index do |resource, index|
+              - if index.odd?
+                = partial 'resource-item',  locals: { resource: resource }     
 
     .grid-aside
       = partial 'resources-aside'
