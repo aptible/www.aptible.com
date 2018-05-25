@@ -1,14 +1,14 @@
 #!/bin/bash
+set -o xtrace
+set -o errexit
+set -o nounset
 
-set -e
+if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then
+  if [ "$TRAVIS_BRANCH" == "release" ]; then
+    bundle exec rake deploy:production
+  fi
 
-if [ "$TRAVIS_BRANCH" == "release" ] &&
-   [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
-  bundle exec rake deploy:staging
-  bundle exec rake deploy:production
-fi
-
-if [ "$TRAVIS_BRANCH" == "master" ] &&
-   [ "$TRAVIS_PULL_REQUEST" == "false" ] ; then
-  bundle exec rake deploy:staging
+  if [ "$TRAVIS_BRANCH" == "master" ]; then
+    bundle exec rake deploy:staging
+  fi
 fi

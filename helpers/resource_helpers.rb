@@ -50,6 +50,10 @@ module ResourceHelpers
     resources_by_category 'Aptible Updates'
   end
 
+  def webinar_resources
+    resources_by_category 'Webinars'
+  end
+
   def resource_path(resource)
     return if resource.nil?
     data = resource.data

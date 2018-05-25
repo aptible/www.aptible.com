@@ -1,0 +1,12 @@
+- form_id = rand(10000)
+
+.marketing-consent
+  %ul.signup-cta__incentives
+    %li.signup-cta__incentive
+      %input{ type: 'radio', name: 'marketing_consent', id: "marketing_consent_yes_#{form_id}", value: 'yes', checked: 'checked' }
+      %label{ for: "marketing_consent_yes_#{form_id}" }
+        Yes, I consent to receiving Aptible marketing emails. View the <a href="/legal/privacy/" target="_blank">Aptible Privacy Statement</a>
+      %br
+      %input{ type: 'radio', name: 'marketing_consent', id: "marketing_consent_no_#{form_id}", value: 'no' }
+      %label{ for: "marketing_consent_no_#{form_id}" }
+        No, I don't want to receive marketing emails.
