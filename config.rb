@@ -28,8 +28,8 @@ activate :directory_indexes
 # Build-specific configuration
 configure :build do
   activate :minify_css
-  activate :minify_javascript
-  activate :asset_hash
+  activate :minify_javascript, ignore: ['aptible.js']
+  activate :asset_hash, ignore: ['aptible.js']
 
   #
   # Ignore pages with `published: false` frontmatter

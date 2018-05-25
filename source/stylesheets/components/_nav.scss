@@ -174,7 +174,7 @@
       overflow: auto;
       position: relative;
       width: 100%;
-      z-index: 99;
+      z-index: 101;
 
       .nav-list--left {
         margin-bottom: 20px;
@@ -257,7 +257,7 @@
   &:hover {
     & + .nav-list__child-nav {
       display: block;
-      z-index: 99;
+      z-index: 101;
     }
   }
 }
@@ -273,7 +273,7 @@
   width: 352px;
   &:active, &:hover, &:focus {
     display: block;
-    z-index: 99;
+    z-index: 101;
   }
 }
 .nav-list__child-nav--developers {
@@ -485,7 +485,7 @@
   position: absolute;
   right: 26px;
   top: 35px;
-  z-index: 99;
+  z-index: 101;
   &:hover, &:focus {
     color: $action-color;
   }

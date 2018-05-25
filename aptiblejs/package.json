@@ -1,0 +1,22 @@
+{
+  "name": "aptible.js",
+  "version": "0.0.1",
+  "description": "aptible.com frontend library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
+  }
+}
