@@ -6,8 +6,6 @@ posted: 2017-08-14
 section: Legal
 sub_section: Policies
 ---
-<!-- Reference Links -->
-[Terms of Service]:/legal/terms-of-service
 
 Version 3.0 – May 24, 2018
 
@@ -23,9 +21,7 @@ This Privacy Statement explains:
 
   * The steps we take to protect your information.
 
- 
-
-**Scope:** This Privacy Statement applies to the information that we obtain through your use of Aptible products and services, including our website ([https://www.aptible.com][0]), our Enclave and Gridiron platforms, social media, communications, and web-based tools (collectively, our "Services"). For a current list of the Services and vendors covered by this Privacy Statement, see our Subvendor Directory.
+**Scope:** This Privacy Statement applies to the information that we obtain through your use of Aptible products and services, including our website ([https://www.aptible.com][0]), our Enclave and Gridiron platforms, social media, communications, and web-based tools (collectively, our "Services"). For a current list of the Services and vendors covered by this Privacy Statement, see our [Subvendor Directory][9].
 
 This Privacy Statement does not apply to personal information arising from Aptible’s employment-related activities. Except to the extent that a third party provides services on our behalf (such as a SaaS vendor), this Privacy Statement also does not apply to the practices of third parties to which we may link or otherwise refer you, such as consultants, pen testing firms, audit firms, and other vendors.
 
@@ -71,9 +67,9 @@ For purposes of this Privacy Statement, "Personal Information" means information
 
 ## Information that We Collect Automatically When You Use Our Services
 
-**Web Logs and Analytics Information:** We record certain information and store it in log files when you interact with our Services. This information may include Internet protocol (IP) or other device addresses or ID numbers as well as browser type, Internet service provider, URLs of referring/exit pages, operating system, date/time stamp, information that you search for, your locale and language preferences, your mobile carrier, and system configuration information. We and our analytics providers (see our Subvendor Directory), also collect and store analytics information when you use our Services to help us improve our Services.
+**Web Logs and Analytics Information:** We record certain information and store it in log files when you interact with our Services. This information may include Internet protocol (IP) or other device addresses or ID numbers as well as browser type, Internet service provider, URLs of referring/exit pages, operating system, date/time stamp, information that you search for, your locale and language preferences, your mobile carrier, and system configuration information. We and our analytics providers (see our [Subvendor Directory][9]), also collect and store analytics information when you use our Services to help us improve our Services.
 
-**Cookies and Other Tracking Technologies:** We use various technologies to collect information, including cookies that we save to your computer or mobile device. See our Subvendor Directory.  Cookies are small data files stored on your hard drive or in device memory. We use cookies to improve and customize our Services and your experience; to allow you to access and use the Services without re-entering your username or password; and to count visits and understand which areas and features of the Services are most popular. We may also associate the information we store in cookies with personal information you submit while on our Services. You can instruct your browser, by changing its options, to stop accepting cookies or to prompt you before accepting a cookie from websites you visit. If you do not accept cookies, however, you may not be able to use all aspects of our Services.
+**Cookies and Other Tracking Technologies:** We use various technologies to collect information, including cookies that we save to your computer or mobile device. See our [Subvendor Directory][9].  Cookies are small data files stored on your hard drive or in device memory. We use cookies to improve and customize our Services and your experience; to allow you to access and use the Services without re-entering your username or password; and to count visits and understand which areas and features of the Services are most popular. We may also associate the information we store in cookies with personal information you submit while on our Services. You can instruct your browser, by changing its options, to stop accepting cookies or to prompt you before accepting a cookie from websites you visit. If you do not accept cookies, however, you may not be able to use all aspects of our Services.
 
 # Information that We Collect from Other Sources
 
@@ -179,7 +175,7 @@ We may share your information in the following ways:
 
  
 
-**With our vendors and business partners, to accomplish our business purposes:** We may share your information with our service providers and other third parties who perform services on our behalf, listed in our Subvendor Directory. We provide your payment information to our service providers for payment processing and verification. Service providers such as analytics providers may collect information about your online activities over time and across different online services [PM13] when you use our Services. We also work with third-party service providers to provide the cloud-based tools that our customers use to create their secure storage containers and securely store their sensitive information, including personal information.[PM14] 
+**With our vendors and business partners, to accomplish our business purposes:** We may share your information with our service providers and other third parties who perform services on our behalf, listed in our [Subvendor Directory][9]. We provide your payment information to our service providers for payment processing and verification. Service providers such as analytics providers may collect information about your online activities over time and across different online services [PM13] when you use our Services. We also work with third-party service providers to provide the cloud-based tools that our customers use to create their secure storage containers and securely store their sensitive information, including personal information.[PM14] 
 
 **When necessary to comply with laws and law enforcement requests, or otherwise to protect our rights or those of individuals:** We may disclose your information (including your personal information) to a third party if:
 
@@ -247,7 +243,7 @@ To that end, we manage our data protection program consistent with ISO 27001, SO
 
 Please see our [Security Policy][3] for more details.
 
-Aptible protects personal information under its control, and requires its service providers (see our Subvendor Directory) to also protect against, accidental or unlawful destruction, loss, alteration, unauthorized disclosure of or access to, personal data transmitted, stored, or otherwise processed. 
+Aptible protects personal information under its control, and requires its service providers (see our [Subvendor Directory][9]) to also protect against, accidental or unlawful destruction, loss, alteration, unauthorized disclosure of or access to, personal data transmitted, stored, or otherwise processed. 
 
 If you have concerns about the security of your information with Aptible, please contact us immediately at [security@aptible.com][4] to report an issue.
 
@@ -303,7 +299,7 @@ Charles Ballew, CIPP/E
 
 [legal@aptible.com][1]
 
-If you’re reading this far: We’re looking for a new DPO, and VP of Compliance. Email us if you think you’re up for the job. [link to hiring?]
+If you’re reading this far: We’re looking for a new DPO, and VP of Compliance. Email us if you think you’re up for the job: [we're hiring](/company/).
 
 Aptible is not established in the EU, however we do maintain a designated EU representative under Article 27 of GDPR:
 
@@ -330,3 +326,4 @@ The fastest, most convenient way to contact VeraSafe is via this form: [https://
   [6]: https://apps.adr.org/webfile/
   [7]: https://github.com/aptible/www.aptible.com
   [8]: https://www.verasafe.com/privacy-services/contact-article-27-representative    
+  [9]: /legal/subvendor-directory/

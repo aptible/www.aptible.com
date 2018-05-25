@@ -14,11 +14,11 @@
   left: 0;
   width: 100%;
   padding: 10px;
-  background-color: #172234;
+  background-color: #234673;
   font-family: 'canada-type-gibson', sans-serif;
   font-size: 15px;
   font-weight: 300;
-  color: #7383A0;
+  color: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   z-index: 10000;
 }
@@ -34,7 +34,7 @@
 }
 
 .cookie-consent__privacy {
-  color: #7383A0;
+  color: #93b0d2;
   text-decoration: underline;
 }
 
@@ -42,7 +42,7 @@
   float: right;
   min-width: 100px;
   text-align: right;
-  color: #307AD1;
+  color: white;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
