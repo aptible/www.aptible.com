@@ -32,11 +32,7 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
             Deploy to a free Development Stack now. Just pay for usage charged
             after your $500 credit.
         .price-credit-cta__credit $500 Free Credit
-        = partial 'partials/ctas/signup-cta', locals: {           |
-            cta_label: 'Sign Up',                                 |
-            cta_placeholder: 'Enter your work email',             |
-            class_name: 'signup-cta--small signup-cta--no-border' |
-          }                                                       |
+        %a.btn{ href: open_account_href, style: 'order: 3' } Get Started
 
 
 .content

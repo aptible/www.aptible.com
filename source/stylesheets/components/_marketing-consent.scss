@@ -1,0 +1,34 @@
+.marketing-consent {
+  text-align: left;
+  padding-bottom: 10px;
+
+  .signup-cta__incentives {
+    margin: 0;
+  }
+
+  label {
+    display: inline;
+    cursor: pointer;
+  }
+
+  &.contact-sales-page {
+    padding: 10px 5px 20px;
+
+    label {
+      font-weight: 400;
+    }
+  }
+}
+
+
+.pricing-summary__body,
+.newsletter-form,
+.newsletter-signup--blog__form,
+.contact-sales-page {
+  .marketing-consent {
+    a {
+      color: $sky-blue;
+      border-bottom-color: $sky-blue;
+    }
+  }
+}
