@@ -1,6 +1,8 @@
 .marketing-consent {
+  position: relative;
   text-align: left;
   padding-bottom: 10px;
+  z-index: 100;
 
   .signup-cta__incentives {
     margin: 0;
