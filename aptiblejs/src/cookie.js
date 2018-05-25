@@ -19,8 +19,13 @@ export function get(name) {
 }
 
 export function write(name, value, expiresAt) {
+  let domain = window.location.hostname;
+  if (domain.indexOf('www.') !== -1) {
+    domain = domain.replace('www.', '');
+  }
+
   let cookieString = `${name}=${value}; expires=${expiresAt.toUTCString()};`;
-  cookieString += `domain=.${window.location.hostname.replace('www.', '')}; path=/`;
+  cookieString += `domain=.${domain}; path=/`;
   
   document.cookie = cookieString;
 }

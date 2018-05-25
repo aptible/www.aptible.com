@@ -1,7 +1,7 @@
 export const utmVars = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
 
 export function allParams() {
-  let params = {};
+  const params = {};
 
   const queryString = (window.location.search[0] === '?' ? window.location.search.substr(1) : window.location.search);
   if (queryString.length < 1) {
