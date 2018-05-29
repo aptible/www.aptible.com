@@ -15,6 +15,8 @@ Clone the repo:
 Install necessary dependencies:
 
     bundle install
+    cd aptiblejs
+    npm install
 
 (Optionally) pull dynamic Resource and Blog content from Contentful:
 
@@ -23,6 +25,8 @@ Install necessary dependencies:
 Start the server. You can access it at http://localhost:4567/
 
     bundle exec middleman server
+    cd aptiblejs
+    npm run dev
 
 If you are running [Aptible's documentation](https://github.com/aptible/docs) site
 locally, set the `BASE_DOC_URL` environment variable:

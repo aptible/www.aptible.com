@@ -28,6 +28,9 @@ activate :directory_indexes
 # Build-specific configuration
 configure :build do
   activate :minify_css
+
+  # aptible.js is minified by webpack, and is called by URL from paid landing
+  # pages, so don't hash the filename
   activate :minify_javascript, ignore: ['aptible.js']
   activate :asset_hash, ignore: ['aptible.js']
 

@@ -235,9 +235,9 @@ Unfortunately, no data transmission over the Internet or data storage system can
 
 To that end, we manage our data protection program consistent with ISO 27001, SOC 2, HITRUST, and applicable legal and regulatory requirements such as HIPAA and GDPR.
 
-  * Aptible’s ISO 27001 certification for Enclave and Gridiron is available here.
+  * Aptible’s ISO 27001 certification for Enclave and Gridiron is available [here](/compliance/iso-27001-certification/).
 
-  * You can view Aptible’s HITRUST CSF standalone certification letter here.
+  * You can view Aptible’s HITRUST CSF standalone certification letter [here](/compliance/hitrust-csf-certification/).
 
   * Aptible’s current SOC 2 Type 2 report and HITRUST CSF Validated Assessment Report are available under NDA to customers only (please contact [support@aptible.com][2] for copies)
 
