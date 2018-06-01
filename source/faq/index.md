@@ -171,7 +171,7 @@ We do offer discounts for up-front payments. If that is something you'd like to 
 
 **Do I have to sign a long-term contract to use Enclave?**
 
-No, you can choose a month-to-month option for $1299/mo base. Most customers sign up for a 90-day trial at $999/mo base and continue on annual contracts at that base price.
+No, you can choose a month-to-month option for $1299/mo base.
 
 --------
 
