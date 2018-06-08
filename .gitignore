@@ -15,3 +15,7 @@ source/bower_components
 .env
 .aptible-space-hash
 data/customers.yml
+
+# aptible.js
+source/javascripts/aptible.js
+aptiblejs/node_modules

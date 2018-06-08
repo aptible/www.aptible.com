@@ -18,7 +18,7 @@ order: 0
 [Support Policy]:/legal/support
 [Trademark Policy]:/legal/trademark
 
-Version 2.12 - March 2018
+Version 2.13 - May 2018
 
 Welcome, and thank you for your interest in Aptible! 
 
@@ -179,8 +179,8 @@ If you believe that your copyrighted work has been copied in a way that constitu
 Submit the above information to:<br/>
 Aptible, Inc.<br/>
 Attn: DMCA Notices<br/>
-220 NW 8th Ave<br/>
-Portland, OR 97209<br/>
+548 Market St #75826<br/>
+San Francisco, CA 94104-5401<br/>
 
 Aptible will promptly terminate without notice the accounts of users that are determined by Aptible to be “repeat infringers." A repeat infringer is a user who has been notified of infringing activity or has had Content removed from the Service at least twice.
 
@@ -257,7 +257,7 @@ We will provide technical support to you pursuant to our [Support Policy]. Custo
 As with any cloud service, you have ongoing security responsibilities to protect Your Content and your Enclave Containerized Services. You hereby agree to the terms of our [Security Policy]. 
 
 ### 18. Governing Law  
-This Agreement is governed by the laws of the State of Oregon without regard to conflict of law principles. If a lawsuit or court proceeding is permitted under this Agreement, then, unless another location is expressly specified in this Agreement, you and Aptible agree to submit to the personal and exclusive jurisdiction of the state courts and federal courts located within Portland, Oregon for the purpose of litigating any dispute.
+This Agreement is governed by the laws of the State of California without regard to conflict of law principles. If a lawsuit or court proceeding is permitted under this Agreement, then, unless another location is expressly specified in this Agreement, you and Aptible agree to submit to the personal and exclusive jurisdiction of the state courts and federal courts located within San Francisco, California for the purpose of litigating any dispute.
 
 ### 19. Dispute Resolution and Arbitration
 **A.  Generally.** In the interest of resolving disputes between you and Aptible in the most expedient and cost effective manner, you and Aptible agree that every dispute arising in connection with this Agreement will be resolved by binding arbitration. Arbitration is more informal than a lawsuit in court. Arbitration uses a neutral arbitrator instead of a judge or jury, may allow for more limited discovery than in court, and can be subject to very limited review by courts. Arbitrators can award the same damages and relief that a court can award. Our agreement to arbitrate disputes includes all claims arising out of or relating to any aspect of this Agreement, whether based in contract, tort, statute, fraud, misrepresentation, or any other legal theory, and regardless of whether a claim arises during or after the termination of this Agreement. YOU UNDERSTAND AND AGREE THAT, BY ENTERING INTO THIS AGREEMENT, YOU AND APTIBLE ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION.
@@ -269,12 +269,12 @@ This Agreement is governed by the laws of the State of Oregon without regard to 
 **D.  Notice; Process.** A party who intends to seek arbitration must first send a written notice of the dispute to the other, by certified mail or Federal Express (signature required), or if we do not have a physical address on file for you, by electronic mail ("**Notice**"). Aptible's address for Notice is:  
 
 Aptible, Inc.<br/>
-220 NW 8th Ave<br/>
-Portland, OR 97209<br/>
+548 Market St #75826<br/>
+San Francisco, CA 94104-5401<br/>
 
 The Notice must: (a) describe the nature and basis of the claim or dispute; and (b) set forth the specific relief sought ("**Demand**"). We agree to use good faith efforts to resolve the claim directly, but if we do not reach an agreement to do so within 30 days after the Notice is received, you or Aptible may commence an arbitration proceeding. During the arbitration, the amount of any settlement offer made by you or Aptible must not be disclosed to the arbitrator until after the arbitrator makes a final decision and award, if any.  If our dispute is finally resolved through arbitration in your favor, Aptible will pay you the highest of the following: (i) the amount awarded by the arbitrator, if any; (ii) the last written settlement amount offered by Aptible in settlement of the dispute prior to the arbitrator’s award; or (iii) $1,000.
 
-**E.  Fees.** If you commence arbitration in accordance with this Agreement, Aptible will reimburse you for your payment of the filing fee, unless your claim is for more than $10,000, in which case the payment of any fees will be decided by the AAA Rules. Any arbitration hearing will take place at a location to be agreed upon in Portland, Oregon, but if the claim is for $10,000 or less, you may choose whether the arbitration will be conducted: (a) solely on the basis of documents submitted to the arbitrator; (b) through a non-appearance based telephone hearing; or (c&#41; by an in-person hearing as established by the AAA Rules in the county (or parish) of your billing address.  If the arbitrator finds that either the substance of your claim or the relief sought in the Demand is frivolous or brought for an improper purpose (as measured by the standards set forth in Federal Rule of Civil Procedure 11(b)), then the payment of all fees will be governed by the AAA Rules. In that case, you agree to reimburse Aptible for all monies previously disbursed by it that are otherwise your obligation to pay under the AAA Rules. Regardless of the manner in which the arbitration is conducted, the arbitrator must issue a reasoned written decision sufficient to explain the essential findings and conclusions on which the decision and award, if any, are based. The arbitrator may make rulings and resolve disputes as to the payment and reimbursement of fees or expenses at any time during the preceding and upon request from either party made within 14 days of the arbitrator’s ruling on the merits.
+**E.  Fees.** If you commence arbitration in accordance with this Agreement, Aptible will reimburse you for your payment of the filing fee, unless your claim is for more than $10,000, in which case the payment of any fees will be decided by the AAA Rules. Any arbitration hearing will take place at a location to be agreed upon in San Francisco, California, but if the claim is for $10,000 or less, you may choose whether the arbitration will be conducted: (a) solely on the basis of documents submitted to the arbitrator; (b) through a non-appearance based telephone hearing; or (c&#41; by an in-person hearing as established by the AAA Rules in the county (or parish) of your billing address.  If the arbitrator finds that either the substance of your claim or the relief sought in the Demand is frivolous or brought for an improper purpose (as measured by the standards set forth in Federal Rule of Civil Procedure 11(b)), then the payment of all fees will be governed by the AAA Rules. In that case, you agree to reimburse Aptible for all monies previously disbursed by it that are otherwise your obligation to pay under the AAA Rules. Regardless of the manner in which the arbitration is conducted, the arbitrator must issue a reasoned written decision sufficient to explain the essential findings and conclusions on which the decision and award, if any, are based. The arbitrator may make rulings and resolve disputes as to the payment and reimbursement of fees or expenses at any time during the preceding and upon request from either party made within 14 days of the arbitrator’s ruling on the merits.
 
 **F.  No Class Actions.** YOU AND APTIBLE AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. Further, unless both you and Aptible agree otherwise, the arbitrator may not consolidate more than one person’s claims, and may not otherwise preside over any form of a representative or class proceeding.
 
