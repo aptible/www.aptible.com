@@ -1,49 +1,61 @@
 ---
-title: Media Kit
+title: Press and Media
+description: Downloadable media resources.
 ---
+
 - content_for :header do
-  %header.aptible-header.hero-gradient--angled
+  %header.aptible-header.hipaa-hosting__header
     = partial 'partials/main-nav'
-    .grid-container
-      %h1.heading__title--centered Media Kit
 
-.content
-  .grid-container.grid--3up
-    .card.grid-item.card--media
-      .card__header.card__header--media
-        %img{ src: "/press-kit/color/web-horizontal-color-750.png" }
-      .card__body
-        %h3 Aptible Logo - Color
-        %p
-          %a{ href: "/press-kit/color/web-horizontal-color.ai", target: "_blank" } Download .ai
-        %p
-          %a{ href: "/press-kit/color/web-horizontal-color-750.png", target: "_blank" } Download .png
+    .grid-container.grid--single-center
+      .grid-item.text-center
+        %h2.subtitle--caps.blue Press and Media
+        %h1.title.white.heading--single-center
+          Downloadable media resources
+        %p.subtitle.light-blue-gray
+          For inquiries, email us at
+          %a{ href: 'mailto:press@aptible.com' } press@aptible.com.
+        .heading--cta
+          %a.btn{ href: 'mailto:press@aptible.com' } Contact Aptible &rarr;
 
-    .card.grid-item.card--media
-      .card__header.card__header--media.card__header--light-media
-        %img{ src: "/press-kit/white/web-horizontal-white-750.png" }
-      .card__body
-        %h3 Aptible Logo - White
-        %p
-          %a{ href: "/press-kit/white/web-horizontal-white.ai", target: "_blank" } Download .ai
-        %p
-          %a{ href: "/press-kit/white/web-horizontal-white-750.png", target: "_blank" } Download .png
+.angled-section-dividers
 
-
-    .card.grid-item.card--media
-      .card__header.card__header--media
-        .card--media__title Aptible Press Kit
-      .card__body
-        %h3 Press Kit
+.media.content
+  .grid-container.hero-billboard.hero-billboard--full-title
+    .hero-billboard__title
+      .title About Aptible
+    .hero-billboard__content
+      .hero-billboard__copy
         %p
-          %a{ href: "/press-kit/aptible_press_kit.zip", target: "_blank" } Download .zip
-        %p &nbsp;
+          Customers demand proof that the companies they buy from are protecting their data. Providing this proof is an expensive administrative headache: selecting appropriate data protection policies requires specialized compliance expertise while actually passing information security audits is an exhausting exercise of collecting the evidence that you comply with your policies.
+        %p
+          The Aptible platform helps cloud-first companies draft, implement, and prove compliance with strong information security policies. We provide straightforward, plain English guidance on how to write relevant policies and automate the procedures required to implement and document the evidence of compliance with these policies. With Aptible, companies can ensure they are always audit-ready and continuously communicate trust to customers, auditors, and regulators.
 
+      .hero-billboard__image
+        .press-kit-download
+          .press-kit-download--dark
+            %img.logo{ src: "/press-kit/dark/aptible-dark.svg" }
+            %ul.press-kit-download__downloads
+              %li.press-kit-download__download
+                %a{ href: "/press-kit/dark/aptible-dark.svg", target: "_blank" } svg
+              %li.press-kit-download__download
+                %a{ href: "/press-kit/dark/aptible-dark.png", target: "_blank" } png
+              %li.press-kit-download__download
+                %a{ href: "/press-kit/dark/aptible-dark.eps", target: "_blank" } eps
+          .press-kit-download--light
+            %img.logo{ src: "/press-kit/light/aptible-light.svg" }
+            %ul.press-kit-download__downloads
+              %li.press-kit-download__download
+                %a{ href: "/press-kit/light/aptible-light.svg", target: "_blank" } svg
+              %li.press-kit-download__download
+                %a{ href: "/press-kit/light/aptible-light.png", target: "_blank" } png
+              %li.press-kit-download__download
+                %a{ href: "/press-kit/light/aptible-light.eps", target: "_blank" } eps
 
   .grid-container.grid--single-center
-    .grid-item.grid-item--adjacent
-      %h2.heading--single-center HIPAA-Compliant. Powered by Aptible.
-      %p.summary--single-center
+    .our-team.text-center
+      %h2.title HIPAA-Compliant. Powered by Aptible.
+      %h3.subtitle
         Feel free to use these badges on your site. We suggest linking the
         image to <a href="https://www.aptible.com">aptible.com</a>.
 
