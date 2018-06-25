@@ -140,8 +140,6 @@ Aptible automatically backs up several different types of data:
 
 - Enclave customer database disks are automatically backed up nightly and retained daily for 90 days, and monthly for 6 years. No customer action is required. Two backup copies are kept: One in the region where the database runs, to facilitate fast disaster recovery; the other in a separate geographic region to protect against loss of the original region. Customers may also take on-demand backups. Please see the [Enclave database backup](https://www.aptible.com/documentation/enclave/reference/databases/backups.html) documentation for more information.
 
-- For Enclave databases like PostgreSQL that support intermediate backups (e.g., write-ahead logs), Aptible configures these intermediate backups to span at least the time between daily backups, to enable fine-grained, point-in-time disaster recovery.
-
 ##### **4.B - Fault Tolerance**
 AWS data centers are clustered into regions, and sub-clustered into availability zones, each of which is designed as an independent failure zone, meaning they are:
 
