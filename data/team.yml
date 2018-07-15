@@ -1,5 +1,5 @@
 - name: Chas Ballew
-  title: Janitor, $$$ Engineer, CEO
+  title: Co-Founder, CEO
   bio:
     Before Aptible, Chas served on active duty in the Army for 4 years as a 
     lawyer at the Pentagon, which is where he first learned regulatory law. 
@@ -49,6 +49,13 @@
     he believes that focus and simplicity pave the road to achievement.
   main_photo: /images/company/team/ben.jpg
   fun_photo: /images/company/team/ben-fun.jpg
+- name: Caroline Lau
+  title: VP People
+  bio:
+    Caroline is passionate about building people-first businesses. Prior to
+    Aptible, she led People Operations at several high-growth, mission-driven
+    technology companies, including Architizer, Artsy, and Give Real. She holds
+    an A.B. in History from Princeton University.
 - name: David Wen
   title: Senior Software Engineer
   bio:
@@ -94,18 +101,18 @@
   main_photo: /images/company/team/shah.jpg
   fun_photo: /images/company/team/shah-fun.jpg
 - name: Skylar Anderson
-  title: Designer & Lead Software Engineer
+  title: VP Design
   bio:
-    Skylar is a designer and lead software engineer for Gridiron.  Prior to 
-    Aptible, Skylar worked as an independent consultant and helped ship 
+    Skylar is a designer and engineer, leading UX and design at Aptible. Prior
+    to Aptible, Skylar worked as an independent consultant and helped ship
     products for Salesforce, Intuit, Eli Lilly, Oracle, and Facebook. 
   main_photo: /images/company/team/skylar.jpg
   fun_photo: /images/company/team/skylar-fun.jpg
 - name: Thomas Orozco
-  title: Enclave Team Lead
+  title: VP Technology
   bio:
     Thomas is a self-taught engineer and former product manager. He now leads 
-    the Enclave product at Aptible. Outside of work, he enjoys cooking. Thomas 
+    technical direction at Aptible. Outside of work, he enjoys cooking. Thomas
     earned his MSc in Management from HEC Paris.
   main_photo: /images/company/team/thomas.jpg
   fun_photo: /images/company/team/thomas-fun.jpg
