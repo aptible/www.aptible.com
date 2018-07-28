@@ -200,6 +200,6 @@ If you are deployed on Enclave and using Gridiron for security management, you m
 
 **Is Aptible audited?**
 
-Yes, Aptible has passed hundreds of security and compliance audits alongside our customers at the largest entities in healthcare. In the past year we have passed audits with Kaiser Permanente, MD Anderson, UnitedHealth Group, Johns Hopkins, Stanford, and many others. 
+Yes, Aptible has passed hundreds of security and compliance audits alongside our customers at the largest entities in healthcare. In the past year we have passed audits with Kaiser Permanente, MD Anderson, UnitedHealth Group, Johns Hopkins, Stanford, and many others.
 
-We have achieved both ISO 27001 and SOC 2 certification. Aptible Enclave and Aptible Gridiron are both HITRUST certified as well.
+We are certified for compliance with ISO 27001 and SOC 2, with both Aptible Enclave and Aptible Gridiron in scope. Further, both Enclave and Gridiron are HITRUST CSF certified.
