@@ -263,7 +263,7 @@ California Civil Code Section 1798.83 permits Aptible customers who are Californ
 
  
 
-# Information for__ International Users
+# Information for International Users
 
 The core Enclave and Gridiron APIs are hosted in the United States. You may choose to run Enclave stacks in non-U.S. regions, such as the European Union or other regions of the world with laws governing data collection and use that may differ from U.S. law. Please note that when you use the core Enclave and Gridiron APIs, you are transferring your information outside of those regions to the United States for storage and processing. By providing your information, you consent to any transfer and processing in accordance with this Policy.
 
