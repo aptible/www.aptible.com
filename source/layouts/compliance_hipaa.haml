@@ -1,0 +1,6 @@
+= wrap_layout :compliance do
+  - @protocol = 'HIPAA'
+  - @protocol_directory = 'hipaa'
+  - @regulations = data.hipaa.regulation
+  - @nav_items = data.hipaa.nav_items
+  = yield

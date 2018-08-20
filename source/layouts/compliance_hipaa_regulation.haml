@@ -1,0 +1,18 @@
+- regulation = load_hipaa_regulation
+- @title = "#{regulation.title} | HIPAA"
+- @protocol_directory = 'hipaa'
+
+= wrap_layout :compliance_hipaa do
+  %section
+    %h4= regulation.parents.map {|p| p.title}.join(' &nbsp; > &nbsp; ')
+    %h1 #{regulation.id} #{regulation.title}
+
+  %section
+    = yield
+
+  %aside
+    %h3 A small note
+    %p In 2009, as part of the American Recovery and Reinvestment Act stimulus, Congress created a slush fund to incentivize adoption of electronic medical records.
+    %p While they were at it, the also decided HIPAA needed a big update, and put both the money and the update in an act called the Health Information Technology for Economic and Clinical Health (“HITECH”).
+
+  = partial 'partials/compliance/pagination', locals: { regulation: regulation }

@@ -1,3 +1,8 @@
+nav_items:
+  - title: What is HIPAA?
+    url: /hipaa/
+  - title: HIPAA For Developers
+    url: /hipaa/for-developers/
 regulation:
   - title: General Administrative Requirements
     subparts:

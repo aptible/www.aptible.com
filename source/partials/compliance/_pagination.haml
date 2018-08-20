@@ -1,0 +1,16 @@
+%section
+  - if regulation.previous
+    = link_to("/#{@protocol_directory}/regulation/#{regulation.previous.url}/", class: 'compliance__pagination compliance__pagination--previous') do
+      .compliance__pagination__icon--previous
+        %i.far.fa-long-arrow-left
+      .compliance__pagination__content
+        %h4 #{@protocol} Regulation
+        %p= regulation.previous.title
+
+  - if regulation.next
+    = link_to("/#{@protocol_directory}/regulation/#{regulation.next.url}/", class: 'compliance__pagination compliance__pagination--next') do
+      .compliance__pagination__content
+        %h4 #{@protocol} Regulation
+        %p= regulation.next.title
+      .compliance__pagination__icon--next
+        %i.far.fa-long-arrow-right

@@ -1,0 +1,13 @@
+- regulation = load_gdpr_regulation
+- @title = "#{regulation.title} | GDPR"
+- @protocol_directory = 'gdpr'
+
+= wrap_layout :compliance_gdpr do
+  %section
+    %h4 #{regulation.parents.last.id} &nbsp; > &nbsp; Article #{regulation.id}
+    %h1 #{regulation.title}
+
+  %section
+    = yield
+
+  = partial 'partials/compliance/pagination', locals: { regulation: regulation }

@@ -1,0 +1,16 @@
+= wrap_layout :compliance do
+  - @protocol = 'GDPR'
+  - @protocol_directory = 'gdpr'
+  - @regulations = data.gdpr.regulation
+  - @nav_items = data.gdpr.nav_items
+  = yield
+
+-# GDPR only has one section, so always expand it
+:javascript
+  $(function() {
+    var mainNavItem = $('.compliance__sidebar__item--level1');
+    if (mainNavItem.hasClass('open') === false) {
+      mainNavItem.addClass('open');
+      mainNavItem.next('.compliance__expandable__content').slideToggle();
+    }
+  });
