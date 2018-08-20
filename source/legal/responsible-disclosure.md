@@ -66,6 +66,7 @@ Please do not test or report issues with services not listed here.
 - Disclosure of known public files or directories, (e.g. robots.txt)  
 - Presence of application or web browser "autocomplete" or "save password" permission  
 - User enumeration on login  
+- Absence of rate limits
 
 ### Top Researchers
 Researchers are listed here based on adherence to these program guidelines, professionalism, and significance or novelty of the issue(s) reported:
