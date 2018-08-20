@@ -603,3 +603,7 @@
   url: "/resources/enclave-reference-architecture/"
 - loc: "/assets/aptible-reference-architecture.pdf"
   url: "/assets/aptible-enclave-reference-architecture.pdf"
+- loc: "/compliance/hipaa-cloud/"
+  url: "/hipaa/"
+- loc: "/learn/hipaa-compliance-for-developers-getting-started/"
+  url: "/hipaa/for-developers/"

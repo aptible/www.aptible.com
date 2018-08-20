@@ -1,0 +1,183 @@
+---
+protocol: HIPAA
+title: Aptible + HIPPA
+---
+
+%section
+  %h1 The Aptible HIPAA Compliance Guide
+  %ol
+    %li= link_to('What is HIPAA?', '#what-is-hipaa')
+    %li= link_to('Who does HIPAA apply to?', '#who-does-hipaa-apply-to')
+    %li
+      = link_to('How does HIPAA compliance work?', '#how-does-hipaa-compliance-work')
+      %ul
+        %li= link_to('Step 1: Determine if your organization is regulated', '#step-1-determine-if-your-organization-is-regulated')
+        %li= link_to('Step 2: Document where and why you process PHI', '#step-2-document-where-and-why-you-process-phi')
+        %li= link_to('Step 3: Implement privacy and security management programs to protect PHI', '#step-3-implement-privacy-and-security-management-programs-to-protect-phi')
+    %li= link_to('How is HIPAA enforced?', '#how-is-hipaa-enforced')
+    %li= link_to('Can we get HIPAA certified? Is Aptible HIPAA certified?', '#can-we-get-hipaa-certified-is-aptible-hipaa-certified')
+    %li= link_to('What is HITRUST?', '#what-is-hitrust')
+    %li= link_to('How does Enclave® help with HIPAA?', '#how-does-enclave-help-with-hipaa')
+    %li= link_to('How does Gridiron® help with HIPAA?', '#how-does-gridiron-help-with-hipaa')
+    %li= link_to('Additional Resources', '#additional-resources')
+
+= partial 'partials/compliance/shoutout', locals: { headline: 'Build Your HIPAA Compliance Program', text: 'Powerful tools to prepare for certifications and build a HIPAA compliance program.', button: 'Learn More About Gridiron', link: '/gridiron/' }
+
+%section#what-is-hipaa
+  %h2 What is HIPAA?
+  %p “<strong>HIPAA</strong>” is the Health Insurance Portability and Accountability Act of 1996, a federal law in the United States that requires certain organizations to protect the privacy and security of individually identifiable health data. HIPAA calls this data “protected health information,” or “<strong>PHI</strong>.”
+  %p When people say “HIPAA compliance,” often they are referring to compliance with HIPAA’s regulatory rules, which are are enacted and enforced by the Department of Health and Human Services (“<strong>HHS</strong>”). Within HHS, the Office for Civil Rights (“<strong>OCR</strong>”) investigates violations and applies penalties, including civil monetary fines.
+  %p The HIPAA regulations continue to evolve over time, with OCR adding new sets of rules to the regulations to implement its underlying statutory authority. The Privacy Rule went into effect in 2003, the Security Rule went into effect in 2005, and the Enforcement Rule was finalized in 2006.
+  %p In 2009, as part of the American Recovery and Reinvestment Act stimulus, Congress created a slush fund to incentivize adoption of electronic medical records. While they were at it, the also decided HIPAA needed a big update, and put both the money and the update in an act called the Health Information Technology for Economic and Clinical Health (“<strong>HITECH</strong>”).
+  %p The HITECH update expanded liability to vendors and other “business associates” that handle PHI, added breach notification requirements, increased penalties for non-compliance, and added an audit program. HITECH had so many changes, HHS just called the regulatory update the “Omnibus Rule.” It went final in 2013 and is the most recent major update as of 2017.
+  %p Often, if someone refers to just “HIPAA” alone, they mean HIPAA and HITECH as implemented in current regulations.
+
+%section#who-does-hipaa-apply-to
+  %h2 Who does HIPAA apply to?
+  %p HIPAA only regulates certain types of entities:
+  %ol
+    %li “<strong>Covered Entities</strong>” are health care providers that take insurance, the health insurance companies themselves, self-insured employers, and insurance claims clearinghouses.
+    %li “<strong>Business Associates</strong>” process PHI on behalf of Covered Entities.
+
+%aside
+  %h3 Get The Latest on HIPAA
+  %p Subscribe to get the best in security, compliance and DevOps delivered monthly. <a href="http://defenseinbrief.aptible.com">Click here to subscribe</a>
+
+%section#how-does-hipaa-compliance-work
+  %h2 How does HIPAA compliance work?
+  %p The HIPAA rules are laid out in a document called the “<a href="https://www.hhs.gov/sites/default/files/hipaa-simplification-201303.pdf" target="_blank">Administrative Simplification</a>.” It’s a simplification of the Code of Federal Regulations, which is unfortunately not the same thing as being simple. What follows is a guide to HIPAA from the perspective of what it means for your operations and management.
+
+%section#step-1-determine-if-your-organization-is-regulated
+  %h2 Step 1: Determine if your organization is regulated
+  %p To determine for sure whether your specific organization is regulated, you should consult an attorney.
+  %p If you are a <i>covered entity</i>, you probably know it. If your business is structured as a health care practice and you take any insurance, your whole practice is likely covered.
+  %p If you create, receive, transmit, or maintain PHI on behalf of a covered entity, or another business associate, you’re likely a <i>business associate</i>.
+  %p HHS has issued guidance for developer teams to clarify how HIPAA works in the <a href="https://www.hhs.gov/hipaa/for-professionals/special-topics/cloud-computing/index.html" target="_blank">cloud</a> and in <a href="https://hipaaqsportal.hhs.gov/community-library/accounts/92/925889/OCR-health-app-developer-scenarios-2-2016.pdf" target="_blank">specific health app scenarios</a>.
+
+%section#step-2-document-where-and-why-you-process-phi
+  %h2 Step 2: Document where and why you process PHI
+  %p Scoping the boundaries of your HIPAA compliance program lays the foundation for actually doing all of the other work you need to run the program itself. You’ll want to know:
+  %ol
+    %li What people and functions within your organization need access to PHI to do their job? (e.g. operations, customer support, etc.)
+    %li What assets process PHI, or can be used to access PHI? This includes infrastructure you build, open source projects you run in-house, laptops and phones with work accounts on them, etc.
+    %li What vendors process PHI for you? AWS and Aptible are common examples. Common use cases are logging, analytics, error reporting, customer chat/live support, etc.
+
+%section#step-3-implement-privacy-and-security-management-programs-to-protect-phi
+  %h2 Step 3: Implement privacy and security management programs to protect PHI
+
+  %h3 What does HIPAA require in terms of privacy management?
+  %p <strong>The Privacy Rule</strong> works like a whitelist. In the beginning, it says “[a] covered entity or business associate may not use or disclose protected health information except as permitted or required by [this Privacy Rule or the Enforcement Rule].” The rest of the Privacy Rule establishes what those permitted and required uses and disclosures of PHI are.
+  %p Obviously in order for you to be able to meet the Privacy Rule requirements, first you must put a privacy management system (meaning a set of rules) in place to control how PHI is used and disclosed in your organization. To comply with the Privacy Rule, your system should enable you to:
+  %ul
+    %li Track vendors and other entities that will process PHI on your behalf; track and maintain business associate contracts for customers and vendors
+    %li Track uses and disclosures of PHI and document why each a use or disclosure is permissible, if needed
+    %li De-identify and re-identify PHI securely, if needed
+    %li Ensure routine uses and disclosures are limited to the minimum necessary amount of PHI
+    %li Train your organization on your privacy rules and practices
+    %li Enforce those privacy rules and practices
+    %li Respond to privacy incidents and violations
+    %li Conduct required notifications under the Breach Notification Rule, if any
+    %li Regularly update the privacy management system itself
+  %p Covered entities have additional obligations under the Privacy Rule. In many cases, business associates may perform some of these functions as well:
+  %ul
+    %li Specifically appoint someone to administer the program and receive complaints (usually called a “Privacy Officer”)
+    %li Implement privacy safeguards
+    %li Provide patients with a notice of privacy practices
+    %li Document authorizations from patients for uses and disclosures not covered by HIPAA, and offer a way to revoke consent
+    %li Sanction workforce members who violate privacy policies
+    %li Mitigate the harm of privacy violations
+  %p In addition, covered entities (and in some cases business associates) must provide ways for patients to:
+  %ul
+    %li Request restrictions to how their PHI is used and disclosed
+    %li Access and copy their PHI
+    %li Request amendments to their PHI
+    %li Receive an accounting of how their PHI has been disclosed in the past 6 years
+    %li File complaints
+  %p The Privacy Rule requires “appropriate administrative, technical, and physical safeguards to protect the privacy of protected health information” but doesn’t specify what those are exactly.
+
+  %h3 What does HIPAA require in terms of security management?
+  %p <strong>The Security Rule</strong> is similar to the Privacy Rule, in that it specifies requirements for covered entities and business associates. The Security Rule is unique in that it only applies to electronic PHI, and it does require specific controls, divided into three categories:
+  %ul
+    %li
+      <a href="/hipaa/regulation/164-308-administrative-safeguards/">Administrative Safeguards</a> are controls related to your people, processes, oversight, and management. You must:
+      %ul
+        %li Assign someone to be responsible for information security (usually called a “Security Officer”)
+        %li Assess and manage risk. Predict bad things before they happen, prioritize them based on impact and likelihood, and apply appropriate security controls to reduce those risks to acceptable levels. The Privacy Rule doesn’t have a specific risk management requirement like the Security Rule, but in most cases it’s reasonable to use the same risk assessment model to manage privacy risks alongside security risks.
+        %li Write down how security is supposed to work beforehand, in the form of policies and procedures.
+        %li Train your workforce on those policies and procedures
+        %li Train for incident response and business continuity; test those plans regularly
+    %li <a href="/hipaa/regulation/164-310-physical-safeguards/">Physical Safeguards</a> require you to protect workstations and laptops, and other devices and media. Data centers and other facilities may be in scope if you control them, but most SaaS companies don’t. Using AWS, Aptible, GCP, and other platforms that offer business associate agreements are sufficient.
+    %li
+      <a href="/hipaa/regulation/164-312-technical-safeguards/">Technical Safeguards</a> are controls you build (for apps and systems you design) or that need to be present in systems you buy or OSS you run on your own. The Technical Safeguards include:
+      %ul
+        %li Authentication
+        %li Access control and session management
+        %li Audit logging
+        %li Encryption of data at rest
+        %li Encryption of data in transit, and
+        %li Data integrity checks (as needed)
+  %p Your specific implementation of these controls should be based on your specific risk model, and the relevant threats you face.
+
+  %h3 What does the HIPAA Breach Notification Rule require?
+  %p The HIPAA breach notification rule requires that you report certain types of breaches. Covered entities are required to notify individuals affected, the Secretary of HHS, and (for large breaches) the media. Business associates are required to report breaches to their covered entity customers by default, but are permitted to conduct notifications on behalf of the covered entity if the covered entity agrees.
+  %p In any case, HIPAA requires entities to provide their required notifications “without unreasonable delay and in no case later than 60 calendar days after discovery of a breach.” In cases where a subvendor business associate is involved, the clock starts over for each business associate in the chain of liability.
+  %p <strong>What is a reportable HIPAA breach?</strong> In HIPAA, “breach” means the acquisition, access, use, or disclosure of PHI in a way that violates the Privacy Rule. The definition of “breach” also has a few exceptions, such as for accidental disclosure within your workforce or to a business associate. There is also a risk-based exclusion for situations in which there is a low probability of compromise.
+  %p Finally, only breaches of unencrypted PHI are reportable. HHS borrows <a href="https://www.hhs.gov/hipaa/for-professionals/breach-notification/guidance/index.html" target="_blank">NIST encryption guidance</a> to determine standards for encryption that get safe harbor.
+  %p In terms of privacy and Security Management, breach reporting is usually handled as part of incident response.
+
+%section#how-is-hipaa-enforced
+  %h2 How is HIPAA enforced?
+  %p <strong>HHS</strong> has the ability to investigate violations by any covered entity or business associate. You can be investigated or fined by HHS for any violation, even without a breach. The Office for Civil Rights (“OCR”) <a href="https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/index.html" target="_blank">publishes enforcement data on their website</a>. You can see the funnel of complaints, investigations, and corrective actions. HIPAA also has criminal penalties, and OCR refers cases to the Justice Department for prosecution as necessary.
+  %p OCR has a lot of discretion in deciding how much of a penalty to apply. Each violation has a minimum, a maximum, and a cap on identical violations for the year. Instead of drawing out an enforcement action to the bitter end, most organizations choose to <a href="https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/index.html" target="_blank">settle with OCR</a>. Long-term corrective actions plans are common.
+  %p OCR also conducts audits, pursuant to HITRUST. If you are curious about how an OCR auditor would assess you for HIPAA compliance, you can view <a href="https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/audit/protocol/index.html" target="_blank">HHS’s Phase 2 HIPAA audit protocol</a>.
+  %p Note: As of September 2017, it’s <a href="https://www.govinfosecurity.com/hipaa-compliance-audits-future-murky-a-10267" target="_blank">not clear what direction the Trump administration with take</a> with the audit program.
+
+%section#can-we-get-hipaa-certified-is-aptible-hipaa-certified
+  %h2 Can we get HIPAA certified? Is Aptible HIPAA certified?
+  %p Unfortunately HHS does not offer a formal HIPAA certification or validation. There are many consultants and other security professionals who will conduct a HIPAA audit, possibly using the HHS audit protocol, but they cannot guarantee that the results of their assessment will be identical to how HHS views your compliance status.
+  %p Aptible maintains an ISO 27001 certification and signs business associate agreements for customers with dedicated <a href="/enclave/">Enclave</a> stacks and for <a href="/gridiron/">Gridiron</a>® customers who want to be able to store incident response information such as logs and screenshots that contain PHI or other sensitive data.
+
+%section#what-is-hitrust
+  %h2 What is HITRUST?
+  %p HITRUST is a protocol invented to act as the missing HIPAA certification. It’s widely accepted by large customers in healthcare.
+  %p Aptible <a href="/enclave/">Enclave</a> and <a href="/gridiron/">Gridiron</a> are both HITRUST CSF Certified. You can learn more about HITRUST and download a copy of our certification letter <a href="https://www.aptible.com/compliance/hitrust-csf-certification/">here</a>. You can also read our <a href="https://www.aptible.com/blog/aptible-enclave-and-gridiron-are-hitrust-csf-certified/">blog post about HITRUST</a> and why SaaS companies might be interested in achieving HITRUST certification for their products.
+
+%section#how-does-enclave-help-with-hipaa
+  %h2 How does Enclave® help with HIPAA?
+  %p Aptible <a href="/enclave/">Enclave</a>® is a container orchestration platform built for developers that automates security best practices and controls needed for deploying and scaling Dockerized apps and databases that process regulated data, such as HIPAA PHI. You can use <a href="/enclave/">Enclave</a>® with a business associate agreement for dedicated environments.
+  %p Our <a href="https://www.aptible.com/resources/hipaa-security-rule-standards-and-division-of-responsibility/">HIPAA Security Rule - Standards & Division of Responsibility</a> resource explains how <a href="/enclave/">Enclave</a>® automates aspects of the HIPAA Security Rule.
+  %p As you read through the HIPAA requirements and start to assemble them into an active, operational privacy and security management program, you will realize that HIPAA leaves a lot out. In this sense, compliance with any set of requirements should be viewed more like a starting point, rather than a finish line. For example HIPAA doesn’t specify implementation details for requirements like (just to take two) audit logging or data backups.
+  %p HIPAA also lacks explicit requirements for many fundamental best practices of a good, modern security and privacy management program, such as vulnerability management, encryption key/cert management, network topology and isolation, etc. You’re expected to determine what those “reasonable and appropriate controls” are on your own.
+  %p <a href="/enclave/">Enclave</a>® helps you deploy Docker containers while meeting both explicit HIPAA requirements and implicit requirements, such as industry best practices. <a href="/enclave/">Enclave</a>® is ISO 27001-certified, making it easy to show your customers that your cloud computing stack meets an international standard for security management.
+  %p <strong><a href="/enclave/">Enclave</a>® helps product-focused developer teams scale security and DevOps</strong>. Whether your goal is to build and deploy a single app or run millions of Docker containers at scale, <a href="/enclave/">Enclave</a>® can help your team do more, faster.
+  %ul
+    %li Automatic Container Recovery, Memory Management, easy database replication, and distribution of your containers across AWS Availability Zones help build resiliency into your architecture and prevent small problems from becoming big ones
+    %li Aptible’s SRE Team monitors and responds to Enclave® incidents (such as AWS outages, host failures, potential intrusions, etc.) 24/7, meaning fewer wakeups in the middle of the night
+    %li 2-factor authentication with support for FIDO U2F security keys and granular role-based access controls make it easy to secure backend access
+    %li Comprehensive documentation, use of popular OSS tools (such as Docker, PostgreSQL, MySQL, etc.) and “amazing” technical support from the <a href="/enclave/">Enclave</a>® product team make it easy to make good engineering decisions that minimize technical debt
+    %li Hardened hosts and automatic security updates help you stay on top of patching
+    %li Set-and-forget features like automatic database backups and Managed HTTPS Endpoints mean less work for your team
+    %li Advanced networking options like VPC add-ons, managed VPNs, IP filtering, and internal endpoints give you flexibility and let you integrate <a href="/enclave/">Enclave</a>® with other cloud environments as you scale
+    %li Easy logging setups, container performance metrics, SSH access, direct deploys from Docker images, and secure defaults help your team move fast without breaking things
+
+%section#how-does-gridiron-help-with-hipaa
+  %h2 How does Gridiron® help with HIPAA?
+  %p Aptible <a href="/gridiron/">Gridiron</a>® is a SaaS-based security management platform, designed for developer teams. Customers use it to build and run security and privacy management programs and meet requirements for frameworks like HIPAA, SOC 2, ISO 27001, and others. Aptible offers a business associate agreement to customers with <a href="/gridiron/">Gridiron</a>® HIPAA protocols, so <a href="/gridiron/">Gridiron</a>® can store incident response forensic evidence that contains PHI.
+  %p Our <a href="https://www.aptible.com/resources/hipaa-security-rule-standards-and-division-of-responsibility/">HIPAA Security Rule - Standards & Division of Responsibility</a> resource explains how <a href="/gridiron/">Gridiron</a>® automates aspects of the HIPAA Security Rule.
+  %p The <a href="https://www.aptible.com/resources/gridiron-reference-documents/">Gridiron Compliance Model</a> illustrates a core set of security and privacy management functions that <a href="/gridiron/">Gridiron</a>® helps you implement. <a href="/gridiron/">Gridiron</a>® gives your team a single source of truth for security management activities, evidence, and auditing.
+  %ul
+    %li The <a href="/gridiron/">Gridiron</a>® Risk Engine makes it easy to build a risk model for your organization, and manage risks over time. See where you need to improve, and get recommendations on controls to implement.
+    %li The <a href="/gridiron/">Gridiron</a>® Policy Engine makes it easy to generate custom policies, procedures, plans, and other audit artifacts that meet requirements for HIPAA (and SOC 2, ISO, etc.), and to distribute them to your workforce.
+    %li The <a href="/gridiron/">Gridiron</a>® Training Engine helps you build, deliver, and audit custom security and privacy training. Incident response and business continuity training help you anticipate and prepare for security and availability incidents before they happen.
+    %li <a href="/gridiron/">Gridiron</a>® Tools and Reports help you track in-scope assets, vendors, customer contracts and BAAs, security incidents, and regular security checks. Built-in metrics and reporting help you assess whether your security program is working.
+
+%section#additional-resources
+  %h2 Additional Resources
+  %ul
+    %li= link_to('Aptible - HIPAA Compliance for Developers: Getting Started', '/hipaa/for-developers/')
+    %li= link_to('Aptible - What is a HIPAA BAA?', '/resources/what-is-a-hipaa-baa/')
+    %li <a href="http://defenseinbrief.aptible.com/">Defense in Brief</a> - The Internet’s best and most useful articles on security, compliance and DevOps, delivered once per month. Curated by the Aptible team.
+    %li= link_to('Enclave and Gridiron ISO 27001 Certification', '/compliance/iso-27001-certification/')
+    %li= link_to('Enclave Reference Architecture & Division of Responsibilities', '/resources/enclave-reference-architecture-and-division-of-responsibilities/')
+    %li= link_to('HIPAA Administrative Simplification', 'https://www.hhs.gov/sites/default/files/hipaa-simplification-201303.pdf')
+    %li= link_to('Gridiron Reference Documents', '/resources/gridiron-reference-documents/')
