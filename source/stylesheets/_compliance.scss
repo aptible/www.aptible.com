@@ -20,6 +20,11 @@ $border-color: #f6f9ff;
   z-index: 10;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .24), 0 1px 8px rgba(0, 0, 0, .03);
   letter-spacing: -0.5px;
+
+  @media screen and (max-width: $tablet-landscape) {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 
@@ -29,6 +34,10 @@ $border-color: #f6f9ff;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   font-family: $sf-pro-display;
+
+  @media screen and (max-width: $tablet-landscape) {
+    display: none;
+  }
 }
 
 .compliance__sidebar__title {
@@ -178,6 +187,10 @@ $border-color: #f6f9ff;
   font-family: $sf-pro-display;
   box-shadow: 0 2px 18px rgba(0, 0, 0, .03);
 
+  @media screen and (max-width: $tablet-landscape) {
+    padding: 20px;
+  }
+
   h1 {
     font-family: $sf-pro-display;
     font-weight: 600;
@@ -215,12 +228,24 @@ $border-color: #f6f9ff;
     clear: left;
     width: 693px;
     padding: 0 30px 30px 40px;
+
+    @media screen and (max-width: $tablet-landscape) {
+      width: 100%;
+      padding: 0;
+    }
   }
 
   aside {
     float: left;
     width: 205px;
     margin: 0 0 10px 50px;
+
+    @media screen and (max-width: $tablet-landscape) {
+      width: 100%;
+      margin: 0;
+      padding-bottom: 20px;
+      float: none;
+    }
 
     h3 {
       margin: 0 0 5px 0;
@@ -250,15 +275,28 @@ $border-color: #f6f9ff;
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 28, 186, .14), 0 2px 13px rgba(0, 0, 0, .03);
 
+  @media screen and (max-width: $tablet-landscape) {
+    display: block;
+    text-align: center;
+  }
+
   .compliance__shoutout__left-border {
     width: 1px;
     border: 2px solid $blue;
     border-radius: 10px;
     margin: 10px 25px 10px 5px;
+
+    @media screen and (max-width: $tablet-landscape) {
+      display: none;
+    }
   }
 
   .compliance__shoutout__content {
     padding: 20px 20px 20px 0;
+
+    @media screen and (max-width: $tablet-landscape) {
+      padding: 15px;
+    }
 
     h2 {
       font-family: $sf-pro-display;
@@ -279,6 +317,11 @@ $border-color: #f6f9ff;
     display: flex;
     align-self: stretch;
     align-items: center;
+
+    @media screen and (max-width: $tablet-landscape) {
+      display: block;
+      padding: 0 0 15px 0;
+    }
 
     .btn {
       padding: 15px 18px;
@@ -301,6 +344,10 @@ $border-color: #f6f9ff;
   font-size: 13px;
   color: $sky-blue;
   transition: color 250ms ease-in-out;
+
+  @media screen and (max-width: $tablet-landscape) {
+    left: 0;
+  }
 }
 
 input[type="text"].compliance__search-bar {
@@ -314,6 +361,10 @@ input[type="text"].compliance__search-bar {
   box-shadow: none;
   max-width: 693px - 40px;
   outline: none;
+
+  @media screen and (max-width: $tablet-landscape) {
+    margin-left: 0;
+  }
 
   &::placeholder {
     font-weight: 500;
@@ -337,6 +388,10 @@ input[type="text"].compliance__search-bar {
   margin: 0 0 40px 40px;
   max-width: 693px - 40px;
 
+  @media screen and (max-width: $tablet-landscape) {
+    margin-left: 0;
+  }
+
   &:after {
     display:block;
     content: '';
@@ -353,6 +408,11 @@ input[type="text"].compliance__search-bar {
   padding: 10px 17px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .24), 0 1px 8px rgba(0, 0, 0, .03);
   border-radius: 3px;
+
+  @media screen and (max-width: $tablet-landscape) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
   h4 {
     color: $sky-blue;
@@ -371,14 +431,26 @@ input[type="text"].compliance__search-bar {
 .compliance__pagination--previous,
 .compliance__pagination--next {
   float: left;
+
+  @media screen and (max-width: $tablet-landscape) {
+    float: none;
+  }
 }
 
 .compliance__pagination--previous {
   grid-template-columns: 30px auto;
   margin-right: 2%;
+
+  @media screen and (max-width: $tablet-landscape) {
+    margin-right: 0;
+  }
 }
 
 .compliance__pagination--next {
   grid-template-columns: auto 30px;
   margin-left: 2%;
+
+  @media screen and (max-width: $tablet-landscape) {
+    margin-left: 0;
+  }
 }

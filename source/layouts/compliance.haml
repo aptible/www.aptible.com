@@ -40,12 +40,16 @@
     openItem.addClass('active');
 
     var level2 = openItem.parent();
-    level2.show();
-    level2.prev().addClass('open');
+    if (level2.hasClass('compliance__expandable__content')) {
+      level2.show();
+      level2.prev().addClass('open');
+    }
 
     var level1 = level2.parent();
-    level1.show();
-    level1.prev().addClass('open');
+    if (level1.hasClass('compliance__expandable__content')) {
+      level1.show();
+      level1.prev().addClass('open');
+    }
 
     // Open / close nav sections
     $('.compliance__expandable').on('click', function(e) {
