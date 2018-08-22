@@ -4,13 +4,13 @@
 
 3. The notification referred to in paragraph 1 shall at least:
 
-(a) describe the nature of the personal data breach including where possible, the categories and approximate number of data subjects concerned and the categories and approximate number of personal data records concerned;
+    (a) describe the nature of the personal data breach including where possible, the categories and approximate number of data subjects concerned and the categories and approximate number of personal data records concerned;
 
-(b) communicate the name and contact details of the data protection officer or other contact point where more information can be obtained;
+    (b) communicate the name and contact details of the data protection officer or other contact point where more information can be obtained;
 
-(c) describe the likely consequences of the personal data breach;
+    &#40;c) describe the likely consequences of the personal data breach;
 
-(d) describe the measures taken or proposed to be taken by the controller to address the personal data breach, including, where appropriate, measures to mitigate its possible adverse effects.
+    (d) describe the measures taken or proposed to be taken by the controller to address the personal data breach, including, where appropriate, measures to mitigate its possible adverse effects.
 
 4. Where, and in so far as, it is not possible to provide the information at the same time, the information may be provided in phases without undue further delay.
 

@@ -1,48 +1,48 @@
 1. Without prejudice to other tasks set out under this Regulation, each supervisory authority shall on its territory:
 
-(a) monitor and enforce the application of this Regulation;
+    (a) monitor and enforce the application of this Regulation;
 
-(b) promote public awareness and understanding of the risks, rules, safeguards and rights in relation to processing. Activities addressed specifically to children shall receive specific attention;
+    (b) promote public awareness and understanding of the risks, rules, safeguards and rights in relation to processing. Activities addressed specifically to children shall receive specific attention;
 
-(c) advise, in accordance with Member State law, the national parliament, the government, and other institutions and bodies on legislative and administrative measures relating to the protection of natural persons' rights and freedoms with regard to processing;
+    &#40;c) advise, in accordance with Member State law, the national parliament, the government, and other institutions and bodies on legislative and administrative measures relating to the protection of natural persons' rights and freedoms with regard to processing;
 
-(d) promote the awareness of controllers and processors of their obligations under this Regulation;
+    (d) promote the awareness of controllers and processors of their obligations under this Regulation;
 
-(e) upon request, provide information to any data subject concerning the exercise of their rights under this Regulation and, if appropriate, cooperate with the supervisory authorities in other Member States to that end;
+    (e) upon request, provide information to any data subject concerning the exercise of their rights under this Regulation and, if appropriate, cooperate with the supervisory authorities in other Member States to that end;
 
-(f) handle complaints lodged by a data subject, or by a body, organisation or association in accordance with Article 80, and investigate, to the extent appropriate, the subject matter of the complaint and inform the complainant of the progress and the outcome of the investigation within a reasonable period, in particular if further investigation or coordination with another supervisory authority is necessary;
+    (f) handle complaints lodged by a data subject, or by a body, organisation or association in accordance with Article 80, and investigate, to the extent appropriate, the subject matter of the complaint and inform the complainant of the progress and the outcome of the investigation within a reasonable period, in particular if further investigation or coordination with another supervisory authority is necessary;
 
-(g) cooperate with, including sharing information and provide mutual assistance to, other supervisory authorities with a view to ensuring the consistency of application and enforcement of this Regulation;
+    (g) cooperate with, including sharing information and provide mutual assistance to, other supervisory authorities with a view to ensuring the consistency of application and enforcement of this Regulation;
 
-(h) conduct investigations on the application of this Regulation, including on the basis of information received from another supervisory authority or other public authority;
+    (h) conduct investigations on the application of this Regulation, including on the basis of information received from another supervisory authority or other public authority;
 
-(i) monitor relevant developments, insofar as they have an impact on the protection of personal data, in particular the development of information and communication technologies and commercial practices;
+    (i) monitor relevant developments, insofar as they have an impact on the protection of personal data, in particular the development of information and communication technologies and commercial practices;
 
-(j) adopt standard contractual clauses referred to in Article 28(8) and in point (d) of Article 46(2);
+    (j) adopt standard contractual clauses referred to in Article 28(8) and in point (d) of Article 46(2);
 
-(k) establish and maintain a list in relation to the requirement for data protection impact assessment pursuant to Article 35(4);
+    (k) establish and maintain a list in relation to the requirement for data protection impact assessment pursuant to Article 35(4);
 
-(l) give advice on the processing operations referred to in Article 36(2);
+    (l) give advice on the processing operations referred to in Article 36(2);
 
-(m) encourage the drawing up of codes of conduct pursuant to Article 40(1) and provide an opinion and approve such codes of conduct which provide sufficient safeguards, pursuant to Article 40(5);
+    (m) encourage the drawing up of codes of conduct pursuant to Article 40(1) and provide an opinion and approve such codes of conduct which provide sufficient safeguards, pursuant to Article 40(5);
 
-(n) encourage the establishment of data protection certification mechanisms and of data protection seals and marks pursuant to Article 42(1), and approve the criteria of certification pursuant to Article 42(5);
+    (n) encourage the establishment of data protection certification mechanisms and of data protection seals and marks pursuant to Article 42(1), and approve the criteria of certification pursuant to Article 42(5);
 
-(o) where applicable, carry out a periodic review of certifications issued in accordance with Article 42(7);
+    (o) where applicable, carry out a periodic review of certifications issued in accordance with Article 42(7);
 
-(p) draft and publish the criteria for accreditation of a body for monitoring codes of conduct pursuant to Article 41 and of a certification body pursuant to Article 43;
+    (p) draft and publish the criteria for accreditation of a body for monitoring codes of conduct pursuant to Article 41 and of a certification body pursuant to Article 43;
 
-(q) conduct the accreditation of a body for monitoring codes of conduct pursuant to Article 41 and of a certification body pursuant to Article 43;
+    (q) conduct the accreditation of a body for monitoring codes of conduct pursuant to Article 41 and of a certification body pursuant to Article 43;
 
-(r) authorise contractual clauses and provisions referred to in Article 46(3);
+    &#40;r) authorise contractual clauses and provisions referred to in Article 46(3);
 
-(s) approve binding corporate rules pursuant to Article 47;
+    (s) approve binding corporate rules pursuant to Article 47;
 
-(t) contribute to the activities of the Board;
+    (t) contribute to the activities of the Board;
 
-(u) keep internal records of infringements of this Regulation and of measures taken in accordance with Article 58(2); and
+    (u) keep internal records of infringements of this Regulation and of measures taken in accordance with Article 58(2); and
 
-(v) fulfil any other tasks related to the protection of personal data.
+    (v) fulfil any other tasks related to the protection of personal data.
 
 2. Each supervisory authority shall facilitate the submission of complaints referred to in point (f) of paragraph 1 by measures such as a complaint submission form which can also be completed electronically, without excluding other means of communication.
 

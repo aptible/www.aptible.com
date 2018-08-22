@@ -2,27 +2,27 @@
 
 2. Associations and other bodies representing categories of controllers or processors may prepare codes of conduct, or amend or extend such codes, for the purpose of specifying the application of this Regulation, such as with regard to:
 
-(a) fair and transparent processing;
+    (a) fair and transparent processing;
 
-(b) the legitimate interests pursued by controllers in specific contexts;
+    (b) the legitimate interests pursued by controllers in specific contexts;
 
-(c) the collection of personal data;
+    &#40;c) the collection of personal data;
 
-(d) the pseudonymisation of personal data;
+    (d) the pseudonymisation of personal data;
 
-(e) the information provided to the public and to data subjects;
+    (e) the information provided to the public and to data subjects;
 
-(f) the exercise of the rights of data subjects;
+    (f) the exercise of the rights of data subjects;
 
-(g) the information provided to, and the protection of, children, and the manner in which the consent of the holders of parental responsibility over children is to be obtained;
+    (g) the information provided to, and the protection of, children, and the manner in which the consent of the holders of parental responsibility over children is to be obtained;
 
-(h) the measures and procedures referred to in Articles 24 and 25 and the measures to ensure security of processing referred to in Article 32;
+    (h) the measures and procedures referred to in Articles 24 and 25 and the measures to ensure security of processing referred to in Article 32;
 
-(i) the notification of personal data breaches to supervisory authorities and the communication of such personal data breaches to data subjects;
+    (i) the notification of personal data breaches to supervisory authorities and the communication of such personal data breaches to data subjects;
 
-(j) the transfer of personal data to third countries or international organisations; or
+    (j) the transfer of personal data to third countries or international organisations; or
 
-(k) out-of-court proceedings and other dispute resolution procedures for resolving disputes between controllers and data subjects with regard to processing, without prejudice to the rights of data subjects pursuant to Articles 77 and 79.
+    (k) out-of-court proceedings and other dispute resolution procedures for resolving disputes between controllers and data subjects with regard to processing, without prejudice to the rights of data subjects pursuant to Articles 77 and 79.
 
 3. In addition to adherence by controllers or processors subject to this Regulation, codes of conduct approved pursuant to paragraph 5 of this Article and having general validity pursuant to paragraph 9 of this Article may also be adhered to by controllers or processors that are not subject to this Regulation pursuant to Article 3 in order to provide appropriate safeguards within the framework of personal data transfers to third countries or international organisations under the terms referred to in point (e) of Article 46(2). Such controllers or processors shall make binding and enforceable commitments, via contractual or other legally binding instruments, to apply those appropriate safeguards including with regard to the rights of data subjects.
 

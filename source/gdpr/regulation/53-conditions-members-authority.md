@@ -1,12 +1,12 @@
 1. Member States shall provide for each member of their supervisory authorities to be appointed by means of a transparent procedure by:
 
-� their parliament;
+    -- their parliament;
 
-� their government;
+    -- their government;
 
-� their head of State; or
+    -- their head of State; or
 
-� an independent body entrusted with the appointment under Member State law.
+    -- an independent body entrusted with the appointment under Member State law.
 
 2. Each member shall have the qualifications, experience and skills, in particular in the area of the protection of personal data, required to perform its duties and exercise its powers.
 

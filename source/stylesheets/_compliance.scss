@@ -264,6 +264,14 @@ $border-color: #f6f9ff;
   }
 }
 
+.gdpr {
+  .compliance__content {
+    ol {
+      padding-left: 15px;
+    }
+  }
+}
+
 
 .compliance__shoutout {
   clear: left;

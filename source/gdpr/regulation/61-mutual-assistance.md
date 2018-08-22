@@ -6,9 +6,9 @@
 
 4. The requested supervisory authority shall not refuse to comply with the request unless:
 
-(a) it is not competent for the subject-matter of the request or for the measures it is requested to execute; or
+    (a) it is not competent for the subject-matter of the request or for the measures it is requested to execute; or
 
-(b) compliance with the request would infringe this Regulation or Union or Member State law to which the supervisory authority receiving the request is subject.
+    (b) compliance with the request would infringe this Regulation or Union or Member State law to which the supervisory authority receiving the request is subject.
 
 5. The requested supervisory authority shall inform the requesting supervisory authority of the results or, as the case may be, of the progress of the measures taken in order to respond to the request. The requested supervisory authority shall provide reasons for any refusal to comply with a request pursuant to paragraph 4.
 

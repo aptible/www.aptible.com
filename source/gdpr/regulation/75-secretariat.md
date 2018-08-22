@@ -10,16 +10,16 @@
 
 6. The secretariat shall be responsible in particular for:
 
-(a) the day-to-day business of the Board;
+    (a) the day-to-day business of the Board;
 
-(b) communication between the members of the Board, its Chair and the Commission;
+    (b) communication between the members of the Board, its Chair and the Commission;
 
-(c) communication with other institutions and the public;
+    &#40;c) communication with other institutions and the public;
 
-(d) the use of electronic means for the internal and external communication;
+    (d) the use of electronic means for the internal and external communication;
 
-(e) the translation of relevant information;
+    (e) the translation of relevant information;
 
-(f) the preparation and follow-up of the meetings of the Board;
+    (f) the preparation and follow-up of the meetings of the Board;
 
-(g) the preparation, drafting and publication of opinions, decisions on the settlement of disputes between supervisory authorities and other texts adopted by the Board.
+    (g) the preparation, drafting and publication of opinions, decisions on the settlement of disputes between supervisory authorities and other texts adopted by the Board.

@@ -2,13 +2,13 @@
 
 2. This Regulation does not apply to the processing of personal data:
 
-(a) in the course of an activity which falls outside the scope of Union law;
+    (a) in the course of an activity which falls outside the scope of Union law;
 
-(b) by the Member States when carrying out activities which fall within the scope of Chapter 2 of Title V of the TEU;
+    (b) by the Member States when carrying out activities which fall within the scope of Chapter 2 of Title V of the TEU;
 
-(c) by a natural person in the course of a purely personal or household activity;
+    &#40;c) by a natural person in the course of a purely personal or household activity;
 
-(d) by competent authorities for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security.
+    (d) by competent authorities for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security.
 
 3. For the processing of personal data by the Union institutions, bodies, offices and agencies, Regulation (EC) No 45/2001 applies. Regulation (EC) No 45/2001 and other Union legal acts applicable to such processing of personal data shall be adapted to the principles and rules of this Regulation in accordance with Article 98.
 

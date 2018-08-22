@@ -8,11 +8,11 @@
 
 5. Information provided under Articles 13 and 14 and any communication and any actions taken under Articles 15 to 22 and 34 shall be provided free of charge. Where requests from a data subject are manifestly unfounded or excessive, in particular because of their repetitive character, the controller may either:
 
-(a) charge a reasonable fee taking into account the administrative costs of providing the information or communication or taking the action requested; or
+    (a) charge a reasonable fee taking into account the administrative costs of providing the information or communication or taking the action requested; or
 
-(b) refuse to act on the request.
+    (b) refuse to act on the request.
 
-The controller shall bear the burden of demonstrating the manifestly unfounded or excessive character of the request.
+    The controller shall bear the burden of demonstrating the manifestly unfounded or excessive character of the request.
 
 6. Without prejudice to Article 11, where the controller has reasonable doubts concerning the identity of the natural person making the request referred to in Articles 15 to 21, the controller may request the provision of additional information necessary to confirm the identity of the data subject.
 

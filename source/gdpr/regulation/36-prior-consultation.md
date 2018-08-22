@@ -4,17 +4,17 @@
 
 3. When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with:
 
-(a) where applicable, the respective responsibilities of the controller, joint controllers and processors involved in the processing, in particular for processing within a group of undertakings;
+    (a) where applicable, the respective responsibilities of the controller, joint controllers and processors involved in the processing, in particular for processing within a group of undertakings;
 
-(b) the purposes and means of the intended processing;
+    (b) the purposes and means of the intended processing;
 
-(c) the measures and safeguards provided to protect the rights and freedoms of data subjects pursuant to this Regulation;
+    &#40;c) the measures and safeguards provided to protect the rights and freedoms of data subjects pursuant to this Regulation;
 
-(d) where applicable, the contact details of the data protection officer;
+    (d) where applicable, the contact details of the data protection officer;
 
-(e) the data protection impact assessment provided for in Article 35; and
+    (e) the data protection impact assessment provided for in Article 35; and
 
-(f) any other information requested by the supervisory authority.
+    (f) any other information requested by the supervisory authority.
 
 4. Member States shall consult the supervisory authority during the preparation of a proposal for a legislative measure to be adopted by a national parliament, or of a regulatory measure based on such a legislative measure, which relates to processing.
 

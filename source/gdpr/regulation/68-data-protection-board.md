@@ -1,4 +1,4 @@
-1. The European Data Protection Board (the �Board�) is hereby established as a body of the Union and shall have legal personality.
+1. The European Data Protection Board (the "Board") is hereby established as a body of the Union and shall have legal personality.
 
 2. The Board shall be represented by its Chair.
 
