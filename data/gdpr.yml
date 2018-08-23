@@ -1,6 +1,12 @@
-nav_items:
-  - title: What is GDPR?
-    url: /gdpr/
+name: GDPR
+slugs:
+  site: gdpr
+  regulations: requirements
+hero:
+  title: GDPR Requirements
+  subtitle: GDPR Compliance Guide
+nav:
+  regulations_title: Requirements
 regulation:
   - title: GDPR
     subparts:

@@ -1,3 +1,5 @@
+- @protocol = load_protocol
+
 - content_for :header do
   = stylesheet_link_tag :fontawesome
 
@@ -6,8 +8,8 @@
 
     .grid-container.grid--single-center
       .grid-item.text-center
-        %h2.subtitle--caps.blue Resources
-        %h1.title.white.heading--single-center #{@protocol} Compliance Guide
+        %h2.subtitle--caps.blue= @protocol.hero.subtitle
+        %h1.title.white.heading--single-center= @protocol.hero.title
 
 
 = wrap_layout :layout do
@@ -15,11 +17,12 @@
   .compliance__container
 
     .compliance__sidebar
-      .compliance__sidebar__title.first #{@protocol} Overview
-      - @nav_items.each do |nav_item|
-        %a.compliance__sidebar__item{ href: nav_item.url }= nav_item.title
+      - if @protocol.nav.extra && @protocol.nav.extra.any?
+        .compliance__sidebar__title.first #{@protocol.name} Compliance Guide
+        - @protocol.nav.extra.each do |nav_item|
+          %a.compliance__sidebar__item{ href: nav_item.url }= nav_item.title
 
-      = partial 'partials/compliance/regulation_nav', locals: { regulations: @regulations }
+      = partial 'partials/compliance/regulation_nav'
     
 
     .compliance__content

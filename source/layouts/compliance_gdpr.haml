@@ -1,8 +1,6 @@
+- @title ||= "#{current_page.data.title} | Aptible HIPAA Compliance Guide for startups"
+
 = wrap_layout :compliance do
-  - @protocol = 'GDPR'
-  - @protocol_directory = 'gdpr'
-  - @regulations = data.gdpr.regulation
-  - @nav_items = data.gdpr.nav_items
   = yield
 
 -# GDPR only has one section, so always expand it

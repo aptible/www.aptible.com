@@ -1,0 +1,151 @@
+---
+title: What is a HIPAA BAA?
+---
+
+%section
+  %h1 What is a HIPAA BAA?
+  %p At Aptible, we get a lot of questions about HIPAA business associate agreements, or "BAAs." This post will explain some of the essential concepts that cloud-hosted software development organizations should know about BAAs.
+  %p For a broader overview of HIPAA, see our post on <a href="/resources/common-hipaa-questions/">common HIPAA questions</a>.
+  %p <strong>One caveat, as always: This post is for informational purposes only. Aptible is not a law firm, and this post is not legal advice. You should contact an attorney to obtain advice with respect to particular issues or problems, including contracts and BAAs.</strong>
+
+%section
+  %h2 Table of Contents
+  %ol
+    %li= link_to('What is a BAA?', '#what-is-a-baa')
+    %li
+      = link_to('What (or who?) is a Business Associate?', '#what-or-who-is-a-business-associate')
+      %ul
+        %li= link_to('What does it mean to handle PHI "on behalf of" another entity?', '#what-does-it-mean-to-handle-phi-on-behalf-of-another-entity')
+        %li= link_to('Do employees need to sign a BAA?', '#do-employees-need-to-sign-a-baa')
+        %li= link_to('Do contractors need to sign a BAA?', '#do-contractors-need-to-sign-a-baa')
+    %li= link_to('When is a BAA required?', '#when-is-a-baa-required')
+    %li= link_to('What does the BAA requirement mean for choosing our stack?', '#what-does-the-baa-requirement-mean-for-choosing-our-stack')
+    %li= link_to('What if a vendor signs a BAA, but I don\'t think they\'re really compliant?', '#what-if-a-vendor-signs-a-baa-but-i-dont-think-theyre-really-compliant')
+    %li= link_to('What needs to be in a BAA?', '#what-needs-to-be-in-a-baa')
+    %li= link_to('What are other common terms to find in a BAA?', '#what-are-other-common-terms-to-find-in-a-baa')
+    %li= link_to('What shouldn\'t be in a BAA?', '#what-shouldnt-be-in-a-baa')
+    %li= link_to('Example BAAs', '#example-baas')
+
+%section#what-is-a-baa
+  %h2 What is a BAA?
+  %p "BAA" is an acronym for "business associate agreement," which is an industry term for what the HIPAA regulations call a "business associate contract." Same thing.
+  %p BAAs are hybrid contractual and regulatory instruments, meaning they both satisfy HIPAA regulatory requirements <i>and</i> create liability between the parties.
+  %p Like most contracts, if one party violates the agreement, the other party may have remedies. Unlike most contracts, if a BAA isn't in place, isn't complete, or is violated, both parties may be in trouble with the federal government.
+
+%section#what-or-who-is-a-business-associate
+  %h2 What (or who?) is a Business Associate?
+  %p Check out that post on <a href="/resources/common-hipaa-questions/">common HIPAA questions</a>. The most common type of business associate is a person or organization that creates, receives, transmits, or maintains protected health information (PHI) "on behalf of" a covered entity or another business associate.
+  %p The regulations are more nuanced, but in the real world, if you handle identifiable patient data for <i>any</i> reason, most covered entities (healthcare providers, insurance companies, pharmacies, self-ensured employers, etc.) will consider you to be a business associate and make you sign a BAA.
+
+  %h3#what-does-it-mean-to-handle-phi-on-behalf-of-another-entity What does it mean to handle PHI "on behalf of" another entity?
+  %p Good question. HHS hasn't actually told us directly. It probably means the other entity (a covered entity or another business associate) either pays you or directs you in handling PHI.
+  %p For two examples of HHS interpreting what it means to handle PHI "on behalf of" an entity for purposes of determining whether a business associate relationship exists, see <a href="https://www.gpo.gov/fdsys/pkg/FR-2013-01-25/pdf/2013-01073.pdf">page 5572 of the final HIPAA Omnibus rule</a> and HHS's <a href="/assets/what-is-a-hipaa-baa/OCR-health-app-developer-scenarios-2-2016.pdf">recent guidance on when digital health app developers may be business associates</a>.
+
+  %h3#do-employees-need-to-sign-a-baa Do employees need to sign a BAA?
+  %p No, members of your workforce are not your business associates, but you are responsible for supervising their access to PHI and training them on security and privacy practices. Your "workforce" includes paid employees, but also volunteers, trainees, temporary staff, and anyone else under your direct control.
+
+  %h3#do-contractors-need-to-sign-a-baa Do contractors need to sign a BAA?
+  %p Probably. Most of the time independent contractors and consultants will not be under your direct control and should be treated as business associates, meaning they need to be prepared to comply fully with HIPAA, including signing a BAA and accepting liability for compliance.
+
+%section#when-is-a-baa-required
+  %h2 When is a BAA required?
+  %p Any time a business associate relationship exists between two parties, they are required to execute a BAA. (Note that a BAA doesn't need to be a standalone agreement. The required provisions be can incorporated into terms of service, master service agreements, data security agreements, etc.)
+  %p There are two kinds of business associate relationships:
+  %ol
+    %li Between a covered entity and a business associate; and
+    %li Between a business associate and a subcontractor business associate.
+  %p BAAs work like a chain: A covered entity customer of yours is not required to have a BAA with your subcontractor.
+  %p For example, if you sell SaaS that handles PHI to a large self-insured employer (a covered entity) and host your services on Aptible:
+  %ol
+    %li You are a business associate of the employer,
+    %li Aptible is your business associate, and
+    %li AWS is Aptible's business associate, but
+    %li Neither you nor your customer are required to have a BAA with AWS unless you also use AWS directly.
+
+%section#what-does-the-baa-requirement-mean-for-choosing-our-stack
+  %h2 What does the BAA requirement mean for choosing our stack?
+  %p In addition to Aptible or another hosting provider, you probably use a range of third-party app and workflow services to build your products and run your business. For example, you might want to use Twilio for sending SMS, Mailgun for transactional email, Mixpanel for analytics, AWS RDS for your database, Papertrail for logging, Slack for internal communication, Gmail for email, etc. Some of those providers will sign BAAs, others will not.
+  %p <strong>Be careful to not have any vendor create, receive, transmit, or maintain PHI on your behalf without a BAA in place.</strong>
+  %p If they don't sign a BAA, keep PHI out of their service.
+  %p You might be tempted to use a service with PHI anyways, or look the other way. Don't do that. HHS just hit a healthcare system with a <a href="http://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/north-memorial-health-care/index.html">$1.55 million fine settlement for failure to execute a BAA with a vendor</a>. Last year, HHS fined another covered entity <a href="http://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/examples/semc/index.html">$218,400, in part for using an Internet-based document sharing application</a> (think Dropbox or Google Drive) for PHI without a BAA.
+  %p So if you want to use service with PHI but can't find a vendor who will sign a BAA, you may have to build that service yourself. Ugh.
+  %p In that case, self-hosting an open-source service on a private stack using Docker containers is becoming a popular choice. Among Aptible customers, <a href="https://github.com/aptible/docker-sentry">Sentry</a> for error monitoring and <a href="https://github.com/aptible/docker-elasticsearch">Elasticsearch</a> + <a href="https://github.com/aptible/docker-kibana">Kibana</a> for logging are two common setups. <a href="https://github.com/aptible?query=docker-">All of our open-source Docker images</a> are designed for portability to private environments.
+
+%section#what-if-a-vendor-signs-a-baa-but-i-dont-think-theyre-really-compliant
+  %h2 What if a vendor signs a BAA, but I don't think they're really compliant?
+  %p Tell them to GTFO.
+  %p Some version of the following conversation happens on a fairly regular basis:
+  %pre
+    > Customer: I want to spend $MONEY on your service. Are you HIPAA-compliant?
+    >
+    > Shady Vendor: Yes! Of course! We have all the HIPAAs.
+    >
+    > Customer: Will you sign a BAA?
+    >
+    > SV: Yes! Of course!
+    >
+    > Customer: [amazed at how easy that was]
+    >
+    > SV: ... so, what's a BAA?
+  %p If you know that a business associate of yours has materially breached a BAA, the HIPAA regulations say you must correct it or terminate the BAA. If you don't, you could be on the hook for the vendor's non-compliance. And it makes HHS very angry when entities ignore the HIPAA rules on purpose.
+  %p That said, HIPAA does not require that you police your vendors. When they handle PHI for you, they become directly liable for compliance and are subject to penalties and enforcement on their own.
+
+%section#what-needs-to-be-in-a-baa
+  %h2 What needs to be in a BAA?
+  %p The full requirements are in the text of the regulations. HHS publishes an <a href="http://www.hhs.gov/sites/default/files/hipaa-simplification-201303.pdf">"Administrative Simplification"</a> that presents all the HIPAA regulatory standards in one document. Look at §§ 164.314 (p. 67) and 164.504 (p. 81) in particular.
+  %p HHS also publishes <a href="http://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html">summary BAA guidance</a> with a list of the 10 topics that BAAs must address and sample provisions - definitely recommended reading.
+  %p In very brief summary, the main requirements for a BAA are to:
+  %ul
+    %li Whitelist the permitted uses and disclosures of PHI. Anything not in the whitelist is not allowed. Subcontractor use and disclosure must comply with the whitelist.
+    %li Recite things you have to do anyways under the regulations (comply with the Security Rule, report non-whitelisted uses and disclosures, obey HHS). Because it's a contract, failure to comply means you may breach the BAA, in addition to potentially being in trouble with HHS.
+    %li Allow the upstream entity to terminate the BAA if the downstream business associate violates a material term of the BAA. Often the underlying contract is conditioned on a BAA being in place, which means you're fired.
+    %li Address data lifecycle events such as amendments to PHI, requests by patients for their PHI, return or destruction of PHI at the end of the BAA, and logging when you disclose PHI to a third party.
+  %p Remember that signing a BAA and complying with HIPAA are different. The majority of HIPAA requirements are not memorialized in BAAs, but they still apply.
+
+%section#what-are-other-common-terms-to-find-in-a-baa
+  %h2 What are other common terms to find in a BAA?
+  %ul
+    %li Restrictions on how to use or configure the services provided. For example, we require Aptible customers to force SSL/TLS for their apps.
+    %li Modifications to the default HIPAA incident reporting rules. HIPAA requires business associates to report "security incidents" upstream, but the definition of that term is overly broad, and can be construed to include pings, port scans, isolated unsuccessful logon attempts, etc. The Internet is a noisy place. Don't accidentally agree to report those kinds of low-level "incidents" on a case-by-case basis, or on a rolling timeline. Aggregate reporting or giving notice in the BAA itself is a more sane choice.
+    %li Modifications to the breach reporting window. Business associates always need to notify covered entities of breaches "without unreasonable delay and in no case later than 60 calendar days after discovery of a breach." Most covered entities want a shorter hard stop.
+    %li Breach indemnification provisions. Indemnification is complex enough to be a separate blog post. tl;dr: Make sure you're only on the hook for things that are actually your fault - where your action or omission was negligent or intentional. Liability caps for regulatory breaches are uncommon.
+    %li Breach insurance requirements. Usually at least $2M for cyber. This sometimes goes in the main contract.
+    %li Specific security obligations of the downstream entity. Usually these are incorporated into the main contract or an appendix, and accompanied by a vendor security audit.
+
+%section#what-shouldnt-be-in-a-baa
+  %h2 What shouldn't be in a BAA?
+
+  %h3 Strict inheritance of all BAA terms by subcontractors
+  %p Part of the Privacy Rule says that subcontractors business associates must "agree to the same restrictions and conditions that apply to the business associate with respect to such information."
+  %p Some entities misunderstand this to mean that <i>all</i> provisions of <i>all</i> BAAs down the chain must be identical, including custom security controls. This is wrong and unnecessary.
+  %p The intent of the rule is to make sure a business associate can't end-run <i>privacy</i> restrictions by contracting out to a third party. If the business associate isn't allowed to perform a use or disclosure, their subcontractors aren't either.
+  %p Security is a separate matter. The Security Rule has its own set of organizational requirements, which do not include strict inheritance of controls. That makes sense in light of the Security Rule's emphasis on flexibility and application of controls that are "reasonable and appropriate" to each entity.
+
+  %h3 Unrealistic breach reporting timelines
+  %p It is fairly common for covered entities to push for very short breach reporting triggers and timelines. Sometimes this is driven by the mistaken belief that the covered entity has 60 days from the time of the first discovery of the breach _by anyone_ to complete its Breach Notification Rule obligations.
+  %p Breach reporting runs in serial, not parallel. (See <a href="https://www.gpo.gov/fdsys/pkg/FR-2013-01-25/pdf/2013-01073.pdf">page 5655 of the final HIPAA Omnibus rule</a>).
+  %p Don't agree to report breaches "within $X days" of the breach. You can't - odds are you may not even know there was a breach by then. Use the "known or should have known" threshold in the Breach Notification Rule.
+
+  %h3 Requiring subcontractors to be legal agents
+  %p An "agent," in the legal sense, is someone who acts as you. For the purposes of breach notification, an agent's discovery of a breach is imputed to you, as are the legal consequences of their actions. Almost every subcontractor or vendor agreement expressly disclaims an agency relationship between the parties. A BAA that requires all of your subcontractors to be your agents is unnecessary, dangerous, and probably impossible to comply with.
+
+  %h3 Unlimited liability
+  %p Always talk with an attorney to understand your potential liability. Liability and indemnification provisions may appear both in your underlying contract and your BAA - make sure you understand how they work together, and which terms control in the event of a conflict. For startups, contracts with no limitations on liability will make you toxic to potential acquirers.
+  %p Liability has both breadth and depth. Breadth, or scope, means the types of damages that you might be liable for. In general, you should only accept certain types of liability. Unlimited liability means that, in addition to any breach indemnification, your customers could also potentially sue you for loss of business, loss of reputation, and other consequential damages. It is common to exclude those types of liability.
+  %p Depth refers to how much you might potentially be liable for. Another way to limit liability is through a total dollar cap. This is common for general liability (i.e., if you don't hold up your end of the underlying contract), but uncommon for breaches, where the normal practice is uncapped indemnification. This isn't as bad as it sounds because the types and amounts of costs involved in breach response are somewhat predictable and insurable.
+
+%section#example-baas
+  %h2 Example BAAs
+  %ol
+    %li BAA Template  [ <a href="/assets/what-is-a-hipaa-baa/aptible_baa_template.docx">docx</a> | <a href="/assets/what-is-a-hipaa-baa/aptible_baa_template.pdf">pdf</a> ] - Adapted from [HHS's guidance on business associate contracts][1]. This example is written to be executed between a covered entity and a business associate, but can be adapted for use between a business associate and a subcontractor.
+    %li Aptible's BAA  [ <a href="/assets/what-is-a-hipaa-baa/aptible_baa_20160317.pdf">pdf</a> ] - Our standard BAA, adapted for our specific use case and built to work with our <a href="/legal/terms-of-service/">Terms of Service</a>.
+
+  %p Feel free to incorporate parts of these examples into your own BAAs, but <strong>always consult an attorney for specific legal advice.</strong>
+
+%section
+  %h2 Next Steps
+  %p If you have any questions about this post, or you'd like to chat about how to design and scale a HIPAA-compliant engineering organization in the cloud, feel free to <a href="http://contact.aptible.com">contact us</a>.
+  %p
+    %strong Update - March 29, 2016: Added a table of contents.
+  %p
+    %strong Update - October 29, 2016: Formatting edits.

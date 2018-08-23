@@ -79,9 +79,9 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/hipaa/*', layout: :compliance_hipaa
-page '/hipaa/regulation/*', layout: :compliance_hipaa_regulation
+page '/hipaa/regulations/*', layout: :compliance_hipaa_regulation
 page '/gdpr/*', layout: :compliance_gdpr
-page '/gdpr/regulation/*', layout: :compliance_gdpr_regulation
+page '/gdpr/requirements/*', layout: :compliance_gdpr_regulation
 
 #
 # Blog

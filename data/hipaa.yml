@@ -1,8 +1,17 @@
-nav_items:
-  - title: What is HIPAA?
-    url: /hipaa/
-  - title: HIPAA For Developers
-    url: /hipaa/for-developers/
+name: HIPAA
+slugs:
+  site: hipaa
+  regulations: regulations
+hero:
+  title: HIPAA Overview & Regulations
+  subtitle: HIPAA Compliance Guide
+nav:
+  regulations_title: Regulations
+  extra:
+    - title: What is HIPAA?
+      url: /hipaa/
+    - title: What is a HIPAA BAA?
+      url: /hipaa/what-is-a-baa/
 regulation:
   - title: General Administrative Requirements
     subparts:

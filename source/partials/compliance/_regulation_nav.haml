@@ -1,5 +1,5 @@
-.compliance__sidebar__title.first Regulation
-- regulations.each do |section|
+.compliance__sidebar__title.first= @protocol.nav.regulations_title
+- @protocol.regulation.each do |section|
   %a.compliance__sidebar__item.compliance__expandable.compliance__sidebar__item--level1
     = section.title
     .compliance__arrow
@@ -15,7 +15,7 @@
       - if subpart.subparts
         .compliance__expandable__content
           - subpart.subparts.each do |sub_subpart|
-            %a.compliance__sidebar__item.compliance__sidebar__item--level3{ href: "/#{@protocol_directory}/regulation/#{sub_subpart.url}/" }
+            %a.compliance__sidebar__item.compliance__sidebar__item--level3{ href: "/#{@protocol.slugs.site}/#{@protocol.slugs.regulations}/#{sub_subpart.url}/" }
               - if sub_subpart.id
                 %span.compliance__sidebar__regulation-id= sub_subpart.id
               = sub_subpart.title
