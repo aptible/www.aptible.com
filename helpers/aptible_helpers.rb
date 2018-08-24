@@ -10,7 +10,7 @@ module AptibleHelpers
       return pg_title
     elsif current_page.url.include?('/blog')
       return "#{pg_title} | Aptible Blog"
-    elsif current_page.url.start_with?('/hipaa/') || current_page.url.start_with?('/gdpr/')
+    elsif current_page.url.start_with?('/hipaa/', '/gdpr/')
       return pg_title
     end
 
