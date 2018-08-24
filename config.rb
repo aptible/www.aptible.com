@@ -78,9 +78,9 @@ activate :livereload, host: 'localhost' if ENV['ENABLE_LIVERELOAD']
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-page '/hipaa/*', layout: :compliance_hipaa
+page '/hipaa/*', layout: :compliance
 page '/hipaa/regulations/*', layout: :compliance_hipaa_regulation
-page '/gdpr/*', layout: :compliance_gdpr
+page '/gdpr/*', layout: :compliance
 page '/gdpr/requirements/*', layout: :compliance_gdpr_regulation
 
 #

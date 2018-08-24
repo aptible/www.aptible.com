@@ -3,12 +3,11 @@
 - @title = "#{@regulation.title} | HIPAA Regulations hosted by Aptible"
 - @description = "Explore #{@regulation.title} (#{@regulation.id}) of the #{@regulation.parents.last.title} of the HIPAA Regulations. The full HIPAA Regulation text as provided in the HIPAA Administrative Simplification, annotated by Aptible, easily searchable."
 
-= wrap_layout :compliance_hipaa do
+= wrap_layout :compliance do
   %section
     %h4= @regulation.parents.map {|p| p.title}.join(' &nbsp; > &nbsp; ')
     %h1 #{@regulation.id} #{@regulation.title}
 
-  %section
     = yield
 
   = partial 'partials/compliance/pagination'

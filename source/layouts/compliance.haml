@@ -1,4 +1,5 @@
 - @protocol = load_protocol
+- @title ||= "#{current_page.data.title} | #{@protocol.extra_content_title_append}"
 
 - content_for :header do
   = stylesheet_link_tag :fontawesome
@@ -27,10 +28,12 @@
 
     .compliance__content
       .compliance__search-bar-container
-        %input.compliance__search-bar.st-default-search-input{ type: 'text', placeholder: 'Search' }
+        %input.compliance__search-bar{ type: 'text', placeholder: 'Search' }
         .compliance__search-icon
           %i.far.fa-search
         .compliance__search-bar-border
+      
+      .compliance__search-container
       
       
       = yield

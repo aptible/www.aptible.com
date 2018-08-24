@@ -1,8 +1,9 @@
 .compliance__sidebar__title.first= @protocol.nav.regulations_title
 - @protocol.regulation.each do |section|
-  %a.compliance__sidebar__item.compliance__expandable.compliance__sidebar__item--level1
-    = section.title
-    .compliance__arrow
+  - if @protocol.regulation.count > 1
+    %a.compliance__sidebar__item.compliance__expandable.compliance__sidebar__item--level1
+      = section.title
+      .compliance__arrow
 
   .compliance__expandable__content
     - section.subparts.each do |subpart|

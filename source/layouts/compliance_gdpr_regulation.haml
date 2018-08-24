@@ -3,12 +3,11 @@
 - @title = "#{@regulation.title} | GDPR Requirements hosted by Aptible"
 - @description = "Explore #{@regulation.title} (Article #{@regulation.id}) of the #{@regulation.parents.last.title} of the GDPR Requirements. The full GDPR Requirements text, annotated by Aptible, easily searchable."
 
-= wrap_layout :compliance_gdpr do
+= wrap_layout :compliance do
   %section
     %h4 #{@regulation.parents.last.id} &nbsp; > &nbsp; Article #{@regulation.id}
     %h1 #{@regulation.title}
 
-  %section
     = yield
 
   = partial 'partials/compliance/pagination'
