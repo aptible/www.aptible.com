@@ -27,7 +27,7 @@
 
     .compliance__content
       .compliance__search-bar-container
-        %input.compliance__search-bar{ type: 'text', placeholder: 'Search' }
+        %input.compliance__search-bar.st-default-search-input{ type: 'text', placeholder: 'Search' }
         .compliance__search-icon
           %i.far.fa-search
         .compliance__search-bar-border
@@ -61,3 +61,11 @@
       $(this).next('.compliance__expandable__content').slideToggle();
     });
   });
+
+:javascript
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','#{@protocol.search_key}','2.0.0');
