@@ -8,13 +8,13 @@
 
     (b) ensures that persons authorised to process the personal data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;
 
-    &#40;c) takes all measures required pursuant to Article 32;
+    &#40;c) takes all measures required pursuant to [Article 32](/gdpr/articles/32-security-of-processing/);
 
     (d) respects the conditions referred to in paragraphs 2 and 4 for engaging another processor;
 
     (e) taking into account the nature of the processing, assists the controller by appropriate technical and organisational measures, insofar as this is possible, for the fulfilment of the controller's obligation to respond to requests for exercising the data subject's rights laid down in Chapter III;
 
-    (f) assists the controller in ensuring compliance with the obligations pursuant to Articles 32 to 36 taking into account the nature of processing and the information available to the processor;
+    (f) assists the controller in ensuring compliance with the obligations pursuant to Articles [32](/gdpr/articles/32-security-of-processing/) to [36](/gdpr/articles/36-prior-consultation/) taking into account the nature of processing and the information available to the processor;
 
     (g) at the choice of the controller, deletes or returns all the personal data to the controller after the end of the provision of services relating to processing, and deletes existing copies unless Union or Member State law requires storage of the personal data;
 
@@ -24,14 +24,14 @@
 
 4. Where a processor engages another processor for carrying out specific processing activities on behalf of the controller, the same data protection obligations as set out in the contract or other legal act between the controller and the processor as referred to in paragraph 3 shall be imposed on that other processor by way of a contract or other legal act under Union or Member State law, in particular providing sufficient guarantees to implement appropriate technical and organisational measures in such a manner that the processing will meet the requirements of this Regulation. Where that other processor fails to fulfil its data protection obligations, the initial processor shall remain fully liable to the controller for the performance of that other processor's obligations.
 
-5. Adherence of a processor to an approved code of conduct as referred to in Article 40 or an approved certification mechanism as referred to in Article 42 may be used as an element by which to demonstrate sufficient guarantees as referred to in paragraphs 1 and 4 of this Article.
+5. Adherence of a processor to an approved code of conduct as referred to in [Article 40](/gdpr/articles/40-codes-of-conduct/) or an approved certification mechanism as referred to in [Article 42](/gdpr/articles/42-certification/) may be used as an element by which to demonstrate sufficient guarantees as referred to in paragraphs 1 and 4 of this Article.
 
-6. Without prejudice to an individual contract between the controller and the processor, the contract or the other legal act referred to in paragraphs 3 and 4 of this Article may be based, in whole or in part, on standard contractual clauses referred to in paragraphs 7 and 8 of this Article, including when they are part of a certification granted to the controller or processor pursuant to Articles 42 and 43.
+6. Without prejudice to an individual contract between the controller and the processor, the contract or the other legal act referred to in paragraphs 3 and 4 of this Article may be based, in whole or in part, on standard contractual clauses referred to in paragraphs 7 and 8 of this Article, including when they are part of a certification granted to the controller or processor pursuant to Articles [42](/gdpr/articles/42-certification/) and [43](/gdpr/articles/43-certification-bodies/).
 
-7. The Commission may lay down standard contractual clauses for the matters referred to in paragraph 3 and 4 of this Article and in accordance with the examination procedure referred to in Article 93(2).
+7. The Commission may lay down standard contractual clauses for the matters referred to in paragraph 3 and 4 of this Article and in accordance with the examination procedure referred to in [Article 93](/gdpr/articles/93-committee-procedure/)(2).
 
-8. A supervisory authority may adopt standard contractual clauses for the matters referred to in paragraph 3 and 4 of this Article and in accordance with the consistency mechanism referred to in Article 63.
+8. A supervisory authority may adopt standard contractual clauses for the matters referred to in paragraph 3 and 4 of this Article and in accordance with the consistency mechanism referred to in [Article 63](/gdpr/articles/63-consistency-mechanism/).
 
 9. The contract or the other legal act referred to in paragraphs 3 and 4 shall be in writing, including in electronic form.
 
-10. Without prejudice to Articles 82, 83 and 84, if a processor infringes this Regulation by determining the purposes and means of processing, the processor shall be considered to be a controller in respect of that processing.
+10. Without prejudice to Articles [82](/gdpr/articles/82-right-to-compensation-liability/), [83](/gdpr/articles/83-conditions-imposing-fines/) and [84](/gdpr/articles/84-penalties/), if a processor infringes this Regulation by determining the purposes and means of processing, the processor shall be considered to be a controller in respect of that processing.

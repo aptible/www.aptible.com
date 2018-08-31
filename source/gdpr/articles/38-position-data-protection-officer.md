@@ -1,6 +1,6 @@
 1. The controller and the processor shall ensure that the data protection officer is involved, properly and in a timely manner, in all issues which relate to the protection of personal data.
 
-2. The controller and processor shall support the data protection officer in performing the tasks referred to in Article 39 by providing resources necessary to carry out those tasks and access to personal data and processing operations, and to maintain his or her expert knowledge.
+2. The controller and processor shall support the data protection officer in performing the tasks referred to in [Article 39](/gdpr/articles/39-tasks-data-protection-officer/) by providing resources necessary to carry out those tasks and access to personal data and processing operations, and to maintain his or her expert knowledge.
 
 3. The controller and processor shall ensure that the data protection officer does not receive any instructions regarding the exercise of those tasks. He or she shall not be dismissed or penalised by the controller or the processor for performing his tasks. The data protection officer shall directly report to the highest management level of the controller or the processor.
 

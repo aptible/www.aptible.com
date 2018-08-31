@@ -8,4 +8,4 @@
 
 5. Where a controller or processor has, in accordance with paragraph 4, paid full compensation for the damage suffered, that controller or processor shall be entitled to claim back from the other controllers or processors involved in the same processing that part of the compensation corresponding to their part of responsibility for the damage, in accordance with the conditions set out in paragraph 2.
 
-6. Court proceedings for exercising the right to receive compensation shall be brought before the courts competent under the law of the Member State referred to in Article 79(2).
+6. Court proceedings for exercising the right to receive compensation shall be brought before the courts competent under the law of the Member State referred to in [Article 79](/gdpr/articles/79-right-remedy-controller-processor/)(2).

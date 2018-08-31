@@ -1,4 +1,4 @@
-1. Without prejudice to the tasks and powers of the competent supervisory authority under Articles 57 and 58, the monitoring of compliance with a code of conduct pursuant to Article 40 may be carried out by a body which has an appropriate level of expertise in relation to the subject-matter of the code and is accredited for that purpose by the competent supervisory authority.
+1. Without prejudice to the tasks and powers of the competent supervisory authority under Articles [57](/gdpr/articles/57-tasks/) and [58](/gdpr/articles/58-powers/), the monitoring of compliance with a code of conduct pursuant to [Article 40](/gdpr/articles/40-codes-of-conduct/) may be carried out by a body which has an appropriate level of expertise in relation to the subject-matter of the code and is accredited for that purpose by the competent supervisory authority.
 
 2. A body as referred to in paragraph 1 may be accredited to monitor compliance with a code of conduct where that body has:
 
@@ -10,7 +10,7 @@
 
     (d) demonstrated to the satisfaction of the competent supervisory authority that its tasks and duties do not result in a conflict of interests.
 
-3. The competent supervisory authority shall submit the draft criteria for accreditation of a body as referred to in paragraph 1 of this Article to the Board pursuant to the consistency mechanism referred to in Article 63.
+3. The competent supervisory authority shall submit the draft criteria for accreditation of a body as referred to in paragraph 1 of this Article to the Board pursuant to the consistency mechanism referred to in [Article 63](/gdpr/articles/63-consistency-mechanism/).
 
 4. Without prejudice to the tasks and powers of the competent supervisory authority and the provisions of Chapter VIII, a body as referred to in paragraph 1 of this Article shall, subject to appropriate safeguards, take appropriate action in cases of infringement of the code by a controller or processor, including suspension or exclusion of the controller or processor concerned from the code. It shall inform the competent supervisory authority of such actions and the reasons for taking them.
 

@@ -2,4 +2,4 @@
 
 2. The controller shall implement appropriate technical and organisational measures for ensuring that, by default, only personal data which are necessary for each specific purpose of the processing are processed. That obligation applies to the amount of personal data collected, the extent of their processing, the period of their storage and their accessibility. In particular, such measures shall ensure that by default personal data are not made accessible without the individual's intervention to an indefinite number of natural persons.
 
-3. An approved certification mechanism pursuant to Article 42 may be used as an element to demonstrate compliance with the requirements set out in paragraphs 1 and 2 of this Article.
+3. An approved certification mechanism pursuant to [Article 42](/gdpr/articles/42-certification/) may be used as an element to demonstrate compliance with the requirements set out in paragraphs 1 and 2 of this Article.

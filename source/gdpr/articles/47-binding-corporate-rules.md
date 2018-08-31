@@ -1,4 +1,4 @@
-1. The competent supervisory authority shall approve binding corporate rules in accordance with the consistency mechanism set out in Article 63, provided that they:
+1. The competent supervisory authority shall approve binding corporate rules in accordance with the consistency mechanism set out in [Article 63](/gdpr/articles/63-consistency-mechanism/), provided that they:
 
     (a) are legally binding and apply to and are enforced by every member concerned of the group of undertakings, or group of enterprises engaged in a joint economic activity, including their employees;
 
@@ -16,13 +16,13 @@
 
     (d) the application of the general data protection principles, in particular purpose limitation, data minimisation, limited storage periods, data quality, data protection by design and by default, legal basis for processing, processing of special categories of personal data, measures to ensure data security, and the requirements in respect of onward transfers to bodies not bound by the binding corporate rules;
 
-    (e) the rights of data subjects in regard to processing and the means to exercise those rights, including the right not to be subject to decisions based solely on automated processing, including profiling in accordance with Article 22, the right to lodge a complaint with the competent supervisory authority and before the competent courts of the Member States in accordance with Article 79, and to obtain redress and, where appropriate, compensation for a breach of the binding corporate rules;
+    (e) the rights of data subjects in regard to processing and the means to exercise those rights, including the right not to be subject to decisions based solely on automated processing, including profiling in accordance with [Article 22](/gdpr/articles/22-automated-decision-making/), the right to lodge a complaint with the competent supervisory authority and before the competent courts of the Member States in accordance with [Article 79](/gdpr/articles/79-right-remedy-controller-processor/), and to obtain redress and, where appropriate, compensation for a breach of the binding corporate rules;
 
     (f) the acceptance by the controller or processor established on the territory of a Member State of liability for any breaches of the binding corporate rules by any member concerned not established in the Union; the controller or the processor shall be exempt from that liability, in whole or in part, only if it proves that that member is not responsible for the event giving rise to the damage;
 
-    (g) how the information on the binding corporate rules, in particular on the provisions referred to in points (d), (e) and (f) of this paragraph is provided to the data subjects in addition to Articles 13 and 14;
+    (g) how the information on the binding corporate rules, in particular on the provisions referred to in points (d), (e) and (f) of this paragraph is provided to the data subjects in addition to Articles [13](/gdpr/articles/13-information-to-be-provided/) and [14](/gdpr/articles/14-information-provided-third-party/);
 
-    (h) the tasks of any data protection officer designated in accordance with Article 37 or any other person or entity in charge of the monitoring compliance with the binding corporate rules within the group of undertakings, or group of enterprises engaged in a joint economic activity, as well as monitoring training and complaint-handling;
+    (h) the tasks of any data protection officer designated in accordance with [Article 37](/gdpr/articles/37-designation-data-protection-officer/) or any other person or entity in charge of the monitoring compliance with the binding corporate rules within the group of undertakings, or group of enterprises engaged in a joint economic activity, as well as monitoring training and complaint-handling;
 
     (i) the complaint procedures;
 
@@ -36,4 +36,4 @@
 
     (n) the appropriate data protection training to personnel having permanent or regular access to personal data.
 
-3. The Commission may specify the format and procedures for the exchange of information between controllers, processors and supervisory authorities for binding corporate rules within the meaning of this Article. Those implementing acts shall be adopted in accordance with the examination procedure set out in Article 93(2).
+3. The Commission may specify the format and procedures for the exchange of information between controllers, processors and supervisory authorities for binding corporate rules within the meaning of this Article. Those implementing acts shall be adopted in accordance with the examination procedure set out in [Article 93](/gdpr/articles/93-committee-procedure/)(2).

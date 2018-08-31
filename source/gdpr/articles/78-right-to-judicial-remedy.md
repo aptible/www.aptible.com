@@ -1,6 +1,6 @@
 1. Without prejudice to any other administrative or non-judicial remedy, each natural or legal person shall have the right to an effective judicial remedy against a legally binding decision of a supervisory authority concerning them.
 
-2. Without prejudice to any other administrative or non-judicial remedy, each data subject shall have the right to a an effective judicial remedy where the supervisory authority which is competent pursuant to Articles 55 and 56 does not handle a complaint or does not inform the data subject within three months on the progress or outcome of the complaint lodged pursuant to Article 77.
+2. Without prejudice to any other administrative or non-judicial remedy, each data subject shall have the right to a an effective judicial remedy where the supervisory authority which is competent pursuant to Articles [55](/gdpr/articles/55-competence/) and [56](/gdpr/articles/56-competence-lead-supervisory-authority/) does not handle a complaint or does not inform the data subject within three months on the progress or outcome of the complaint lodged pursuant to [Article 77](/gdpr/articles/77-right-to-lodge-complaint/).
 
 3. Proceedings against a supervisory authority shall be brought before the courts of the Member State where the supervisory authority is established.
 

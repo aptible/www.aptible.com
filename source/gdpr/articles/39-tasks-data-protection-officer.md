@@ -4,10 +4,10 @@
 
     (b) to monitor compliance with this Regulation, with other Union or Member State data protection provisions and with the policies of the controller or processor in relation to the protection of personal data, including the assignment of responsibilities, awareness-raising and training of staff involved in processing operations, and the related audits;
 
-    &#40;c) to provide advice where requested as regards the data protection impact assessment and monitor its performance pursuant to Article 35;
+    &#40;c) to provide advice where requested as regards the data protection impact assessment and monitor its performance pursuant to [Article 35](/gdpr/articles/35-protection-impact-assessment/);
 
     (d) to cooperate with the supervisory authority;
 
-    (e) to act as the contact point for the supervisory authority on issues relating to processing, including the prior consultation referred to in Article 36, and to consult, where appropriate, with regard to any other matter.
+    (e) to act as the contact point for the supervisory authority on issues relating to processing, including the prior consultation referred to in [Article 36](/gdpr/articles/36-prior-consultation/), and to consult, where appropriate, with regard to any other matter.
 
 2. The data protection officer shall in the performance of his or her tasks have due regard to the risk associated with processing operations, taking into account the nature, scope, context and purposes of processing.

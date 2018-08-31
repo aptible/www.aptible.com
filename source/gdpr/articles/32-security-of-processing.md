@@ -10,6 +10,6 @@
 
 2. In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to personal data transmitted, stored or otherwise processed.
 
-3. Adherence to an approved code of conduct as referred to in Article 40 or an approved certification mechanism as referred to in Article 42 may be used as an element by which to demonstrate compliance with the requirements set out in paragraph 1 of this Article.
+3. Adherence to an approved code of conduct as referred to in [Article 40](/gdpr/articles/40-codes-of-conduct/) or an approved certification mechanism as referred to in [Article 42](/gdpr/articles/42-certification/) may be used as an element by which to demonstrate compliance with the requirements set out in paragraph 1 of this Article.
 
 4. The controller and processor shall take steps to ensure that any natural person acting under the authority of the controller or the processor who has access to personal data does not process them except on instructions from the controller, unless he or she is required to do so by Union or Member State law.

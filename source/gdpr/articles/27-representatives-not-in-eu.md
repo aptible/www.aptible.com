@@ -1,8 +1,8 @@
-1. Where Article 3(2) applies, the controller or the processor shall designate in writing a representative in the Union.
+1. Where [Article 3](/gdpr/articles/3-territorial-scope/)(2) applies, the controller or the processor shall designate in writing a representative in the Union.
 
 2. The obligation laid down in paragraph 1 of this Article shall not apply to:
 
-    (a) processing which is occasional, does not include, on a large scale, processing of special categories of data as referred to in Article 9(1) or processing of personal data relating to criminal convictions and offences referred to in Article 10, and is unlikely to result in a risk to the rights and freedoms of natural persons, taking into account the nature, context, scope and purposes of the processing; or
+    (a) processing which is occasional, does not include, on a large scale, processing of special categories of data as referred to in [Article 9](/gdpr/articles/9-processing-special-categories/)(1) or processing of personal data relating to criminal convictions and offences referred to in [Article 10](/gdpr/articles/10-processing-criminal-data/), and is unlikely to result in a risk to the rights and freedoms of natural persons, taking into account the nature, context, scope and purposes of the processing; or
 
     (b) a public authority or body.
 

@@ -10,4 +10,4 @@
 
 3. In the cases referred to in points (a) and &#40;c) of paragraph 2, the data controller shall implement suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, at least the right to obtain human intervention on the part of the controller, to express his or her point of view and to contest the decision.
 
-4. Decisions referred to in paragraph 2 shall not be based on special categories of personal data referred to in Article 9(1), unless point (a) or (g) of Article 9(2) applies and suitable measures to safeguard the data subject's rights and freedoms and legitimate interests are in place.
+4. Decisions referred to in paragraph 2 shall not be based on special categories of personal data referred to in [Article 9](/gdpr/articles/9-processing-special-categories/)(1), unless point (a) or (g) of [Article 9](/gdpr/articles/9-processing-special-categories/)(2) applies and suitable measures to safeguard the data subject's rights and freedoms and legitimate interests are in place.

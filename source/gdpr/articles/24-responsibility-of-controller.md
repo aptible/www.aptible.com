@@ -2,4 +2,4 @@
 
 2. Where proportionate in relation to processing activities, the measures referred to in paragraph 1 shall include the implementation of appropriate data protection policies by the controller.
 
-3. Adherence to approved codes of conduct as referred to in Article 40 or approved certification mechanisms as referred to in Article 42 may be used as an element by which to demonstrate compliance with the obligations of the controller.
+3. Adherence to approved codes of conduct as referred to in [Article 40](/gdpr/articles/40-codes-of-conduct/) or approved certification mechanisms as referred to in [Article 42](/gdpr/articles/42-certification/) may be used as an element by which to demonstrate compliance with the obligations of the controller.

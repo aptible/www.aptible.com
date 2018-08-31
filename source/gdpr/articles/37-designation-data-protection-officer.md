@@ -4,7 +4,7 @@
 
     (b) the core activities of the controller or the processor consist of processing operations which, by virtue of their nature, their scope and/or their purposes, require regular and systematic monitoring of data subjects on a large scale; or
 
-    &#40;c) the core activities of the controller or the processor consist of processing on a large scale of special categories of data pursuant to Article 9 and personal data relating to criminal convictions and offences referred to in Article 10.
+    &#40;c) the core activities of the controller or the processor consist of processing on a large scale of special categories of data pursuant to [Article 9](/gdpr/articles/9-processing-special-categories/) and personal data relating to criminal convictions and offences referred to in [Article 10](/gdpr/articles/10-processing-criminal-data/).
 
 2. A group of undertakings may appoint a single data protection officer provided that a data protection officer is easily accessible from each establishment.
 
@@ -12,7 +12,7 @@
 
 4. In cases other than those referred to in paragraph 1, the controller or processor or associations and other bodies representing categories of controllers or processors may or, where required by Union or Member State law shall, designate a data protection officer. The data protection officer may act for such associations and other bodies representing controllers or processors.
 
-5. The data protection officer shall be designated on the basis of professional qualities and, in particular, expert knowledge of data protection law and practices and the ability to fulfil the tasks referred to in Article 39.
+5. The data protection officer shall be designated on the basis of professional qualities and, in particular, expert knowledge of data protection law and practices and the ability to fulfil the tasks referred to in [Article 39](/gdpr/articles/39-tasks-data-protection-officer/).
 
 6. The data protection officer may be a staff member of the controller or processor, or fulfil the tasks on the basis of a service contract.
 

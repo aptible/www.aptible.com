@@ -36,7 +36,7 @@ For the purposes of this Regulation:
 
 (b) as regards a processor with establishments in more than one Member State, the place of its central administration in the Union, or, if the processor has no central administration in the Union, the establishment of the processor in the Union where the main processing activities in the context of the activities of an establishment of the processor take place to the extent that the processor is subject to specific obligations under this Regulation;
 
-(17) "representative" means a natural or legal person established in the Union who, designated by the controller or processor in writing pursuant to Article 27, represents the controller or processor with regard to their respective obligations under this Regulation;
+(17) "representative" means a natural or legal person established in the Union who, designated by the controller or processor in writing pursuant to [Article 27](/gdpr/articles/27-representatives-not-in-eu/), represents the controller or processor with regard to their respective obligations under this Regulation;
 
 (18) "enterprise" means a natural or legal person engaged in an economic activity, irrespective of its legal form, including partnerships or associations regularly engaged in an economic activity;
 
@@ -44,7 +44,7 @@ For the purposes of this Regulation:
 
 (20) "binding corporate rules" means personal data protection policies which are adhered to by a controller or processor established on the territory of a Member State for transfers or a set of transfers of personal data to a controller or processor in one or more third countries within a group of undertakings, or group of enterprises engaged in a joint economic activity;
 
-(21) "supervisory authority" means an independent public authority which is established by a Member State pursuant to Article 51;
+(21) "supervisory authority" means an independent public authority which is established by a Member State pursuant to [Article 51](/gdpr/articles/51-supervisory-authority/);
 
 (22) "supervisory authority concerned" means a supervisory authority which is concerned by the processing of personal data because:
 
@@ -62,6 +62,6 @@ For the purposes of this Regulation:
 
 (24) "relevant and reasoned objection" means an objection to a draft decision as to whether there is an infringement of this Regulation, or whether envisaged action in relation to the controller or processor complies with this Regulation, which clearly demonstrates the significance of the risks posed by the draft decision as regards the fundamental rights and freedoms of data subjects and, where applicable, the free flow of personal data within the Union;
 
-(25) "information society service" means a service as defined in point (b) of Article 1(1) of Directive (EU) 2015/1535 of the European Parliament and of the Council (19);
+(25) "information society service" means a service as defined in point (b) of [Article 1](/gdpr/articles/1-subject-matter-objectives/)(1) of Directive (EU) 2015/1535 of the European Parliament and of the Council (19);
 
 (26) "international organisation" means an organisation and its subordinate bodies governed by public international law, or any other body which is set up by, or on the basis of, an agreement between two or more countries.

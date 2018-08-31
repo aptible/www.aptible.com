@@ -6,7 +6,7 @@
 
     &#40;c) the controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims;
 
-    (d) the data subject has objected to processing pursuant to Article 21(1) pending the verification whether the legitimate grounds of the controller override those of the data subject.
+    (d) the data subject has objected to processing pursuant to [Article 21](/gdpr/articles/21-right-to-object/)(1) pending the verification whether the legitimate grounds of the controller override those of the data subject.
 
 2. Where processing has been restricted under paragraph 1, such personal data shall, with the exception of storage, only be processed with the data subject's consent or for the establishment, exercise or defence of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the Union or of a Member State.
 

@@ -1,6 +1,6 @@
 1. When the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall communicate the personal data breach to the data subject without undue delay.
 
-2. The communication to the data subject referred to in paragraph 1 of this Article shall describe in clear and plain language the nature of the personal data breach and contain at least the information and measures referred to in points (b), &#40;c) and (d) of Article 33(3).
+2. The communication to the data subject referred to in paragraph 1 of this Article shall describe in clear and plain language the nature of the personal data breach and contain at least the information and measures referred to in points (b), &#40;c) and (d) of [Article 33](/gdpr/articles/33-notification-to-authority/)(3).
 
 3. The communication to the data subject referred to in paragraph 1 shall not be required if any of the following conditions are met:
 

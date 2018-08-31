@@ -10,7 +10,7 @@
 
     (e) upon request, provide information to any data subject concerning the exercise of their rights under this Regulation and, if appropriate, cooperate with the supervisory authorities in other Member States to that end;
 
-    (f) handle complaints lodged by a data subject, or by a body, organisation or association in accordance with Article 80, and investigate, to the extent appropriate, the subject matter of the complaint and inform the complainant of the progress and the outcome of the investigation within a reasonable period, in particular if further investigation or coordination with another supervisory authority is necessary;
+    (f) handle complaints lodged by a data subject, or by a body, organisation or association in accordance with [Article 80](/gdpr/articles/80-representation-data-subjects/), and investigate, to the extent appropriate, the subject matter of the complaint and inform the complainant of the progress and the outcome of the investigation within a reasonable period, in particular if further investigation or coordination with another supervisory authority is necessary;
 
     (g) cooperate with, including sharing information and provide mutual assistance to, other supervisory authorities with a view to ensuring the consistency of application and enforcement of this Regulation;
 
@@ -18,29 +18,29 @@
 
     (i) monitor relevant developments, insofar as they have an impact on the protection of personal data, in particular the development of information and communication technologies and commercial practices;
 
-    (j) adopt standard contractual clauses referred to in Article 28(8) and in point (d) of Article 46(2);
+    (j) adopt standard contractual clauses referred to in [Article 28](/gdpr/articles/28-processor/)(8) and in point (d) of [Article 46](/gdpr/articles/46-transfers-safeguards/)(2);
 
-    (k) establish and maintain a list in relation to the requirement for data protection impact assessment pursuant to Article 35(4);
+    (k) establish and maintain a list in relation to the requirement for data protection impact assessment pursuant to [Article 35](/gdpr/articles/35-protection-impact-assessment/)(4);
 
-    (l) give advice on the processing operations referred to in Article 36(2);
+    (l) give advice on the processing operations referred to in [Article 36](/gdpr/articles/36-prior-consultation/)(2);
 
-    (m) encourage the drawing up of codes of conduct pursuant to Article 40(1) and provide an opinion and approve such codes of conduct which provide sufficient safeguards, pursuant to Article 40(5);
+    (m) encourage the drawing up of codes of conduct pursuant to [Article 40](/gdpr/articles/40-codes-of-conduct/)(1) and provide an opinion and approve such codes of conduct which provide sufficient safeguards, pursuant to [Article 40](/gdpr/articles/40-codes-of-conduct/)(5);
 
-    (n) encourage the establishment of data protection certification mechanisms and of data protection seals and marks pursuant to Article 42(1), and approve the criteria of certification pursuant to Article 42(5);
+    (n) encourage the establishment of data protection certification mechanisms and of data protection seals and marks pursuant to [Article 42](/gdpr/articles/42-certification/)(1), and approve the criteria of certification pursuant to [Article 42](/gdpr/articles/42-certification/)(5);
 
-    (o) where applicable, carry out a periodic review of certifications issued in accordance with Article 42(7);
+    (o) where applicable, carry out a periodic review of certifications issued in accordance with [Article 42](/gdpr/articles/42-certification/)(7);
 
-    (p) draft and publish the criteria for accreditation of a body for monitoring codes of conduct pursuant to Article 41 and of a certification body pursuant to Article 43;
+    (p) draft and publish the criteria for accreditation of a body for monitoring codes of conduct pursuant to [Article 41](/gdpr/articles/41-monitoring-approved-codes-conduct/) and of a certification body pursuant to [Article 43](/gdpr/articles/43-certification-bodies/);
 
-    (q) conduct the accreditation of a body for monitoring codes of conduct pursuant to Article 41 and of a certification body pursuant to Article 43;
+    (q) conduct the accreditation of a body for monitoring codes of conduct pursuant to [Article 41](/gdpr/articles/41-monitoring-approved-codes-conduct/) and of a certification body pursuant to [Article 43](/gdpr/articles/43-certification-bodies/);
 
-    &#40;r) authorise contractual clauses and provisions referred to in Article 46(3);
+    &#40;r) authorise contractual clauses and provisions referred to in [Article 46](/gdpr/articles/46-transfers-safeguards/)(3);
 
-    (s) approve binding corporate rules pursuant to Article 47;
+    (s) approve binding corporate rules pursuant to [Article 47](/gdpr/articles/47-binding-corporate-rules/);
 
     (t) contribute to the activities of the Board;
 
-    (u) keep internal records of infringements of this Regulation and of measures taken in accordance with Article 58(2); and
+    (u) keep internal records of infringements of this Regulation and of measures taken in accordance with [Article 58](/gdpr/articles/58-powers/)(2); and
 
     (v) fulfil any other tasks related to the protection of personal data.
 
