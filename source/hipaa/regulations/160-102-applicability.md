@@ -4,11 +4,11 @@ implementation specifications
 adopted under this subchapter
 apply to the following entities:
 
-(1) A health plan.
+> (1) A health plan.
 
-(2) A health care clearinghouse.
+> (2) A health care clearinghouse.
 
-(3) A health care provider who
+> (3) A health care provider who
 transmits any health information
 in electronic form in connection
 with a transaction covered by

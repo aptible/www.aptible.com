@@ -10,17 +10,17 @@ Health care component means a component or combination of components of a hybrid
 
 Hybrid entity means a single legal entity:
 
-(1) That is a covered entity;
+> (1) That is a covered entity;
 
-(2) Whose business activities include both covered and non- covered functions; and
+> (2) Whose business activities include both covered and non- covered functions; and
 
-(3) That designates health care components in accordance with paragraph § 164.105(a)(2)(iii)(D).
+> (3) That designates health care components in accordance with paragraph § 164.105(a)(2)(iii)(D).
 
 Law enforcement official means an officer or employee of any agency or authority of the United States, a State, a territory, a political subdivision of a State or territory, or an Indian tribe, who is empowered by law to:
 
-(1) Investigate or conduct an official inquiry into a potential violation of law; or
+> (1) Investigate or conduct an official inquiry into a potential violation of law; or
 
-(2) Prosecute or otherwise conduct a criminal, civil, or administrative proceeding arising from an alleged violation of law.
+> (2) Prosecute or otherwise conduct a criminal, civil, or administrative proceeding arising from an alleged violation of law.
 
 Plan sponsor is defined as defined at section 3(16)(B) of ERISA, 29 U.S.C. 1002(16)(B).
 

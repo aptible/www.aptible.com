@@ -26,7 +26,9 @@
       = partial 'partials/compliance/regulation_nav'
     
 
-    .compliance__content
+    .compliance__content{ 'data-swiftype-index': 'true' }
+      = partial 'partials/compliance/social-share'
+
       .compliance__search-bar-container
         %input.compliance__search-bar{ type: 'text', placeholder: 'Search' }
         .compliance__search-icon
@@ -34,7 +36,6 @@
         .compliance__search-bar-border
       
       .compliance__search-container
-      
       
       = yield
 
@@ -57,12 +58,21 @@
       level1.prev().addClass('open');
     }
 
+    if (window.location.pathname.startsWith('/gdpr/') && window.location.pathname.indexOf('requirements') === -1) {
+      $('.compliance__sidebar > .compliance__expandable__content').show();
+    }
+
     // Open / close nav sections
     $('.compliance__expandable').on('click', function(e) {
       e.preventDefault();
       $(this).toggleClass('open');
       $(this).next('.compliance__expandable__content').slideToggle();
     });
+
+    // Highlight currently active GDPR recital
+    if (window.location.hash.length > 0) {
+      $(window.location.hash).addClass('highlighted');
+    }
   });
 
 :javascript

@@ -81,7 +81,7 @@ page '/*.txt', layout: false
 page '/hipaa/*', layout: :compliance
 page '/hipaa/regulations/*', layout: :compliance_hipaa_regulation
 page '/gdpr/*', layout: :compliance
-page '/gdpr/requirements/*', layout: :compliance_gdpr_regulation
+page '/gdpr/articles/*', layout: :compliance_gdpr_regulation
 
 #
 # Blog
@@ -163,6 +163,10 @@ ready do
         subpart.subparts.each do |regulation|
           regulation[:parents] = [part, subpart]
           data[protocol].flattened << regulation
+
+          if protocol == :gdpr
+            redirect "/gdpr/articles/#{regulation.id}/", "/gdpr/articles/#{regulation.url}/"
+          end
         end
       end
     end

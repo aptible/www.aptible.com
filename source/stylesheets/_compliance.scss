@@ -63,6 +63,10 @@ $border-color: #f6f9ff;
   padding: 10px 20px;
   border-bottom: 1px solid $border-color;
 
+  .compliance__sidebar__item__title {
+    padding-right: 10px;
+  }
+
   .compliance__arrow,
   .compliance__open-arrow {
     position: absolute;
@@ -191,6 +195,21 @@ $border-color: #f6f9ff;
     padding: 20px;
   }
 
+  .compliance__social-share-icons {
+    position: relative;
+    float: right;
+    z-index: 10;
+
+    @media screen and (max-width: $tablet-landscape) {
+      display: none;
+    }
+
+    .blog-post__share-link {
+      display: inline-flex;
+      cursor: pointer;
+    }
+  }
+
   h1 {
     font-family: $sf-pro-display;
     font-weight: 600;
@@ -268,6 +287,11 @@ $border-color: #f6f9ff;
   .compliance__content {
     ol {
       padding-left: 15px;
+    }
+
+    .highlighted {
+      padding: 5px 10px;
+      background-color: $lighter-blue;
     }
   }
 }

@@ -10,7 +10,7 @@
       %a.compliance__sidebar__item.compliance__expandable.compliance__sidebar__item--level2
         - if subpart.id
           %span.compliance__sidebar__regulation-id= subpart.id
-        = subpart.title
+        .compliance__sidebar__item__title= subpart.title
         .compliance__arrow
 
       - if subpart.subparts
@@ -18,7 +18,7 @@
           - subpart.subparts.each do |sub_subpart|
             %a.compliance__sidebar__item.compliance__sidebar__item--level3{ href: "/#{@protocol.slugs.site}/#{@protocol.slugs.regulations}/#{sub_subpart.url}/" }
               - if sub_subpart.id
-                %span.compliance__sidebar__regulation-id= sub_subpart.id
+                %span.compliance__sidebar__regulation-id #{@protocol.name == 'GDPR' ? 'Art. ' : ''}#{sub_subpart.id}
               = sub_subpart.title
               .compliance__open-arrow
                 %i.far.fa-long-arrow-right

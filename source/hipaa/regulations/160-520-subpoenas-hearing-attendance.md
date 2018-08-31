@@ -6,11 +6,11 @@
 
 (d) A party seeking a subpoena must file a written motion not less than 30 days before the date fixed for the hearing, unless otherwise allowed by the ALJ for good cause shown. That motion must--
 
-(1) Specify any evidence to be produced;
+> (1) Specify any evidence to be produced;
 
-(2) Designate the witnesses; and
+> (2) Designate the witnesses; and
 
-(3) Describe the address and location with sufficient particularity to permit those witnesses to be found.
+> (3) Describe the address and location with sufficient particularity to permit those witnesses to be found.
 
 (e) The subpoena must specify the time and place at which the witness is to appear and any evidence the witness is to produce.
 

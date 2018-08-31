@@ -6,11 +6,13 @@ Code set maintaining organization means an organization that creates and maintai
 
 Controlling health plan (CHP) means a health plan that--
 
-(1) Controls its own business activities, actions, or policies; or
+> (1) Controls its own business activities, actions, or policies; or
 
-(2)(i) Is controlled by an entity that is not a health plan; and
+> (2)
 
-(ii) If it has a subhealth plan(s) (as defined in this section), exercises sufficient control over the subhealth plan(s) to direct its/their business activities, actions, or policies.
+> > (i) Is controlled by an entity that is not a health plan; and
+
+> > (ii) If it has a subhealth plan(s) (as defined in this section), exercises sufficient control over the subhealth plan(s) to direct its/their business activities, actions, or policies.
 
 Covered health care provider means a health care provider that meets the definition at paragraph (3) of the definition of "covered entity" at § 160.103.
 

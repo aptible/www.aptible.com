@@ -1,23 +1,23 @@
 - post = current_page
 
 .blog-post__share-links
-  %a.blog-post__share-link.blog-post__share-link--facebook{ href: facebook_share_href(post), rel: 'noopener noreferrer', target: '_blank' }
+  %a.blog-post__share-link.blog-post__share-link--facebook{ href: post_facebook_share_href(post), rel: 'noopener noreferrer', target: '_blank' }
     = partial "images/icons/social/facebook.svg"
 
-  %a.blog-post__share-link.blog-post__share-link--twitter{ href: twitter_share_href(post), rel: 'noopener noreferrer', target: '_blank' }
+  %a.blog-post__share-link.blog-post__share-link--twitter{ href: post_twitter_share_href(post), rel: 'noopener noreferrer', target: '_blank' }
     = partial "images/icons/social/twitter.svg"
 
-  %a.blog-post__share-link.blog-post__share-link--linkedin{ href: linkedin_share_href(post), rel: 'noopener noreferrer', target: '_blank' }
+  %a.blog-post__share-link.blog-post__share-link--linkedin{ href: post_linkedin_share_href(post), rel: 'noopener noreferrer', target: '_blank' }
     = partial "images/icons/social/linkedin.svg"
 
-  %a.blog-post__share-link.blog-post__share-link--hackernews{         |
-      "data-override" => post.data.hackernews_link,                   |
-      "data-title" => post.data.title,                                |
-      href: post.data.hackernews_link || hackernews_share_href(post), |
-      rel: 'noopener noreferrer',                                     |
-      target: '_blank'                                                |
-    }                                                                 |
+  %a.blog-post__share-link.blog-post__share-link--hackernews{              |
+      "data-override" => post.data.hackernews_link,                        |
+      "data-title" => post.data.title,                                     |
+      href: post.data.hackernews_link || post_hackernews_share_href(post), |
+      rel: 'noopener noreferrer',                                          |
+      target: '_blank'                                                     |
+    }                                                                      |
     = partial "images/icons/social/hackernews.svg"
 
-  %a.blog-post__share-link.blog-post__share-link--email{ href: mailto_share_href(post) }
+  %a.blog-post__share-link.blog-post__share-link--email{ href: post_mailto_share_href(post) }
     = partial "images/icons/social/email.svg"

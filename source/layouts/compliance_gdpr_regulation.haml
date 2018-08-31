@@ -6,8 +6,40 @@
 = wrap_layout :compliance do
   %section
     %h4 #{@regulation.parents.last.id} &nbsp; > &nbsp; Article #{@regulation.id}
-    %h1 #{@regulation.title}
+    %h1 Article #{@regulation.id}: #{@regulation.title}
 
     = yield
 
+    - if @regulation.recitals.any?
+      %p Recitals: #{@regulation.recitals.map {|r| '<a href="/gdpr/recitals/#' + r.to_s + '">' + r.to_s + '</a>'}.join(', ')}
+
   = partial 'partials/compliance/pagination'
+
+  %script{ type: 'application/ld+json' }
+    :plain
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.aptible.com/gdpr/",
+            "name": "#{@regulation.parents.first.title}"
+          }
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.aptible.com/gdpr/articles/#{@regulation.parents.last.subparts.first.url}/",
+            "name": "#{@regulation.parents.last.title}"
+          }
+        },{
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "#{page_url}",
+            "name": "Article #{@regulation.id}"
+          }
+        }]
+      }

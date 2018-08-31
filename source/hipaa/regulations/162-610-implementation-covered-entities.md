@@ -4,8 +4,8 @@
 
 &#40;c) Required and permitted uses for the Employer Identifier.
  
-(1) The Employer Identifier must be used as stated in § 162.610(b).
+> (1) The Employer Identifier must be used as stated in § 162.610(b).
 
-(2) The Employer Identifier may be used for any other lawful purpose.
+> (2) The Employer Identifier may be used for any other lawful purpose.
 
 [67 FR 38020, May 31, 2002, as amended at 69 FR 3469, Jan. 23, 2004]

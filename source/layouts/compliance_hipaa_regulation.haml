@@ -11,3 +11,39 @@
     = yield
 
   = partial 'partials/compliance/pagination'
+
+  %script{ type: 'application/ld+json' }
+    :plain
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.aptible.com/hipaa/",
+            "name": "HIPAA"
+          }
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.aptible.com/hipaa/",
+            "name": "#{@regulation.parents.first.title}"
+          }
+        },{
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.aptible.com/hipaa/regulations/#{@regulation.parents.last.subparts.first.url}/",
+            "name": "#{@regulation.parents.last.title}"
+          }
+        },{
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "#{page_url}",
+            "name": "#{@regulation.id}"
+          }
+        }]
+      }

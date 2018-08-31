@@ -2,9 +2,9 @@
 
 (b) Health plans. A health plan must comply with the implementation specifications in § 162.412 no later than one of the following dates:
 
-(1) A health plan that is not a small health plan--May 23, 2007.
+> (1) A health plan that is not a small health plan--May 23, 2007.
 
-(2) A small health plan--May 23, 2008.
+> (2) A small health plan--May 23, 2008.
 
 &#40;c) Health care clearinghouses. A health care clearinghouse must comply with the implementation specifications in § 162.414 no later than May 23, 2007.
 

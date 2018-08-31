@@ -4,8 +4,8 @@
 
 &#40;c) Use of a business associate. A covered entity may use a business associate, including a health care clearinghouse, to conduct a transaction covered by this part. If a covered entity chooses to use a business associate to conduct all or part of a transaction on behalf of the covered entity, the covered entity must require the business associate to do the following:
 
-(1) Comply with all applicable requirements of this part.
+> (1) Comply with all applicable requirements of this part.
 
-(2) Require any agent or subcontractor to comply with all applicable requirements of this part.
+> (2) Require any agent or subcontractor to comply with all applicable requirements of this part.
 
 [65 FR 50367, Aug. 17, 2000, as amended at 74 FR 3325, Jan. 16, 2009]
