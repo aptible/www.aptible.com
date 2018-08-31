@@ -1,10 +1,10 @@
-(a) Standard: Permitted uses and disclosures. Except with respect to uses or disclosures that require an authorization under § 164.508(a)(2) through (4) or that are prohibited under § 164.502(a)(5)(i), a covered entity may use or disclose protected health information for treatment, payment, or health care operations as set forth in paragraph &#40;c) of this section, provided that such use or disclosure is consistent with other applicable requirements of this subpart.
+(a) Standard: Permitted uses and disclosures. Except with respect to uses or disclosures that require an authorization under [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/)(a)(2) through (4) or that are prohibited under [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(5)(i), a covered entity may use or disclose protected health information for treatment, payment, or health care operations as set forth in paragraph &#40;c) of this section, provided that such use or disclosure is consistent with other applicable requirements of this subpart.
 
 (b) Standard: Consent for uses and disclosures permitted.
 
 > (1) A covered entity may obtain consent of the individual to use or disclose protected health information to carry out treatment, payment, or health care operations.
 
-> (2) Consent, under paragraph (b) of this section, shall not be effective to permit a use or disclosure of protected health information when an authorization, under § 164.508, is required or when another condition must be met for such use or disclosure to be permissible under this subpart.
+> (2) Consent, under paragraph (b) of this section, shall not be effective to permit a use or disclosure of protected health information when an authorization, under [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/), is required or when another condition must be met for such use or disclosure to be permissible under this subpart.
 
 &#40;c) Implementation specifications: Treatment, payment, or health care operations. 
 

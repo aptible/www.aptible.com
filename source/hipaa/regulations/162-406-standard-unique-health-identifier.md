@@ -2,6 +2,6 @@
 
 (b) Required and permitted uses for the NPI. 
 
-> (1) The NPI must be used as stated in § 162.410, § 162.412, and § 162.414.
+> (1) The NPI must be used as stated in [§ 162.410](/hipaa/regulations/162-410-implementation-health-care-providers/), [§ 162.412](/hipaa/regulations/162-412-implementation-health-plans/), and [§ 162.414](/hipaa/regulations/162-414-implementation-health-care-clearinghouses/).
 
 > (2) The NPI may be used for any other lawful purpose.

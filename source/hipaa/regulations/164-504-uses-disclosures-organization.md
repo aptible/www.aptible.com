@@ -6,7 +6,7 @@ Summary health information means information, that may be individually identifia
 
 > (1) That summarizes the claims history, claims expenses, or type of claims experienced by individuals for whom a plan sponsor has provided health benefits under a group health plan; and
 
-> (2) From which the information described at § 164.514(b)(2)(i) has been deleted, except that the geographic information described in § 164.514(b)(2)(i)(B) need only be aggregated to the level of a five digit zip code.
+> (2) From which the information described at [§ 164.514](/hipaa/regulations/164-514-other-requirements/)(b)(2)(i) has been deleted, except that the geographic information described in [§ 164.514](/hipaa/regulations/164-514-other-requirements/)(b)(2)(i)(B) need only be aggregated to the level of a five digit zip code.
 
 (b)-(d) [Reserved]
 
@@ -14,11 +14,11 @@ Summary health information means information, that may be individually identifia
 
 > (1) Standard: Business associate contracts. 
 
-> > (i) The contract or other arrangement required by § 164.502(e)(2) must meet the requirements of paragraph (e)(2), (e)(3), or (e)(5) of this section, as applicable.
+> > (i) The contract or other arrangement required by [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(e)(2) must meet the requirements of paragraph (e)(2), (e)(3), or (e)(5) of this section, as applicable.
 
-> > (ii) A covered entity is not in compliance with the standards in § 164.502(e) and this paragraph, if the covered entity knew of a pattern of activity or practice of the business associate that constituted a material breach or violation of the business associate's obligation under the contract or other arrangement, unless the covered entity took reasonable steps to cure the breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the contract or arrangement, if feasible.
+> > (ii) A covered entity is not in compliance with the standards in [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(e) and this paragraph, if the covered entity knew of a pattern of activity or practice of the business associate that constituted a material breach or violation of the business associate's obligation under the contract or other arrangement, unless the covered entity took reasonable steps to cure the breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the contract or arrangement, if feasible.
 
-> > (iii) A business associate is not in compliance with the standards in § 164.502(e) and this paragraph, if the business associate knew of a pattern of activity or practice of a subcontractor that constituted a material breach or violation of the subcontractor's obligation under the contract or other arrangement, unless the business associate took reasonable steps to cure the breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the contract or arrangement, if feasible.
+> > (iii) A business associate is not in compliance with the standards in [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(e) and this paragraph, if the business associate knew of a pattern of activity or practice of a subcontractor that constituted a material breach or violation of the subcontractor's obligation under the contract or other arrangement, unless the business associate took reasonable steps to cure the breach or end the violation, as applicable, and, if such steps were unsuccessful, terminated the contract or arrangement, if feasible.
 
 > (2) Implementation specifications: Business associate contracts. A contract between the covered entity and a business associate must:
 
@@ -34,15 +34,15 @@ Summary health information means information, that may be individually identifia
 
 > > > (B) Use appropriate safeguards and comply, where applicable, with subpart C of this part with respect to electronic protected health information, to prevent use or disclosure of the information other than as provided for by its contract;
 
-> > > &#40;C) Report to the covered entity any use or disclosure of the information not provided for by its contract of which it becomes aware, including breaches of unsecured protected health information as required by § 164.410;
+> > > &#40;C) Report to the covered entity any use or disclosure of the information not provided for by its contract of which it becomes aware, including breaches of unsecured protected health information as required by [§ 164.410](/hipaa/regulations/164-410-notification-business-associate/);
 
-> > > (D) In accordance with § 164.502(e)(1)(ii), ensure that any subcontractors that create, receive, maintain, or transmit protected health information on behalf of the business associate agree to the same restrictions and conditions that apply to the business associate with respect to such information;
+> > > (D) In accordance with [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(e)(1)(ii), ensure that any subcontractors that create, receive, maintain, or transmit protected health information on behalf of the business associate agree to the same restrictions and conditions that apply to the business associate with respect to such information;
 
-> > > (E) Make available protected health information in accordance with § 164.524;
+> > > (E) Make available protected health information in accordance with [§ 164.524](/hipaa/regulations/164-524-access-of-individuals/);
 
-> > > (F) Make available protected health information for amendment and incorporate any amendments to protected health information in accordance with § 164.526;
+> > > (F) Make available protected health information for amendment and incorporate any amendments to protected health information in accordance with [§ 164.526](/hipaa/regulations/164-526-amendment-of-information/);
 
-> > > (G) Make available the information required to provide an accounting of disclosures in accordance with § 164.528;
+> > > (G) Make available the information required to provide an accounting of disclosures in accordance with [§ 164.528](/hipaa/regulations/164-528-accounting-of-disclosures/);
 
 > > > (H) To the extent the business associate is to carry out a covered entity's obligation under this subpart, comply with the requirements of this subpart that apply to the covered entity in the performance of such obligation.
  
@@ -54,15 +54,15 @@ Summary health information means information, that may be individually identifia
 
 > (3) Implementation specifications: Other arrangements. (i) If a covered entity and its business associate are both governmental entities:
 
-> > (A) The covered entity may comply with this paragraph and § 164.314(a)(1), if applicable, by entering into a memorandum of understanding with the business associate that contains terms that accomplish the objectives of paragraph (e)(2) of this section and § 164.314(a)(2), if applicable.
+> > (A) The covered entity may comply with this paragraph and [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a)(1), if applicable, by entering into a memorandum of understanding with the business associate that contains terms that accomplish the objectives of paragraph (e)(2) of this section and [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a)(2), if applicable.
 
-> > (B) The covered entity may comply with this paragraph and § 164.314(a)(1), if applicable, if other law (including regulations adopted by the covered entity or its business associate) contains requirements applicable to the business associate that accomplish the objectives of paragraph (e)(2) of this section and § 164.314(a)(2), if applicable.
+> > (B) The covered entity may comply with this paragraph and [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a)(1), if applicable, if other law (including regulations adopted by the covered entity or its business associate) contains requirements applicable to the business associate that accomplish the objectives of paragraph (e)(2) of this section and [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a)(2), if applicable.
 
-> > > (ii) If a business associate is required by law to perform a function or activity on behalf of a covered entity or to provide a service described in the definition of business associate in § 160.103 of this subchapter to a covered entity, such covered entity may disclose protected health information to the business associate to the extent necessary to comply with the legal mandate without meeting the requirements of this paragraph and § 164.314(a)(1), if applicable, provided that the covered entity attempts in good faith to obtain satisfactory assurances as required by paragraph (e)(2) of this section and § 164.314(a)(1), if applicable, and, if such attempt fails, documents the attempt and the reasons that such assurances cannot be obtained.
+> > > (ii) If a business associate is required by law to perform a function or activity on behalf of a covered entity or to provide a service described in the definition of business associate in [§ 160.103](/hipaa/regulations/160-103-definitions/) of this subchapter to a covered entity, such covered entity may disclose protected health information to the business associate to the extent necessary to comply with the legal mandate without meeting the requirements of this paragraph and [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a)(1), if applicable, provided that the covered entity attempts in good faith to obtain satisfactory assurances as required by paragraph (e)(2) of this section and [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a)(1), if applicable, and, if such attempt fails, documents the attempt and the reasons that such assurances cannot be obtained.
 
 > > > (iii) The covered entity may omit from its other arrangements the termination authorization required by paragraph (e)(2)(iii) of this section, if such authorization is inconsistent with the statutory obligations of the covered entity or its business associate.
 
-> > > (iv) A covered entity may comply with this paragraph and § 164.314(a)(1) if the covered entity discloses only a limited data set to a business associate for the business associate to carry out a health care operations function and the covered entity has a data use agreement with the business associate that complies with § 164.514(e)(4) and § 164.314(a)(1), if applicable.
+> > > (iv) A covered entity may comply with this paragraph and [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a)(1) if the covered entity discloses only a limited data set to a business associate for the business associate to carry out a health care operations function and the covered entity has a data use agreement with the business associate that complies with [§ 164.514](/hipaa/regulations/164-514-other-requirements/)(e)(4) and [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a)(1), if applicable.
 
 > (4) Implementation specifications: Other requirements for contracts and other arrangements. (i) The contract or other arrangement between the covered entity and the business associate may permit the business associate to use the protected health information received by the business associate in its capacity as a business associate to the covered entity, if necessary:
 
@@ -80,15 +80,15 @@ Summary health information means information, that may be individually identifia
 
 > > > (2) The person notifies the business associate of any instances of which it is aware in which the confidentiality of the information has been breached.
 
-> (5) Implementation specifications: Business associate contracts with subcontractors. The requirements of § 164.504(e)(2) through (e)(4) apply to the contract or other arrangement required by § 164.502(e)(1)(ii) between a business associate and a business associate that is a subcontractor in the same manner as such requirements apply to contracts or other arrangements between a covered entity and business associate.
+> (5) Implementation specifications: Business associate contracts with subcontractors. The requirements of [§ 164.504](/hipaa/regulations/164-504-uses-disclosures-organization/)(e)(2) through (e)(4) apply to the contract or other arrangement required by [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(e)(1)(ii) between a business associate and a business associate that is a subcontractor in the same manner as such requirements apply to contracts or other arrangements between a covered entity and business associate.
  
 (f)
 
 > (1) Standard: Requirements for group health plans. 
 
-> > (i) Except as provided under paragraph (f)(1)(ii) or (iii) of this section or as otherwise authorized under § 164.508, a group health plan, in order to disclose protected health information to the plan sponsor or to provide for or permit the disclosure of protected health information to the plan sponsor by a health insurance issuer or HMO with respect to the group health plan, must ensure that the plan documents restrict uses and disclosures of such information by the plan sponsor consistent with the requirements of this subpart.
+> > (i) Except as provided under paragraph (f)(1)(ii) or (iii) of this section or as otherwise authorized under [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/), a group health plan, in order to disclose protected health information to the plan sponsor or to provide for or permit the disclosure of protected health information to the plan sponsor by a health insurance issuer or HMO with respect to the group health plan, must ensure that the plan documents restrict uses and disclosures of such information by the plan sponsor consistent with the requirements of this subpart.
 
-> > (ii) Except as prohibited by § 164.502(a)(5)(i), the group health plan, or a health insurance issuer or HMO with respect to the group health plan, may disclose summary health information to the plan sponsor, if the plan sponsor requests the summary health information for purposes of:
+> > (ii) Except as prohibited by [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(5)(i), the group health plan, or a health insurance issuer or HMO with respect to the group health plan, may disclose summary health information to the plan sponsor, if the plan sponsor requests the summary health information for purposes of:
 
 > > > (A) Obtaining premium bids from health plans for providing health insurance coverage under the group health plan; or
 
@@ -110,11 +110,11 @@ Summary health information means information, that may be individually identifia
 
 > > > (D) Report to the group health plan any use or disclosure of the information that is inconsistent with the uses or disclosures provided for of which it becomes aware;
 
-> > > (E) Make available protected health information in accordance with § 164.524;
+> > > (E) Make available protected health information in accordance with [§ 164.524](/hipaa/regulations/164-524-access-of-individuals/);
 
-> > > (F) Make available protected health information for amendment and incorporate any amendments to protected health information in accordance with § 164.526;
+> > > (F) Make available protected health information for amendment and incorporate any amendments to protected health information in accordance with [§ 164.526](/hipaa/regulations/164-526-amendment-of-information/);
 
-> > > (G) Make available the information required to provide an accounting of disclosures in accordance with § 164.528;
+> > > (G) Make available the information required to provide an accounting of disclosures in accordance with [§ 164.528](/hipaa/regulations/164-528-accounting-of-disclosures/);
  
 > > > (H) Make its internal practices, books, and records relating to the use and disclosure of protected health information received from the group health plan available to the Secretary for purposes of determining compliance by the group health plan with this subpart;
 
@@ -136,7 +136,7 @@ Summary health information means information, that may be individually identifia
 
 > > (ii) Not permit a health insurance issuer or HMO with respect to the group health plan to disclose protected health information to the plan sponsor except as permitted by this paragraph;
 
-> > (iii) Not disclose and may not permit a health insurance issuer or HMO to disclose protected health information to a plan sponsor as otherwise permitted by this paragraph unless a statement required by § 164.520(b)(1)(iii)&#40;C) is included in the appropriate notice; and
+> > (iii) Not disclose and may not permit a health insurance issuer or HMO to disclose protected health information to a plan sponsor as otherwise permitted by this paragraph unless a statement required by [§ 164.520](/hipaa/regulations/164-520-notice-of-privacy-practices/)(b)(1)(iii)&#40;C) is included in the appropriate notice; and
 
 > > (iv) Not disclose protected health information to the plan sponsor for the purpose of employment-related actions or decisions or in connection with any other benefit or employee benefit plan of the plan sponsor.
 

@@ -4,7 +4,7 @@
 
 &#40;c) Required and permitted uses for the Employer Identifier.
  
-> (1) The Employer Identifier must be used as stated in § 162.610(b).
+> (1) The Employer Identifier must be used as stated in [§ 162.610](/hipaa/regulations/162-610-implementation-covered-entities/)(b).
 
 > (2) The Employer Identifier may be used for any other lawful purpose.
 

@@ -1,6 +1,6 @@
 A covered entity or business
 associate must, in accordance
-with § 164.306:
+with [§ 164.306](/hipaa/regulations/164-306-security-general/):
 
 > (a)
 
@@ -13,7 +13,7 @@ health information to allow
 access only to those persons or
 software programs that have
 been granted access rights as
-specified in § 164.308(a)(4).
+specified in [§ 164.308](/hipaa/regulations/164-308-administrative-safeguards/)(a)(4).
 
 > > (2) Implementation
 specifications:

@@ -10,13 +10,13 @@
 
 > > > (B) From the health insurance issuer or HMO with respect to the group health plan through which such individuals receive their health benefits under the group health plan.
 
-> > (ii) A group health plan that provides health benefits solely through an insurance contract with a health insurance issuer or HMO, and that creates or receives protected health information in addition to summary health information as defined in § 164.504(a) or information on whether the individual is participating in the group health plan, or is enrolled in or has disenrolled from a health insurance issuer or HMO offered by the plan, must:
+> > (ii) A group health plan that provides health benefits solely through an insurance contract with a health insurance issuer or HMO, and that creates or receives protected health information in addition to summary health information as defined in [§ 164.504](/hipaa/regulations/164-504-uses-disclosures-organization/)(a) or information on whether the individual is participating in the group health plan, or is enrolled in or has disenrolled from a health insurance issuer or HMO offered by the plan, must:
 
 > > > (A) Maintain a notice under this section; and
 
 > > > (B) Provide such notice upon request to any person. The provisions of paragraph &#40;c)(1) of this section do not apply to such group health plan.
 
-> > (iii) A group health plan that provides health benefits solely through an insurance contract with a health insurance issuer or HMO, and does not create or receive protected health information other than summary health information as defined in § 164.504(a) or information on whether an individual is participating in the group health plan, or is enrolled in or has disenrolled from a health insurance issuer or HMO offered by the plan, is not required to maintain or provide a notice under this section.
+> > (iii) A group health plan that provides health benefits solely through an insurance contract with a health insurance issuer or HMO, and does not create or receive protected health information other than summary health information as defined in [§ 164.504](/hipaa/regulations/164-504-uses-disclosures-organization/)(a) or information on whether an individual is participating in the group health plan, or is enrolled in or has disenrolled from a health insurance issuer or HMO offered by the plan, is not required to maintain or provide a notice under this section.
 
 > (3) Exception for inmates. An inmate does not have a right to notice under this section, and the requirements of this section do not apply to a correctional institution that is a covered entity.
 
@@ -32,31 +32,31 @@
 
 > > > (B) A description of each of the other purposes for which the covered entity is permitted or required by this subpart to use or disclose protected health information without the individual's written authorization.
 
-> > > &#40;C) If a use or disclosure for any purpose described in paragraphs (b)(1)(ii)(A) or (B) of this section is prohibited or materially limited by other applicable law, the description of such use or disclosure must reflect the more stringent law as defined in § 160.202 of this subchapter.
+> > > &#40;C) If a use or disclosure for any purpose described in paragraphs (b)(1)(ii)(A) or (B) of this section is prohibited or materially limited by other applicable law, the description of such use or disclosure must reflect the more stringent law as defined in [§ 160.202](/hipaa/regulations/160-202-definitions/) of this subchapter.
 
 > > > (D) For each purpose described in paragraph (b)(1)(ii)(A) or (B) of this section, the description must include sufficient detail to place the individual on notice of the uses and disclosures that are permitted or required by this subpart and other applicable law.
 
-> > > (E) A description of the types of uses and disclosures that require an authorization under § 164.508(a)(2)- (a)(4), a statement that other uses and disclosures not described in the notice will be made only with the individual's written authorization, and a statement that the individual may revoke an authorization as provided by § 164.508(b)(5).
+> > > (E) A description of the types of uses and disclosures that require an authorization under [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/)(a)(2)- (a)(4), a statement that other uses and disclosures not described in the notice will be made only with the individual's written authorization, and a statement that the individual may revoke an authorization as provided by [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/)(b)(5).
  
 > > (iii) Separate statements for certain uses or disclosures. If the covered entity intends to engage in any of the following activities, the description required by paragraph (b)(1)(ii)(A) of this section must include a separate statement informing the individual of such activities, as applicable:
 
-> > > (A) In accordance with § 164.514(f)(1), the covered entity may contact the individual to raise funds for the covered entity and the individual has a right to opt out of receiving such communications;
+> > > (A) In accordance with [§ 164.514](/hipaa/regulations/164-514-other-requirements/)(f)(1), the covered entity may contact the individual to raise funds for the covered entity and the individual has a right to opt out of receiving such communications;
 
-> > > (B) In accordance with § 164.504(f), the group health plan, or a health insurance issuer or HMO with respect to a group health plan, may disclose protected health information to the sponsor of the plan; or
+> > > (B) In accordance with [§ 164.504](/hipaa/regulations/164-504-uses-disclosures-organization/)(f), the group health plan, or a health insurance issuer or HMO with respect to a group health plan, may disclose protected health information to the sponsor of the plan; or
 
 > > > &#40;C) If a covered entity that is a health plan, excluding an issuer of a long- term care policy falling within paragraph (1)(viii) of the definition of health plan, intends to use or disclose protected health information for underwriting purposes, a statement that the covered entity is prohibited from using or disclosing protected health information that is genetic information of an individual for such purposes.
 
 > > (iv) Individual rights. The notice must contain a statement of the individual's rights with respect to protected health information and a brief description of how the individual may exercise these rights, as follows:
 
-> > > (A) The right to request restrictions on certain uses and disclosures of protected health information as provided by § 164.522(a), including a statement that the covered entity is not required to agree to a requested restriction, except in case of a disclosure restricted under § 164.522(a)(1)(vi);
+> > > (A) The right to request restrictions on certain uses and disclosures of protected health information as provided by [§ 164.522](/hipaa/regulations/164-522-request-privacy-protection/)(a), including a statement that the covered entity is not required to agree to a requested restriction, except in case of a disclosure restricted under [§ 164.522](/hipaa/regulations/164-522-request-privacy-protection/)(a)(1)(vi);
  
-> > > (B) The right to receive confidential communications of protected health information as provided by § 164.522(b), as applicable;
+> > > (B) The right to receive confidential communications of protected health information as provided by [§ 164.522](/hipaa/regulations/164-522-request-privacy-protection/)(b), as applicable;
 
-> > > &#40;C) The right to inspect and copy protected health information as provided by § 164.524;
+> > > &#40;C) The right to inspect and copy protected health information as provided by [§ 164.524](/hipaa/regulations/164-524-access-of-individuals/);
 
-> > > (D) The right to amend protected health information as provided by § 164.526;
+> > > (D) The right to amend protected health information as provided by [§ 164.526](/hipaa/regulations/164-526-amendment-of-information/);
 
-> > > (E) The right to receive an accounting of disclosures of protected health information as provided by § 164.528; and
+> > > (E) The right to receive an accounting of disclosures of protected health information as provided by [§ 164.528](/hipaa/regulations/164-528-accounting-of-disclosures/); and
 
 > > > (F) The right of an individual, including an individual who has agreed to receive the notice electronically in accordance with paragraph &#40;c)(3) of this section, to obtain a paper copy of the notice from the covered entity upon request.
 
@@ -66,19 +66,19 @@
 
 > > > (B) A statement that the covered entity is required to abide by the terms of the notice currently in effect; and
 
-> > > &#40;C) For the covered entity to apply a change in a privacy practice that is described in the notice to protected health information that the covered entity created or received prior to issuing a revised notice, in accordance with § 164.530(i)(2)(ii), a statement that it reserves the right to change the terms of its notice and to make the new notice provisions effective for all protected health information that it maintains. The statement must also describe how it will provide individuals with a revised notice.
+> > > &#40;C) For the covered entity to apply a change in a privacy practice that is described in the notice to protected health information that the covered entity created or received prior to issuing a revised notice, in accordance with [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(i)(2)(ii), a statement that it reserves the right to change the terms of its notice and to make the new notice provisions effective for all protected health information that it maintains. The statement must also describe how it will provide individuals with a revised notice.
 
 > > (vi) Complaints. The notice must contain a statement that individuals may complain to the covered entity and to the Secretary if they believe their privacy rights have been violated, a brief description of how the individual may file a complaint with the covered entity, and a statement that the individual will not be retaliated against for filing a complaint.
 
-> > (vii) Contact. The notice must contain the name, or title, and telephone number of a person or office to contact for further information as required by § 164.530(a)(1)(ii).
+> > (vii) Contact. The notice must contain the name, or title, and telephone number of a person or office to contact for further information as required by [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(a)(1)(ii).
 
 > > (viii) Effective date. The notice must contain the date on which the notice is first in effect, which may not be earlier than the date on which the notice is printed or otherwise published.
 
 > (2) Optional elements.
 
-> > (i) In addition to the information required by paragraph (b)(1) of this section, if a covered entity elects to limit the uses or disclosures that it is permitted to make under this subpart, the covered entity may describe its more limited uses or disclosures in its notice, provided that the covered entity may not include in its notice a limitation affecting its right to make a use or disclosure that is required by law or permitted by § 164.512(j)(1)(i).
+> > (i) In addition to the information required by paragraph (b)(1) of this section, if a covered entity elects to limit the uses or disclosures that it is permitted to make under this subpart, the covered entity may describe its more limited uses or disclosures in its notice, provided that the covered entity may not include in its notice a limitation affecting its right to make a use or disclosure that is required by law or permitted by [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(j)(1)(i).
 
-> > (ii) For the covered entity to apply a change in its more limited uses and disclosures to protected health information created or received prior to issuing a revised notice, in accordance with § 164.530(i)(2)(ii), the notice must include the statements required by paragraph (b)(1)(v)&#40;C) of this section.
+> > (ii) For the covered entity to apply a change in its more limited uses and disclosures to protected health information created or received prior to issuing a revised notice, in accordance with [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(i)(2)(ii), the notice must include the statements required by paragraph (b)(1)(v)&#40;C) of this section.
 
 > (3) Revisions to the notice. The covered entity must promptly revise and distribute its notice whenever there is a material change to the uses or disclosures, the individual's rights, the covered entity's legal duties, or other privacy practices stated in the notice. Except when required by law, a material change to any term of the notice may not be implemented prior to the effective date of the notice in which such material change is reflected.
 
@@ -146,6 +146,6 @@
 
 > (3) The covered entities included in the joint notice must provide the notice to individuals in accordance with the applicable implementation specifications of paragraph &#40;c) of this section. Provision of the joint notice to an individual by any one of the covered entities included in the joint notice will satisfy the provision requirement of paragraph &#40;c) of this section with respect to all others covered by the joint notice.
 
-(e) Implementation specifications: Documentation. A covered entity must document compliance with the notice requirements, as required by § 164.530(j), by retaining copies of the notices issued by the covered entity and, if applicable, any written acknowledgments of receipt of the notice or documentation of good faith efforts to obtain such written acknowledgment, in accordance with paragraph &#40;c)(2)(ii) of this section.
+(e) Implementation specifications: Documentation. A covered entity must document compliance with the notice requirements, as required by [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(j), by retaining copies of the notices issued by the covered entity and, if applicable, any written acknowledgments of receipt of the notice or documentation of good faith efforts to obtain such written acknowledgment, in accordance with paragraph &#40;c)(2)(ii) of this section.
 
 [65 FR 82802, Dec. 28, 2000, as amended at 67 FR 53271, Aug. 14, 2002; 78 FR 5701, Jan. 25, 2013]

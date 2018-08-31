@@ -92,13 +92,13 @@
 
 > > (ii) If applicable, a statement of the individual's review rights under paragraph (a)(4) of this section, including a description of how the individual may exercise such review rights; and
  
-> > (iii) A description of how the (2) The titles of the persons or offices set. The covered entity may require individual may complain to the covered entity pursuant to the complaint procedures in § 164.530(d) or to the Secretary pursuant to the procedures in § 160.306. The description must include the name, or title, and telephone number of the contact person or office designated in § 164.530(a)(1)(ii).
+> > (iii) A description of how the (2) The titles of the persons or offices set. The covered entity may require individual may complain to the covered entity pursuant to the complaint procedures in [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(d) or to the Secretary pursuant to the procedures in [§ 160.306](/hipaa/regulations/160-306-complaints-to-the-secretary/). The description must include the name, or title, and telephone number of the contact person or office designated in [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(a)(1)(ii).
 
 > (3) Other responsibility. If the covered entity does not maintain the protected health information that is the subject of the individual's request for access, and the covered entity knows where the requested information is maintained, the covered entity must inform the individual where to direct the request for access.
 
 > (4) Review of denial requested. If the individual has requested a review of a denial under paragraph (a)(4) of this section, the covered entity must designate a licensed health care professional, who was not directly involved in the denial to review the decision to deny access. The covered entity must promptly refer a request for review to such designated reviewing official. The designated reviewing official must determine, within a reasonable period of time, whether or not to deny the access requested based on the standards in paragraph (a)(3) of this section. The covered entity must promptly provide written notice to the individual of the determination of the designated reviewing official and take other action as required by this section to carry out the designated reviewing official's determination.
 
-(e) Implementation specification: Documentation. A covered entity must document the following and retain the documentation as required by § 164.530(j):
+(e) Implementation specification: Documentation. A covered entity must document the following and retain the documentation as required by [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(j):
 
 > (1) The designated record sets that are subject to access by individuals; and responsible for receiving and processing requests for access by individuals.
 

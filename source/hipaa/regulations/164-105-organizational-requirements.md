@@ -1,10 +1,10 @@
 (a)
 
-> (1) Standard: Health care component. If a covered entity is a hybrid entity, the requirements of this part, other than the requirements of this section, § 164.314, and § 164.504, apply only to the health care component(s) of the entity, as specified in this section.
+> (1) Standard: Health care component. If a covered entity is a hybrid entity, the requirements of this part, other than the requirements of this section, [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/), and [§ 164.504](/hipaa/regulations/164-504-uses-disclosures-organization/), apply only to the health care component(s) of the entity, as specified in this section.
 
 > (2) Implementation specifications:
 
-> > (i) Application of other provisions. In applying a provision of this part, other than the requirements of this section, § 164.314, and § 164.504, to a hybrid entity:
+> > (i) Application of other provisions. In applying a provision of this part, other than the requirements of this section, [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/), and [§ 164.504](/hipaa/regulations/164-504-uses-disclosures-organization/), to a hybrid entity:
 
 > > > (A) A reference in such provision to a "covered entity" refers to a health care component of the covered entity;
 
@@ -26,9 +26,9 @@
 
 > > > (A) For purposes of subpart C of part 160 of this subchapter, pertaining to compliance and enforcement, the covered entity has the responsibility of complying with this part.
 
-> > > (B) The covered entity is responsible for complying with § 164.316(a) and § 164.530(i), pertaining to the implementation of policies and procedures to ensure compliance with applicable requirements of this part, including the safeguard requirements in paragraph (a)(2)(ii) of this section.
+> > > (B) The covered entity is responsible for complying with [§ 164.316](/hipaa/regulations/164-316-policies-procedures-documentation/)(a) and [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(i), pertaining to the implementation of policies and procedures to ensure compliance with applicable requirements of this part, including the safeguard requirements in paragraph (a)(2)(ii) of this section.
 
-> > > &#40;C) The covered entity is responsible for complying with § 164.314 and § 164.504 regarding business associate arrangements and other organizational requirements.
+> > > &#40;C) The covered entity is responsible for complying with [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/) and [§ 164.504](/hipaa/regulations/164-504-uses-disclosures-organization/) regarding business associate arrangements and other organizational requirements.
 
 > > > (D) The covered entity is responsible for designating the components that are part of one or more health care components of the covered entity and documenting the designation in accordance with paragraph &#40;c) of this section, provided that, if the covered entity designates one or more health care components, it must include any component that would meet the definition of a covered entity or business associate if it were a separate legal entity. Health care component(s) also may include a component only to the extent that it performs covered functions.
  
@@ -44,7 +44,7 @@
 
 > > > (B) The designation of an affiliated covered entity must be documented and the documentation maintained as required by paragraph &#40;c) of this section.
 
-> > (ii) Safeguard requirements. An affiliated covered entity must ensure that it complies with the applicable requirements of this part, including, if the affiliated covered entity combines the functions of a health plan, health care provider, or health care clearinghouse, § 164.308(a)(4)(ii)(A) and § 164.504(g), as applicable.
+> > (ii) Safeguard requirements. An affiliated covered entity must ensure that it complies with the applicable requirements of this part, including, if the affiliated covered entity combines the functions of a health plan, health care provider, or health care clearinghouse, [§ 164.308](/hipaa/regulations/164-308-administrative-safeguards/)(a)(4)(ii)(A) and [§ 164.504](/hipaa/regulations/164-504-uses-disclosures-organization/)(g), as applicable.
 
 &#40;c)
 

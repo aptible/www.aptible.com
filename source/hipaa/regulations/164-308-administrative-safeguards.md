@@ -1,4 +1,4 @@
-(a) A covered entity or business associate must, in accordance with § 164.306:
+(a) A covered entity or business associate must, in accordance with [§ 164.306](/hipaa/regulations/164-306-security-general/):
 
 > (1)
 
@@ -8,7 +8,7 @@
 
 > > > (A) Risk analysis (Required). Conduct an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information held by the covered entity or business associate.
 
-> > > (B) Risk management (Required). Implement security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level to comply with § 164.306(a).
+> > > (B) Risk management (Required). Implement security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level to comply with [§ 164.306](/hipaa/regulations/164-306-security-general/)(a).
 
 > > > &#40;C) Sanction policy (Required). Apply appropriate sanctions against workforce members who fail to comply with the security policies and procedures of the covered entity or business associate.
  
@@ -80,10 +80,10 @@
 
 (b)
 
-> (1) Business associate contracts and other arrangements. A covered entity may permit a business associate to create, receive, maintain, or transmit electronic protected health information on the covered entity's behalf only if the covered entity obtains satisfactory assurances, in accordance with § 164.314(a), that the business associate will appropriately safeguard the information. A covered entity is not required to obtain such satisfactory assurances from a business associate that is a subcontractor.
+> (1) Business associate contracts and other arrangements. A covered entity may permit a business associate to create, receive, maintain, or transmit electronic protected health information on the covered entity's behalf only if the covered entity obtains satisfactory assurances, in accordance with [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a), that the business associate will appropriately safeguard the information. A covered entity is not required to obtain such satisfactory assurances from a business associate that is a subcontractor.
 
-> (2) A business associate may permit a business associate that is a subcontractor to create, receive, maintain, or transmit electronic protected health information on its behalf only if the business associate obtains satisfactory assurances, in accordance with § 164.314(a), that the subcontractor will appropriately safeguard the information.
+> (2) A business associate may permit a business associate that is a subcontractor to create, receive, maintain, or transmit electronic protected health information on its behalf only if the business associate obtains satisfactory assurances, in accordance with [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a), that the subcontractor will appropriately safeguard the information.
 
-> (3) Implementation specifications: Written contract or other arrangement (Required). Document the satisfactory assurances required by paragraph (b)(1) or (b)(2) of this section through a written contract or other arrangement with the business associate that meets the applicable requirements of § 164.314(a).
+> (3) Implementation specifications: Written contract or other arrangement (Required). Document the satisfactory assurances required by paragraph (b)(1) or (b)(2) of this section through a written contract or other arrangement with the business associate that meets the applicable requirements of [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/)(a).
 
 [68 FR 8376, Feb. 20, 2003, as amended at 78 FR 5694, Jan. 25, 2013]

@@ -4,4 +4,4 @@
 
 &#40;c) The ALJ must issue the decision to both parties within 60 days after the time for submission of post-hearing briefs and reply briefs, if permitted, has expired. If the ALJ fails to meet the deadline contained in this paragraph, he or she must notify the parties of the reason for the delay and set a new deadline.
 
-(d) Unless the decision of the ALJ is timely appealed as provided for in § 160.548, the decision of the ALJ will be final and binding on the parties 60 days from the date of service of the ALJ's decision.
+(d) Unless the decision of the ALJ is timely appealed as provided for in [§ 160.548](/hipaa/regulations/160-548-appeal-aljs-decision/), the decision of the ALJ will be final and binding on the parties 60 days from the date of service of the ALJ's decision.

@@ -1,4 +1,4 @@
-A covered entity may use or disclose protected health information without the written authorization of the individual, as described in § 164.508, or the opportunity for the individual to agree or object as described in § 164.510, in the situations covered by this section, subject to the applicable requirements of this section. When the covered entity is required by this section to inform the individual of, or when the individual may agree to, a use or disclosure ermitted by this section, the covered entity's information and the individual's agreement may be given orally.
+A covered entity may use or disclose protected health information without the written authorization of the individual, as described in [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/), or the opportunity for the individual to agree or object as described in [§ 164.510](/hipaa/regulations/164-510-uses-disclosures-opportunity-required/), in the situations covered by this section, subject to the applicable requirements of this section. When the covered entity is required by this section to inform the individual of, or when the individual may agree to, a use or disclosure ermitted by this section, the covered entity's information and the individual's agreement may be given orally.
 
 > (a) Standard: Uses and disclosures required by law. 
 
@@ -216,7 +216,7 @@ A covered entity may use or disclose protected health information without the wr
 
 > > (1) Permitted uses and disclosures. Acovered entity may use or disclose protected health information for research, regardless of the source of funding of the research, provided that: 
 
-> > > (i) Board approval of a waiver of authorization. The covered entity obtains documentation that an alteration to or waiver, in whole or inpart, of the individual authorization required by § 164.508 for use or disclosure of protected health information has been approved by either: 
+> > > (i) Board approval of a waiver of authorization. The covered entity obtains documentation that an alteration to or waiver, in whole or inpart, of the individual authorization required by [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/) for use or disclosure of protected health information has been approved by either: 
 
 > > > > (A) An Institutional Review Board (IRB), established in accordance with7 CFR lc.107, 10 CFR 745.107, 14 CFR 1230.107, 15 CFR 27.107, 16 CFR 1028.107, 21 CFR 56.107, 22 CFR 225.107, 24 CFR 60.107, 28 CFR 46.107, 32 CFR 219.107, 34 CFR 97.107, 38 CFR 16.107, 40 CFR 26.107, 45 CFR 46.107, 45 CFR 690.107, or 49 CFR 11.107; or
 
@@ -288,7 +288,7 @@ A covered entity may use or disclose protected health information without the wr
 
 > > > > (A) Because of a statement by an individual admitting participation in a violent crime that the covered entity reasonably believes may have caused serious physical harm to the victim; or
 
-> > > > (B) Where it appears from all the circumstances that the individual has escaped from a correctional institution or from lawful custody, as those terms are defined in § 164.501.
+> > > > (B) Where it appears from all the circumstances that the individual has escaped from a correctional institution or from lawful custody, as those terms are defined in [§ 164.501](/hipaa/regulations/164-501-definitions/).
 
 > > (2) Use or disclosure not permitted. A use or disclosure pursuant to paragraph (j)(1)(ii)(A) of this section may not be made if the information described in paragraph (j)(1)(ii)(A) of this section is learned by the covered entity:
 

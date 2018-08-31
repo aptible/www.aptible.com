@@ -20,7 +20,7 @@ Business associate: (1) Except as provided in paragraph (4) of this definition, 
 
 > (i) On behalf of such covered entity or of an organized health care arrangement (as defined in this section) in which the covered entity participates, but other than in the capacity of a member of the workforce of such covered entity or arrangement, creates, receives, maintains, or transmits protected health information for a function or activity regulated by this subchapter, including claims processing or administration, data analysis, processing or administration, utilization review, quality assurance, patient safety activities listed at 42 CFR 3.20, billing, benefit management, practice management, and repricing; or
 
-> (ii) Provides, other than in the capacity of a member of the workforce of such covered entity, legal, actuarial, accounting, consulting, data aggregation (as defined in § 164.501 of this subchapter), management, administrative, accreditation, or financial services to or for such covered entity, or to or for an organized health care arrangement in which the covered entity participates, where the provision of the service involves the disclosure of protected health information from such covered entity or arrangement, or from another business associate of such covered entity or arrangement, to the person.
+> (ii) Provides, other than in the capacity of a member of the workforce of such covered entity, legal, actuarial, accounting, consulting, data aggregation (as defined in [§ 164.501](/hipaa/regulations/164-501-definitions/) of this subchapter), management, administrative, accreditation, or financial services to or for such covered entity, or to or for an organized health care arrangement in which the covered entity participates, where the provision of the service involves the disclosure of protected health information from such covered entity or arrangement, or from another business associate of such covered entity or arrangement, to the person.
 
 (2) A covered entity may be a business associate of another covered entity.
 
@@ -36,13 +36,13 @@ Business associate: (1) Except as provided in paragraph (4) of this definition, 
 
 > (i) A health care provider, with respect to disclosures by a covered entity to the health care provider concerning the treatment of the individual.
 
-> (ii) A plan sponsor, with respect to disclosures by a group health plan (or by a health insurance issuer or HMO with respect to a group health plan) to the plan sponsor, to the extent that the requirements of § 164.504(f) of this subchapter apply and are met.
+> (ii) A plan sponsor, with respect to disclosures by a group health plan (or by a health insurance issuer or HMO with respect to a group health plan) to the plan sponsor, to the extent that the requirements of [§ 164.504](/hipaa/regulations/164-504-uses-disclosures-organization/)(f) of this subchapter apply and are met.
 
 > (iii) A government agency, with respect to determining eligibility for, or enrollment in, a government health plan that provides public benefits and is administered by another government agency, or collecting protected health information for such purposes, to the extent such activities are authorized by law.
 
 > (iv) A covered entity participating in an organized health care arrangement that performs a function or activity as described by paragraph (1)(i) of this definition for or on behalf of such organized health care arrangement, or that provides a service as described in paragraph (1)(ii) of this definition to or for such organized health care arrangement by virtue of such activities or services.
 
-Civil money penalty or penalty means the amount determined under § 160.404 of this part and includes the plural of these terms.
+Civil money penalty or penalty means the amount determined under [§ 160.404](/hipaa/regulations/160-404-amount-of-civil-penalty/) of this part and includes the plural of these terms.
 
 CMS stands for Centers for Medicare & Medicaid Services within the Department of Health and Human Services.
 

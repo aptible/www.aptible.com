@@ -6,7 +6,7 @@ Common ownership exists if an entity or entities possess an ownership or equity 
  
 Covered functions means those functions of a covered entity the performance of which makes the entity a health plan, health care provider, or health care clearinghouse.
 
-Health care component means a component or combination of components of a hybrid entity designated by the hybrid entity in accordance with § 164.105(a)(2)(iii)(D).
+Health care component means a component or combination of components of a hybrid entity designated by the hybrid entity in accordance with [§ 164.105](/hipaa/regulations/164-105-organizational-requirements/)(a)(2)(iii)(D).
 
 Hybrid entity means a single legal entity:
 
@@ -14,7 +14,7 @@ Hybrid entity means a single legal entity:
 
 > (2) Whose business activities include both covered and non- covered functions; and
 
-> (3) That designates health care components in accordance with paragraph § 164.105(a)(2)(iii)(D).
+> (3) That designates health care components in accordance with paragraph [§ 164.105](/hipaa/regulations/164-105-organizational-requirements/)(a)(2)(iii)(D).
 
 Law enforcement official means an officer or employee of any agency or authority of the United States, a State, a territory, a political subdivision of a State or territory, or an Indian tribe, who is empowered by law to:
 

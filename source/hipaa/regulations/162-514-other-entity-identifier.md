@@ -8,7 +8,7 @@
 
 > (4) Is not an individual.
 
-(b) An OEID must be obtained from the Enumeration System identified in § 162.508.
+(b) An OEID must be obtained from the Enumeration System identified in [§ 162.508](/hipaa/regulations/162-508-enumeration-system/).
 
 &#40;c) Uses for the OEID. 
 

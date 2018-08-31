@@ -22,15 +22,15 @@
 
 > > (iv) The probability and criticality of potential risks to electronic protected health information.
 
-&#40;c) Standards. A covered entity or business associate must comply with the applicable standards as provided in this section and in § 164.308, § 164.310, § 164.312, § 164.314 and § 164.316 with respect to all electronic protected health information.
+&#40;c) Standards. A covered entity or business associate must comply with the applicable standards as provided in this section and in [§ 164.308](/hipaa/regulations/164-308-administrative-safeguards/), [§ 164.310](/hipaa/regulations/164-310-physical-safeguards/), [§ 164.312](/hipaa/regulations/164-312-technical-safeguards/), [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/) and [§ 164.316](/hipaa/regulations/164-316-policies-procedures-documentation/) with respect to all electronic protected health information.
 
 (d) Implementation specifications. In this subpart:
 
 > (1) Implementation specifications are required or addressable. If an implementation specification is required, the word "Required" appears in parentheses after the title of the implementation specification. If an implementation specification is addressable, the word "Addressable" appears in parentheses after the title of the implementation specification.
  
-> (2) When a standard adopted in § 164.308, § 164.310, § 164.312, § 164.314, or § 164.316 includes required implementation specifications, a covered entity or business associate must implement the implementation specifications.
+> (2) When a standard adopted in [§ 164.308](/hipaa/regulations/164-308-administrative-safeguards/), [§ 164.310](/hipaa/regulations/164-310-physical-safeguards/), [§ 164.312](/hipaa/regulations/164-312-technical-safeguards/), [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/), or [§ 164.316](/hipaa/regulations/164-316-policies-procedures-documentation/) includes required implementation specifications, a covered entity or business associate must implement the implementation specifications.
 
-> (3) When a standard adopted in § 164.308, § 164.310, § 164.312, § 164.314, or § 164.316 includes addressable implementation specifications, a covered entity or business associate must--
+> (3) When a standard adopted in [§ 164.308](/hipaa/regulations/164-308-administrative-safeguards/), [§ 164.310](/hipaa/regulations/164-310-physical-safeguards/), [§ 164.312](/hipaa/regulations/164-312-technical-safeguards/), [§ 164.314](/hipaa/regulations/164-314-organizational-requirements/), or [§ 164.316](/hipaa/regulations/164-316-policies-procedures-documentation/) includes addressable implementation specifications, a covered entity or business associate must--
 
 > > (i) Assess whether each implementation specification is a reasonable and appropriate safeguard in its environment, when analyzed with reference to the likely contribution to protecting electronic protected health information; and
 
@@ -44,6 +44,6 @@
 
 > > > > (2) Implement an equivalent alternative measure if reasonable and appropriate.
 
-(e) Maintenance. A covered entity or business associate must review and modify the security measures implemented under this subpart as needed to continue provision of reasonable and appropriate protection of electronic protected health information, and update documentation of such security measures in accordance with § 164.316(b)(2)(iii).
+(e) Maintenance. A covered entity or business associate must review and modify the security measures implemented under this subpart as needed to continue provision of reasonable and appropriate protection of electronic protected health information, and update documentation of such security measures in accordance with [§ 164.316](/hipaa/regulations/164-316-policies-procedures-documentation/)(b)(2)(iii).
 
 [68 FR 8376, Feb. 20, 2003; 68 FR 17153, Apr. 8, 2003; 78 FR 5693, Jan. 25, 2013]

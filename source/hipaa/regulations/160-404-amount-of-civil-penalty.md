@@ -1,4 +1,4 @@
-(a) The amount of a civil money penalty will be determined in accordance with paragraph (b) of this section and § 160.406, 160.408, and 160.412.
+(a) The amount of a civil money penalty will be determined in accordance with paragraph (b) of this section and [§ 160.406](/hipaa/regulations/160-406-violations/), 160.408, and 160.412.
 
 (b) The amount of a civil money penalty that may be imposed is subject to the following limitations:
 

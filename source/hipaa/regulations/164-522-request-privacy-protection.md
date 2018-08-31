@@ -6,7 +6,7 @@
 
 > > > (A) Uses or disclosures of protected health information about the individual to carry out treatment, payment, or health care operations; and
 
-> > > (B) Disclosures permitted under § 164.510(b).
+> > > (B) Disclosures permitted under [§ 164.510](/hipaa/regulations/164-510-uses-disclosures-opportunity-required/)(b).
 
 > > (ii) Except as provided in paragraph (a)(1)(vi) of this section, a covered entity is not required to agree to a restriction.
 
@@ -14,7 +14,7 @@
 
 > > (iv) If restricted protected health information is disclosed to a health care provider for emergency treatment under paragraph (a)(1)(iii) of this section, the covered entity must request that such health care provider not further use or disclose the information.
 
-> > (v) A restriction agreed to by a covered entity under paragraph (a) of this section, is not effective under this subpart to prevent uses or disclosures permitted or required under § 164.502(a)(2)(ii), 164.510(a) or 164.512.
+> > (v) A restriction agreed to by a covered entity under paragraph (a) of this section, is not effective under this subpart to prevent uses or disclosures permitted or required under [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(2)(ii), 164.510(a) or 164.512.
 
 > > (vi) A covered entity must agree to the request of an individual to restrict disclosure of protected health information about the individual to a health plan if:
 
@@ -34,7 +34,7 @@
 
 > > > (B) Only effective with respect to protected health information created or received after it has so informed the individual.
 
-> (3) Implementation specification: Documentation. A covered entity must document a restriction in accordance with § 160.530(j) of this subchapter.
+> (3) Implementation specification: Documentation. A covered entity must document a restriction in accordance with [§ 160.530](/hipaa/regulations/160-530-sanctions/)(j) of this subchapter.
 
 (b)
 

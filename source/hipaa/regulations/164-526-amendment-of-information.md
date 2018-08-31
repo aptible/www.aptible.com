@@ -8,7 +8,7 @@
 
 > > (ii) Is not part of the designated record set;
 
-> > (iii) Would not be available for inspection under § 164.524; or
+> > (iii) Would not be available for inspection under [§ 164.524](/hipaa/regulations/164-524-access-of-individuals/); or
 
 > > (iv) Is accurate and complete.
 
@@ -52,7 +52,7 @@
 
 > > (iii) A statement that, if the individual does not submit a statement of disagreement, the individual may request that the covered entity provide the individual's request for amendment and the denial with any future disclosures of the protected health information that is the subject of the amendment; and
 
-> > (iv) A description of how the individual may complain to the covered entity pursuant to the complaint procedures established in § 164.530(d) or to the Secretary pursuant to the procedures established in § 160.306. The description must include the name, or title, and telephone number of the contact person or office designated in § 164.530(a)(1)(ii).
+> > (iv) A description of how the individual may complain to the covered entity pursuant to the complaint procedures established in [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(d) or to the Secretary pursuant to the procedures established in [§ 160.306](/hipaa/regulations/160-306-complaints-to-the-secretary/). The description must include the name, or title, and telephone number of the contact person or office designated in [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(a)(1)(ii).
 
 > (2) Statement of disagreement. The covered entity must permit the individual to submit to the covered entity a written statement disagreeing with the denial of all or part of a requested amendment and the basis of such disagreement. The covered entity may reasonably limit the length of a statement of disagreement.
 
@@ -70,4 +70,4 @@
  
 (e) Implementation specification: Actions on notices of amendment. A covered entity that is informed by another covered entity of an amendment to an individual's protected health information, in accordance with paragraph &#40;c)(3) of this section, must amend the protected health information in designated record sets as provided by paragraph &#40;c)(1) of this section.
 
-(f) Implementation specification: Documentation. A covered entity must document the titles of the persons or offices responsible for receiving and processing requests for amendments by individuals and retain the documentation as required by § 164.530(j).
+(f) Implementation specification: Documentation. A covered entity must document the titles of the persons or offices responsible for receiving and processing requests for amendments by individuals and retain the documentation as required by [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(j).

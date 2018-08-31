@@ -1,6 +1,6 @@
 A covered entity or business associate may not threaten, intimidate, coerce, harass, discriminate against, or take any other retaliatory action against any individual or other person for
 
-> (a) Filing of a complaint under § 160.306;
+> (a) Filing of a complaint under [§ 160.306](/hipaa/regulations/160-306-complaints-to-the-secretary/);
 
 > (b) Testifying, assisting, or participating in an investigation, compliance review, proceeding, or hearing under this part; or
 

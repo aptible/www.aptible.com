@@ -10,7 +10,7 @@
 
 (f) Evidence concerning offers of compromise or settlement are inadmissible to the extent provided in Rule 408 of the Federal Rules of Evidence.
 
-(g) Evidence of crimes, wrongs, or acts other than those at issue in the instant case is admissible in order to show motive, opportunity, intent, knowledge, preparation, identity, lack of mistake, or existence of a scheme. This evidence is admissible regardless of whether the crimes, wrongs, or acts occurred during the statute of limitations period applicable to the acts or omissions that constitute the basis for liability in the case and regardless of whether they were referenced in the Secretary's notice of proposed determination under § 160.420 of this part.
+(g) Evidence of crimes, wrongs, or acts other than those at issue in the instant case is admissible in order to show motive, opportunity, intent, knowledge, preparation, identity, lack of mistake, or existence of a scheme. This evidence is admissible regardless of whether the crimes, wrongs, or acts occurred during the statute of limitations period applicable to the acts or omissions that constitute the basis for liability in the case and regardless of whether they were referenced in the Secretary's notice of proposed determination under [§ 160.420](/hipaa/regulations/160-420-notice-of-proposed-determination/) of this part.
 
 (h) The ALJ must permit the parties to introduce rebuttal witnesses and evidence.
 

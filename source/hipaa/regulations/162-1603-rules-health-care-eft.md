@@ -1,6 +1,6 @@
 On and after January 1, 2014, the Secretary adopts the following for the health care electronic funds transfers (EFT) and remittance advice transaction:
 
-> (a) The Phase III CORE EFT & ERA Operating Rule Set, Approved June 2012 (Incorporated by reference in § 162.920) which includes the following rules:
+> (a) The Phase III CORE EFT & ERA Operating Rule Set, Approved June 2012 (Incorporated by reference in [§ 162.920](/hipaa/regulations/162-920-availability-specifications-rules/)) which includes the following rules:
 
 > > (1) Phase III CORE 380 EFT Enrollment Data Rule, version 3.0.0, June 2012.
  
@@ -14,4 +14,4 @@ On and after January 1, 2014, the Secretary adopts the following for the health 
 
 > > (6) Phase III CORE 350 Health Care Claim Payment/Advice (835) Infrastructure Rule, version 3.0.0, June 2012, except Requirement 4.2 titled "Health Care Claim Payment/Advice Batch Acknowledgement Requirements".
 
-> (b) ACME Health Plan, CORE v5010 Master Companion Guide Template, 005010, 1.2, March 2011 (incorporated by reference in § 162.920), as required by the Phase III CORE 350 Health Care Claim Payment/Advice (835) Infrastructure Rule, version 3.0.0, June 2012.
+> (b) ACME Health Plan, CORE v5010 Master Companion Guide Template, 005010, 1.2, March 2011 (incorporated by reference in [§ 162.920](/hipaa/regulations/162-920-availability-specifications-rules/)), as required by the Phase III CORE 350 Health Care Claim Payment/Advice (835) Infrastructure Rule, version 3.0.0, June 2012.

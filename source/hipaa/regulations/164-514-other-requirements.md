@@ -62,7 +62,7 @@
 
 (d)
 
-> (1) Standard: Minimum necessary requirements. In order to comply with § 164.502(b) and this section, a covered entity must meet the requirements of paragraphs (d)(2) through (d)(5) of this section with respect to a request for, or the use and disclosure of, protected health information.
+> (1) Standard: Minimum necessary requirements. In order to comply with [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(b) and this section, a covered entity must meet the requirements of paragraphs (d)(2) through (d)(5) of this section with respect to a request for, or the use and disclosure of, protected health information.
 
 > (2) Implementation specifications: Minimum necessary uses of protected health information.
 
@@ -86,13 +86,13 @@
 
 > > (iii) A covered entity may rely, if such reliance is reasonable under the circumstances, on a requested disclosure as the minimum necessary for the stated purpose when:
 
-> > > (A) Making disclosures to public officials that are permitted under § 164.512, if the public official represents that the information requested is the minimum necessary for the stated purpose(s);
+> > > (A) Making disclosures to public officials that are permitted under [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/), if the public official represents that the information requested is the minimum necessary for the stated purpose(s);
 
 > > > (B) The information is requested by another covered entity;
 
 > > > &#40;C) The information is requested by a professional who is a member of its workforce or is a business associate of the covered entity for the purpose of providing professional services to the covered entity, if the professional represents that the information requested is the minimum necessary for the stated purpose(s); or
 
-> > > (D) Documentation or representations that comply with the applicable requirements of § 164.512(i) have been provided by a person requesting the information for research purposes.
+> > > (D) Documentation or representations that comply with the applicable requirements of [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(i) have been provided by a person requesting the information for research purposes.
  
 > (4) Implementation specifications: Minimum necessary requests for protected health information.
 
@@ -187,7 +187,7 @@ Data use agreement
 
 (f) Fundraising communications.
 
-> (1) Standard: Uses and disclosures for fundraising. Subject to the conditions of paragraph (f)(2) of this section, a covered entity may use, or disclose to a business associate or to an institutionally related foundation, the following protected health information for the purpose of raising funds for its own benefit, without an authorization meeting the requirements of § 164.508:
+> (1) Standard: Uses and disclosures for fundraising. Subject to the conditions of paragraph (f)(2) of this section, a covered entity may use, or disclose to a business associate or to an institutionally related foundation, the following protected health information for the purpose of raising funds for its own benefit, without an authorization meeting the requirements of [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/):
 
 > > (i) Demographic information relating to an individual, including name, address, other contact information, age, gender, and date of birth;
 
@@ -201,7 +201,7 @@ Data use agreement
 
 > > (vi) Health insurance status.
 
-> (2) Implementation specifications: Fundraising requirements. (i) A covered entity may not use or disclose protected health information for fundraising purposes as otherwise permitted by paragraph (f)(1) of this section unless a statement required by § 164.520(b)(1)(iii)(A) is included in the covered entity's notice of privacy practices.
+> (2) Implementation specifications: Fundraising requirements. (i) A covered entity may not use or disclose protected health information for fundraising purposes as otherwise permitted by paragraph (f)(1) of this section unless a statement required by [§ 164.520](/hipaa/regulations/164-520-notice-of-privacy-practices/)(b)(1)(iii)(A) is included in the covered entity's notice of privacy practices.
 
 > > (ii) With each fundraising communication made to an individual under this paragraph, a covered entity must provide the individual with a clear and conspicuous opportunity to elect not to receive any further fundraising communications. The method for an individual to elect not to receive further fundraising communications may not cause the individual to incur an undue burden or more than a nominal cost.
 
@@ -211,13 +211,13 @@ Data use agreement
 
 > > (v) A covered entity may provide an individual who has elected not to receive further fundraising communications with a method to opt back in to receive such communications.
 
-> > (g) Standard: Uses and disclosures for underwriting and related purposes. If a health plan receives protected health information for the purpose of underwriting, premium rating, or other activities relating to the creation, renewal, or replacement of a contract of health insurance or health benefits, and if such health insurance or health benefits are not placed with the health plan, such health plan may only use or disclose such protected health information for such purpose or as may be required by law, subject to the prohibition at § 164.502(a)(5)(i) with respect to genetic information included in the protected health information.
+> > (g) Standard: Uses and disclosures for underwriting and related purposes. If a health plan receives protected health information for the purpose of underwriting, premium rating, or other activities relating to the creation, renewal, or replacement of a contract of health insurance or health benefits, and if such health insurance or health benefits are not placed with the health plan, such health plan may only use or disclose such protected health information for such purpose or as may be required by law, subject to the prohibition at [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(5)(i) with respect to genetic information included in the protected health information.
 
 > > (h)
 
 > > > (1) Standard: Verification requirements. Prior to any disclosure permitted by this subpart, a covered entity must:
  
-> > > > (i) Except with respect to disclosures under § 164.510, verify the identity of a person requesting protected health information and the authority of any such person to have access to protected health information under this subpart, if the identity or any such authority of such person is not known to the covered entity; and
+> > > > (i) Except with respect to disclosures under [§ 164.510](/hipaa/regulations/164-510-uses-disclosures-opportunity-required/), verify the identity of a person requesting protected health information and the authority of any such person to have access to protected health information under this subpart, if the identity or any such authority of such person is not known to the covered entity; and
 
 > > > > (ii) Obtain any documentation, statements, or representations, whether oral or written, from the person requesting the protected health information when such documentation, statement, or representation is a condition of the disclosure under this subpart.
 
@@ -225,9 +225,9 @@ Data use agreement
 
 > > > > (i) Conditions on disclosures. If a disclosure is conditioned by this subpart on particular documentation, statements, or representations from the person requesting the protected health information, a covered entity may rely, if such reliance is reasonable under the circumstances, on documentation, statements, or representations that, on their face, meet the applicable requirements.
 
-> > > > (A) The conditions in § 164.512(f)(1)(ii)&#40;C) may be satisfied by the administrative subpoena or similar process or by a separate written statement that, on its face, demonstrates that the applicable requirements have been met.
+> > > > (A) The conditions in [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(f)(1)(ii)&#40;C) may be satisfied by the administrative subpoena or similar process or by a separate written statement that, on its face, demonstrates that the applicable requirements have been met.
 
-> > > > (B) The documentation required by § 164.512(i)(2) may be satisfied by one or more written statements, provided that each is appropriately dated and signed in accordance with § 164.512(i)(2)(i) and (v).
+> > > > (B) The documentation required by [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(i)(2) may be satisfied by one or more written statements, provided that each is appropriately dated and signed in accordance with [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(i)(2)(i) and (v).
 
 > > > > (ii) Identity of public officials. A covered entity may rely, if such reliance is reasonable under the circumstances, on any of the following to verify identity when the disclosure of protected health information is to a public official or a person acting on behalf of the public official:
 
@@ -243,6 +243,6 @@ Data use agreement
 
 > > > > (B) If a request is made pursuant to legal process, warrant, subpoena, order, or other legal process issued by a grand jury or a judicial or administrative tribunal is presumed to constitute legal authority.
 
-> > > > (iv) Exercise of professional judgment. The verification requirements of this paragraph are met if the covered entity relies on the exercise of professional judgment in making a use or disclosure in accordance with § 164.510 or acts on a good faith belief in making a disclosure in accordance with § 164.512(j).
+> > > > (iv) Exercise of professional judgment. The verification requirements of this paragraph are met if the covered entity relies on the exercise of professional judgment in making a use or disclosure in accordance with [§ 164.510](/hipaa/regulations/164-510-uses-disclosures-opportunity-required/) or acts on a good faith belief in making a disclosure in accordance with [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(j).
 
 [65 FR 82802, Dec. 28, 2000, as amended at 67 FR 53270, Aug. 14, 2002; 78 FR 5700, Jan. 25, 2013]

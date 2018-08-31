@@ -1,4 +1,4 @@
-A covered entity or business associate must, in accordance with § 164.306:
+A covered entity or business associate must, in accordance with [§ 164.306](/hipaa/regulations/164-306-security-general/):
 
 > (a)
 

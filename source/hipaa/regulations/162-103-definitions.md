@@ -14,7 +14,7 @@ Controlling health plan (CHP) means a health plan that--
 
 > > (ii) If it has a subhealth plan(s) (as defined in this section), exercises sufficient control over the subhealth plan(s) to direct its/their business activities, actions, or policies.
 
-Covered health care provider means a health care provider that meets the definition at paragraph (3) of the definition of "covered entity" at § 160.103.
+Covered health care provider means a health care provider that meets the definition at paragraph (3) of the definition of "covered entity" at [§ 160.103](/hipaa/regulations/160-103-definitions/).
 
 Data condition means the rule that describes the circumstances under which a covered entity must use a particular data element or segment.
 
@@ -26,7 +26,7 @@ Data set means a semantically meaningful unit of information exchanged between t
 
 Descriptor means the text defining a code.
 
-Designated standard maintenance organization (DSMO) means an organization designated by the Secretary under § 162.910(a).
+Designated standard maintenance organization (DSMO) means an organization designated by the Secretary under [§ 162.910](/hipaa/regulations/162-910-standards/)(a).
 
 Direct data entry means the direct entry of data (for example, using dumb terminals or web browsers) that is immediately transmitted into a health plan's computer.
 

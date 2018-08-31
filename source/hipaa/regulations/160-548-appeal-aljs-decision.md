@@ -6,7 +6,7 @@
 
 (d) There is no right to appear personally before the Board or to appeal to the Board any interlocutory ruling by the ALJ.
  
-(e) Except for an affirmative defense under § 160.410(a)(1) or (2) of this part, the Board may not consider any issue not raised in the parties' briefs, nor any issue in the briefs that could have been raised before the ALJ but was not.
+(e) Except for an affirmative defense under [§ 160.410](/hipaa/regulations/160-410-affirmative-defenses/)(a)(1) or (2) of this part, the Board may not consider any issue not raised in the parties' briefs, nor any issue in the briefs that could have been raised before the ALJ but was not.
 
 (f) If any party demonstrates to the satisfaction of the Board that additional evidence not presented at such hearing is relevant and material and that there were reasonable grounds for the failure to adduce such evidence at the hearing, the Board may remand the matter to the ALJ for consideration of such additional evidence.
 

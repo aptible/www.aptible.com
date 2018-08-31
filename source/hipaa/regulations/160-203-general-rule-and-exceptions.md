@@ -1,6 +1,6 @@
 A standard, requirement, or implementation specification adopted under this subchapter that is contrary to a provision of State law preempts the provision of State law. This general rule applies, except if one or more of the following conditions is met:
 
-> (a) A determination is made by the Secretary under § 160.204 that the provision of State law:
+> (a) A determination is made by the Secretary under [§ 160.204](/hipaa/regulations/160-204-process-for-exceptions/) that the provision of State law:
 
 > > (1) Is necessary:
 

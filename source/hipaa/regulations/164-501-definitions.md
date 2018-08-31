@@ -24,7 +24,7 @@ Health care operations means any of the following activities of the covered enti
 
 > (2) Reviewing the competence or qualifications of health care professionals, evaluating practitioner and provider performance, health plan performance, conducting training programs in which students, trainees, or practitioners in areas of health care learn under supervision to practice or improve their skills as health care providers, training of non-health care professionals, accreditation, certification, licensing, or credentialing activities;
 
-> (3) Except as prohibited under § 164.502(a)(5)(i), underwriting, enrollment, premium rating, and other activities related to the creation, renewal, or replacement of a contract of health insurance or health benefits, and ceding, securing, or placing a contract for reinsurance of risk relating to claims for health care (including stop-loss insurance and excess of loss insurance), provided that the requirements of § 164.514(g) are met, if applicable;
+> (3) Except as prohibited under [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(5)(i), underwriting, enrollment, premium rating, and other activities related to the creation, renewal, or replacement of a contract of health insurance or health benefits, and ceding, securing, or placing a contract for reinsurance of risk relating to claims for health care (including stop-loss insurance and excess of loss insurance), provided that the requirements of [§ 164.514](/hipaa/regulations/164-514-other-requirements/)(g) are met, if applicable;
 
 > (4) Conducting or arranging for medical review, legal services, and auditing functions, including fraud and abuse detection and compliance programs;
 
@@ -40,7 +40,7 @@ Health care operations means any of the following activities of the covered enti
 
 > > (iv) The sale, transfer, merger, or consolidation of all or part of the covered entity with another covered entity, or an entity that following such activity will become a covered entity and due diligence related to such activity; and
 
-> > (v) Consistent with the applicable requirements of § 164.514, creating de-identified health information or a limited data set, and fundraising for the benefit of the covered entity.
+> > (v) Consistent with the applicable requirements of [§ 164.514](/hipaa/regulations/164-514-other-requirements/), creating de-identified health information or a limited data set, and fundraising for the benefit of the covered entity.
 
 Health oversight agency means an agency or authority of the United States, a State, a territory, a political subdivision of a State or territory, or an Indian tribe, or a person or entity acting under a grant of authority from or contract with such public agency, including the employees or agents of such public agency or its contractors or persons or entities to whom it has granted authority, that is authorized by law to oversee the health care system (whether public or private) or government programs in which health information is necessary to determine eligibility or compliance, or to enforce civil rights laws for which health information is relevant.
 
@@ -74,7 +74,7 @@ Payment means:
 
 > (1) The activities undertaken by:
  
-> > (i) Except as prohibited under § 164.502(a)(5)(i), a health plan to obtain premiums or to determine or fulfill its responsibility for coverage and provision of benefits under the health plan; or
+> > (i) Except as prohibited under [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(5)(i), a health plan to obtain premiums or to determine or fulfill its responsibility for coverage and provision of benefits under the health plan; or
 
 > > (ii) A health care provider or health plan to obtain or provide reimbursement for the provision of health care; and
 

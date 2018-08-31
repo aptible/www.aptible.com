@@ -2,27 +2,27 @@
 
 > (1) An individual has a right to receive an accounting of disclosures of protected health information made by a covered entity in the six years prior to the date on which the accounting is requested, except for disclosures:
 
-> > (i) To carry out treatment, payment and health care operations as provided in § 164.506;
+> > (i) To carry out treatment, payment and health care operations as provided in [§ 164.506](/hipaa/regulations/164-506-uses-disclosures-operations/);
 
-> > (ii) To individuals of protected health information about them as provided in § 164.502;
+> > (ii) To individuals of protected health information about them as provided in [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/);
 
-> > (iii) Incident to a use or disclosure otherwise permitted or required by this subpart, as provided in § 164.502;
+> > (iii) Incident to a use or disclosure otherwise permitted or required by this subpart, as provided in [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/);
 
-> > (iv) Pursuant to an authorization as provided in § 164.508;
+> > (iv) Pursuant to an authorization as provided in [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/);
 
-> > (v) For the facility's directory or to persons involved in the individual's care or other notification purposes as provided in § 164.510;
+> > (v) For the facility's directory or to persons involved in the individual's care or other notification purposes as provided in [§ 164.510](/hipaa/regulations/164-510-uses-disclosures-opportunity-required/);
 
-> > (vi) For national security or intelligence purposes as provided in § 164.512(k)(2);
+> > (vi) For national security or intelligence purposes as provided in [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(k)(2);
 
-> > (vii) To correctional institutions or law enforcement officials as provided in § 164.512(k)(5);
+> > (vii) To correctional institutions or law enforcement officials as provided in [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(k)(5);
 
-> > (viii) As part of a limited data set in accordance with § 164.514(e); or
+> > (viii) As part of a limited data set in accordance with [§ 164.514](/hipaa/regulations/164-514-other-requirements/)(e); or
 
 > > (ix) That occurred prior to the compliance date for the covered entity.
 
 > (2)
 
-> > (i) The covered entity must temporarily suspend an individual's right to receive an accounting of disclosures to a health oversight agency or law enforcement official, as provided in § 164.512(d) or (f), respectively, for the time specified by such agency or official, if such agency or official provides the covered entity with a written statement that such an accounting to the individual would be reasonably likely to impede the agency's activities and specifying the time for which such a suspension is required.
+> > (i) The covered entity must temporarily suspend an individual's right to receive an accounting of disclosures to a health oversight agency or law enforcement official, as provided in [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(d) or (f), respectively, for the time specified by such agency or official, if such agency or official provides the covered entity with a written statement that such an accounting to the individual would be reasonably likely to impede the agency's activities and specifying the time for which such a suspension is required.
 
 > > (ii) If the agency or official statement in paragraph (a)(2)(i) of this section is made orally, the covered entity must:
 
@@ -46,9 +46,9 @@
 
 > > (iii) A brief description of the protected health information disclosed; and
 
-> > (iv) A brief statement of the purpose of the disclosure that reasonably informs the individual of the basis for the disclosure or, in lieu of such statement, a copy of a written request for a disclosure under § 164.502(a)(2)(ii) or 164.512, if any.
+> > (iv) A brief statement of the purpose of the disclosure that reasonably informs the individual of the basis for the disclosure or, in lieu of such statement, a copy of a written request for a disclosure under [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(2)(ii) or 164.512, if any.
 
-> (3) If, during the period covered by the accounting, the covered entity has made multiple disclosures of protected health information to the same person or entity for a single purpose under § 164.502(a)(2)(ii) or 164.512, the accounting may, with respect to such multiple disclosures, provide:
+> (3) If, during the period covered by the accounting, the covered entity has made multiple disclosures of protected health information to the same person or entity for a single purpose under [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(2)(ii) or 164.512, the accounting may, with respect to such multiple disclosures, provide:
 
 > > (i) The information required by paragraph (b)(2) of this section for the first disclosure during the accounting period;
 
@@ -58,7 +58,7 @@
 
 > (4)
 
-> > (i) If, during the period covered by the accounting, the covered entity has made disclosures of protected health information for a particular research purpose in accordance with § 164.512(i) for 50 or more individuals, the accounting may, with respect to such disclosures for which the protected health information about the individual may have been included, provide:
+> > (i) If, during the period covered by the accounting, the covered entity has made disclosures of protected health information for a particular research purpose in accordance with [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(i) for 50 or more individuals, the accounting may, with respect to such disclosures for which the protected health information about the individual may have been included, provide:
 
 > > > (A) The name of the protocol or other research activity;
 
@@ -89,7 +89,7 @@
  
 > (2) The covered entity must provide the first accounting to an individual in any 12 month period without charge. The covered entity may impose a reasonable, cost-based fee for each subsequent request for an accounting by the same individual within the 12 month period, provided that the covered entity informs the individual in advance of the fee and provides the individual with an opportunity to withdraw or modify the request for a subsequent accounting in order to avoid or reduce the fee.
 
-(d) Implementation specification: Documentation. A covered entity must document the following and retain the documentation as required by § 164.530(j):
+(d) Implementation specification: Documentation. A covered entity must document the following and retain the documentation as required by [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(j):
 
 > (1) The information required to be included in an accounting under paragraph (b) of this section for disclosures of protected health information that are subject to an accounting under paragraph (a) of this section;
 

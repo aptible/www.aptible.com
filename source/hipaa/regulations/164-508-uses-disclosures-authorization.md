@@ -2,7 +2,7 @@
 
 > (1) Authorization required: General rule. Except as otherwise permitted or required by this subchapter, a covered entity may not use or disclose protected health information without an authorization that is valid under this section. When a covered entity obtains or receives a valid authorization for its use or disclosure of protected health information, such use or disclosure must be consistent with such authorization.
 
-> (2) Authorization required: Psychotherapy notes. Notwithstanding any provision of this subpart, other than the transition provisions in § 164.532, a covered entity must obtain an authorization for any use or disclosure of psychotherapy notes, except:
+> (2) Authorization required: Psychotherapy notes. Notwithstanding any provision of this subpart, other than the transition provisions in [§ 164.532](/hipaa/regulations/164-532-transition-provisions/), a covered entity must obtain an authorization for any use or disclosure of psychotherapy notes, except:
 
 > > (i) To carry out the following treatment, payment, or health care operations:
 
@@ -12,21 +12,21 @@
 
 > > > &#40;C) Use or disclosure by the covered entity to defend itself in a legal action or other proceeding brought by the individual; and
 
-> > (ii) A use or disclosure that is required by § 164.502(a)(2)(ii) or permitted by § 164.512(a); § 164.512(d) with respect to the oversight of the originator of the psychotherapy notes; § 164.512(g)(1); or § 164.512(j)(1)(i).
+> > (ii) A use or disclosure that is required by [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(2)(ii) or permitted by [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(a); [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(d) with respect to the oversight of the originator of the psychotherapy notes; [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(g)(1); or [§ 164.512](/hipaa/regulations/164-512-uses-disclosures-opportunity-not-required/)(j)(1)(i).
 
 > (3) Authorization required: Marketing.
 
-> > (i) Notwithstanding any provision of this subpart, other than the transition provisions in § 164.532, a covered entity must obtain an authorization for any use or disclosure of protected health information for marketing, except if the communication is in the form of:
+> > (i) Notwithstanding any provision of this subpart, other than the transition provisions in [§ 164.532](/hipaa/regulations/164-532-transition-provisions/), a covered entity must obtain an authorization for any use or disclosure of protected health information for marketing, except if the communication is in the form of:
 
 > > > (A) A face-to-face communication made by a covered entity to an individual; or
 
 > > > (B) A promotional gift of nominal value provided by the covered entity.
 
-> > (ii) If the marketing involves financial remuneration, as defined in paragraph (3) of the definition of marketing at § 164.501, to the covered entity from a third party, the authorization must state that such remuneration is involved.
+> > (ii) If the marketing involves financial remuneration, as defined in paragraph (3) of the definition of marketing at [§ 164.501](/hipaa/regulations/164-501-definitions/), to the covered entity from a third party, the authorization must state that such remuneration is involved.
 
 > (4) Authorization required: Sale of protected health information.
 
-> > (i) Notwithstanding any provision of this subpart, other than the transition provisions in § 164.532, a covered entity must obtain an authorization for any disclosure of protected health information which is a sale of protected health information, as defined in § 164.501 of this subpart. 
+> > (i) Notwithstanding any provision of this subpart, other than the transition provisions in [§ 164.532](/hipaa/regulations/164-532-transition-provisions/), a covered entity must obtain an authorization for any disclosure of protected health information which is a sale of protected health information, as defined in [§ 164.501](/hipaa/regulations/164-501-definitions/) of this subpart. 
 
 > > (ii) Such authorization must state that the disclosure will result in remuneration to the covered entity.
 
@@ -77,7 +77,7 @@ General requirements
  
 > > (ii) If the authorization was obtained as a condition of obtaining insurance coverage, other law provides the insurer with the right to contest a claim under the policy or the policy itself.
 
-> (6) Documentation. A covered entity must document and retain any signed authorization under this section as required by § 164.530(j).
+> (6) Documentation. A covered entity must document and retain any signed authorization under this section as required by [§ 164.530](/hipaa/regulations/164-530-administrative-requirements/)(j).
 
 &#40;c) Implementation specifications: Core elements and requirements
 
@@ -101,7 +101,7 @@ General requirements
 
 > > > (A) The exceptions to the right to revoke and a description of how the individual may revoke the authorization; or
 
-> > > (B) To the extent that the information in paragraph &#40;c)(2)(i)(A) of this section is included in the notice required by § 164.520, a reference to the covered entity's notice.
+> > > (B) To the extent that the information in paragraph &#40;c)(2)(i)(A) of this section is included in the notice required by [§ 164.520](/hipaa/regulations/164-520-notice-of-privacy-practices/), a reference to the covered entity's notice.
 
 > > (ii) The ability or inability to condition treatment, payment, enrollment or eligibility for benefits on the authorization, by stating either:
 

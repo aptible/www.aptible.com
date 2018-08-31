@@ -38,4 +38,4 @@
 
 > (4) May not enjoin any act of the Secretary; or
 
-> (5) May not review the exercise of discretion by the Secretary with respect to whether to grant an extension under § 160.410(b)(2)(ii)(B) or &#40;c)(2)(ii) of this part or to provide technical assistance under 42 U.S.C. 1320d- 5(b)(2)(B).
+> (5) May not review the exercise of discretion by the Secretary with respect to whether to grant an extension under [§ 160.410](/hipaa/regulations/160-410-affirmative-defenses/)(b)(2)(ii)(B) or &#40;c)(2)(ii) of this part or to provide technical assistance under 42 U.S.C. 1320d- 5(b)(2)(B).
