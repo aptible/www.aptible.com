@@ -163,10 +163,12 @@ ready do
         subpart.subparts.each do |regulation|
           regulation[:parents] = [part, subpart]
           data[protocol].flattened << regulation
+          next unless protocol == :gdpr
 
-          if protocol == :gdpr
-            redirect "/gdpr/articles/#{regulation.id}/", "/gdpr/articles/#{regulation.url}/"
-          end
+          redirect(
+            "/gdpr/articles/#{regulation.id}/",
+            "/gdpr/articles/#{regulation.url}/"
+          )
         end
       end
     end
