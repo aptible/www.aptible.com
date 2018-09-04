@@ -6,7 +6,7 @@
 
 > > (ii) For treatment, payment, or health care operations, as permitted by and in compliance with [§ 164.506](/hipaa/regulations/164-506-uses-disclosures-operations/);
 
-> > (iii) Incident to a use or disclosure otherwise permitted or required by this subpart, provided that the covered entity has complied with the applicable requirements of [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(b), 164.514(d), and 164.530&#40;c) with respect to such otherwise permitted or required use or disclosure;
+> > (iii) Incident to a use or disclosure otherwise permitted or required by this subpart, provided that the covered entity has complied with the applicable requirements of [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(b), [164.514](/hipaa/regulations/164-514-other-requirements/)(d), and [164.530](/hipaa/regulations/164-530-administrative-requirements/)&#40;c) with respect to such otherwise permitted or required use or disclosure;
 
 > > (iv) Except for uses and disclosures prohibited under [§ 164.502](/hipaa/regulations/164-502-uses-disclosures-general/)(a)(5)(i), pursuant to and in compliance with a valid authorization under [§ 164.508](/hipaa/regulations/164-508-uses-disclosures-authorization/);
 

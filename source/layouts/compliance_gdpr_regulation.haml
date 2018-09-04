@@ -11,7 +11,7 @@
     = yield
 
     - if @regulation.recitals.any?
-      %p Recitals: #{@regulation.recitals.map {|r| '<a href="/gdpr/recitals/#' + r.to_s + '">' + r.to_s + '</a>'}.join(', ')}
+      %p Relevant Recitals: #{@regulation.recitals.map {|r| '<a href="/gdpr/recitals/#' + r.to_s + '">' + r.to_s + '</a>'}.join(', ')}
 
   = partial 'partials/compliance/pagination'
 

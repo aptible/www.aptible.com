@@ -56,7 +56,25 @@ layout: 'layout'
         .resources-list__column
           - hipaa_resources.each_with_index do |resource, index|
             - if index.odd?
-              = partial 'resource-item',  locals: { resource: resource }        
+              = partial 'resource-item',  locals: { resource: resource }      
+
+      -# One-off for /hipaa/
+      .resources-list
+        %a.resource-item{ href: '/hipaa/' }
+          .resource-item__body
+            %h2.resource-item__title HIPAA Compliance Guide
+            .resource-item__excerpt
+              HIPAA compliance guide as well as the full Regulation text, 
+              annotated by Aptible, easily searchable.
+      
+      %h1 GDPR
+      .resources-list
+        %a.resource-item{ href: '/gdpr/' }
+          .resource-item__body
+            %h2.resource-item__title GDPR Compliance Guide
+            .resource-item__excerpt
+              The full GDPR Requirements text, annotated by Aptible, easily 
+              searchable.
 
 
       %h1 Aptible Updates

@@ -433,6 +433,14 @@ input[type="text"].compliance__search-bar {
   }
 }
 
+.compliance__search-container {
+  margin-left: 40px;
+
+  @media screen and (max-width: $tablet-landscape) {
+    margin-left: 0;
+  }
+}
+
 .compliance__pagination {
   display: grid;
   align-items: center;
