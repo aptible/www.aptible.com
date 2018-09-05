@@ -1,0 +1,49 @@
+- @protocol = load_protocol
+- @regulation = load_regulation(@protocol)
+- @title = "#{@regulation.title} | HIPAA Regulations hosted by Aptible"
+- @description = "Explore #{@regulation.title} (#{@regulation.id}) of the #{@regulation.parents.last.title} of the HIPAA Regulations. The full HIPAA Regulation text as provided in the HIPAA Administrative Simplification, annotated by Aptible, easily searchable."
+
+= wrap_layout :compliance do
+  %section
+    %h4= @regulation.parents.map {|p| p.title}.join(' &nbsp; > &nbsp; ')
+    %h1 #{@regulation.id} #{@regulation.title}
+
+    = yield
+
+  = partial 'partials/compliance/pagination'
+
+  %script{ type: 'application/ld+json' }
+    :plain
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.aptible.com/hipaa/",
+            "name": "HIPAA"
+          }
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.aptible.com/hipaa/",
+            "name": "#{@regulation.parents.first.title}"
+          }
+        },{
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.aptible.com/hipaa/regulations/#{@regulation.parents.last.subparts.first.url}/",
+            "name": "#{@regulation.parents.last.title}"
+          }
+        },{
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "#{page_url}",
+            "name": "#{@regulation.id}"
+          }
+        }]
+      }

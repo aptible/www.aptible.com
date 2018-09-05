@@ -1,0 +1,536 @@
+name: HIPAA
+extra_content_title_append: Aptible HIPAA Compliance Guide for startups
+search_key: Tyy-w7kVPSuHn26gmwBy
+slugs:
+  site: hipaa
+  regulations: regulations
+hero:
+  title: HIPAA Overview & Regulations
+  subtitle: HIPAA Compliance Guide
+nav:
+  regulations_title: Regulations
+  extra:
+    - title: What is HIPAA?
+      url: /hipaa/
+    - title: What is a HIPAA BAA?
+      url: /hipaa/what-is-a-baa/
+regulation:
+  - title: General Administrative Requirements
+    subparts:
+      - id: Subpart A
+        title: General Provisions
+        subparts:
+          - id: § 160.101
+            title: Statutory basis and purpose
+            url: 160-101-statutory-basis-purpose
+          - id: § 160.102
+            title: Applicability
+            url: 160-102-applicability
+          - id: § 160.103
+            title: Definitions
+            url: 160-103-definitions
+          - id: § 160.104
+            title: Modifications
+            url: 160-104-modifications
+          - id: § 160.105
+            title: Compliance dates for implementation of new or modified standards and implementation specifications
+            url: 160-105-compliance-dates
+      - id: Subpart B
+        title: Preemption Of State Law
+        subparts:
+          - id: § 160.201
+            title: Statutory basis
+            url: 160-201-statutory-basis
+          - id: § 160.202
+            title: Definitions
+            url: 160-202-definitions
+          - id: § 160.203
+            title: General rule and exceptions
+            url: 160-203-general-rule-and-exceptions
+          - id: § 160.204
+            title: Process for requesting exception determinations
+            url: 160-204-process-for-exceptions
+          - id: § 160.205
+            title: Duration of effectiveness of exception determinations
+            url: 160-205-duration-of-exceptions
+      - id: Subpart C
+        title: Compliance and Investigations
+        subparts:
+          - id: § 160.300
+            title: Applicability
+            url: 160-300-applicability
+          - id: § 160.304
+            title: Principles for achieving compliance
+            url: 160-304-achieving-compliance
+          - id: § 160.306
+            title: Complaints to the Secretary
+            url: 160-306-complaints-to-the-secretary
+          - id: § 160.308
+            title: Compliance reviews
+            url: 160-308-compliance-reviews
+          - id: § 160.310
+            title: Responsibilities of covered entities and business associates
+            url: 160-310-responsibilities-of-covered-entities
+          - id: § 160.312
+            title: Secretarial action regarding complaints and compliance reviews
+            url: 160-312-secretarial-action
+          - id: § 160.314
+            title: Investigational subpoenas and inquiries
+            url: 160-314-investigational-subpoenas
+          - id: § 160.316
+            title: Refraining from intimidation or retaliation
+            url: 160-316-intimidation-retaliation
+      - id: Subpart D
+        title: Imposition of Civil Money Penalties
+        subparts:
+          - id: § 160.400
+            title: Applicability
+            url: 160-400-applicability
+          - id: § 160.401
+            title: Definitions
+            url: 160-401-definitions
+          - id: § 160.402
+            title: Basis for a civil money penalty
+            url: 160-402-basis-for-civil-penalty
+          - id: § 160.404
+            title: Amount of a civil money penalty
+            url: 160-404-amount-of-civil-penalty
+          - id: § 160.406
+            title: Violations of an identical requirement or prohibition
+            url: 160-406-violations
+          - id: § 160.408
+            title: Factors considered in determining the amount of a civil money penalty
+            url: 160-408-factors-for-civil-penalty
+          - id: § 160.410
+            title: Affirmative defenses
+            url: 160-410-affirmative-defenses
+          - id: § 160.412
+            title: Waiver
+            url: 160-412-waiver
+          - id: § 160.414
+            title: Limitations
+            url: 160-414-limitations
+          - id: § 160.416
+            title: Authority to settle
+            url: 160-416-authority-to-settle
+          - id: § 160.418
+            title: Penalty not exclusive
+            url: 160-418-penalty-not-exclusive
+          - id: § 160.420
+            title: Notice of proposed determination
+            url: 160-420-notice-of-proposed-determination
+          - id: § 160.422
+            title: Failure to request a hearing
+            url: 160-422-failure-request-hearing
+          - id: § 160.424
+            title: Collection of penalty
+            url: 160-424-collection-of-penalty
+          - id: § 160.426
+            title: Notification of the public and other agencies
+            url: 160-426-notification-of-public
+      - id: Subpart E
+        title: Procedures for Hearings
+        subparts:
+          - id: § 160.500
+            title: Applicability
+            url: 160-500-applicability
+          - id: § 160.502
+            title: Definitions
+            url: 160-502-definitions
+          - id: § 160.504
+            title: Hearing before an ALJ
+            url: 160-504-hearing-before-alj
+          - id: § 160.506
+            title: Rights of the parties
+            url: 160-506-rights-of-parties
+          - id: § 160.508
+            title: Authority of the ALJ
+            url: 160-508-authority-of-alj
+          - id: § 160.510
+            title: Ex parte contacts
+            url: 160-510-ex-parte-contacts
+          - id: § 160.512
+            title: Prehearing conferences
+            url: 160-512-prehearing-conferences
+          - id: § 160.514
+            title: Authority to settle
+            url: 160-514-authority-to-settle
+          - id: § 160.516
+            title: Discovery
+            url: 160-516-discovery
+          - id: § 160.518
+            title: Exchange of witness lists, witness statements, and exhibits
+            url: 160-518-exchange-witness-lists-exhibits
+          - id: § 160.520
+            title: Subpoenas for attendance at hearing
+            url: 160-520-subpoenas-hearing-attendance
+          - id: § 160.522
+            title: Fees
+            url: 160-522-fees
+          - id: § 160.524
+            title: Form, filing, and service of papers
+            url: 160-524-form-filing-service-of-papers
+          - id: § 160.526
+            title: Computation of time
+            url: 160-526-computation-of-time
+          - id: § 160.528
+            title: Motions
+            url: 160-528-motions
+          - id: § 160.530
+            title: Sanctions
+            url: 160-530-sanctions
+          - id: § 160.532
+            title: Collateral estoppel
+            url: 160-532-collateral-estoppel
+          - id: § 160.534
+            title: The hearing
+            url: 160-534-the-hearing
+          - id: § 160.536
+            title: Statistical sampling
+            url: 160-536-statistical-sampling
+          - id: § 160.538
+            title: Witnesses
+            url: 160-538-witnesses
+          - id: § 160.540
+            title: Evidence
+            url: 160-540-evidence
+          - id: § 160.542
+            title: The record
+            url: 160-542-the-record
+          - id: § 160.544
+            title: Post hearing briefs
+            url: 160-544-post-hearing-briefs
+          - id: § 160.546
+            title: ALJ's decision
+            url: 160-546-aljs-decision
+          - id: § 160.548
+            title: Appeal of the ALJ's decision
+            url: 160-548-appeal-aljs-decision
+          - id: § 160.550
+            title: Stay of the Secretary's decision
+            url: 160-550-stay-of-secretarys-decision
+          - id: § 160.552
+            title: Harmless Error
+            url: 160-552-harmless-error
+  - title: Administrative Requirements
+    subparts:
+      - id: Subpart A
+        title: General Provisions
+        subparts:
+          - id: § 162.100
+            title: Applicability
+            url: 162-100-applicability
+          - id: § 162.103
+            title: Definitions
+            url: 162-103-definitions
+      - id: Subpart D
+        title: Standard Unique Health Identifier For Health Care Providers
+        subparts:
+          - id: § 162.404
+            title: Compliance dates of the implementation of the standard unique health identifier for health care providers
+            url: 162-404-compliance-dates-unique-health-identifier
+          - id: § 162.406
+            title: Standard unique health identifier for health care providers
+            url: 162-406-standard-unique-health-identifier
+          - id: § 162.408
+            title: National Provider System
+            url: 162-408-national-provider-system
+          - id: § 162.410
+            title: 'Implementation specifications: Health care providers'
+            url: 162-410-implementation-health-care-providers
+          - id: § 162.412
+            title: 'Implementation specifications: Health plans'
+            url: 162-412-implementation-health-plans
+          - id: § 162.414
+            title: 'Implementation specifications: Health care clearinghouses'
+            url: 162-414-implementation-health-care-clearinghouses
+      - id: Subpart E
+        title: Standard Unique Health Identifier For Health Plans
+        subparts:
+          - id: § 162.504
+            title: Compliance requirements for the implementation of the standard unique health plan identifier
+            url: 162-504-compliance-health-plan-identifier
+          - id: § 162.506
+            title: Standard unique health plan identifier
+            url: 162-506-standard-unique-health-plan-identifier
+          - id: § 162.508
+            title: Enumeration System
+            url: 162-508-enumeration-system
+          - id: § 162.510
+            title: 'Full implementation requirements: Covered entities'
+            url: 162-510-implementation-covered-entities
+          - id: § 162.512
+            title: 'Implementation specifications: Health plans'
+            url: 162-512-implementation-health-plans
+          - id: § 162.514
+            title: 'Other entity identifier'
+            url: 162-514-other-entity-identifier
+      - id: Subpart F
+        title: Standard Unique Employer Identifier
+        subparts:
+          - id: § 162.600
+            title: Compliance dates of the implementation of the standard unique employer identifier
+            url: 162-600-compliance-dates-employer-identifier
+          - id: § 162.605
+            title: Standard unique employer identifier
+            url: 162-605-unique-employer-identifier
+          - id: § 162.610
+            title: Implementation specifications for covered entities
+            url: 162-610-implementation-covered-entities
+      - id: Subpart I
+        title: General Provisions For Transactions
+        subparts:
+          - id: § 162.910
+            title: Maintenance of standards and adoption of modifications and new standards
+            url: 162-910-standards
+          - id: § 162.915
+            title: Trading partner agreements
+            url: 162-915-trading-partner-agreements
+          - id: § 162.920
+            title: Availability of implementation specifications and operating rules
+            url: 162-920-availability-specifications-rules
+          - id: § 162.923
+            title: Requirements for covered entities
+            url: 162-923-requirements-covered-entities
+          - id: § 162.925
+            title: Additional requirements for health plans
+            url: 162-925-requirements-health-plans
+          - id: § 162.930
+            title: Additional rules for health care clearinghouses
+            url: 162-930-rules-health-care-clearinghouses
+          - id: § 162.940
+            title: Exceptions from standards to permit testing of proposed modifications
+            url: 162-940-exceptions-testing-modifications
+      - id: Subpart J
+        title: Code Sets
+        subparts:
+          - id: § 162.1000
+            title: General requirements
+            url: 162-1000-general-requirements
+          - id: § 162.1002
+            title: Medical data code sets
+            url: 162-1002-medical-data-code-sets
+          - id: § 162.1011
+            title: Valid code sets
+            url: 162-1011-valid-code-sets
+      - id: Subpart K
+        title: Health Care Claims Or Equivalent Encounter Information
+        subparts:
+          - id: § 162.1101
+            title: Health care claims or equivalent encounter information transaction
+            url: 162-1101-health-care-claims
+          - id: § 162.1102
+            title: Standards for health care claims or equivalent encounter information transaction
+            url: 162-1102-standards-for-health-care-claims
+      - id: Subpart L
+        title: Eligibility For A Health Plan
+        subparts:
+          - id: § 162.1201
+            title: Eligibility for a health plan transaction
+            url: 162-1201-eligibility-health-plan-transaction
+          - id: § 162.1202
+            title: Standards for eligibility for a health plan transaction
+            url: 162-1202-standards-for-eligibility
+          - id: § 162.1203
+            title: Operating rules for eligibility for a health plan transaction
+            url: 162-1203-rules-eligibility-health-plan-transaction
+      - id: Subpart M
+        title: Referral Certification And Authorization
+        subparts:
+          - id: § 162.1301
+            title: Referral certification and authorization transaction
+            url: 162-1301-referral-certification
+          - id: § 162.1302
+            title: Standards for referral certification and authorization transaction
+            url: 162-1302-standards-referral-certification
+      - id: Subpart N
+        title: Health Care Claim Status
+        subparts:
+          - id: § 162.1401
+            title: Health care claim status transaction
+            url: 162-1401-health-care-claim-status-transaction
+          - id: § 162.1402
+            title: Standards for health care claim status transaction
+            url: 162-1402-standards-claim-status
+          - id: § 162.1403
+            title: Operating rules for health care claim status transaction
+            url: 162-1403-rules-claim-status
+      - id: Subpart O
+        title: Enrollment And Disenrollment In A Health Plan
+        subparts:
+          - id: § 162.1501
+            title: Enrollment and disenrollment in a health plan transaction
+            url: 162-1501-enrollment-disenrollment
+          - id: § 162.1502
+            title: Standards for enrollment and disenrollment in a health plan transaction
+            url: 162-1502-standards-enrollment-disenrollment
+      - id: Subpart P
+        title: Health Care Electronic Funds Transfers (EFT) And Remittance Advice
+        subparts:
+          - id: § 162.1601
+            title: Health care electronic funds transfers (EFT) and remittance advice transaction
+            url: 162-1601-health-care-eft
+          - id: § 162.1602
+            title: Standards for health care electronic funds transfers (EFT) and remittance advice transaction
+            url: 162-1602-standards-health-care-eft
+          - id: § 162.1603
+            title: Operating rules for health care electronic funds transfers (EFT) and remittance advice transaction
+            url: 162-1603-rules-health-care-eft
+      - id: Subpart Q
+        title: Health Plan Premium Payments
+        subparts:
+          - id: § 162.1701
+            title: Health plan premium payments transaction
+            url: 162-1701-health-plan-premium-payments
+          - id: § 162.1702
+            title: Standards for health plan premium payments transaction
+            url: 162-1702-standards-health-plan-premiums
+      - id: Subpart R
+        title: Coordination Of Benefits
+        subparts:
+          - id: § 162.1801
+            title: Coordination of benefits transaction
+            url: 162-1801-coordination-benefits
+          - id: § 162.1802
+            title: Standards for coordination of benefits information transaction
+            url: 162-1802-standards-coordination-benefits
+      - id: Subpart S
+        title: Medicaid Pharmacy Subrogation
+        subparts:
+          - id: § 162.1901
+            title: Medicaid pharmacy subrogation transaction
+            url: 162-1901-medicaid-pharmacy-subrogation
+          - id: § 162.1902
+            title: Standard for Medicaid pharmacy subrogation transaction
+            url: 162-1902-standard-medicaid-pharmacy-subrogation
+  - title: Security and Privacy
+    subparts:
+      - id: Subpart A
+        title: General Provisions
+        subparts:
+          - id: § 164.102
+            title: Statutory basis
+            url: 164-102-statutory-basis
+          - id: § 164.103
+            title: Definitions
+            url: 164-103-definitions
+          - id: § 164.104
+            title: Applicability
+            url: 164-104-applicability
+          - id: § 164.105
+            title: Organizational requirements
+            url: 164-105-organizational-requirements
+          - id: § 164.106
+            title: Relationship to other parts
+            url: 164-106-relationship-other-parts
+      - id: Subpart C
+        title: Security Standards For The Protection Of Electronic Protected Health Information
+        subparts:
+          - id: § 164.302
+            title: Applicability
+            url: 164-302-applicability
+          - id: § 164.304
+            title: Definitions
+            url: 164-304-definitions
+          - id: § 164.306
+            title: 'Security standards: General rules'
+            url: 164-306-security-general
+          - id: § 164.308
+            title: Administrative safeguards
+            url: 164-308-administrative-safeguards
+          - id: § 164.310
+            title: Physical safeguards
+            url: 164-310-physical-safeguards
+          - id: § 164.312
+            title: Technical safeguards
+            url: 164-312-technical-safeguards
+          - id: § 164.314
+            title: Organizational requirements
+            url: 164-314-organizational-requirements
+          - id: § 164.316
+            title: Policies and procedures and documentation requirements
+            url: 164-316-policies-procedures-documentation
+          - id: § 164.318
+            title: Compliance dates for the initial implementation of the security standards
+            url: 164-318-compliance-dates
+      - id: Subpart D
+        title: Notification In The Case Of Breach Of Unsecured Protected Health Information
+        subparts:
+          - id: § 164.400
+            title: Applicability
+            url: 164-400-applicability
+          - id: § 164.402
+            title: Definitions
+            url: 164-402-definitions
+          - id: § 164.404
+            title: Notification to individuals
+            url: 164-404-notification-individuals
+          - id: § 164.406
+            title: Notification to the media
+            url: 164-406-notification-media
+          - id: § 164.408
+            title: Notification to the Secretary
+            url: 164-408-notification-secretary
+          - id: § 164.410
+            title: Notification by a business associate
+            url: 164-410-notification-business-associate
+          - id: § 164.412
+            title: Law enforcement delay
+            url: 164-412-law-enforcement-delay
+          - id: § 164.414
+            title: Administrative requirements and burden of proof
+            url: 164-414-administrative-requirements
+      - id: Subpart E
+        title: Privacy Of Individually Identifiable Health Information
+        subparts:
+          - id: § 164.500
+            title: Applicability
+            url: 164-500-applicability
+          - id: § 164.501
+            title: Definitions
+            url: 164-501-definitions
+          - id: § 164.502
+            title: 'Uses and disclosures of protected health information: General rules'
+            url: 164-502-uses-disclosures-general
+          - id: § 164.504
+            title: 'Uses and disclosures: Organizational requirements'
+            url: 164-504-uses-disclosures-organization
+          - id: § 164.506
+            title: Uses and disclosures to carry out treatment, payment, or health care operations
+            url: 164-506-uses-disclosures-operations
+          - id: § 164.508
+            title: Uses and disclosures for which an authorization is required
+            url: 164-508-uses-disclosures-authorization
+          - id: § 164.510
+            title: Uses and disclosures requiring an opportunity for the individual to agree or to object
+            url: 164-510-uses-disclosures-opportunity-required
+          - id: § 164.512
+            title: Uses and disclosures for which an authorization or opportunity to agree or object is not required
+            url: 164-512-uses-disclosures-opportunity-not-required
+          - id: § 164.514
+            title: Other requirements relating to uses and disclosures of protected health information
+            url: 164-514-other-requirements
+          - id: § 164.520
+            title: Notice of privacy practices for protected health information
+            url: 164-520-notice-of-privacy-practices
+          - id: § 164.522
+            title: Rights to request privacy protection for protected health information
+            url: 164-522-request-privacy-protection
+          - id: § 164.524
+            title: Access of individuals to protected health information
+            url: 164-524-access-of-individuals
+          - id: § 164.526
+            title: Amendment of protected health information
+            url: 164-526-amendment-of-information
+          - id: § 164.528
+            title: Accounting of disclosures of protected health information
+            url: 164-528-accounting-of-disclosures
+          - id: § 164.530
+            title: Administrative requirements
+            url: 164-530-administrative-requirements
+          - id: § 164.532
+            title: Transition provisions
+            url: 164-532-transition-provisions
+          - id: § 164.534
+            title: Compliance dates for initial implementation of the privacy standards
+            url: 164-534-compliance-dates

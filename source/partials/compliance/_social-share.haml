@@ -1,0 +1,21 @@
+.compliance__social-share-icons
+  %a.blog-post__share-link.blog-post__share-link--facebook{ href: facebook_share_href(page_url), rel: 'noopener noreferrer', target: '_blank' }
+    = partial "images/icons/social/facebook.svg"
+
+  %a.blog-post__share-link.blog-post__share-link--twitter{ href: twitter_share_href(page_url, @title), rel: 'noopener noreferrer', target: '_blank' }
+    = partial "images/icons/social/twitter.svg"
+
+  %a.blog-post__share-link.blog-post__share-link--linkedin{ href: linkedin_share_href(page_url, @title, page_description), rel: 'noopener noreferrer', target: '_blank' }
+    = partial "images/icons/social/linkedin.svg"
+
+  %a.blog-post__share-link.blog-post__share-link--hackernews{   |
+      "data-override" => page_url,                              |
+      "data-title" => @title,                                   |
+      href: hackernews_share_href(page_url, @title),            |
+      rel: 'noopener noreferrer',                               |
+      target: '_blank'                                          |
+    }                                                           |
+    = partial "images/icons/social/hackernews.svg"
+
+  %a.blog-post__share-link.blog-post__share-link--email{ href: mailto_share_href(page_url, @title, page_description) }
+    = partial "images/icons/social/email.svg"

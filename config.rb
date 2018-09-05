@@ -78,6 +78,10 @@ activate :livereload, host: 'localhost' if ENV['ENABLE_LIVERELOAD']
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/hipaa/*', layout: :compliance
+page '/hipaa/regulations/*', layout: :compliance_hipaa_regulation
+page '/gdpr/*', layout: :compliance
+page '/gdpr/articles/*', layout: :compliance_gdpr_regulation
 
 #
 # Blog
@@ -146,5 +150,40 @@ ready do
             page_links: page_links,
             posts: subset
           }
+  end
+end
+
+# Pre-calculate prev, next, and parent links for regulation sections
+ready do
+  [:hipaa, :gdpr].each do |protocol|
+    data[protocol][:flattened] = []
+
+    data[protocol].regulation.each do |part|
+      part.subparts.each do |subpart|
+        subpart.subparts.each do |regulation|
+          regulation[:parents] = [part, subpart]
+          data[protocol].flattened << regulation
+          next unless protocol == :gdpr
+
+          redirect(
+            "/gdpr/articles/#{regulation.id}/",
+            "/gdpr/articles/#{regulation.url}/"
+          )
+        end
+      end
+    end
+
+    data[protocol][:precalculated] = {}
+    data[protocol].flattened.each_with_index do |regulation, regulation_idx|
+      if regulation_idx > 0
+        regulation[:previous] = data[protocol].flattened[regulation_idx - 1]
+      end
+
+      if regulation_idx < data[protocol].flattened.length - 1
+        regulation[:next] = data[protocol].flattened[regulation_idx + 1]
+      end
+
+      data[protocol].precalculated[regulation.url] = regulation
+    end
   end
 end

@@ -6,11 +6,12 @@ module AptibleHelpers
     pg_title = @title || current_page.data.title
     pass_throughs = ['Aptible Blog', 'Aptible', 'Aptible Command-Line Toolbelt']
 
-    case pg_title
-    when pass_throughs.include?(pg_title)
+    if pass_throughs.include?(pg_title)
       return pg_title
-    when current_page.url.include?('/blog')
+    elsif current_page.url.include?('/blog')
       return "#{pg_title} | Aptible Blog"
+    elsif current_page.url.start_with?('/hipaa/', '/gdpr/')
+      return pg_title
     end
 
     "#{pg_title} | Aptible"

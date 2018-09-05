@@ -1,0 +1,11 @@
+1. Without prejudice to [Article 55](/gdpr/articles/55-competence/), the supervisory authority of the main establishment or of the single establishment of the controller or processor shall be competent to act as lead supervisory authority for the cross-border processing carried out by that controller or processor in accordance with the procedure provided in [Article 60](/gdpr/articles/60-cooperation/).
+
+2. By derogation from paragraph 1, each supervisory authority shall be competent to handle a complaint lodged with it or a possible infringement of this Regulation, if the subject matter relates only to an establishment in its Member State or substantially affects data subjects only in its Member State.
+
+3. In the cases referred to in paragraph 2 of this Article, the supervisory authority shall inform the lead supervisory authority without delay on that matter. Within a period of three weeks after being informed the lead supervisory authority shall decide whether or not it will handle the case in accordance with the procedure provided in [Article 60](/gdpr/articles/60-cooperation/), taking into account whether or not there is an establishment of the controller or processor in the Member State of which the supervisory authority informed it.
+
+4. Where the lead supervisory authority decides to handle the case, the procedure provided in [Article 60](/gdpr/articles/60-cooperation/) shall apply. The supervisory authority which informed the lead supervisory authority may submit to the lead supervisory authority a draft for a decision. The lead supervisory authority shall take utmost account of that draft when preparing the draft decision referred to in [Article 60](/gdpr/articles/60-cooperation/)(3).
+
+5. Where the lead supervisory authority decides not to handle the case, the supervisory authority which informed the lead supervisory authority shall handle it according to Articles [61](/gdpr/articles/61-mutual-assistance/) and [62](/gdpr/articles/62-joint-operations/).
+
+6. The lead supervisory authority shall be the sole interlocutor of the controller or processor for the cross-border processing carried out by that controller or processor.

@@ -1,0 +1,1 @@
+No action under this subpart may be entertained unless commenced by the Secretary, in accordance with [§ 160.420](/hipaa/regulations/160-420-notice-of-proposed-determination/), within 6 years from the date of the occurrence of the violation.

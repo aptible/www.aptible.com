@@ -1,0 +1,446 @@
+name: GDPR
+extra_content_title_append: Aptible GDPR Compliance Guide for startups
+search_key: 2w3GFaDn9jgHoQmyqmVo
+slugs:
+  site: gdpr
+  regulations: articles
+hero:
+  title: GDPR Articles
+  subtitle: GDPR Compliance Guide
+nav:
+  regulations_title: Articles
+  extra:
+    - title: Recitals
+      url: /gdpr/recitals/
+regulation:
+  - title: GDPR
+    subparts:
+      - id: Chapter 1
+        title: General Provisions (Art. 1 &ndash; 4)
+        subparts:
+          - id: 1
+            title: Subject-matter and objectives
+            url: 1-subject-matter-objectives
+            recitals: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+          - id: 2
+            title: Material scope
+            url: 2-material-scope
+            recitals: [13, 14, 15, 16, 17, 18, 19, 20, 21, 27]
+          - id: 3
+            title: Territorial scope
+            url: 3-territorial-scope
+            recitals: [22, 23, 24, 25]
+          - id: 4
+            title: Definitions
+            url: 4-definitions
+            recitals: [15, 24, 26, 28, 29, 30, 31, 34, 35, 36, 37]
+      - id: Chapter 2
+        title: Principles (Art. 5 &ndash; 11)
+        subparts:
+          - id: 5
+            title: Principles relating to processing of personal data
+            url: 5-processing-personal-data
+            recitals: [39]
+          - id: 6
+            title: Lawfulness of processing
+            url: 6-lawfulness-of-processing
+            recitals: [39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 171]
+          - id: 7
+            title: Conditions for consent
+            url: 7-conditions-for-consent
+            recitals: [32, 33, 42, 43]
+          - id: 8
+            title: Conditions applicable to child's consent in relation to information society services
+            url: 8-childs-consent
+            recitals: [38]
+          - id: 9
+            title: Processing of special categories of personal data
+            url: 9-processing-special-categories
+            recitals: [46, 51, 52, 53, 54, 55, 56]
+          - id: 10
+            title: Processing of personal data relating to criminal convictions and offences
+            url: 10-processing-criminal-data
+            recitals: [50]
+          - id: 11
+            title: Processing which does not require identification
+            url: 11-processing-not-require-identification
+            recitals: [57]
+      - id: Chapter 3
+        title: Rights of the data subject (Art. 12 &ndash; 23)
+        subparts:
+          - id: 12
+            title: Transparent information, communication and modalities for the exercise of the rights of the data subject
+            url: 12-transparent-communication
+            recitals: [58, 59, 60, 73]
+          - id: 13
+            title: Information to be provided where personal data are collected from the data subject
+            url: 13-information-to-be-provided
+            recitals: [60, 61, 62]
+          - id: 14
+            title: Information to be provided where personal data have not been obtained from the data subject
+            url: 14-information-provided-third-party
+            recitals: [60, 61, 62]
+          - id: 15
+            title: Right of access by the data subject
+            url: 15-right-of-access
+            recitals: [63, 64]
+          - id: 16
+            title: Right to rectification
+            url: 16-right-to-rectification
+            recitals: [65]
+          - id: 17
+            title: Right to erasure (‘right to be forgotten’)
+            url: 17-right-to-be-forgotten
+            recitals: [65, 66]
+          - id: 18
+            title: Right to restriction of processing
+            url: 18-right-to-restriction-of-processing
+            recitals: [67]
+          - id: 19
+            title: Notification obligation regarding rectification or erasure of personal data or restriction of processing
+            url: 19-notification-obligation
+            recitals: [66]
+          - id: 20
+            title: Right to data portability
+            url: 20-right-to-data-portability
+            recitals: [68]
+          - id: 21
+            title: Right to object
+            url: 21-right-to-object
+            recitals: [69, 70]
+          - id: 22
+            title: Automated individual decision-making, including profiling
+            url: 22-automated-decision-making
+            recitals: [71, 72, 91]
+          - id: 23
+            title: Restrictions
+            url: 23-restrictions
+            recitals: [73]
+      - id: Chapter 4
+        title: Controller and processor (Art. 24 &ndash; 43)
+        subparts:
+          - id: 24
+            title: Responsibility of the controller
+            url: 24-responsibility-of-controller
+            recitals: [74, 75, 76, 77]
+          - id: 25
+            title: Data protection by design and by default
+            url: 25-data-protection-design-default
+            recitals: [78]
+          - id: 26
+            title: Joint controllers
+            url: 26-joint-controllers
+            recitals: [79]
+          - id: 27
+            title: Representatives of controllers or processors not established in the Union
+            url: 27-representatives-not-in-eu
+            recitals: [80]
+          - id: 28
+            title: Processor
+            url: 28-processor
+            recitals: [81]
+          - id: 29
+            title: Processing under the authority of the controller or processor
+            url: 29-processing-under-authority
+            recitals: []
+          - id: 30
+            title: Records of processing activities
+            url: 30-processing-records
+            recitals: [13, 82]
+          - id: 31
+            title: Cooperation with the supervisory authority
+            url: 31-cooperation-supervisory-authority
+            recitals: [82]
+          - id: 32
+            title: Security of processing
+            url: 32-security-of-processing
+            recitals: [75, 76, 77, 78, 79, 83]
+          - id: 33
+            title: Notification of a personal data breach to the supervisory authority
+            url: 33-notification-to-authority
+            recitals: [85, 87, 88]
+          - id: 34
+            title: Communication of a personal data breach to the data subject
+            url: 34-notification-personal-data-breach
+            recitals: [86, 87, 88]
+          - id: 35
+            title: Data protection impact assessment
+            url: 35-protection-impact-assessment
+            recitals: [75, 84, 89, 90, 91, 92, 93]
+          - id: 36
+            title: Prior consultation
+            url: 36-prior-consultation
+            recitals: [94, 95, 96]
+          - id: 37
+            title: Designation of the data protection officer
+            url: 37-designation-data-protection-officer
+            recitals: [97]
+          - id: 38
+            title: Position of the data protection officer
+            url: 38-position-data-protection-officer
+            recitals: [97]
+          - id: 39
+            title: Tasks of the data protection officer
+            url: 39-tasks-data-protection-officer
+            recitals: [97]
+          - id: 40
+            title: Codes of conduct
+            url: 40-codes-of-conduct
+            recitals: [98, 99]
+          - id: 41
+            title: Monitoring of approved codes of conduct
+            url: 41-monitoring-approved-codes-conduct
+            recitals: []
+          - id: 42
+            title: Certification
+            url: 42-certification
+            recitals: [100]
+          - id: 43
+            title: Certification bodies
+            url: 43-certification-bodies
+            recitals: []
+      - id: Chapter 5
+        title: Transfers of personal data to third countries or international organizations (Art. 44 &ndash; 50)
+        subparts:
+          - id: 44
+            title: General principle for transfers
+            url: 44-principle-for-transfers
+            recitals: [101, 102]
+          - id: 45
+            title: Transfers on the basis of an adequacy decision
+            url: 45-transfers-adequacy-decision
+            recitals: [103, 104, 105, 106, 107]
+          - id: 46
+            title: Transfers subject to appropriate safeguards
+            url: 46-transfers-safeguards
+            recitals: [108, 109]
+          - id: 47
+            title: Binding corporate rules
+            url: 47-binding-corporate-rules
+            recitals: [110]
+          - id: 48
+            title: Transfers or disclosures not authorised by Union law
+            url: 48-transfers-not-authorised
+            recitals: [115]
+          - id: 49
+            title: Derogations for specific situations
+            url: 49-derogations-for-situations
+            recitals: [111, 112, 113, 114, 115]
+          - id: 50
+            title: International cooperation for the protection of personal data
+            url: 50-international-cooperation-protection
+            recitals: [116]
+      - id: Chapter 6
+        title: Independent supervisory authorities (Art. 51 &ndash; 59)
+        subparts:
+          - id: 51
+            title: Supervisory authority
+            url: 51-supervisory-authority
+            recitals: [117, 118, 119, 120]
+          - id: 52
+            title: Independence
+            url: 52-independence
+            recitals: [117, 118, 120, 121]
+          - id: 53
+            title: General conditions for the members of the supervisory authority
+            url: 53-conditions-members-authority
+            recitals: [121]
+          - id: 54
+            title: Rules on the establishment of the supervisory authority
+            url: 54-establishment-of-authority
+            recitals: [117, 121]
+          - id: 55
+            title: Competence
+            url: 55-competence
+            recitals: [122]
+          - id: 56
+            title: Competence of the lead supervisory authority
+            url: 56-competence-lead-supervisory-authority
+            recitals: [124, 127, 128]
+          - id: 57
+            title: Tasks
+            url: 57-tasks
+            recitals: [122, 123, 132, 133, 137]
+          - id: 58
+            title: Powers
+            url: 58-powers
+            recitals: [122, 129, 131]
+          - id: 59
+            title: Activity reports
+            url: 59-activity-reports
+            recitals: []
+      - id: Chapter 7
+        title: Cooperation and consistency (Art. 60 &ndash; 76)
+        subparts:
+          - id: 60
+            title: Cooperation between the lead supervisory authority and the other supervisory authorities concerned
+            url: 60-cooperation
+            recitals: [124, 125, 130]
+          - id: 61
+            title: Mutual assistance
+            url: 61-mutual-assistance
+            recitals: [123, 132, 133]
+          - id: 62
+            title: Joint operations of supervisory authorities
+            url: 62-joint-operations
+            recitals: [126, 134]
+          - id: 63
+            title: Consistency mechanism
+            url: 63-consistency-mechanism
+            recitals: [135]
+          - id: 64
+            title: Opinion of the Board
+            url: 64-opinion-of-board
+            recitals: [136]
+          - id: 65
+            title: Dispute resolution by the Board
+            url: 65-dispute-resolution
+            recitals: [136]
+          - id: 66
+            title: Urgency procedure
+            url: 66-urgency-procedure
+            recitals: [137, 138]
+          - id: 67
+            title: Exchange of information
+            url: 67-exchange-of-information
+            recitals: []
+          - id: 68
+            title: European Data Protection Board
+            url: 68-data-protection-board
+            recitals: [139]
+          - id: 69
+            title: Independence
+            url: 69-independence
+            recitals: [139]
+          - id: 70
+            title: Tasks of the Board
+            url: 70-tasks-of-the-board
+            recitals: [136, 139]
+          - id: 71
+            title: Reports
+            url: 71-reports
+            recitals: []
+          - id: 72
+            title: Procedure
+            url: 72-procedure
+            recitals: []
+          - id: 73
+            title: Chair
+            url: 73-chair
+            recitals: []
+          - id: 74
+            title: Tasks of the Chair
+            url: 74-tasks-of-the-chair
+            recitals: []
+          - id: 75
+            title: Secretariat
+            url: 75-secretariat
+            recitals: [140]
+          - id: 76
+            title: Confidentiality
+            url: 76-confidentiality
+            recitals: []
+      - id: Chapter 8
+        title: Remedies, liability and penalties (Art. 77 &ndash; 84)
+        subparts:
+          - id: 77
+            title: Right to lodge a complaint with a supervisory authority
+            url: 77-right-to-lodge-complaint
+            recitals: [141]
+          - id: 78
+            title: Right to an effective judicial remedy against a supervisory authority
+            url: 78-right-to-judicial-remedy
+            recitals: [141, 143]
+          - id: 79
+            title: Right to an effective judicial remedy against a controller or processor
+            url: 79-right-remedy-controller-processor
+            recitals: [141, 145]
+          - id: 80
+            title: Representation of data subjects
+            url: 80-representation-data-subjects
+            recitals: [142]
+          - id: 81
+            title: Suspension of proceedings
+            url: 81-suspension-of-proceedings
+            recitals: [144]
+          - id: 82
+            title: Right to compensation and liability
+            url: 82-right-to-compensation-liability
+            recitals: [146, 147]
+          - id: 83
+            title: General conditions for imposing administrative fines
+            url: 83-conditions-imposing-fines
+            recitals: [148, 149, 150, 151, 152]
+          - id: 84
+            title: Penalties
+            url: 84-penalties
+            recitals: [149, 150, 151, 152]
+      - id: Chapter 9
+        title: Provisions relating to specific processing situations (Art. 85 &ndash; 91)
+        subparts:
+          - id: 85
+            title: Processing and freedom of expression and information
+            url: 85-processing-freedom-of-expression
+            recitals: [153]
+          - id: 86
+            title: Processing and public access to official documents
+            url: 86-processing-access-official-documents
+            recitals: [154]
+          - id: 87
+            title: Processing of the national identification number
+            url: 87-processing-national-identification-number
+            recitals: []
+          - id: 88
+            title: Processing in the context of employment
+            url: 88-processing-employment
+            recitals: [155]
+          - id: 89
+            title: Safeguards and derogations relating to processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes
+            url: 89-safeguards-public-interest-science-historical
+            recitals: [156, 157, 158, 159, 160, 161, 162, 163]
+          - id: 90
+            title: Obligations of secrecy
+            url: 90-obligations-of-secrecy
+            recitals: [164]
+          - id: 91
+            title: Existing data protection rules of churches and religious associations
+            url: 91-churches-religious-associations
+            recitals: [165]
+      - id: Chapter 10
+        title: Delegated acts and implementing acts (Art. 92 &ndash; 93)
+        subparts:
+          - id: 92
+            title: Exercise of the delegation
+            url: 92-exercise-delegation
+            recitals: [166, 167, 168, 169, 170]
+          - id: 93
+            title: Committee procedure
+            url: 93-committee-procedure
+            recitals: []
+      - id: Chapter 11
+        title: Final provisions (Art. 94 &ndash; 99)
+        subparts:
+          - id: 94
+            title: Repeal of Directive 95/46/EC
+            url: 94-repeal-95-46-ec
+            recitals: [171]
+          - id: 95
+            title: Relationship with Directive 2002/58/EC
+            url: 95-relationship-2002-58-ec
+            recitals: [173]
+          - id: 96
+            title: Relationship with previously concluded Agreements
+            url: 96-relationship-previous-agreements
+            recitals: []
+          - id: 97
+            title: Commission reports
+            url: 97-commission-reports
+            recitals: []
+          - id: 98
+            title: Review of other Union legal acts on data protection
+            url: 98-review-other-acts
+            recitals: []
+          - id: 99
+            title: Entry into force and application
+            url: 99-entry-into-force
+            recitals: []
