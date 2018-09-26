@@ -1,6 +1,9 @@
 .signup {
-  font-family: $sf-pro-display;
-  letter-spacing: -0.5px;
+  header,
+  .signup__container {
+    font-family: $sf-pro-display;
+    letter-spacing: -0.5px;
+  }
 
   .heading--single-center {
     margin-top: 30px;
