@@ -19,3 +19,4 @@ data/customers.yml
 # aptible.js
 source/javascripts/aptible.js
 aptiblejs/node_modules
+source/javascripts/signup.js

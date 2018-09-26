@@ -1,0 +1,242 @@
+.signup {
+  header,
+  .signup__container {
+    font-family: $sf-pro-display;
+    letter-spacing: -0.5px;
+  }
+
+  .heading--single-center {
+    margin-top: 30px;
+    max-width: 720px;
+    font-family: $sf-pro-display;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    color: $light-med-gray;
+    letter-spacing: 0;
+  }
+
+  .error {
+    border-color: $severity-critical !important;
+
+    label {
+      border-color: $severity-critical !important;
+    }
+  }
+}
+
+
+.signup__container {
+  position: relative;
+  display: flex;
+  width: 1180px;
+  height: 600px;
+  margin: -400px auto 100px auto;
+  z-index: 10;
+}
+
+
+.signup__content {
+  flex: 1;
+  margin-right: 20px;
+  background-color: $white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.05);
+
+  h2 {
+    font-weight: 300;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+
+  p {
+    font-size: 14px;
+
+    &.small {
+      font-size: 11px;
+    }
+  }
+
+  label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6B7993;
+    cursor: pointer;
+
+    &.errorable {
+      border-bottom: 1px solid $white;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 3px;
+      font-size: 12px;
+      font-weight: 400;
+      color: #7383A0;
+    }
+  }
+
+  select {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    border: 2px solid $light-med-gray;
+    background-color: $white;
+    font-family: $sf-pro-display;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  button {
+    padding: 14px 20px;
+    margin-top: 15px;
+    font-family: $sf-pro-display;
+    font-size: 11px;
+    vertical-align: baseline;
+
+    i {
+      display: inline;
+      margin-left: 4px;
+    }
+  }
+}
+
+
+.signup__select-container {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    color: $blue;
+    font-family: $font-awesome;
+    font-weight: 900;
+    content: "\f0d7";
+    pointer-events: none;
+  }
+}
+
+
+.signup__step {
+  width: 390px;
+  height: 450px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.signup__step__row__half {
+  display: inline-block;
+  width: 49%;
+}
+
+.signup__step__row__half--left {
+  padding-right: 1%;
+}
+
+.signup__step__row__half--right {
+  padding-left: 1%;
+}
+
+
+.signup__radio-group {
+  margin: 20px 0;
+}
+
+
+.signup__skip {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+
+.signup__testimonials {
+  position: relative;
+  width: 390px;
+
+  .signup__testimonials__image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .signup__testimonials__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.76;
+    background-image: linear-gradient(180deg, #000000 4%, rgba(0,0,0,0.00) 48%);
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.05);
+    border-radius: 5px;
+    padding: 100px 30px 30px;
+
+    img {
+      display: block;
+      margin: 40px auto;
+    }
+
+    p {
+      color: $light-med-gray;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 0;
+
+      &:before {
+        color: #254672;
+        content: "“";
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1px;
+        margin-right: 0;
+        vertical-align: -20px;
+      }
+    }
+
+    .author {
+      font-size: 11px;
+      font-weight: 600;
+      color: $sky-blue;
+      text-align: right;
+      margin: 10px 0 0;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+
+.fade-wait-leave {
+  opacity: 1;
+}
+.fade-wait-leave.fade-wait-leave-active {
+  opacity: 0;
+  transition: opacity .4s ease-in;
+}
+
+.fade-wait-enter {
+  opacity: 0;
+}
+.fade-wait-enter.fade-wait-enter-active {
+  opacity: 1;
+  /* Delay the enter animation until the leave completes */
+  transition: opacity .4s ease-in .6s;
+}
+
+.fade-wait-height {
+  transition: height .6s ease-in-out;
+}

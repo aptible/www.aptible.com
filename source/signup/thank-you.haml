@@ -1,0 +1,31 @@
+---
+title: Signup
+description: Aptible Gridiron prepares your startup for information security audits with a processs that's fast, relevant, and cost-effective.
+---
+
+- content_for :header do
+  = stylesheet_link_tag :fontawesome
+  %header.aptible-header.hipaa-hosting__header.case-study__header
+    .grid-container.grid--single-center
+      .grid-item.text-center
+        = partial 'partials/aptible-mark'
+
+        %h1.title.white.heading--single-center
+          Almost there! We're setting up your Gridiron Account
+        %p.subtitle
+          You're steps away from joining the hundreds of fast-growing companies
+          that rely on Gridiron for audit prep.
+      
+        %img{ src: '/images/signup/logos.png', style: 'width: 750px; margin: 0 auto 30px auto' }
+
+
+.angled-section-dividers
+.signup__container
+  .signup__content
+    .signup__step{ style: "padding: 75px 0; height: 0" }
+      %h2 What's happening now?
+      %p.text-center
+        One of our IAPP-certified compliance program specialists will reach out
+        soon to discuss next steps.
+
+      %p.text-center In a rush? <a href="#gridiron-signup-call">Drop time on our calendar now</a>.

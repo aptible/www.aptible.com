@@ -43,7 +43,8 @@
 
     = yield
 
-    = partial 'partials/footer'
+    - unless content_for?(:hide_footer)
+      = partial 'partials/footer'
 
     = partial 'partials/notification'
 
