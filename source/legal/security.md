@@ -10,6 +10,7 @@ sub_section: Policies
 [Aptible Terms of Service]:/legal/terms-of-service
 ["Amazon Web Services: Overview of Security Processes - May 2017"]:https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf
 [contact us]:http://contact.aptible.com
+[Managed Host-based Intrusion Detection (HIDS)]:/enclave/managed-host-intrusion-detection-system
 
 Version 3.10 - March 2018
 
@@ -109,7 +110,11 @@ Dedicated Enclave environments are deployed on AWS VPC-based dedicated stacks, i
 Aptible logs AWS and Aptible API activity, and host activity within your stack. Enclave monitors performance indicators such as disk, memory, compute, and logging issues, and automatically resolves them on your behalf.
 
 ##### **3.D - Intrusion Detection & Prevention**
-You may choose to run a host-based intrusion detection or prevention system that can be managed externally, such as Threat Stack, as an add-on. Aptible will ensure the host agents run and can connect to your external management service. You are responsible for procuring a license and operating the system.
+Enclave [Managed Host-based Intrusion Detection (HIDS)] is installed on each host that runs your containers by default and will detect potential intrusions and other anomalous activities.
+
+The Aptible Security Team monitors and investigates each event to determine the legitimacy of all activity. Crucially, the Aptible Security Team immediately responds to and resolves any issues that are discovered through investigation of anomalous activity and will notify you of any remediation steps taken.
+
+You can optionally subscribe to the Enclave HIDS Compliance Report to provide your customers and auditors evidence that you are using HIDS to monitor, analyze, and remediate security events.
 
 ##### **3.E - Host Hardening**
 Enclave host operating systems are hardened based on the Center for Internet Security's Security Configuration Benchmark for the OS and version in use. For all operating systems:
