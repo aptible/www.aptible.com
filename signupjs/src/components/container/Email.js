@@ -9,6 +9,12 @@ class Email extends Component {
       marketing_consent: '',
       errors: []
     };
+
+    // Skip this step if email and marketing consent were passed in the URL
+    const params = aptible.analytics.allParams();
+    if ('email' in params && 'marketing_consent' in params) {
+      this.props.nextStep({ email: params.email, marketing_consent: params.marketing_consent });
+    }
   }
 
   setStateFromEvent = (name, event) => {

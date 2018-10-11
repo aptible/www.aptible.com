@@ -40,6 +40,11 @@
   transform: translateY(-252px);
   z-index: 2;
 
+  &.gridiron {
+    background-image: image-url('section-dividers/angle-solid-bg-gridiron.svg'),
+                      image-url('section-dividers/angle-bg-left-gridiron.svg');
+  }
+
   & + .content {
     padding-top: 50px;
   }

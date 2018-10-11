@@ -28,5 +28,7 @@ description: Aptible Gridiron prepares your startup for information security aud
       .author DAN RYAN, CEO
 
 
-= javascript_include_tag :signup
+- content_for :page_javascript do
+  = javascript_include_tag :signup
+
 - content_for :hide_footer

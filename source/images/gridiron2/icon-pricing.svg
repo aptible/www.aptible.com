@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="66px" viewBox="0 0 74 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 20</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gridiron" transform="translate(-1070.000000, -2047.000000)">
+            <g id="Why" transform="translate(235.000000, 1909.000000)">
+                <g id="Group-11" transform="translate(47.000000, 10.000000)">
+                    <g id="Group-20" transform="translate(788.000000, 128.000000)">
+                        <path d="M11,0 L68.4162896,0 C71.1777133,-5.07265313e-16 73.4162896,2.23857625 73.4162896,5 L73.4162896,60.4198895 C73.4162896,63.1813133 71.1777133,65.4198895 68.4162896,65.4198895 L11,65.4198895 C8.23857625,65.4198895 6,63.1813133 6,60.4198895 L6,5 C6,2.23857625 8.23857625,5.07265313e-16 11,0 Z" id="Rectangle-2-Copy" fill="#EBF4FF"></path>
+                        <g id="making-money" transform="translate(0.000000, 6.000000)">
+                            <rect id="Rectangle" fill="#231F20" x="4" y="14" width="2" height="2"></rect>
+                            <path d="M59,14 L16,14 L16,16 L23.695,16 C20.861,17.992 19,21.28 19,25 L19,35 C19,38.72 20.861,42.008 23.695,44 L16,44 L16,46 L59,46 C59.553,46 60,45.552 60,45 L60,15 C60,14.448 59.553,14 59,14 Z M21,35 L21,25 C21,20.038 25.038,16 30,16 C34.962,16 39,20.038 39,25 L39,35 C39,39.962 34.962,44 30,44 C25.038,44 21,39.962 21,35 Z M58,44 L36.305,44 C39.139,42.008 41,38.72 41,35 L41,25 C41,21.28 39.139,17.992 36.305,16 L58,16 L58,44 Z" id="Shape" fill="#107EFF" fill-rule="nonzero"></path>
+                            <rect id="Rectangle" fill="#107EFF" x="12" y="14" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="8" y="14" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="4" y="44" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="0" y="44" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="0" y="14" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="0" y="19" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="0" y="23" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="0" y="27" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="0" y="31" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="0" y="35" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="0" y="39" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="12" y="44" width="2" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="8" y="44" width="2" height="2"></rect>
+                            <path d="M52,26 L54,26 L54,20 C54,19.448 53.553,19 53,19 L47,19 L47,21 L52,21 L52,26 Z" id="Path" fill="#107EFF"></path>
+                            <path d="M5,20 L5,26 L7,26 L7,21 L12,21 L12,19 L6,19 C5.448,19 5,19.448 5,20 Z" id="Path" fill="#107EFF"></path>
+                            <path d="M12,39 L7,39 L7,34 L5,34 L5,40 C5,40.552 5.448,41 6,41 L12,41 L12,39 Z" id="Path" fill="#107EFF"></path>
+                            <path d="M52,39 L47,39 L47,41 L53,41 C53.553,41 54,40.552 54,40 L54,34 L52,34 L52,39 Z" id="Path" fill="#107EFF"></path>
+                            <path d="M29,23 L31,23 C32.654,23 34,24.346 34,26 L36,26 C36,23.243 33.757,21 31,21 L31,19 L29,19 L29,21 C26.243,21 24,23.243 24,26 C24,28.757 26.243,31 29,31 L31,31 C32.654,31 34,32.346 34,34 C34,35.654 32.654,37 31,37 L29,37 C27.346,37 26,35.654 26,34 L24,34 C24,36.757 26.243,39 29,39 L29,41 L31,41 L31,39 C33.757,39 36,36.757 36,34 C36,31.243 33.757,29 31,29 L29,29 C27.346,29 26,27.654 26,26 C26,24.346 27.346,23 29,23 Z" id="Path" fill="#107EFF"></path>
+                            <rect id="Rectangle" fill="#107EFF" x="45" y="29" width="3" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="12" y="29" width="3" height="2"></rect>
+                            <path d="M6,2 L17,2 L17,0 L5,0 C4.448,0 4,0.448 4,1 L4,11 L6,11 L6,2 Z" id="Path" fill="#107EFF"></path>
+                            <rect id="Rectangle" fill="#107EFF" x="20" y="0" width="10" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="20" y="4" width="21" height="2"></rect>
+                            <rect id="Rectangle" fill="#107EFF" x="20" y="8" width="21" height="2"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

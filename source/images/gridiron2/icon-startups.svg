@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="78px" viewBox="0 0 80 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 19</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gridiron" transform="translate(-680.000000, -2035.000000)">
+            <g id="Why" transform="translate(235.000000, 1909.000000)">
+                <g id="Group-11" transform="translate(47.000000, 10.000000)">
+                    <g id="Group-19" transform="translate(398.000000, 116.000000)">
+                        <path d="M17,12 L74.4162896,12 C77.1777133,12 79.4162896,14.2385763 79.4162896,17 L79.4162896,72.4198895 C79.4162896,75.1813133 77.1777133,77.4198895 74.4162896,77.4198895 L17,77.4198895 C14.2385763,77.4198895 12,75.1813133 12,72.4198895 L12,17 C12,14.2385763 14.2385763,12 17,12 Z" id="Rectangle-2-Copy" fill="#EBF4FF"></path>
+                        <g id="startup" fill="#107EFF">
+                            <path d="M46,3.414 L46,21 L48,21 L48,3.414 L49.293,4.707 L50.707,3.293 L47.707,0.293 C47.316,-0.098 46.684,-0.098 46.293,0.293 L43.293,3.293 L44.707,4.707 L46,3.414 Z" id="Path"></path>
+                            <path d="M55,23.414 L55,41 L57,41 L57,23.414 L58.293,24.707 L59.707,23.293 L56.707,20.293 C56.316,19.902 55.684,19.902 55.293,20.293 L52.293,23.293 L53.707,24.707 L55,23.414 Z" id="Path"></path>
+                            <path d="M12,3.414 L12,21 L14,21 L14,3.414 L15.293,4.707 L16.707,3.293 L13.707,0.293 C13.316,-0.098 12.684,-0.098 12.293,0.293 L9.293,3.293 L10.707,4.707 L12,3.414 Z" id="Path"></path>
+                            <path d="M3,23.414 L3,41 L5,41 L5,23.414 L6.293,24.707 L7.707,23.293 L4.707,20.293 C4.316,19.902 3.684,19.902 3.293,20.293 L0.293,23.293 L1.707,24.707 L3,23.414 Z" id="Path"></path>
+                            <rect id="Rectangle" x="3" y="44" width="2" height="4"></rect>
+                            <rect id="Rectangle" x="55" y="44" width="2" height="4"></rect>
+                            <rect id="Rectangle" x="46" y="24" width="2" height="4"></rect>
+                            <rect id="Rectangle" x="12" y="24" width="2" height="4"></rect>
+                            <rect id="Rectangle" x="0" y="54" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="4" y="54" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="8" y="54" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="12" y="54" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="16" y="54" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="46" y="54" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="42" y="54" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="50" y="54" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="54" y="54" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="58" y="54" width="2" height="2"></rect>
+                            <path d="M36,50.713 L36,47 L48,47 C48.352,47 48.679,46.814 48.859,46.512 C49.039,46.209 49.047,45.834 48.879,45.524 L36,21.747 L36,11 C36,10.986 35.993,10.975 35.992,10.961 C35.988,10.857 35.967,10.755 35.93,10.656 C35.922,10.634 35.917,10.612 35.907,10.59 C35.902,10.578 35.9,10.565 35.894,10.552 L30.894,0.552 C30.555,-0.126 29.444,-0.126 29.105,0.552 L24.105,10.552 C24.099,10.564 24.097,10.577 24.092,10.59 C24.082,10.612 24.077,10.633 24.069,10.656 C24.033,10.755 24.012,10.857 24.007,10.961 C24.007,10.975 24,10.986 24,11 L24,21.747 L11.121,45.524 C10.953,45.834 10.961,46.209 11.141,46.512 C11.321,46.815 11.647,47 12,47 L24,47 L24,50.713 L19.446,58 L0,58 L0,60 L60,60 L60,58 L40.554,58 L36,50.713 Z M34,22 L34,46 L31,46 L31,12 L34,12 L34,22 Z M29,46 L26,46 L26,22 L26,12 L29,12 L29,46 Z M26,48 L34,48 L34,50 L26,50 L26,48 Z M46.321,45 L36,45 L36,42 L41,42 L41,40 L36,40 L36,25.946 L46.321,45 Z M30,3.236 L33.382,10 L26.618,10 L30,3.236 Z M13.679,45 L24,25.946 L24,40 L19,40 L19,42 L24,42 L24,45 L13.679,45 Z M25.554,52 L34.446,52 L38.196,58 L31,58 L31,54 L29,54 L29,58 L21.804,58 L25.554,52 Z" id="Shape" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

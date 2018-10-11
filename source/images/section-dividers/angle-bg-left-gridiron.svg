@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="206" viewBox="0 0 1440 206">
+  <defs>
+    <linearGradient id="angle-bg-left-a" x1="100.921%" x2="-1.184%" y1="1.608%" y2="57.484%">
+      <stop offset="0%" stop-color="#AF1AEA" stop-opacity=".382"/>
+      <stop offset="100%" stop-color="#AF1AEA"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#angle-bg-left-a)" fill-rule="evenodd" opacity=".8">
+    <polygon points="1440 23.688 1440 206 0 206" transform="matrix(-1 0 0 1 1440 0)"/>
+    <polygon points="1440 .668 1440 206 0 206" transform="matrix(-1 0 0 1 1440 0)"/>
+  </g>
+</svg>
