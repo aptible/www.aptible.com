@@ -1,0 +1,158 @@
+- content_for :header do
+  = stylesheet_link_tag :fontawesome
+  %header.aptible-header.hipaa-hosting__header
+    .gridiron2__hero
+      = partial 'partials/aptible-mark'
+
+      .gridiron2__hero__content
+        .gridiron2__header-bar Gridiron
+        %h1.title.white= current_page.data.headline
+        %p= current_page.data.subhead
+        
+        %input#email{ type: 'email', placeholder: 'you@workdomain.com' }
+        %a.btn#cta-top
+          Get Started
+          %i.far.fa-long-arrow-right
+        = partial 'partials/ctas/marketing-consent'
+      
+      .gridiron2__hero__image
+        %img{ src: '/images/gridiron2/desk.svg' }
+
+
+= wrap_layout :layout do
+  .angled-section-dividers.gridiron
+  %section
+    .gridiron2__content-block
+      %h1= current_page.data.body_headline
+      .text-center
+        %img{ src: '/images/gridiron2/logo-row.svg' }
+
+      .gridiron2__testimonial
+        = partial "partials/gridiron2/testimonial-#{current_page.data.testimonial}"
+
+  %section
+    .gridiron2__content-block
+      %h1= current_page.data.bullets_headline
+      .row
+        .third
+          .gridiron2__icon
+            %img{ src: '/images/gridiron2/icon-speed.svg' }
+          %h2 Speed
+          %p Fast, as in you’re up-and-running in hours instead of weeks or months. Get audit-ready and get back to growing your business.
+
+        .third
+          .gridiron2__icon
+            %img{ src: '/images/gridiron2/icon-startups.svg' }
+          %h2 Designed for Startups
+          %p Instructions, policies, team training, and security management features designed specifically for startups looking to open new sales channels or streamline the enterprise sales cycle. 
+
+        .third
+          .gridiron2__icon
+            %img{ src: '/images/gridiron2/icon-pricing.svg' }
+          %h2 Transparent Pricing
+          %p Fixed pricing that makes sense for your business, eliminating the uncertainty of engaging with consultants for audit prep.
+
+  %section
+    .gridiron2__content-block
+      %h1 Design, operate, and audit your information security management program so you’re ready to achieve compliance certifications or streamline vendor security assessments
+
+      .row
+        .half
+          .gridiron2__illustration-content
+            %h1 Design
+            %p Gridiron gives you a baseline set of audit-ready policies and procedures, and asks you straightforward questions that help you tailor them to your startup’s unique needs.
+            %hr
+        .half
+          %img{ src: '/images/gridiron2/illustration-design.svg' }
+      
+      .row
+        .half
+          %img{ src: '/images/gridiron2/illustration-operate.svg' }
+        .half
+          .gridiron2__illustration-content
+            %h1 Operate
+            %p Gridiron guides you on what you need to do to comply with your policies and procedures, and continuously tracks whether you’ve implemented any required changes.
+            %hr
+
+      .row
+        .half
+          .gridiron2__illustration-content
+            %h1 Audit
+            %p Gridiron provides team, auditor, and customer friendly reporting that helps you track your progress towards compliance.
+            %hr
+        .half
+          %img{ src: '/images/gridiron2/illustration-audit.svg' }
+
+  %section
+    .gridiron2__content-block
+      .row
+        .half
+          .gridiron2__illustration-content
+            %h1 Support when you need it
+            %p Our certified compliance specialists are standing by, ready to assist as you design, operate, and audit your information security management program.
+            %hr 
+        
+        .half
+          %img{ src: '/images/gridiron2/illustration-support.jpg' }
+
+  %section
+    .gridiron2__content-block.gridiron2__bottom-cta
+      %h1= current_page.data.bottom_headline
+      %p.text-center
+        Gridiron is your personal compliance coach
+        %br
+        (and the Aptible team of lawyers and certified compliance specialists is your pinch hitter)
+
+      .text-center
+        %a.btn.gridiron#cta-bottom
+          Get Started With Gridiron
+          %i.far.fa-long-arrow-right
+
+
+  %section
+    .gridiron2__content-block.gridiron2__paid-footer
+      %a{ href: '/legal/terms-of-service/' } Terms of Service
+      %a{ href: '/legal/privacy/' } Privacy Statement
+      %a{ href: '/legal/security/' } Security Policy
+
+- content_for :hide_footer
+
+
+:javascript
+  $(function() {
+    var signupUrl = '/signup/';
+    if (window.location.search.length > 0) {
+      signupUrl = signupUrl + window.location.search;
+    }
+
+    // Top CTA includes email and marketing preferences
+    $('#cta-top').on('click', function(e) {
+      e.preventDefault();
+
+      var email = $('#email').val();
+      var marketingConsent = $("input[name='marketing_consent']").val();
+
+      if (email.length > 0 && email.indexOf('@') !== -1) {
+        var signupUrl = '/signup/';
+        if (window.location.search.length > 0) {
+          signupUrl = signupUrl + window.location.search + '&';
+        } else {
+          signupUrl = signupUrl + '?';
+        }
+
+        window.location = signupUrl + 'email=' + email + '&marketing_consent=' + marketingConsent;
+      }
+    });
+
+    // Bottom CTA is just UTM params (if available)
+    $('#cta-bottom').on('click', function(e) {
+      e.preventDefault();
+
+      var signupUrl = '/signup/';
+      if (window.location.search.length > 0) {
+        signupUrl = signupUrl + window.location.search;
+      }
+
+      window.location = signupUrl;
+    });
+  });

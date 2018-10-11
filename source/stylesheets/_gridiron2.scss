@@ -1,0 +1,221 @@
+.gridiron2__hero {
+  position: relative;
+  max-width: 1330px;
+  margin: 20px auto 200px auto;
+  z-index: 5;
+  font-family: $sf-pro-display;
+
+  .aptible-mark {
+    display: block;
+    margin: 0 auto 70px auto;
+    width: 120px;
+  }
+
+  h1 {
+    margin: 20px 0;
+    font-size: 46px;
+  }
+
+  p {
+    color: $gridiron-light-purple;
+    font-size: 20px;
+  }
+
+  .gridiron2__hero__content {
+    float: left;
+    max-width: 675px;
+
+    input[type="email"] {
+      display: inline-block;
+      width: 425px;
+      padding: 8px 150px 10px 12px;
+      margin: 20px 0 15px 0;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      margin-left: -150px;
+
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .gridiron2__hero__image {
+    float: right;
+    margin-top: -50px;
+
+    img {
+      max-width: 500px;
+    }
+  }
+}
+
+
+.gridiron2__header-bar {
+  color: $gridiron-light-purple;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  border-bottom: 3px solid $gridiron-purple;
+}
+
+
+.gridiron2__content-block {
+  max-width: 1085px;
+  margin: 50px auto;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: $dark-blue-steel;
+    text-align: center;
+    max-width: 850px;
+    margin: 50px auto;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #273143;
+    margin: 15px 0 25px 0;
+  }
+
+  p {
+    font-size: 16px;
+    color: $light-blue-gray;
+    line-height: 24px;
+  }
+
+  .row {
+    padding: 40px 0;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .half {
+    float: left;
+    width: 50%;
+    padding: 0 3%;
+  }
+
+  .third {
+    float: left;
+    width: 33%;
+    padding: 0 3%;
+  }
+}
+
+
+.gridiron2__testimonial {
+  padding: 50px 0 80px 0;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .gridiron2__testimonial__quote {
+    float: left;
+    width: 50%;
+    background-color: $white;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 11;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.05);
+    padding: 50px;
+
+    p {
+      font-size: 22px;
+      line-height: 27px;
+      color: $light-blue-gray;
+    }
+
+    .author {
+      font-size: 12px;
+      font-weight: 400;
+      color: #273143;
+      text-transform: uppercase;
+    }
+  }
+
+  .gridiron2__testimonial__image {
+    float: left;
+    width: 50%;
+    position: relative;
+    right: 50px;
+    z-index: 10;
+    height: 350px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.gridiron2__icon {
+  height: 80px;
+}
+
+
+.gridiron2__illustration-content {
+  margin-top: 75px;
+
+  h1 {
+    text-align: left;
+    margin: 0 0 25px 0;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 300;
+    color: $light-blue-gray;
+    letter-spacing: 0.67px;
+    line-height: 30px;
+  }
+
+  hr {
+    border-bottom-width: 4px;
+    width: 45px;
+    margin: 0;
+  }
+}
+
+
+.gridiron2__bottom-cta {
+  padding: 50px 0 200px 0;
+
+  .btn {
+    margin-top: 25px;
+    background-color: $gridiron-purple;
+  }
+}
+
+
+.gridiron2__paid-footer {
+  padding: 20px 0 0 0;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}

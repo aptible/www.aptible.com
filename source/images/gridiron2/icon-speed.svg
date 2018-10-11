@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="71px" viewBox="0 0 78 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gridiron" transform="translate(-282.000000, -2042.000000)">
+            <g id="Why" transform="translate(235.000000, 1909.000000)">
+                <g id="Group-11" transform="translate(47.000000, 10.000000)">
+                    <g id="Group-17" transform="translate(0.000000, 123.000000)">
+                        <path d="M15,5 L72.4162896,5 C75.1777133,5 77.4162896,7.23857625 77.4162896,10 L77.4162896,65.4198895 C77.4162896,68.1813133 75.1777133,70.4198895 72.4162896,70.4198895 L15,70.4198895 C12.2385763,70.4198895 10,68.1813133 10,65.4198895 L10,10 C10,7.23857625 12.2385763,5 15,5 Z" id="Rectangle-2-Copy" fill="#EBF4FF"></path>
+                        <g id="13-fast-delivery" fill="#107EFF">
+                            <path d="M29,64 C13.561,64 1,51.439 1,36 C1,20.561 13.561,8 29,8 C44.439,8 57,20.561 57,36 C57,51.439 44.439,64 29,64 Z M29,10 C14.664,10 3,21.664 3,36 C3,50.336 14.664,62 29,62 C43.336,62 55,50.336 55,36 C55,21.664 43.336,10 29,10 Z" id="Shape" fill-rule="nonzero"></path>
+                            <path d="M29,10 C26.243,10 24,7.757 24,5 C24,2.243 26.243,0 29,0 C31.757,0 34,2.243 34,5 C34,7.757 31.757,10 29,10 Z M29,2 C27.346,2 26,3.346 26,5 C26,6.654 27.346,8 29,8 C30.654,8 32,6.654 32,5 C32,3.346 30.654,2 29,2 Z" id="Shape" fill-rule="nonzero"></path>
+                            <rect id="Rectangle" x="28" y="12" width="2" height="2"></rect>
+                            <rect id="Rectangle" transform="translate(20.999846, 43.999954) rotate(45.000000) translate(-20.999846, -43.999954) " x="19.999856" y="35.5145349" width="1.99998082" height="16.9708372"></rect>
+                            <rect id="Rectangle" transform="translate(8.500200, 15.500614) rotate(45.008103) translate(-8.500200, -15.500614) " x="6.37722014" y="14.5006238" width="4.24595932" height="1.99998084"></rect>
+                            <rect id="Rectangle" x="5" y="35" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="51" y="35" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="28" y="58" width="2" height="2"></rect>
+                            <path d="M29,40 C26.794,40 25,38.206 25,36 C25,33.794 26.794,32 29,32 C31.206,32 33,33.794 33,36 C33,38.206 31.206,40 29,40 Z M29,34 C27.897,34 27,34.897 27,36 C27,37.103 27.897,38 29,38 C30.103,38 31,37.103 31,36 C31,34.897 30.103,34 29,34 Z" id="Shape" fill-rule="nonzero"></path>
+                            <path d="M4,18 C3.744,18 3.488,17.902 3.293,17.707 L0.293,14.707 C-0.098,14.316 -0.098,13.684 0.293,13.293 L6.293,7.293 C6.684,6.902 7.316,6.902 7.707,7.293 L10.707,10.293 C11.098,10.684 11.098,11.316 10.707,11.707 L4.707,17.707 C4.512,17.902 4.256,18 4,18 Z M2.414,14 L4,15.586 L8.586,11 L7,9.414 L2.414,14 Z" id="Shape" fill-rule="nonzero"></path>
+                            <rect id="Rectangle" transform="translate(49.500900, 15.500614) rotate(45.000000) translate(-49.500900, -15.500614) " x="48.5009096" y="13.3776346" width="1.99998082" height="4.24595928"></rect>
+                            <path d="M54,18 C53.744,18 53.488,17.902 53.293,17.707 L47.293,11.707 C46.902,11.316 46.902,10.684 47.293,10.293 L50.293,7.293 C50.684,6.902 51.316,6.902 51.707,7.293 L57.707,13.293 C58.098,13.684 58.098,14.316 57.707,14.707 L54.707,17.707 C54.512,17.902 54.256,18 54,18 Z M49.414,11 L54,15.586 L55.586,14 L51,9.414 L49.414,11 Z" id="Shape" fill-rule="nonzero"></path>
+                            <path d="M29,56 C23.659,56 18.637,53.92 14.86,50.145 L16.274,48.731 C19.673,52.128 24.193,54 29,54 C38.925,54 47,45.925 47,36 C47,26.075 38.925,18 29,18 L29,16 C40.028,16 49,24.972 49,36 C49,47.028 40.028,56 29,56 Z" id="Path"></path>
+                            <path d="M29,50 C25.263,50 21.748,48.544 19.102,45.901 L20.516,44.486 C22.783,46.752 25.796,48 29,48 C35.617,48 41,42.617 41,36 C41,29.383 35.617,24 29,24 L29,22 C36.72,22 43,28.28 43,36 C43,43.72 36.72,50 29,50 Z" id="Path"></path>
+                            <rect id="Rectangle" x="9" y="35" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="13" y="35" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="17" y="35" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="21" y="35" width="2" height="2"></rect>
+                            <rect id="Rectangle" x="28" y="5" width="2" height="4"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
