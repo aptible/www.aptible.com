@@ -118,6 +118,13 @@
   - content_for :hide_footer
 
 
+%script{ async: true, src: "https://www.googletagmanager.com/gtag/js?id=AW-954754223" }
+:javascript
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-954754223');
+
 :javascript
   $(function() {
     var signupUrl = '/signup/';
@@ -130,7 +137,7 @@
       e.preventDefault();
 
       var email = $('#email').val();
-      var marketingConsent = $("input[name='marketing_consent']").val();
+      var marketingConsent = $("input[name='marketing_consent']:checked").val();
 
       if (email.length > 0 && email.indexOf('@') !== -1) {
         var signupUrl = '/signup/';

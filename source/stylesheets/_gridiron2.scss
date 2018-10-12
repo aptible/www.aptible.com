@@ -51,6 +51,40 @@
       max-width: 500px;
     }
   }
+
+  @media screen and (max-width: $tablet-landscape) {
+    margin: 15px;
+
+    .aptible-mark {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 38px;
+    }
+
+    .gridiron2__hero__content {
+      float: none;
+
+      input[type="email"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0 15px 0;
+      }
+
+      .btn {
+        padding: 15px 30px;
+        margin-left: 0;
+        margin-bottom: 30px;
+        background-color: $gridiron-purple;
+      }
+    }
+
+    .gridiron2__hero__image {
+      display: none;
+    }
+  }
 }
 
 
@@ -118,6 +152,22 @@
     width: 33%;
     padding: 0 3%;
   }
+
+  @media screen and (max-width: $tablet-landscape) {
+    margin: 50px 15px;
+
+    .half {
+      float: none;
+      width: 100%;
+      margin-bottom: 70px;
+    }
+
+    .third {
+      float: none;
+      width: 100%;
+      margin-bottom: 70px;
+    }
+  }
 }
 
 
@@ -168,6 +218,24 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: $tablet-landscape) {
+    padding-bottom: 0;
+
+    .gridiron2__testimonial__quote {
+      float: none;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      border: 1px solid #fafafa;
+      padding: 30px;
+    }
+
+    .gridiron2__testimonial__image {
+      display: none;
+    }
   }
 }
 
