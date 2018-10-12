@@ -29,6 +29,13 @@ description: Aptible Gridiron prepares your startup for information security aud
 
 
 - content_for :page_javascript do
+  %script{ async: true, src: "https://www.googletagmanager.com/gtag/js?id=AW-954754223" }
+  :javascript
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-954754223');
+
   = javascript_include_tag :signup
 
 - content_for :hide_footer

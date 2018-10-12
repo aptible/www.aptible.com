@@ -56,6 +56,13 @@ class SignupWizard extends Component {
         )
       });
 
+      // Fire Adwords pixel
+      if (window.gtag) {
+        window.gtag('event', 'conversion', {
+          'send_to': 'AW-954754223/MGnJCOWTpIsBEK_JoccD'
+        });
+      }
+
       // Keep their email address for later autopilot calls
       this.setState({ email: newFacts.email });
     } else {
@@ -90,7 +97,7 @@ class SignupWizard extends Component {
     // Delay the redirect to give time for analytics to be sent
     setTimeout(() => {
       window.location = '/signup/thank-you/';
-    }, 750);
+    }, 1500);
   }
 
   sendToFormKeep = (payload) => {
