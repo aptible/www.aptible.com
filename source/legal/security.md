@@ -2,7 +2,7 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's public security policy"
-posted: 2018-03-13
+posted: 2018-10-12
 section: Legal
 sub_section: Policies
 ---
@@ -12,7 +12,7 @@ sub_section: Policies
 [contact us]:http://contact.aptible.com
 [Managed Host-based Intrusion Detection (HIDS)]:/enclave/managed-host-intrusion-detection-system
 
-Version 3.10 - March 2018
+Version 3.11 - October 2018
 
 This policy outlines: 1) Aptible's security practices and resources, and 2) your security obligations. 
 
@@ -134,6 +134,9 @@ SSH public key authentication is used to limit access to your authorized backend
 
 ##### **3.G - Databases**
 Databases run in the database layer of your stack, on a private subnet accessible only from app or bastion layer. SSL/TLS is required if the database protocol supports it. Disk volumes backing databases are encrypted at the filesystem level using Aptible-managed AES encryption. You can check whether your database uses AES-192 or AES-256 in the Enclave dashboard. You can rekey the database by dumping/restoring it at any time. You may implement additional controls, such as database security policies or row-/column-level encryption with keys you manage.
+
+##### **3.H - Enclave Penetration Testing**
+Aptible conducts penetration testing of the Enclave APIs and one or more reference stacks no less than annually. Any vulnerabilities discovered are prioritized based on risk, with critical vulnerabilities scheduled for remediation within 24 hours. You may conduct testing of your dedicated Enclave stacks and containerized applications as described above ("Requesting Penetration Testing Authorization").
 
 #### **4. Enclave Business Continuity**
 ##### **4.A - Backups**
