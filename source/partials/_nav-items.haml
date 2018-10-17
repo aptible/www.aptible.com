@@ -1,55 +1,29 @@
 .nav-item.nav-parent{ tabindex: 0 }
-  %a.nav-item.nav-item--parent{ href: '#' } Products
-  %nav.nav-list__child-nav
-    %a.nav-item.nav-item--child.nav-item--with-arrow.nav-item__product{ href: '/enclave/', class: active_nav_item('enclave') }
-      %img.nav-item__icon{ src: '/images/icons/enclave-icon.png' }
-      .nav-item__meta
-        .nav-item__title Enclave
-        .nav-item__desc
-          Container orchestration platform with built-in security and compliance
-    %a.nav-item.nav-item--child.nav-item__product{ href: '/gridiron/', class: active_nav_item('gridiron') }
-      %img.nav-item__icon{ src: '/images/icons/gridiron-icon.png' }
-      .nav-item__meta
-        .nav-item__title Gridiron
-        .nav-item__desc
-          Security and compliance management for software development teams
-    .nav-item.nav-item--group
-      .nav-item__title Solutions
-      .nav-item__sub-nav--full
-        %a.sub-nav__item--full{ href: '/enclave/managed-host-intrusion-detection-system/' }
-          Managed Host-based Intrusion Detection
-        %a.sub-nav__item--full{ href: '/compliance/iso-27001-certification/' }
-          ISO 27001 Certification
-        %a.sub-nav__item--full{ href: '/enclave/hipaa-compliant-hosting/' }
-          HIPAA Compliant Hosting
-    %a.nav-item.nav-item--endcap{ href: '/pricing/', class: active_nav_item('pricing') }
-      .nav-item__meta
-        .nav-item__title Pricing
-        .nav-item__desc Simple and transparent pricing
+  %a.nav-item.nav-item--parent{ href: '/gridiron/' } Gridiron
 
 .nav-item.nav-parent{ tabindex: 0 }
-  %a.nav-item.nav-item--parent{ href: '#' } Developers
+  %a.nav-item.nav-item--parent{ href: '/enclave/' } Enclave
+
+.nav-item.nav-parent{ tabindex: 0 }
+  %a.nav-item.nav-item--parent{ href: '#' } Resources
   %nav.nav-list__child-nav.nav-list__child-nav--developers
-    %a.nav-item.nav-item--child.nav-item--with-arrow{ href: "/support/toolbelt" }
-      .nav-item__meta
-        .nav-item__title Toolbelt
-        .nav-item__desc A command-line interface for your Aptible services
-    %a.nav-item.nav-item--child{ href: "#{base_doc_url}/documentation/" }
-      .nav-item__meta
+    .nav-item.nav-item--group.nav-item--with-arrow
+      %a{ href: "#{base_doc_url}/documentation/" }
         .nav-item__title Documentation
-        .nav-item__desc Product reference, getting started guides, and advanced tutorials
-    %a.nav-item.nav-item--child{ href: '/resources/' }
-      .nav-item__meta
-        .nav-item__title Resources
-        .nav-item__desc Learn more about security, compliance, and how Aptible's products help you secure your data
+      .nav-item__sub-nav--full
+        %a.sub-nav__item--full{ href: "#{base_doc_url}/documentation/enclave.html" } Enclave
+        %a.sub-nav__item--full{ href: '/support/toolbelt/' } Command-line Toolbelt
+        %a.sub-nav__item--full{ href: "#{base_doc_url}/documentation/gridiron.html" } Gridiron
+    
+    %a.nav-item.nav-item--child{ href: '/blog/' } Blog
+    %a.nav-item.nav-item--child{ href: '/changelog/' } Changelog
+    
     .nav-item.nav-item--group
-      %a{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides.html" }
-        .nav-item__title Quickstart Guides
-      .nav-item__sub-nav
-        %a.sub-nav__item{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/node-js.html" } NodeJS
-        %a.sub-nav__item{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/php.html" } PHP
-        %a.sub-nav__item{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/python.html" } Python
-        %a.sub-nav__item{ href: "#{base_doc_url}/documentation/enclave/tutorials/quickstart-guides/ruby.html" } Ruby
+      .nav-item__title Compliance Guide
+      .nav-item__sub-nav--full
+        %a.sub-nav__item--full{ href: '/hipaa/' } HIPAA
+        %a.sub-nav__item--full{ href: '/gdpr/' } GDPR
+
     .nav-item__sub-nav--endcap
       %a.sub-nav__item{ href: contact_href, target: '_blank', rel: 'noopener noreferrer' }
         .nav-item__title Open a Ticket
@@ -61,25 +35,11 @@
         .nav-item__title Github
 
 .nav-item.nav-parent{ tabindex: 0 }
-  %a.nav-item.nav-item--parent{ href: '#' } Company
+  %a.nav-item.nav-item--parent{ href: '/company/' } Company
   %nav.nav-list__child-nav.nav-list__child-nav--company
-    %a.nav-item.nav-item--child.nav-item--with-arrow{ href: '/company/' } About Aptible
-
-    %a.nav-item.nav-item--child{ href: '/customers/' } Our Customers
-
-    .nav-item.nav-item--group
-      %a{ href: '/blog/' }
-        .nav-item__title From the Blog
-      .nav-item__sub-nav--full
-        - blog_posts.take(3).each do |post|
-          %a.sub-nav__item--full{ href: blog_post_href(post) }= post.data.title
-
-    .nav-item.nav-item--group
-      %a{ href: '/changelog/' }
-        .nav-item__title Product Updates From the Changelog
-      .nav-item__sub-nav--full
-        - changelog_posts.take(3).each do |post|
-          %a.sub-nav__item--full{ href: changelog_href(post) }= post.data.title
+    %a.nav-item.nav-item--child.nav-item--with-arrow{ href: 'https://jobs.lever.co/aptible', target: '_blank' }
+      Jobs <span class="hiring">we're hiring</span>
+    %a.nav-item.nav-item--child{ href: '/company/' } About Us
 
     .nav-item__sub-nav--endcap
       %a.sub-nav__item{ href: '/faq/' }
@@ -87,7 +47,7 @@
       %a.sub-nav__item{ href: '/legal/' }
         .nav-item__title Legal
       %a.sub-nav__item{ href: '/media/' }
-        .nav-item__title Media Kit
+        .nav-item__title Press
       %a.sub-nav__item{ href: '/contact/' }
         .nav-item__title Contact
 
