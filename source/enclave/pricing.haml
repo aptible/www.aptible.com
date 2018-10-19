@@ -1,0 +1,354 @@
+---
+title: Pricing for Enclave container orchestration platform
+description: Transparent pricing details for Enclave, Aptible's Docker container
+             orchestration platform
+tooltip_containers: 'Aptible provisions 1 GB RAM Docker containers by default for
+                    app and database services. For higher capacity deployments,
+                    sum the total RAM (in GB) required for all containers.'
+tooltip_disks: 'Encrypted database storage. Includes backups: daily for 90 days,
+               monthly for 6 years.'
+tooltip_endpoints: 'Endpoints attach to your containers so that they can be accessed
+                   over the internet, or by other containers. May be HTTPS, TCP, or
+                   TLS Endpoints.'
+tooltip_premium_support: 'Greater of $499 or 10% of monthly Aptible invoice'
+tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice'
+---
+
+- content_for :header do
+  %header.aptible-header.hero-gradient--angled.aptible-header--adjacent.aptible-header--bottom-grid
+    = partial 'partials/main-nav'
+
+    .grid-container.pricing-page-header
+      .centered-header.centered-header--wide
+        %h1.heading__title Enclave Pricing
+        %h2.heading__subtitle Enclave pricing scales as you provision more resources.
+
+      .price-credit-cta
+        .price-credit-cta__header
+          .price-credit-cta__title
+            Free Enclave Development Stack plus $500 usage credit on all new
+            accounts!
+          .price-credit-cta__subtitle
+            Deploy to a free Development Stack now. Just pay for usage charged
+            after your $500 credit.
+        .price-credit-cta__credit $500 Free Credit
+        %a.btn{ href: open_account_href, style: 'order: 3' } Get Started
+
+.content
+  .pricing-summaries.grid-container.pricing-summaries--enclave
+    -# Enclave
+    = partial 'pricing/enclave-summary'
+
+    -# Calculator
+    .pricing-summary.price-calc
+      .pricing-calculator__header
+        .pricing-calculator__title
+          Horizontal and vertical scalability 
+        .pricing-calculator__subtitle
+          Provisioning new resources or adjusting existing is as simple as
+          dragging a slider in the dashboard or running a command in the
+          Aptible CLI.
+
+      .pricing-summary__body.price-calc__units
+        .price-calc__unit.price-calc__unit--containers
+          .price-calc__unit__header.price-calc__unit__header--adjacent
+            %h4.price-calc__unit__title
+              %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_containers }
+                App &amp; Database Containers
+                %span.price-calc__help-tip ?
+            .price-calc__unit__price $0.08/GB/hour
+
+          .price-calc__unit__header
+            %h4.price-calc__unit__title
+              .custom-checkbox
+                %input#price-calc-mhids{ type: 'checkbox', name: 'hids', "data-type" => "managed-hids" }
+                %label{ for: 'price-calc-mhids' }
+                  = partial '/images/icons/checkbox.svg'
+                  %span with Managed HIDS
+
+          .price-calc__unit__estimate
+            .price-calc__unit__slider
+              .price-calc__range
+                %input{ type: 'range', name: 'containers', min: '0', max: '11', step: '1', value: '0', "data-type" => "containers" }
+              %ul.price-calc__range-keys{ "data-type" => "containers" }
+                %li.price-calc__range-key{"data-value" => "0"} 0
+                %li.price-calc__range-key{"data-value" => "1GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "2GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "4GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "6GB"} 6GB
+                %li.price-calc__range-key{"data-value" => "8GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "12GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "16GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "32GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "64GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "128GB"} 128GB
+                %li.price-calc__range-key{ "data-value" => "+" } +
+              .price-calc__included
+            .price-calc__unit__value
+              %span $
+              %span.price-calc__item-price--containers 0
+              %span /month
+
+        .price-calc__unit.price-calc__unit--disks
+          .price-calc__unit__header
+            %h4.price-calc__unit__title
+              %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_disks }
+                Encrypted Disk
+                %span.price-calc__help-tip ?
+            .price-calc__unit__price $0.37/GB/month
+
+          .price-calc__unit__estimate
+            .price-calc__unit__slider
+              .price-calc__range
+                %input{ type: 'range', name: 'disks', min: '0', max: '11', step: '1', value: '0', "data-type" => "disks" }
+              %ul.price-calc__range-keys{"data-type" => "disks"}
+                %li.price-calc__range-key{"data-value" => "0"} 0
+                %li.price-calc__range-key{"data-value" => "10GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "50GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "100GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "250GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "500GB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "1TB"} 1TB
+                %li.price-calc__range-key{"data-value" => "1.5TB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "2TB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "3TB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "4TB"} &centerdot;
+                %li.price-calc__range-key{"data-value" => "+"} &plus;
+              .price-calc__included
+            .price-calc__unit__value
+              %span $
+              %span.price-calc__item-price--disks 0
+              %span /month
+
+        .price-calc__unit.price-calc__unit--endpoints
+          .price-calc__unit__header
+            %h4.price-calc__unit__title
+              %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_endpoints }
+                Endpoints
+                %span.price-calc__help-tip ?
+            .price-calc__unit__price $0.05/hour/month
+
+          .price-calc__unit__estimate
+            .price-calc__unit__slider
+              .price-calc__range
+                %input{ type: 'range', name: 'endpoints', min: '0', max: '11', step: '1', value: '0', "data-type" => "endpoints" }
+              %ul.price-calc__range-keys{"data-type" => "endpoints"}
+                %li.price-calc__range-key 0
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 5
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 10
+                %li.price-calc__range-key{ "data-value" => "+" } &plus;
+              .price-calc__included
+            .price-calc__unit__value
+              %span $
+              %span.price-calc__item-price--endpoints 0
+              %span /month
+
+        .price-calc__unit.price-calc__unit--vpn-connections
+          .price-calc__unit__header
+            %h4.price-calc__unit__title VPN Connections
+            .price-calc__unit__price $99/connection/month
+
+          .price-calc__unit__estimate
+            .price-calc__unit__slider
+              .price-calc__range
+                %input{ type: 'range', name: 'vpn-connections', min: '0', max: '11', step: '1', value: '0', "data-type" => "vpn-connections" }
+              %ul.price-calc__range-keys{"data-type" => "vpn-connections"}
+                %li.price-calc__range-key 0
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 5
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key &centerdot;
+                %li.price-calc__range-key 10
+                %li.price-calc__range-key{ "data-value" => "+" } &plus;
+            .price-calc__unit__value
+              %span $
+              %span.price-calc__item-price--vpn-connections 0
+              %span /month
+
+      .price-calc__totals
+        %a.btn{ href: open_account_href } Sign Up Now
+
+        .price-calc__one-time-credit
+          .price-calc__totals__title Included Free Credit
+          .price-calc__totals__subtitle Use toward resource usage
+          .price-calc__totals__value $500
+
+        .price-calc__estimate-total
+          .price-calc__totals__title Estimated Monthly Total
+          .price-calc__totals__subtitle Includes Stack + Usage
+          .price-calc__totals__value
+            %span $
+            %span.price-calc__monthly-total
+
+  .grid-container
+    .pay-as-you-go
+      .pay-as-you-go__title
+        Development and staging environments require no commitment
+      .pricing-summary__call-out Just Pay For Usage
+      .pay-as-you-go__subtitle
+        Easy to upgrade to Production stack when you're ready go live.
+  
+  = partial "partials/gridiron2/sticky-nav-enclave"
+  %div{ style: 'padding-bottom: 250px;' }
+
+  = partial 'pricing/need-more'
+
+.content
+  .grid-container
+    .pricing__support-plans
+      .pricing__support-plans__title Support
+      .pricing__support-plans__subtitle
+        Aptible provides speedy assistance for all Enclave platform-level
+        issues with the included standard support. Premium support provides
+        more ways to get in touch and 24x7 help with app-specific issues.
+        Enterprise support gets you access to a dedicated engineering resource
+        and even faster response times for critical issues.
+
+      .pricing__support-plans__list
+        .pricing__support-plan
+          .pricing__support-plan__name
+            Business
+            .pricing__support-plan__price
+              Included with every Enclave account
+          .pricing__support-plan__wrap
+            .pricing-summary__label Includes
+            %ul.checklist.checklist--blue.product-checklist
+              %li.pricing-summary__checklist-item
+                Business hours: 9am-6pm Eastern, M-F
+              %li.pricing-summary__checklist-item
+                Target 1 day business response times for all issues
+              %li.pricing-summary__checklist-item
+                Support provided by Aptible Support Team
+              %li.pricing-summary__checklist-item
+                Email
+            -# %a.btn.btn--full{ href: '' } Free
+
+        .pricing__support-plan
+          .pricing__support-plan__name
+            Premium
+            .pricing__support-plan__price
+              %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_premium_support }
+                From $499/month
+                %span.price-calc__help-tip ?
+          .pricing__support-plan__wrap
+            .pricing-summary__label Includes
+            %ul.checklist.checklist--blue.product-checklist
+              %li.pricing-summary__checklist-item
+                24x7 Support
+              %li.pricing-summary__checklist-item
+                Target up to 1 hour response time for urgent issues
+              %li.pricing-summary__checklist-item
+                Support provided by Aptible Support Team
+              %li.pricing-summary__checklist-item
+                Email, Slack
+
+        .pricing__support-plan
+          .pricing__support-plan__name
+            Enterprise
+            .pricing__support-plan__price
+              %dfn{ "data-toggle" => "tooltip", "data-title" => current_page.data.tooltip_enterprise_support }
+                From $4,999/month
+                %span.price-calc__help-tip ?
+          .pricing__support-plan__wrap
+            .pricing-summary__label Includes
+            %ul.checklist.checklist--blue.product-checklist
+              %li.pricing-summary__checklist-item
+                24x7 Support
+              %li.pricing-summary__checklist-item
+                Target up to 15 minute response time for critical issues
+              %li.pricing-summary__checklist-item
+                Support provided by a Dedicated Support Engineer
+              %li.pricing-summary__checklist-item
+                Email, Slack, Phone
+
+      .pricing__support-plans__action
+        %a.btn{ href: '/support-plans/' }
+          Learn More About Aptible's Support Plans
+
+.content
+  .grid-container
+    .pricing-faq
+      .pricing-faq__title Frequently Asked Questions
+      .pricing-faq__qas
+        .pricing-faq__qa
+          .pricing-faq__question
+            How do I upgrade from a free Development stack to a Production stack?
+          .pricing-faq__answer
+            We recommend that you use a Development stack to deploy your proof
+            of concept, and once you’re ready to go live you can deploy your
+            resources to a Production stack. If you need any assistance with
+            this, please get in touch.
+
+        .pricing-faq__qa
+          .pricing-faq__question
+            How does Enclave pricing work?
+          .pricing-faq__answer
+            %p
+              Enclave Production stacks have a base fee and included resources.
+              After the base fee, simply pay for what you use beyond the included
+              resources.
+            %p
+              Enclave Development stacks have no base fee. You just pay for the
+              resources you consume.
+
+        .pricing-faq__qa
+          .pricing-faq__question
+            How do I use the $500 credit?
+          .pricing-faq__answer
+            The credit is automatically applied to every new Enclave account
+            and is used to offset resource costs while you are in development.
+            You will not be charged for any resources until after you've used
+            the entire $500 credit.
+
+        .pricing-faq__qa
+          .pricing-faq__question
+            Why is there a base fee?
+          .pricing-faq__answer
+            Production Enclave stacks run in a dedicated environment to meet
+            common compliance and regulatory guidelines. The base fee covers
+            those fixed costs associated with running dedicated environments.
+
+        .pricing-faq__qa
+          .pricing-faq__question
+            Do you have a “startup” plan? Can I get a discount?
+          .pricing-faq__answer
+            %p
+              Our pricing reflects a balance between optimizing for growth and
+              long-term stability. We try to make our entry point as accessible
+              as possible while preserving extremely high standards for product
+              quality, stability, and technical support.
+            %p
+              We do offer discounts for up-front payments. If that is something
+              you'd like to explore, please let us know.
+
+        .pricing-faq__qa
+          .pricing-faq__question
+            Do I have to sign a long-term contract to use Enclave?
+          .pricing-faq__answer
+            No, you can choose a month-to-month option for $1299/mo base.
+
+        .pricing-faq__qa
+          .pricing-faq__question
+            Does Aptible help with risk assessments and audits?
+          .pricing-faq__answer
+            Yes. We offer Aptible Gridiron for this specific purpose.
+
+
+- content_for :page_javascript do
+  :javascript
+    $(function() {
+      $('.sticky-nav a[href="/enclave/pricing/"]').addClass('active');
+    });

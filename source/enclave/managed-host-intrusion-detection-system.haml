@@ -63,6 +63,9 @@ description: Aptible Enclave protects infrastructure with Managed Host-based Int
 
 .angled-section-dividers
 
+= partial "partials/gridiron2/sticky-nav-enclave"
+%div{ style: 'padding-bottom: 150px;' }
+
 .content
   .grid-container.hero-billboard
     .hero-billboard__copy.grid-item
@@ -140,3 +143,10 @@ description: Aptible Enclave protects infrastructure with Managed Host-based Int
 
 .content.enclave-security-controls
   = partial 'enclave/security-controls'
+
+
+- content_for :page_javascript do
+  :javascript
+    $(function() {
+      $('.sticky-nav a[href="/enclave/managed-host-intrusion-detection-system/"]').addClass('active');
+    });

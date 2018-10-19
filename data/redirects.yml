@@ -615,3 +615,7 @@
   url: "/gdpr/articles/1-subject-matter-objectives/"
 - loc: "/gdpr/"
   url: "/gdpr/articles/1-subject-matter-objectives/"
+- loc: "/pricing/"
+  url: "/enclave/pricing/"
+- loc: "/pricing/enclave/"
+  url: "/enclave/pricing/"
