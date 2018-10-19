@@ -19,18 +19,28 @@
       display: inline-block;
 
       &:hover {
-        border-bottom-color: rgba(0, 0, 0, 0);
+        border-bottom-color: transparent;
+        color: white;
+        transition: background-color .2s ease-in-out;
       }
     }
 
     &.gridiron {
       color: #EAA9FF;
       border-bottom: 4px solid $gridiron-purple;
+
+      &:hover {
+        background-color: $gridiron-purple;
+      }
     }
 
     &.enclave {
       color: #74B3FF;
       border-bottom: 4px solid $enclave-blue;
+
+      &:hover {
+        background-color: $enclave-blue;
+      }
     }
   }
 
@@ -39,6 +49,8 @@
     width: 450px;
     padding: 8px 180px 10px 12px;
     margin: 20px 0 15px 0;
+    border: 0;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15)
   }
 
   a.btn-inside-input {
@@ -146,6 +158,8 @@
   margin: 30px auto;
   box-shadow: 0 15px 40px 0 rgba(0,0,0,0.1);
   border-radius: 8px;
+  position: relative;
+  z-index: 2;
 
   &:after {
     content: "";

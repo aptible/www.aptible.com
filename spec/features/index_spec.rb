@@ -10,6 +10,6 @@ describe 'index', type: :feature do
   end
 
   it 'has signup CTAs' do
-    expect(page.all('form.signup-cta').count).to be > 1
+    expect(page.all('input#email').count).to be 1
   end
 end

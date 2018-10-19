@@ -24,7 +24,7 @@ description: Deploy your app. Design your security management program. Meet the 
             %a.enclave{ href: '/enclave/' }deploy audit-ready apps and databases
 
           %input#email{ type: 'email', placeholder: 'you@workdomain.com' }
-          %a.btn.btn-inside-input.btn--enclave
+          %a.btn.btn-inside-input.btn--enclave#cta-top
             Get Started Now
             %i.far.fa-long-arrow-right
           = partial 'partials/ctas/marketing-consent'
@@ -42,7 +42,7 @@ description: Deploy your app. Design your security management program. Meet the 
 
 .angled-section-dividers
 %section
-  .gridiron2__content-block
+  .gridiron2__content-block{ style: 'margin-bottom: -180px;'}
     %h1
       The most innovative companies use Aptible to protect sensitive data and 
       keep their organizations compliant with critical regulatory frameworks.
@@ -86,3 +86,17 @@ description: Deploy your app. Design your security management program. Meet the 
 - content_for :page_javascript do
   :javascript
     animateHeadline();
+
+    $(function() {
+      // Send email and marketing preferences to /signup/
+      $('#cta-top').on('click', function(e) {
+        e.preventDefault();
+
+        var email = $('#email').val();
+        var marketingConsent = $("input[name='marketing_consent']:checked").val();
+
+        if (email.length > 0 && email.indexOf('@') !== -1) {
+          window.location = '/signup/?' + 'email=' + email + '&marketing_consent=' + marketingConsent;
+        }
+      });
+    });

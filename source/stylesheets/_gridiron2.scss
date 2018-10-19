@@ -289,6 +289,22 @@
   }
 }
 
+.bump-right {
+  padding-left: 50px;
+
+  @media screen and (max-width: $tablet-landscape) {
+    padding-left: 0;
+  }
+}
+
+.bump-left {
+  padding-right: 50px;
+
+  @media screen and (max-width: $tablet-landscape) {
+    padding-right: 0;
+  }
+}
+
 
 .gridiron2__bottom-cta {
   padding: 50px 0 50px 0;
