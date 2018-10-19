@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1441px" height="672px" viewBox="0 0 1441 672" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 21</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100.92139%" y1="1.607739%" x2="-1.18368083%" y2="57.4839411%" id="linearGradient-1">
+            <stop stop-color="#307AD1" stop-opacity="0.382274683" offset="0%"></stop>
+            <stop stop-color="#307AD1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-21" fill="url(#linearGradient-1)">
+            <polygon id="Path-2" opacity="0.0573685701" transform="translate(721.000000, 436.500000) scale(-1, 1) translate(-721.000000, -436.500000) " points="1 433.384765 1441 232 1441 641 1 454.639135"></polygon>
+            <rect id="Rectangle" opacity="0.0332614272" x="0" y="0" width="1441" height="672"></rect>
+        </g>
+    </g>
+</svg>

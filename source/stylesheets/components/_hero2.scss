@@ -1,0 +1,137 @@
+$hero2-grid-img: url('../images/gridiron2/grid-bg-fade.svg') -90% 35% no-repeat;
+
+.hero2__background {
+  background: $hero2-grid-img, linear-gradient(173deg, #00193F 0%, #890B4F 100%);
+  padding-bottom: 50px;
+  margin-bottom: 0;
+}
+
+.hero2__background--gridiron {
+  background: $hero2-grid-img, linear-gradient(180deg, #0c203e 0%, #6e0c6f 100%);
+}
+
+
+.hero2 {
+  font-family: $sf-pro-display;
+
+  &.enclave {
+    margin-bottom: 70px;
+  }
+
+  h1 {
+    margin: 20px 0 30px 0;
+    font-size: 45px;
+    font-weight: 300;
+
+    &.enclave {
+      font-size: 43px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+
+    &.gridiron {
+      color: $gridiron-light-purple;
+      margin-bottom: 20px;
+    }
+
+    &.enclave {
+      color: $enclave-light-blue;
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+
+    &.small {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.hero2__container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  @media screen and (max-width: $tablet-landscape) {
+    padding: 20px 0;
+  }
+}
+
+.hero2__content__left {
+  float: left;
+  max-width: 675px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: $tablet-landscape) {
+    float: none;
+    margin: 15px;
+  }
+}
+
+.hero2__content__right {
+  float: right;
+  max-width: 500px;
+  margin-top: -50px;
+
+  img {
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: $tablet-landscape) {
+    float: none;
+    margin: 15px;
+  }
+}
+
+.hero2__container--gridiron {
+  .hero2__content__left {
+    margin-bottom: 120px;
+  }
+
+  .hero2__content__right {
+    img {
+      margin-top: 20px;
+    }
+  }
+}
+
+.hero2__container--enclave {
+  padding-bottom: 80px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .hero2__content__left {
+    max-width: 600px;
+    margin-bottom: 120px;
+  }
+
+  .hero2__content__right {
+    padding-top: 25px;
+  }
+}
+
+
+.hero2__header-bar {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+
+  &.gridiron {
+    color: $gridiron-light-purple;
+    border-bottom-color: $gridiron-purple;
+  }
+
+  &.enclave {
+    color: $enclave-light-blue;
+    border-bottom-color: $enclave-blue;
+  }
+}

@@ -1,0 +1,19 @@
+.sticky-nav.gridiron
+  %ul
+    %li
+      %a.overview{ href: '#' } Gridiron Overview
+    %li
+      %a{ href: '#features' } Features
+    %li
+      %a{ href: '#pricing' } Pricing
+    %li
+      %a{ href: '#docs' } Docs
+    %li
+      %a.btn.btn--gridiron{ href: '/signup/' }
+        Try Gridiron
+        %i.far.fa-long-arrow-right
+
+- content_for :page_javascript do
+  :javascript
+    stickyNav();
+    stickyNavGridiron();

@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   padding-bottom: 300px;
+
+  &.gridiron {
+    background-image: image-url('section-dividers/angle-bg-left-gridiron.svg');
+  }
 }
 
 .angled-section-divider--left--with-gradient {
@@ -45,6 +49,11 @@
                       image-url('section-dividers/angle-bg-left-gridiron.svg');
   }
 
+  &.enclave {
+    background-image: image-url('section-dividers/angle-solid-bg-enclave.svg'),
+                      image-url('section-dividers/angle-bg-left-enclave.svg');
+  }
+
   & + .content {
     padding-top: 50px;
   }
@@ -73,6 +82,16 @@
   @media screen and (min-width: $fixed-width) {
     margin-top: -250px;
     padding-top: 200px;
+  }
+
+  &.gridiron {
+    background-image: image-url('section-dividers/angle-gradient-bg-gridiron.svg'),
+                      image-url('header-bottom-grid.svg'),
+                      linear-gradient(0deg,
+                                      #381c3b,
+                                      #381c3b 300px,
+                                      rgba(0,0,0,0) 300px,
+                                      rgba(0,0,0,0));
   }
 }
 

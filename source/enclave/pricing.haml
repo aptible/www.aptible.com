@@ -34,7 +34,6 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
         .price-credit-cta__credit $500 Free Credit
         %a.btn{ href: open_account_href, style: 'order: 3' } Get Started
 
-
 .content
   .pricing-summaries.grid-container.pricing-summaries--enclave
     -# Enclave
@@ -201,6 +200,9 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
       .pricing-summary__call-out Just Pay For Usage
       .pay-as-you-go__subtitle
         Easy to upgrade to Production stack when you're ready go live.
+  
+  = partial "partials/gridiron2/sticky-nav-enclave"
+  %div{ style: 'padding-bottom: 250px;' }
 
   = partial 'pricing/need-more'
 
@@ -343,3 +345,10 @@ tooltip_enterprise_support: 'Greater of $4,999 or 10% of monthly Aptible invoice
             Does Aptible help with risk assessments and audits?
           .pricing-faq__answer
             Yes. We offer Aptible Gridiron for this specific purpose.
+
+
+- content_for :page_javascript do
+  :javascript
+    $(function() {
+      $('.sticky-nav a[href="/enclave/pricing/"]').addClass('active');
+    });

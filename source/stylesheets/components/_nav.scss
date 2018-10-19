@@ -246,6 +246,14 @@
       color: $white;
     }
   }
+
+  .hiring {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: top;
+    padding-left: 3px;
+    color: $gridiron-purple;
+  }
 }
 
 .nav-item--parent {

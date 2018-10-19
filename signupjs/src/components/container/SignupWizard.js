@@ -3,6 +3,7 @@ import axios from 'axios';
 import Wizard from './Wizard';
 import Email from '../container/Email';
 import Customize from '../container/Customize';
+import ProductSelection from '../container/ProductSelection';
 import HowHeard from '../container/HowHeard';
 import Profile from '../container/Profile';
 
@@ -65,6 +66,8 @@ class SignupWizard extends Component {
 
       // Keep their email address for later autopilot calls
       this.setState({ email: newFacts.email });
+    } else if ('enclave' in newFacts) {
+      window.location = `https://dashboard.aptible.com/signup?email=${this.state.email}`;
     } else {
       if (this.state.email && Object.keys(newFacts).length > 0) {
         newFacts.email = this.state.email;
@@ -143,7 +146,7 @@ class SignupWizard extends Component {
   }
 
   render() {
-    const stepViews = [Email, Customize, HowHeard, Profile];
+    const stepViews = [Email, ProductSelection, Customize, HowHeard, Profile];
 
     return (
       <Wizard

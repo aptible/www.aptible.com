@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="252" viewBox="0 0 1440 252">
+  <defs>
+    <linearGradient id="angled-solid-bg-a" x1="51.528%" x2="48.464%" y1="1.608%" y2="57.484%">
+      <stop offset="0%" stop-color="#107eff" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#107eff"/>
+    </linearGradient>
+    <linearGradient id="angled-solid-bg-b" x1="51.158%" x2="48.692%" y1="5.003%" y2="57.484%">
+      <stop offset="0%" stop-color="#107eff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#107eff"/>
+    </linearGradient>
+  </defs>
+  <g fill="none">
+    <path fill="#FFFFFF" d="M0,212 C261.164489,173.487693 481.747291,140.983425 661.748406,114.487197 C931.750077,74.7428542 1146.24143,43.1935555 1440,-1.42108547e-14 L1440,212 L0,212 Z" transform="translate(0 40)"/>
+    <polygon fill="url(#angled-solid-bg-a)" points="0 252 1440 .535 1440 40"/>
+    <polygon fill="url(#angled-solid-bg-b)" points="0 244 1440 22.824 1440 40 0 252"/>
+  </g>
+</svg>

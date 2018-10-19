@@ -27,6 +27,9 @@ description: Aptible Enclave is a HIPAA compliant hosting platform, meeting secu
 
 .angled-section-dividers
 
+= partial "partials/gridiron2/sticky-nav-enclave"
+%div{ style: 'padding-bottom: 150px;' }
+
 .content
   .grid-container.hero-billboard.hero-billboard--full-title
     .hero-billboard__title
@@ -245,3 +248,10 @@ description: Aptible Enclave is a HIPAA compliant hosting platform, meeting secu
           Activity Reports list all operations that take
           place in a given Environment; these reports are posted on a weekly basis in the
           Aptible Dashboard.
+
+
+- content_for :page_javascript do
+  :javascript
+    $(function() {
+      $('.sticky-nav a[href="/enclave/hipaa-compliant-hosting/"]').addClass('active');
+    });

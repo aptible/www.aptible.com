@@ -1,0 +1,95 @@
+.sticky-nav {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: $white;
+  padding: 20px;
+  text-align: center;
+  border-top: 4px solid $white;
+
+  &.gridiron {
+    &.stuck {
+      border-top-color: $gridiron-purple;
+    }
+
+    a {
+      color: $gridiron-purple;
+
+      &.active {
+        background-color: #F6D9FF;
+      }
+    }
+
+    .btn {
+      background-color: $gridiron-purple;
+    }
+  }
+
+  &.enclave {
+    &.stuck {
+      border-top-color: $enclave-blue;
+    }
+
+    a {
+      color: $enclave-blue;
+
+      &.active {
+        background-color: #EBF4FF;
+      }
+    }
+
+    .btn {
+      background-color: $enclave-blue;
+    }
+  }
+
+  &.stuck {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px 0 rgba(42,0,59,0.10), 0 10px 20px 0 rgba(29,0,41,0.01);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 12px;
+    border-radius: 4px;
+
+    &.overview {
+      color: #273143;
+    }
+  }
+
+  a.btn {
+    font-size: 11px;
+    padding: 8px 12px;
+    color: $white;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: $tablet-landscape) {
+    width: 100%;
+    padding: 10px;
+
+    li {
+      margin: 5px 10px;
+
+      a {
+        padding: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}

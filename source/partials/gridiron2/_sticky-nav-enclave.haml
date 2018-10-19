@@ -1,0 +1,18 @@
+.sticky-nav.enclave
+  %ul
+    %li
+      %a.overview{ href: '/enclave/' } Enclave Overview
+    %li
+      %a{ href: '/enclave/pricing/' } Pricing
+    %li
+      %a{ href: '/enclave/hipaa-compliant-hosting/' } HIPAA Compliant Hosting
+    %li
+      %a{ href: '/enclave/managed-host-intrusion-detection-system/' } Managed Host Intrusion Detection
+    %li
+      %a.btn.btn--gridiron{ href: '/signup/' }
+        Try Enclave
+        %i.far.fa-long-arrow-right
+
+- content_for :page_javascript do
+  :javascript
+    stickyNav();

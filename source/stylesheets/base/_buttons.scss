@@ -40,6 +40,11 @@
     color: $white;
     outline: none;
   }
+
+  i {
+    display: inline-block;
+    margin-left: 5px;
+  }
 }
 
 .btn + .btn {
@@ -187,5 +192,23 @@
   &:hover, &:focus {
     color: $sky-blue;
     outline: none;
+  }
+}
+
+.btn--gridiron {
+  padding: 18px 40px;
+  background-color: $gridiron-purple;
+
+  &:hover {
+    background-color: #9620C6;
+  }
+}
+
+.btn--enclave {
+  padding: 18px 40px;
+  background-color: $enclave-blue;
+
+  &:hover {
+    background-color: $blue;
   }
 }
