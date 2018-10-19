@@ -116,6 +116,88 @@
     }
   }
 
+  .signup__product-selection {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid $light-med-gray;
+    border-radius: 5px;
+    background-color: $white;
+    font-family: $sf-pro-display;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+  }
+
+  .signup__product-selection__line {
+    grid-column: 1;
+
+    span {
+      display: block;
+      width: 1px;
+      height: 38px;
+      border: 2px solid $white;
+      border-radius: 10px;
+
+      @media screen and (max-width: $tablet-landscape) {
+        height: 60px;
+      }
+    }
+
+    &.gridiron {
+      span {
+        border-color: $gridiron-purple;
+      }
+    }
+
+    &.enclave {
+      span {
+        border-color: $enclave-blue;
+      }
+    }
+  }
+
+  .signup__product-selection__content {
+    grid-column: 2;
+    line-height: 1.3;
+    color: $dark-blue-steel;
+
+    span {
+      display: block;
+      font-weight: 500;
+    }
+
+    &.gridiron {
+      span {
+        color: $gridiron-purple;
+      }
+    }
+
+    &.enclave {
+      span {
+        color: $enclave-blue;
+      }
+    }
+  }
+
+  .signup__product-selection__arrow {
+    grid-column: 3;
+    padding-top: 8px;
+
+    &.gridiron {
+      color: $gridiron-purple;
+    }
+
+    &.enclave {
+      color: $enclave-blue;
+    }
+
+    @media screen and (max-width: $tablet-landscape) {
+      padding-top: 20px;
+    }
+  }
+
   @media screen and (max-width: $tablet-landscape) {
     margin-right: 0;
     margin-bottom: 30px;
