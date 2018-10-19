@@ -1,0 +1,32 @@
+- name: Learn
+  cards:
+    - Account Manager Introduction
+    - Aptible Overview
+    - Protocol Overview
+    - Protocol Deep-Dive
+- name: Design
+  cards:
+    - Account Manager Check-in
+    - Users, Roles, Responsibilities
+    - Asset Management
+    - Security Program and Policy Design
+    - Procedure Design
+    - Customer & Vendor Management
+    - Account Manager Check-in
+- name: Operate
+  cards:
+    - Account Manager Check-in
+    - Secure Software Development
+    - Culture and Security Training
+    - Developer Training
+    - Workforce Training
+    - Incident Response Workshop
+    - Business Continuity Workshop
+    - Security Management
+    - Security Reviews
+    - Risk Management
+- name: Audit
+  cards:
+    - Statement of Applicability
+    - Gap Assessment
+    - Audit Readiness

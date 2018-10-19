@@ -1,0 +1,213 @@
+---
+title: "Security Management Programs for Complying with HIPAA, ISO 27001, SOC 2, NIST 800-53, and many others - Aptible Gridiron&reg;"
+description: Aptible Gridiron helps developer teams set up and run robust
+             security and compliance programs.
+---
+
+- content_for :header do
+  %header.aptible-header.hero2__background.hero2__background--gridiron
+    = partial 'partials/main-nav'
+
+    .hero2.gridiron2__hero
+      .hero2__container.hero2__container--gridiron
+        .hero2__content__left
+          .hero2__header-bar.gridiron Gridiron
+          %h1 A better way for startups to prep for an information security audit
+          %p.gridiron Design, operate, and audit your information security management program with a process that’s fast, relevant, and cost-effective.
+          %p.gridiron.small Gridiron makes it fast and easy to build an audit-ready information security management program that meets the requirements for:
+          %img{ src: '/images/gridiron2/protocol-icons.svg', class: 'gridiron2-protocol-icons' }
+          %a.btn.btn--gridiron{ href: '/signup/' }
+            Get Started With Gridiron
+            %i.far.fa-long-arrow-right
+        
+        .hero2__content__right
+          %img{ src: '/images/gridiron2/protocols.svg', 'data-aos': "fade-down-left", 'data-aos-duration': "400", 'data-aos-delay': "200", 'data-aos-easing': 'ease-in-out-back', 'data-aos-once': "true" }
+
+
+.angled-section-dividers.gridiron
+
+= partial "partials/gridiron2/sticky-nav-gridiron"
+
+%section.light-blue-angle-divider
+  .gridiron2__content-block
+    %h1 Hundreds of startups use Aptible to streamline audit prep and reduce the burden of vendor security assessments
+    .text-center
+      %img{ src: '/images/gridiron2/logo-row.svg', style: 'padding: 30px 0' }
+
+    .gridiron2__testimonial
+      = partial "partials/gridiron2/testimonial-snaps"
+
+%section
+  .gridiron2__content-block
+    %h1 Complete information security audit prep, built for startups
+    .row
+      .third
+        .gridiron2__icon
+          %img{ src: '/images/gridiron2/icon-speed.svg' }
+        %h2 Fast
+        %p Fast, as in you’re up-and-running in hours instead of weeks or months. Get audit-ready and get back to growing your business.
+
+      .third
+        .gridiron2__icon
+          %img{ src: '/images/gridiron2/icon-startups.svg' }
+        %h2 Designed for Startups
+        %p Instructions, policies, team training, and security management features and services designed specifically for startups looking to open new sales channels or streamline the enterprise sales cycle. 
+
+      .third
+        .gridiron2__icon
+          %img{ src: '/images/gridiron2/icon-pricing.svg' }
+        %h2 Cost-effective
+        %p The Gridiron platform delivers more comprehensive audit prep at a fraction of the cost of alternatives. It's priced at about 1/5th the cost of hiring a security lead, and less than most consultants.
+
+%section#features
+  .gridiron2__content-block
+    %h1 Design, operate, and audit your information security management program so you’re ready to achieve compliance certifications or streamline vendor security assessments
+
+    .row.grid
+      .half.push-right
+        %img{ src: '/images/gridiron2/illustration-design.svg' }
+      .half.pull-left
+        .gridiron2__illustration-content
+          %h1 Design
+          %p Gridiron gives you a baseline set of audit-ready policies and procedures, and asks you straightforward questions that help you tailor them to your startup’s unique needs.
+          %hr
+    
+    .row.grid
+      .half
+        %img{ src: '/images/gridiron2/illustration-operate.svg' }
+      .half
+        .gridiron2__illustration-content
+          %h1 Operate
+          %p Gridiron guides you on what you need to do to comply with your policies and procedures, and continuously tracks whether you’ve implemented any required changes.
+          %hr
+
+    .row.grid
+      .half.push-right
+        %img{ src: '/images/gridiron2/illustration-audit.svg' }
+      .half.pull-left
+        .gridiron2__illustration-content
+          %h1 Audit
+          %p Gridiron provides team, auditor, and customer friendly reporting that helps you track your progress towards compliance.
+          %hr
+
+
+%section
+  .gridiron2__content-block.expanded
+    %h1 Step-by-step directions tailored to your startup from zero to audit-ready
+
+    .gridiron2__kanban
+      - data.gridiron_kanban.each_with_index do |column, idx|
+        .gridiron2__kanban__col
+          .gridiron2__kanban__header
+            %h6 Phase #{idx + 1}
+            %h3= column.name
+          .gridiron2__kanban__cards
+            - column.cards.each do |card|
+              .gridiron2__kanban__card
+                #{card}
+                %hr
+
+
+%section
+  .gridiron2__content-block
+    .row
+      .half
+        .gridiron2__illustration-content
+          %h1 Support when you need it
+          %p Our certified compliance specialists are standing by, ready to assist as you design, operate, and audit your information security management program.
+          %hr 
+      
+      .half
+        %img{ src: '/images/gridiron2/illustration-support.jpg' }
+
+%section
+  .gridiron2__content-block
+    %h1 Building your information security program is a team sport
+    %p.text-center
+      Gridiron is your personal compliance coach
+      %br
+      (and the Aptible team of lawyers and certified compliance specialists is your pinch hitter)
+
+    .text-center
+      %a.btn.btn--gridiron.gridiron{ href: '/signup/' }
+        Get Started With Gridiron
+        %i.far.fa-long-arrow-right
+
+
+%section.light-blue-angle-divider#pricing{ style: 'margin-bottom: 100px' }
+  .gridiron2__content-block{ style: 'margin-bottom: -100px;' }
+    %h1 Gridiron Pricing
+    .subhead The quickest path from zero to information security audit ready
+
+    .gridiron2__pricing
+      .gridiron2__pricing__header
+        %h6 Gridiron Pricing
+        %h2 Your Information Security Management Program
+        %p Tailored to your specific needs (such as size, geography, industry, and customers)
+      .gridiron2__pricing__cta
+        %a.btn.btn--gridiron{ href: '/signup/' }
+          Sign up to get a quote
+          %i.far.fa-long-arrow-right
+
+        %a.get-in-touch{ href: '#gridiron-pricing-call' }
+          Or get in touch
+          %i.far.fa-long-arrow-right
+      
+      .gridiron2__pricing__content
+        %p The best platform to design, operate and audit your Information Security Management Program
+
+        %h6 What's Included:
+        %ul
+          %li <span></span> Complete audit prep for the compliance framework(s) of your choice
+          %li <span></span> Guided policy and procedure creation
+          %li <span></span> Gap Analysis reporting
+          %li <span></span> Bespoke training and support included
+          %li <span></span> Collaborative access for your entire team
+        
+        %p Security services to ensure you're audit ready
+        %p.small Aptible Professional Security Services gives you access to our team of lawyers, compliance experts, and startup operators at just a fraction of the cost of a security hire. 
+
+        %h6 Available Services Include:
+        %ul
+          %li <span></span> Internal Audits
+          %li <span></span> Security Officer
+          %li <span></span> EU GDPR Data Protection Officer
+
+
+%section#docs
+  .gridiron2__content-block
+    %h1 Gain new insights and level up your compliance knowledge from Aptible’s team of compliance and security experts
+
+    .gridiron2__compliance-row
+      .gridiron2__compliance-cell.left
+        %img{ src: '/images/gridiron2/icon-hipaa.svg' }
+        %h2 HIPAA Compliance Guide
+        %p Explosive growth in digital health over the last few years means there are many developers and managers who haven’t worked under HIPAA before. This guide is written for startups (and small businesses operating online) who could use some help with the basics of HIPAA compliance.
+        %a{ href: '/hipaa/' }
+          Check out the guide
+          %i.far.fa-long-arrow-right
+
+      .gridiron2__compliance-cell.right
+        %img{ src: '/images/gridiron2/icon-gdpr.svg' } 
+        %h2 GDPR Compliance Guide
+        %p The overarching goals of the GDPR are to give control back to EU citizens and residents over their personal data, simplify and harmonize the regulatory environment for international business by unifying regulation within the EU, and address the export of personal data outside the EU.
+        %a{ href: '/gdpr/' }
+          Check out the guide
+          %i.far.fa-long-arrow-right
+    
+    .gridiron2__compliance-row
+      .gridiron2__compliance-cell.left
+        %p ISO 27001 Compliance Guide Coming Soon
+
+      .gridiron2__compliance-cell.right
+        %p SOC 2 Compliance Guide Coming Soon
+
+
+.content.angled-section-divider--left.gridiron
+.content.angled-section-gradient.gridiron
+  = partial "partials/gridiron2/bottom-cta-newsletter"
+
+
+- content_for :page_javascript do
+  :javascript
+    AOS.init();

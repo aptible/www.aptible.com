@@ -1,22 +1,22 @@
 - content_for :header do
-  = stylesheet_link_tag :fontawesome
-  %header.aptible-header.hipaa-hosting__header
-    .gridiron2__hero
+  %header.aptible-header.hero2__background.hero2__background--gridiron
+    .hero2.gridiron2__hero
       = partial 'partials/aptible-mark'
 
-      .gridiron2__hero__content
-        .gridiron2__header-bar Gridiron
-        %h1.title.white= current_page.data.headline
-        %p= current_page.data.subhead
+      .hero2__container.hero2__container--gridiron
+        .hero2__content__left
+          .hero2__header-bar.gridiron Gridiron
+          %h1= current_page.data.headline
+          %p.gridiron= current_page.data.subhead
+          
+          %input#email{ type: 'email', placeholder: 'you@workdomain.com' }
+          %a.btn.btn-inside-input.btn--gridiron#cta-top
+            Get Started
+            %i.far.fa-long-arrow-right
+          = partial 'partials/ctas/marketing-consent'
         
-        %input#email{ type: 'email', placeholder: 'you@workdomain.com' }
-        %a.btn#cta-top
-          Get Started
-          %i.far.fa-long-arrow-right
-        = partial 'partials/ctas/marketing-consent'
-      
-      .gridiron2__hero__image
-        %img{ src: '/images/gridiron2/desk.svg' }
+        .hero2__content__right
+          %img{ src: '/images/gridiron2/desk.svg' }
 
 
 = wrap_layout :layout do
@@ -104,7 +104,7 @@
         (and the Aptible team of lawyers and certified compliance specialists is your pinch hitter)
 
       .text-center
-        %a.btn.gridiron#cta-bottom
+        %a.btn.btn--gridiron.gridiron#cta-bottom
           Get Started With Gridiron
           %i.far.fa-long-arrow-right
 

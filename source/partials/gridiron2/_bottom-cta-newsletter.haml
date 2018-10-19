@@ -1,0 +1,16 @@
+.grid-container.gridiron2-newsletter-cta
+  .grid-item.text-center
+    %h2.subtitle--caps.blue Relevant security news delivered to your inbox
+    %h1.title.white.heading--single-center
+      Security Awareness Monthly
+    %p.subtitle.light-blue-gray
+      Never miss a breach, vulnerability or risk that impacts your business.  We’ll send you the best from publications like Krebs on Security, Bleeping Computer, and Lexology in a concise monthly digest.
+    
+    %form.newsletter-signup--blog__form.signup-cta--small{ action: 'https://formkeep.com/f/6d5e9ddb6e0e', method: 'post' }
+      %input{ type: 'hidden', name: 'event', value: 'subscribed' }
+      %input{ type: 'hidden', name: 'utf8', value: '✓' }
+      %input{ type: 'hidden', name: '_redirect_url', value: page_url }
+      %input{ type: 'text', name: 'form-name', value: 'Newsletter Signup', style: 'display: none;' }
+      %input{ required: true, name: 'newsletter-form__email', type: 'email', placeholder: 'Enter your email' }
+      %button.btn--enclave{ type: 'submit'} Sign up
+      = partial 'partials/ctas/marketing-consent'
