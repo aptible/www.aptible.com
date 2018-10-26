@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="450px" height="125px" viewBox="0 0 450 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="100.92139%" y1="1.607739%" x2="-1.18368083%" y2="57.4839411%" id="linearGradient-1">
-            <stop stop-color="#307AD1" stop-opacity="0.382274683" offset="0%"></stop>
-            <stop stop-color="#307AD1" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(-182.000000, -25.000000)" fill="url(#linearGradient-1)">
-            <polygon id="Path-2" opacity="0.0332614272" transform="translate(888.904297, 217.351562) scale(-1, 1) translate(-888.904297, -217.351562) " points="65.8085938 209.1875 1712 55.2109375 1604.80859 379.492187 77.8582322 379.492187"></polygon>
-            <polygon id="Path-2" opacity="0.0573685701" transform="translate(811.472656, 190.046875) scale(-1, 1) translate(-811.472656, -190.046875) " points="6.50390625 227.03125 1622.94531 0 1512.46094 380.09375 0 380.09375"></polygon>
-        </g>
-    </g>
-</svg>
+<svg width="450" height="125" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="100.921%" y1="1.608%" x2="-1.184%" y2="57.484%" id="a"><stop stop-color="#307AD1" stop-opacity=".382" offset="0%"/><stop stop-color="#307AD1" offset="100%"/></linearGradient></defs><g transform="translate(-182 -25)" fill="url(#a)" fill-rule="evenodd"><path opacity=".033" d="M1712 209.188L65.809 55.21 173 379.492h1526.95z"/><path opacity=".057" d="M1616.441 227.031L0 0l110.484 380.094h1512.461z"/></g></svg>

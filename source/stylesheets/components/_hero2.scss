@@ -1,13 +1,23 @@
-$hero2-grid-img: url('../images/gridiron2/grid-bg-fade.svg') -90% 35% no-repeat;
+$hero2-grid-img: url('../images/gridiron2/grid-bg-fade.png') 160% 34%/75% no-repeat;
 
 .hero2__background {
   background: $hero2-grid-img, linear-gradient(173deg, #00193F 0%, #890B4F 100%);
   padding-bottom: 50px;
   margin-bottom: 0;
+
+  @media screen and (max-width: $tablet-landscape) {
+    background-position: right center;
+    background-size: 100%;
+  }
 }
 
 .hero2__background--gridiron {
   background: $hero2-grid-img, linear-gradient(180deg, #0c203e 0%, #6e0c6f 100%);
+
+  @media screen and (max-width: $tablet-landscape) {
+    background-position: right center;
+    background-size: 100%;
+  }
 }
 
 
