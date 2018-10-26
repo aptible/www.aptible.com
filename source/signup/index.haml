@@ -35,6 +35,11 @@ description: Aptible Gridiron prepares your startup for information security aud
     gtag('js', new Date());
     gtag('config', 'AW-954754223');
 
+    // Quora ad tracking
+    !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+    qp('init', 'f20fa10cf456448fa89feda2f8449482');
+    qp('track', 'ViewContent');
+
   = javascript_include_tag :signup
 
 - content_for :hide_footer

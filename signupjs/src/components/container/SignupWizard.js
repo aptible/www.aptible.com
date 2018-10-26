@@ -64,6 +64,11 @@ class SignupWizard extends Component {
         });
       }
 
+      // Fire Quora pixel
+      if (window.qp) {
+        window.qp('track', 'Generic');
+      }
+
       // Keep their email address for later autopilot calls
       this.setState({ email: newFacts.email });
     } else if ('enclave' in newFacts) {
