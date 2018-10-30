@@ -2,7 +2,7 @@
 title: Security Policy
 tracked_title: Security
 description: "Aptible's public security policy"
-posted: 2018-10-12
+posted: 2018-10-29
 section: Legal
 sub_section: Policies
 ---
@@ -12,7 +12,7 @@ sub_section: Policies
 [contact us]:http://contact.aptible.com
 [Managed Host-based Intrusion Detection (HIDS)]:/enclave/managed-host-intrusion-detection-system
 
-Version 3.11 - October 2018
+Version 3.12 - October 2018
 
 This policy outlines: 1) Aptible's security practices and resources, and 2) your security obligations. 
 
@@ -136,7 +136,11 @@ SSH public key authentication is used to limit access to your authorized backend
 Databases run in the database layer of your stack, on a private subnet accessible only from app or bastion layer. SSL/TLS is required if the database protocol supports it. Disk volumes backing databases are encrypted at the filesystem level using Aptible-managed AES encryption. You can check whether your database uses AES-192 or AES-256 in the Enclave dashboard. You can rekey the database by dumping/restoring it at any time. You may implement additional controls, such as database security policies or row-/column-level encryption with keys you manage.
 
 ##### **3.H - Enclave Penetration Testing**
-Aptible conducts penetration testing of the Enclave APIs and one or more reference stacks no less than annually. Any vulnerabilities discovered are prioritized based on risk, with critical vulnerabilities scheduled for remediation within 24 hours. You may conduct testing of your dedicated Enclave stacks and containerized applications as described above ("Requesting Penetration Testing Authorization").
+Aptible conducts penetration testing of the Enclave infrastructure at least annually. These tests consist of open-ended, best-effort security assessments performed by qualified third-party testing firms that specialize in cloud and containerized infrastructures. The testers review the Enclave architecture, are given full read access to Enclave source code (and access to the Enclave engineering team to answer questions throughout the test), and are given privileged internal (i.e., backdoor) access to a sandbox Enclave environment. From this context, the testers attempt to identify vulnerabilities in Enclave’s control plane, core API, authentication API, and related Enclave services. 
+
+All vulnerabilities identified as a result of our penetration tests are classified by severity level (from critical risk to low risk), and are remediated in order of severity. Critical vulnerabilities are scheduled for remediation within 24 hours.
+
+You may conduct testing of your dedicated Enclave stacks and containerized applications as described above (“Requesting Penetration Testing Authorization”).
 
 #### **4. Enclave Business Continuity**
 ##### **4.A - Backups**
