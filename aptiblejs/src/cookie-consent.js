@@ -5,7 +5,6 @@ import './cookie-consent.css';
 
 const CONSENT_COOKIE_NAME = 'cookie_consent';
 const CONSENT_LENGTH_DAYS = 365;
-const CONSENT_ANALYTICS_EVENT = 'Cookie Consent Dismissed';
 
 export default function() {
   if (!cookie.get(CONSENT_COOKIE_NAME)) {
@@ -23,7 +22,7 @@ function agreeAndClose() {
   expiresAt.setDate(expiresAt.getDate() + CONSENT_LENGTH_DAYS);
 
   cookie.write(CONSENT_COOKIE_NAME, 'yes', expiresAt);
-  analytics.event(CONSENT_ANALYTICS_EVENT);
+  analytics.event(analytics.events.COOKIE_CONSENT);
 
   hideConsentForm();
 }

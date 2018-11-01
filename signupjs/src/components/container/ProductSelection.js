@@ -8,7 +8,7 @@ class ProductSelection extends Component {
   }
 
   selectGridiron = () => {
-    this.props.nextStep({});
+    this.props.nextStep({ 'gridiron': '1' });
   }
 
   selectEnclave = () => {
