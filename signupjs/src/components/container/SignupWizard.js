@@ -47,6 +47,10 @@ class SignupWizard extends Component {
       aptible.analytics.event(aptible.analytics.events.EMAIL_COLLECTED);
       aptible.analytics.fireAllPixels();
 
+      if (aptible.analytics.getParam('gridiron')) {
+        aptible.analytics.event(aptible.analytics.events.SIGNUP_GRIDIRON);
+      }
+
       // Send to formkeep so we at least have their email
       this.sendToFormKeep(newFacts);
 
@@ -79,7 +83,7 @@ class SignupWizard extends Component {
         this.sendToAutopilot(payload);
       }
 
-      if ('gridiron' in newFacts) {
+      if ('gridiron' in newFacts && aptible.analytics.getParam('gridiron') === undefined) {
         aptible.analytics.event(aptible.analytics.events.SIGNUP_GRIDIRON);
       }
     }

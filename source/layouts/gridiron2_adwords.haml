@@ -163,7 +163,7 @@
           signupUrl = signupUrl + '?';
         }
 
-        window.location = signupUrl + 'email=' + email + '&marketing_consent=' + marketingConsent;
+        window.location = signupUrl + 'email=' + email + '&marketing_consent=' + marketingConsent + '&gridiron=true';
       }
     });
 
@@ -173,7 +173,9 @@
 
       var signupUrl = '/signup/';
       if (window.location.search.length > 0) {
-        signupUrl = signupUrl + window.location.search;
+        signupUrl = signupUrl + window.location.search + '&gridiron=true';
+      } else {
+        signupUrl = signupUrl + '?gridiron=true';
       }
 
       window.location = signupUrl;
