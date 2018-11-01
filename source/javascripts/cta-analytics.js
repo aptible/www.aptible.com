@@ -11,7 +11,7 @@ $(function() {
         aptible.analytics.fireAllPixels();
       }
 
-      setTimeout(() => {
+      setTimeout(function() {
         $(this).off();
         $(this).submit();
       }, 500);
