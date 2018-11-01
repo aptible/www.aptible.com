@@ -44,6 +44,8 @@ class SignupWizard extends Component {
     if ('email' in newFacts) {
       // First step completed, identify this visitor
       aptible.analytics.identify(newFacts.email);
+      aptible.analytics.event(aptible.analytics.events.EMAIL_COLLECTED);
+      aptible.analytics.fireAllPixels();
 
       // Send to formkeep so we at least have their email
       this.sendToFormKeep(newFacts);
@@ -57,22 +59,15 @@ class SignupWizard extends Component {
         )
       });
 
-      // Fire Adwords pixel
-      if (window.gtag) {
-        window.gtag('event', 'conversion', {
-          'send_to': 'AW-954754223/MGnJCOWTpIsBEK_JoccD'
-        });
-      }
-
-      // Fire Quora pixel
-      if (window.qp) {
-        window.qp('track', 'Generic');
-      }
-
       // Keep their email address for later autopilot calls
       this.setState({ email: newFacts.email });
     } else if ('enclave' in newFacts) {
-      window.location = `https://dashboard.aptible.com/signup?email=${this.state.email}`;
+      aptible.analytics.event(aptible.analytics.events.SIGNUP_ENCLAVE);
+
+      // Give some time for the analytics event to fire
+      setTimeout(() => {
+        window.location = `https://dashboard.aptible.com/signup?email=${this.state.email}`;
+      }, 500);
     } else {
       if (this.state.email && Object.keys(newFacts).length > 0) {
         newFacts.email = this.state.email;
@@ -83,10 +78,14 @@ class SignupWizard extends Component {
 
         this.sendToAutopilot(payload);
       }
+
+      if ('gridiron' in newFacts) {
+        aptible.analytics.event(aptible.analytics.events.SIGNUP_GRIDIRON);
+      }
     }
 
     // Fire an event for each step in the signup wizard
-    aptible.analytics.event(`Gridiron Signup ${view.name}`);
+    aptible.analytics.event(`Signup Step Completed: ${view.name}`);
   }
 
   wizardCompleted = (facts) => {

@@ -1,10 +1,10 @@
 - cta_label ||= 'Sign Up'
 - cta_placeholder ||= 'Work Email'
 - class_name ||= ''
-%form.signup-cta.single-line{ action: 'https://formkeep.com/f/f6bad6b94e88', method: 'post', class: class_name }
+%form.signup-cta.single-line.aptible-enclave-form{ action: 'https://formkeep.com/f/f6bad6b94e88', method: 'post', class: class_name }
   %input{ type: 'hidden', name: 'utf8', value: '✓' }
   %input{ type: 'hidden', name: '_redirect_url', value: open_account_href }
   %input{ type: 'text', name: 'form-name', value: 'Enclave Signup', style: 'display: none;' }
-  %input.single-line__input{ type: 'email', name: 'email', placeholder: cta_placeholder, required: true }
+  %input.aptible-email.single-line__input{ type: 'email', name: 'email', placeholder: cta_placeholder, required: true }
   %button.single-line__submit{ type: 'submit' }= cta_label
   = partial 'partials/ctas/marketing-consent'

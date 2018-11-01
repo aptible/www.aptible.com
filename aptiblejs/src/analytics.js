@@ -1,5 +1,14 @@
 export const utmVars = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
 
+export const events = {
+  EMAIL_COLLECTED: 'Email Collected',
+  SIGNUP_GRIDIRON: 'Gridiron Signup Started',
+  SIGNUP_ENCLAVE: 'Enclave Signup Started',
+  SIGNUP_NEWSLETTER: 'Newsletter Signup',
+  SIGNUP_DRIFT: 'Drift Email Collected',
+  COOKIE_CONSENT: 'Cookie Consent Dismissed'
+};
+
 export function allParams() {
   const params = {};
 
@@ -62,11 +71,20 @@ export function identify(email) {
   }
 }
 
+export function fireAllPixels() {
+  firePixel('quora');
+}
+
 export function firePixel(service) {
   switch (service) {
     case 'twitter':
       if (window.twttr) {
         twttr.conversion.trackPid('nz8pr', { tw_sale_amount: 0, tw_order_quantity: 0 });
+      }
+      break;
+    case 'quora':
+      if (window.qp) {
+        window.qp('track', 'Generic');
       }
       break;
   }
