@@ -1,6 +1,6 @@
 $(function() {
   // If Drift collects an email address, record the conversion
-  setTimeout(() => {
+  setTimeout(function() {
     if (window.drift && window.aptible && window.aptible.analytics) {
       window.drift.on('emailCapture', function(e) {
         aptible.analytics.identify(e.data.email);

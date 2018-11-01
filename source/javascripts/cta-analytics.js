@@ -2,8 +2,9 @@ $(function() {
   var createCtaEventHandler = function(eventName) {
     return function(e) {
       e.preventDefault();
+      var form = $(this);
 
-      var email = $(this).find('.aptible-email').val();
+      var email = form.find('.aptible-email').val();
       if (email.length > 0 && window.aptible && window.aptible.analytics) {
         aptible.analytics.identify(email);
         aptible.analytics.event(aptible.analytics.events.EMAIL_COLLECTED);
@@ -11,9 +12,9 @@ $(function() {
         aptible.analytics.fireAllPixels();
       }
 
-      setTimeout(() => {
-        $(this).off();
-        $(this).submit();
+      setTimeout(function() {
+        form.off();
+        form.submit();
       }, 500);
     }
   }
