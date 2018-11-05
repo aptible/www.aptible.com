@@ -91,5 +91,6 @@ export function firePixel(service) {
     }
   } catch(e) {
     // Prevent analytics from throwing exceptions
+    console.warn(e);
   }
 }
