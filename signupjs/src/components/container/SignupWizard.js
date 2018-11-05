@@ -42,6 +42,9 @@ class SignupWizard extends Component {
 
   stepCompleted = (view, newFacts) => {
     if ('email' in newFacts) {
+      // Send to formkeep first so we at least have their email
+      this.sendToFormKeep(newFacts);
+
       // First step completed, identify this visitor
       aptible.analytics.identify(newFacts.email);
       aptible.analytics.event(aptible.analytics.events.EMAIL_COLLECTED);
@@ -50,9 +53,6 @@ class SignupWizard extends Component {
       if (aptible.analytics.getParam('gridiron')) {
         aptible.analytics.event(aptible.analytics.events.SIGNUP_GRIDIRON);
       }
-
-      // Send to formkeep so we at least have their email
-      this.sendToFormKeep(newFacts);
 
       // Send to autopilot, and Salesforce from there
       this.sendToAutopilot({
