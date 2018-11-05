@@ -15,7 +15,7 @@ $(function() {
       setTimeout(function() {
         form.off();
         form.submit();
-      }, 500);
+      }, 1000);
     }
   }
 

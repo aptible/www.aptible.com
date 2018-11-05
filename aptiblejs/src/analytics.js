@@ -76,16 +76,20 @@ export function fireAllPixels() {
 }
 
 export function firePixel(service) {
-  switch (service) {
-    case 'twitter':
-      if (window.twttr) {
-        twttr.conversion.trackPid('nz8pr', { tw_sale_amount: 0, tw_order_quantity: 0 });
-      }
-      break;
-    case 'quora':
-      if (window.qp) {
-        window.qp('track', 'Generic');
-      }
-      break;
+  try {
+    switch (service) {
+      case 'twitter':
+        if (window.twttr) {
+          twttr.conversion.trackPid('nz8pr', { tw_sale_amount: 0, tw_order_quantity: 0 });
+        }
+        break;
+      case 'quora':
+        if (window.qp) {
+          window.qp('track', 'Generic');
+        }
+        break;
+    }
+  } catch(e) {
+    // Prevent analytics from throwing exceptions
   }
 }
