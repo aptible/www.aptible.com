@@ -1,7 +1,8 @@
-$hero2-grid-img: url('../images/gridiron2/grid-bg-fade.png') 160% 34%/75% no-repeat;
+$hero2-grid-img: url('../images/gridiron2/grid-bg-fade.png') 160% 34%/75%
+  no-repeat;
 
 .hero2__background {
-  background: $hero2-grid-img, linear-gradient(173deg, #00193F 0%, #890B4F 100%);
+  background: $hero2-grid-img, linear-gradient(173deg, #00193f 0%, #890b4f 100%);
   padding-bottom: 50px;
   margin-bottom: 0;
 
@@ -19,7 +20,6 @@ $hero2-grid-img: url('../images/gridiron2/grid-bg-fade.png') 160% 34%/75% no-rep
     background-size: 100%;
   }
 }
-
 
 .hero2 {
   font-family: $sf-pro-display;
@@ -111,7 +111,7 @@ $hero2-grid-img: url('../images/gridiron2/grid-bg-fade.png') 160% 34%/75% no-rep
   padding-bottom: 80px;
 
   &:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -122,10 +122,10 @@ $hero2-grid-img: url('../images/gridiron2/grid-bg-fade.png') 160% 34%/75% no-rep
   }
 
   .hero2__content__right {
+    margin: 15px auto;
     padding-top: 25px;
   }
 }
-
 
 .hero2__header-bar {
   font-size: 10px;
