@@ -6,7 +6,7 @@
     svg {
       height: auto;
       margin-top: 30px;
-      width: 95%;
+      width: 95%
     }
   }
 }
@@ -16,7 +16,7 @@
   min-width: 600px;
   @media screen and (max-width: $tablet-portrait) {
     min-width: 0;
-    width: 100%;
+    width: 100%
   }
 }
 
@@ -42,10 +42,8 @@
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
-  transition: color 0.25s ease-in-out;
-  &:target,
-  &:hover,
-  &:focus {
+  transition: color .25s ease-in-out;
+  &:target, &:hover, &:focus {
     color: $green;
     .enclave-carousel__nav-dot {
       background-color: $green;
@@ -54,7 +52,7 @@
 }
 
 .enclave-carousel__nav-track {
-  background-color: rgba(48, 122, 209, 0.17);
+  background-color: rgba(48,122,209,.17);
   border-radius: 3px;
   height: 6px;
   margin: 0 10px;
@@ -67,7 +65,7 @@
   background-color: $green;
   border-radius: 3px;
   height: 6px;
-  transition: width 0.75s ease-out;
+  transition: width .75s ease-out;
   width: 0;
 }
 
@@ -78,7 +76,7 @@
   display: block;
   height: 10px;
   margin: 10px auto 0;
-  transition: background-color 0.25s ease-in-out;
+  transition: background-color .25s ease-in-out;
   width: 10px;
 }
 
@@ -93,7 +91,7 @@
 .enclave-carousel__heading {
   opacity: 0;
   position: absolute;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity .5s ease-in-out;
   width: 100%;
   .title {
     color: $white;
@@ -119,10 +117,10 @@
 .enclave-carousel__internet-lines,
 .enclave-carousel__internet {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity .5s ease-in-out;
 }
 
-.enclave-carousel[data-scene='deploy'] {
+.enclave-carousel[data-scene="deploy"] {
   .enclave-carousel__apps,
   .enclave-carousel--deploy {
     opacity: 1;
@@ -138,7 +136,7 @@
   }
 }
 
-.enclave-carousel[data-scene='database'] {
+.enclave-carousel[data-scene="database"] {
   .enclave-carousel__db,
   .enclave-carousel__apps,
   .enclave-carousel--database {
@@ -147,11 +145,11 @@
   .enclave-carousel__db-1-lines,
   .enclave-carousel__db-2-lines {
     opacity: 1;
-    transition-delay: 0.75s;
+    transition-delay: .75s;
   }
   .enclave-carousel__db-1,
   .enclave-carousel__db-2 {
-    opacity: 0.3;
+    opacity: .3;
     transition-delay: 1s;
   }
   .enclave-carousel__nav-item[href$='deploy'],
@@ -169,7 +167,7 @@
   }
 }
 
-.enclave-carousel[data-scene='configure'] {
+.enclave-carousel[data-scene="configure"] {
   .enclave-carousel__db,
   .enclave-carousel__apps,
   .enclave-carousel__db-1-lines,
@@ -180,7 +178,7 @@
   }
   .enclave-carousel__db-1,
   .enclave-carousel__db-2 {
-    opacity: 0.3;
+    opacity: .3;
   }
   .enclave-carousel__nav-item[href$='deploy'],
   .enclave-carousel__nav-item[href$='database'],
@@ -198,7 +196,7 @@
   }
 }
 
-.enclave-carousel[data-scene='expose'] {
+.enclave-carousel[data-scene="expose"] {
   .enclave-carousel__db-1-lines,
   .enclave-carousel__db-1,
   .enclave-carousel__db,
@@ -212,15 +210,15 @@
   }
   .enclave-carousel__db-1,
   .enclave-carousel__db-2 {
-    opacity: 0.3;
+    opacity: .3;
   }
   .enclave-carousel__internet {
     opacity: 1;
-    transition-delay: 0.5s;
+    transition-delay: .5s;
   }
   .enclave-carousel__internet-lines {
     opacity: 1;
-    transition-delay: 0.75s;
+    transition-delay: .75s;
   }
   .enclave-carousel__endpoint-to-apps {
     opacity: 1;
@@ -240,7 +238,7 @@
   }
 }
 
-.enclave-carousel[data-scene='logging'] {
+.enclave-carousel[data-scene="logging"] {
   .enclave-carousel__db-1-lines,
   .enclave-carousel__db-1,
   .enclave-carousel__db,
@@ -257,7 +255,7 @@
   }
   .enclave-carousel__db-1,
   .enclave-carousel__db-2 {
-    opacity: 0.3;
+    opacity: .3;
   }
   .enclave-carousel__nav-item[href^='#enclave-carousel'] {
     color: $green;
@@ -274,7 +272,7 @@
 }
 
 .enclave-carousel__terminals {
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.27);
+  box-shadow: 0 0 40px rgba(0,0,0,.27);
   position: relative;
   width: 780px;
   z-index: 3;
@@ -306,7 +304,7 @@
     transform: translateX(-80px);
     @media screen and (max-width: $tablet-portrait) {
       // transform: translateX(-80px), scale(.8);
-      transform: translateX(-40px);
+      transform: translateX(-40px);;
     }
   }
   .terminal-response,
