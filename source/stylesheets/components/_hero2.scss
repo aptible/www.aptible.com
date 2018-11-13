@@ -20,7 +20,6 @@ $hero2-grid-img: url('../images/gridiron2/grid-bg-fade.png') 160% 34%/75% no-rep
   }
 }
 
-
 .hero2 {
   font-family: $sf-pro-display;
 
@@ -122,10 +121,10 @@ $hero2-grid-img: url('../images/gridiron2/grid-bg-fade.png') 160% 34%/75% no-rep
   }
 
   .hero2__content__right {
+    margin: 15px auto;
     padding-top: 25px;
   }
 }
-
 
 .hero2__header-bar {
   font-size: 10px;

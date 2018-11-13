@@ -27,6 +27,11 @@
   height: 6px;
   justify-content: space-between;
   width: 100%;
+  position: relative;
+}
+
+.enclave-carousel__nav-items {
+  z-index: 2;
 }
 
 .enclave-carousel__nav-item {
@@ -51,8 +56,9 @@
   border-radius: 3px;
   height: 6px;
   margin: 0 10px;
-  transform: translate(9px, 7px);
+  transform: translate(10px, 7px);
   width: calc(100% - 44px);
+  z-index: 1;
 }
 
 .enclave-carousel__nav-track-progress {
