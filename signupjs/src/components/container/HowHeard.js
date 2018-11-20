@@ -9,6 +9,10 @@ class HowHeard extends Component {
     };
   }
 
+  static className() {
+    return 'HowHeard';
+  }
+
   setStateFromEvent = (name, event) => {
     this.setState({ [name]: event.target.value });
   }

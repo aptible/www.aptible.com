@@ -7,6 +7,10 @@ class ProductSelection extends Component {
     this.state = {};
   }
 
+  static className() {
+    return 'ProductSelection';
+  }
+
   selectGridiron = () => {
     this.props.nextStep({ 'gridiron': '1' });
   }
