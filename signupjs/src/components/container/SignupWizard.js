@@ -89,7 +89,9 @@ class SignupWizard extends Component {
     }
 
     // Fire an event for each step in the signup wizard
-    aptible.analytics.event(`Signup Step Completed: ${view.name}`);
+    if (view.className) {
+      aptible.analytics.event(`Signup Step Completed: ${view.className()}`);
+    }
   }
 
   wizardCompleted = (facts) => {

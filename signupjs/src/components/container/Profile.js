@@ -14,6 +14,10 @@ class Profile extends Component {
     };
   }
 
+  static className() {
+    return 'Profile';
+  }
+
   setStateFromEvent = (name, event) => {
     this.setState({ [name]: event.target.value });
   }

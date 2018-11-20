@@ -17,6 +17,10 @@ class Email extends Component {
     }
   }
 
+  static className() {
+    return 'Email';
+  }
+
   setStateFromEvent = (name, event) => {
     this.setState({ [name]: event.target.value });
   }

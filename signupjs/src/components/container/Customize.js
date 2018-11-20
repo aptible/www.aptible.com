@@ -11,6 +11,10 @@ class Customize extends Component {
     };
   }
 
+  static className() {
+    return 'Customize';
+  }
+
   setStateFromEvent = (name, event) => {
     this.setState({ [name]: event.target.value });
   }
