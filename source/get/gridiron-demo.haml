@@ -3,148 +3,148 @@ title: Book a Gridiron Demo Today
 description: Aptible Gridiron prepares your startup for information security audits with a processs that's fast, relevant, and cost-effective.
 ---
 
-%header.aptible-header.hero2__background.hero2__background--gridiron
-  .hero2.gridiron2__hero
-    = partial 'partials/aptible-mark'
+- content_for :header do
+  %header.aptible-header.hero2__background.hero2__background--gridiron
+    .hero2.gridiron2__hero
+      = partial 'partials/aptible-mark'
 
-    .hero2__container.hero2__container--gridiron
-      .hero2__content__left
-        .hero2__header-bar.gridiron Gridiron
-        %h1
-          %h1.cd-headline.rotate-1
-            Book a demo today: Gridiron takes you from zero to
-            %span.cd-words-wrapper
-              %b.is-visible HIPAA
-              %b GDPR
-              %b ISO 27001
-              %b SOC 2
-        %p.gridiron
-          HIPAA, SOC 2, ISO 27001, and GDPR&mdash;Aptible Gridiron is a fast &amp;
-          cost-effective way to prepare for an information security audit.
-          Let us show you how.
+      .hero2__container.hero2__container--gridiron
+        .hero2__content__left
+          .hero2__header-bar.gridiron Gridiron
+          %h1
+            %h1.cd-headline.rotate-1
+              Book a demo today: Gridiron takes you from zero to
+              %span.cd-words-wrapper
+                %b.is-visible HIPAA
+                %b GDPR
+                %b ISO 27001
+                %b SOC 2
+          %p.gridiron
+            HIPAA, SOC 2, ISO 27001, and GDPR&mdash;Aptible Gridiron is a fast &amp;
+            cost-effective way to prepare for an information security audit.
+            Let us show you how.
+          
+          %a.btn.btn--gridiron.book-gridiron-demo{ href: '#gridiron-demo-scheduling' }
+            Book a Demo
+            %i.far.fa-long-arrow-right
         
-        %a.btn.btn--gridiron.book-gridiron-demo{ href: '#gridiron-demo-scheduling' }
-          Book a Demo
-          %i.far.fa-long-arrow-right
+        .hero2__content__right
+          %img{ src: '/images/gridiron2/desk.svg' }
+
+.angled-section-dividers.gridiron
+
+%section
+  .gridiron2__content-block{ style: "margin-bottom: 0; padding-bottom: 0" }
+    %h1
+      The most innovative companies use Aptible to protect sensitive data and 
+      keep their organizations compliant with critical regulatory frameworks.
+
+%section
+  .gridiron2__content-block.expanded
+    .gridiron2__kanban
+      - data.gridiron_kanban.each_with_index do |column, idx|
+        .gridiron2__kanban__col
+          .gridiron2__kanban__header
+            %h6 Phase #{idx + 1}
+            %h3= column.name
+          .gridiron2__kanban__cards
+            - column.cards.each do |card|
+              .gridiron2__kanban__card
+                #{card}
+                %hr
+
+%section
+  .gridiron2__content-block
+    .row
+      .half
+        .gridiron2__illustration-content
+          %h1 Support when you need it
+          %p Our certified compliance specialists are standing by, ready to assist as you design, operate, and audit your information security management program.
+          %hr 
       
-      .hero2__content__right
-        %img{ src: '/images/gridiron2/desk.svg' }
+      .half
+        %img{ src: '/images/gridiron2/illustration-support.jpg' }
+
+%section
+  .gridiron2__content-block
+    .text-center
+      %img{ src: '/images/gridiron2/logo-row.svg' }
+
+    .gridiron2__testimonial
+      = partial "partials/gridiron2/testimonial-snaps"
+
+%section
+  .gridiron2__content-block
+    %h1 Complete vendor security assessment prep, built for startups
+    .row
+      .third
+        .gridiron2__icon
+          %img{ src: '/images/gridiron2/icon-speed.svg' }
+        %h2 Fast
+        %p Fast, as in you’re up-and-running in hours instead of weeks or months. Get audit-ready and get back to growing your business.
+
+      .third
+        .gridiron2__icon
+          %img{ src: '/images/gridiron2/icon-startups.svg' }
+        %h2 Designed for Startups
+        %p Instructions, policies, team training, and security management features and services designed specifically for startups looking to open new sales channels or streamline the enterprise sales cycle. 
+
+      .third
+        .gridiron2__icon
+          %img{ src: '/images/gridiron2/icon-pricing.svg' }
+        %h2 Cost-effective
+        %p The Gridiron platform delivers more comprehensive audit prep at a fraction of the cost of alternatives. It's priced at about 1/5th the cost of hiring a security lead, and less than most consultants.
+
+%section
+  .gridiron2__content-block
+    %h1 Design, operate, and audit your information security management program so you’re ready to achieve compliance certifications or streamline vendor security assessments
+
+    .row
+      .half
+        .gridiron2__illustration-content
+          %h1 Design
+          %p Gridiron gives you a baseline set of audit-ready policies and procedures, and asks you straightforward questions that help you tailor them to your startup’s unique needs.
+          %hr
+      .half
+        %img{ src: '/images/gridiron2/illustration-design.svg' }
+    
+    .row
+      .half
+        %img{ src: '/images/gridiron2/illustration-operate.svg' }
+      .half
+        .gridiron2__illustration-content
+          %h1 Operate
+          %p Gridiron guides you on what you need to do to comply with your policies and procedures, and continuously tracks whether you’ve implemented any required changes.
+          %hr
+
+    .row
+      .half
+        .gridiron2__illustration-content
+          %h1 Audit
+          %p Gridiron provides team, auditor, and customer friendly reporting that helps you track your progress towards compliance.
+          %hr
+      .half
+        %img{ src: '/images/gridiron2/illustration-audit.svg' }
+
+%section
+  .gridiron2__content-block.gridiron2__bottom-cta
+    %h1 Preparing for a vendor security assessment is a team sport
+    %p.text-center
+      Gridiron is your personal compliance coach
+      %br
+      (and the Aptible team of lawyers and certified compliance specialists is your pinch hitter)
+
+    .text-center
+      %a.btn.btn--gridiron.gridiron#cta-bottom.book-gridiron-demo{ href: '#gridiron-demo-scheduling' }
+        Book a Gridiron Demo Today
+        %i.far.fa-long-arrow-right
 
 
-= wrap_layout :layout do
-  .angled-section-dividers.gridiron
-  %section
-    .gridiron2__content-block{ style: "margin-bottom: 0; padding-bottom: 0" }
-      %h1
-        The most innovative companies use Aptible to protect sensitive data and 
-        keep their organizations compliant with critical regulatory frameworks.
-
-  %section
-    .gridiron2__content-block.expanded
-      .gridiron2__kanban
-        - data.gridiron_kanban.each_with_index do |column, idx|
-          .gridiron2__kanban__col
-            .gridiron2__kanban__header
-              %h6 Phase #{idx + 1}
-              %h3= column.name
-            .gridiron2__kanban__cards
-              - column.cards.each do |card|
-                .gridiron2__kanban__card
-                  #{card}
-                  %hr
-  
-  %section
-    .gridiron2__content-block
-      .row
-        .half
-          .gridiron2__illustration-content
-            %h1 Support when you need it
-            %p Our certified compliance specialists are standing by, ready to assist as you design, operate, and audit your information security management program.
-            %hr 
-        
-        .half
-          %img{ src: '/images/gridiron2/illustration-support.jpg' }
-
-  %section
-    .gridiron2__content-block
-      .text-center
-        %img{ src: '/images/gridiron2/logo-row.svg' }
-
-      .gridiron2__testimonial
-        = partial "partials/gridiron2/testimonial-snaps"
-
-  %section
-    .gridiron2__content-block
-      %h1 Complete vendor security assessment prep, built for startups
-      .row
-        .third
-          .gridiron2__icon
-            %img{ src: '/images/gridiron2/icon-speed.svg' }
-          %h2 Fast
-          %p Fast, as in you’re up-and-running in hours instead of weeks or months. Get audit-ready and get back to growing your business.
-
-        .third
-          .gridiron2__icon
-            %img{ src: '/images/gridiron2/icon-startups.svg' }
-          %h2 Designed for Startups
-          %p Instructions, policies, team training, and security management features and services designed specifically for startups looking to open new sales channels or streamline the enterprise sales cycle. 
-
-        .third
-          .gridiron2__icon
-            %img{ src: '/images/gridiron2/icon-pricing.svg' }
-          %h2 Cost-effective
-          %p The Gridiron platform delivers more comprehensive audit prep at a fraction of the cost of alternatives. It's priced at about 1/5th the cost of hiring a security lead, and less than most consultants.
-
-  %section
-    .gridiron2__content-block
-      %h1 Design, operate, and audit your information security management program so you’re ready to achieve compliance certifications or streamline vendor security assessments
-
-      .row
-        .half
-          .gridiron2__illustration-content
-            %h1 Design
-            %p Gridiron gives you a baseline set of audit-ready policies and procedures, and asks you straightforward questions that help you tailor them to your startup’s unique needs.
-            %hr
-        .half
-          %img{ src: '/images/gridiron2/illustration-design.svg' }
-      
-      .row
-        .half
-          %img{ src: '/images/gridiron2/illustration-operate.svg' }
-        .half
-          .gridiron2__illustration-content
-            %h1 Operate
-            %p Gridiron guides you on what you need to do to comply with your policies and procedures, and continuously tracks whether you’ve implemented any required changes.
-            %hr
-
-      .row
-        .half
-          .gridiron2__illustration-content
-            %h1 Audit
-            %p Gridiron provides team, auditor, and customer friendly reporting that helps you track your progress towards compliance.
-            %hr
-        .half
-          %img{ src: '/images/gridiron2/illustration-audit.svg' }
-
-  %section
-    .gridiron2__content-block.gridiron2__bottom-cta
-      %h1 Preparing for a vendor security assessment is a team sport
-      %p.text-center
-        Gridiron is your personal compliance coach
-        %br
-        (and the Aptible team of lawyers and certified compliance specialists is your pinch hitter)
-
-      .text-center
-        %a.btn.btn--gridiron.gridiron#cta-bottom.book-gridiron-demo{ href: '#gridiron-demo-scheduling' }
-          Book a Gridiron Demo Today
-          %i.far.fa-long-arrow-right
-
-
-  %section
-    .gridiron2__content-block.gridiron2__paid-footer
-      %a{ href: '/legal/terms-of-service/' } Terms of Service
-      %a{ href: '/legal/privacy/' } Privacy Statement
-      %a{ href: '/legal/security/' } Security Policy
+%section
+  .gridiron2__content-block.gridiron2__paid-footer
+    %a{ href: '/legal/terms-of-service/' } Terms of Service
+    %a{ href: '/legal/privacy/' } Privacy Statement
+    %a{ href: '/legal/security/' } Security Policy
   
   - content_for :hide_footer
 
