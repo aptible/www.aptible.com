@@ -63,12 +63,6 @@ export function identify(email) {
       url: currentURL()
     });
   }
-
-  if (window.drift) {
-    window.drift.identify(email, {
-      email: email
-    });
-  }
 }
 
 export function fireAllPixels() {

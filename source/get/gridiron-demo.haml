@@ -149,21 +149,21 @@ description: Aptible Gridiron prepares your startup for information security aud
   - content_for :hide_footer
 
 
-%script{ async: true, src: "https://www.googletagmanager.com/gtag/js?id=AW-954754223" }
-:javascript
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-954754223');
+- content_for :page_javascript do
+  %script{ async: true, src: "https://www.googletagmanager.com/gtag/js?id=AW-954754223" }
+  :javascript
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-954754223');
 
-:javascript
-  $(function() {
-    animateHeadline();
+    $(function() {
+      animateHeadline();
 
-    $('.book-gridiron-demo').on('click', function(e) {
-      if (window.drift) {
-        e.preventDefault();
-        drift.api.startInteraction({ interactionId: 55785 });
-      }
+      $('.book-gridiron-demo').on('click', function(e) {
+        if (window.drift) {
+          e.preventDefault();
+          drift.api.startInteraction({ interactionId: 55785 });
+        }
+      });
     });
-  });
