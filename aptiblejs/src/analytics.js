@@ -61,7 +61,7 @@ export function identify(email) {
     window.analytics.identify(email, {
       email: email,
       url: currentURL()
-    });
+    }, { 'Drift': false });
   }
 }
 
