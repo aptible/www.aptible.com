@@ -57,6 +57,9 @@ export function event(name) {
 }
 
 export function identify(email) {
+  // Do not send to Drift: updating the user email now would result in us
+  // losing track of who the user is and breaking any open chat they might
+  // have.
   if (window.analytics) {
     window.analytics.identify(email, {
       email: email,
