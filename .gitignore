@@ -20,3 +20,4 @@ data/customers.yml
 node_modules
 source/javascripts/aptible.js
 source/javascripts/signup.js
+source/javascripts/quiz.js
