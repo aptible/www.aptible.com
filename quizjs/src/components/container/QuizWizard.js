@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Wizard from './Wizard';
 import Risk from '../container/Risk';
+import Trust from '../container/Trust';
+import Process from '../container/Process';
+import Business from '../container/Business';
 
 class QuizWizard extends Component {
   constructor(props) {
@@ -17,7 +20,7 @@ class QuizWizard extends Component {
   }
 
   render() {
-    const stepViews = [Risk];
+    const stepViews = [Risk, Trust, Process, Business];
 
     return (
       <Wizard
