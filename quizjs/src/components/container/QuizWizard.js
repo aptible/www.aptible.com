@@ -12,11 +12,23 @@ class QuizWizard extends Component {
   }
 
   stepCompleted = (view, newFacts) => {
-    console.log(view.className(), newFacts);
+    //
   }
 
   wizardCompleted = (facts) => {
-    console.log('quiz complete');
+    window.location.href = `/quiz/results/?${this.resultsUrl(facts).join('&')}`;
+  }
+
+  resultsUrl = (sections) => {
+    const params = [];
+    for (let name in sections) {
+      if (name === 'currentStep')
+        continue;
+
+      params.push(`${name}=${sections[name].join(',')}`);
+    }
+
+    return params;
   }
 
   render() {

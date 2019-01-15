@@ -21,3 +21,4 @@ node_modules
 source/javascripts/aptible.js
 source/javascripts/signup.js
 source/javascripts/quiz.js
+source/javascripts/quiz-results.js

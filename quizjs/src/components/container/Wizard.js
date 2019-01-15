@@ -14,6 +14,7 @@ class Wizard extends Component {
       this.props.stepCompleted(this.currentView(), newFactsFromStep);
 
       if (this.stepsLeft()) {
+        window.scrollTo(0, 0);
         this.setState({ currentStep: this.state.currentStep + 1 });
       } else {
         this.completed();

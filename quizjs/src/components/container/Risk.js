@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RiskPresentation from '../presentation/Risk';
-import { unAnsweredQuestions, scoreSection } from '../lib/scoring';
+import { unAnsweredQuestions, collectAnswers } from '../lib/scoring';
 import QUIZ_DATA from '../../quiz_data.json';
 
 class Risk extends Component {
@@ -23,7 +23,7 @@ class Risk extends Component {
 
   onSubmit = () => {
     if (this.validate()) {
-      this.props.nextStep(scoreSection('risk', QUIZ_DATA.risk, this.state));
+      this.props.nextStep({ risk: collectAnswers(QUIZ_DATA.risk, this.state) });
     }
   }
 

@@ -6,36 +6,66 @@ export function unAnsweredQuestions(section, answers) {
 }
 
 
-export function scoreSection(sectionName, section, answers) {
-  const sectionScore = {
-    section: sectionName,
-    grade: null,
-    answers: []
-  };
+export function collectAnswers(section, state) {
+  const answers = [];
 
   for (let question of section.questions) {
-    let answer = answers[question.id];
+    let answer = state[question.id];
+    if (answer !== undefined) {
+      answers.push(answer);
+    }
+  }
+
+  return answers;
+}
+
+
+export function scoreSection(section, answers) {
+  for (let [idx, question] of section.questions.entries()) {
+    let answer = answers[idx];
     if (answer !== undefined) {
       if (question.inverted) {
         answer = 4 - answer;
       }
-      sectionScore.answers.push({ [question.id]: answer });
     }
   }
 
-  sectionScore.grade = gradeScore(section, sectionScore.answers);
-  return sectionScore;
+  return {
+    grade: gradeScore(section.questions, answers, section.scoring),
+    answers: answers
+  }
 }
 
 
-function gradeScore(section, answers) {
-  const maxScore = (section.questions.length * 4);
-  const answerValues = answers.map((x) => Object.values(x)[0]);
-  const answerSum = answerValues.reduce((a, b) => a + b, 0)
+export function scoreOverall(quiz, answersBySection) {
+  let questions = [];
+  let answers = [];
+
+  const scoring = {
+    A: { range: [80, 100] },
+    B: { range: [50, 79] },
+    C: { range: [0, 49] }
+  };
+
+  for (let section in quiz) {
+    questions = questions.concat(quiz[section].questions);
+  }
+
+  for (let section in answersBySection) {
+    answers = answers.concat(answersBySection[section]);
+  }
+
+  return gradeScore(questions, answers, scoring);
+}
+
+
+function gradeScore(questions, answers, scoring) {
+  const maxScore = (questions.length * 4);
+  const answerSum = answers.reduce((a, b) => a + b, 0)
   const percentage = Math.round((answerSum / maxScore) * 100);
 
-  for (let grade in section.scoring) {
-    if (percentage >= section.scoring[grade][0] && percentage <= section.scoring[grade][1]) {
+  for (let grade in scoring) {
+    if (percentage >= scoring[grade].range[0] && percentage <= scoring[grade].range[1]) {
       return grade;
     }
   }

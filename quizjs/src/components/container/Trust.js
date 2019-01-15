@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TrustPresentation from '../presentation/Trust';
-import { unAnsweredQuestions, scoreSection } from '../lib/scoring';
+import { unAnsweredQuestions, collectAnswers } from '../lib/scoring';
 import QUIZ_DATA from '../../quiz_data.json';
 
 class Trust extends Component {
@@ -23,7 +23,7 @@ class Trust extends Component {
 
   onSubmit = () => {
     if (this.validate()) {
-      this.props.nextStep(scoreSection('trust', QUIZ_DATA.trust, this.state));
+      this.props.nextStep({ trust: collectAnswers(QUIZ_DATA.trust, this.state) });
     }
   }
 

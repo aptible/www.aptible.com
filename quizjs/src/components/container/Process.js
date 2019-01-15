@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProcessPresentation from '../presentation/Process';
-import { unAnsweredQuestions, scoreSection } from '../lib/scoring';
+import { unAnsweredQuestions, collectAnswers } from '../lib/scoring';
 import QUIZ_DATA from '../../quiz_data.json';
 
 class Process extends Component {
@@ -23,7 +23,7 @@ class Process extends Component {
 
   onSubmit = () => {
     if (this.validate()) {
-      this.props.nextStep(scoreSection('process', QUIZ_DATA.process, this.state));
+      this.props.nextStep({ process: collectAnswers(QUIZ_DATA.process, this.state) });
     }
   }
 

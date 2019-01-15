@@ -1,5 +1,5 @@
 ---
-title: Quiz
+title: Quiz Results
 ---
 
 - content_for :header do
@@ -9,15 +9,15 @@ title: Quiz
         = partial 'partials/aptible-mark'
 
         %h1.title.white.heading--single-center
-          Startup Security Assessment
+          Security Assessment Results
         %p.subtitle
           How prepared are you for an audit? Discover how well your organization handles information security and compliance.
 
 
 .angled-section-dividers
-.quiz__container
-  .quiz__content#aptible-quiz
+.quiz-results__container
+  .quiz__content#aptible-quiz-results
 
-  = javascript_include_tag :quiz
+  = javascript_include_tag 'quiz-results'
 
 - content_for :hide_footer

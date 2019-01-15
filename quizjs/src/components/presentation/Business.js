@@ -3,7 +3,7 @@ import Question from './Question';
 
 const Business = ({ questions, recordAnswer, onSubmit }) => (
   <div className="quiz__step">
-    <h2>Section 3: Business</h2>
+    <h2>Section 4: Business</h2>
 
     <div className="quiz__progress-bar">
       <div className="quiz__progress-bar__item quiz__progress-bar__item--completed"></div>

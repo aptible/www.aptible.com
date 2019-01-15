@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import BusinessPresentation from '../presentation/Business';
-import { unAnsweredQuestions, scoreSection } from '../lib/scoring';
+import { unAnsweredQuestions, collectAnswers } from '../lib/scoring';
 import QUIZ_DATA from '../../quiz_data.json';
 
 class Business extends Component {
@@ -23,7 +23,7 @@ class Business extends Component {
 
   onSubmit = () => {
     if (this.validate()) {
-      this.props.nextStep(scoreSection('business', QUIZ_DATA.business, this.state));
+      this.props.nextStep({ business: collectAnswers(QUIZ_DATA.business, this.state) });
     }
   }
 
