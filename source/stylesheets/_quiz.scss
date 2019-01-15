@@ -167,7 +167,7 @@
 }
 
 .quiz__results__section {
-  padding: 15px 0;
+  padding: 30px 0;
 
   h3 {
     font-size: 22px;
@@ -175,6 +175,20 @@
     letter-spacing: 0.5px;
     color: #273143;
     margin: 15px 0;
+  }
+}
+
+.quiz__results__action-items--blurred {
+  height: 270px;
+  background-image: url('../images/quiz/action-items-blurred.jpg');
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .btn {
+    text-align: center;
   }
 }
 
