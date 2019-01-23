@@ -25,7 +25,9 @@ const Trust = ({ questions, recordAnswer, onSubmit }) => (
       />
     ))}
 
-    <button onClick={onSubmit}>Next Section <i className="far fa-long-arrow-right"></i></button>
+    <div className="quiz__button--next">
+      <button onClick={onSubmit}>Next Section <i className="far fa-long-arrow-right"></i></button>
+    </div>
   </div>
 );
 
