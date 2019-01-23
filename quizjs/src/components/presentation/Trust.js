@@ -12,8 +12,10 @@ const Trust = ({ questions, recordAnswer, onSubmit }) => (
       <div className="quiz__progress-bar__item"></div>
     </div>
 
-    <h3>We'll ask a few simple questions about how your company approaches security
-      and compliance, and help you identify areas where you can improve.</h3>
+    <h3>
+      Answer a few questions about how your team acts towards and thinks about security, and 
+      help you identify areas where you can improve.
+    </h3>
 
     {questions.map((question, idx) => (
       <Question

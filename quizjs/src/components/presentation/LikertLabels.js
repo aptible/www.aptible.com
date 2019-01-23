@@ -1,8 +1,8 @@
 import React from 'react';
 
 const LABELS_FOR_TYPE = {
-  action: ['Rarely or never', '', 'Sometimes', '', 'Always'],
-  attitude: ['Strongly disagree', '', 'Sometimes', '', 'Strongly agree']
+  action: ['Rarely or never', '', 'Sometimes', '', 'Frequently'],
+  attitude: ['Strongly disagree', '', '', '', 'Strongly agree']
 };
 
 const LikertLabels = ({ type }) => (
