@@ -1,5 +1,4 @@
 import React from 'react';
-import ResultsActionItems from './ResultsActionItems';
 import QUIZ_DATA from '../../quiz_data.json';
 
 const ProcessResults = ({ score }) => (
@@ -7,7 +6,12 @@ const ProcessResults = ({ score }) => (
     <h3>Process: {score.grade}</h3>
     <p>{QUIZ_DATA.process.scoring[score.grade].summary}</p>
 
-    <ResultsActionItems />
+    {QUIZ_DATA.process.scoring[score.grade].recommendations &&
+      <div>
+        <h4>Recommendations:</h4>
+        <p>{QUIZ_DATA.process.scoring[score.grade].recommendations}</p>
+      </div>
+    }
   </div>
 );
 

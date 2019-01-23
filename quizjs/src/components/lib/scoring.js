@@ -21,17 +21,21 @@ export function collectAnswers(section, state) {
 
 
 export function scoreSection(section, answers) {
+  const answersWithInverted = [];
+
   for (let [idx, question] of section.questions.entries()) {
     let answer = answers[idx];
     if (answer !== undefined) {
       if (question.inverted) {
         answer = 4 - answer;
       }
+
+      answersWithInverted.push(answer);
     }
   }
 
   return {
-    grade: gradeScore(section.questions, answers, section.scoring),
+    grade: gradeScore(section.questions, answersWithInverted, section.scoring),
     answers: answers
   }
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import ResultsActionItems from './ResultsActionItems';
 import QUIZ_DATA from '../../quiz_data.json';
 
 const TrustResults = ({ score }) => (
@@ -7,7 +6,12 @@ const TrustResults = ({ score }) => (
     <h3>Trust: {score.grade}</h3>
     <p>{QUIZ_DATA.trust.scoring[score.grade].summary}</p>
 
-    <ResultsActionItems/>
+    {QUIZ_DATA.trust.scoring[score.grade].recommendations &&
+      <div>
+        <h4>Recommendations:</h4>
+        <p>{QUIZ_DATA.trust.scoring[score.grade].recommendations}</p>
+      </div>
+    }
   </div>
 );
 
