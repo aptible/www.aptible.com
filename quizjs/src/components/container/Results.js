@@ -12,14 +12,26 @@ class Results extends Component {
   scoreResults = () => {
     const results = { sectionScores: {}, overallGrade: 'N/A' };
     const answers = this.parseResults();
+    const analyticsPayload = {};
 
     for (let sectionName in QUIZ_DATA) {
       if (answers[sectionName]) {
         results.sectionScores[sectionName] = scoreSection(QUIZ_DATA[sectionName], answers[sectionName]);
+        analyticsPayload[`${sectionName}_grade`] = results.sectionScores[sectionName].scoring.grade;
+        analyticsPayload[`${sectionName}_percentage`] = results.sectionScores[sectionName].scoring.percentage;
       }
     }
 
-    results.overallGrade = scoreOverall(QUIZ_DATA, answers);
+    results.overallScoring = scoreOverall(QUIZ_DATA, answers);
+
+    // Record the letter grade and percentage of each section + overall
+    analyticsPayload.overall_grade = results.overallScoring.grade;
+    analyticsPayload.overall_percentage = results.overallScoring.percentage;
+    if (answers.self) {
+      analyticsPayload.self_assessment = answers.self[0];
+    }
+
+    aptible.analytics.event('Quiz Data', analyticsPayload);
 
     return results;
   }
@@ -43,7 +55,7 @@ class Results extends Component {
     return (
       <ResultsPresentation
         scores={this.state.sectionScores}
-        overallGrade={this.state.overallGrade}
+        overallGrade={this.state.overallScoring.grade}
       />
     );
   }

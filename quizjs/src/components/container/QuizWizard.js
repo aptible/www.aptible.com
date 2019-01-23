@@ -10,10 +10,16 @@ class QuizWizard extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+
+    aptible.analytics.event('Quiz Viewed');
   }
 
   stepCompleted = (view, newFacts) => {
-    //
+    if ('self_assessment' in newFacts) {
+      aptible.analytics.event('Quiz Data', {self_assessment: newFacts.self_assessment});
+    }
+
+    aptible.analytics.event(`Quiz Step Completed: ${view.className()}`);
   }
 
   wizardCompleted = (facts) => {

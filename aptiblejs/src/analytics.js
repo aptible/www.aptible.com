@@ -47,9 +47,9 @@ export function currentURL() {
   return `${window.location.origin}${window.location.pathname}`;
 }
 
-export function event(name) {
+export function event(name, payload={}) {
   if (window.analytics) {
-    let payload = allUtmVars();
+    payload = Object.assign(payload, allUtmVars());
     payload['url'] = currentURL();
 
     window.analytics.track(name, payload);

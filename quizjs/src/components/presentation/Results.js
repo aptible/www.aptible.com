@@ -17,10 +17,10 @@ const Results = ({ scores, overallGrade }) => (
       <input value={window.location.href} onChange={() => ''} />
 
       <div className="quiz__results__sections">
-        <RiskResults score={scores.risk} />
-        <TrustResults score={scores.trust} />
-        <ProcessResults score={scores.process} />
-        <BusinessResults score={scores.business} />
+        <RiskResults score={scores.risk.scoring} />
+        <TrustResults score={scores.trust.scoring} />
+        <ProcessResults score={scores.process.scoring} />
+        <BusinessResults score={scores.business.scoring} />
       </div>
     </div>
 

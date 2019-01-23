@@ -35,7 +35,7 @@ export function scoreSection(section, answers) {
   }
 
   return {
-    grade: gradeScore(section.questions, answersWithInverted, section.scoring),
+    scoring: gradeScore(section.questions, answersWithInverted, section.scoring),
     answers: answers
   }
 }
@@ -70,7 +70,10 @@ function gradeScore(questions, answers, scoring) {
 
   for (let grade in scoring) {
     if (percentage >= scoring[grade].range[0] && percentage <= scoring[grade].range[1]) {
-      return grade;
+      return {
+        grade: grade,
+        percentage: percentage
+      }
     }
   }
 }

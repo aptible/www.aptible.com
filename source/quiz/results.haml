@@ -18,11 +18,12 @@ title: Quiz Results
 .quiz-results__container
   .quiz__content#aptible-quiz-results
 
-  = javascript_include_tag 'quiz-results'
-
 - content_for :hide_footer
 
 
 .content.angled-section-divider--left.gridiron
 .content.angled-section-gradient.gridiron
   = partial "partials/gridiron2/bottom-cta-newsletter"
+
+- content_for :page_javascript do
+  = javascript_include_tag 'quiz-results'
