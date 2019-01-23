@@ -106,7 +106,7 @@
 
 .quiz__likert-scale-label {
   flex: 1;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 11px;
   text-transform: uppercase;
   font-weight: 600;
@@ -122,6 +122,12 @@
 .quiz__likert-option {
   flex: 1;
   text-align: center;
+
+  label {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+  }
 
   input {
     cursor: pointer;
