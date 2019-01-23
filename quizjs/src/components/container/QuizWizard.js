@@ -5,6 +5,8 @@ import Risk from '../container/Risk';
 import Trust from '../container/Trust';
 import Process from '../container/Process';
 import Business from '../container/Business';
+import Email from '../container/Email';
+import QUIZ_DATA from '../../quiz_data.json';
 
 class QuizWizard extends Component {
   constructor(props) {
@@ -23,14 +25,22 @@ class QuizWizard extends Component {
   }
 
   wizardCompleted = (facts) => {
-    window.location.href = `/quiz/results/?${this.resultsUrl(facts).join('&')}`;
+    if ('email' in facts && 'marketing_consent' in facts) {
+      aptible.analytics.identify(facts.email);
+      aptible.analytics.event(aptible.analytics.events.EMAIL_COLLECTED);
+
+      setTimeout(() => {
+        window.location.href = `/quiz/results/?${this.resultsUrl(facts).join('&')}`;
+      }, 500);
+    }
   }
 
   resultsUrl = (sections) => {
     const params = [`self=${sections.self_assessment}`];
     for (let name in sections) {
-      if (name === 'currentStep' || name === 'self_assessment')
+      if (QUIZ_DATA[name] === undefined) {
         continue;
+      }
 
       params.push(`${name}=${sections[name].join(',')}`);
     }
@@ -39,7 +49,7 @@ class QuizWizard extends Component {
   }
 
   render() {
-    const stepViews = [Intro, Risk, Trust, Process, Business];
+    const stepViews = [Intro, Risk, Trust, Process, Business, Email];
 
     return (
       <Wizard

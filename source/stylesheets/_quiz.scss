@@ -67,6 +67,27 @@
     text-align: center;
     margin: 30px 0;
   }
+
+  label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6B7993;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      margin-left: 3px;
+      font-size: 12px;
+      font-weight: 400;
+      color: #7383A0;
+    }
+  }
+}
+
+.quiz__email-container {
+  max-width: 400px;
+  margin: 50px auto;
 }
 
 
@@ -141,6 +162,10 @@
   input {
     cursor: pointer;
   }
+}
+
+.quiz__radio-group {
+  margin: 20px 0;
 }
 
 .quiz__button--next {
