@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Wizard from './Wizard';
+import Intro from '../container/Intro';
 import Risk from '../container/Risk';
 import Trust from '../container/Trust';
 import Process from '../container/Process';
@@ -20,9 +21,9 @@ class QuizWizard extends Component {
   }
 
   resultsUrl = (sections) => {
-    const params = [];
+    const params = [`self=${sections.self_assessment}`];
     for (let name in sections) {
-      if (name === 'currentStep')
+      if (name === 'currentStep' || name === 'self_assessment')
         continue;
 
       params.push(`${name}=${sections[name].join(',')}`);
@@ -32,7 +33,7 @@ class QuizWizard extends Component {
   }
 
   render() {
-    const stepViews = [Risk, Trust, Process, Business];
+    const stepViews = [Intro, Risk, Trust, Process, Business];
 
     return (
       <Wizard
