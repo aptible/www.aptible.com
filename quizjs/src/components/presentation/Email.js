@@ -3,7 +3,7 @@ import React from 'react';
 const Email = ({ email, setStateFromEvent, onSubmit }) => (
   <div className="quiz__step">
     <h3>
-      Last step! Enter your email address below to view your results
+      Where should we send your results?
     </h3>
 
     <div className="quiz__email-container">
