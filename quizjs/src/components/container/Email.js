@@ -6,7 +6,8 @@ class Email extends Component {
     super(props);
     this.state = {
       email: '',
-      marketing_consent: ''
+      marketing_consent: '',
+      invalidEmail: false
     };
   }
 
@@ -20,6 +21,7 @@ class Email extends Component {
 
   validate = () => {
     if (this.state.email.length < 5 || this.state.email.indexOf('@') === -1) {
+      this.setState({ invalidEmail: true });
       return false;
     }
 
@@ -27,6 +29,7 @@ class Email extends Component {
       return false;
     }
 
+    this.setState({ invalidEmail: false });
     return true;
   }
 
@@ -40,6 +43,7 @@ class Email extends Component {
     return (
       <EmailPresentation
         email={this.state.email}
+        invalidEmail={this.state.invalidEmail}
         setStateFromEvent={this.setStateFromEvent}
         onSubmit={this.onSubmit}
       />

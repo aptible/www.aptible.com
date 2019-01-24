@@ -24,6 +24,8 @@ class Risk extends Component {
   onSubmit = () => {
     if (this.validate()) {
       this.props.nextStep({ risk: collectAnswers(QUIZ_DATA.risk, this.state) });
+    } else {
+      alert('Please answer all questions before continuing');
     }
   }
 

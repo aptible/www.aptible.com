@@ -5,6 +5,7 @@ class Intro extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      self_assessment: '',
       questions: [
         {
           id: "self_assessment",
@@ -23,8 +24,16 @@ class Intro extends Component {
     this.setState({ [question]: answer.toString() });
   }
 
+  validate = () => {
+    return this.state.self_assessment !== '';
+  }
+
   onSubmit = () => {
-    this.props.nextStep({ self_assessment: this.state.self_assessment });
+    if (this.validate()) {
+      this.props.nextStep({ self_assessment: this.state.self_assessment });
+    } else {
+      alert('Please answer all questions before continuing');
+    }
   }
 
   render() {

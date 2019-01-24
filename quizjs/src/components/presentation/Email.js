@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Email = ({ email, setStateFromEvent, onSubmit }) => (
+const Email = ({ email, invalidEmail, setStateFromEvent, onSubmit }) => (
   <div className="quiz__step">
     <h3>
       Where should we send your results?
@@ -15,6 +15,9 @@ const Email = ({ email, setStateFromEvent, onSubmit }) => (
         value={email}
         onChange={(e) => setStateFromEvent('email', e)}
       />
+      {invalidEmail &&
+        <span className="quiz__validation-error">Please enter a valid email address</span>
+      }
 
       <div className="quiz__radio-group">
         <div>

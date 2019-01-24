@@ -24,6 +24,8 @@ class Trust extends Component {
   onSubmit = () => {
     if (this.validate()) {
       this.props.nextStep({ trust: collectAnswers(QUIZ_DATA.trust, this.state) });
+    } else {
+      alert('Please answer all questions before continuing');
     }
   }
 

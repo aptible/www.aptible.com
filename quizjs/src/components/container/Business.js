@@ -24,6 +24,8 @@ class Business extends Component {
   onSubmit = () => {
     if (this.validate()) {
       this.props.nextStep({ business: collectAnswers(QUIZ_DATA.business, this.state) });
+    } else {
+      alert('Please answer all questions before continuing');
     }
   }
 

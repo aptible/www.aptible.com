@@ -24,6 +24,8 @@ class Process extends Component {
   onSubmit = () => {
     if (this.validate()) {
       this.props.nextStep({ process: collectAnswers(QUIZ_DATA.process, this.state) });
+    } else {
+      alert('Please answer all questions before continuing');
     }
   }
 
