@@ -15,7 +15,7 @@ const Results = ({ scores, overallGrade, selfAssessmentGrade, selfAssessmentDesc
       </p>
 
       <p>Share the results with your team:</p>
-      <input value={window.location.href} onChange={() => ''} />
+      <input value={`${window.location.href}&quizid=9KdgqVFyMMeobjGiq5BumpcgiDjgFBxb7AP2w5SbAhxg1R8n`} onChange={() => ''} />
 
       <div className="quiz__results__sections">
         <RiskResults score={scores.risk.scoring} />
