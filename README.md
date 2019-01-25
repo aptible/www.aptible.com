@@ -81,4 +81,4 @@ request or open an issue. We send t-shirts and swag to contributors.
 
 ## Copyright
 
-Copyright (c) 2018 [Aptible](https://www.aptible.com). All rights reserved.
+Copyright (c) 2019 [Aptible](https://www.aptible.com). All rights reserved.

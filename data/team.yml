@@ -24,15 +24,6 @@
     companies the size of his Dachshund.
   main_photo: /images/company/team/alex.jpg
   fun_photo: /images/company/team/alex-fun.gif
-- name: Anna Edwards
-  title: Account Executive
-  bio:
-    Anna started in fine art sales in NY after graduating from Queen's 
-    University. She pivoted to tech and joined RJMetrics in their growth 
-    pursuit. She's now in Sales at Aptible, volunteers to help animals and 
-    flips houses.
-  main_photo: /images/company/team/anna.jpg
-  fun_photo: /images/company/team/anna-fun.jpg
 - name: Ashley Mathew
   title: Support Engineer
   bio:
@@ -41,14 +32,6 @@
     When she's not doing support, Ashley enjoys kayaking with her dog.
   main_photo: /images/company/team/ashley.jpg
   fun_photo: /images/company/team/ashley-fun.jpg
-- name: Ben Ramsey
-  title: VP Sales
-  bio:
-    Ben is deeply passionate about building teams and developing people. He loves 
-    to solve problems with data-driven solutions. Above all, Ben wants to win and 
-    he believes that focus and simplicity pave the road to achievement.
-  main_photo: /images/company/team/ben.jpg
-  fun_photo: /images/company/team/ben-fun.jpg
 - name: Caroline Lau
   title: VP People
   bio:
@@ -126,3 +109,12 @@
     earned his MSc in Management from HEC Paris.
   main_photo: /images/company/team/thomas.jpg
   fun_photo: /images/company/team/thomas-fun.jpg
+- name: Tyler Bamberg
+  title: Customer Success Manager
+  bio:
+    Jack of all trades and master of none, Tyler spent the last 4 years in 
+    customer success, sales, support, and project management at both Carta and 
+    Simply Hired. He enjoys travel, video games, and spending time with his 
+    fiancé and their two cats, Hendrick and Nori.
+  main_photo: /images/company/team/tyler.jpg
+  fun_photo: /images/company/team/tyler-fun.jpg
