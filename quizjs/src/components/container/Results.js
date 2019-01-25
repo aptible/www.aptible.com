@@ -24,6 +24,10 @@ class Results extends Component {
 
     results.overallScoring = scoreOverall(QUIZ_DATA, answers);
 
+    const selfAssessmentScore = this.scoreSelfAssessment(answers.self[0]);
+    results.selfAssessmentGrade = selfAssessmentScore.grade;
+    results.selfAssessmentDescription = selfAssessmentScore.description;
+
     // Record the letter grade and percentage of each section + overall
     analyticsPayload.overall_grade = results.overallScoring.grade;
     analyticsPayload.overall_percentage = results.overallScoring.percentage;
@@ -51,11 +55,25 @@ class Results extends Component {
     return results;
   }
 
+  scoreSelfAssessment = (assessment) => {
+    const scores = {
+      0: { grade: 'C', description: 'Needs Improvement' },
+      1: { grade: 'C', description: 'Needs Improvement' },
+      2: { grade: 'B', description: 'Average' },
+      3: { grade: 'B', description: 'Average' },
+      4: { grade: 'A', description: 'Very Good' }
+    }
+
+    return scores[assessment];
+  }
+
   render() {
     return (
       <ResultsPresentation
         scores={this.state.sectionScores}
         overallGrade={this.state.overallScoring.grade}
+        selfAssessmentGrade={this.state.selfAssessmentGrade}
+        selfAssessmentDescription={this.state.selfAssessmentDescription}
       />
     );
   }

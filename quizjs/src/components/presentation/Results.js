@@ -4,10 +4,11 @@ import TrustResults from './TrustResults'
 import ProcessResults from './ProcessResults'
 import BusinessResults from './BusinessResults'
 
-const Results = ({ scores, overallGrade }) => (
+const Results = ({ scores, overallGrade, selfAssessmentGrade, selfAssessmentDescription }) => (
   <div className="quiz__results">
     <div className="quiz__results__content">
       <h1>Your overall score: {overallGrade}</h1>
+      <p><strong>Your self assessment: {selfAssessmentGrade} ({selfAssessmentDescription})</strong></p>
       <p>
         See our recommendations for how to better prepare for an information
         security audit below.
