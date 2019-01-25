@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Base64 } from 'js-base64';
 import ResultsPresentation from '../presentation/Results';
 import { scoreSection, scoreOverall } from '../lib/scoring';
 import QUIZ_DATA from '../../quiz_data.json';
@@ -41,15 +42,19 @@ class Results extends Component {
   }
 
   parseResults = () => {
-    const sections = window.location.search.substr(1).split('&');
+    const params = aptible.analytics.allParams();
     const results = {};
 
-    for (let section of sections) {
-      if (section.indexOf('=') === -1)
-        continue;
+    if (params.results) {
+      const sections = Base64.decode(params.results).split('&');
 
-      let [sectionName, answers] = section.split('=');
-      results[sectionName] = answers.split(',').map((x) => parseInt(x));
+      for (let section of sections) {
+        if (section.indexOf('=') === -1)
+          continue;
+
+        let [sectionName, answers] = section.split('=');
+        results[sectionName] = answers.split(',').map((x) => parseInt(x));
+      }
     }
 
     return results;

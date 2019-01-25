@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "js-base64": "^2.5.1",
     "react-css-transition-replace": "^3.0.3"
   }
 }

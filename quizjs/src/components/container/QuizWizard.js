@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Base64 } from 'js-base64';
 import Wizard from './Wizard';
 import Intro from '../container/Intro';
 import Risk from '../container/Risk';
@@ -42,7 +43,7 @@ class QuizWizard extends Component {
       aptible.analytics.event(aptible.analytics.events.EMAIL_COLLECTED);
       aptible.analytics.event('Quiz Completed');
 
-      const resultsUrl = `/quiz/results/?${this.resultsUrl(facts).join('&')}`;
+      const resultsUrl = `/quiz/results/?results=${Base64.encodeURI(this.resultsUrl(facts).join('&'))}`;
       const analyticsPayload = {
         email: facts.email,
         marketing_consent: facts.marketing_consent,
