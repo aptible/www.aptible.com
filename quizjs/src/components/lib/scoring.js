@@ -56,6 +56,9 @@ export function scoreOverall(quiz, answersBySection) {
   }
 
   for (let section in answersBySection) {
+    if (section === 'self')
+      continue;
+
     answers = answers.concat(answersBySection[section]);
   }
 
