@@ -49,7 +49,7 @@ export function currentURL() {
 
 export function event(name, payload={}) {
   if (window.analytics) {
-    payload = Object.assign(payload, allUtmVars());
+    payload = Object.assign({}, payload, allUtmVars());
     payload['url'] = currentURL();
 
     window.analytics.track(name, payload);

@@ -2,7 +2,6 @@
   .heading--single-center {
     margin-top: 30px;
     max-width: 720px;
-    font-family: $sf-pro-display;
   }
 
   .subtitle {
@@ -160,8 +159,13 @@
 
   label {
     display: inline-block;
-    padding: 10px;
+    padding: 15px 15px 15px 20px;
     cursor: pointer;
+
+    &:hover {
+      background-color: #fcfcfc;
+      border-radius: 5px;
+    }
   }
 
   input {
@@ -262,7 +266,6 @@
   padding: 20px;
 
   h2 {
-    font-family: $sf-pro-display;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 600;

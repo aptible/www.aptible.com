@@ -152,9 +152,9 @@
         "inverted": true
       },
       {
-        "id": "get-shit-done",
+        "id": "get-stuff-done",
         "type": "attitude",
-        "text": "It's more important to get shit done than follow rules",
+        "text": "It's more important to get stuff done than follow rules",
         "inverted": true
       }
     ]
