@@ -1,0 +1,29 @@
+---
+title: Quiz Results
+---
+
+- content_for :header do
+  %header.aptible-header.hipaa-hosting__header.case-study__header
+    .grid-container.grid--single-center
+      .grid-item.text-center
+        = partial 'partials/aptible-mark'
+
+        %h1.title.white.heading--single-center
+          Security Culture Assessment Results
+        %p.subtitle
+          How would you describe your team's security culture? Answer a few questions to get a report and find out.
+
+
+.angled-section-dividers
+.quiz-results__container
+  .quiz__content#aptible-quiz-results
+
+- content_for :hide_footer
+
+
+.content.angled-section-divider--left.gridiron
+.content.angled-section-gradient.gridiron
+  = partial "partials/gridiron2/bottom-cta-newsletter"
+
+- content_for :page_javascript do
+  = javascript_include_tag 'quiz-results'

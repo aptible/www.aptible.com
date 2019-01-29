@@ -17,6 +17,8 @@ source/bower_components
 data/customers.yml
 
 # aptible.js
+node_modules
 source/javascripts/aptible.js
-aptiblejs/node_modules
 source/javascripts/signup.js
+source/javascripts/quiz.js
+source/javascripts/quiz-results.js

@@ -1,0 +1,197 @@
+{
+  "risk": {
+    "scoring": {
+      "A": {
+        "range": [80, 100],
+        "summary": "Nice job! Your team works to understand and control risks. You probably understand that risks can be quantified, and understand that some security controls provide an exponentially greater return on investment than others."
+      },
+      "B": {
+        "range": [50, 79],
+        "summary": "Your team investigates risks, but maybe hasn’t done so formally or consistently.",
+        "recommendations": "You should deploy a formal risk assessment process to determine which risks are worth mitigating, and which aren’t. Prioritizing risks and assessing tradeoffs is a fundamental part of a well-designed security management program."
+      },
+      "C": {
+        "range": [0, 49],
+        "summary": "Your team could definitely improve on using risk to help drive decisions and secure data.",
+        "recommendations": "You should deploy a formal risk assessment process to determine which risks are worth mitigating, and which aren’t. Prioritizing risks and assessing tradeoffs is a fundamental part of a well-designed security management program."
+      }
+    },
+    "questions": [
+      {
+        "id": "discuss-product",
+        "type": "action",
+        "text": "We discuss security risks when evaluating meaningful product decisions"
+      },
+      {
+        "id": "discuss-operational",
+        "type": "action",
+        "text": "We discuss security risks when evaluating meaningful operational decisions"
+      },
+      {
+        "id": "tradeoffs",
+        "type": "action",
+        "text": "When making decisions about risk, we talk about tradeoffs"
+      },
+      {
+        "id": "leaders-share-risks",
+        "type": "action",
+        "text": "Team leaders share examples of relevant risks with the team, like attempted phishing attacks and current news events"
+      },
+      {
+        "id": "no-data-worth-stealing",
+        "type": "attitude",
+        "text": "We don't really have any data worth stealing",
+        "inverted": true
+      },
+      {
+        "id": "risks-cant-be-quantified",
+        "type": "attitude",
+        "text": "Most security risks can't be quantified - security has too much inherent uncertainty and chaos",
+        "inverted": true
+      }
+    ]
+  },
+  "trust": {
+    "scoring": {
+      "A": {
+        "range": [80, 100],
+        "summary": "Nice job! Your team has a high level of organizational trust - you generally trust each other to do the right thing. Your team is informed and educated on security. You have probably invested in training and awareness. Great job!"
+      },
+      "B": {
+        "range": [50, 79],
+        "summary": "Your team has room for improving your level of organizational trust. Teams that are educated and well-trained tend to trust each other more to do the right thing.",
+        "recommendations": "You can start improving your trust culture by making your people more trustworthy! Teams that are educated and well-trained tend to trust each other to do the right thing more often. Invest in regular security training and education, particularly for software engineers and developers. Find ways for your leadership to talk about security, such as sharing security events in the news."
+      },
+      "C": {
+        "range": [0, 49],
+        "summary": "Your team has critically low levels of organizational trust, and it’s probably affecting you for the worse.",
+        "recommendations": "You can start improving your trust culture by making your people more trustworthy! Teams that are educated and well-trained tend to trust each other to do the right thing more often. Invest in regular security training and education, particularly for software engineers and developers. Find ways for your leadership to talk about security, such as sharing security events in the news."
+      }
+    },
+    "questions": [
+      {
+        "id": "regular-security-news",
+        "type": "action",
+        "text": "We regularly share security news and current events with our employees"
+      },
+      {
+        "id": "security-training",
+        "type": "action",
+        "text": "Our leadership team administers security training for our team on a recurring basis"
+      },
+      {
+        "id": "security-pride",
+        "type": "attitude",
+        "text": "We take pride in security"
+      },
+      {
+        "id": "employees-understand",
+        "type": "attitude",
+        "text": "Our employees generally understand why security matters"
+      },
+      {
+        "id": "people-weakest",
+        "type": "attitude",
+        "text": "People are the weakest link in any security program",
+        "inverted": true
+      },
+      {
+        "id": "public-examples",
+        "type": "attitude",
+        "text": "We make public examples when people make mistakes (like pranking someone when they leave a screen unattended)",
+        "inverted": true
+      }
+    ]
+  },
+  "process": {
+    "scoring": {
+      "A": {
+        "range": [80, 100],
+        "summary": "Nice job! Your team invests in making security systematic and predictable. You place an emphasis on controlling chaos, which is ultimately beneficial for both security as well as achieving business objectives. You track specific security metrics and KPIs, and use them to drive decisions."
+      },
+      "B": {
+        "range": [50, 79],
+        "summary": "Your team has taken some steps towards making security systematic and predictable, but you can definitely improve. You may track some security processes, but others may fall by the wayside. You may have some security metrics and KPIs, but they could be more relevant and useful for making decisions.",
+        "recommendations": "Consider investing in security management and automation up front. You can reduce risk and save a lot of headache in the long term."
+      },
+      "C": {
+        "range": [0, 49],
+        "summary": "Uh oh, you might be in trouble. Without good security management processes and culture in place, you’re going to be forced into reacting to security events as you grow. It’ll be much less painful and costly in the long term to invest early in security management."
+      }
+    },
+    "questions": [
+      {
+        "id": "constantly-improving",
+        "type": "action",
+        "text": "We are constantly working to improve security"
+      },
+      {
+        "id": "control-visibility",
+        "type": "attitude",
+        "text": "Control and visibility over our data and assets are the most important security considerations"
+      },
+      {
+        "id": "kpis",
+        "type": "action",
+        "text": "We track and regularly review specific security metrics and KPIs"
+      },
+      {
+        "id": "secure-dev",
+        "type": "action",
+        "text": "We have a secure software development lifecycle and we reliably implement the rules"
+      },
+      {
+        "id": "audit-starting-point",
+        "type": "attitude",
+        "text": "Needing to meet audit or compliance requirements is a good starting point for security"
+      },
+      {
+        "id": "security-disadvantage",
+        "type": "attitude",
+        "text": "Security is a strategic disadvantage because it slows us down",
+        "inverted": true
+      },
+      {
+        "id": "get-stuff-done",
+        "type": "attitude",
+        "text": "It's more important to get stuff done than follow rules",
+        "inverted": true
+      }
+    ]
+  },
+  "business": {
+    "scoring": {
+      "A": {
+        "range": [80, 100],
+        "summary": "Great! Your team understands how security can support business goals, and how it can be used as an competitive advantage. You communicate your security posture to customers and partners, and use it to build trust."
+      },
+      "B": {
+        "range": [50, 79],
+        "summary": "Your team has begun to understand how security can be used as a competitive advantage, but you haven’t connected all the dots yet.",
+        "recommendations": "Do have untapped opportunities to communicate your security posture to your customers or partners? Can you use it to build credibility, trust, and ultimately close more business, faster?"
+      },
+      "C": {
+        "range": [0, 49],
+        "summary": "Hmm, it sounds like your team’s security and business objectives aren’t well aligned. This affects your security culture, because ultimately the business objectives will win.",
+        "recommendations": "Do have untapped opportunities to communicate your security posture to your customers or partners? Can you use it to build credibility, trust, and ultimately close more business, faster?"
+      }
+    },
+    "questions": [
+      {
+        "id": "differentiation",
+        "type": "attitude",
+        "text": "Our security is a source of competitive differentiation for us"
+      },
+      {
+        "id": "new-markets",
+        "type": "attitude",
+        "text": "Our security helps us access new market segments"
+      },
+      {
+        "id": "marketing",
+        "type": "attitude",
+        "text": "We use security in our marketing and business development efforts"
+      }
+    ]
+  }
+}
