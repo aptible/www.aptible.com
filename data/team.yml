@@ -41,6 +41,27 @@
     an A.B. in History from Princeton University.
   main_photo: /images/company/team/caroline.jpg
   fun_photo: /images/company/team/caroline-fun.jpg
+- name: Chris Gomes
+  title: Product Management Lead
+  bio:
+    Chris is a whiteboards and Legos kind of guy. Prior to working as Aptible’s
+    Product Management lead, he co-founded a startup that helped consumers turn
+    their personal data into cash for charity.  His past lives include Lattice
+    Data, Stanford’s MBA program, the Boston Consulting Group, and the
+    Department of Justice.
+  main_photo: /images/company/team/chris.jpg
+  fun_photo: /images/company/team/chris-fun.jpg
+- name: Christian Pearson
+  title: Data Protection Advisor
+  bio:
+    Before joining Aptible, Christian served as an intelligence analyst in the
+    Army and practiced commercial and regulatory law Washington D.C. Most
+    recently Christian worked at Proctor & Gamble, Accenture Strategy, and
+    Google’s Trust & Safety organization. Christian holds a JD from the
+    University of Virginia, an MBA from the University of Michigan, and a BS
+    from Campbell University.
+  main_photo: /images/company/team/christian.jpg
+  fun_photo: /images/company/team/christian-fun.jpg
 - name: David Wen
   title: Senior Software Engineer
   bio:
@@ -84,6 +105,17 @@
     effects of ADHD medications on the developing brain.
   main_photo: /images/company/team/michael.jpg
   fun_photo: /images/company/team/michael-fun.jpg
+- name: Sarah Veirs
+  title: Customer Success Manager
+  bio:
+    Sarah is a results driven, customer advocate with almost ten years of
+    experience driving overall value and adoption for the clients she manages.
+    Prior to joining Aptible, she held a variety of customer success, support
+    and sales roles while working at ISN and Infor. Outside of work, she enjoys
+    staying active, traveling with her husband and ensuring her standard
+    poodle, Norman, lives his best life.
+  main_photo: /images/company/team/sarah.jpg
+  fun_photo: /images/company/team/sarah-fun.jpg
 - name: Shah Kader
   title: Account Executive
   bio:
@@ -101,6 +133,24 @@
     products for Salesforce, Intuit, Eli Lilly, Oracle, and Facebook. 
   main_photo: /images/company/team/skylar.jpg
   fun_photo: /images/company/team/skylar-fun.jpg
+- name: Taylor Edwards
+  title: Business Operations Associate
+  bio:
+    Taylor worked in Operations at Uber where she helped launch the Dallas
+    market before coming to Aptible to work in Growth & BizOps. In her spare
+    time she enjoys exploring new places, hiking and playing frisbee with her
+    husband and their pup, Ripley.
+  main_photo: /images/company/team/taylor.jpg
+  fun_photo: /images/company/team/taylor-fun.jpg
+- name: Tom Cunningham
+  title: UX Software Engineer
+  bio:
+    As UX software engineer, Tom brings design and code together to create
+    accessible user experiences. He comes to Aptible from Lonely Planet where
+    he helped build their design system. Outside of work, you’ll find him with
+    his dogs, on his bicycle, or hanging out at a punk show.
+  main_photo: /images/company/team/tom.jpg
+  fun_photo: /images/company/team/tom-fun.jpg
 - name: Thomas Orozco
   title: VP Technology
   bio:
