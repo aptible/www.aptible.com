@@ -2,12 +2,12 @@
 title: Subvendor Directory
 tracked_title: Subvendors
 description: "Aptible's subvendor directory."
-posted: 2018-05-24
+posted: 2019-02-27
 section: Legal
 sub_section: Policies
 ---
 
-Last updated: May 25, 2018
+Last updated: February 27, 2019
 
 Aptible shares information with service providers and other third parties who perform services on our behalf.
 
@@ -26,7 +26,7 @@ This page provides a list of vendors with whom we share personal information as 
 | [Adobe Sign](https://acrobat.adobe.com/us/en/sign.html) | Contract management | United States |
 | [Salesforce](https://www.salesforce.com) | Customer relationship management | United States |
 | [Clearbit](https://clearbit.com) | Data enrichment | United States |
-| [ZenProspect](https://www.zenprospect.com) | Data enrichment | United States |
+| [Apollo, formerly ZenProspect](https://www.apollo.io/) | Data enrichment | United States |
 | [Customer.io](https://customer.io) | Email | United States |
 | [Postmark](https://postmarkapp.com) | Email | United States |
 | [Revue](https://www.getrevue.co) | Email | The Netherlands |
