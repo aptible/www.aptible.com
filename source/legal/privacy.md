@@ -2,12 +2,12 @@
 title: Privacy Statement
 tracked_title: Privacy
 description: "Aptible's privacy statement."
-posted: 2017-08-14
+posted: 2019-02-27
 section: Legal
 sub_section: Policies
 ---
 
-Version 3.0 – May 24, 2018
+Version 3.1 – February 27, 2019
 
 At Aptible, our core mission is to help teams protect data on the internet. As a result, our goal is to set a high standard for protecting the privacy of your information. We want to be clear about how we collect, use, protect, and share your information, including your personal information, and the rights and choices you have about the ways in which you can help us protect your privacy.
 
@@ -61,7 +61,7 @@ For purposes of this Privacy Statement, "Personal Information" means information
 
 **Account and Profile Information:** We collect information about you and your company when you register for an account, create or modify your profile, and make purchases through our Services. Information we collect includes your name, username, address, email address, phone number, and payment card details. You may provide this information directly through our Services or in some cases another user (such as an account administrator) creating an account on your behalf may provide it. If you provide information (including personal information) about someone else, you confirm that you have the authority to act for them and to consent to the collection and use of their personal information as described in this Privacy Policy.
 
-**Content:** We collect and store content that you create, input, submit, post, upload, transmit, or store while using our Services. Such content may include any personal or other sensitive information submitted using our Services, such as HIPAA protected health information, EU personal data, and other information such as source code or regulatory compliance materials.
+**Content:** We collect and store content that you create, input, submit, post, upload, transmit, or store while using our Services. Such content may include any personal or other sensitive information submitted using our Services, such as HIPAA protected health information, EU personal data, and other information such as source code or regulatory compliance materials. When we process HIPAA protected health information or EU personal data on your behalf pursuant to a HIPAA business associate agreement or a GDPR data protection agreement, our use of that data is restricted by that agreement and limited solely to providing you with our Services and other ancillary functions as provided by law.
 
 **Other submissions:** We collect other data that you may submit to our Services or to us directly, such as when you request customer support or communicate with us via email or social media sites.
 
