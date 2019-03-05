@@ -16,7 +16,7 @@
   main_photo: /images/company/team/frank.jpg
   fun_photo: /images/company/team/frank-fun.jpg
 - name: Alex Kubacki
-  title: Lead Support Engineer
+  title: Lead Customer Reliability Engineer
   bio:
     Alex has been taking things apart for fun since elementary school, and has 
     never ejected a USB device before unplugging it. He has a degree in 
@@ -25,7 +25,7 @@
   main_photo: /images/company/team/alex.jpg
   fun_photo: /images/company/team/alex-fun.gif
 - name: Ashley Mathew
-  title: Support Engineer
+  title: Senior Service Reliability Engineer
   bio:
     Ashley spent 5 years as a Software Engineer before joining Aptible. Before 
     that she was working on her BS in Computer Science from Purdue University. 
@@ -151,14 +151,6 @@
     his dogs, on his bicycle, or hanging out at a punk show.
   main_photo: /images/company/team/tom.jpg
   fun_photo: /images/company/team/tom-fun.jpg
-- name: Thomas Orozco
-  title: VP Technology
-  bio:
-    Thomas is a self-taught engineer and former product manager. He now leads 
-    technical direction at Aptible. Outside of work, he enjoys cooking. Thomas
-    earned his MSc in Management from HEC Paris.
-  main_photo: /images/company/team/thomas.jpg
-  fun_photo: /images/company/team/thomas-fun.jpg
 - name: Tyler Bamberg
   title: Customer Success Manager
   bio:
