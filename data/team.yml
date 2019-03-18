@@ -71,6 +71,15 @@
     playing sports where height matters.
   main_photo: /images/company/team/david.jpg
   fun_photo: /images/company/team/david-fun.jpg
+- name: Elyssa Cendana
+  title: Sales Development Representative
+  bio:
+    Prior to Aptible, Elyssa worked her way up from SDR to Account Executive in
+    the Medical Vertical at Demandforce. She graduated from the University of
+    San Francisco with a BA in Advertising and Minor in Philippines Studies.
+    She enjoys trying new restaurants and watching reality tv. 
+  main_photo: /images/company/team/elyssa.jpg
+  fun_photo: /images/company/team/elyssa-fun.jpg
 - name: Henry Hund
   title: VP Growth
   bio:
@@ -90,7 +99,7 @@
   main_photo: /images/company/team/mia.jpg
   fun_photo: /images/company/team/mia-fun.jpg
 - name: Michael Lyons
-  title: Account Manager
+  title: Data Protection Advisor
   bio:
     Before joining Aptible, Michael spent five years practicing antitrust and
     healthcare law in New York. He holds a JD from Duke University and a BA from
@@ -105,6 +114,15 @@
     effects of ADHD medications on the developing brain.
   main_photo: /images/company/team/michael.jpg
   fun_photo: /images/company/team/michael-fun.jpg
+- name: Mike Aibel
+  title: Account Executive
+  bio:
+    Currently living in Santa Monica, CA, born and raised on the chilly east coast
+    in Boston. After graduating from college, Mike lived on a boat for a couple
+    years to pursue a career in sport-fishing. He previously worked at VMTurbo 
+    (now Turbonomics), Datadog, and Funnel.io.
+  main_photo: /images/company/team/mike.jpg
+  fun_photo: /images/company/team/mike-fun.jpg
 - name: Sarah Veirs
   title: Customer Success Manager
   bio:
@@ -117,7 +135,7 @@
   main_photo: /images/company/team/sarah.jpg
   fun_photo: /images/company/team/sarah-fun.jpg
 - name: Shah Kader
-  title: Account Executive
+  title: Senior Account Executive
   bio:
     Raised in Queens, NY, graduated from Temple University with a BA in 2008, 
     and New York Law School‘s Evening Division with a Juris Doctor in 2017. 
@@ -160,3 +178,15 @@
     fiancé and their two cats, Hendrick and Nori.
   main_photo: /images/company/team/tyler.jpg
   fun_photo: /images/company/team/tyler-fun.jpg
+- name: Zachary Starr-Glasser
+  title: People Operations Associate
+  bio:
+    Zachary's enthusiasm for building great teams and helping them thrive led 
+    him to Aptible. He started his career as a management consultant before 
+    helping to grow the team at Juicero and working across sales, ops, CX and 
+    recruiting at Nebia. He also opened a second office for Nebia in Mexico 
+    City. Zachary holds a BA in Psychology from Columbia University and a 
+    BA in Jewish Ethics from the Jewish Theological Seminary of America. He 
+    loves going on adventures with his wife.
+  main_photo: /images/company/team/zachary.jpg
+  fun_photo: /images/company/team/zachary-fun.jpg
