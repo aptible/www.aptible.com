@@ -89,6 +89,15 @@
     Penn State.
   main_photo: /images/company/team/henry.jpg
   fun_photo: /images/company/team/henry-fun.jpg
+- name: Josh Raker
+  title: Customer Reliability Engineer
+  bio:
+    Josh has a BS in Computer Science from Purdue University. He has a passion 
+    for automation and creating tools that save time. In his spare time he
+    likes to play video games and spend time with his wife and pets. He has two
+    German Shepherds, a cat, and a hedgehog.
+  main_photo: /images/company/team/josh.jpg
+  fun_photo: /images/company/team/josh-fun.jpg
 - name: Mia Lopez
   title: Growth Operations Manager
   bio:
@@ -123,6 +132,17 @@
     (now Turbonomics), Datadog, and Funnel.io.
   main_photo: /images/company/team/mike.jpg
   fun_photo: /images/company/team/mike-fun.jpg
+- name: Rob deJuana-Matthews
+  title: Product Marketing Manager
+  bio:
+    Rob is passionate about helping companies bring customers, product, and
+    marketing together. Prior to joining Aptible, he ran product marketing for 
+    both high-growth startups and midsize enterprises. He earned his MA from 
+    Columbia University and his BA from Swarthmore College. In his free time, 
+    Rob enjoys playing with his Chihuahua, Lucy, working on his project car, 
+    and playing Dungeons and Dragons.
+  main_photo: /images/company/team/rob.jpg
+  fun_photo: /images/company/team/rob-fun.jpg
 - name: Sarah Veirs
   title: Customer Success Manager
   bio:
@@ -151,6 +171,16 @@
     products for Salesforce, Intuit, Eli Lilly, Oracle, and Facebook. 
   main_photo: /images/company/team/skylar.jpg
   fun_photo: /images/company/team/skylar-fun.jpg
+- name: Tasia Johnson
+  title: Account Executive
+  bio:
+    Tasia is a motivating, customer success-driven sales executive who has 
+    helped grow sales teams at YARDI, Salesforce, and Houzz. She is a Southern
+    Californian native, but a new Arizona transplant. Tasia loves to explore
+    and travel with her two kids and husband. In her spare time, she likes to
+    find her zen during yoga or going on a long run.
+  main_photo: /images/company/team/tasia.jpg
+  fun_photo: /images/company/team/tasia-fun.jpg
 - name: Taylor Edwards
   title: Business Operations Associate
   bio:
