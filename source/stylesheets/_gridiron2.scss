@@ -165,6 +165,12 @@
     padding: 0 3%;
   }
 
+  .quarter {
+    float: left;
+    width: 25%;
+    padding: 0 2%;
+  }
+
   @media screen and (max-width: $tablet-landscape) {
     margin: 30px 15px;
 
@@ -178,6 +184,12 @@
       float: none;
       width: 100%;
       margin-bottom: 70px;
+    }
+
+    .quarter {
+      float: none;
+      width: 100%;
+      margin-bottom: 40px;
     }
   }
 }
@@ -263,6 +275,39 @@
 
 .gridiron2__icon {
   height: 80px;
+}
+
+
+.quarter.gridiron2__feature {
+  position: relative;
+  padding: 0 40px;
+
+  .gridiron2__feature__bg-box {
+    position: absolute;
+    top: -9px;
+    left: 30px;
+    width: 22px;
+    height: 22px;
+    border-radius: 2px;
+    background-color: #EBF4FF;
+  }
+
+  h3 {
+    position: relative;
+    font-size: 16px;
+    color: #273143;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: $tablet-landscape) {
+  .quarter.gridiron2__feature {
+    padding: 0 15px;
+
+    .gridiron2__feature__bg-box {
+      left: 4px;
+    }
+  }
 }
 
 
