@@ -1,34 +1,34 @@
 - name: Chas Ballew
   title: Co-Founder, CEO
   bio:
-    Before Aptible, Chas served on active duty in the Army for 4 years as a 
-    lawyer at the Pentagon, which is where he first learned regulatory law. 
-    Prior to that, Chas ran two small dev shops for beer money in high school 
+    Before Aptible, Chas served on active duty in the Army for 4 years as a
+    lawyer at the Pentagon, which is where he first learned regulatory law.
+    Prior to that, Chas ran two small dev shops for beer money in high school
     and college. His dog's name is Dilla.
   main_photo: /images/company/team/chas.jpg
   fun_photo: /images/company/team/chas-fun.gif
 - name: Frank Macreery
-  title: Co-Founder
+  title: Co-Founder, CTO
   bio:
-    Prior to Aptible, Frank led engineering teams at Give Real, XGraph 
-    (acquired by Clearspring / AddThis), and Artsy. He holds a B.S.E. in Computer 
+    Prior to Aptible, Frank led engineering teams at Give Real, XGraph
+    (acquired by Clearspring / AddThis), and Artsy. He holds a B.S.E. in Computer
     Science from Princeton University.
   main_photo: /images/company/team/frank.jpg
   fun_photo: /images/company/team/frank-fun.jpg
 - name: Alex Kubacki
-  title: Lead Customer Reliability Engineer
+  title: Customer Reliability Engineering Manager
   bio:
-    Alex has been taking things apart for fun since elementary school, and has 
-    never ejected a USB device before unplugging it. He has a degree in 
-    Electrical Engineering Technology from Purdue, and prefers working for 
+    Alex has been taking things apart for fun since elementary school, and has
+    never ejected a USB device before unplugging it. He has a degree in
+    Electrical Engineering Technology from Purdue, and prefers working for
     companies the size of his Dachshund.
   main_photo: /images/company/team/alex.jpg
   fun_photo: /images/company/team/alex-fun.gif
 - name: Ashley Mathew
   title: Senior Service Reliability Engineer
   bio:
-    Ashley spent 5 years as a Software Engineer before joining Aptible. Before 
-    that she was working on her BS in Computer Science from Purdue University. 
+    Ashley spent 5 years as a Software Engineer before joining Aptible. Before
+    that she was working on her BS in Computer Science from Purdue University.
     When she's not doing support, Ashley enjoys kayaking with her dog.
   main_photo: /images/company/team/ashley.jpg
   fun_photo: /images/company/team/ashley-fun.jpg
@@ -65,9 +65,9 @@
 - name: David Wen
   title: Senior Software Engineer
   bio:
-    David is a management consultant turned software dev. He founded the 
-    non-profit Time Auction, which allows people to bid volunteer hours for 
-    rewards money can’t buy. He enjoys reading what Bill Gates reads and 
+    David is a management consultant turned software dev. He founded the
+    non-profit Time Auction, which allows people to bid volunteer hours for
+    rewards money can’t buy. He enjoys reading what Bill Gates reads and
     playing sports where height matters.
   main_photo: /images/company/team/david.jpg
   fun_photo: /images/company/team/david-fun.jpg
@@ -77,22 +77,22 @@
     Prior to Aptible, Elyssa worked her way up from SDR to Account Executive in
     the Medical Vertical at Demandforce. She graduated from the University of
     San Francisco with a BA in Advertising and Minor in Philippines Studies.
-    She enjoys trying new restaurants and watching reality tv. 
+    She enjoys trying new restaurants and watching reality tv.
   main_photo: /images/company/team/elyssa.jpg
   fun_photo: /images/company/team/elyssa-fun.jpg
 - name: Henry Hund
   title: VP Growth
   bio:
-    Henry left big finance to help grow RJMetrics and launch Stitch (Data). He 
-    now leads Aptible's growth efforts, but also tries to do a good job as a 
-    husband and father. Henry earned his MBA from Wharton and his BS from 
+    Henry left big finance to help grow RJMetrics and launch Stitch (Data). He
+    now leads Aptible's growth efforts, but also tries to do a good job as a
+    husband and father. Henry earned his MBA from Wharton and his BS from
     Penn State.
   main_photo: /images/company/team/henry.jpg
   fun_photo: /images/company/team/henry-fun.jpg
 - name: Josh Raker
   title: Customer Reliability Engineer
   bio:
-    Josh has a BS in Computer Science from Purdue University. He has a passion 
+    Josh has a BS in Computer Science from Purdue University. He has a passion
     for automation and creating tools that save time. In his spare time he
     likes to play video games and spend time with his wife and pets. He has two
     German Shepherds, a cat, and a hedgehog.
@@ -101,9 +101,9 @@
 - name: Mia Lopez
   title: Growth Operations Manager
   bio:
-    Mia worked in Sales Ops at RJMetrics and Customer Success at roundCorner 
-    before coming to Aptible to work in Growth Ops. She graduated from Santa 
-    Clara University. In her free time, Mia loves being by the ocean and 
+    Mia worked in Sales Ops at RJMetrics and Customer Success at roundCorner
+    before coming to Aptible to work in Growth Ops. She graduated from Santa
+    Clara University. In her free time, Mia loves being by the ocean and
     hiking with her husband and pup.
   main_photo: /images/company/team/mia.jpg
   fun_photo: /images/company/team/mia-fun.jpg
@@ -118,8 +118,8 @@
 - name: Michael Peterson
   title: Growth Engineer
   bio:
-    Michael has over a decade of experience in marketing & technology for 
-    high-growth startups. He has a degree in Psychology and researched the 
+    Michael has over a decade of experience in marketing & technology for
+    high-growth startups. He has a degree in Psychology and researched the
     effects of ADHD medications on the developing brain.
   main_photo: /images/company/team/michael.jpg
   fun_photo: /images/company/team/michael-fun.jpg
@@ -128,7 +128,7 @@
   bio:
     Currently living in Santa Monica, CA, born and raised on the chilly east coast
     in Boston. After graduating from college, Mike lived on a boat for a couple
-    years to pursue a career in sport-fishing. He previously worked at VMTurbo 
+    years to pursue a career in sport-fishing. He previously worked at VMTurbo
     (now Turbonomics), Datadog, and Funnel.io.
   main_photo: /images/company/team/mike.jpg
   fun_photo: /images/company/team/mike-fun.jpg
@@ -136,10 +136,10 @@
   title: Product Marketing Manager
   bio:
     Rob is passionate about helping companies bring customers, product, and
-    marketing together. Prior to joining Aptible, he ran product marketing for 
-    both high-growth startups and midsize enterprises. He earned his MA from 
-    Columbia University and his BA from Swarthmore College. In his free time, 
-    Rob enjoys playing with his Chihuahua, Lucy, working on his project car, 
+    marketing together. Prior to joining Aptible, he ran product marketing for
+    both high-growth startups and midsize enterprises. He earned his MA from
+    Columbia University and his BA from Swarthmore College. In his free time,
+    Rob enjoys playing with his Chihuahua, Lucy, working on his project car,
     and playing Dungeons and Dragons.
   main_photo: /images/company/team/rob.jpg
   fun_photo: /images/company/team/rob-fun.jpg
@@ -157,9 +157,9 @@
 - name: Shah Kader
   title: Senior Account Executive
   bio:
-    Raised in Queens, NY, graduated from Temple University with a BA in 2008, 
-    and New York Law School‘s Evening Division with a Juris Doctor in 2017. 
-    Shah has been in sales for early stage companies for over 9 years (the last 
+    Raised in Queens, NY, graduated from Temple University with a BA in 2008,
+    and New York Law School‘s Evening Division with a Juris Doctor in 2017.
+    Shah has been in sales for early stage companies for over 9 years (the last
     2.5 at Aptible).
   main_photo: /images/company/team/shah.jpg
   fun_photo: /images/company/team/shah-fun.jpg
@@ -168,13 +168,13 @@
   bio:
     Skylar is a designer and engineer, leading UX and design at Aptible. Prior
     to Aptible, Skylar worked as an independent consultant and helped ship
-    products for Salesforce, Intuit, Eli Lilly, Oracle, and Facebook. 
+    products for Salesforce, Intuit, Eli Lilly, Oracle, and Facebook.
   main_photo: /images/company/team/skylar.jpg
   fun_photo: /images/company/team/skylar-fun.jpg
 - name: Tasia Johnson
   title: Account Executive
   bio:
-    Tasia is a motivating, customer success-driven sales executive who has 
+    Tasia is a motivating, customer success-driven sales executive who has
     helped grow sales teams at YARDI, Salesforce, and Houzz. She is a Southern
     Californian native, but a new Arizona transplant. Tasia loves to explore
     and travel with her two kids and husband. In her spare time, she likes to
@@ -202,21 +202,21 @@
 - name: Tyler Bamberg
   title: Customer Success Manager
   bio:
-    Jack of all trades and master of none, Tyler spent the last 4 years in 
-    customer success, sales, support, and project management at both Carta and 
-    Simply Hired. He enjoys travel, video games, and spending time with his 
+    Jack of all trades and master of none, Tyler spent the last 4 years in
+    customer success, sales, support, and project management at both Carta and
+    Simply Hired. He enjoys travel, video games, and spending time with his
     fiancé and their two cats, Hendrick and Nori.
   main_photo: /images/company/team/tyler.jpg
   fun_photo: /images/company/team/tyler-fun.jpg
 - name: Zachary Starr-Glasser
   title: People Operations Associate
   bio:
-    Zachary's enthusiasm for building great teams and helping them thrive led 
-    him to Aptible. He started his career as a management consultant before 
-    helping to grow the team at Juicero and working across sales, ops, CX and 
-    recruiting at Nebia. He also opened a second office for Nebia in Mexico 
-    City. Zachary holds a BA in Psychology from Columbia University and a 
-    BA in Jewish Ethics from the Jewish Theological Seminary of America. He 
+    Zachary's enthusiasm for building great teams and helping them thrive led
+    him to Aptible. He started his career as a management consultant before
+    helping to grow the team at Juicero and working across sales, ops, CX and
+    recruiting at Nebia. He also opened a second office for Nebia in Mexico
+    City. Zachary holds a BA in Psychology from Columbia University and a
+    BA in Jewish Ethics from the Jewish Theological Seminary of America. He
     loves going on adventures with his wife.
   main_photo: /images/company/team/zachary.jpg
   fun_photo: /images/company/team/zachary-fun.jpg
