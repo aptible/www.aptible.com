@@ -89,6 +89,14 @@
     Penn State.
   main_photo: /images/company/team/henry.jpg
   fun_photo: /images/company/team/henry-fun.jpg
+- name: Jeremy Dye
+  title: Senior Software Engineer
+  bio:
+    Jeremy used to tour the country playing music, but now he prefers staying
+    home crafting code. When he's away from the keyboard he enjoys snuggling
+    his 3 cats, gardening, and rock climbing. 
+  main_photo: /images/company/team/jeremy.jpg
+  fun_photo: /images/company/team/jeremy-fun.jpg
 - name: Josh Raker
   title: Customer Reliability Engineer
   bio:
