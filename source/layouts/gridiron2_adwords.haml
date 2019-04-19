@@ -181,3 +181,14 @@
       window.location = signupUrl;
     });
   });
+
+  // Adwords gclid tracking
+  if (window.aptible) {
+    var params = aptible.analytics.allParams();
+    if (params.gclid) {
+      var expiresAt = new Date();
+      expiresAt.setDate(expiresAt.getDate() + 30);
+      aptible.cookie.write('aptible_gclid', params.gclid, expiresAt);
+      aptible.analytics.event('gclid', {gclid: params.gclid});
+    }
+  }
