@@ -28,7 +28,8 @@ const AUTOPILOT_CUSTOM_FIELD_MAPPINGS = {
   signup_completed: 'string--Gridiron--Signup--Completed',
   main_goal: 'string--Main--Goal--with--Gridiron',
   protocols: 'string--Compliance--Frameworks--of--Interest',
-  how_heard: 'string--Origin--of--Gridiron--Interest'
+  how_heard: 'string--Origin--of--Gridiron--Interest',
+  gclid: 'string--GCLID'
 };
 
 
@@ -42,6 +43,11 @@ class SignupWizard extends Component {
 
   stepCompleted = (view, newFacts) => {
     if ('email' in newFacts) {
+      // Check for gclid cookie
+      if (aptible.cookie.get('aptible_gclid')) {
+        newFacts.gclid = aptible.cookie.get('aptible_gclid');
+      }
+
       // Send to formkeep first so we at least have their email
       this.sendToFormKeep(newFacts);
 
