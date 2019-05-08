@@ -140,6 +140,15 @@
     (now Turbonomics), Datadog, and Funnel.io.
   main_photo: /images/company/team/mike.jpg
   fun_photo: /images/company/team/mike-fun.jpg
+- name: Peter Kong
+  title: Senior Software Engineer
+  bio:
+    Peter is a full stack engineer. Before that, he was briefly a food critic.
+    He's always been an enthusiast and practitioner of literature and music.
+    He works hard to make the internet a better place and to support his future
+    dog family.
+  main_photo: /images/company/team/peter.jpg
+  fun_photo: /images/company/team/peter-fun.jpg
 - name: Rob deJuana-Matthews
   title: Product Marketing Manager
   bio:
@@ -179,6 +188,17 @@
     products for Salesforce, Intuit, Eli Lilly, Oracle, and Facebook.
   main_photo: /images/company/team/skylar.jpg
   fun_photo: /images/company/team/skylar-fun.jpg
+- name: Taj Moore
+  title: Data Protection Advisor
+  bio:
+    Taj most recently worked as Assistant Counsel to Governor Phil Murphy. Before
+    then, he practiced privacy and data security law at Morrison & Foerster LLP,
+    conducted national security and foreign policy research at the Stimson Center
+    and Brookings, and worked at the Department of Defense.  He received an A.B.
+    from Brown and a J.D. from Harvard. Taj is passionate about the intersection
+    of tech and national security and the history of peanut butter.
+  main_photo: /images/company/team/taj.jpg
+  fun_photo: /images/company/team/taj-fun.jpg
 - name: Tasia Johnson
   title: Account Executive
   bio:
@@ -216,6 +236,16 @@
     fiancé and their two cats, Hendrick and Nori.
   main_photo: /images/company/team/tyler.jpg
   fun_photo: /images/company/team/tyler-fun.jpg
+- name: Vijay Nambiar
+  title: VP Sales
+  bio:
+    Vijay was born in Canada, moved to Atlanta and now lives in San Francisco.
+    Most recently he was leading sales teams at GitHub and was involved in the
+    acquisition by Microsoft as part of their Alliances team. He has two kids
+    (14 year old boy and 11 year old girl) and likes travel, food, wine, exploring
+    NorCal and playing golf.
+  main_photo: /images/company/team/vijay.jpg
+  fun_photo: /images/company/team/vijay-fun.jpg
 - name: Zachary Starr-Glasser
   title: People Operations Associate
   bio:
