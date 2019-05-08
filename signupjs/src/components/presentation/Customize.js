@@ -18,7 +18,7 @@ const Customize = ({ main_goal, protocols, onSubmit, errors, setStateFromEvent }
         className={errorClass(errors, 'main_goal')}
       >
         <option>Select...</option>
-        <option value="Create sales collateral / streamline vendor security questionnaies">Create sales collateral / streamline vendor security questionnaies</option>
+        <option value="Create sales collateral / streamline vendor security questionnaires">Create sales collateral / streamline vendor security questionnaires</option>
         <option value="Expand into regulated industries (ex: healthcare)">Expand into regulated industries (ex: healthcare)</option>
         <option value="Ensure your business is securing data appropriately">Ensure your business is securing data appropriately</option>
         <option value="Other">Other</option>
