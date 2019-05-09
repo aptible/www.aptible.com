@@ -1,20 +1,3 @@
-- name: Chas Ballew
-  title: Co-Founder, CEO
-  bio:
-    Before Aptible, Chas served on active duty in the Army for 4 years as a
-    lawyer at the Pentagon, which is where he first learned regulatory law.
-    Prior to that, Chas ran two small dev shops for beer money in high school
-    and college. His dog's name is Dilla.
-  main_photo: /images/company/team/chas.jpg
-  fun_photo: /images/company/team/chas-fun.gif
-- name: Frank Macreery
-  title: Co-Founder, CTO
-  bio:
-    Prior to Aptible, Frank led engineering teams at Give Real, XGraph
-    (acquired by Clearspring / AddThis), and Artsy. He holds a B.S.E. in Computer
-    Science from Princeton University.
-  main_photo: /images/company/team/frank.jpg
-  fun_photo: /images/company/team/frank-fun.jpg
 - name: Alex Kubacki
   title: Customer Reliability Engineering Manager
   bio:
@@ -41,6 +24,15 @@
     an A.B. in History from Princeton University.
   main_photo: /images/company/team/caroline.jpg
   fun_photo: /images/company/team/caroline-fun.jpg
+- name: Chas Ballew
+  title: Co-Founder, CEO
+  bio:
+    Before Aptible, Chas served on active duty in the Army for 4 years as a
+    lawyer at the Pentagon, which is where he first learned regulatory law.
+    Prior to that, Chas ran two small dev shops for beer money in high school
+    and college. His dog's name is Dilla.
+  main_photo: /images/company/team/chas.jpg
+  fun_photo: /images/company/team/chas-fun.gif
 - name: Chris Gomes
   title: Product Management Lead
   bio:
@@ -80,6 +72,14 @@
     She enjoys trying new restaurants and watching reality tv.
   main_photo: /images/company/team/elyssa.jpg
   fun_photo: /images/company/team/elyssa-fun.jpg
+- name: Frank Macreery
+  title: Co-Founder, CTO
+  bio:
+    Prior to Aptible, Frank led engineering teams at Give Real, XGraph
+    (acquired by Clearspring / AddThis), and Artsy. He holds a B.S.E. in Computer
+    Science from Princeton University.
+  main_photo: /images/company/team/frank.jpg
+  fun_photo: /images/company/team/frank-fun.jpg
 - name: Henry Hund
   title: VP Growth
   bio:
@@ -94,7 +94,7 @@
   bio:
     Jeremy used to tour the country playing music, but now he prefers staying
     home crafting code. When he's away from the keyboard he enjoys snuggling
-    his 3 cats, gardening, and rock climbing. 
+    his 3 cats, gardening, and rock climbing.
   main_photo: /images/company/team/jeremy.jpg
   fun_photo: /images/company/team/jeremy-fun.jpg
 - name: Josh Raker
